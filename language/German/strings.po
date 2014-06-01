@@ -610,3 +610,148 @@ msgstr "Arbeitet"
 msgctxt "#31713"
 msgid "Reset all skin settings"
 msgstr "Alle Skin Settings zuruecksetzen"
+
+#refredstuff
+msgctxt "#32000"
+msgid "Unwatched Episodes"
+msgstr "Ungesehene Episoden"
+
+msgctxt "#32001"
+msgid "Unwatched Episodes (Total)"
+msgstr "Ungesehene Episoden (Total)"
+
+msgctxt "#32003"
+msgid "Unwatched Movies"
+msgstr "Ungesehene Filme"
+
+msgctxt "#32004"
+msgid "Use classic home menu"
+msgstr "Benutze Classic Home Menue"
+
+msgctxt "#32005"
+msgid "Center widget panel"
+msgstr "Zentriere Widgets"
+
+msgctxt "#32006"
+msgid "Use random episodes instead of recently added"
+msgstr "Benutze zufaellige Episoden anstelle kuerzlich hinzugefuegte"
+
+msgctxt "#32007"
+msgid "Use random movies instead of recently added"
+msgstr "Benutze zufaellige Filme anstelle kuerzlich hinzugefuegte"
+
+msgctxt "#32008"
+msgid "Show scrolling text while fullscreen music playback"
+msgstr "Zeige scrollende Labels in Musik Visualisierung"
+
+msgctxt "#32009"
+msgid "Hide music info panels in visualization after a few seconds"
+msgstr "Verstecke Musik Info-Panel nach einigen Sekunden"
+
+msgctxt "#32010"
+msgid "Enable own global background"
+msgstr "Nutze eigenen globalen Hintergrund"
+
+msgctxt "#32011"
+msgid "Use a single background image"
+msgstr "Setze ein einzelnes Bild als Hintergrund"
+
+msgctxt "#32012"
+msgid "Define a folder for slideshow"
+msgstr "Definiere ein Ordner für Slideshow als Hintergrund"
+
+msgctxt "#32013"
+msgid "Use random albums instead of recently added"
+msgstr "Nutze zufaellige Alben anstelle von kuerzlich hinzugefuegten"
+
+msgctxt "#32014"
+msgid "Recently added music"
+msgstr "Kuerzlich hinzugefuegt"
+
+msgctxt "#32015"
+msgid "Use in progress movies only"
+msgstr "Zeige nur in-progress Filme"
+
+msgctxt "#32016"
+msgid "Use in progress episodes only"
+msgstr "Zeige nur in-progress Episoden"
+
+msgctxt "#32017"
+msgid "Show (scheduled) recording in PVR and Home screen"
+msgstr "Zeige PVR Aufnahme Widget im Home Screen"
+
+msgctxt "#32018"
+msgid "Deactivate glass effect overlays"
+msgstr "Deaktiviere Glass Effekt"
+
+msgctxt "#32019"
+msgid "Enable hub"
+msgstr "Aktiviere HUB"
+
+msgctxt "#32020"
+msgid "All movies"
+msgstr "Alle Filme"
+
+msgctxt "#32021"
+msgid "Recently added"
+msgstr "Kuerzlich hinzugefuegt"
+
+msgctxt "#32022"
+msgid "All TV shows"
+msgstr "Alle TV Serien"
+
+msgctxt "#32023"
+msgid "In progress"
+msgstr "In Arbeit"
+
+msgctxt "#32024"
+msgid "Next scheduled recording"
+msgstr "Naechste geplante Aufnahme"
+
+msgctxt "#32025"
+msgid "Now recording"
+msgstr "Aufnahme im Gange"
+
+msgctxt "#32026"
+msgid "Next recording"
+msgstr "Naechste Aufnahme"
+
+msgctxt "#32027"
+msgid "Recording"
+msgstr "Aufnahme"
+
+msgctxt "#32028"
+msgid "Movie Hub"
+msgstr "Film Hub"
+
+msgctxt "#32029"
+msgid "TV Show Hub"
+msgstr "TV Serien Hub"
+
+msgctxt "#32030"
+msgid "Music Hub"
+msgstr "Musik Hub"
+
+msgctxt "#32031"
+msgid "Showing"
+msgstr "Zeigt"
+
+msgctxt "#32032"
+msgid "Random"
+msgstr "Gemischt"
+
+msgctxt "#32033"
+msgid "Random albums"
+msgstr "Gemischte Alben"
+
+msgctxt "#32034"
+msgid "Recommended"
+msgstr "Empfohlen"
+
+msgctxt "#32035"
+msgid "Recently played"
+msgstr "Kuerzlich gespielt"
+
+msgctxt "#32036"
+msgid "Change user"
+msgstr "Wechsle Nutzer"
