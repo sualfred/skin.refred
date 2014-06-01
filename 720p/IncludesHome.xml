@@ -156,7 +156,7 @@
 				<control type="group">
 					<height>240</height>
 					<include>transition_Toast</include>
-					<visible>Player.HasVideo + !VideoPlayer.Content(livetv)</visible>				
+					<visible>Player.HasVideo + !VideoPlayer.Content(livetv) + !VideoPlayer.Content(episodes)</visible>				
 					<!-- cinescope border fix -->
 					<control type="image">
 						<include>screen_Dimensions</include>
@@ -172,7 +172,7 @@
 						<width>screen_Width</width>
 						<height>screen_Height</height>
 						<texture>overlays/base_color.png</texture>
-						<colordiffuse>$VAR[diffusebg]</colordiffuse>	
+						<colordiffuse>$VAR[diffusebg]</colordiffuse>
 					</control>
 					<!-- play now widget -->
 					<control type="group">
@@ -355,7 +355,7 @@
 						<include>screen_Dimensions</include>
 						<texture>$VAR[fanart_Fallback.Player]</texture>
 						<animation effect="fade" start="0" end="35" time="0" condition="Skin.HasSetting(fanart.visualization.blend)">Conditional</animation>
-						<visible>[Skin.HasSetting(fanart.visualization) + Skin.HasSetting(artistslideshow.disable)]</visible>
+						<visible>[Skin.HasSetting(fanart.visualization) + Skin.HasSetting(artistslideshow.disable) + Skin.HasSetting(backgroundvideo.global)]</visible>
 					</control>
 					<control type="multiimage">
 						<include>screen_Dimensions</include>
@@ -364,7 +364,7 @@
 						<timeperimage>8000</timeperimage>
 						<fadetime>fadetime_Slideshow</fadetime>
 						<animation effect="fade" start="0" end="35" time="250" condition="Skin.HasSetting(fanart.visualization.blend)">Conditional</animation>
-						<visible>Skin.HasSetting(fanart.visualization) + !Skin.HasSetting(artistslideshow.disable)</visible>
+						<visible>Skin.HasSetting(fanart.visualization) + !Skin.HasSetting(artistslideshow.disable) + Skin.HasSetting(backgroundvideo.global)</visible>
 					</control>
 					<control type="image">
 						<width>screen_Width</width>

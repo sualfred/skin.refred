@@ -17,10 +17,10 @@
 			<include>home_NowPlaying</include>
 			
 			<control type="image">
-			<include>screen_Dimensions</include>
-			<texture colordiffuse="base_1play">overlays/base_color.png</texture>
-			<visible>[!Player.HasMedia + !Player.HasAudio]</visible>
-			<include>fadeinout</include>
+				<include>screen_Dimensions</include>
+				<texture colordiffuse="base_1play">overlays/base_color.png</texture>
+				<visible>!Player.HasMedia + !Player.HasAudio</visible>
+				<include>fadeinout</include>
 			</control>
 			
 		<!--widgets-->
