@@ -6,7 +6,7 @@
 	<color name="base_1osd">dd575657</color><!--blue diffuse for OSD panels-->
 	<color name="base_2">cc525354</color><!--primary overlay / menu color-->
 	<color name="base_3">bb575657</color><!--secondary overlay / menu color (home menu)-->
-	<color name="base_3music">aa0c2c40</color><!-- blue background diffuse for music playback. active when visualization is visibile-->
+	<color name="base_3music">aa292827</color><!-- blue background diffuse for music playback. active when visualization is visibile-->
 	<color name="base_4">dd525354</color><!--secondary overlay / menu color (home menu)-->
 	<color name="base_5">dd575657</color><!--secondary overlay / menu color (home menu)-->
 	<color name="base_6">dd575657</color><!--secondary overlay / menu color (home menu)-->
@@ -44,5 +44,32 @@
 	<color name="column2">ff525354</color><!--primary columns base color-->
 	<color name="column3">dd575657</color><!--secondary columns base color-->
 	<color name="column4">dd575657</color><!--secondary columns base color-->
+
+<!-- bello colors for music visualization -->
+	<color name="33white">33FFFFFF</color>
+	<color name="44white">44FFFFFF</color>
+	<color name="55white">55FFFFFF</color>
+	<color name="66white">66FFFFFF</color>
+	<color name="77white">77FFFFFF</color>
+	<color name="88white">88FFFFFF</color>
+	<color name="99white">99FFFFFF</color>
+	<color name="aawhite">AAFFFFFF</color>	
+	<color name="bbwhite">BBFFFFFF</color>
+	<color name="ccwhite">CCFFFFFF</color>	
+	<color name="ddwhite">DDFFFFFF</color>	
+	<color name="eewhite">EEFFFFFF</color>
+	<color name="ccblack">CC000000</color>
+	<color name="aagrey">AADDDDDD</color>
+	<color name="bbgrey">BBDDDDDD</color>
+	<color name="ccgrey">CCDDDDDD</color>
+	<color name="ddgrey">DDDDDDDD</color>
+	<color name="99grey">99DDDDDD</color>
+	<color name="88grey">88DDDDDD</color>
+	<color name="77grey">77DDDDDD</color>
+	<color name="66grey">66DDDDDD</color>
+	<color name="55grey">55DDDDDD</color>
+	<color name="44grey">44DDDDDD</color>
+	<color name="33grey">33DDDDDD</color>
+	<color name="22grey">22DDDDDD</color>
 	
 </colors>
