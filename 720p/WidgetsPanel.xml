@@ -1,0 +1,982 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<includes>	
+	<include name="widgetspanel">
+			
+			<!-- in progress panel -->
+			<control type="group" id="9145">
+				<visible>[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(802) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(802) + !Player.HasMedia + !Player.HasAudio)] + !ControlGroup(5562).HasFocus()</visible>
+				<include condition="Skin.HasSetting(widgets.center.enabled) + Skin.HasSetting(home.menu2)">widgetslide_Center</include>
+				<include condition="!Skin.HasSetting(widgets.center.enabled) | !Skin.HasSetting(home.menu2)">widgetslide</include>
+				<include>screen_Dimensions</include>
+				<include condition="Skin.HasSetting(widgets.center.enabled) + Skin.HasSetting(home.menu2)">centerwidgets</include>
+					<control type="group">
+						<control type="image">
+							<left>0</left>
+							<top>85</top>
+							<width>1280</width>
+							<height>157</height>
+							<texture>overlays/diffuse2.png</texture>
+							<visible>Control.HasFocus(9140)</visible>
+							<include>fadeinoutdelay</include>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>85</top>
+							<width>1280</width>
+							<height>157</height>
+							<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+							<visible>Control.HasFocus(9140)</visible>
+							<include>fadeinoutdelay</include>
+						</control>
+					</control>					
+					<control type="label">
+						<posx>100</posx>
+						<posy>45</posy>
+						<label>$LOCALIZE[575]: $LOCALIZE[20343]</label>
+						<font>light_Header</font>
+						<visible>Skin.HasSetting(inprogressWidgets.episodes) | [!Skin.HasSetting(inprogressWidgets.movies) + !Skin.HasSetting(inprogressWidgets.episodes) + [Container(9140).HasFocus(1) | Container(9140).HasFocus(2) | Container(9140).HasFocus(3) | Container(9140).HasFocus(4) | Container(9140).HasFocus(5)]] + IntegerGreaterThan(Container(9140).NumItems,0)</visible>
+					</control>
+					<control type="label">
+						<posx>100</posx>
+						<posy>45</posy>
+						<label>$LOCALIZE[575]: $LOCALIZE[20342]</label>
+						<font>light_Header</font>
+						<visible>Skin.HasSetting(inprogressWidgets.movies) | [!Skin.HasSetting(inprogressWidgets.movies) + !Skin.HasSetting(inprogressWidgets.episodes) + [Container(9140).HasFocus(8) | Container(9140).HasFocus(8) | Container(9140).HasFocus(6) | Container(9140).HasFocus(7) | Container(9140).HasFocus(9) | Container(9140).HasFocus(10)]] + IntegerGreaterThan(Container(9140).NumItems,0)</visible>
+					</control>					
+					<control type="list" id="9140">
+						<top>90</top>
+						<include>screen_Dimensions</include>
+						<ondown>9110</ondown>
+						<onback>9110</onback>
+						<orientation>horizontal</orientation>
+						<pagecontrol>25</pagecontrol>
+						<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(9140)</autoscroll>
+						<include condition="Skin.HasSetting(inprogressWidgets.movies)">widgets_inprogress_movies</include>
+						<include condition="Skin.HasSetting(inprogressWidgets.episodes)">widgets_inprogress_episodes</include>
+						<include condition="!Skin.HasSetting(inprogressWidgets.movies) + !Skin.HasSetting(inprogressWidgets.episodes)">widgets_inprogress</include>
+						<control type="image">
+							<include>screen_Dimensions</include>
+							<info>ListItem.Thumb</info>
+							<aspectratio>scale</aspectratio>
+						</control>						
+					  <itemlayout width="109" height="720">
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>147</height>
+							<info>ListItem.ActualIcon</info>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<bordersize>5</bordersize>
+							<aspectratio>scale</aspectratio>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>147</height>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+					  </itemlayout>	  
+					  <focusedlayout height="720" width="109">
+						<control type="group">
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>147</height>
+							<texture>white.png</texture>
+							<visible>Control.IsVisible(9141)</visible>
+							</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>147</height>
+							<info>ListItem.ActualIcon</info>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<aspectratio>scale</aspectratio>
+							<bordersize>5</bordersize>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>147</height>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+						</control>
+						<control type="group">
+							<visible>!Container(9140).Position(9) + !Container(9140).Position(8)</visible>
+							<control type="label">
+								<posx>100</posx>
+								<posy>150</posy>
+								<width>430</width>
+								<height>22</height>
+								<font>regular_Small</font>
+								<align>left</align>
+								<info>ListItem.Label</info>
+							</control>
+							<control type="label">
+								<posx>100</posx>
+								<posy>170</posy>
+								<width>430</width>
+								<height>22</height>
+								<font>regular_Small</font>
+								<align>left</align>
+								<info>ListItem.Label2</info>
+								<include>fadeinout</include>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9140).Position(9) | Container(9140).Position(8)</visible>
+							<control type="label">
+								<posx>200</posx>
+								<posy>150</posy>
+								<width>430</width>
+								<height>22</height>
+								<font>regular_Small</font>
+								<align>right</align>
+								<info>ListItem.Label</info>
+							</control>
+							<control type="label">
+								<posx>200</posx>
+								<posy>170</posy>
+								<width>430</width>
+								<height>22</height>
+								<font>regular_Small</font>
+								<align>right</align>
+								<info>ListItem.Label2</info>
+								<include>fadeinout</include>
+							</control>
+						</control>
+					  </focusedlayout>
+					</control>
+				</control>
+			
+			<!-- movies panel -->
+			<control type="group" id="9155">
+				<visible>[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(200) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(200) + !Player.HasMedia + !Player.HasAudio)] + !ControlGroup(5562).HasFocus()</visible>
+				<animation tween="Back" easing="InOut" effect="slide" start="0,-720" end="0,0" time="1000" condition="!ControlGroup(5562).HasFocus()">Conditional</animation>
+				<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,-720" time="1000" delay="500" condition="ControlGroup(5562).HasFocus()">Conditional</animation>
+				<include condition="Skin.HasSetting(widgets.center.enabled) + Skin.HasSetting(home.menu2)">widgetslide_Center</include>
+				<include condition="!Skin.HasSetting(widgets.center.enabled) | !Skin.HasSetting(home.menu2)">widgetslide</include>
+				<include>screen_Dimensions</include>
+				<include condition="Skin.HasSetting(widgets.center.enabled) + Skin.HasSetting(home.menu2)">centerwidgets</include>
+					<control type="group">
+						<control type="image">
+							<left>0</left>
+							<top>85</top>
+							<width>1280</width>
+							<height>157</height>
+							<texture>overlays/diffuse2.png</texture>
+							<visible>Control.HasFocus(9150)</visible>
+							<include>fadeinoutdelay</include>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>85</top>
+							<width>1280</width>
+							<height>157</height>
+							<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+							<visible>Control.HasFocus(9150)</visible>
+							<include>fadeinoutdelay</include>
+						</control>
+					</control>
+					<control type="label">
+						<posx>100</posx>
+						<posy>45</posy>
+						<label>$LOCALIZE[20386]</label>
+						<font>light_Header</font>
+						<visible>!Skin.HasSetting(widgets.randommovies.enabled) + IntegerGreaterThan(Container(9150).NumItems,0)</visible>
+					</control>
+					<control type="label">
+						<posx>100</posx>
+						<posy>45</posy>
+						<label>$LOCALIZE[590]: $LOCALIZE[342]</label>
+						<font>light_Header</font>
+						<visible>Skin.HasSetting(widgets.randommovies.enabled) + IntegerGreaterThan(Container(9150).NumItems,0)</visible>
+					</control>
+				
+					<control type="list" id="9150">
+					  <posy>90</posy>
+						<include>screen_Dimensions</include>
+						<ondown>9110</ondown>
+						<onback>9110</onback>
+						<orientation>horizontal</orientation>
+						<pagecontrol>25</pagecontrol>
+						<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(9150)</autoscroll>
+						<include condition="!Skin.HasSetting(widgets.randommovies.enabled)">widgets_movies_new</include>
+						<include condition="Skin.HasSetting(widgets.randommovies.enabled)">widgets_movies_random</include>
+						<control type="image">
+							<include>screen_Dimensions</include>
+							<info>ListItem.Thumb</info>
+							<aspectratio>scale</aspectratio>
+						</control>
+						
+					  <itemlayout width="109" height="720">
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>147</height>
+							<info>ListItem.ActualIcon</info>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<bordersize>5</bordersize>
+							<aspectratio>scale</aspectratio>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>147</height>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+					  </itemlayout>	  
+					  <focusedlayout height="720" width="109">
+							<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>147</height>
+							<texture>white.png</texture>
+							<visible>Control.IsVisible(9152)</visible>
+							</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>147</height>
+							<info>ListItem.ActualIcon</info>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<aspectratio>scale</aspectratio>
+							<bordersize>5</bordersize>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>147</height>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+						<control type="label">
+							<posx>100</posx>
+							<posy>155</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>left</align>
+							<info>ListItem.Label</info>
+							<visible>!Container(9150).Position(9) + !Container(9150).Position(8)</visible>
+						</control>
+						<control type="label">
+							<posx>200</posx>
+							<posy>155</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>right</align>
+							<info>ListItem.Label</info>
+							<visible>Container(9150).Position(9) | Container(9150).Position(8)</visible> 
+						</control>
+					  </focusedlayout>
+					</control>
+			</control>
+			
+			<control type="group" id="9165">
+				<visible>[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(300) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(300) + !Player.HasMedia + !Player.HasAudio)] + !ControlGroup(5562).HasFocus()</visible>
+				<animation tween="Back" easing="InOut" effect="slide" start="0,-720" end="0,0" time="1000" condition="!ControlGroup(5563).HasFocus()">Conditional</animation>
+				<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,-720" time="1000" delay="500" condition="ControlGroup(5563).HasFocus()">Conditional</animation>
+				<include condition="Skin.HasSetting(widgets.center.enabled) + Skin.HasSetting(home.menu2)">widgetslide_Center</include>
+				<include condition="!Skin.HasSetting(widgets.center.enabled) | !Skin.HasSetting(home.menu2)">widgetslide</include>
+				<include>screen_Dimensions</include>
+				<include condition="Skin.HasSetting(widgets.center.enabled) + Skin.HasSetting(home.menu2)">centerwidgets</include>
+					<control type="group">
+						<control type="image">
+							<left>0</left>
+							<top>85</top>
+							<width>1280</width>
+							<height>157</height>
+							<texture>overlays/diffuse2.png</texture>
+							<visible>Control.HasFocus(9160)</visible>
+							<include>fadeinoutdelay</include>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>85</top>
+							<width>1280</width>
+							<height>157</height>
+							<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+							<visible>Control.HasFocus(9160)</visible>
+							<include>fadeinoutdelay</include>
+						</control>
+					</control>
+					<control type="label">
+						<posx>100</posx>
+						<posy>45</posy>
+						<label>$LOCALIZE[20387]</label>
+						<font>light_Header</font>
+						<visible>!Skin.HasSetting(widgets.randomepisodes.enabled) + IntegerGreaterThan(Container(9160).NumItems,0)</visible>
+					</control>
+					<control type="label">
+						<posx>100</posx>
+						<posy>45</posy>
+						<label>$LOCALIZE[590]: $LOCALIZE[20453]</label>
+						<font>light_Header</font>
+						<visible>Skin.HasSetting(widgets.randomepisodes.enabled) + IntegerGreaterThan(Container(9160).NumItems,0)</visible>
+					</control>
+					<control type="list" id="9160">
+					  <posy>90</posy>
+						<include>screen_Dimensions</include>
+						<ondown>9110</ondown>
+						<onback>9110</onback>
+						<orientation>horizontal</orientation>
+						<pagecontrol>25</pagecontrol>
+						<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(9160)</autoscroll>
+						<include condition="!Skin.HasSetting(widgets.randomepisodes.enabled)">widgets_episodes_new</include>
+						<include condition="Skin.HasSetting(widgets.randomepisodes.enabled)">widgets_episodes_random</include>
+						<control type="image">
+							<include>screen_Dimensions</include>
+							<info>ListItem.Thumb</info>
+							<aspectratio>scale</aspectratio>
+						</control>						
+					  <itemlayout width="109" height="720">
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>147</height>
+							<info>ListItem.ActualIcon</info>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<bordersize>5</bordersize>
+							<aspectratio>scale</aspectratio>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>147</height>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+					  </itemlayout>	  
+					  <focusedlayout height="720" width="109">
+							<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>147</height>
+							<texture>white.png</texture>
+							<visible>Control.IsVisible(9162)</visible>
+							</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>147</height>
+							<info>ListItem.ActualIcon</info>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<aspectratio>scale</aspectratio>
+							<bordersize>5</bordersize>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>147</height>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+						<control type="label">
+							<posx>100</posx>
+							<posy>170</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>left</align>
+							<info>ListItem.Label</info>
+							<visible>!Container(9160).Position(9) + !Container(9160).Position(8)</visible> 
+						</control>
+						<control type="label">
+							<posx>100</posx>
+							<posy>150</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>left</align>
+							<info>ListItem.Label2</info>
+							<visible>!Container(9160).Position(9) + !Container(9160).Position(8)</visible> 
+						</control>
+						<control type="label">
+							<posx>200</posx>
+							<posy>170</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>right</align>
+							<info>ListItem.Label</info>
+							<visible>Container(9160).Position(9) | Container(9160).Position(8)</visible> 
+						</control>
+						<control type="label">
+							<posx>200</posx>
+							<posy>150</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>right</align>
+							<info>ListItem.Label2</info>
+							<visible>Container(9160).Position(9) | Container(9160).Position(8)</visible> 
+						</control>
+									
+					  </focusedlayout>
+					</control>
+					
+			</control>
+			
+			<control type="group" id="9175">
+				<visible>[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(500) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(500) + !Player.HasMedia + !Player.HasAudio)] + !ControlGroup(5562).HasFocus()</visible>
+				<animation tween="Back" easing="InOut" effect="slide" start="0,-720" end="0,0" time="1000" condition="!ControlGroup(5564).HasFocus()">Conditional</animation>
+				<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,-720" time="1000" delay="500" condition="ControlGroup(5564).HasFocus()">Conditional</animation>
+				<include>fadeinout</include>
+				<include>screen_Dimensions</include>
+				<include condition="Skin.HasSetting(widgets.center.enabled) + Skin.HasSetting(home.menu2)">centerwidgets_Square</include>	
+					<control type="label">
+						<posx>100</posx>
+						<posy>45</posy>
+						<label>$LOCALIZE[590]</label>
+						<font>light_Header</font>
+						<visible>Skin.HasSetting(widgets.randommusic.enabled) + IntegerGreaterThan(Container(9170).NumItems,0)</visible>
+					</control>
+					<control type="label">
+						<posx>100</posx>
+						<posy>45</posy>
+						<label>$LOCALIZE[32014]</label>
+						<font>light_Header</font>
+						<visible>!Skin.HasSetting(widgets.randommusic.enabled) + IntegerGreaterThan(Container(9170).NumItems,0)</visible>
+					</control>				
+					<control type="list" id="9170">
+					  <posy>90</posy>
+						<include>screen_Dimensions</include>
+						<visible>Library.HasContent(music)</visible>
+						<ondown>9110</ondown>
+						<onback>9110</onback>
+						<onclick>9110</onclick>
+						<orientation>horizontal</orientation>
+						<pagecontrol>25</pagecontrol>
+						<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(9170)</autoscroll>
+						<include condition="!Skin.HasSetting(widgets.randommusic.enabled)">widgets_music_recent</include>
+						<include condition="Skin.HasSetting(widgets.randommusic.enabled)">widgets_music_random</include>
+						<control type="image">
+							<include>screen_Dimensions</include>
+							<info>ListItem.Thumb</info>
+							<aspectratio>scale</aspectratio>
+						</control>
+						
+						  <itemlayout width="109" height="720">
+							<control type="image">
+								<posx>100</posx>
+								<width>100</width>
+								<height>100</height>
+								<texture>DefaultAddonAlbumInfo.png</texture>
+								<bordertexture colordiffuse="base_5">white.png</bordertexture>
+								<aspectratio>scale</aspectratio>
+								<bordersize>5</bordersize>
+							</control>
+							<control type="image">
+								<posx>100</posx>
+								<width>100</width>
+								<height>100</height>
+								<info>ListItem.ActualIcon</info>
+								<bordertexture colordiffuse="base_5">white.png</bordertexture>
+								<bordersize>5</bordersize>
+								<aspectratio>scale</aspectratio>
+							</control>
+							<control type="image">
+								<posx>100</posx>
+								<width>100</width>
+								<height>100</height>
+								<texture>overlays/cover_overlay.png</texture>
+								<aspectratio>scale</aspectratio>
+								<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+							</control>
+						  </itemlayout>
+	  
+						<focusedlayout height="720" width="109">
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<texture>white.png</texture>
+							<visible>Control.HasFocus(9170)</visible>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<texture>DefaultAddonAlbumInfo.png</texture>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<aspectratio>scale</aspectratio>
+							<bordersize>5</bordersize>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<info>ListItem.ActualIcon</info>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<aspectratio>scale</aspectratio>
+							<bordersize>5</bordersize>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+						<control type="label">
+							<posx>100</posx>
+							<posy>103</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>left</align>
+							<info>ListItem.Label</info>
+							<visible>!Container(9170).Position(9) + !Container(9170).Position(8)</visible> 
+						</control>
+						<control type="label">
+							<posx>100</posx>
+							<posy>123</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>left</align>
+							<info>ListItem.Label2</info>
+							<visible>!Container(9170).Position(9) + !Container(9170).Position(8)</visible> 
+						</control>
+						<control type="label">
+							<posx>200</posx>
+							<posy>103</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>right</align>
+							<info>ListItem.Label</info>
+							<visible>Container(9170).Position(9) | Container(9170).Position(8)</visible> 
+						</control>
+						<control type="label">
+							<posx>200</posx>
+							<posy>123</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>right</align>
+							<info>ListItem.Label2</info>
+							<visible>Container(9170).Position(9) | Container(9170).Position(8)</visible> 
+						</control>
+									
+					  </focusedlayout>
+					</control>
+					
+			</control>
+			
+			<control type="group" id="9185">
+				<visible>[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(904) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(904) + !Player.HasMedia + !Player.HasAudio)]</visible>
+				<include>fadeinout</include>
+				<include>screen_Dimensions</include>
+				<include condition="Skin.HasSetting(widgets.center.enabled) + Skin.HasSetting(home.menu2)">centerwidgets_Square</include>
+					<control type="label">
+						<posx>100</posx>
+						<posy>45</posy>
+						<label>$LOCALIZE[1036] Widgets</label>
+						<font>light_Header</font>
+						<visible>IntegerGreaterThan(Container(9180).NumItems,0)</visible>
+					</control>
+					<control type="list" id="9180">
+					  <posy>90</posy>
+						<include>screen_Dimensions</include>
+						<ondown>9110</ondown>
+						<onback>9110</onback>
+						<onclick>9110</onclick>
+						<orientation>horizontal</orientation>
+						<pagecontrol>25</pagecontrol>
+						<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(9180)</autoscroll>
+						<include>widgets_fav</include>
+						<control type="image">
+							<include>screen_Dimensions</include>
+							<info>ListItem.Thumb</info>
+							<aspectratio>scale</aspectratio>
+						</control>
+						
+					  <itemlayout width="105" height="720">
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<info>ListItem.ActualIcon</info>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<bordersize>5</bordersize>
+							<aspectratio>scale</aspectratio>
+						
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+					  </itemlayout>
+	  
+						<focusedlayout height="720" width="105">
+							<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<texture>white.png</texture>
+							<visible>Control.HasFocus(9180)</visible>
+							</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<info>ListItem.ActualIcon</info>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<aspectratio>scale</aspectratio>
+							<bordersize>5</bordersize>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+						<control type="label">
+							<posx>100</posx>
+							<posy>103</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>left</align>
+							<info>ListItem.Label</info>
+							<include>fadeinout</include>
+						</control>
+						<control type="label">
+							<posx>100</posx>
+							<posy>123</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>left</align>
+							<info>ListItem.Label2</info>
+							<include>fadeinout</include>
+						</control>
+									
+					  </focusedlayout>
+					</control>
+					
+			</control>
+			
+			<control type="group" id="9186">
+				<visible>[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(908) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(908) + !Player.HasMedia + !Player.HasAudio)]</visible>
+				<include>fadeinout</include>
+				<include>screen_Dimensions</include>
+				<include condition="Skin.HasSetting(widgets.center.enabled) + Skin.HasSetting(home.menu2)">centerwidgets_Square</include>
+					<control type="label">
+						<posx>100</posx>
+						<posy>45</posy>
+						<label>$INFO[Skin.String(Customb1.label)] Widgets</label>
+						<font>light_Header</font>
+						<visible>IntegerGreaterThan(Container(9181).NumItems,0)</visible>
+					</control>
+					<control type="list" id="9181">
+					  <posy>90</posy>
+						<include>screen_Dimensions</include>
+						<ondown>9110</ondown>
+						<onback>9110</onback>
+						<onclick>9110</onclick>
+						<orientation>horizontal</orientation>
+						<pagecontrol>25</pagecontrol>
+						<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(9181)</autoscroll>
+						<include>widgets_customb1</include>
+						<control type="image">
+							<include>screen_Dimensions</include>
+							<info>ListItem.Thumb</info>
+							<aspectratio>scale</aspectratio>
+						</control>
+						
+					  <itemlayout width="105" height="720">
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<info>ListItem.ActualIcon</info>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<bordersize>5</bordersize>
+							<aspectratio>scale</aspectratio>
+						
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+					  </itemlayout>
+	  
+						<focusedlayout height="720" width="105">
+							<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<texture>white.png</texture>
+							<visible>Control.HasFocus(9181)</visible>
+							</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<info>ListItem.ActualIcon</info>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<aspectratio>scale</aspectratio>
+							<bordersize>5</bordersize>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+						<control type="label">
+							<posx>100</posx>
+							<posy>103</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>left</align>
+							<info>ListItem.Label</info>
+							<include>fadeinout</include>
+						</control>
+						<control type="label">
+							<posx>100</posx>
+							<posy>123</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>left</align>
+							<info>ListItem.Label2</info>
+							<include>fadeinout</include>
+						</control>
+									
+					  </focusedlayout>
+					</control>
+					
+			</control>
+			
+			<control type="group" id="9188">
+				<visible>[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(909) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(909) + !Player.HasMedia + !Player.HasAudio)]</visible>
+				<include>fadeinout</include>
+				<include condition="Skin.HasSetting(widgets.center.enabled) + Skin.HasSetting(home.menu2)">centerwidgets_Square</include>
+				<include>screen_Dimensions</include>
+					<control type="label">
+						<posx>100</posx>
+						<posy>45</posy>
+						<label>$INFO[Skin.String(Customb2.label)] Widgets</label>
+						<font>light_Header</font>
+						<visible>IntegerGreaterThan(Container(9183).NumItems,0)</visible>
+					</control>
+					<control type="list" id="9183">
+					  <posy>90</posy>
+						<include>screen_Dimensions</include>
+						<ondown>9110</ondown>
+						<onback>9110</onback>
+						<onclick>9110</onclick>
+						<orientation>horizontal</orientation>
+						<pagecontrol>25</pagecontrol>
+						<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(9183)</autoscroll>
+						<include>widgets_customb2</include>
+						<control type="image">
+							<include>screen_Dimensions</include>
+							<info>ListItem.Thumb</info>
+							<aspectratio>scale</aspectratio>
+						</control>
+						
+					  <itemlayout width="105" height="720">
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<info>ListItem.ActualIcon</info>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<bordersize>5</bordersize>
+							<aspectratio>scale</aspectratio>
+						
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+					  </itemlayout>
+	  
+						<focusedlayout height="720" width="105">
+							<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<texture>white.png</texture>
+							<visible>Control.HasFocus(9183)</visible>
+							</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<info>ListItem.ActualIcon</info>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<aspectratio>scale</aspectratio>
+							<bordersize>5</bordersize>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+						<control type="label">
+							<posx>100</posx>
+							<posy>103</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>left</align>
+							<info>ListItem.Label</info>
+							<include>fadeinout</include>
+						</control>
+						<control type="label">
+							<posx>100</posx>
+							<posy>123</posy>
+							<width>430</width>
+							<height>22</height>
+							<font>regular_Small</font>
+							<align>left</align>
+							<info>ListItem.Label2</info>
+							<include>fadeinout</include>
+						</control>
+									
+					  </focusedlayout>
+					</control>
+					
+			</control>
+					
+			<!--invisible widget list for random pics-->
+			<control type="group" id="9185">
+				<visible>Container(9110).HasFocus(100)</visible>
+					<control type="list" id="9180">
+						<orientation>horizontal</orientation>
+						<pagecontrol>25</pagecontrol>
+						<autoscroll delay="10000" time="5000" repeat="10000">True</autoscroll>
+						<include condition="!Skin.HasSetting(widgets.randommovies.enabled)">widgets_movies_new</include>
+						<include condition="Skin.HasSetting(widgets.randommovies.enabled)">widgets_movies_random</include>
+							 <itemlayout width="1" height="1">
+								<control type="label">
+								<width>1</width>
+								<height>1</height>
+								<info>ListItem.Label</info>
+								</control>
+							</itemlayout>
+	  						<focusedlayout height="1" width="1">
+								<control type="label">
+								<width>1</width>
+								<height>1</height>
+								<info>ListItem.Label</info>
+								</control>
+							</focusedlayout>
+					</control>
+			</control>
+			
+			<!--invisible widget list for movie pics-->
+			<control type="group" id="9156">
+				<visible>Container(9110).HasFocus(200)</visible>
+					<control type="list" id="9151">
+						<orientation>horizontal</orientation>
+						<pagecontrol>25</pagecontrol>
+						<autoscroll delay="10000" time="5000" repeat="10000">True</autoscroll>
+						<include condition="!Skin.HasSetting(widgets.randommovies.enabled)">widgets_movies_new</include>
+						<include condition="Skin.HasSetting(widgets.randommovies.enabled)">widgets_movies_random</include>
+							 <itemlayout width="1" height="1">
+								<control type="label">
+								<width>1</width>
+								<height>1</height>
+								<info>ListItem.Label</info>
+								</control>
+							</itemlayout>
+	  						<focusedlayout height="1" width="1">
+								<control type="label">
+								<width>1</width>
+								<height>1</height>
+								<info>ListItem.Label</info>
+								</control>
+							</focusedlayout>
+					</control>
+			</control>
+			<!--invisible widget list for tvshow pics-->
+			<control type="group" id="9166">
+				<visible>Container(9110).HasFocus(300)</visible>
+					<control type="list" id="9161">
+						<orientation>horizontal</orientation>
+						<pagecontrol>25</pagecontrol>
+						<autoscroll delay="10000" time="5000" repeat="10000">True</autoscroll>
+						<include condition="!Skin.HasSetting(widgets.randommovies.enabled)">widgets_episodes_new</include>
+						<include condition="Skin.HasSetting(widgets.randommovies.enabled)">widgets_episodes_random</include>
+							 <itemlayout width="1" height="1">
+								<control type="label">
+								<width>1</width>
+								<height>1</height>
+								<info>ListItem.Label</info>
+								</control>
+							</itemlayout>
+	  						<focusedlayout height="1" width="1">
+								<control type="label">
+								<width>1</width>
+								<height>1</height>
+								<info>ListItem.Label</info>
+								</control>
+							</focusedlayout>
+					</control>
+			</control>
+			<!--invisible widget list for music pics-->
+			<control type="group" id="9176">
+				<visible>Container(9110).HasFocus(500)</visible>
+					<control type="list" id="9171">
+						<orientation>horizontal</orientation>
+						<pagecontrol>25</pagecontrol>
+						<autoscroll delay="10000" time="5000" repeat="10000">True</autoscroll>
+						<include condition="!Skin.HasSetting(widgets.randommusic.enabled)">widgets_music_recent</include>
+						<include condition="Skin.HasSetting(widgets.randommusic.enabled)">widgets_music_random</include>
+							 <itemlayout width="1" height="1">
+								<control type="label">
+								<width>1</width>
+								<height>1</height>
+								<info>ListItem.Label</info>
+								</control>
+							</itemlayout>
+	  						<focusedlayout height="1" width="1">
+								<control type="label">
+								<width>1</width>
+								<height>1</height>
+								<info>ListItem.Label</info>
+								</control>
+							</focusedlayout>
+					</control>
+			</control>
+			
+	</include>
+</includes>

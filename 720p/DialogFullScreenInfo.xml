@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<controls>
+		<!--clock-->
+		<control type="group">
+			<visible>![Window.IsActive(infodialog) | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)]</visible>
+			<include>clock</include>
+		</control>
+		<!--media info-->
+		<include>osd_Video_info</include>
+	</controls>
+</window>

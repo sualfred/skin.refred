@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="view_Hub">
+	
+		<control type="image">
+			<include>fadeinout</include>
+			<include>toggle_Menu</include>
+			<include>transition_Info</include>
+			<visible>Control.IsVisible(556)</visible>
+			<left>100</left>
+			<top>100</top>
+			<width>330</width>
+			<height>540</height>
+			<!--<texture colordiffuse="base_1play">overlays/semitrans.png</texture>-->
+			<texture colordiffuse="base_1play">overlays/diffuse.png</texture>
+		</control>
+		
+		<!-- buttons -->
+		<control type="list" id="556">
+			<viewtype label="Hub">Hub</viewtype> 	
+			<left>100</left>
+			<top>100</top>
+			<width>330</width>
+			<height>540</height>
+			<onright>5561</onright>
+			<onup>556</onup>
+			<ondown>556</ondown>
+			<onleft>6000</onleft>
+			<content>
+			<include>QuickNavMoviesHub</include>
+			</content>
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<include>toggle_Menu</include>
+			<include>global_ListScroll</include>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="330" height="54" align="right">
+				 <control type="label">
+					<left>20</left>
+					<top>5</top>
+					<width>280</width>
+					<visible>true</visible>
+					<label>$VAR[global_Title]</label>
+					<include>container_Title</include>
+				</control>
+				<control type="image">
+					<top>54</top>
+					<width>330</width>
+					<height>1</height>
+					<texture colordiffuse="whitetrans0">white.png</texture>
+				</control>
+			</itemlayout>
+			<focusedlayout width="330" height="54">
+				<control type="image">
+					<width>330</width>
+					<height>54</height>
+					<texture>views/focus.png</texture>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>5</top>
+					<aligny>center</aligny>
+					<width>280</width>
+					<visible>true</visible>
+					<label>$VAR[global_Title]</label>
+					<include>container_Title-focus</include>
+				</control>
+			</focusedlayout>
+		</control>
+		
+		<!-- widget window -->
+		<control type="image">
+			<left>440</left>
+			<top>100</top>
+			<width>730</width>
+			<height>540</height>
+			<texture>white.png</texture>
+			<visible>Control.HasFocus(5561)</visible>
+		</control>
+		<control type="image">
+			<left>440</left>
+			<top>100</top>
+			<width>730</width>
+			<height>540</height>
+			<texture>white.png</texture>
+			<include>bordertrans</include>
+			<visible>!Control.HasFocus(5561)</visible>
+		</control>
+		<control type="list" id="5561">
+			<visible>!Container(556).HasFocus(2) + !Container(556).HasFocus(14)</visible>
+			<left>445</left>
+			<top>105</top>
+			<width>720</width>
+			<height>530</height>
+			<onleft>556</onleft>
+			<onright>70</onright>
+			<onup>5561</onup>
+			<ondown>5561</ondown>
+			<content>videodb://movies/titles/</content>
+			<!--<include>widgets_movies_random</include>-->
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<include>toggle_Menu</include>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5561)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+				 <include>hubwidget-commons</include>
+			</itemlayout>
+			<focusedlayout width="720" height="530">
+				<include>hubwidget-commons</include>
+			</focusedlayout>
+		</control>
+		<control type="list" id="5561">
+			<visible>Container(556).HasFocus(2)</visible>
+			<left>445</left>
+			<top>105</top>
+			<width>720</width>
+			<height>530</height>
+			<onleft>556</onleft>
+			<onright>70</onright>
+			<onup>5561</onup>
+			<ondown>5561</ondown>
+			<include>widgets_movies_new</include>
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<include>toggle_Menu</include>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5561)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+				 <include>hubwidget-commons</include>
+			</itemlayout>
+			<focusedlayout width="720" height="530">
+				<include>hubwidget-commons</include>
+			</focusedlayout>
+		</control>
+		<control type="list" id="5561">
+			<visible>Container(556).HasFocus(14)</visible>
+			<left>445</left>
+			<top>105</top>
+			<width>720</width>
+			<height>530</height>
+			<onleft>556</onleft>
+			<onright>70</onright>
+			<onup>5561</onup>
+			<ondown>5561</ondown>
+			<include>widgets_inprogress_movies</include>
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<include>toggle_Menu</include>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5561)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+				 <include>hubwidget-commons</include>
+			</itemlayout>
+			<focusedlayout width="720" height="530">
+				<include>hubwidget-commons</include>
+			</focusedlayout>
+		</control>
+		<include>hubwidget-panel</include>
+	</include>
+	
+	<include name="hubwidget-commons">
+		<control type="image">
+			<width>720</width>
+			<height>530</height>
+			<texture>$VAR[hubThumb]</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+	</include>
+	
+	<include name="hubwidget-panel">
+		<control type="group">
+		<left>440</left>
+		<top>100</top>
+			<control type="image">
+				<top>415</top>
+				<left>5</left>
+				<width>720</width>
+				<height>120</height>
+				<texture colordiffuse="base_1play">overlays/semitrans.png</texture>
+			</control>
+			<control type="image">
+				<top>415</top>
+				<left>5</left>
+				<width>720</width>
+				<height>120</height>
+				<texture>overlays/diffuse.png</texture>
+			</control>
+			<control type="image">
+				<top>415</top>
+				<left>5</left>
+				<width>720</width>
+				<height>30</height>
+				<texture colordiffuse="whitetrans">overlays/white.png</texture>
+			</control>
+			<control type="label">
+				<top>410</top>
+				<left>25</left>
+				<width>680</width>
+				<visible>true</visible>
+				<label>$VAR[hubcategory]</label>
+				<textcolor>Color3</textcolor>
+				<include>container_Sub_Small</include>
+			</control>
+			<control type="image">
+				<top>415</top>
+				<left>5</left>
+				<width>720</width>
+				<height>120</height>
+				<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+			</control>
+			<control type="label">
+				<left>25</left>
+				<top>440</top>
+				<width>680</width>
+				<visible>true</visible>
+				<label>$INFO[Container(5561).ListItem.Label]</label>
+				<include>container_Title</include>
+			</control>
+			<control type="label">
+				<left>25</left>
+				<top>468</top>
+				<width>680</width>
+				<visible>true</visible>
+				<label>$VAR[hubSub]</label>
+				<include>container_Sub_Small</include>
+			</control>
+			<control type="grouplist">
+				<left>25</left>
+				<top>495</top>
+				<width>680</width>
+				<itemgap>10</itemgap>
+				<orientation>horizontal</orientation>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$VAR[hubRating]</texture>
+						<aspectratio align="center">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$VAR[hubResolution]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$VAR[hubCodec]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$VAR[hubAudioCodec]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>40</width>
+						<height>40</height>
+						<aspectratio align="left" aligny="center">keep</aspectratio>
+						<texture>$VAR[hubAudioChannels]</texture>
+					</control>	
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$VAR[hubVideoAspect]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>					
+			</control>
+		</control>
+	</include>
+</includes>

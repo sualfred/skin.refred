@@ -1,0 +1,612 @@
+# XBMC Media Center language file
+# Addon Name: reFocus
+# Addon id: skin.refocus
+# Addon version: 1.0.1
+# Addon Provider: Jeroen Pardon
+# Translators:
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: skin-refocus\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2014-02-25 23:29+0000\n"
+"Last-Translator: sebastiansaenger\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: HOME
+msgctxt "#31000"
+msgid "Home Menu"
+msgstr "Hauptmenue"
+
+
+#: Home Menu
+msgctxt "#31010"
+msgid "New Episodes"
+msgstr "Neue Episoden"
+
+msgctxt "#31011"
+msgid "New Movies"
+msgstr "Neue Filme"
+
+msgctxt "#31012"
+msgid "New Albums"
+msgstr "Neue Alben"
+
+msgctxt "#31013"
+msgid "Watchlist"
+msgstr "Watchlist"
+
+msgctxt "#31014"
+msgid "Live TV"
+msgstr "Live TV"
+
+msgctxt "#31015"
+msgid "Trailers"
+msgstr "Trailer"
+
+msgctxt "#31016"
+msgid "Recently Played"
+msgstr "Zuletzt gespielt"
+
+msgctxt "#31017"
+msgid "Recommended"
+msgstr "Empfohlen"
+
+
+#: Home shelf
+msgctxt "#31030"
+msgid "Recommended Movies"
+msgstr "Empfohlene Filme"
+
+msgctxt "#31031"
+msgid "Recommended Episodes"
+msgstr "Empfohlene Episoden"
+
+msgctxt "#31032"
+msgid "Recommended Albums"
+msgstr "Empfohlene Alben"
+
+msgctxt "#31033"
+msgid "Showing"
+msgstr "Zeigt"
+
+msgctxt "#31034"
+msgid "Now Playing"
+msgstr "Im Gange"
+
+msgctxt "#31035"
+msgid "Select tv shows widget source"
+msgstr "Waehle TV Show Widget Quelle"
+
+msgctxt "#31036"
+msgid "Select movies widget source"
+msgstr "Waehle Film widget Quelle"
+
+
+#: Home Customization
+msgctxt "#31050"
+msgid "Enable this section"
+msgstr "Aktiviere diese Sektion"
+
+msgctxt "#31051"
+msgid "Smart Playlist"
+msgstr "Smart Playlist"
+
+msgctxt "#31052"
+msgid "Select custom item type"
+msgstr "Waehle Item Typ"
+
+msgctxt "#31053"
+msgid "Select a folder"
+msgstr "Waehle Ordner"
+
+msgctxt "#31054"
+msgid "Select a playlist"
+msgstr "Waehle Playliste"
+
+msgctxt "#31055"
+msgid "Select an add-on"
+msgstr "Waehle Addon"
+
+
+#: MENU / VIEWS
+msgctxt "#31100"
+msgid "Available Views"
+msgstr "Verfuegbare Views"
+
+msgctxt "#31110"
+msgid "Banners"
+msgstr "Banner"
+
+msgctxt "#31111"
+msgid "Gallery"
+msgstr "Gallery"
+
+msgctxt "#31112"
+msgid "Slide"
+msgstr "Slide"
+
+msgctxt "#31113"
+msgid "Thumbnails"
+msgstr "Thumbnails"
+
+msgctxt "#31114"
+msgid "View"
+msgstr "View"
+
+
+msgctxt "#31120"
+msgid "Layout"
+msgstr "Layout"
+
+msgctxt "#31121"
+msgid "Landscape"
+msgstr "Landscape"
+
+msgctxt "#31122"
+msgid "Portrait"
+msgstr "Portrait"
+
+msgctxt "#31123"
+msgid "Large grid"
+msgstr "Grosser Grid"
+
+msgctxt "#31124"
+msgid "Small grid"
+msgstr "Kleiner Grid"
+
+msgctxt "#31125"
+msgid "Fullscreen"
+msgstr "Vollbild"
+
+msgctxt "#31126"
+msgid "Strip"
+msgstr "Leiste"
+
+
+msgctxt "#31140"
+msgid "Sorting"
+msgstr "Sortierung"
+
+msgctxt "#31142"
+msgid "Selected"
+msgstr "Ausgewaehlt"
+
+msgctxt "#31143"
+msgid "Items"
+msgstr "Eintraege"
+
+msgctxt "#31144"
+msgid "By"
+msgstr "Sortiert nach:"
+
+msgctxt "#31145"
+msgid "Genre unknown"
+msgstr "Genre unbekannt"
+
+msgctxt "#31146"
+msgid "Date unknown"
+msgstr "Datum unbekannt"
+
+msgctxt "#31147"
+msgid "Unwatched episode"
+msgstr "Ungesehene Episode"
+
+msgctxt "#31148"
+msgid "Unwatched episodes"
+msgstr "Ungesehene Episoden"
+
+msgctxt "#31149"
+msgid "Sort by"
+msgstr "Sortiert anhand"
+
+msgctxt "#31150"
+msgid "Files mode"
+msgstr "Datei Modus"
+
+
+#: SETTINGS
+msgctxt "#31200"
+msgid "Homescreen"
+msgstr "Homescreen"
+
+msgctxt "#31201"
+msgid "Artwork"
+msgstr "Artwork"
+
+msgctxt "#31202"
+msgid "View settings"
+msgstr "View Settings"
+
+msgctxt "#31203"
+msgid "Other"
+msgstr "Andere"
+
+msgctxt "#31204"
+msgid "About"
+msgstr "ueber"
+
+
+msgctxt "#31210"
+msgid "Customize Home menu"
+msgstr "Bearbeite Home Menue"
+
+msgctxt "#31211"
+msgid "Enable shelf"
+msgstr "Aktiviere Shelf"
+
+msgctxt "#31212"
+msgid "Use single image as background"
+msgstr "Benutze ein einzelnes Bild als Hintergrund"
+
+msgctxt "#31213"
+msgid "Use a folder of images as background slideshow"
+msgstr "Benutze ein Ordner voller Bilder als Hintegrund Slideshow"
+
+msgctxt "#31214"
+msgid "Use a slideshow of your fanart"
+msgstr "Benutze Slideshow deiner Fanart"
+
+msgctxt "#31215"
+msgid "Show now playing video in background"
+msgstr "Zeige Vollbild-Video im Hintergrund"
+
+msgctxt "#31216"
+msgid "Show now playing item in homescreen"
+msgstr "Zeige Now Playing im Homescreen"
+
+msgctxt "#31217"
+msgid "Show fanart information"
+msgstr "Zeige Fanart Informationen"
+
+msgctxt "#31218"
+msgid "this will log you out and reload the skin"
+msgstr "Dies loggt dich aus und laedt den Skin neu"
+
+
+msgctxt "#31230"
+msgid "Enable Global Fanart Background"
+msgstr "Aktiviere globalen Fanart Hintergrund"
+
+msgctxt "#31231"
+msgid "Use weather fanart"
+msgstr "Benutze Wetter Fanart"
+
+msgctxt "#31232"
+msgid "Set weather fanart path"
+msgstr "Setze Wetter Fanart"
+
+
+msgctxt "#31234"
+msgid "Use fanart in now playing screen"
+msgstr "Benutze Fanart im Now Playing Screen"
+
+msgctxt "#31235"
+msgid "Blend visualisation and fanart"
+msgstr "ueberblende Visualisierung und Fanart"
+
+msgctxt "#31236"
+msgid "Enable logos for tv shows"
+msgstr "Aktiviere Logos fuer Serien"
+
+msgctxt "#31237"
+msgid "Enable logos for movies"
+msgstr "Aktiviere Logos fuer Filme"
+
+msgctxt "#31238"
+msgid "Download logos"
+msgstr "Lade Logos"
+
+msgctxt "#31239"
+msgid "Enable banners for movies"
+msgstr "Aktiviere Banner fuer Filme"
+
+msgctxt "#31240"
+msgid "Download banners"
+msgstr "Lade Banner"
+
+msgctxt "#31241"
+msgid "Prefer landscape thumbnails when available"
+msgstr "Bevorzuge Landscape Thumbnails falls verfuegbar"
+
+msgctxt "#31242"
+msgid "Download thumbnails"
+msgstr "Lade Thumbnails"
+
+
+msgctxt "#31251"
+msgid "Highlight first letter while scrolling"
+msgstr "Hebe beim Scrollen den ersten Buchstaben hervor"
+
+msgctxt "#31252"
+msgid "Enable now playing button in options menu"
+msgstr "Aktiviere Playing Button im Optionsmenue"
+
+msgctxt "#31253"
+msgid "Enable media overlays"
+msgstr "Aktiviere Media Overlays"
+
+msgctxt "#31254"
+msgid "Show watched indicators for movies"
+msgstr "Zeige gesehen Indikator fuer Filme"
+
+msgctxt "#31255"
+msgid "Show watched indicators for TV shows"
+msgstr "Zeige gesehen Indikator fuer Serien"
+
+msgctxt "#31256"
+msgid "Show watched indicators for episodes"
+msgstr "Zeige gesehen Indikator fuer Episoden"
+
+msgctxt "#31257"
+msgid "Show watched indicators for video files"
+msgstr "Zeige gesehen Indikator fuer Video Dateien"
+
+msgctxt "#31258"
+msgid "Show resumable indicators"
+msgstr "Zeige forsetzen Indikator"
+
+msgctxt "#31259"
+msgid "Disable Next Aired add-on"
+msgstr "Deaktiviere Next Aired Addon"
+
+msgctxt "#31260"
+msgid "Use GlobalSearch add-on"
+msgstr "Benutze GlobalSearch Addon"
+
+msgctxt "#31261"
+msgid "Disable Artist Slideshow add-on"
+msgstr "Deaktiviere Artist Slideshow Addon"
+
+
+msgctxt "#31263"
+msgid "Enable virtual keyboard"
+msgstr "Aktiviere Virtuelles Keyboard"
+
+msgctxt "#31264"
+msgid "Enable kiosk mode"
+msgstr "Aktiviere Kiosk Mode"
+
+
+msgctxt "#31280"
+msgid "Plugin"
+msgstr ""
+
+msgctxt "#31281"
+msgid "Output"
+msgstr "Ausgabe"
+
+msgctxt "#31282"
+msgid "Enable TV Tunes add-on"
+msgstr "Aktiviere TV Tunes Addon"
+
+msgctxt "#31283"
+msgid "Show current playlist button when playback is stopped"
+msgstr "Zeige aktuellen Playlist Button wenn Wiedergabe gestoppt ist"
+
+
+#: OSD / PLAYER
+msgctxt "#31300"
+msgid "Fwd 2X"
+msgstr ""
+
+msgctxt "#31301"
+msgid "Fwd 4X"
+msgstr ""
+
+msgctxt "#31302"
+msgid "Fwd 8X"
+msgstr ""
+
+msgctxt "#31303"
+msgid "Fwd 16X"
+msgstr ""
+
+msgctxt "#31304"
+msgid "Fwd 32X"
+msgstr ""
+
+msgctxt "#31305"
+msgid "Rwd 2X"
+msgstr ""
+
+msgctxt "#31306"
+msgid "Rwd 4X"
+msgstr ""
+
+msgctxt "#31307"
+msgid "Rwd 8X"
+msgstr ""
+
+msgctxt "#31308"
+msgid "Rwd 16X"
+msgstr ""
+
+msgctxt "#31309"
+msgid "Rwd 32X"
+msgstr ""
+
+msgctxt "#31320"
+msgid "Get subtitles"
+msgstr "Suche Untertitel"
+
+msgctxt "#31321"
+msgid "Disable subtitles"
+msgstr "Deaktiviere Untertitel"
+
+msgctxt "#31322"
+msgid "Get lyrics"
+msgstr "Suche Lyrics"
+
+msgctxt "#31323"
+msgid "Finish Time:"
+msgstr "Endet um:"
+
+msgctxt "#31324"
+msgid "2D"
+msgstr ""
+
+msgctxt "#31325"
+msgid "3D"
+msgstr ""
+
+msgctxt "#31326"
+msgid "3D mode"
+msgstr "3D Modus"
+
+msgctxt "#31327"
+msgid "Next subtitles"
+msgstr "Naechste Unteritel"
+
+msgctxt "#31328"
+msgid "Playlist"
+msgstr "Playliste"
+
+
+#: PVR
+msgctxt "#31400"
+msgid "Available groups"
+msgstr "Verfuegbare Gruppen"
+
+msgctxt "#31401"
+msgid "Add group"
+msgstr "Fuege Gruppe hinzu"
+
+msgctxt "#31402"
+msgid "Rename group"
+msgstr "Gruppe umbenennen"
+
+msgctxt "#31403"
+msgid "Delete group"
+msgstr "Gruppe loeschen"
+
+msgctxt "#31404"
+msgid "Hidden channels"
+msgstr "Versteckte Kanaele"
+
+msgctxt "#31405"
+msgid "Apply"
+msgstr "Anwenden"
+
+#: MEDIA INFO
+msgctxt "#31500"
+msgid "Age"
+msgstr "Alter"
+
+msgctxt "#31501"
+msgid "Last aired on"
+msgstr "Zuletzt auf Sendung am"
+
+msgctxt "#31502"
+msgid "Airs next on"
+msgstr "Auf Sendung am"
+
+msgctxt "#31503"
+msgid "Status"
+msgstr ""
+
+
+msgctxt "#31520"
+msgid "Change artwork"
+msgstr "aendere Artwork
+
+msgctxt "#31521"
+msgid "Download TV Tune"
+msgstr ""
+
+msgctxt "#31522"
+msgid "Teletext"
+msgstr ""
+
+#: ADD-ONS
+msgctxt "#31600"
+msgid "Browse all movies in your library"
+msgstr "Durchsuche alle Filme in deiner Bibliothek"
+
+msgctxt "#31601"
+msgid "Browse all TV shows in your library"
+msgstr "Durchsuche alle Serien in deiner Bibliothek"
+
+msgctxt "#31602"
+msgid "The 25 most recently added movies"
+msgstr "Die 25 zuletzt hinzugefuegten Filme"
+
+msgctxt "#31603"
+msgid "The 25 most recently added episodes"
+msgstr "Die 25 zuletzt hinzugefuegten Episoden"
+
+msgctxt "#31604"
+msgid "New search"
+msgstr "Neue Suche"
+
+msgctxt "#31605"
+msgid "Currently"
+msgstr "Momentan"
+
+msgctxt "#31606"
+msgid "TV Guide"
+msgstr ""
+
+msgctxt "#31607"
+msgid "Set default lyrics add-on"
+msgstr "Setze standard Lyrics Addon"
+
+
+#: VARIABLES / OTHER
+msgctxt "#31700"
+msgid "Repositories"
+msgstr ""
+
+msgctxt "#31701"
+msgid "Min"
+msgstr ""
+
+msgctxt "#31702"
+msgid "Last played on"
+msgstr "Zuletzt gespielt am"
+
+msgctxt "#31703"
+msgid "[COLOR=Color2]New[/COLOR] Episodes"
+msgstr "[COLOR=Color2]Neue[/COLOR] Episoden"
+
+msgctxt "#31704"
+msgid "[COLOR=Color2]New[/COLOR] Movies"
+msgstr "[COLOR=Color2]Neue[/COLOR] Filme"
+
+msgctxt "#31705"
+msgid "[COLOR=Color2]Recently[/COLOR] Played"
+msgstr "[COLOR=Color2]Kuerzlich[/COLOR] gespielt"
+
+msgctxt "#31706"
+msgid "System [COLOR=Color2]Information[/COLOR]"
+msgstr "System [COLOR=Color2]Informationen[/COLOR]"
+
+
+msgctxt "#31708"
+msgid "Welcome"
+msgstr "Willkommen"
+
+msgctxt "#31709"
+msgid "Please log in"
+msgstr "Bitte einloggen"
+
+msgctxt "#31710"
+msgid "[COLOR=Color2]New[/COLOR] Music Videos"
+msgstr "[COLOR=Color2]Neue[/COLOR] Musik Videos"
+
+msgctxt "#31711"
+msgid "Searching"
+msgstr "Suche"
+
+msgctxt "#31712"
+msgid "Working"
+msgstr "Arbeitet"
+
+msgctxt "#31713"
+msgid "Reset all skin settings"
+msgstr "Alle Skin Settings zuruecksetzen"

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol always="true">10</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+	<!--trigger-->
+		<control type="button" id="8000">
+			<label>SHOULD NOT SEE ME</label>
+			<onup>53</onup>
+			<ondown>71</ondown>
+			<onleft>53</onleft>
+			<onright>53</onright>
+			<width>500</width>
+			<visible allowhiddenfocus="true">false</visible>
+		</control>
+
+	<!--global includes-->
+		<include>global_Background</include>
+		<include>global_MenuGuide</include>
+		<include>global_Includes</include>
+		<include>clock</include>
+		
+	<!-- hub navigation -->
+		<control type="grouplist" id="2000">
+			<left>485</left>
+			<height>720</height>
+			<align>center</align>
+			<width>302</width>
+			<height min="40" max="500">auto</height>
+			<itemgap>5</itemgap>
+			<control type="button" id="2001">
+				<width>335</width>
+				<left>9</left>
+				<label>$LOCALIZE[20410]</label>
+				<onclick>SendClick(2003,11)</onclick>
+				<visible>Container.Content(Movies) + !IsEmpty(ListItem.Trailer)</visible>
+				<include>dialog_ControlCommons</include>
+			</control>
+			<control type="button" id="2001">
+				<width>335</width>
+				<left>9</left>
+				<label>$LOCALIZE[20410]</label>
+				<onclick>SendClick(2003,11)</onclick>
+				<visible>Container.Content(Movies) + !IsEmpty(ListItem.Trailer)</visible>
+				<include>dialog_ControlCommons</include>
+			</control>
+			<control type="button" id="2001">
+				<width>335</width>
+				<left>9</left>
+				<label>$LOCALIZE[20410]</label>
+				<onclick>SendClick(2003,11)</onclick>
+				<visible>Container.Content(Movies) + !IsEmpty(ListItem.Trailer)</visible>
+				<include>dialog_ControlCommons</include>
+			</control>
+			<control type="button" id="2001">
+				<width>335</width>
+				<left>9</left>
+				<label>$LOCALIZE[20410]</label>
+				<onclick>SendClick(2003,11)</onclick>
+				<visible>Container.Content(Movies) + !IsEmpty(ListItem.Trailer)</visible>
+				<include>dialog_ControlCommons</include>
+			</control>
+		</control>
+		
+		
+	</controls>
+</window>

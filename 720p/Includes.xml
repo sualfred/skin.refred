@@ -1,0 +1,2282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include file="Defaults.xml" />
+	<include file="HomeMenu.xml" />
+	<include file="IncludesAddons.xml" />
+	<include file="IncludesAnimations.xml" />
+	<include file="IncludesBackgrounds.xml" />
+	<include file="IncludesDialogs.xml" />
+	<include file="IncludesHome.xml" />
+	<include file="Menu.xml" />
+	<include file="Variables.xml" />
+	<include file="ViewBanner.xml" />
+	<include file="ViewGallery.xml" />
+	<include file="ViewIcon.xml" />
+	<include file="ViewList.xml" />
+	<include file="ViewRightList.xml" />
+	<include file="ViewLeftList.xml" />
+	<include file="ViewBottomSlide.xml" />
+	<include file="ViewSlide.xml" />
+	<include file="ViewsTV.xml" />
+	<include file="HomeNewMenu.xml" />
+	<include file="HomeWidgets.xml" />
+	<include file="WidgetsPanel.xml" />
+	<include file="Includes_Hub.xml" />
+	<include file="HubPanel.xml" />
+<!--CONSTANTS-->
+	<constant name="screen_Width">1280</constant>
+	<constant name="screen_Height">720</constant>
+	<constant name="screen_Center">640,360</constant>
+	<constant name="screen_Centerx">640</constant>
+	<constant name="screen_Centery">360</constant>
+	<constant name="fadetime_Thumb">200</constant>
+	<constant name="fadetime_Fanart">300</constant>
+	<constant name="fadetime_Slideshow">900</constant>
+	<constant name="transition_Open">300</constant>
+	<constant name="transition_Close">200</constant>
+	<constant name="transition_Visible">50</constant>
+	<constant name="transition_Hidden">50</constant>
+	<constant name="transition_Opacity">95</constant>
+	<constant name="transition_DialogOpen">200</constant>
+	<constant name="transition_DialogClose">200</constant>
+	<constant name="slideshow_Timer">20000</constant>
+
+<!--GLOBAL-->	
+	<include name="TriggerButton">
+		<width>1</width>
+		<height>1</height>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+		<visible allowhiddenfocus="true">false</visible>
+	</include>
+	<include name="homepos1">
+		<focusposition>1</focusposition>
+	</include>
+	<include name="homepos2">
+		<focusposition>2</focusposition>
+	</include>
+	<include name="global_ListScroll">
+		<scrolltime tween="Quadratic" easing="Out">300</scrolltime>
+	</include>
+	<include name="global_Scrolltime">
+		<scrolltime tween="Quadratic" easing="Out">400</scrolltime>
+	</include>
+	<include name="autoscroll-plot">
+		<autoscroll delay="10000" time="3300" repeat="10000">!Control.HasFocus(4)</autoscroll>
+	</include>
+	<include name="autoscroll-line">
+		<scroll>true</scroll>
+		<scrollspeed>40</scrollspeed>
+	</include>
+	<include name="screen_Dimensions">
+		<width>screen_Width</width>
+		<height>screen_Height</height>
+	</include>
+	<include name="global_Includes">
+		<include>global_Clock</include>
+		<include>global_Sortletter</include>
+		<include>global_Itemcount</include>	
+	</include>
+
+	<include name="global_Clock">
+		<control type="group">
+			<include>toggle_Menu</include>
+			<visible>[![Player.HasMedia + Skin.HasSetting(overlay.enable)] | [Player.HasMedia + !IsEmpty(Window(10025).Property(TvTunesIsAlive))]] + ![Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog) | Window.IsActive(movieinformation) | Window.IsActive(musicinformation) | Window.IsActive(weather)]</visible>
+			<control type="label">
+				<label>$VAR[toast_Top]</label>
+				<include>toast_TopClock</include>
+			</control>
+			<control type="label">
+				<animation type="Conditional" reversible="false" condition="PVR.IsRecording | PVR.HasNonRecordingTimer" loop="true">
+					<effect type="fade" start="0" end="100" time="500" delay="0" />
+					<effect type="fade" start="100" end="0" time="500" delay="10000" />
+					<effect type="fade" start="100" end="0" time="500" delay="20000" />
+				</animation>
+				<label>$VAR[toast_Bottom]</label>
+				<textcolor>Color2</textcolor>
+				<include>toast_BottomClock</include>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<animation type="Conditional" reversible="false" condition="PVR.IsRecording | PVR.HasNonRecordingTimer" loop="true">
+					<effect type="fade" start="0" end="100" time="500" delay="10500" />
+					<effect type="fade" start="100" end="0" time="500" delay="20000" />
+				</animation>
+				<label>$VAR[toast_PVRrec]</label>
+				<textcolor>Color2</textcolor>
+				<include>toast_BottomClock</include>
+				<shadowcolor>black</shadowcolor>
+				<visible>PVR.IsRecording | PVR.HasNonRecordingTimer</visible>
+			</control>
+				<control type="image">
+				<include>toast_IconClock</include>
+				<texture>$VAR[toast_Weather]</texture>
+			</control>
+			<control type="label">
+				<include>toast_Temp</include>
+				<label>[B]$INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][/B]</label>
+			</control>
+		</control>
+	</include>
+	
+	<include name="clock">
+		<control type="label">
+			<label>$VAR[toast_Top]</label>
+			<include>toast_TopClock</include>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="label">
+			<animation type="Conditional" reversible="false" condition="PVR.IsRecording | PVR.HasNonRecordingTimer" loop="true">
+				<effect type="fade" start="0" end="100" time="500" delay="0" />
+				<effect type="fade" start="100" end="0" time="500" delay="10000" />
+				<effect type="fade" start="100" end="0" time="500" delay="20000" />
+			</animation>
+			<label>$VAR[toast_Bottom]</label>
+			<textcolor>Color1</textcolor>
+			<include>toast_BottomClock</include>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="label">
+			<animation type="Conditional" reversible="false" condition="PVR.IsRecording | PVR.HasNonRecordingTimer" loop="true">
+				<effect type="fade" start="0" end="100" time="500" delay="10500" />
+				<effect type="fade" start="100" end="0" time="500" delay="20000" />
+			</animation>
+			<label>$VAR[toast_PVRrec]</label>
+			<textcolor>Color1</textcolor>
+			<include>toast_BottomClock</include>
+			<shadowcolor>black</shadowcolor>
+			<visible>PVR.IsRecording | PVR.HasNonRecordingTimer</visible>
+		</control>
+		<control type="image">
+			<top>11</top>
+			<include>toast_IconClock</include>
+			<texture>$VAR[toast_Weather]</texture>
+			<colordiffuse>black</colordiffuse>
+		</control>
+		<control type="image">
+			<include>toast_IconClock</include>
+			<texture>$VAR[toast_Weather]</texture>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="label">
+			<include>toast_Temp</include>
+			<label>[B]$INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][/B]</label>
+			<shadowcolor>black</shadowcolor>
+		</control>
+	</include>
+	
+	<include name="global_Sortletter">
+		<control type="label" id="9900">
+			<left>20</left>
+			<top>14</top>
+			<width>950</width>
+			<aligny>center</aligny>
+			<font>light_Window</font>
+			<textcolor>Color1</textcolor>
+			<label>[B]$INFO[ListItem.SortLetter][/B]</label>
+			<include>transition_WindowTitle</include>
+			<include>toggle_Menu</include>
+			<visible>Skin.HasSetting(sortletter.enable) + Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556])] + !Window.IsActive(script-globalsearch-main.xml) </visible>
+		</control>
+	</include>
+	
+	<include name="global_Itemcount">
+		<control type="label">
+			<left>35</left>
+			<top>53</top>
+			<width>500</width>
+			<label>$VAR[global_Itemcount]</label>
+			<font>regular_Small-U</font>
+			<textcolor>Color3</textcolor>
+			<include>transition_WindowTitle</include>
+			<include>toggle_Menu</include>
+			<visible>!Control.IsVisible(531)</visible>
+		</control>
+	</include>
+
+	<include name="global_MenuGuide">
+		<control type="group" id="6100">
+			<left>20</left>
+			<top>16</top>
+			<include>toggle_Menu</include>
+			<visible>!Skin.HasSetting(global.kiosk) + [Window.IsActive(programs) | Window.IsActive(weather) | Window.IsActive(musicplaylist) | Window.IsActive(videoplaylist) | Window.IsActive(addonbrowser) | Window.IsActive(videolibrary) | Window.IsActive(musiclibrary) | Window.IsActive(musicfiles) | Window.IsActive(pictures) | Window.IsActive(pvr) | Window.IsActive(600)] + !Control.IsVisible(9900)</visible>
+			<include>transition_Indicator</include>
+			<control type="image">
+				<width>32</width>
+				<height>32</height>
+				<texture>navigation/left.png</texture>
+				<visible>[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(555) | Control.IsVisible(55) | Control.IsVisible(501) | Control.IsVisible(54) | Control.IsVisible(541) | Control.IsVisible(57) | Control.IsVisible(571) | Control.IsVisible(572) | Control.IsVisible(574) | Control.IsVisible(575) | Window.IsActive(weather) | Window.IsActive(pvr) | Window.IsActive(600)] + ![Window.IsActive(movieinformation) | Window.IsActive(musicinformation)]</visible>
+				<include>nav_IndicatorLeft</include>
+			</control>
+			<control type="image">
+				<width>32</width>
+				<height>32</height>
+				<texture>navigation/up.png</texture>
+				<visible>[Control.IsVisible(52) | Control.IsVisible(521) | Control.IsVisible(554) | Control.IsVisible(522) | Control.IsVisible(53)] + ![Window.IsActive(movieinformation) | Window.IsActive(musicinformation)] + !Window.IsActive(weather)</visible>
+				<include>nav_IndicatorUp</include>
+			</control>
+		</control>
+	</include>
+
+<!--DETAILS-->
+	<include name="detail_Header">
+		<height>32</height>
+		<font>light_Header</font>
+	</include>
+	<include name="detail_Title">
+		<height>28</height>
+		<aligny>center</aligny>
+		<font>semibold_Big-U</font>
+		<textcolor>Color1</textcolor>
+		<selectedcolor>Selected</selectedcolor>
+	</include>
+		<include name="detail_Title_Big">
+		<height>28</height>
+		<aligny>center</aligny>
+		<font>semibold_Bigger-U</font>
+		<textcolor>Color1</textcolor>
+		<selectedcolor>Selected</selectedcolor>
+	</include>
+	<include name="detail_Title_OSD">
+		<height>28</height>
+		<aligny>center</aligny>
+		<font>semibold_BiggerOSD</font>
+		<textcolor>Color1</textcolor>
+		<selectedcolor>Selected</selectedcolor>
+	</include>
+	<include name="detail_Sub">
+		<height>25</height>
+		<aligny>center</aligny>
+		<font>semibold_Small-U</font>
+		<textcolor>Color2</textcolor>
+		<selectedcolor>Selected</selectedcolor>
+		<visible>!StringCompare(ListItem.Label,..)</visible>
+	</include>
+	<include name="detail_Sub_Small">
+		<height>25</height>
+		<aligny>center</aligny>
+		<font>semibold_Smaller-U</font>
+		<textcolor>Color2</textcolor>
+		<selectedcolor>Selected</selectedcolor>
+		<visible>!StringCompare(ListItem.Label,..)</visible>
+	</include>
+	
+	<include name="pvr_Next">
+		<height>25</height>
+		<aligny>center</aligny>
+		<font>semibold_Small-U</font>
+		<textcolor>Color2</textcolor>
+		<selectedcolor>Selected</selectedcolor>
+		<visible>!StringCompare(ListItem.Label,..)</visible>
+	</include>
+
+	<include name="detail_Text">
+		<textcolor>Color7</textcolor>
+		<font>regular</font>
+		<aligny>top</aligny>
+		<include>autoscroll-plot</include>
+	</include>
+	<include name="detail_StarRating">
+		<width>128</width>
+		<height>48</height>
+		<texture>$VAR[global_Rating]</texture>
+		<aspectratio>keep</aspectratio>
+	</include>
+	<include name="detail_imdbRating">
+		<width>128</width>
+		<height>48</height>
+		<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
+		<aspectratio>keep</aspectratio>
+	</include>
+
+<!--CONTAINER-->
+	<include name="container_Title">
+		<height>40</height>
+		<font>regular_Bigger</font>
+		<aligny>center</aligny>
+		<textcolor>Color1</textcolor>
+		<selectedcolor>Selected</selectedcolor>
+		<scroll>false</scroll>
+	</include>
+	<include name="container_Title-focus">
+		<height>40</height>
+		<font>regular_Bigger</font>
+		<aligny>center</aligny>
+		<textcolor>Focused</textcolor>
+		<selectedcolor>Color5</selectedcolor>
+		<scroll>false</scroll>
+	</include>
+	<include name="container_Sub">
+		<height>40</height>
+		<font>regular_Small-U</font>
+		<aligny>center</aligny>
+		<textcolor>Color2</textcolor>
+		<selectedcolor>Selected</selectedcolor>
+		<scroll>false</scroll>
+	</include>
+	<include name="container_Sub_Small">
+		<height>40</height>
+		<font>regular_Smaller-U</font>
+		<aligny>center</aligny>
+		<textcolor>Color2</textcolor>
+		<selectedcolor>Selected</selectedcolor>
+		<scroll>false</scroll>
+	</include>
+	<include name="container_Sub_Small-focus">
+		<height>40</height>
+		<font>regular_Smaller-U</font>
+		<aligny>center</aligny>
+		<textcolor>Focused</textcolor>
+		<selectedcolor>Focused</selectedcolor>
+		<scroll>false</scroll>
+	</include>
+	<include name="container_Sub-focus">
+		<height>40</height>
+		<font>regular_Small-U</font>
+		<aligny>center</aligny>
+		<textcolor>Focused</textcolor>
+		<selectedcolor>Focused</selectedcolor>
+	</include>
+	<include name="container_Text">
+		<font>regular</font>
+		<aligny>top</aligny>
+		<textcolor>Color3</textcolor>
+	</include>
+	<include name="container_Text-focus">
+		<font>regular</font>
+		<aligny>top</aligny>
+		<textcolor>Color5</textcolor>
+	</include>
+	<include name="container_TextSmall">
+		<font>regular_Small</font>
+		<aligny>top</aligny>
+		<textcolor>Color3</textcolor>
+	</include>
+	<include name="container_TextSmall-focus">
+		<font>regular_Small</font>
+		<aligny>top</aligny>
+		<textcolor>Color5</textcolor>
+	</include>
+	<include name="container_Single">
+		<height>38</height>
+		<font>regular_Big</font>
+		<aligny>center</aligny>
+		<textcolor>Color1</textcolor>
+		<selectedcolor>Selected</selectedcolor>
+		<scroll>false</scroll>
+	</include>
+	<include name="container_Single-focus">
+		<height>38</height>
+		<font>regular_Big</font>
+		<aligny>center</aligny>
+		<textcolor>Focused</textcolor>
+		<selectedcolor>Selected</selectedcolor>
+		<scroll>false</scroll>
+	</include>
+
+<!--COLUMN STYLES-->
+	<include name="column_Header">
+		<height>20</height>
+		<font>light_ColumnHeader</font>
+		<textcolor>Color2</textcolor>
+		<aligny>center</aligny>
+	</include>
+	<include name="column_CommonList">
+		<width>98</width>
+		<height>44</height>
+		<texture colordiffuse="column2">white.png</texture>
+	</include>
+	<include name="column_CommonListItem">
+		<height>40</height>
+		<font>regular</font>
+		<textcolor>Color1</textcolor>
+		<selectedcolor>Selected</selectedcolor>
+	</include>
+	<include name="column_CommonListFocus">
+		<width>98</width>
+		<height>44</height>
+		<texture colordiffuse="Color1">views/focus.png</texture>
+	</include>
+	<include name="column_CommonListItem-focus">
+		<height>40</height>
+		<font>regular</font>
+		<textcolor>Color5</textcolor>
+		<selectedcolor>Selected</selectedcolor>
+	</include>
+	<include name="column_Button">
+		<width>125</width>
+		<font>regular</font>
+		<align>center</align>
+		<textoffsety>4</textoffsety>
+		<textcolor>Color3</textcolor>
+		<focusedcolor>Color5</focusedcolor>
+		<selectedcolor>Color5</selectedcolor>
+		<texturenofocus colordiffuse="column2">white.png</texturenofocus>
+		<texturefocus colordiffuse="Color1">white.png</texturefocus>
+	</include>
+	<include name="column_ListButton">
+		<height>42</height>
+		<texture colordiffuse="column2">white.png</texture>
+	</include>
+	<include name="column_ListButtonLabel">
+		<font>regular</font>
+		<height>40</height>
+		<textoffsety>4</textoffsety>
+		<textcolor>Color3</textcolor>
+		<focusedcolor>Color1</focusedcolor>
+		<selectedcolor>Color5</selectedcolor>
+	</include>
+	<include name="column_ListButtonFocus">
+		<height>42</height>
+		<texture colordiffuse="Color1">white.png</texture>
+	</include>
+
+<!--SETTINGS-->
+	<include name="settings_Menu">
+		<width>300</width>
+		<height>44</height>
+		<font>light_Settings</font>
+		<align>left</align>
+		<textoffsety>4</textoffsety>
+		<textoffsetx>15</textoffsetx>
+		<textcolor>Color1</textcolor>
+		<texturenofocus colordiffuse="column2">views/focus.png</texturenofocus>
+		<texturefocus colordiffuse="Color1">views/focus.png</texturefocus>
+		<alttexturenofocus colordiffuse="column2">views/focus.png</alttexturenofocus>
+		<alttexturefocus colordiffuse="Color1">views/focus.png</alttexturefocus>
+	</include>
+	<include name="settings_Listbutton">
+		<width>850</width>
+		<height>44</height>
+		<font>regular</font>
+		<textoffsetx>15</textoffsetx>
+		<textoffsety>7</textoffsety>
+		<textcolor>Color1</textcolor>
+		<focusedcolor>Focused</focusedcolor>
+		<texturenofocus colordiffuse="column2">views/focus.png</texturenofocus>p
+		<texturefocus colordiffuse="Color1">views/focus.png</texturefocus>
+		<radioheight>30</radioheight>
+		<radiowidth>30</radiowidth>
+	</include>
+	<include name="settings_Radiobutton">
+		<width>850</width>
+		<height>44</height>
+		<font>regular</font>
+		<textoffsetx>15</textoffsetx>
+		<textoffsety>7</textoffsety>
+		<textcolor>Color1</textcolor>
+		<focusedcolor>Focused</focusedcolor>
+		<texturenofocus colordiffuse="column2">views/focus.png</texturenofocus>
+		<texturefocus colordiffuse="Color1">views/focus.png</texturefocus>
+		<textureradioonnofocus colordiffuse="Color3">settings/radio/on.png</textureradioonnofocus>
+		<textureradiooffnofocus colordiffuse="Color3">settings/radio/off.png</textureradiooffnofocus>
+		<textureradioonfocus colordiffuse="Color5">settings/radio/on.png</textureradioonfocus>
+		<textureradioofffocus colordiffuse="Color5">settings/radio/off.png</textureradioofffocus>
+		<radiowidth>34</radiowidth>
+		<radioheight>28</radioheight>
+		<disabledcolor>Disabled</disabledcolor>
+	</include>
+
+<!--PAGECONTROLS-->
+	<include name="PageControls">
+		<!--vertical-->
+		<control type="scrollbar" id="70">
+			<left>1272</left>
+			<height>screen_Height</height>
+			<onleft condition="Window.IsActive(SettingsCategory.xml)">5</onleft>
+			<onleft condition="!Window.IsActive(videoplaylist)">50</onleft>
+			<onleft condition="Window.IsActive(videoplaylist)">99</onleft>
+
+			<visible allowhiddenfocus="true">![Control.IsVisible(52) | Control.IsVisible(521) | Control.IsVisible(554) |Control.IsVisible(522) | Control.IsVisible(53) | Control.IsVisible(531)] + ![Window.IsActive(movieinformation) | Window.IsActive(musicinformation)]</visible>
+		</control>
+		<!--horizontal-->
+		<control type="scrollbar" id="71">
+			<top>712</top>
+			<width>screen_Width</width>
+			<onup condition="Control.IsVisible(52) | Control.IsVisible(521)">52</onup>
+			<onup condition="Control.IsVisible(522)">522</onup>
+			<onup condition="Control.IsVisible(53) | Control.IsVisible(531)">53</onup>
+			<onup condition="Control.IsVisible(554)">554</onup>
+			<orientation>horizontal</orientation>
+			<visible allowhiddenfocus="true">[Control.IsVisible(52) | Control.IsVisible(554) | Control.IsVisible(521) | Control.IsVisible(522) | Control.IsVisible(53) | Control.IsVisible(531)] + ![Window.IsActive(movieinformation) | Window.IsActive(musicinformation)]</visible>
+		</control>
+	</include>	
+
+<!--ART-->
+	<include name="art_ClearLogo">
+		<texture>$VAR[art_ClearLogo]</texture>
+		<aspectratio align="center" aligny="bottom">keep</aspectratio>
+	</include>
+	<include name="art_DefaultIcon">
+		<texture>$INFO[ListItem.ActualIcon]</texture>
+		<aspectratio>keep</aspectratio>
+		<visible>IsEmpty(ListItem.Art(thumb)) + ![Container.Content(actors) + !SubString(ListItem.Icon,DefaultFolderBack)]</visible>
+	</include>
+	<include name="art_Frame-nf">
+		<texture border="0">frames/frame-nf.png</texture>
+		<aspectratio>stretch</aspectratio>
+	</include>
+	<include name="art_Frame-fo">
+		<texture border="0">frames/frame-fo.png</texture>
+		<aspectratio>stretch</aspectratio>
+		<!--<include>focus_Image</include>-->
+	</include>
+
+<!--border trans-->
+<include name="bordertrans">
+<bordertexture colordiffuse="base_5">white.png</bordertexture>
+<bordersize>5</bordersize>	
+</include>
+<include name="bordertrans_Small">
+<bordertexture colordiffuse="base_5">white.png</bordertexture>
+<bordersize>3</bordersize>	
+</include>
+<include name="bordertrans_Big">
+<bordertexture colordiffuse="base_5">white.png</bordertexture>
+<bordersize>10</bordersize>	
+</include>
+<include name="bordertrans_BigHome">
+<bordertexture colordiffuse="whitetrans3">white.png</bordertexture>
+<bordersize>10</bordersize>	
+</include>
+<include name="bordertrans_full">
+<bordertexture>white.png</bordertexture>
+<bordersize>5</bordersize>	
+</include>
+	
+	
+<!--OVERLAYS-->
+	<include name="overlay_Watch">
+		<control type="image">
+			<width>18</width>
+			<height>18</height>
+			<aspectratio>keep</aspectratio>
+			<texture>$INFO[ListItem.Overlay]</texture>
+			<visible>[Container.Content(movies) + Skin.HasSetting(overlay.movies)] | [Container.Content(tvshows) + Skin.HasSetting(overlay.tvshows)] | [Container.Content(episodes) + Skin.HasSetting(overlay.episodes)] | [Container.Content(seasons) + Skin.HasSetting(overlay.tvshows)] | [Container.Content(Files) + Container.HasFiles] + ![SubString(Container.FolderPath,plugin://) | SubString(Container.FolderPath,sources://)]</visible>
+		</control>
+		<control type="image">
+			<width>18</width>
+			<height>18</height>
+			<aspectratio>keep</aspectratio>
+			<texture>OverlayWatching.png</texture>
+			<visible>ListItem.IsResumable + Skin.HasSetting(overlay.resumable)</visible>
+		</control>
+	</include>
+	<include name="overlay_Watch_Small">
+		<control type="image">
+			<width>8</width>
+			<height>8</height>
+			<aspectratio>keep</aspectratio>
+			<texture>$INFO[ListItem.Overlay]</texture>
+			<visible>[Container.Content(movies) + Skin.HasSetting(overlay.movies)] | [Container.Content(tvshows) + Skin.HasSetting(overlay.tvshows)] | [Container.Content(episodes) + Skin.HasSetting(overlay.episodes)] | [Container.Content(seasons) + Skin.HasSetting(overlay.tvshows)] | [Container.Content(Files) + Container.HasFiles] + ![SubString(Container.FolderPath,plugin://) | SubString(Container.FolderPath,sources://)]</visible>
+		</control>
+		<control type="image">
+			<width>8</width>
+			<height>8</height>
+			<aspectratio>keep</aspectratio>
+			<texture>OverlayWatching.png</texture>
+			<visible>ListItem.IsResumable + Skin.HasSetting(overlay.resumable)</visible>
+		</control>
+	</include>
+	<include name="pvr_Status">
+		<width>22</width>
+		<height>22</height>
+		<texture>$VAR[pvr_Status]</texture>
+		<colordiffuse>Color3</colordiffuse>	
+	</include>
+	<include name="pvr_Status-fo">
+		<width>22</width>
+		<height>22</height>
+		<texture>$VAR[pvr_Status]</texture>
+		<colordiffuse>Color4</colordiffuse>	
+	</include>
+
+<!--NOTIFICATIONS-->
+	<include name="seek_animation">
+		<control type="group">
+		<animation type="WindowOpen" reversible="false">
+			<effect type="zoom" time="450" center="auto" start="190" end="100" tween="cubic" easing="out" />
+			<effect type="fade" time="450" start="0" easing="out" end="100" />
+		</animation>			
+		<animation type="WindowClose" reversible="false">
+			<effect type="zoom" time="450" center="auto" start="100" end="190" tween="cubic" easing="in" />
+			<effect type="fade" time="450" start="100" easing="in" end="0" />
+		</animation>		  
+		<animation type="Visible" reversible="false">
+			<effect type="zoom" time="450" center="auto" start="190" end="100" tween="cubic" easing="out" />
+			<effect type="fade" time="450" start="0" easing="out" end="100" />
+		</animation>			
+		<animation type="Hidden" reversible="false">
+			<effect type="zoom" time="450" center="auto" start="100" end="190" tween="cubic" easing="in" />
+			<effect type="fade" time="450" start="100" easing="in" end="0" />
+		</animation>
+		<visible>Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Player.Caching</visible>
+		<control type="group">
+				<posx>545</posx>
+				<posy>245</posy>
+			<control type="image">
+				<description>Busy animation</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>220</width>
+				<height>220</height>
+				<texture>dialogs/busy/animation_1.png</texture>
+				<aspectratio>keep</aspectratio>
+				<animation effect="rotate" start="0" end="360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
+			</control>
+			<control type="image">
+				<description>Busy animation</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>220</width>
+				<height>220</height>
+				<texture>dialogs/busy/animation_2.png</texture>
+				<aspectratio>keep</aspectratio>
+				<animation effect="rotate" start="0" end="-360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
+			</control>
+			<control type="label">
+				<description>Busy label</description>
+				<posx>-90</posx>
+				<posy>190</posy>
+				<width>400</width>
+				<height>35</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$VAR[player_Status]</label>
+				<font>light_Dialog</font>
+				<textcolor>Color1</textcolor>
+			</control>
+			<control type="label">
+				<description>Busy label</description>
+				<posx>-90</posx>
+				<posy>90</posy>
+				<width>400</width>
+				<height>35</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[Player.CacheLevel]%</label>
+				<font>regular_Big</font>
+				<textcolor>Color1</textcolor>
+				<visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
+			</control>
+		</control>
+		</control>
+	</include>
+	<include name="seek_Top">
+		<width>screen_Width</width>
+		<height>screen_Height</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<textcolor>whitetrans3</textcolor>
+		<font>semibold_Seek</font>
+		<include>transition_Toast</include>
+	</include>
+	<include name="toast_Top">
+		<right>70</right>
+		<top>3</top>
+		<width>400</width>
+		<height>40</height>
+		<font>regular_Small-U</font>
+		<align>right</align>
+		<aligny>center</aligny>
+		<textcolor>Color1</textcolor>
+		<include>transition_Toast</include>
+	</include>
+	<include name="toast_Bottom">
+		<right>70</right>
+		<top>29</top>
+		<width>400</width>
+		<align>right</align>
+		<font>regular_Small</font>
+		<aligny>center</aligny>
+		<textcolor>Color3</textcolor>
+		<scroll>false</scroll>
+		<pauseatend>2000</pauseatend>
+		<include>transition_Toast</include>
+	</include>
+	<include name="toast_Icon">
+		<right>26</right>
+		<top>19</top>
+		<width>32</width>
+		<height>32</height>
+		<aspectratio>keep</aspectratio>
+		<include>transition_Toast</include>
+	</include>
+	<!-- clock -->
+	<include name="toast_TopClock">
+		<right>70</right>
+		<top>3</top>
+		<width>400</width>
+		<height>40</height>
+		<font>regular_Bigger</font>
+		<align>right</align>
+		<aligny>center</aligny>
+		<textcolor>Color1</textcolor>
+		<include>transition_Toast</include>
+	</include>
+	<include name="toast_BottomClock">
+		<right>70</right>
+		<top>24</top>
+		<width>400</width>
+		<height>40</height>
+		<align>right</align>
+		<font>regular_Small</font>
+		<aligny>center</aligny>
+		<textcolor>Color3</textcolor>
+		<scroll>false</scroll>
+		<pauseatend>2000</pauseatend>
+		<include>transition_Toast</include>
+	</include>
+	<include name="toast_IconClock">
+		<right>20</right>
+		<top>10</top>
+		<width>28</width>
+		<height>28</height>
+		<aspectratio>keep</aspectratio>
+		<include>transition_Toast</include>
+	</include>
+	<include name="toast_Temp">
+		<right>15</right>
+		<align>center</align>
+		<top>21</top>
+		<width>40</width>
+		<height>50</height>
+		<font>regular_Smaller</font>
+		<textcolor>Color1</textcolor>
+		<include>transition_Toast</include>
+	</include>
+
+<!--PLAYER CONTROLS-->
+	<include name="player_Button">
+		<width>48</width>
+		<height>48</height>
+	</include>
+	<include name="player_ButtonOSD">
+		<width>35</width>
+		<height>35</height>
+	</include>
+	<include name="player_Buttontext">
+		<width>250</width>
+		<height>40</height>
+		<font>regular</font>
+		<textoffsetx>15</textoffsetx>
+		<textoffsety>5</textoffsety>
+		<textcolor>Color1</textcolor>
+		<focusedcolor>Focused</focusedcolor>
+		<selectedcolor>Selected</selectedcolor>
+		<align>center</align>
+		<texturenofocus>overlays/bg_diffuse.png</texturenofocus>
+		<texturefocus>views/focus.png</texturefocus>	
+		<alttexturefocus>views/focus.png</alttexturefocus>
+		<alttexturenofocus>overlays/bg_diffuse.png</alttexturenofocus>
+	</include>
+	<include name="player_Controls-commons">
+		<control type="image">
+			<width>425</width>
+			<height>60</height>
+			<texture border="20,0,20,1">dialogs/frame/menu_player.png</texture>
+			<visible>!Window.IsActive(VideoOSD)</visible>
+		</control>
+		<include>player_Controls-commons-osd</include>
+	</include>
+	<include name="player_Controls-commons-home">
+		<control type="image">
+			<width>322</width>
+			<height>60</height>
+			<texture border="20,0,20,1">overlays/diffuse.png</texture>
+			<visible>!Window.IsActive(VideoOSD)</visible>
+		</control>
+		<include>player_Controls-commons-osd-home</include>
+	</include>
+	<include name="player_Controls-commons-osd">	
+		<control type="grouplist" id="700">
+			<ondown>Dialog.Close(all,true)</ondown>
+			<itemgap>1</itemgap>
+			<orientation>horizontal</orientation>
+			<!--channel down-->
+			<control type="button" id="701">
+				<texturefocus>osdcontrols/down-fo.png</texturefocus>
+				<texturenofocus>osdcontrols/down-nf.png</texturenofocus>
+				<include>player_ButtonOSD</include>
+				<onclick>ChannelDown</onclick>
+				<visible>VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<!--channel up-->
+			<control type="button" id="702">
+				<texturefocus>osdcontrols/up-fo.png</texturefocus>
+				<texturenofocus>osdcontrols/up-nf.png</texturenofocus>
+				<include>player_ButtonOSD</include>
+				<onclick>ChannelUp</onclick>
+				<visible>VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<!--previous-->
+			<control type="button" id="703">
+				<texturefocus>osdcontrols/prev-fo.png</texturefocus>
+				<texturenofocus>osdcontrols/prev-nf.png</texturenofocus>
+				<include>player_ButtonOSD</include>
+				<onclick>PlayerControl(Previous)</onclick>
+				<visible>!VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<!--rewind-->
+			<control type="button" id="704">
+				<texturefocus>osdcontrols/rwd-fo.png</texturefocus>
+				<texturenofocus>osdcontrols/rwd-nf.png</texturenofocus>
+				<include>player_ButtonOSD</include>
+				<onclick>PlayerControl(Rewind)</onclick>
+				<enable>Player.SeekEnabled</enable>
+				<animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
+			</control>
+			<!--pause-->
+			<control type="togglebutton" id="705">
+				<texturenofocus>osdcontrols/pause-nf.png</texturenofocus>
+				<texturefocus>osdcontrols/pause-fo.png</texturefocus>
+				<alttexturenofocus>osdcontrols/play-nf.png</alttexturenofocus>
+				<alttexturefocus>osdcontrols/play-fo.png</alttexturefocus>
+				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+				<include>player_ButtonOSD</include>
+				<onclick>PlayerControl(Play)</onclick>
+				<visible>!VideoPlayer.Content(LiveTV)</visible>
+				<enable>Player.PauseEnabled</enable>
+			</control>
+			<!--stop-->
+			<control type="button" id="706">
+				<texturefocus>osdcontrols/stop-fo.png</texturefocus>
+				<texturenofocus>osdcontrols/stop-nf.png</texturenofocus>
+				<include>player_ButtonOSD</include>
+				<onclick>PlayerControl(Stop)</onclick>
+			</control>
+			<!--forward-->
+			<control type="button" id="707">
+				<texturefocus>osdcontrols/fwd-fo.png</texturefocus>
+				<texturenofocus>osdcontrols/fwd-nf.png</texturenofocus>
+				<include>player_ButtonOSD</include>
+				<onclick>PlayerControl(Forward)</onclick>
+				<enable>Player.SeekEnabled</enable>
+				<animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
+			</control>
+			<!--next-->
+			<control type="button" id="708">
+				<texturefocus>osdcontrols/next-fo.png</texturefocus>
+				<texturenofocus>osdcontrols/next-nf.png</texturenofocus>
+				<include>player_ButtonOSD</include>
+				<onclick>PlayerControl(Next)</onclick>
+				<visible>!VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<!--record-->
+			<control type="togglebutton" id="709">
+				<texturefocus>osdcontrols/rec-fo.png</texturefocus>
+				<texturenofocus>osdcontrols/rec-nf.png</texturenofocus>
+				<usealttexture>Player.Recording</usealttexture>
+				<alttexturefocus>player/rec-fo.png</alttexturefocus>
+				<alttexturenofocus>player/rec-fo.png</alttexturenofocus>
+				<include>player_ButtonOSD</include>
+				<onclick>PlayerControl(Record)</onclick>
+				<visible>VideoPlayer.Content(LiveTV)</visible>
+				<animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>
+			</control>
+			<control type="button" id="710">
+				<texturefocus>osdcontrols/settings-fo.png</texturefocus>
+				<texturenofocus>osdcontrols/settings-nf.png</texturenofocus>
+				<include>player_ButtonOSD</include>
+				<onfocus>Skin.SetString(playercontrols,invisible)</onfocus>
+				<onclick>Skin.SetString(playercontrols,visible)</onclick>
+				<onclick>SetFocus(600)</onclick>
+			</control>			
+			<!--<control type="togglebutton" id="710">
+				<texturefocus>overlays/diffuse.bg</texturefocus>
+				<texturenofocus>overlays/diffuse.bg</texturenofocus>
+				<usealttexture>overlays/diffuse.bg</usealttexture>
+				<alttexturefocus>overlays/diffuse.bg</alttexturefocus>
+				<alttexturenofocus>overlays/diffuse.bg</alttexturenofocus>
+				<label>Settings</label>
+				<font>regular_Small-U</font>
+				<textcolor>Color3</textcolor>
+				<focusedcolor>Color1</focusedcolor>
+				<textoffsetx>7</textoffsetx>
+				<textoffsety>4</textoffsety>
+				<width>100</width>
+				<height>48</height>
+				<onfocus>Skin.SetString(playercontrols,invisible)</onfocus>
+				<onclick>Skin.SetString(playercontrols,visible)</onclick>
+				<onclick>SetFocus(600)</onclick>
+			</control>-->
+		</control>
+	</include>
+	<include name="player_Controls-commons-osd-home">	
+		<control type="grouplist" id="700">
+			<left>14</left>
+			<top>9</top>
+			<onup>600</onup>
+			<ondown>600</ondown>
+			<!--<ondown>Dialog.Close(all,true)</ondown>-->
+			<itemgap>1</itemgap>
+			<orientation>horizontal</orientation>
+			<!--channel down-->
+			<control type="button" id="701">
+				<texturefocus>player/down-fo.png</texturefocus>
+				<texturenofocus>player/down-nf.png</texturenofocus>
+				<include>player_Button</include>
+				<onclick>ChannelDown</onclick>
+				<visible>VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<!--channel up-->
+			<control type="button" id="702">
+				<texturefocus>player/up-fo.png</texturefocus>
+				<texturenofocus>player/up-nf.png</texturenofocus>
+				<include>player_Button</include>
+				<onclick>ChannelUp</onclick>
+				<visible>VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<!--previous-->
+			<control type="button" id="703">
+				<texturefocus>player/prev-fo.png</texturefocus>
+				<texturenofocus>player/prev-nf.png</texturenofocus>
+				<include>player_Button</include>
+				<onclick>PlayerControl(Previous)</onclick>
+				<visible>!VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<!--rewind-->
+			<control type="button" id="704">
+				<texturefocus>player/rwd-fo.png</texturefocus>
+				<texturenofocus>player/rwd-nf.png</texturenofocus>
+				<include>player_Button</include>
+				<onclick>PlayerControl(Rewind)</onclick>
+				<enable>Player.SeekEnabled</enable>
+				<animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
+			</control>
+			<!--pause-->
+			<control type="togglebutton" id="705">
+				<texturenofocus>player/pause-nf.png</texturenofocus>
+				<texturefocus>player/pause-fo.png</texturefocus>
+				<alttexturenofocus>player/play-nf.png</alttexturenofocus>
+				<alttexturefocus>player/play-fo.png</alttexturefocus>
+				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+				<include>player_Button</include>
+				<onclick>PlayerControl(Play)</onclick>
+				<visible>!VideoPlayer.Content(LiveTV)</visible>
+				<enable>Player.PauseEnabled</enable>
+			</control>
+			<!--stop-->
+			<control type="button" id="706">
+				<texturefocus>player/stop-fo.png</texturefocus>
+				<texturenofocus>player/stop-nf.png</texturenofocus>
+				<include>player_Button</include>
+				<onclick>PlayerControl(Stop)</onclick>
+			</control>
+			<!--forward-->
+			<control type="button" id="707">
+				<texturefocus>player/fwd-fo.png</texturefocus>
+				<texturenofocus>player/fwd-nf.png</texturenofocus>
+				<include>player_Button</include>
+				<onclick>PlayerControl(Forward)</onclick>
+				<enable>Player.SeekEnabled</enable>
+				<animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
+			</control>
+			<!--next-->
+			<control type="button" id="708">
+				<texturefocus>player/next-fo.png</texturefocus>
+				<texturenofocus>player/next-nf.png</texturenofocus>
+				<include>player_Button</include>
+				<onclick>PlayerControl(Next)</onclick>
+				<visible>!VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<!--record-->
+			<control type="togglebutton" id="709">
+				<texturefocus>player/rec-fo.png</texturefocus>
+				<texturenofocus>player/rec-nf.png</texturenofocus>
+				<usealttexture>Player.Recording</usealttexture>
+				<alttexturefocus>player/rec-fo.png</alttexturefocus>
+				<alttexturenofocus>player/rec-fo.png</alttexturenofocus>
+				<include>player_Button</include>
+				<onclick>PlayerControl(Record)</onclick>
+				<visible>VideoPlayer.Content(LiveTV)</visible>
+				<animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>
+			</control>
+		</control>
+	</include>
+	
+	<include name="osd_video_controls">
+	<!--player controls-->
+		<control type="group">
+			<include>fadeinout</include>
+			<visible>![Window.IsActive(fullscreeninfo) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
+			<top>10</top>
+			<control type="group">
+				<posx>1006</posx>
+				<posy>532</posy>
+				<include>player_Controls-commons-osd</include>
+				<visible>VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<control type="group">
+				<posx>1006</posx>
+				<posy>535</posy>
+				<include>player_Controls-commons-osd</include>
+				<visible>!VideoPlayer.Content(LiveTV)</visible>
+			</control>
+			<control type="group" id="6000">
+				<left>0</left>
+				<top>-10</top>
+				<control type="image">
+					<visible>skin.String(playercontrols,visible) + ControlGroup(600).HasFocus()</visible>
+					<include>screen_Dimensions</include>
+					<texture colordiffuse="base_1">overlays/base_color.png</texture>
+					<include>transition_Dialog</include>
+				</control>
+				<include>button-commons</include>
+			</control>			
+		</control>
+	</include>
+	
+	<include name="button-commons">
+				<control type="grouplist" id="600">
+					<visible allowhiddenfocus="true">Skin.String(playercontrols,visible) + ControlGroup(600).HasFocus()</visible>
+					<align>center</align>
+					<left>512</left>
+					<onback>700</onback>
+					<itemgap>5</itemgap>
+					<orientation>vertical</orientation>
+					<include>transition_Dialog</include>
+					<!-- guide -->
+					<control type="button" id="601">
+						<label>$LOCALIZE[19069]</label>
+						<onclick>XBMC.ActivateWindow(PVROSDGuide)</onclick>
+						<include>player_Buttontext</include>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<!--channels-->
+					<control type="button" id="602">
+						<label>$LOCALIZE[19019]</label>
+						<onclick>ActivateWindow(PVROSDChannels)</onclick>
+						<include>player_Buttontext</include>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<!--teletext-->
+					<control type="button" id="603">
+						<label>$LOCALIZE[31522]</label>
+						<include>player_Buttontext</include>
+						<onclick>Dialog.Close(VideoOSD,true)</onclick>
+						<onclick>XBMC.ActivateWindow(teletext)</onclick>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<!--get subtitles-->
+					<control type="button" id="604">
+						<label>$LOCALIZE[31320]</label>
+						<onclick>Dialog.Close(VideoOSD,true)</onclick>
+						<onclick>ActivateWindow(SubtitleSearch)</onclick>
+						<include>player_Buttontext</include>
+					</control>
+					<!--next subtitles-->
+					<control type="button" id="605">
+						<label>$LOCALIZE[31327]</label>
+						<onclick>NextSubtitle</onclick>
+						<include>player_Buttontext</include>
+					</control>
+					<!--subtitles toggle-->
+					<control type="togglebutton" id="606">
+						<label>$VAR[player_SubtitleToggle]</label>
+						<altlabel>$LOCALIZE[13397]</altlabel>
+						<onclick>Dialog.Close(VideoOSD,true)</onclick>
+						<onclick>ShowSubtitles</onclick>
+						<altclick>Dialog.Close(VideoOSD,true)</altclick>
+						<altclick>ShowSubtitles</altclick>
+						<include>player_Buttontext</include>
+						<usealttexture>!VideoPlayer.SubtitlesEnabled</usealttexture>
+						<visible>VideoPlayer.HasSubtitles</visible>
+					</control>
+					<!--subtitle offset-->
+					<control type="button" id="607">
+						<label>$LOCALIZE[22006]</label>
+						<onclick>Dialog.Close(VideoOSD,true)</onclick>
+						<onclick>SubtitleDelay</onclick>
+						<include>player_Buttontext</include>
+						<visible>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</visible>
+					</control>
+					<!--3D toggle-->
+					<control type="togglebutton" id="608">
+						<label>$LOCALIZE[31324]</label>
+						<altlabel>$LOCALIZE[31325]</altlabel>
+						<onclick>Dialog.Close(VideoOSD,true)</onclick>
+						<onclick>StereoModeToMono</onclick>
+						<altclick>StereoModeToMono</altclick>
+						<usealttexture>StringCompare(System.StereoscopicMode,7)</usealttexture>
+						<include>player_Buttontext</include>
+						<visible>VideoPlayer.IsStereoscopic</visible>
+					</control>
+					<!--3D mode-->
+					<control type="button" id="609">
+						<label>$LOCALIZE[31326]</label>
+						<onclick>Dialog.Close(VideoOSD,true)</onclick>
+						<onclick>StereoMode</onclick>
+						<include>player_Buttontext</include>
+						<visible>VideoPlayer.IsStereoscopic</visible>
+					</control>
+					<!--bookmarks-->
+					<control type="button" id="610">
+						<label>$LOCALIZE[298]</label>
+						<include>player_Buttontext</include>
+						<onclick>Dialog.Close(VideoOSD,true)</onclick>
+						<onclick>XBMC.ActivateWindow(125)</onclick>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<!--dvd menu-->
+					<control type="button" id="611">
+						<label>$LOCALIZE[33061]</label>
+						<onclick>Dialog.Close(VideoOSD,true)</onclick>
+						<onclick>PlayerControl(ShowVideoMenu)</onclick>
+						<texturenofocus border="3">-</texturenofocus>
+						<include>player_Buttontext</include>
+						<visible>VideoPlayer.HasMenu</visible>
+					</control>
+					<!--video settings-->
+					<control type="button" id="612">
+						<label>$LOCALIZE[291]</label>
+						<include>player_Buttontext</include>
+						<onclick>Dialog.Close(VideoOSD,true)</onclick>
+						<onclick>XBMC.ActivateWindow(123)</onclick>
+					</control>
+					<!--audio settings-->
+					<control type="button" id="613">
+						<label>$LOCALIZE[292]</label>
+						<include>player_Buttontext</include>
+						<onclick>Dialog.Close(VideoOSD,true)</onclick>
+						<onclick>XBMC.ActivateWindow(124)</onclick>
+					</control>
+					
+				</control>
+	</include>
+   
+<!--OSD / SLIDESHOW-->
+	<include name="osd_Title">
+		<font>bold_Title</font>
+		<textcolor>Color1</textcolor>
+	</include>
+	<include name="osd_Text">
+		<font>regular_Small</font>
+		<textcolor>Color3</textcolor>
+	</include>
+		<include name="osd_NextTitle">
+		<font>bold_Title_Small</font>
+		<textcolor>Color1</textcolor>
+	</include>
+	<include name="osd_Text_white">
+		<font>regular_Small</font>
+		<textcolor>Color1</textcolor>
+	</include>
+	<include name="osd_Seekbar">
+		<control type="group">
+			<top>5</top>
+			<!--cache progress-->
+			<control type="progress" id="12">
+				<height>10</height>
+				<info>Player.ProgressCache</info>
+				<texturebg>player/progress-back.png</texturebg>
+				<lefttexture>-</lefttexture>
+				<midtexture colordiffuse="Selected">player/progress-middle.png</midtexture>
+				<righttexture>-</righttexture>
+				<visible>!IsEmpty(Player.TimeRemaining)</visible>
+			</control>
+		
+			<control type="slider">
+				<top>-8</top>
+				<height>26</height>
+				<sliderwidth>26</sliderwidth>
+				<sliderheight>26</sliderheight>
+				<texturesliderbar>player/progress_Opaque.png</texturesliderbar>
+				<textureslidernib colordiffuse="Color3">player/progress_Slider.png</textureslidernib>
+				<textureslidernibfocus colordiffuse="Color1">player/progress_Slider.png</textureslidernibfocus>
+				<info>Player.Progress</info>
+				<action>seek</action>
+				<visible>!IsEmpty(Player.TimeRemaining)</visible>
+			</control>
+		</control>
+	
+		<control type="group">
+			<visible>!VideoPlayer.Content(LiveTV)</visible>
+			<top>15</top>
+			<control type="label">
+				<left>0</left>
+				<width>200</width>
+				<label>$VAR[player_Time]</label>
+				<textcolor>Color3</textcolor>
+				<include>detail_Sub</include>
+			</control>
+			<control type="label">
+				<right>0</right>
+				<width>200</width>
+				<label>$VAR[player_Duration]</label>
+				<align>right</align>
+				<textcolor>Color3</textcolor>
+				<include>detail_Sub</include>
+			</control>
+		</control>
+	</include>
+	
+	<include name="osd_Seekbar_Home">
+			<width>150</width>
+			<control type="progress" id="12">
+				<height>10</height>
+				<info>Player.ProgressCache</info>
+				<texturebg>player/progress-back.png</texturebg>
+				<lefttexture>-</lefttexture>
+				<midtexture colordiffuse="Selected">player/progress-middle.png</midtexture>
+				<righttexture>-</righttexture>
+			</control>
+
+	</include>
+	
+	<include name="osd_Seekbar_ChannelOSD">
+				<texturebg>player/progress-back.png</texturebg>
+				<lefttexture>-</lefttexture>
+				<midtexture colordiffuse="Selected">player/progress-middle.png</midtexture>
+				<righttexture>-</righttexture>
+				<reveal>true</reveal>
+				<info>ListItem.Progress</info>
+				<visible>!StringCompare(ListItem.Title,)</visible>
+	</include>
+
+	<include name="osd_Music">
+		
+			<control type="group">			
+			<posy>530</posy>
+			<include>transition_OSD</include>
+			<control type="group">
+				<posx>30</posx>
+				<!-- labels -->
+				<control type="group">
+					<posx>240</posx>
+					<control type="group">
+						<left>-50</left>
+						<top>5</top>
+						<control type="image">
+							<width>1010</width>
+							<left>10</left>
+							<height>149</height>
+							<texture colordiffuse="base_1play">overlays/base_osd_window.png</texture>
+						</control>
+						<control type="image">
+							<width>1010</width>
+							<left>10</left>
+							<height>37</height>
+							<texture colordiffuse="whitetrans">white.png</texture>
+						</control>
+						<control type="image">
+							<width>1010</width>
+							<left>10</left>
+							<height>149</height>
+							<texture colordiffuse="base_1play">overlays/bg_diffuse.png</texture>
+						</control>
+						<control type="image">
+							<width>1010</width>
+							<left>10</left>
+							<height>149</height>
+							<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+						</control>
+						<control type="image">
+							<width>1010</width>
+							<left>10</left>
+							<height>1</height>
+							<top>37</top>
+							<texture colordiffuse="whitetrans">white.png</texture>
+						</control>	
+					</control>
+					<control type="group">
+						<left>-10</left>
+						<control type="image">
+							<right>50</right>
+							<top>11</top>
+							<width>147</width>
+							<height>28</height>
+							<texture>$INFO[Player.StarRating,rating/nf-,]</texture>
+							<aspectratio align="right">keep</aspectratio>
+						</control>
+						<control type="label">
+							<width>800</width>
+							<top>10</top>
+							<label>$VAR[osd_Title]</label>
+							<scroll>true</scroll>
+							<include>osd_Title</include>
+						</control>
+						<control type="label">
+							<top>50</top>
+							<width>1025</width>
+							<label>$INFO[MusicPlayer.Artist]</label>
+							<textcolor>Color3</textcolor>
+							<include>detail_Sub</include>
+						</control>
+						<control type="label">
+							<top>70</top>
+							<width>1025</width>
+							<label>$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Year, • ]</label>
+							<include>detail_Sub</include>
+						</control>
+						<control type="label">
+							<top>70</top>
+							<left>415</left>
+							<width>550</width>
+							<align>right</align>
+							<label>[COLOR Color2][B]$LOCALIZE[19031]:[/COLOR] [/B]$INFO[MusicPlayer.Offset(1).Artist]$INFO[MusicPlayer.Offset(1).Title, - ] ($INFO[MusicPlayer.PlaylistPosition,]$INFO[MusicPlayer.PlaylistLength,/])</label>
+							<include>osd_Text</include>
+							<visible>!IsEmpty(Player.TimeRemaining)</visible>
+						</control>
+						<control type="group">
+							<width>965</width>
+							<top>100</top>
+							<include>osd_Seekbar</include>
+						</control>
+					</control>
+				</control>
+				
+				<!-- cover and discart -->
+				<control type="group">
+					<top>-110</top>
+					<left>10</left>
+					<control type="group">
+						<left>10</left>
+						<top>-10</top>
+						<width>180</width>
+						<height>180</height>
+						<animation effect="rotate" loop="true" end="-360" center="auto" time="20000" condition="Player.HasAudio" reversible="false">Conditional</animation>
+						<control type="image">	
+							<width>180</width>
+							<height>180</height>
+							<texture fallback="overlays/cdart.png" diffuse="overlays/discdiffuse.png">$VAR[osd_Art]</texture>
+							<fadetime>1000</fadetime>
+							<aspectratio align="center" aligny="center"  scalediffuse="false">scale</aspectratio>
+						</control>						
+						<control type="label">
+							<top>33</top>
+							<width>180</width>
+							<height>180</height>
+							<textwidth>160</textwidth>
+							<align>center</align>
+							<fadetime>1000</fadetime>
+							<label>[B]$INFO[MusicPlayer.Artist][/B]</label>
+							<shadowcolor>black</shadowcolor>
+							<autoscroll>false</autoscroll>
+							<font>semibold_Small-U</font>
+						</control>	
+						<control type="image">	
+							<width>180</width>
+							<height>180</height>
+							<texture colordiffuse="blacktrans2">overlays/discdiffuse.png</texture>
+							<fadetime>1000</fadetime>
+							<aspectratio align="center" aligny="center"  scalediffuse="false">scale</aspectratio>
+						</control>
+						<control type="image">	
+							<width>180</width>
+							<height>180</height>
+							<texture diffuse="overlays/discdiffuse.png" background="true">$INFO[Player.FolderPath]cdart.png</texture>
+							<fadetime>1000</fadetime>
+							<aspectratio align="center" aligny="center">scale</aspectratio>
+						</control>
+					</control>
+					<control type="image">
+						<top>62</top>
+						<left>-8</left>
+						<width>218</width>
+						<height>210</height>
+						<texture>frames/frame-alt.png</texture>
+						<animation effect="fade" start="0" end="100" time="100" delay="400">Conditional</animation>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>1000</fadetime>
+					</control>
+					<control type="image">
+						<top>70</top>
+						<width>200</width>
+						<height>200</height>
+						<texture>$VAR[osd_Art]</texture>
+						<bordertexture colordiffuse="blacktrans3">white.png</bordertexture>
+						<bordersize>5</bordersize>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>1000</fadetime>
+					</control>
+					<control type="image">
+						<top>70</top>
+						<width>200</width>
+						<height>200</height>
+						<texture>overlays/cover_overlay.png</texture>
+						<aspectratio>scale</aspectratio>
+						<fadetime>1000</fadetime>
+						<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+					</control>
+				</control>
+				
+			</control>
+			
+		</control>
+	</include>
+
+	<include name="osd_Video">
+		<control type="group">			
+			<posy>520</posy>
+			<include>transition_OSD</include>
+			<!--<visible>Window.IsActive(VideoOSD) | Window.IsActive(DialogSeekBar) | ![Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(SliderDialog) | Window.IsVisible(selectdialog) | Window.IsActive(SubtitleSearch)]</visible>-->
+			
+			<control type="group">				
+				<!-- poster -->
+				<control type="group">
+					<posx>20</posx>					
+					<!-- movie/tvshow -->
+					<control type="image">
+						<width>1230</width>
+						<left>10</left>
+						<height>149</height>
+						<top>24</top>
+						<texture colordiffuse="base_1play">overlays/base_osd_window.png</texture>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<width>1230</width>
+						<left>10</left>
+						<top>24</top>
+						<height>37</height>
+						<texture colordiffuse="whitetrans">white.png</texture>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<width>1230</width>
+						<left>10</left>
+						<top>24</top>
+						<height>149</height>
+						<texture colordiffuse="base_1play">overlays/bg_diffuse.png</texture>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<width>1230</width>
+						<left>10</left>
+						<top>24</top>
+						<height>149</height>
+						<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<top>-115</top>
+						<width>200</width>
+						<height>293</height>
+						<texture colordiffuse="whitetrans3">white.png</texture>
+						<aspectratio >scale</aspectratio>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<top>-126</top>
+						<left>-8</left>
+						<width>218</width>
+						<height>293</height>
+						<texture>frames/frame-alt.png</texture>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>			
+					<control type="image">
+						<top>-115</top>
+						<width>200</width>
+						<height>293</height>
+						<texture>$VAR[osd_Art]</texture>
+						<bordertexture colordiffuse="base_5">white.png</bordertexture>
+						<bordersize>5</bordersize>
+						<aspectratio >scale</aspectratio>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<top>-115</top>
+						<width>200</width>
+						<height>293</height>
+						<texture>overlays/cover_overlay.png</texture>
+						<aspectratio>scale</aspectratio>
+						<visible>!VideoPlayer.Content(LiveTV) + !Skin.HasSetting(globalGlass.disable)</visible>
+					</control>	
+				</control>
+				<control type="group">
+					<posx>20</posx>			
+					<!-- livetv -->	
+					<control type="image">
+						<width>1240</width>
+						<left>0</left>
+						<top>20</top>
+						<height>149</height>
+						<texture colordiffuse="base_1play">overlays/base_osd_window.png</texture>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>	
+					<control type="image">
+						<width>1040</width>
+						<left>200</left>
+						<top>20</top>
+						<height>37</height>
+						<texture colordiffuse="whitetrans">white.png</texture>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<width>1240</width>
+						<left>0</left>
+						<top>20</top>
+						<height>149</height>
+						<texture colordiffuse="base_1play">overlays/bg_diffuse.png</texture>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<width>1030</width>
+						<left>210</left>
+						<top>20</top>
+						<height>149</height>
+						<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<top>20</top>
+						<width>200</width>
+						<height>149</height>
+						<texture colordiffuse="whitetrans">white.png</texture>
+						<aspectratio>scale</aspectratio>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<top>14</top>
+						<left>-8</left>
+						<width>218</width>
+						<height>149</height>
+						<texture>frames/frame-alt.png</texture>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<top>20</top>
+						<width>200</width>
+						<height>149</height>
+						<texture>$VAR[osd_Art]</texture>
+						<bordersize>5</bordersize>
+						<aspectratio>keep</aspectratio>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<top>20</top>
+						<width>200</width>
+						<height>149</height>
+						<texture>overlays/cover_overlay.png</texture>
+						<aspectratio>scale</aspectratio>
+						<visible>VideoPlayer.Content(LiveTV) + !Skin.HasSetting(globalGlass.disable)</visible>
+					</control>
+				</control>				
+				<!-- labels -->				
+				<!-- labels tvshow / movie -->
+				<control type="group">
+					<posx>230</posx>
+					<width>1020</width>
+					<visible>!VideoPlayer.Content(LiveTV)</visible>
+					<top>75</top>
+					<control type="label">
+						<top>-3</top>
+						<label>$VAR[osd_Title]</label>
+						<include>osd_Title</include>
+						<autoscroll delay="3000" time="1000" repeat="10000"></autoscroll>
+						<width>900</width>
+					</control>
+					<control type="label">
+						<top>25</top>
+						<label>$VAR[osd_Info]</label>
+						<include>detail_Sub</include>
+						<visible>Player.HasVideo</visible>
+					</control>
+					<control type="group">
+						<top>52</top>
+						<width>1020</width>
+						<include>osd_Seekbar</include>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<width>1040</width>
+						<height>1</height>
+						<top>-15</top>
+						<left>-10</left>
+						<texture colordiffuse="whitetrans">white.png</texture>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>	
+			
+					<!-- flags -->
+					<control type="grouplist">
+						<top>-46</top>
+						<left>2</left>
+						<width>377</width>
+						<height>500</height>
+						<itemgap>5</itemgap>s
+						<orientation>horizontal</orientation>
+						<control type="image">
+							<width>80</width>
+							<height>28</height>
+							<texture>$INFO[VideoPlayer.Rating,rating/imdb/,.png]</texture>
+							<aspectratio align="left">keep</aspectratio>
+							<visible>Player.HasMedia</visible>
+						</control>
+						<control type="image">
+							<width>66</width>
+							<height>28</height>
+							<texture>$INFO[VideoPlayer.VideoResolution,flags/video/resolution/,.png]</texture>
+							<aspectratio align="center">keep</aspectratio>
+							<visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
+						</control>
+						<control type="image">
+							<width>66</width>
+							<height>28</height>
+							<texture>$INFO[VideoPlayer.AudioCodec,flags/codec/,.png]</texture>
+							<aspectratio align="center">keep</aspectratio>
+							<visible>!IsEmpty(VideoPlayer.AudioCodec)</visible>
+						</control>
+						<control type="image">
+							<width>66</width>
+							<height>28</height>
+							<aspectratio align="center" aligny="center">keep</aspectratio>
+							<texture>$INFO[VideoPlayer.AudioChannels,flags/audio/,.png]</texture>
+							<visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
+						</control>					
+					</control>
+				</control>					
+				<!-- label livetv -->
+				<control type="group">
+					<posx>245</posx>
+					<top>44</top>
+					<width>1020</width>
+					<visible>VideoPlayer.Content(LiveTV)</visible>
+					<!-- flags -->
+					<control type="grouplist">
+						<top>23</top>
+						<left>933</left>
+						<width>66</width>
+						<height>500</height>
+						<itemgap>5</itemgap>s
+						<orientation>vertical</orientation>
+						<control type="image">
+							<width>66</width>
+							<height>20</height>
+							<texture>$INFO[VideoPlayer.VideoResolution,flags/video/resolution/,.png]</texture>
+							<aspectratio align="center">keep</aspectratio>
+							<visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
+						</control>
+						<control type="image">
+							<width>66</width>
+							<height>20</height>
+							<texture>$INFO[VideoPlayer.AudioCodec,flags/codec/,.png]</texture>
+							<aspectratio align="center">keep</aspectratio>
+							<visible>!IsEmpty(VideoPlayer.AudioCodec)</visible>
+						</control>
+						<control type="image">
+							<width>66</width>
+							<height>20</height>
+							<aspectratio align="center" aligny="center">keep</aspectratio>
+							<texture>$INFO[VideoPlayer.AudioChannels,flags/audio/,.png]</texture>
+							<visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
+						</control>	
+						<control type="image">
+							<width>66</width>
+							<height>20</height>
+							<texture>$INFO[VideoPlayer.VideoAspect,flags/video/aspectratio/,.png]</texture>
+							<aspectratio align="center">keep</aspectratio>
+							<visible>!IsEmpty(VideoPlayer.VideoAspect)</visible>
+						</control>					
+					</control>
+				
+				<!--rest-->
+					<control type="label">						
+						<width>90</width>
+						<top>28</top>
+						<label>$INFO[VideoPlayer.StartTime]</label>
+						<textcolor>Color3</textcolor>
+						<include>detail_Title_OSD</include>
+					</control>
+					<control type="label">						
+						<width>912</width>
+						<top>28</top>
+						<align>right</align>
+						<label>$INFO[VideoPlayer.EndTime]</label>
+						<textcolor>Color3</textcolor>
+						<include>detail_Title_OSD</include>
+					</control>
+					<control type="label">
+						<top>28</top>
+						<left>90</left>
+						<textwidth>740</textwidth>
+						<scroll>true</scroll>
+						<label>$VAR[osd_Title]</label>
+						<include>detail_Title_OSD</include>
+						<width>800</width>
+					</control>
+					<control type="label">
+						<top>-18</top>
+						<label>[COLOR Color1]$INFO[VideoPlayer.ChannelNumber,,.][/COLOR] $VAR[osd_Info] [COLOR Color1]$INFO[System.Time, - , - ][/COLOR] $INFO[System.Date(d)] $INFO[System.Date(MMM)] $INFO[System.Date(yyyy)]</label>
+						<include>detail_Sub</include>
+						<visible>Player.HasVideo</visible>
+					</control>	
+					<control type="image">
+						<width>1040</width>
+						<left>-25</left>
+						<height>1</height>
+						<top>13</top>
+						<texture colordiffuse="whitetrans">white.png</texture>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>					
+					<control type="label">
+						<top>82</top>
+						<width>90</width>						
+						<label>$INFO[VideoPlayer.NextStartTime]</label>
+						<textcolor>whitetrans2</textcolor>
+						<include>detail_Title_OSD</include>
+					</control>
+					<control type="label">
+						<top>82</top>
+						<width>912</width>		
+						<align>right</align>
+						<label>$INFO[VideoPlayer.NextEndTime]</label>
+						<textcolor>whitetrans2</textcolor>
+						<include>detail_Title_OSD</include>
+					</control>
+					<control type="label">
+						<top>82</top>
+						<left>90</left>
+						<textwidth>740</textwidth>
+						<scroll>true</scroll>
+						<label>$INFO[VideoPlayer.NextTitle]</label>
+						<textcolor>whitetrans2</textcolor>
+						<include>detail_Title_OSD</include>
+					</control>
+					<control type="group">
+						<top>60</top>
+						<width>910</width>
+						<include>osd_Seekbar</include>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+				</control>
+			</control>
+		</control>
+	</include>
+
+<include name="osd_Video_info">
+		<control type="group">			
+			<posy>520</posy>
+			<include>fadeinout</include>
+			<visible>Window.IsActive(fullscreeninfo)</visible>
+		
+			<control type="group">				
+				<!-- poster -->
+				<control type="group">
+					<posx>20</posx>
+					<!-- movie/tvshow -->
+					<control type="image">
+						<width>1240</width>
+						<top>-110</top>
+						<height>283</height>
+						<texture colordiffuse="base_1play">overlays/base_osd_window.png</texture>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<width>1240</width>
+						<top>-110</top>
+						<height>37</height>
+						<texture colordiffuse="whitetrans">white.png</texture>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<width>1240</width>
+						<top>37</top>
+						<height>136</height>
+						<texture colordiffuse="whitetrans">white.png</texture>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<width>1240</width>
+						<top>-110</top>
+						<height>283</height>
+						<texture colordiffuse="base_1play">overlays/bg_diffuse.png</texture>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<width>1040</width>
+						<left>200</left>
+						<top>-110</top>
+						<height>283</height>
+						<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<top>-115</top>
+						<width>200</width>
+						<height>293</height>
+						<texture colordiffuse="whitetrans3">white.png</texture>
+						<aspectratio >scale</aspectratio>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<top>-126</top>
+						<left>-8</left>
+						<width>218</width>
+						<height>293</height>
+						<texture>frames/frame-alt.png</texture>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>			
+					<control type="image">
+						<top>-115</top>
+						<width>200</width>
+						<height>293</height>
+						<texture>$VAR[osd_Art]</texture>
+						<bordertexture colordiffuse="base_5">white.png</bordertexture>
+						<bordersize>5</bordersize>
+						<aspectratio >scale</aspectratio>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<top>-115</top>
+						<width>200</width>
+						<height>293</height>
+						<texture>overlays/cover_overlay.png</texture>
+						<aspectratio>scale</aspectratio>
+						<visible>!VideoPlayer.Content(LiveTV) + !Skin.HasSetting(globalGlass.disable)</visible>
+					</control>	
+					<!-- livetv -->	
+					<control type="image">
+						<width>1240</width>
+						<left>0</left>
+						<top>20</top>
+						<height>149</height>
+						<texture colordiffuse="base_1play">overlays/base_osd_window.png</texture>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>	
+					<control type="image">
+						<width>1040</width>
+						<left>200</left>
+						<top>20</top>
+						<height>37</height>
+						<texture colordiffuse="whitetrans">white.png</texture>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<width>1240</width>
+						<left>0</left>
+						<top>20</top>
+						<height>149</height>
+						<texture colordiffuse="base_1play">overlays/bg_diffuse.png</texture>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<width>1030</width>
+						<left>210</left>
+						<top>20</top>
+						<height>149</height>
+						<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<top>20</top>
+						<width>200</width>
+						<height>149</height>
+						<texture colordiffuse="whitetrans">white.png</texture>
+						<aspectratio>scale</aspectratio>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<top>14</top>
+						<left>-8</left>
+						<width>218</width>
+						<height>149</height>
+						<texture>frames/frame-alt.png</texture>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>	
+					<control type="image">
+						<top>20</top>
+						<width>200</width>
+						<height>149</height>
+						<texture>$VAR[osd_Art]</texture>
+						<bordersize>5</bordersize>
+						<aspectratio>keep</aspectratio>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<top>20</top>
+						<width>200</width>
+						<height>149</height>
+						<texture>overlays/cover_overlay.png</texture>
+						<aspectratio>scale</aspectratio>
+						<visible>VideoPlayer.Content(LiveTV) + !Skin.HasSetting(globalGlass.disable)</visible>
+					</control>
+				</control>				
+				<!-- labels -->				
+				<!-- labels tvshow / movie -->
+				<control type="group">
+					<posx>230</posx>
+					<width>1020</width>
+					<visible>!VideoPlayer.Content(LiveTV)</visible>
+					<top>-59</top>
+					<control type="label">
+						<top>-3</top>
+						<label>$VAR[osd_Title]</label>
+						<include>osd_Title</include>
+						<autoscroll delay="3000" time="1000" repeat="10000"></autoscroll>
+						<width>900</width>
+					</control>
+					<control type="label">
+						<top>25</top>
+						<label>$VAR[osd_Info]</label>
+						<include>detail_Sub</include>
+						<visible>Player.HasVideo</visible>
+					</control>
+					<control type="image">
+						<width>1040</width>
+						<height>1</height>
+						<top>-15</top>
+						<left>-10</left>
+						<texture colordiffuse="whitetrans">white.png</texture>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<width>1040</width>
+						<height>1</height>
+						<top>96</top>
+						<left>-10</left>
+						<texture colordiffuse="whitetrans">white.png</texture>
+						<visible>!VideoPlayer.Content(LiveTV)</visible>
+					</control>						
+					<control type="label">
+						<top>100</top>
+						<height>25</height>
+						<width>270</width>
+						<label>$LOCALIZE[207]</label>
+						<include>detail_Sub</include>
+					</control>
+					<control type="textbox">
+						<top>125</top>
+						<height>97</height>
+						<width>700</width>
+						<label>$VAR[player_Plot]</label>
+						<include>osd_Text_white</include>
+						<autoscroll delay="20000" time="3000" repeat="10000"></autoscroll>
+						<visible>Player.HasVideo</visible>
+					</control>
+					<control type="label">
+						<left>750</left>
+						<top>100</top>
+						<height>25</height>
+						<width>270</width>
+						<label>$LOCALIZE[206]</label>
+						<include>detail_Sub</include>
+					</control>
+					<control type="textbox">
+						<left>750</left>
+						<top>125</top>
+						<height>95</height>
+						<width>265</width>
+						<label>$INFO[VideoPlayer.CastAndRole]</label>
+						<include>osd_Text</include>
+						<autoscroll delay="10000" time="2000" repeat="10000"></autoscroll>
+						<visible>Player.HasVideo</visible>
+					</control>
+					<control type="group">
+						<top>51</top>
+						<width>1020</width>
+						<include>osd_Seekbar</include>
+					</control>
+					<!-- flags -->
+					<control type="grouplist">
+						<top>-46</top>
+						<left>2</left>
+						<width>377</width>
+						<height>500</height>
+						<itemgap>5</itemgap>s
+						<orientation>horizontal</orientation>
+						<control type="image">
+							<width>80</width>
+							<height>28</height>
+							<texture>$INFO[VideoPlayer.Rating,rating/imdb/,.png]</texture>
+							<aspectratio align="left">keep</aspectratio>
+							<visible>Player.HasMedia</visible>
+						</control>
+						<control type="image">
+							<width>66</width>
+							<height>28</height>
+							<texture>$INFO[VideoPlayer.VideoResolution,flags/video/resolution/,.png]</texture>
+							<aspectratio align="center">keep</aspectratio>
+							<visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
+						</control>
+						<control type="image">
+							<width>66</width>
+							<height>28</height>
+							<texture>$INFO[VideoPlayer.AudioCodec,flags/codec/,.png]</texture>
+							<aspectratio align="center">keep</aspectratio>
+							<visible>!IsEmpty(VideoPlayer.AudioCodec)</visible>
+						</control>
+						<control type="image">
+							<width>66</width>
+							<height>28</height>
+							<aspectratio align="center" aligny="center">keep</aspectratio>
+							<texture>$INFO[VideoPlayer.AudioChannels,flags/audio/,.png]</texture>
+							<visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
+						</control>					
+					</control>
+				</control>	
+				
+				<!-- label livetv -->
+				<control type="group">
+					<posx>245</posx>
+					<top>44</top>
+					<width>1020</width>
+					<visible>VideoPlayer.Content(LiveTV)</visible>
+					<!-- flags -->
+					<control type="grouplist">
+					<top>23</top>
+					<left>933</left>
+					<width>66</width>
+					<height>500</height>
+					<itemgap>5</itemgap>s
+					<orientation>vertical</orientation>
+					<control type="image">
+						<width>66</width>
+						<height>20</height>
+						<texture>$INFO[VideoPlayer.VideoResolution,flags/video/resolution/,.png]</texture>
+						<aspectratio align="center">keep</aspectratio>
+						<visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
+					</control>
+					<control type="image">
+						<width>66</width>
+						<height>20</height>
+						<texture>$INFO[VideoPlayer.AudioCodec,flags/codec/,.png]</texture>
+						<aspectratio align="center">keep</aspectratio>
+						<visible>!IsEmpty(VideoPlayer.AudioCodec)</visible>
+					</control>
+					<control type="image">
+						<width>66</width>
+						<height>20</height>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture>$INFO[VideoPlayer.AudioChannels,flags/audio/,.png]</texture>
+						<visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
+					</control>	
+					<control type="image">
+						<width>66</width>
+						<height>20</height>
+						<texture>$INFO[VideoPlayer.VideoAspect,flags/video/aspectratio/,.png]</texture>
+						<aspectratio align="center">keep</aspectratio>
+						<visible>!IsEmpty(VideoPlayer.VideoAspect)</visible>
+					</control>					
+				</control>
+				
+				<!--rest-->
+					<control type="label">						
+						<width>90</width>
+						<top>28</top>
+						<label>$INFO[VideoPlayer.StartTime]</label>
+						<textcolor>Color3</textcolor>
+						<include>detail_Title_OSD</include>
+					</control>
+					<control type="label">						
+						<width>912</width>
+						<top>28</top>
+						<align>right</align>
+						<label>$INFO[VideoPlayer.EndTime]</label>
+						<textcolor>Color3</textcolor>
+						<include>detail_Title_OSD</include>
+					</control>
+					<control type="label">
+						<top>28</top>
+						<left>90</left>
+						<textwidth>740</textwidth>
+						<scroll>true</scroll>
+						<label>$VAR[osd_Title]</label>
+						<include>detail_Title_OSD</include>
+						<width>800</width>
+					</control>
+					<control type="label">
+						<top>-18</top>
+						<label>[COLOR Color1]$INFO[VideoPlayer.ChannelNumber,,.][/COLOR] $VAR[osd_Info]</label>
+						<include>detail_Sub</include>
+						<visible>Player.HasVideo</visible>
+					</control>	
+					<control type="label">
+						<top>-18</top>
+						<width>1000</width>
+						<align>right</align>
+						<label>[COLOR Color1]$INFO[System.Time, , -] $INFO[System.Date(DDD), , -][/COLOR] $INFO[System.Date(d)] $INFO[System.Date(MMM)] $INFO[System.Date(yyyy)]</label>
+						<include>detail_Sub</include>
+						<visible>Player.HasVideo</visible>
+					</control>
+					<control type="image">
+						<width>1040</width>
+						<left>-25</left>
+						<height>1</height>
+						<top>13</top>
+						<texture colordiffuse="whitetrans">white.png</texture>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>					
+					<control type="label">
+						<top>82</top>
+						<width>90</width>						
+						<label>$INFO[VideoPlayer.NextStartTime]</label>
+						<textcolor>whitetrans2</textcolor>
+						<include>detail_Title_OSD</include>
+					</control>
+					<control type="label">
+						<top>82</top>
+						<width>912</width>		
+						<align>right</align>
+						<label>$INFO[VideoPlayer.NextEndTime]</label>
+						<textcolor>whitetrans2</textcolor>
+						<include>detail_Title_OSD</include>
+					</control>
+					<control type="label">
+						<top>82</top>
+						<left>90</left>
+						<textwidth>740</textwidth>
+						<scroll>true</scroll>
+						<label>$INFO[VideoPlayer.NextTitle]</label>
+						<textcolor>whitetrans2</textcolor>
+						<include>detail_Title_OSD</include>
+					</control>
+					<control type="group">
+						<top>60</top>
+						<width>910</width>
+						<include>osd_Seekbar</include>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+				</control>
+				
+				<!-- plot box livetv -->
+				<control type="group">
+					<left>15</left>					
+					<top>-310</top>
+					<width>1280</width>
+					<height>400</height>
+					<visible>VideoPlayer.Content(LiveTV)</visible>
+					<include>screen_Dimensions</include>
+					<control type="image">
+						<top>125</top>
+						<left>5</left>
+						<width>1240</width>
+						<height>200</height>
+						<texture colordiffuse="base_1play">overlays/base_osd_window.png</texture>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>
+					<control type="image">
+						<top>125</top>
+						<left>5</left>
+						<width>1240</width>
+						<height>50</height>
+						<texture colordiffuse="whitetrans">white.png</texture>
+					</control>
+					<control type="image">
+						<top>125</top>
+						<left>5</left>
+						<width>1240</width>
+						<height>200</height>
+						<texture colordiffuse="base_1play">overlays/bg_diffuse.png</texture>
+					</control>
+					<control type="image">
+						<width>1240</width>
+						<left>5</left>
+						<height>1</height>
+						<top>175</top>
+						<texture colordiffuse="whitetrans">white.png</texture>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+					</control>					
+					<control type="image">
+						<top>125</top>
+						<left>5</left>
+						<width>1240</width>
+						<height>200</height>
+						<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+					</control>
+					<control type="label">
+						<top>127</top>
+						<width>1220</width>
+						<left>15</left>
+						<label>$VAR[osd_Title]</label>
+						<scrolltime>50</scrolltime>
+						<scroll>auto</scroll>
+						<textcolor>Color1</textcolor>
+						<include>detail_Title</include>
+					</control>
+					<control type="label">
+						<top>142</top>
+						<width>1220</width>
+						<left>15</left>
+						<label>$INFO[VideoPlayer.StartTime] - $INFO[VideoPlayer.EndTime]</label>
+						<textcolor>Color2</textcolor>
+						<include>container_Sub</include>
+					</control>
+					<control type="textbox">
+						<top>180</top>
+						<left>15</left>
+						<width>1220</width>
+						<height>130</height>
+						<label>$VAR[player_Plot]</label>
+						<textcolor>Color1</textcolor>
+						<include>container_TextSmall</include>
+						<autoscroll delay="10000" time="4000" repeat="10000">Container(11).HasFocus + !ControlGroup(6000).HasFocus</autoscroll>
+					</control>
+				</control>
+				
+			</control>
+		</control>
+	</include>	
+
+
+	
+<!--WINDOW TITLES-->
+	<include name="windowTitle">
+		<left>59</left>
+		<top>15</top>
+		<width>950</width>
+		<aligny>center</aligny>
+		<font>light_Window</font>
+		<textcolor>Color1</textcolor>
+		<include>transition_WindowTitle</include>
+		<include>toggle_Menu</include>
+		<!--<visible>![Window.IsActive(movieinformation) | Window.IsActive(musicinformation) | Window.IsActive(busydialog) | Control.IsVisible(531)]</visible>-->
+		<visible>![Window.IsActive(movieinformation) | Window.IsActive(musicinformation) | Control.IsVisible(531)]</visible>
+		<animation effect="slide" end="-27" time="0" condition="Skin.HasSetting(global.kiosk)">Conditional</animation>
+	</include>
+	<include name="windowTitle_Video">
+		<control type="label">
+			<label>$VAR[window_Title.Video]</label>
+			<include>windowTitle</include>
+		</control>
+	</include>		
+	<include name="windowTitle_Music">
+		<control type="label">
+			<label>$VAR[window_Title.Music]</label>
+			<include>windowTitle</include>
+		</control>
+	</include>
+	<include name="windowTitle_Pictures">
+		<control type="label">
+			<label>$VAR[window_Title.Pictures]</label>
+			<include>windowTitle</include>
+		</control>
+	</include>
+	<include name="windowTitle_Programs">
+		<control type="label">
+			<label>[LOWERCASE]$LOCALIZE[0][/LOWERCASE]</label>
+			<include>windowTitle</include>
+		</control>
+	</include>
+	<include name="windowTitle_System">
+		<control type="label">
+			<left>35</left>
+			<label>$VAR[window_Title.System]</label>
+			<include>windowTitle</include>
+		</control>
+	</include>
+	<include name="windowTitle_Addons">
+		<control type="label">
+			<label>$VAR[window_Title.Addons]</label>
+			<include>windowTitle</include>
+		</control>
+	</include>
+	<include name="windowTitle_PVR">
+		<control type="label">
+			<label>$VAR[window_Title.PVR]</label>
+			<include>windowTitle</include>
+		</control>
+	</include>
+	<include name="windowTitle_Playlists">
+		<control type="label">
+			<label>$VAR[window_Title.Playlists]</label>
+			<include>windowTitle</include>
+		</control>
+	</include>
+	<include name="windowTitle_Weather">
+		<control type="label">
+			<label>$VAR[window_Title.Weather]</label>
+			<include>windowTitle</include>
+		</control>
+	</include>
+</includes>

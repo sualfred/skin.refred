@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colors>
+<!--main colors-->
+	<color name="base_1">ee114076</color><!--main background color-->
+	<color name="base_1play">dd114076</color><!--mostly used blue diffuse for backgrounds-->
+	<color name="base_1osd">ad114076</color><!--blue diffuse for OSD panels-->
+	<color name="base_2">ff004160</color><!--primary overlay / menu color-->
+	<color name="base_3">ff0c2c40</color><!--secondary overlay / menu color (home menu)-->
+	<color name="base_3music">aa0c2c40</color><!-- blue background diffuse for music playback. active when visualization is visibile-->
+	<color name="base_4">bb0c2c40</color><!--secondary overlay / menu color (home menu)-->
+	<color name="base_5">0effffff</color><!--secondary overlay / menu color (home menu)-->
+	<color name="base_6">ddffffff</color><!--secondary overlay / menu color (home menu)-->
+	<color name="base_61">ffffffff</color><!--secondary overlay / menu color (home menu)-->
+	<color name="base_7">ff003f5d</color><!--primary overlay / menu color-->
+	<color name="base_8">ee114076</color><!--primary overlay / menu color-->
+	<color name="base_5osd">ddffffff</color><!--secondary overlay / menu color (home menu)-->
+	<color name="blacktrans">1a141414</color><!--secondary overlay / menu color (home menu)-->
+	<color name="blacktrans2">3a141414</color><!--secondary overlay / menu color (home menu)-->
+	<color name="blacktrans3">9a141414</color><!--secondary overlay / menu color (home menu)-->
+	<color name="whitetrans0">11ffffff</color><!--secondary overlay / menu color (home menu)-->
+	<color name="whitetrans">1affffff</color><!--secondary overlay / menu color (home menu)-->
+	<color name="whitetrans2">3affffff</color><!--secondary overlay / menu color (home menu)-->
+	<color name="whitetrans3">9affffff</color><!--secondary overlay / menu color (home menu)-->
+	<color name="accent_1">ff0c2c40</color><!--primary accent color (seekbar)-->
+	<color name="accent_2">ff245678</color><!--secondary accent color (home submenu)-->
+	
+<!--text-->
+	<color name="Color1">ffffffff</color><!--main textcolor-->
+	<color name="Color2">ff6aa6cb</color><!--secondary textcolor-->
+	<color name="Color3">ffcacaca</color><!--tertiary textcolor-->
+	<color name="Color4">FF696a6c</color><!--primary dialog textcolor-->
+	<color name="Color5">FF000000</color><!--extra dark dialog textcolor-->
+	<color name="Color6">aa000000</color><!--black trans-->
+	<color name="Color7">FFebebeb</color><!--description / plot textcolor-->
+
+<!--buttons / control states-->
+	<color name="Focused">FF111111</color>
+	<color name="Disabled">ff9a9a9a</color>
+	<color name="Selected">ff98ce00</color> <!--used for selected items and seekbar -->
+	<color name="Warning">ffff4e4e</color>
+
+<!--columns / lists-->
+	<color name="column1">ffffffff</color><!--main columns text color-->
+	<color name="column2">dd0c2134</color><!--primary columns base color-->
+	<color name="column3">ff2d5a83</color><!--secondary columns base color-->
+	<color name="column4">ff0c2439</color><!--secondary columns base color-->
+	
+<!-- bello colors for music visualization -->
+	<color name="33white">33FFFFFF</color>
+	<color name="44white">44FFFFFF</color>
+	<color name="55white">55FFFFFF</color>
+	<color name="66white">66FFFFFF</color>
+	<color name="77white">77FFFFFF</color>
+	<color name="88white">88FFFFFF</color>
+	<color name="99white">99FFFFFF</color>
+	<color name="aawhite">AAFFFFFF</color>	
+	<color name="bbwhite">BBFFFFFF</color>
+	<color name="ccwhite">CCFFFFFF</color>	
+	<color name="ddwhite">DDFFFFFF</color>	
+	<color name="eewhite">EEFFFFFF</color>
+	<color name="ccblack">CC000000</color>
+	<color name="aagrey">AADDDDDD</color>
+	<color name="bbgrey">BBDDDDDD</color>
+	<color name="ccgrey">CCDDDDDD</color>
+	<color name="ddgrey">DDDDDDDD</color>
+	<color name="99grey">99DDDDDD</color>
+	<color name="88grey">88DDDDDD</color>
+	<color name="77grey">77DDDDDD</color>
+	<color name="66grey">66DDDDDD</color>
+	<color name="55grey">55DDDDDD</color>
+	<color name="44grey">44DDDDDD</color>
+	<color name="33grey">33DDDDDD</color>
+	<color name="22grey">22DDDDDD</color>
+</colors>

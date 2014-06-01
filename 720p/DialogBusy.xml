@@ -1,0 +1,75 @@
+﻿<window id="136">
+    <zorder>5</zorder>
+		<animation type="WindowOpen" reversible="false">
+			<effect type="zoom" time="450" center="auto" start="190" end="100" tween="cubic" easing="out" />
+			<effect type="fade" time="450" start="0" easing="out" end="100" />
+		</animation>			
+		<animation type="WindowClose" reversible="false">
+			<effect type="zoom" time="450" center="auto" start="100" end="190" tween="cubic" easing="in" />
+			<effect type="fade" time="450" start="100" easing="in" end="0" />
+		</animation>		  
+		<animation type="Visible" reversible="false">
+			<effect type="zoom" time="450" center="auto" start="190" end="100" tween="cubic" easing="out" />
+			<effect type="fade" time="450" start="0" easing="out" end="100" />
+		</animation>			
+		<animation type="Hidden" reversible="false">
+			<effect type="zoom" time="450" center="auto" start="100" end="190" tween="cubic" easing="in" />
+			<effect type="fade" time="450" start="100" easing="in" end="0" />
+		</animation>
+		<controls>
+		<control type="image">
+			<include>screen_Dimensions</include>
+			<texture colordiffuse="base_1">overlays/base_color.png</texture>
+			<include>transition_Dialog</include>
+		</control>
+		<control type="group">
+				<posx>545</posx>
+				<posy>245</posy>
+			<control type="image">
+				<description>Busy animation</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>220</width>
+				<height>220</height>
+				<texture>dialogs/busy/animation_1.png</texture>
+				<aspectratio>keep</aspectratio>
+				<animation effect="rotate" start="0" end="360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
+			</control>
+			<control type="image">
+				<description>Busy animation</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>220</width>
+				<height>220</height>
+				<texture>dialogs/busy/animation_2.png</texture>
+				<aspectratio>keep</aspectratio>
+				<animation effect="rotate" start="0" end="-360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
+			</control>
+			<control type="label">
+				<description>Busy label</description>
+				<posx>-90</posx>
+				<posy>190</posy>
+				<width>400</width>
+				<height>35</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$LOCALIZE[31712]</label>
+				<font>light_Dialog</font>
+				<textcolor>Color3</textcolor>
+			</control>
+			<control type="label">
+				<description>Busy label</description>
+				<posx>-90</posx>
+				<posy>90</posy>
+				<width>400</width>
+				<height>35</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[Player.CacheLevel]%</label>
+				<font>regular_Big</font>
+				<textcolor>Color1</textcolor>
+				<visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
+			</control>
+		</control>
+	</controls>
+</window>

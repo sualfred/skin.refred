@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <zorder>1</zorder>-->
+    <controls>
+        <control type="group">
+		
+			<control type="image">
+				<include>screen_Dimensions</include>
+				<texture>$INFO[ListItem.Property(Fanart_Image)]</texture>
+				<fadetime>100</fadetime>
+				<aspectratio>scale</aspectratio>
+			</control>
+			<control type="image">
+				<include>screen_Dimensions</include>
+				<texture colordiffuse="base_1play">overlays/base_color.png</texture>
+			</control>
+            <visible>![Window.IsVisible(FileBrowser) | Window.IsVisible(script-Actors-Browser.xml) | [Window.IsVisible(DialogSelect.xml) + StringCompare(Window.Property(actorsselect),1)]]</visible>
+            <control type="group">
+                <!--left side-->
+                <animation effect="slide" start="-729,0" end="0,0" time="320" tween="quadratic">WindowOpen</animation>
+                <animation effect="slide" end="-729,0" time="320" tween="quadratic">WindowClose</animation>
+                <animation effect="slide" start="-729,0" end="0,0" time="320" tween="quadratic">VisibleChange</animation>
+
+                <control type="image">
+                    <width>486</width>
+					<height>720</height>
+                    <texture background="true">$INFO[ListItem.Icon]</texture>
+					<fadetime>100</fadetime>
+                </control>
+				<control type="image">
+                    <width>486</width>
+					<height>720</height>
+                    <texture background="true">overlays/cover_overlay.png</texture>
+					<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+					<fadetime>100</fadetime>
+                </control>
+                <control type="image">
+                    <left>709</left>
+                    <width>40</width>
+                    <height>1080</height>
+                    <texture>common/topbar_down.png</texture>
+                    <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
+                    <include>TopbarPulseAnimationRight</include>
+                    <visible>!Skin.HasSetting(DisableGlowbar)</visible>
+                </control>
+            </control>
+            <control type="group">
+                <!-- right side -->
+                <animation effect="slide" start="1192,0" end="0,0" time="320" tween="quadratic">WindowOpen</animation>
+                <animation effect="slide" end="1192,0" time="320" tween="quadratic">WindowClose</animation>
+                <animation effect="slide" start="1192,0" end="0,0" time="320" tween="quadratic">VisibleChange</animation>
+				
+                <control type="grouplist">
+                    <left>520</left>
+					<top>30</top>
+					<height>900</height>
+					<itemgap>0</itemgap>
+					<control type="label">
+						<width>720</width>
+						<height>27</height>
+						<label>$INFO[ListItem.Title]</label>
+						<include>detail_Header</include>
+					</control>
+					
+				<control type="label">
+					<description>spacer</description>
+					<label> </label>
+					<width>720</width>
+					<height>50</height>
+					<include>detail_Sub</include>
+				</control>
+               
+				
+				<!--info container-->
+					<control type="grouplist" id="1000">
+						<orientation>vertical</orientation>
+						<height>900</height>
+						<top>50</top>
+						<itemgap>0</itemgap>
+						
+						<control type="group">
+							<width>720</width>
+							<height>24</height>
+							<visible>!IsEmpty(ListItem.originaltitle)</visible>
+							<control type="label">
+								<width>720</width>
+								<label>Original Title [COLOR=Color1]$INFO[ListItem.originaltitle][/COLOR]</label>
+								<include>detail_Sub</include>
+								<include>autoscroll-line</include>
+							</control>
+						</control>
+						<control type="group">
+							<width>720</width>
+							<height>22</height>
+							<visible>!IsEmpty(ListItem.genre)</visible>
+							<control type="label">
+								<width>720</width>
+								<label>Genre [COLOR=Color1]$INFO[ListItem.genre] [/COLOR]</label>
+								<include>detail_Sub</include>
+								<include>autoscroll-line</include>
+							</control>
+						</control>
+						<control type="group">
+							<width>720</width>
+							<height>24</height>
+							<visible>!IsEmpty(ListItem.year)</visible>
+							<control type="label">
+								<width>720</width>
+								<label>Year [COLOR=Color1]$INFO[ListItem.year][/COLOR]</label>
+								<include>detail_Sub</include>
+								<include>autoscroll-line</include>
+							</control>
+						</control>
+						<control type="group">
+							<width>720</width>
+							<height>22</height>
+							<visible>!IsEmpty(ListItem.Property(releasedate))</visible>
+							<control type="label">
+								<width>720</width>
+								<label>Release Date [COLOR=Color1]$INFO[ListItem.Property(releasedate)] [/COLOR]</label>
+								<include>detail_Sub</include>
+								<include>autoscroll-line</include>
+							</control>
+						</control>
+						<control type="group">
+							<width>720</width>
+							<height>22</height>
+							<visible>!IsEmpty(ListItem.Property(country))</visible>
+							<control type="label">
+								<width>720</width>
+								<label>Country [COLOR=Color1]$INFO[ListItem.Property(country)] [/COLOR]</label>
+								<include>detail_Sub</include>
+								<include>autoscroll-line</include>
+							</control>
+						</control>
+						<control type="group">
+							<width>720</width>
+							<height>24</height>
+							<visible>!IsEmpty(ListItem.director)</visible>
+							<control type="label">
+								<width>720</width>
+								<label>Director [COLOR=Color1]$INFO[ListItem.director][/COLOR]</label>
+								<include>detail_Sub</include>
+								<include>autoscroll-line</include>
+							</control>
+						</control>
+						<control type="group">
+							<width>720</width>
+							<height>22</height>
+							<visible>!IsEmpty(ListItem.duration)</visible>
+							<control type="label">
+								<width>720</width>
+								<label>Duration [COLOR=Color1]$INFO[ListItem.duration] minutes[/COLOR]</label>
+								<include>detail_Sub</include>
+								<include>autoscroll-line</include>
+							</control>
+						</control>
+						<control type="group">
+							<width>720</width>
+							<height>22</height>
+							<visible>!IsEmpty(ListItem.rating)</visible>
+							<control type="label">
+								<width>720</width>
+								<label>Rating [COLOR=Color1]$INFO[ListItem.rating] [/COLOR]</label>
+								<include>detail_Sub</include>
+								<include>autoscroll-line</include>
+							</control>
+						</control>						
+						<control type="group">
+							<width>720</width>
+							<height>22</height>
+							<visible>!IsEmpty(ListItem.mpaa)</visible>
+							<control type="label">
+								<width>720</width>
+								<label>MPAA [COLOR=Color1]$INFO[ListItem.mpaa] [/COLOR]</label>
+								<include>detail_Sub</include>
+								<include>autoscroll-line</include>
+							</control>
+						</control>
+						<control type="group">
+							<width>720</width>
+							<height>22</height>
+							<visible>!IsEmpty(ListItem.studio)</visible>
+							<control type="label">
+								<width>720</width>
+								<label>Studio [COLOR=Color1]$INFO[ListItem.studio] [/COLOR]</label>
+								<include>detail_Sub</include>
+								<include>autoscroll-line</include>
+							</control>
+						</control>
+						<control type="group">
+							<width>720</width>
+							<height>22</height>
+							<visible>!IsEmpty(ListItem.writer)</visible>
+							<control type="label">
+								<width>720</width>
+								<label>Writer [COLOR=Color1]$INFO[ListItem.writer] [/COLOR]</label>
+								<include>detail_Sub</include>
+								<include>autoscroll-line</include>
+							</control>
+						</control>
+						
+					</control>
+					
+						<control type="label">
+							<description>spacer</description>
+							<label>-</label>
+							<height>20</height>
+						</control>
+					
+					<!--button area-->
+					<control type="group">			
+						<control type="list" id="50">
+							<width>1</width>
+							<height>1</height>
+							<onleft>9000</onleft>
+							<onright>9000</onright>
+							<onup>9000</onup>
+							<ondown>9000</ondown>
+							<itemlayout height="1" width="1" />
+							<focusedlayout height="1" width="1" />
+						</control>
+						
+						<control type="grouplist" id="9000">
+							<width>720</width>
+							<height>60</height>
+							<onleft>9000</onleft>
+							<onright>9000</onright>
+							<onup>150</onup>
+							<ondown>150</ondown>
+							<orientation>horizontal</orientation>
+							<control type="button" id="6">
+								<label>Toogle</label>
+								<include>column_Button</include>
+							</control>
+							<control type="button" id="10">
+								<label>Cast</label>
+								<include>column_Button</include>
+							</control>
+							<control type="button" id="20">
+								<label>Suche Trailer</label>
+								<onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$ESCINFO[ListItem.Title],return)</onclick>
+								<onclick>Dialog.Close(all,true)</onclick>
+								<include>column_Button</include>
+							</control>
+							<control type="button" id="15">
+								<label>20410</label>
+								<onclick>PlayMedia($ESCINFO[ListItem.Trailer])</onclick>
+								<onclick>Dialog.Close(all,true)</onclick>
+								<visible>!IsEmpty(ListItem.Trailer)</visible>
+								<include>column_Button</include>
+							</control>
+						</control>						
+					
+					
+					<control type="textbox" id="400">
+                        <top>50</top>
+                        <width>720</width>
+                        <height>270</height>
+                        <label fallback="31006">$INFO[ListItem.Plot]</label>
+                        <include>detail_Text</include>
+						<include>autoscroll-plot</include>
+						<visible>!Control.IsVisible(150)</visible>
+                       
+                    </control>
+					
+					<control type="list" id="150">
+                        <visible>ControlGroup(9000).HasFocus(10)</visible>
+						<top>50</top>
+                        <width>720</width>
+                        <height>263</height>
+                        <onleft>9000</onleft>
+                        <onright>9000</onright>
+                        <onup>150</onup>
+                        <ondown>150</ondown>
+                        <pagecontrol>61</pagecontrol>
+                        <scrolltime>200</scrolltime>
+                        <orientation>vertical</orientation>
+                        <itemlayout height="44" width="720">
+                            <control type="image">
+                                 <width>710</width>
+                                 <include>column_ListButton</include>
+                            </control>
+							<control type="label">
+								<left>15</left>
+                                <width>640</width>
+                                <info>ListItem.Label</info>
+								<include>column_ListButtonLabel</include>
+                                <visible>IsEmpty(ListItem.Property(LibraryHasMovie))</visible>
+                            </control>
+                            <control type="label">
+								<left>15</left>
+                                <width>640</width>
+                                <info>ListItem.Label</info>
+								<include>column_ListButtonLabel</include>
+                                <visible>!IsEmpty(ListItem.Property(LibraryHasMovie))</visible>
+                            </control>
+                            <control type="label">
+                                <left>695</left>
+                                <width>640</width>
+                                <align>right</align>
+								<include>column_ListButtonLabel</include>
+                                <label>$INFO[ListItem.Year]</label>
+                                <scroll>true</scroll>
+                            </control>
+                            <control type="image">
+                                <left>675</left>
+                                <top>7</top>
+                                <width>35</width>
+                                <height>35</height>
+                                <texture>OverlayWatched.png</texture>
+                                <visible>IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="44" width="720">
+                            <control type="group">
+                                <visible>!Control.HasFocus(150)</visible>
+                                <control type="image">
+									 <width>710</width>
+									 <include>column_ListButton</include>
+								</control>
+								<control type="label">
+									<left>15</left>
+									<width>640</width>
+									<info>ListItem.Label</info>
+									<include>column_ListButtonLabel</include>
+									<visible>IsEmpty(ListItem.Property(LibraryHasMovie))</visible>
+								</control>
+								<control type="label">
+									<width>640</width>
+									<info>ListItem.Label</info>
+									<include>column_ListButtonLabel</include>
+									<visible>!IsEmpty(ListItem.Property(LibraryHasMovie))</visible>
+								</control>
+								<control type="label">
+									<left>695</left>
+									<width>640</width>
+									<align>right</align>
+									<include>column_ListButtonLabel</include>
+									<label>$INFO[ListItem.Year]</label>
+									<scroll>true</scroll>
+								</control>
+								<control type="image">
+									<left>675</left>
+									<top>7</top>
+									<width>35</width>
+									<height>35</height>
+									<texture>OverlayWatched.png</texture>
+									<visible>IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+								</control>
+                            </control>
+                            <control type="group">
+                                <visible>Control.HasFocus(150)</visible>
+                                <control type="image">
+									 <width>710</width>
+									 <include>column_ListButtonFocus</include>
+								</control>
+								<control type="label">
+									<left>15</left>
+									<width>640</width>
+									<info>ListItem.Label</info>
+									<textcolor>Color5</textcolor>
+									<include>column_ListButtonLabel</include>
+									<visible>IsEmpty(ListItem.Property(LibraryHasMovie))</visible>
+								</control>
+								<control type="label">
+									<width>640</width>
+									<left>15</left>
+									<info>ListItem.Label</info>
+									<textcolor>Color5</textcolor>
+									<include>column_ListButtonLabel</include>
+									<visible>!IsEmpty(ListItem.Property(LibraryHasMovie))</visible>
+								</control>
+								<control type="label">
+									<left>695</left>
+									<width>640</width>
+									<align>right</align>
+									<textcolor>Color5</textcolor>
+									<include>column_ListButtonLabel</include>
+									<label>$INFO[ListItem.Year]</label>
+									<scroll>true</scroll>
+								</control>
+								<control type="image">
+									<left>675</left>
+									<top>7</top>
+									<width>35</width>
+									<height>35</height>
+									<texture>OverlayWatched.png</texture>
+									<visible>IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+								</control>
+                            </control>
+                            <control type="image">
+                                <left>675</left>
+                                <top>7</top>
+                                <width>35</width>
+                                <height>35</height>
+                                <texture>OverlayWatched.png</texture>
+                                <visible>IntegerGreaterThan(ListItem.Property(PlayCount),0)</visible>
+                            </control>
+                        </focusedlayout>
+                    </control>
+					</control>
+					<!--spacer-->
+					
+				</control>
+                
+            </control>
+        </control>
+    </controls>
+</window>

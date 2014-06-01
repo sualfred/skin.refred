@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<addon id="skin.refred" version="1.1.0-PR" name="reFred" provider-name="Sualfred">
+	<requires>
+		<import addon="xbmc.gui" version="5.0.1"/>
+		<!--<import addon="script.grab.fanart" version="0.12.8"/>-->
+		<import addon="service.library.data.provider" version="0.0.1"/>
+		<import addon="script.tv.show.next.aired" version="6.0.2"/>
+		<import addon="script.artistslideshow" version="1.6.3"/>
+		<import addon="script.artwork.downloader" version="12.0.23"/>
+		<import addon="script.globalsearch" version="2.0.8"/>
+		<import addon="service.skin.widgets" version="0.0.27"/>
+	</requires>
+	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1.00" debugging="false">
+		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary>reFred by sualfred</summary>
+		<description>reFred is a XBMC Gotham skin, which is a total conversion (nearly) of reFocus by Jeroen.</description>
+		<disclaimer>Mouse and touchscreen use not supported</disclaimer>
+		<license>Attribution-NonCommercial-ShareAlike 3.0 Unported</license>
+		<forum>-</forum>
+		<source>-</source>
+	</extension>
+</addon>
+
+

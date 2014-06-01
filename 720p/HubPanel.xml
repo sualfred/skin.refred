@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<includes>	
+	<include name="hub">
+			
+	<!-- hub panel movies-->>
+	<control type="group" id="5562">
+		<visible>ControlGroup(5562).HasFocus()</visible> 
+		<!--<include>fadeinout</include>-->
+		<animation tween="Back" easing="InOut" effect="slide" start="0,720" end="0,0" time="1000" condition="ControlGroup(5562).HasFocus()">Visible</animation>
+		<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,720" time="1000" condition="!ControlGroup(5562).HasFocus()">Hidden</animation>
+		<!-- window title -->
+		<control type="label">
+			<left>840</left>
+			<top>70</top>
+			<width>950</width>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[32028]</label>
+			<font>light_Window</font>
+			<textcolor>Color1</textcolor>
+			<include>transition_WindowTitle</include>
+		</control>
+		<control type="label">
+			<left>100</left>
+			<top>70</top>
+			<width>950</width>
+			<aligny>center</aligny>
+			<label>$VAR[hubcategory]</label>
+			<font>light_Window</font>
+			<textcolor>Color1</textcolor>
+			<include>transition_WindowTitle</include>
+		</control>
+		<!--buttons-->
+		<control type="list" id="556">
+			<left>840</left>
+			<top>120</top>
+			<width>335</width>
+			<height>540</height>
+			<onback>9110</onback>
+			<onleft>5561</onleft>
+			<onup>556</onup>
+			<ondown>556</ondown>
+			<content>
+			<include>QuickNavMoviesHub</include>
+			</content>
+			<preloaditems>2</preloaditems>
+			<include>global_ListScroll</include>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="335" height="54" align="right">
+				<control type="image">
+					<width>335</width>
+					<height>54</height>
+					<texture>overlays/semitrans.png</texture>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>5</top>
+					<width>280</width>
+					<visible>true</visible>
+					<label>$VAR[global_Title]</label>
+					<include>container_Title</include>
+				</control>
+				<control type="image">
+					<top>54</top>
+					<width>335</width>
+					<height>1</height>
+					<texture colordiffuse="whitetrans0">white.png</texture>
+				</control>
+			</itemlayout>
+			<focusedlayout width="335" height="54">
+				<control type="image">
+					<width>335</width>
+					<height>54</height>
+					<texture>views/focus.png</texture>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>5</top>
+					<aligny>center</aligny>
+					<width>280</width>
+					<visible>true</visible>
+					<label>$VAR[global_Title]</label>
+					<include>container_Title-focus</include>
+				</control>
+			</focusedlayout>
+		</control>
+		<!-- widget window -->
+		<control type="image">
+			<left>100</left>
+			<top>120</top>
+			<width>730</width>
+			<height>540</height>
+			<texture>white.png</texture>
+			<visible>Control.HasFocus(5561)</visible>
+		</control>
+		<control type="image">
+			<left>100</left>
+			<top>120</top>
+			<width>730</width>
+			<height>540</height>
+			<texture>white.png</texture>
+			<include>bordertrans</include>
+			<visible>!Control.HasFocus(5561)</visible>
+		</control>
+		<control type="fixedlist" id="5561">
+			<visible>!Container(556).HasFocus(2) + !Container(556).HasFocus(14)</visible>
+			<left>105</left>
+			<top>125</top>
+			<width>720</width>
+			<height>530</height>
+			<onback>9110</onback>
+			<onright>556</onright>
+			<onup>5561</onup>
+			<ondown>5561</ondown>
+			<content>videodb://movies/titles/</content>
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<include>toggle_Menu</include>
+			<fadetime>1000</fadetime>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5561)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+				 <include>hubwidget-commons</include>
+			</itemlayout>
+			<focusedlayout width="720" height="530">
+				<include>hubwidget-commons</include>
+			</focusedlayout>
+		</control>
+		<control type="fixedlist" id="5561">
+			<visible>Container(556).HasFocus(2)</visible>
+			<left>105</left>
+			<top>125</top>
+			<width>720</width>
+			<height>530</height>
+			<onright>556</onright>
+			<onback>9110</onback>
+			<onup>5561</onup>
+			<ondown>5561</ondown>
+			<include>widgets_movies_new</include>
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<fadetime>1000</fadetime>
+			<include>toggle_Menu</include>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5561)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+				 <include>hubwidget-commons</include>
+			</itemlayout>
+			<focusedlayout width="720" height="530">
+				<include>hubwidget-commons</include>
+			</focusedlayout>
+		</control>
+		<control type="fixedlist" id="5561">
+			<visible>Container(556).HasFocus(14)</visible>
+			<left>105</left>
+			<top>125</top>
+			<width>720</width>
+			<height>530</height>
+			<onright>556</onright>
+			<onup>5561</onup>
+			<onback>9110</onback>
+			<ondown>5561</ondown>
+			<include>widgets_inprogress_movies</include>
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<fadetime>1000</fadetime>
+			<include>toggle_Menu</include>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5561)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+			</itemlayout>
+			<focusedlayout width="720" height="530">				
+			</focusedlayout>
+		</control>
+		<include>hubwidget-panel</include>
+	</control>
+	<!-- hub panel tvshows -->
+	<control type="group" id="5563">
+		<visible>ControlGroup(5563).HasFocus()</visible> 
+		<!--<include>fadeinout</include>-->
+		<animation tween="Back" easing="InOut" effect="slide" start="0,720" end="0,0" time="1000" condition="ControlGroup(5563).HasFocus()">Visible</animation>
+		<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,720" time="1000" condition="!ControlGroup(5563).HasFocus()">Hidden</animation>
+		<!-- window title -->
+		<control type="label">
+			<left>840</left>
+			<top>70</top>
+			<width>950</width>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[32029]</label>
+			<font>light_Window</font>
+			<textcolor>Color1</textcolor>
+			<include>transition_WindowTitle</include>
+		</control>
+		<control type="label">
+			<left>100</left>
+			<top>70</top>
+			<width>950</width>
+			<aligny>center</aligny>
+			<label>$VAR[hubcategory]</label>
+			<font>light_Window</font>
+			<textcolor>Color1</textcolor>
+			<include>transition_WindowTitle</include>
+		</control>
+		<!--buttons-->
+		<control type="list" id="557">
+			<left>840</left>
+			<top>120</top>
+			<width>335</width>
+			<height>540</height>
+			<onback>9110</onback>
+			<onleft>5571</onleft>
+			<onup>557</onup>
+			<ondown>557</ondown>
+			<content>
+			<include>QuickNavTvshowsHub</include>
+			</content>
+			<preloaditems>2</preloaditems>
+			<include>global_ListScroll</include>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="335" height="54" align="right">
+				<control type="image">
+					<width>335</width>
+					<height>54</height>
+					<texture>overlays/semitrans.png</texture>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>5</top>
+					<width>280</width>
+					<visible>true</visible>
+					<label>$VAR[global_Title]</label>
+					<include>container_Title</include>
+				</control>
+				<control type="image">
+					<top>54</top>
+					<width>335</width>
+					<height>1</height>
+					<texture colordiffuse="whitetrans0">white.png</texture>
+				</control>
+			</itemlayout>
+			<focusedlayout width="335" height="54">
+				<control type="image">
+					<width>335</width>
+					<height>54</height>
+					<texture>views/focus.png</texture>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>5</top>
+					<aligny>center</aligny>
+					<width>280</width>
+					<visible>true</visible>
+					<label>$VAR[global_Title]</label>
+					<include>container_Title-focus</include>
+				</control>
+			</focusedlayout>
+		</control>
+		<!-- widget window -->
+		<control type="image">
+			<left>100</left>
+			<top>120</top>
+			<width>730</width>
+			<height>540</height>
+			<texture>white.png</texture>
+			<visible>Control.HasFocus(5571)</visible>
+		</control>
+		<control type="image">
+			<left>100</left>
+			<top>120</top>
+			<width>730</width>
+			<height>540</height>
+			<texture>white.png</texture>
+			<include>bordertrans</include>
+			<visible>!Control.HasFocus(5571)</visible>
+		</control>
+		<control type="fixedlist" id="5571">
+			<visible>!Container(557).HasFocus(2) + !Container(557).HasFocus(14)</visible>
+			<left>105</left>
+			<top>125</top>
+			<width>720</width>
+			<height>530</height>
+			<onback>9110</onback>
+			<onright>557</onright>
+			<onup>5571</onup>
+			<ondown>5571</ondown>
+			<include>widgets_episodes_random</include>
+			<altclick>ActivateWindow(Videos,MovieTitles)</altclick>			
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<include>toggle_Menu</include>
+			<fadetime>1000</fadetime>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5571)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+				 <include>hubwidget-commons</include>
+			</itemlayout>
+			<focusedlayout width="720" height="530">
+				<include>hubwidget-commons</include>
+			</focusedlayout>
+		</control>
+		<control type="fixedlist" id="5571">
+			<visible>Container(557).HasFocus(2)</visible>
+			<left>105</left>
+			<top>125</top>
+			<width>720</width>
+			<height>530</height>
+			<onright>557</onright>
+			<onback>9110</onback>
+			<onup>5571</onup>
+			<ondown>5571</ondown>
+			<include>widgets_episodes_new</include>
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<fadetime>1000</fadetime>
+			<include>toggle_Menu</include>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5571)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+				 <include>hubwidget-commons</include>
+			</itemlayout>
+			<focusedlayout width="720" height="530">
+				<include>hubwidget-commons</include>
+			</focusedlayout>
+		</control>
+		<control type="fixedlist" id="5571">
+			<visible>Container(557).HasFocus(14)</visible>
+			<left>105</left>
+			<top>125</top>
+			<width>720</width>
+			<height>530</height>
+			<onright>557</onright>
+			<onup>5571</onup>
+			<onback>9110</onback>
+			<ondown>5571</ondown>
+			<include>widgets_inprogress_episodes</include>
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<fadetime>1000</fadetime>
+			<include>toggle_Menu</include>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5571)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+			</itemlayout>
+			<focusedlayout width="720" height="530">				
+			</focusedlayout>
+		</control>
+		<include>hubwidget-panel</include>
+	</control>	
+	
+	<!-- hub panel music -->
+	<control type="group" id="5564">
+		<visible>ControlGroup(5564).HasFocus()</visible> 
+		<!--<include>fadeinout</include>-->
+		<animation tween="Back" easing="InOut" effect="slide" start="0,720" end="0,0" time="1000" condition="ControlGroup(5564).HasFocus()">Visible</animation>
+		<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,720" time="1000" condition="!ControlGroup(5564).HasFocus()">Hidden</animation>
+		<!-- window title -->
+		<control type="label">
+			<left>840</left>
+			<top>70</top>
+			<width>950</width>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[32030]</label>
+			<font>light_Window</font>
+			<textcolor>Color1</textcolor>
+			<include>transition_WindowTitle</include>
+		</control>
+		<control type="label">
+			<left>100</left>
+			<top>70</top>
+			<width>950</width>
+			<aligny>center</aligny>
+			<label>$VAR[hubcategory]</label>
+			<font>light_Window</font>
+			<textcolor>Color1</textcolor>
+			<include>transition_WindowTitle</include>
+		</control>
+		<!--buttons-->
+		<control type="list" id="558">
+			<left>840</left>
+			<top>120</top>
+			<width>335</width>
+			<height>540</height>
+			<onback>9110</onback>
+			<onleft>5581</onleft>
+			<onup>558</onup>
+			<ondown>558</ondown>
+			<content>
+			<include>QuickNavMusicHub</include>
+			</content>
+			<preloaditems>2</preloaditems>
+			<include>global_ListScroll</include>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="335" height="54" align="right">
+				<control type="image">
+					<width>335</width>
+					<height>54</height>
+					<texture>overlays/semitrans.png</texture>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>5</top>
+					<width>280</width>
+					<visible>true</visible>
+					<label>$VAR[global_Title]</label>
+					<include>container_Title</include>
+				</control>
+				<control type="image">
+					<top>54</top>
+					<width>335</width>
+					<height>1</height>
+					<texture colordiffuse="whitetrans0">white.png</texture>
+				</control>
+			</itemlayout>
+			<focusedlayout width="335" height="54">
+				<control type="image">
+					<width>335</width>
+					<height>54</height>
+					<texture>views/focus.png</texture>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>5</top>
+					<aligny>center</aligny>
+					<width>280</width>
+					<visible>true</visible>
+					<label>$VAR[global_Title]</label>
+					<include>container_Title-focus</include>
+				</control>
+			</focusedlayout>
+		</control>
+		<!-- widget window -->
+		<control type="image">
+			<left>100</left>
+			<top>120</top>
+			<width>730</width>
+			<height>540</height>
+			<texture>white.png</texture>
+			<visible>Control.HasFocus(5581)</visible>
+		</control>
+		<control type="image">
+			<left>100</left>
+			<top>120</top>
+			<width>730</width>
+			<height>540</height>
+			<texture>white.png</texture>
+			<include>bordertrans</include>
+			<visible>!Control.HasFocus(5581)</visible>
+		</control>
+		<control type="fixedlist" id="5581">
+			<visible>!Container(558).HasFocus(2) + !Container(558).HasFocus(14)</visible>
+			<left>105</left>
+			<top>125</top>
+			<width>720</width>
+			<height>530</height>
+			<onback>9110</onback>
+			<onright>558</onright>
+			<onup>5581</onup>
+			<ondown>5581</ondown>
+			<include>widgets_music_random</include>
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<include>toggle_Menu</include>
+			<fadetime>1000</fadetime>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5581)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+				 <include>hubwidget-commons</include>
+			</itemlayout>
+			<focusedlayout width="720" height="530">
+				<include>hubwidget-commons</include>
+			</focusedlayout>
+		</control>
+		<control type="fixedlist" id="5581">
+			<visible>Container(558).HasFocus(2)</visible>
+			<left>105</left>
+			<top>125</top>
+			<width>720</width>
+			<height>530</height>
+			<onright>558</onright>
+			<onback>9110</onback>
+			<onup>5581</onup>
+			<ondown>5581</ondown>
+			<include>widgets_music_recent</include>
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<fadetime>1000</fadetime>
+			<include>toggle_Menu</include>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5581)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+				 <include>hubwidget-commons</include>
+			</itemlayout>
+			<focusedlayout width="720" height="530">
+				<include>hubwidget-commons</include>
+			</focusedlayout>
+		</control>
+		<control type="fixedlist" id="5581">
+			<visible>Container(558).HasFocus(14)</visible>
+			<left>105</left>
+			<top>125</top>
+			<width>720</width>
+			<height>530</height>
+			<onright>558</onright>
+			<onup>5581</onup>
+			<onback>9110</onback>
+			<ondown>5581</ondown>
+			<include>widgets_music_recommended</include>
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<fadetime>1000</fadetime>
+			<include>toggle_Menu</include>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5581)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+			</itemlayout>
+			<focusedlayout width="720" height="530">				
+			</focusedlayout>
+		</control>
+		<include>hubwidget-panelmusic</include>
+	</control>	
+	</include>
+	
+	<include name="hubwidget-panelmusic">
+		<control type="group">
+		<left>100</left>
+		<top>120</top>
+			<control type="image">
+				<left>5</left>
+				<top>5</top>
+				<width>720</width>
+				<height>530</height>
+				<texture fallback="backgrounds/fallback/musicfallback.jpg">$VAR[hubThumb]</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>500</fadetime>
+			</control>			
+			<control type="image">
+				<top>472</top>
+				<left>5</left>
+				<width>720</width>
+				<height>63</height>
+				<texture colordiffuse="base_1play">overlays/semitrans.png</texture>
+			</control>
+			<control type="image">
+				<top>472</top>
+				<left>5</left>
+				<width>720</width>
+				<height>63</height>
+				<texture>overlays/diffuse.png</texture>
+			</control>
+			<control type="image">
+				<top>472</top>
+				<left>5</left>
+				<width>720</width>
+				<height>63</height>
+				<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+			</control>
+			<control type="label">
+				<left>15</left>
+				<top>468</top>
+				<width>680</width>
+				<visible>true</visible>
+				<label>$VAR[hubTitle]</label>
+				<scroll>true</scroll>
+				<include>container_Title</include>
+			</control>
+			<control type="label">
+				<right>465</right>
+				<align>right</align>
+				<top>495</top>
+				<width>125</width>
+				<visible>true</visible>
+				<label>$VAR[hubPosition]</label>
+				<include>container_Title</include>
+			</control>
+			<control type="label">
+				<left>15</left>
+				<top>495</top>
+				<width>630</width>
+				<scroll>true</scroll>
+				<visible>true</visible>
+				<label>$VAR[hubSub]</label>
+				<include>container_Title</include>
+			</control>
+		</control>
+	</include>
+	
+	<include name="hubwidget-panel">
+		<control type="group">
+		<left>100</left>
+		<top>120</top>
+			<control type="image">
+				<left>5</left>
+				<top>5</top>
+				<width>720</width>
+				<height>530</height>
+				<texture fallback="backgrounds/fallback/fallback.jpg">$VAR[hubThumb]</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>500</fadetime>
+			</control>			
+			<control type="image">
+				<top>445</top>
+				<left>5</left>
+				<width>720</width>
+				<height>90</height>
+				<texture colordiffuse="base_1play">overlays/semitrans.png</texture>
+			</control>
+			<control type="image">
+				<top>445</top>
+				<left>5</left>
+				<width>720</width>
+				<height>90</height>
+				<texture>overlays/diffuse.png</texture>
+			</control>
+			<control type="image">
+				<top>445</top>
+				<left>5</left>
+				<width>720</width>
+				<height>90</height>
+				<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+			</control>
+			<control type="label">
+				<left>15</left>
+				<top>440</top>
+				<width>680</width>
+				<visible>true</visible>
+				<label>$VAR[hubTitle]</label>
+				<visible>true</visible>
+				<include>container_Title</include>
+			</control>
+			<control type="label">
+				<right>465</right>
+				<align>right</align>
+				<top>490</top>
+				<width>125</width>
+				<visible>true</visible>
+				<label>$VAR[hubPosition]</label>
+				<include>container_Title</include>
+			</control>
+			<control type="label">
+				<left>15</left>
+				<top>466</top>
+				<width>630</width>
+				<visible>true</visible>
+				<label>$VAR[hubSub]</label>
+				<include>container_Sub_Small</include>
+				<visible>true</visible>
+			</control>
+			<control type="grouplist">
+				<left>15</left>
+				<top>495</top>
+				<width>680</width>
+				<itemgap>10</itemgap>
+				<orientation>horizontal</orientation>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$VAR[hubRating]</texture>
+						<aspectratio align="center">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$VAR[hubResolution]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$VAR[hubCodec]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$VAR[hubAudioCodec]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>40</width>
+						<height>40</height>
+						<aspectratio align="left" aligny="center">keep</aspectratio>
+						<texture>$VAR[hubAudioChannels]</texture>
+					</control>	
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$VAR[hubVideoAspect]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>					
+			</control>
+			<control type="group">
+				<visible>[Control.IsVisible(5563) + Container(557).HasFocus(14)] | [Control.IsVisible(5562) + Container(556).HasFocus(14)]</visible>
+				<top>5</top>
+				<left>5</left>
+				<control type="image">					
+					<width>720</width>
+					<height>30</height>
+					<texture colordiffuse="base_1play">overlays/semitrans.png</texture>
+				</control>
+				<control type="image">
+					<width>720</width>
+					<height>30</height>
+					<texture>overlays/diffuse.png</texture>
+				</control>
+				<control type="grouplist">
+					<visible>[Control.IsVisible(5563) + Container(557).HasFocus(14)] | [Control.IsVisible(5562) + Container(556).HasFocus(14)]</visible>
+					<top>10</top>
+					<left>10</left>
+					<height>15</height>
+					<itemgap>10</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="progress">
+						<width>665</width>
+						<height>10</height>
+						<info>Container(5561).ListItem.Property(Percent)</info>
+						<texturebg>player/progress-back.png</texturebg>
+						<lefttexture>-</lefttexture>
+						<midtexture colordiffuse="Selected">player/progress-middle.png</midtexture>
+						<righttexture>-</righttexture>
+						<visible>Control.IsVisible(5562) + Container(556).HasFocus(14)</visible>
+					</control>
+					<control type="progress">
+						<width>665</width>
+						<height>10</height>
+						<info>Container(5571).ListItem.Property(Percent)</info>
+						<texturebg>player/progress-back.png</texturebg>
+						<lefttexture>-</lefttexture>
+						<midtexture colordiffuse="Selected">player/progress-middle.png</midtexture>
+						<righttexture>-</righttexture>
+						<visible>Control.IsVisible(5563) + Container(557).HasFocus(14)</visible>
+					</control>
+					<control type="label">
+						<height>10</height>
+						<width>25</width>
+						<align>right</align>
+						<label>$VAR[hubProgress]</label>
+						<textcolor>Color1</textcolor>
+						<font>semibold_Smaller-U</font>
+					</control>
+				</control>
+			</control>
+		</control>
+	</include>
+</includes>

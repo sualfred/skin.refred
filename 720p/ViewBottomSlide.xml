@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	
+<!--PORTRAIT-->
+	<include name="view_BottomSlide">
+		<control type="group">
+			<include>transition_Info</include>
+			<include>toggle_Menu</include>
+			<visible>Control.IsVisible(554)</visible>
+			<include>fadeinoutdelay</include>
+			<!-- movies-->
+			<control type="group">
+				<visible>Container.Content(movies)</visible>
+				<posx>100</posx>
+				<posy>60</posy>
+				<width>1080</width>
+				<height>420</height>
+				<control type="image">
+					<left>-75</left>
+					<top>50</top>
+					<width>92</width>
+					<height>48</height>
+					<aspectratio align="left">keep</aspectratio>
+					<texture>$VAR[flag_Studio]</texture>
+				</control>
+				<control type="label">
+					<top>50</top>
+					<width>630</width>
+					<label>$INFO[Container(554).ListItem.Label]</label>
+					<font>font_MainMenu</font>
+				</control>	
+				<control type="label">
+					<top>85</top>
+					<width>700</width>
+					<label>$VAR[global_Info]</label>
+					<include>detail_Sub</include>
+					<visible>![Container.Content(addons) | Container.Content(programs)]</visible>
+				</control>				
+				<control type="grouplist">
+					<top>113</top>
+					<left>2</left>
+					<align>left</align>
+					<width>635</width>
+					<height>64</height>
+					<itemgap>10</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$INFO[Container(554).ListItem.Rating,rating/imdb/,.png]</texture>
+						<aspectratio align="center">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$INFO[Container(554).ListItem.VideoResolution,flags/video/resolution/,.png]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$INFO[Container(554).ListItem.VideoCodec,flags/codec/,.png]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$INFO[Container(554).ListItem.AudioCodec,flags/codec/,.png]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>40</width>
+						<height>40</height>
+						<aspectratio align="left" aligny="center">keep</aspectratio>
+						<texture>$INFO[Container(554).ListItem.AudioChannels,flags/audio/,.png]</texture>
+					</control>	
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$INFO[Container(554).ListItem.VideoAspect,flags/video/aspectratio/,.png]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>					
+				</control>
+				<control type="textbox">
+					<top>150</top>
+					<width>600</width>
+					<height>220</height>
+					<label>$INFO[Container(554).ListItem.Plot]</label>
+					<autoscroll delay="8000" time="2000" repeat="10000"></autoscroll>
+				</control>
+				<control type="group">
+					<top>125</top>
+					<right>145</right>
+					<width>250</width>
+					<height>250</height>
+					<animation effect="rotate" loop="true" end="360" center="auto" time="20000" condition="Control.HasFocus(554)" reversible="false">Conditional</animation>
+					<control type="image">
+						<width>250</width>
+						<height>250</height>
+						<fadetime>1000</fadetime>
+						<texture fallback="overlays/cdart.png" diffuse="overlays/discdiffuse.png">$INFO[Container(554).ListItem.Art(fanart)]</texture>
+						<aspectratio align="center" aligny="center"  scalediffuse="false">scale</aspectratio>
+						<visible>IsEmpty(ListItem.Art(discart)) + !IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<top>100</top>
+						<right>100</right>
+						<width>200</width>
+						<height>50</height>
+						<fadetime>1000</fadetime>
+						<texture>$VAR[flag_Studio]</texture>
+						<aspectratio align="center" aligny="center"  scalediffuse="false">keep</aspectratio>
+						<visible>IsEmpty(ListItem.Art(discart)) + !IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<top>170</top>
+						<right>20</right>
+						<width>200</width>
+						<height>50</height>
+						<fadetime>1000</fadetime>
+						<texture>$INFO[Container(554).ListItem.Art(clearlogo)]</texture>
+						<aspectratio align="center" aligny="center"  scalediffuse="false">keep</aspectratio>
+						<visible>IsEmpty(ListItem.Art(discart)) + !IsEmpty(ListItem.Title) + !IsEmpty(ListItem.Art(clearlogo))</visible>
+					</control>
+					<control type="label">
+						<top>170</top>
+						<right>20</right>
+						<width>210</width>
+						<height>50</height>
+						<textwidth>170</textwidth>
+						<align>center</align>
+						<fadetime>1000</fadetime>
+						<label>[B]$INFO[Container(554).ListItem.Label][/B]</label>
+						<textshadow>black</textshadow>
+						<autoscroll>false</autoscroll>
+						<font>semibold_Smaller-U</font>
+						<visible>IsEmpty(ListItem.Art(discart)) + !IsEmpty(ListItem.Title) + IsEmpty(ListItem.Art(clearlogo))</visible>
+					</control>
+					<control type="image">
+						<width>250</width>
+						<height>250</height>
+						<fadetime>1000</fadetime>
+						<aspectratio>keep</aspectratio>
+						<fadetime>1000</fadetime>
+						<texture fallback="overlays/cdart.png">$INFO[Container(554).ListItem.Art(discart)]</texture>
+						<visible>!IsEmpty(ListItem.Art(discart))</visible>
+					</control>
+				</control>
+				<control type="image">
+					<top>50</top>
+					<right>0</right>
+					<width>275</width>
+					<height>400</height>
+					<aspectratio aligny="top" align="left">scale</aspectratio>
+					<texture>$INFO[Container(554).ListItem.Thumb]</texture>
+					<fadetime>400</fadetime>
+					<bordertexture colordiffuse="base_5">white.png</bordertexture>
+					<bordersize>5</bordersize>
+				</control>
+				<control type="image">
+					<top>50</top>
+					<right>0</right>
+					<width>275</width>
+					<height>400</height>
+					<texture>overlays/cover_overlay.png</texture>
+					<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(globalGlass.disable)</visible>
+				</control>	
+			</control>
+			<!-- tv shows -->
+			<control type="group">
+				<visible>Container.Content(tvshows) | Container.Content(episodes) | Container.Content(seasons)</visible>
+				<posx>100</posx>
+				<posy>60</posy>
+				<width>1080</width>
+				<height>420</height>
+				<control type="image">
+					<left>-75</left>
+					<top>50</top>
+					<width>60</width>
+					<height>48</height>
+					<aspectratio align="center">keep</aspectratio>
+					<texture>$VAR[flag_Studio]</texture>
+				</control>
+				<control type="label">
+					<top>50</top>
+					<width>630</width>
+					<label>$INFO[Container(554).ListItem.Label]</label>
+					<font>font_MainMenu</font>
+				</control>	
+				<control type="label">
+					<top>85</top>
+					<width>700</width>
+					<label>$VAR[global_Info]</label>
+					<include>detail_Sub</include>
+					<visible>![Container.Content(addons) | Container.Content(programs)]</visible>
+				</control>				
+				<control type="grouplist">
+					<top>113</top>
+					<left>2</left>
+					<align>left</align>
+					<width>635</width>
+					<height>64</height>
+					<itemgap>10</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$INFO[Container(554).ListItem.Rating,rating/imdb/,.png]</texture>
+						<aspectratio align="center">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$INFO[Container(554).ListItem.VideoResolution,flags/video/resolution/,.png]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$INFO[Container(554).ListItem.VideoCodec,flags/codec/,.png]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$INFO[Container(554).ListItem.AudioCodec,flags/codec/,.png]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>40</width>
+						<height>40</height>
+						<aspectratio align="left" aligny="center">keep</aspectratio>
+						<texture>$INFO[Container(554).ListItem.AudioChannels,flags/audio/,.png]</texture>
+					</control>	
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$INFO[Container(554).ListItem.VideoAspect,flags/video/aspectratio/,.png]</texture>
+						<aspectratio align="left">keep</aspectratio>
+					</control>					
+				</control>
+				<control type="textbox">
+					<top>150</top>
+					<width>600</width>
+					<height>220</height>
+					<label>$INFO[Container(554).ListItem.Plot]</label>
+					<autoscroll delay="8000" time="2000" repeat="10000"></autoscroll>
+				</control>
+				<control type="group">
+					<top>125</top>
+					<right>145</right>
+					<width>250</width>
+					<height>250</height>
+					<animation effect="rotate" loop="true" end="360" center="auto" time="20000" condition="Control.HasFocus(554)" reversible="false">Conditional</animation>
+					<control type="image">
+						<width>250</width>
+						<height>250</height>
+						<fadetime>1000</fadetime>
+						<texture fallback="overlays/cdart.png" diffuse="overlays/discdiffuse.png">$INFO[Container(554).ListItem.Art(fanart)]</texture>
+						<aspectratio align="center" aligny="center"  scalediffuse="false">scale</aspectratio>
+						<visible>!IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<top>100</top>
+						<right>100</right>
+						<width>200</width>
+						<height>50</height>
+						<fadetime>1000</fadetime>
+						<texture>$VAR[flag_Studio]</texture>
+						<aspectratio align="center" aligny="center"  scalediffuse="false">keep</aspectratio>
+						<visible>IsEmpty(ListItem.Art(discart)) + !IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="image">
+						<top>170</top>
+						<right>20</right>
+						<width>200</width>
+						<height>50</height>
+						<fadetime>1000</fadetime>
+						<texture>$INFO[Container(554).ListItem.Art(clearlogo)]</texture>
+						<aspectratio align="center" aligny="center"  scalediffuse="false">keep</aspectratio>
+						<visible>!IsEmpty(ListItem.Title)</visible>
+					</control>
+					<control type="label">
+						<top>170</top>
+						<right>20</right>
+						<width>205</width>
+						<height>50</height>
+						<textwidth>170</textwidth>
+						<align>center</align>
+						<fadetime>1000</fadetime>
+						<label>[B]$INFO[Container(554).ListItem.Label][/B]</label>
+						<textshadow>black</textshadow>
+						<autoscroll>false</autoscroll>
+						<font>semibold_Smaller-U</font>
+						<visible>IsEmpty(ListItem.Art(discart)) + !IsEmpty(ListItem.Title) + IsEmpty(ListItem.Art(clearlogo))</visible>
+					</control>
+				</control>
+				<control type="image">
+					<top>50</top>
+					<right>0</right>
+					<width>275</width>
+					<height>400</height>
+					<aspectratio aligny="top" align="left">scale</aspectratio>
+					<texture>$INFO[Container(554).ListItem.Thumb]</texture>
+					<fadetime>400</fadetime>
+					<bordertexture colordiffuse="base_5">white.png</bordertexture>
+					<bordersize>5</bordersize>
+				</control>
+				<control type="image">
+					<top>50</top>
+					<right>0</right>
+					<width>275</width>
+					<height>400</height>
+					<texture>overlays/cover_overlay.png</texture>
+					<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(globalGlass.disable)</visible>
+				</control>	
+			</control>
+		</control>
+		
+		<control type="group">
+			<include>global_Scrolltime</include>
+			<include>transition_Content</include>
+			<include>transition_Info</include>
+			<include>toggle_Menu</include>
+			<visible>Control.IsVisible(554)</visible>
+			<control type="image">
+				<left>0</left>
+				<top>525</top>
+				<width>1280</width>
+				<height>157</height>
+				<texture>overlays/diffuse2.png</texture>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>525</top>
+				<width>1280</width>
+				<height>157</height>
+				<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+			</control>
+		</control>
+		<control type="wraplist" id="554">
+			<viewtype label="BottomSlide">wrap</viewtype>
+			<left>90</left>
+			<top>520</top>
+			<width>1091</width>
+			<height>425</height>
+			<onup>6000</onup>
+			<ondown>71</ondown>
+			<onleft>52</onleft>
+			<onright>52</onright>
+			<focusposition>0</focusposition>
+			<pagecontrol>71</pagecontrol>
+			<orientation>horizontal</orientation>
+			<include>global_Scrolltime</include>
+			<include>transition_Content</include>
+			<include>transition_Info</include>
+			<include>toggle_Menu</include>
+			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)</visible>
+			<itemlayout width="109" height="167">
+				<include>viewBottomSlide-ContainerCommons</include>
+			</itemlayout>
+			<focusedlayout width="109" height="167">
+				<include>viewBottomSlide-ContainerCommons-fo</include>
+			</focusedlayout>
+		</control>
+	</include>
+	<include name="viewBottomSlide-ContainerCommons">
+		<control type="group">
+			<include>focus_BottomSlide</include>
+		
+			<control type="group">
+				<left>10</left>
+				<top>10</top>
+				<control type="image">
+					<width>100</width>
+					<height>147</height>
+					<texture background="true">thumbs/default_Portrait.png</texture>
+					<aspectratio align="center">stretch</aspectratio>
+					<include>bordertrans</include>
+					<visible>IsEmpty($VAR[thumb_Portrait])</visible>
+				</control>
+				<control type="image">
+					<left>2</left>
+					<top>27</top>
+					<width>96</width>
+					<height>96</height>
+					<include>art_DefaultIcon</include>
+				</control>
+				<control type="image">
+					<width>100</width>
+					<height>147</height>
+					<texture background="true">$VAR[thumb_Portrait]</texture>
+					<include>bordertrans</include>
+					<aspectratio align="center" aligny="top">scale</aspectratio>
+				</control>
+				<control type="group">
+					<left>82</left>
+					<top>129</top>
+					<include>overlay_Watch</include>
+				</control>
+			</control>
+		</control>
+	</include>
+	<include name="viewBottomSlide-ContainerCommons-fo">
+		<control type="group">
+		
+			<include>focus_BottomSlide</include>
+			<control type="image">
+				<width>120</width>
+				<height>147</height>
+				<texture border="10">frames/frame-alt.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+				<control type="group">
+				<left>10</left>
+				<top>10</top>
+				<control type="image">
+					<width>100</width>
+					<height>147</height>
+					<texture background="true">white.png</texture>
+					<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+					<aspectratio align="center" aligny="top">scale</aspectratio>
+				</control>
+				<control type="image">
+					<width>100</width>
+					<height>147</height>
+					<texture background="true">thumbs/default_Portrait.png</texture>
+					<aspectratio align="center">stretch</aspectratio>
+					<include>bordertrans</include>
+					<visible>IsEmpty($VAR[thumb_Portrait])</visible>
+				</control>
+				<control type="image">
+					<left>2</left>
+					<top>27</top>
+					<width>96</width>
+					<height>96</height>
+					<include>art_DefaultIcon</include>
+				</control>
+				<control type="image">
+					<left>2</left>
+					<top>27</top>
+					<width>96</width>
+					<height>96</height>
+					<include>art_DefaultIcon</include>
+					<colordiffuse>Color5</colordiffuse>
+					<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+				</control>
+				
+				<control type="image">
+					<width>100</width>
+					<height>147</height>
+					<texture background="true">$VAR[thumb_Portrait]</texture>
+					<include>bordertrans</include>
+					<aspectratio align="center" aligny="top">scale</aspectratio>
+				</control>
+				
+				<control type="image">
+					<width>100</width>
+					<height>147</height>
+					<texture background="true">overlays/cover_overlay.png</texture>
+					<aspectratio align="center" aligny="top">scale</aspectratio>
+					<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+				</control>
+				
+				<control type="image">
+					<width>183</width>
+					<height>280</height>
+					<texture background="true" colordiffuse="blacktrans">white.png</texture>
+					<animation effect="fade" tween="Quadratic" start="100" end="0" easing="Out" time="200">Focus</animation>
+				</control>
+				
+				<control type="group">
+					<left>82</left>
+					<top>129</top>
+					<include>overlay_Watch</include>
+				</control>			
+				
+			</control>
+		</control>
+	</include>
+</includes>

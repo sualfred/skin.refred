@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol>1000</defaultcontrol>
+	<include>transition_Dialog</include>
+	<coordinates>
+		<system>1</system>
+		<left>0</left>
+		<top>0</top>
+		<!--<origin x="485" y="100" />-->
+	</coordinates>
+	<controls>
+		<control type="image">
+			<include>screen_Dimensions</include>
+			<texture colordiffuse="base_1">overlays/base_color.png</texture>
+			<include>transition_Dialog</include>
+		</control>
+		<!--<control type="image">
+			<left>4</left>
+			<top>18</top>
+			<width>302</width>
+			<include>dialog_Separator</include>
+		</control>-->
+		<control type="grouplist" id="996">
+			<left>485</left>
+			<height>720</height>
+			<align>center</align>
+			<width>302</width>
+			<height min="40" max="500">auto</height>
+			<itemgap>5</itemgap>
+			<control type="button" id="2001">
+				<width>335</width>
+				<left>9</left>
+				<label>$LOCALIZE[20410]</label>
+				<onclick>SendClick(2003,11)</onclick>
+				<visible>Container.Content(Movies) + !IsEmpty(ListItem.Trailer)</visible>
+				<include>dialog_ControlCommons</include>
+			</control>
+		</control>
+		<!--default button-->
+		<control type="button" id="1000">
+			<left>9</left>
+			<width>335</width>
+			<include>dialog_ControlCommons</include>
+		</control>
+	</controls>
+</window>
