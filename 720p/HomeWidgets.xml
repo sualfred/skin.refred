@@ -1998,7 +1998,7 @@
 	</content>
 </include>
 
-<include name="widgets_customb2">
+<include name="widgets_customb1">
 	<content>
 		<item id="1">
 			 <label>$INFO[Skin.String(Customb1.1.Label)]</label>
@@ -2008,53 +2008,53 @@
 			 <visible>!IsEmpty(Skin.String(Customb1.1.Label))</visible>
 		</item> 
 		<item id="2">
-			 <label>$INFO[Skin.String(Customb2.2.Label)]</label>
-			 <icon>$INFO[Skin.String(Customb2.2.Icon)]</icon>
+			 <label>$INFO[Skin.String(Customb1.2.Label)]</label>
+			 <icon>$INFO[Skin.String(Customb1.2.Icon)]</icon>
 			 <onclick>SetFocus(9110)</onclick>
-			 <onclick>$INFO[Skin.String(Customb2.2.Path)]</onclick>
-			 <visible>!IsEmpty(Skin.String(Customb2.2.Label))</visible>
+			 <onclick>$INFO[Skin.String(Customb1.2.Path)]</onclick>
+			 <visible>!IsEmpty(Skin.String(Customb1.2.Label))</visible>
 		</item> 
 		<item id="3">
-			 <label>$INFO[Skin.String(Customb2.3.Label)]</label>
-			 <icon>$INFO[Skin.String(Customb2.3.Icon)]</icon>
+			 <label>$INFO[Skin.String(Customb1.3.Label)]</label>
+			 <icon>$INFO[Skin.String(Customb1.3.Icon)]</icon>
 			 <onclick>SetFocus(9110)</onclick>
-			 <onclick>$INFO[Skin.String(Customb2.3.Path)]</onclick>
-			 <visible>!IsEmpty(Skin.String(Customb2.3.Label))</visible>
+			 <onclick>$INFO[Skin.String(Customb1.3.Path)]</onclick>
+			 <visible>!IsEmpty(Skin.String(Customb1.3.Label))</visible>
 		</item> 
 		<item id="4">
-			 <label>$INFO[Skin.String(Customb2.4.Label)]</label>
-			 <icon>$INFO[Skin.String(Customb2.4.Icon)]</icon>
+			 <label>$INFO[Skin.String(Customb1.4.Label)]</label>
+			 <icon>$INFO[Skin.String(Customb1.4.Icon)]</icon>
 			 <onclick>SetFocus(9110)</onclick>
-			 <onclick>$INFO[Skin.String(Customb2.4.Path)]</onclick>
-			 <visible>!IsEmpty(Skin.String(Customb2.4.Label))</visible>
+			 <onclick>$INFO[Skin.String(Customb1.4.Path)]</onclick>
+			 <visible>!IsEmpty(Skin.String(Customb1.4.Label))</visible>
 		</item> 
 		<item id="5">
-			 <label>$INFO[Skin.String(Customb2.5.Label)]</label>
-			 <icon>$INFO[Skin.String(Customb2.5.Icon)]</icon>
+			 <label>$INFO[Skin.String(Customb1.5.Label)]</label>
+			 <icon>$INFO[Skin.String(Customb1.5.Icon)]</icon>
 			 <onclick>SetFocus(9110)</onclick>
-			 <onclick>$INFO[Skin.String(Customb2.5.Path)]</onclick>
-			 <visible>!IsEmpty(Skin.String(Customb2.5.Label))</visible>
+			 <onclick>$INFO[Skin.String(Customb1.5.Path)]</onclick>
+			 <visible>!IsEmpty(Skin.String(Customb1.5.Label))</visible>
 		</item> 
 		<item id="6">
-			 <label>$INFO[Skin.String(Customb2.6.Label)]</label>
-			 <icon>$INFO[Skin.String(Customb2.6.Icon)]</icon>
+			 <label>$INFO[Skin.String(Customb1.6.Label)]</label>
+			 <icon>$INFO[Skin.String(Customb1.6.Icon)]</icon>
 			 <onclick>SetFocus(9110)</onclick>
-			 <onclick>$INFO[Skin.String(Customb2.6.Path)]</onclick>
-			 <visible>!IsEmpty(Skin.String(Customb2.6.Label))</visible>
+			 <onclick>$INFO[Skin.String(Customb1.6.Path)]</onclick>
+			 <visible>!IsEmpty(Skin.String(Customb1.6.Label))</visible>
 		</item> 
 		<item id="7">
-			 <label>$INFO[Skin.String(Customb2.7.Label)]</label>
-			 <icon>$INFO[Skin.String(Customb2.7.Icon)]</icon>
+			 <label>$INFO[Skin.String(Customb1.7.Label)]</label>
+			 <icon>$INFO[Skin.String(Customb1.7.Icon)]</icon>
 			 <onclick>SetFocus(9110)</onclick>
-			 <onclick>$INFO[Skin.String(Customb2.7.Path)]</onclick>
-			 <visible>!IsEmpty(Skin.String(Customb2.7.Label))</visible>
+			 <onclick>$INFO[Skin.String(Customb1.7.Path)]</onclick>
+			 <visible>!IsEmpty(Skin.String(Customb1.7.Label))</visible>
 		</item> 
 		<item id="8">
-			 <label>$INFO[Skin.String(Customb2.8.Label)]</label>
-			 <icon>$INFO[Skin.String(Customb2.8.Icon)]</icon>
+			 <label>$INFO[Skin.String(Customb1.8.Label)]</label>
+			 <icon>$INFO[Skin.String(Customb1.8.Icon)]</icon>
 			 <onclick>SetFocus(9110)</onclick>
-			 <onclick>$INFO[Skin.String(Customb2.8.Path)]</onclick>
-			 <visible>!IsEmpty(Skin.String(Customb2.8.Label))</visible>
+			 <onclick>$INFO[Skin.String(Customb1.8.Path)]</onclick>
+			 <visible>!IsEmpty(Skin.String(Customb1.8.Label))</visible>
 		</item> 
 	</content>
 </include>
@@ -2062,11 +2062,11 @@
 <include name="widgets_customb2">
 	<content>
 		<item id="1">
-			 <label>$INFO[Skin.String(Customb1.1.Label)]</label>
-			 <icon>$INFO[Skin.String(Customb1.1.Icon)]</icon>
+			 <label>$INFO[Skin.String(Customb2.1.Label)]</label>
+			 <icon>$INFO[Skin.String(Customb2.1.Icon)]</icon>
 			 <onclick>SetFocus(9110)</onclick>
-			 <onclick>$INFO[Skin.String(Customb1.1.Path)]</onclick>
-			 <visible>!IsEmpty(Skin.String(Customb1.1.Label))</visible>
+			 <onclick>$INFO[Skin.String(Customb2.1.Path)]</onclick>
+			 <visible>!IsEmpty(Skin.String(Customb2.1.Label))</visible>
 		</item> 
 		<item id="2">
 			 <label>$INFO[Skin.String(Customb2.2.Label)]</label>

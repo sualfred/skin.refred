@@ -609,11 +609,16 @@
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
+							<texture colordiffuse="base_5">white.png</texture>
+							<aspectratio>keep</aspectratio>						
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
 							<info>ListItem.ActualIcon</info>
-							<bordertexture colordiffuse="base_5">white.png</bordertexture>
 							<bordersize>5</bordersize>
-							<aspectratio>scale</aspectratio>
-						
+							<aspectratio>keep</aspectratio>						
 						</control>
 						<control type="image">
 							<posx>100</posx>
@@ -625,8 +630,15 @@
 						</control>
 					  </itemlayout>
 	  
-						<focusedlayout height="720" width="105">
-							<control type="image">
+					  <focusedlayout height="720" width="105">
+					    <control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<texture colordiffuse="base_5">white.png</texture>
+							<aspectratio>keep</aspectratio>						
+						</control>
+						<control type="image">
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
@@ -638,8 +650,7 @@
 							<width>100</width>
 							<height>100</height>
 							<info>ListItem.ActualIcon</info>
-							<bordertexture colordiffuse="base_5">white.png</bordertexture>
-							<aspectratio>scale</aspectratio>
+							<aspectratio>keep</aspectratio>
 							<bordersize>5</bordersize>
 						</control>
 						<control type="image">
@@ -709,11 +720,16 @@
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
+							<texture colordiffuse="base_5">white.png</texture>
+							<aspectratio>keep</aspectratio>						
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
 							<info>ListItem.ActualIcon</info>
-							<bordertexture colordiffuse="base_5">white.png</bordertexture>
 							<bordersize>5</bordersize>
-							<aspectratio>scale</aspectratio>
-						
+							<aspectratio>keep</aspectratio>						
 						</control>
 						<control type="image">
 							<posx>100</posx>
@@ -726,7 +742,14 @@
 					  </itemlayout>
 	  
 						<focusedlayout height="720" width="105">
-							<control type="image">
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<texture colordiffuse="base_5">white.png</texture>
+							<aspectratio>keep</aspectratio>						
+						</control>
+						<control type="image">
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
@@ -738,8 +761,7 @@
 							<width>100</width>
 							<height>100</height>
 							<info>ListItem.ActualIcon</info>
-							<bordertexture colordiffuse="base_5">white.png</bordertexture>
-							<aspectratio>scale</aspectratio>
+							<aspectratio>keep</aspectratio>
 							<bordersize>5</bordersize>
 						</control>
 						<control type="image">
@@ -809,11 +831,16 @@
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
+							<texture colordiffuse="base_5">white.png</texture>
+							<aspectratio>keep</aspectratio>						
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
 							<info>ListItem.ActualIcon</info>
-							<bordertexture colordiffuse="base_5">white.png</bordertexture>
 							<bordersize>5</bordersize>
-							<aspectratio>scale</aspectratio>
-						
+							<aspectratio>keep</aspectratio>						
 						</control>
 						<control type="image">
 							<posx>100</posx>
@@ -825,8 +852,15 @@
 						</control>
 					  </itemlayout>
 	  
-						<focusedlayout height="720" width="105">
-							<control type="image">
+					  <focusedlayout height="720" width="105">
+						<control type="image">
+							<posx>100</posx>
+							<width>100</width>
+							<height>100</height>
+							<texture colordiffuse="base_5">white.png</texture>
+							<aspectratio>keep</aspectratio>						
+						</control>
+						<control type="image">
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
@@ -838,8 +872,7 @@
 							<width>100</width>
 							<height>100</height>
 							<info>ListItem.ActualIcon</info>
-							<bordertexture colordiffuse="base_5">white.png</bordertexture>
-							<aspectratio>scale</aspectratio>
+							<aspectratio>keep</aspectratio>
 							<bordersize>5</bordersize>
 						</control>
 						<control type="image">
