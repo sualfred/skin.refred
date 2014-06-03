@@ -30,6 +30,7 @@
 	<!--<thumb fallback="backgrounds/defaults/fallback.jpg">$INFO[Window(Home).Property(RandomMovie.1.Art(fanart)]</thumb>-->
 	<onclick condition="!Skin.HasSetting(videohub.enable)">ActivateWindow(Videos,movietitles,return)</onclick>
     <onclick condition="Skin.HasSetting(videohub.enable)">SetFocus(556)</onclick>
+    <visible>Library.HasContent(movies)</visible>
 	</item>
 
   <item id="300">
