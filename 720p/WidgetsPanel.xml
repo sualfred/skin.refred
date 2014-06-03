@@ -313,15 +313,17 @@
 						<visible>Skin.HasSetting(widgets.randomepisodes.enabled) + IntegerGreaterThan(Container(9160).NumItems,0)</visible>
 					</control>
 					<control type="list" id="9160">
-					  <posy>90</posy>
-						<include>screen_Dimensions</include>
+						<posy>90</posy>
+						<left>100</left>
+						<width>1090</width>
 						<ondown>9110</ondown>
 						<onback>9110</onback>
 						<orientation>horizontal</orientation>
 						<pagecontrol>25</pagecontrol>
 						<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(9160)</autoscroll>
-						<include condition="!Skin.HasSetting(widgets.randomepisodes.enabled)">widgets_episodes_new</include>
-						<include condition="Skin.HasSetting(widgets.randomepisodes.enabled)">widgets_episodes_random</include>
+						<content target="video">$VAR[widget_episode_cat]</content>
+						<!--<include condition="!Skin.HasSetting(widgets.randomepisodes.enabled)">widgets_episodes_new</include>
+						<include condition="Skin.HasSetting(widgets.randomepisodes.enabled)">widgets_episodes_random</include-->>
 						<control type="image">
 							<include>screen_Dimensions</include>
 							<info>ListItem.Thumb</info>
@@ -329,16 +331,14 @@
 						</control>						
 					  <itemlayout width="109" height="720">
 						<control type="image">
-							<posx>100</posx>
 							<width>100</width>
 							<height>147</height>
-							<info>ListItem.ActualIcon</info>
+							<info>ListItem.Art(tvshow.poster)</info>
 							<bordertexture colordiffuse="base_5">white.png</bordertexture>
 							<bordersize>5</bordersize>
 							<aspectratio>scale</aspectratio>
 						</control>
 						<control type="image">
-							<posx>100</posx>
 							<width>100</width>
 							<height>147</height>
 							<texture>overlays/cover_overlay.png</texture>
@@ -348,23 +348,20 @@
 					  </itemlayout>	  
 					  <focusedlayout height="720" width="109">
 							<control type="image">
-							<posx>100</posx>
 							<width>100</width>
 							<height>147</height>
 							<texture>white.png</texture>
 							<visible>Control.IsVisible(9162)</visible>
 							</control>
 						<control type="image">
-							<posx>100</posx>
 							<width>100</width>
 							<height>147</height>
-							<info>ListItem.ActualIcon</info>
+							<info>ListItem.Art(tvshow.poster)</info>
 							<bordertexture colordiffuse="base_5">white.png</bordertexture>
 							<aspectratio>scale</aspectratio>
 							<bordersize>5</bordersize>
 						</control>
 						<control type="image">
-							<posx>100</posx>
 							<width>100</width>
 							<height>147</height>
 							<texture>overlays/cover_overlay.png</texture>
@@ -372,43 +369,41 @@
 							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 						</control>
 						<control type="label">
-							<posx>100</posx>
 							<posy>170</posy>
 							<width>430</width>
 							<height>22</height>
 							<font>regular_Small</font>
 							<align>left</align>
-							<info>ListItem.Label</info>
+							<label>[COLOR Color2]$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E] [/COLOR]$INFO[ListItem.Title]</label>
 							<visible>!Container(9160).Position(9) + !Container(9160).Position(8)</visible> 
 						</control>
 						<control type="label">
-							<posx>100</posx>
 							<posy>150</posy>
 							<width>430</width>
 							<height>22</height>
 							<font>regular_Small</font>
 							<align>left</align>
-							<info>ListItem.Label2</info>
+							<info>ListItem.TVShowTitle</info>
 							<visible>!Container(9160).Position(9) + !Container(9160).Position(8)</visible> 
 						</control>
 						<control type="label">
-							<posx>200</posx>
+							<posx>100</posx>
 							<posy>170</posy>
 							<width>430</width>
 							<height>22</height>
 							<font>regular_Small</font>
 							<align>right</align>
-							<info>ListItem.Label</info>
+							<label>[COLOR Color2]$INFO[ListItem.Season,S]$INFO[ListItem.Episode,E] [/COLOR]$INFO[ListItem.Title]</label>
 							<visible>Container(9160).Position(9) | Container(9160).Position(8)</visible> 
 						</control>
 						<control type="label">
-							<posx>200</posx>
+							<posx>100</posx>
 							<posy>150</posy>
 							<width>430</width>
 							<height>22</height>
 							<font>regular_Small</font>
 							<align>right</align>
-							<info>ListItem.Label2</info>
+							<info>ListItem.TVShowTitle</info>
 							<visible>Container(9160).Position(9) | Container(9160).Position(8)</visible> 
 						</control>
 									

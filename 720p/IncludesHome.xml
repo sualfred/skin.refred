@@ -639,7 +639,8 @@
 				<control type="label">
 					<top>5</top>
 					<width>600</width>
-					<label>$INFO[Container(9160).ListItem.Label2]</label>
+					<label>$INFO[Container(9160).ListItem.TVShowTitle]</label>
+					<textcolor>Color2</textcolor>
 					<font>font_MainMenu</font>
 				</control>				
 				<control type="grouplist">
@@ -653,37 +654,37 @@
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
-						<texture>$INFO[Container(9160).ListItem.Property(Rating),rating/imdb/,.png]</texture>
+						<texture>$INFO[Container(9160).ListItem.Rating,rating/imdb/,.png]</texture>
 						<aspectratio align="center">keep</aspectratio>
 					</control>
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
-						<texture>$INFO[Container(9160).ListItem.Property(VideoResolution),flags/video/resolution/,.png]</texture>
+						<texture>$INFO[Container(9160).ListItem.VideoResolution,flags/video/resolution/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
 					</control>
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
-						<texture>$INFO[Container(9160).ListItem.Property(VideoCodec),flags/codec/,.png]</texture>
+						<texture>$INFO[Container(9160).ListItem.VideoCodec,flags/codec/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
 					</control>
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
-						<texture>$INFO[Container(9160).ListItem.Property(AudioCodec),flags/codec/,.png]</texture>
+						<texture>$INFO[Container(9160).ListItem.AudioCodec,flags/codec/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
 					</control>
 					<control type="image">
 						<width>40</width>
 						<height>40</height>
 						<aspectratio align="left" aligny="center">keep</aspectratio>
-						<texture>$INFO[Container(9160).ListItem.Property(AudioChannels),flags/audio/,.png]</texture>
+						<texture>$INFO[Container(9160).ListItem.AudioChannels,flags/audio/,.png]</texture>
 					</control>	
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
-						<texture>$INFO[Container(9160).ListItem.Property(VideoAspect),flags/video/aspectratio/,.png]</texture>
+						<texture>$INFO[Container(9160).ListItem.VideoAspect,flags/video/aspectratio/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
 					</control>					
 				</control>
@@ -698,7 +699,7 @@
 					<top>150</top>
 					<width>600</width>
 					<height>212</height>
-					<label>$INFO[Container(9160).ListItem.Property(Plot)]</label>
+					<label>$INFO[Container(9160).ListItem.Plot]</label>
 					<autoscroll delay="8000" time="2000" repeat="10000"></autoscroll>
 				</control>
 				<control type="image">
@@ -707,7 +708,7 @@
 					<width>350</width>
 					<height>197</height>
 					<aspectratio aligny="top" align="left">scale</aspectratio>
-					<texture>$INFO[Container(9160).ListItem.Thumb]</texture>
+					<texture>$INFO[Container(9160).ListItem.Art(fanart)]</texture>
 					<fadetime>400</fadetime>
 					<bordertexture colordiffuse="base_5">white.png</bordertexture>
 					<bordersize>5</bordersize>
@@ -718,7 +719,7 @@
 					<width>350</width>
 					<height>197</height>
 					<aspectratio aligny="top" align="left">scale</aspectratio>
-					<texture>$INFO[Container(9160).ListItem.Property(Screen)]</texture>
+					<texture>$INFO[Container(9160).ListItem.thumb]</texture>
 					<fadetime>400</fadetime>
 					<bordertexture colordiffuse="base_5">white.png</bordertexture>
 					<bordersize>5</bordersize>

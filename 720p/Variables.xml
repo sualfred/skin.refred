@@ -266,6 +266,10 @@
 	</variable>
 	
 <!--widget  tvseries-->
+	<variable name="widget_episode_cat">
+		<value condition="!Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=recentepisodes&end=10&reload=$INFO[Window.Property(recentepisodes)]</value>
+		<value condition="Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=randomepisodes&end=10&reload=$INFO[Window.Property(randomepisodes)]</value>
+	</variable>
 	<variable name="widget_episode_plot">
 		<value condition="Container(9160).Position(0)">$INFO[Window(Home).Property(RecommendedEpisode.1.Plot)]</value>
 		<value condition="Container(9160).Position(1)">$INFO[Window(Home).Property(RecentEpisode.2.Plot)]</value>
@@ -677,7 +681,7 @@
 		<value condition="!IsEmpty(ListItem.Studio)">$INFO[ListItem.Studio]</value>
 		<value condition="Control.IsVisible(9151)  + Control.HasFocus(9150)">$INFO[Container(9150).ListItem.Year,, • ]$INFO[Container(9150).ListItem.Duration,, Min • ]$INFO[Container(9150).ListItem.Genre]</value>
 		<value condition="Control.IsVisible(9141) + Control.HasFocus(9140)">$INFO[Container(9140).ListItem.Property(Year),, • ]$INFO[Container(9140).ListItem.Property(Runtime),, Min]$INFO[Container(9140).ListItem.Property(Genre), • ,]</value>
-		<value condition="Control.IsVisible(9161) + Control.HasFocus(9160)">$INFO[Container(9160).ListItem.Property(Year),, • ]$INFO[Container(9160).ListItem.Property(Runtime),, Min]$INFO[Container(9160).ListItem.Property(Genre), • ,]</value>
+		<value condition="Control.IsVisible(9161) + Control.HasFocus(9160)">[COLOR Color3]$INFO[Container(9160).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(9160).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(9160).ListItem.Duration, • , Min]$INFO[Container(9160).ListItem.Premiered, • ,][/COLOR]</value>
 	</variable>
 	
 	<variable name="global_Info_Short">
