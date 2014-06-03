@@ -7,12 +7,12 @@
 	    </item>
 	    <item id="2">
 	        <label>32021</label>	        
-            <onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
+            <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recentmovies,return)</onclick>
 	    </item>
 	    
 		<item id="14">
 	        <label>32023</label>	        
-			<onclick>ActivateWindow(10025,"special://skin/playlists/movies/inprogress.xsp", return)</onclick>
+			<onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recommendedmovies,return)</onclick>
 	    </item>	    
 	    <item id="3">
 	        <label>137</label>
@@ -56,11 +56,11 @@
 	    </item>
 	    <item id="2">
 	        <label>32021</label>	        
-            <onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
+            <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recentepisodes,return)</onclick>
 	    </item>		
 		<item id="14">
 	        <label>32023</label>	        
-            <onclick>ActivateWindow(10025,"special://skin/playlists/episodes/inprogress.xsp", return)</onclick>
+            <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recommendedepisodes,return)</onclick>
 		</item>
 		<item id="3">
 	        <label>137</label>
@@ -104,7 +104,7 @@
 		</item>
 	    <item id="2">
 	        <label>32021</label>
-            <onclick>ActivateWindow(Music,RecentlyAddedAlbums,return)</onclick>
+			<onclick>ActivateWindow(Music,RecentlyAddedAlbums,return)</onclick>-->
 	    </item>
 		<item id="14">
 	        <label>32035</label>	        

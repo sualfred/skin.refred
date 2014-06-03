@@ -137,7 +137,7 @@
 			<onback>9110</onback>
 			<onup>5561</onup>
 			<ondown>5561</ondown>
-			<include>widgets_movies_new</include>
+			<content target="video">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<fadetime>1000</fadetime>
@@ -162,7 +162,7 @@
 			<onup>5561</onup>
 			<onback>9110</onback>
 			<ondown>5561</ondown>
-			<include>widgets_inprogress_movies</include>
+			<content target="video">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<fadetime>1000</fadetime>
@@ -287,8 +287,7 @@
 			<onright>557</onright>
 			<onup>5571</onup>
 			<ondown>5571</ondown>
-			<include>widgets_episodes_random</include>
-			<altclick>ActivateWindow(Videos,MovieTitles)</altclick>			
+			<content target="video">plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<include>toggle_Menu</include>
@@ -313,7 +312,7 @@
 			<onback>9110</onback>
 			<onup>5571</onup>
 			<ondown>5571</ondown>
-			<include>widgets_episodes_new</include>
+			<content target="video">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<fadetime>1000</fadetime>
@@ -338,7 +337,7 @@
 			<onup>5571</onup>
 			<onback>9110</onback>
 			<ondown>5571</ondown>
-			<include>widgets_inprogress_episodes</include>
+			<content target="video">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<fadetime>1000</fadetime>
@@ -464,7 +463,7 @@
 			<onright>558</onright>
 			<onup>5581</onup>
 			<ondown>5581</ondown>
-			<include>widgets_music_random</include>
+			<content target="music">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<include>toggle_Menu</include>
@@ -489,7 +488,7 @@
 			<onback>9110</onback>
 			<onup>5581</onup>
 			<ondown>5581</ondown>
-			<include>widgets_music_recent</include>
+			<content target="music">plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<fadetime>1000</fadetime>
@@ -514,7 +513,7 @@
 			<onup>5581</onup>
 			<onback>9110</onback>
 			<ondown>5581</ondown>
-			<include>widgets_music_recommended</include>
+			<content target="music">plugin://service.library.data.provider?type=recommendedalbums&reload=$INFO[Window.Property(recommendedalbums)]</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<fadetime>1000</fadetime>
@@ -590,7 +589,7 @@
 				<scroll>true</scroll>
 				<visible>true</visible>
 				<label>$VAR[hubSub]</label>
-				<include>container_Title</include>
+				<include>container_Sub_Small</include>
 			</control>
 		</control>
 	</include>
@@ -723,7 +722,7 @@
 					<control type="progress">
 						<width>665</width>
 						<height>10</height>
-						<info>Container(5561).ListItem.Property(Percent)</info>
+						<info>Container(5561).ListItem.PercentPlayed</info>
 						<texturebg>player/progress-back.png</texturebg>
 						<lefttexture>-</lefttexture>
 						<midtexture colordiffuse="Selected">player/progress-middle.png</midtexture>
@@ -733,7 +732,7 @@
 					<control type="progress">
 						<width>665</width>
 						<height>10</height>
-						<info>Container(5571).ListItem.Property(Percent)</info>
+						<info>Container(5571).ListItem.PercentPlayed</info>
 						<texturebg>player/progress-back.png</texturebg>
 						<lefttexture>-</lefttexture>
 						<midtexture colordiffuse="Selected">player/progress-middle.png</midtexture>

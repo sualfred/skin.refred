@@ -198,86 +198,75 @@
 					</control>
 				
 					<control type="list" id="9150">
-					  <posy>90</posy>
-						<include>screen_Dimensions</include>
+						<posy>90</posy>
+						<left>100</left>
+						<width>1090</width>
 						<ondown>9110</ondown>
 						<onback>9110</onback>
 						<orientation>horizontal</orientation>
-						<pagecontrol>25</pagecontrol>
 						<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(9150)</autoscroll>
-						<include condition="!Skin.HasSetting(widgets.randommovies.enabled)">widgets_movies_new</include>
-						<include condition="Skin.HasSetting(widgets.randommovies.enabled)">widgets_movies_random</include>
-						<control type="image">
-							<include>screen_Dimensions</include>
-							<info>ListItem.Thumb</info>
-							<aspectratio>scale</aspectratio>
-						</control>
-						
-					  <itemlayout width="109" height="720">
-						<control type="image">
-							<posx>100</posx>
-							<width>100</width>
-							<height>147</height>
-							<info>ListItem.ActualIcon</info>
-							<bordertexture colordiffuse="base_5">white.png</bordertexture>
-							<bordersize>5</bordersize>
-							<aspectratio>scale</aspectratio>
-						</control>
-						<control type="image">
-							<posx>100</posx>
-							<width>100</width>
-							<height>147</height>
-							<texture>overlays/cover_overlay.png</texture>
-							<aspectratio>scale</aspectratio>
-							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
-						</control>
-					  </itemlayout>	  
-					  <focusedlayout height="720" width="109">
-							<control type="image">
-							<posx>100</posx>
-							<width>100</width>
-							<height>147</height>
-							<texture>white.png</texture>
-							<visible>Control.IsVisible(9152)</visible>
-							</control>
-						<control type="image">
-							<posx>100</posx>
-							<width>100</width>
-							<height>147</height>
-							<info>ListItem.ActualIcon</info>
-							<bordertexture colordiffuse="base_5">white.png</bordertexture>
-							<aspectratio>scale</aspectratio>
-							<bordersize>5</bordersize>
-						</control>
-						<control type="image">
-							<posx>100</posx>
-							<width>100</width>
-							<height>147</height>
-							<texture>overlays/cover_overlay.png</texture>
-							<aspectratio>scale</aspectratio>
-							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
-						</control>
-						<control type="label">
-							<posx>100</posx>
-							<posy>155</posy>
-							<width>430</width>
-							<height>22</height>
-							<font>regular_Small</font>
-							<align>left</align>
-							<info>ListItem.Label</info>
-							<visible>!Container(9150).Position(9) + !Container(9150).Position(8)</visible>
-						</control>
-						<control type="label">
-							<posx>200</posx>
-							<posy>155</posy>
-							<width>430</width>
-							<height>22</height>
-							<font>regular_Small</font>
-							<align>right</align>
-							<info>ListItem.Label</info>
-							<visible>Container(9150).Position(9) | Container(9150).Position(8)</visible> 
-						</control>
-					  </focusedlayout>
+						<content target="video">$VAR[widget_movie_cat]</content>
+						<!--<include condition="!Skin.HasSetting(widgets.randommovies.enabled)">widgets_movies_new</include>
+						<include condition="Skin.HasSetting(widgets.randommovies.enabled)">widgets_movies_random</include>-->						
+							<itemlayout width="109" height="720">
+								<control type="image">
+									<width>100</width>
+									<height>147</height>
+									<info>ListItem.Thumb</info>
+									<bordertexture colordiffuse="base_5">white.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio>scale</aspectratio>
+								</control>
+								<control type="image">
+									<width>100</width>
+									<height>147</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+								</control>
+							</itemlayout>	  
+							<focusedlayout height="720" width="109">
+								<control type="image">
+									<width>100</width>
+									<height>147</height>
+									<texture>white.png</texture>
+									<visible>Control.IsVisible(9152)</visible>
+									</control>
+								<control type="image">
+									<width>100</width>
+									<height>147</height>
+									<info>ListItem.Thumb</info>
+									<bordertexture colordiffuse="base_5">white.png</bordertexture>
+									<aspectratio>scale</aspectratio>
+									<bordersize>5</bordersize>
+								</control>
+								<control type="image">
+									<width>100</width>
+									<height>147</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+								</control>
+								<control type="label">
+									<posy>155</posy>
+									<width>430</width>
+									<height>22</height>
+									<font>regular_Small</font>
+									<align>left</align>
+									<info>ListItem.Label</info>
+									<visible>!Container(9150).Position(9) + !Container(9150).Position(8)</visible>
+								</control>
+								<control type="label">
+									<posx>100</posx>
+									<posy>155</posy>
+									<width>430</width>
+									<height>22</height>
+									<font>regular_Small</font>
+									<align>right</align>
+									<info>ListItem.Label</info>
+									<visible>Container(9150).Position(9) | Container(9150).Position(8)</visible> 
+								</control>
+							</focusedlayout>
 					</control>
 			</control>
 			
