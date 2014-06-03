@@ -179,32 +179,32 @@
 		<value condition="Container(9110).HasFocus(909) + IsEmpty(Skin.String(Customb2main.bg))">backgrounds/fallback/fallback2.jpg</value>
 		<value condition="Container(9110).HasFocus(801) + IsEmpty(Skin.String(power.bg))">backgrounds/fallback/power.jpg</value>
 		<value condition="[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(802) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(802) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9140).ListItem.Thumb]</value>
-		<value condition="[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(500) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(500) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9170).ListItem.Thumb]</value>
-		<value condition="[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.enabled)] + Container(9110).HasFocus(500) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(500) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9171).ListItem.Thumb]</value>
+		<value condition="[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(500) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(500) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9170).ListItem.Art(fanart)]</value>
+		<value condition="[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.enabled)] + Container(9110).HasFocus(500) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(500) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9171).ListItem.Art(fanart)]</value>
 		<value condition="[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(300) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(300) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9160).ListItem.Art(fanart)]</value>
-		<value condition="[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.enabled)] + Container(9110).HasFocus(300) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(300) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9161).ListItem.Thumb]</value>
+		<value condition="[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.enabled)] + Container(9110).HasFocus(300) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(300) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9161).ListItem.Art(fanart)]</value>
 		<value condition="[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(200) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(200) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9150).ListItem.Art(fanart)]</value>		
-		<value condition="[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.enabled)] + Container(9110).HasFocus(200) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(200) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9151).ListItem.Thumb]</value>
+		<value condition="[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.enabled)] + Container(9110).HasFocus(200) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(200) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9151).ListItem.Art(fanart)]</value>
 	</variable>
 	
 	<variable name="menu_widget_thumb">
-		<value condition="[[Skin.HasSetting(widgets.enabled) + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + !Player.HasMedia + !Player.HasAudio)]] + Container(9110).HasFocus(802)">$INFO[Container(9140).ListItem.Thumb]</value>
-		<value condition="[[Skin.HasSetting(widgets.enabled) + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + !Player.HasMedia + !Player.HasAudio)]] + Container(9110).HasFocus(100)">$INFO[Container(9180).ListItem.Thumb]</value>
-		<value condition="[[Skin.HasSetting(widgets.enabled) + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + !Player.HasMedia + !Player.HasAudio)]] + Container(9110).HasFocus(200)">$INFO[Container(9150).ListItem.Thumb]</value>
-		<value condition="[[Skin.HasSetting(widgets.enabled) + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + !Player.HasMedia + !Player.HasAudio)]] + Container(9110).HasFocus(300)">$INFO[Container(9160).ListItem.Thumb]</value>
-		<value condition="[[Skin.HasSetting(widgets.enabled) + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + !Player.HasMedia + !Player.HasAudio)]] + Container(9110).HasFocus(500)">$INFO[Container(9170).ListItem.Thumb]</value>
+		<value condition="[[Skin.HasSetting(widgets.enabled) + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + !Player.HasMedia + !Player.HasAudio)]] + Container(9110).HasFocus(802)">$INFO[Container(9140).ListItem.Art(fanart)]</value>
+		<value condition="[[Skin.HasSetting(widgets.enabled) + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + !Player.HasMedia + !Player.HasAudio)]] + Container(9110).HasFocus(100)">$INFO[Container(9180).ListItem.Art(fanart)]</value>
+		<value condition="[[Skin.HasSetting(widgets.enabled) + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + !Player.HasMedia + !Player.HasAudio)]] + Container(9110).HasFocus(200)">$INFO[Container(9150).ListItem.Art(fanart)]</value>
+		<value condition="[[Skin.HasSetting(widgets.enabled) + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + !Player.HasMedia + !Player.HasAudio)]] + Container(9110).HasFocus(300)">$INFO[Container(9160).ListItem.Art(fanart)]</value>
+		<value condition="[[Skin.HasSetting(widgets.enabled) + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + !Player.HasMedia + !Player.HasAudio)]] + Container(9110).HasFocus(500)">$INFO[Container(9170).ListItem.Art(fanart)]</value>
 		
 		<!-- video button -->
 		<value condition="Container(9110).HasFocus(100)">$INFO[Container(9180).ListItem.Thumb]</value>
 				
 		<!-- movie widget invisible -->
-		<value condition="[!Skin.HasSetting(widgets.enabled) | [Skin.HasSetting(home.nowplaying) + [Player.HasMedia | Player.HasAudio]]] + Container(9110).HasFocus(200)">$INFO[Container(9151).ListItem.Thumb]</value>
+		<value condition="[!Skin.HasSetting(widgets.enabled) | [Skin.HasSetting(home.nowplaying) + [Player.HasMedia | Player.HasAudio]]] + Container(9110).HasFocus(200)">$INFO[Container(9151).ListItem.Art(fanart)]</value>
 		
 		<!-- tvshow widget invisible -->
-		<value condition="[!Skin.HasSetting(widgets.enabled) | [Skin.HasSetting(home.nowplaying) + [Player.HasMedia | Player.HasAudio]]] + Container(9110).HasFocus(300)">$INFO[Container(9161).ListItem.Thumb]</value>
+		<value condition="[!Skin.HasSetting(widgets.enabled) | [Skin.HasSetting(home.nowplaying) + [Player.HasMedia | Player.HasAudio]]] + Container(9110).HasFocus(300)">$INFO[Container(9161).ListItem.Art(fanart)]</value>
 		
 		<!-- music widget invisible -->
-		<value condition="[!Skin.HasSetting(widgets.enabled) | [Skin.HasSetting(home.nowplaying) + [Player.HasMedia | Player.HasAudio]]] + Container(9110).HasFocus(500)">$INFO[Container(9171).ListItem.Thumb]</value>
+		<value condition="[!Skin.HasSetting(widgets.enabled) | [Skin.HasSetting(home.nowplaying) + [Player.HasMedia | Player.HasAudio]]] + Container(9110).HasFocus(500)">$INFO[Container(9171).ListItem.Art(fanart)]</value>
 			
 	</variable>
 	
@@ -212,8 +212,8 @@
 	
 <!--widget movie-->
 	<variable name="widget_movie_cat">
-		<value condition="!Skin.HasSetting(widgets.randommovies.enabled)">plugin://service.library.data.provider?type=recentmovies&end=10&reload=$INFO[Window.Property(recentmovies)]</value>
-		<value condition="Skin.HasSetting(widgets.randommovies.enabled)">plugin://service.library.data.provider?type=randommovies&end=10&reload=$INFO[Window.Property(randommovies)]</value>
+		<value condition="!Skin.HasSetting(widgets.randommovies.enabled)">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]</value>
+		<value condition="Skin.HasSetting(widgets.randommovies.enabled)">plugin://service.library.data.provider?type=randommovies&reload=$INFO[Window.Property(randommovies)]</value>
 	</variable>
 	<variable name="widget_movie_plot">
 		<value condition="Container(9150).Position(0)">$INFO[Window(Home).Property(RecommendedMovie.1.Plot]</value>
@@ -267,8 +267,8 @@
 	
 <!--widget  tvseries-->
 	<variable name="widget_episode_cat">
-		<value condition="!Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=recentepisodes&end=10&reload=$INFO[Window.Property(recentepisodes)]</value>
-		<value condition="Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=randomepisodes&end=10&reload=$INFO[Window.Property(randomepisodes)]</value>
+		<value condition="!Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]</value>
+		<value condition="Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]</value>
 	</variable>
 	<variable name="widget_episode_plot">
 		<value condition="Container(9160).Position(0)">$INFO[Window(Home).Property(RecommendedEpisode.1.Plot)]</value>
@@ -427,6 +427,11 @@
 	</variable>
 	
 <!--widget music-->
+	<variable name="widget_music_cat">
+		<value condition="!Skin.HasSetting(widgets.randommusic.enabled)">plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]</value>
+		<value condition="Skin.HasSetting(widgets.randommusic.enabled)">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]</value>
+	</variable>
+	
 	<variable name="widget_music_artist">
 		<value condition="Container(9170).Position(0)">$INFO[Window(Home).Property(RecommendedAlbum.1.Artist]</value>
 		<value condition="Container(9170).Position(1)">$INFO[Window(Home).Property(RandomAlbum.2.Artist]</value>
