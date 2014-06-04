@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<onload condition="System.HasAddon(script.artistslideshow) + !Skin.HasSetting(artistslideshow.disable)">RunScript(script.artistslideshow, daemon=True)</onload>
-	
+	<onload condition="System.HasAddon(script.artistslideshow) + !Skin.HasSetting(artistslideshow.disable)">RunScript(script.artistslideshow, daemon=True)</onload>	
 	<controls>
 		<control type="visualisation" id="2">
 			<include>screen_Dimensions</include>
@@ -37,8 +36,7 @@
 			<animation effect="fade" time="600">WindowClose</animation>
 			<animation effect="fade" time="400">Visible</animation>
 			<animation effect="fade" time="400">Hidden</animation>
-			<visible>Player.HasAudio + !Skin.HasSetting(displaylyrics.enable) + Skin.HasSetting(musictextscroll.enable)</visible>
-			
+			<visible>Player.HasAudio + !Skin.HasSetting(displaylyrics.enable) + Skin.HasSetting(musictextscroll.enable)</visible>			
 			<control type="group" id="3333">	
 				<visible> IntegerGreaterThan(System.Time(ss),41)</visible>
 				<animation effect="fade" time="600">Visible</animation>
