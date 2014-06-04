@@ -46,8 +46,8 @@
 				<animation tween="Back" easing="InOut" effect="slide" start="0,250" end="0,0" time="1000" condition="!Control.HasFocus(9150) | !Control.HasFocus(9160) | !Control.HasFocus(9140)">Conditional</animation>
 				<animation tween="Back" easing="InOut" effect="slide" start="0,250" end="0,0" time="1000">WindowOpen</animation>
 				
-				<animation tween="Back" easing="InOut" effect="slide" start="0,-720" end="0,0" time="1000" condition="!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus()">Conditional</animation>
-				<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,-720" time="500" delay="500" condition="ControlGroup(5562).HasFocus() | ControlGroup(5563).HasFocus() | ControlGroup(5564).HasFocus()">Conditional</animation>
+				<animation tween="Back" easing="InOut" effect="slide" start="0,-720" end="0,0" time="1000" condition="!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus() + !ControlGroup(5565).HasFocus()">Conditional</animation>
+				<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,-720" time="500" delay="500" condition="ControlGroup(5562).HasFocus() | ControlGroup(5563).HasFocus() | ControlGroup(5564).HasFocus() | + ControlGroup(5565).HasFocus()">Conditional</animation>
 				
 				<animation tween="Back" easing="InOut" effect="slide" end="0,-30" time="300" condition="ControlGroup(9901).HasFocus + !Skin.HasSetting(home.menu2)">Conditional</animation>
 				
@@ -77,11 +77,9 @@
 				  <onup condition="Control.IsVisible(9175) + Container(9110).HasFocus(500)">SetFocus(9170,0)</onup>
 				  <onup condition="Control.IsVisible(9185) + Container(9110).HasFocus(904)">SetFocus(9180,0)</onup>
 				  <onup condition="Control.IsVisible(9186) + Container(9110).HasFocus(908)">SetFocus(9181,0)</onup>
-				  <!--<onup condition="Control.IsVisible(9187)">SetFocus(9182,0)</onup>-->
 				  <onup condition="Control.IsVisible(9188) + Container(9110).HasFocus(909)">SetFocus(9183,0)</onup>
 				  <ondown condition="Control.IsVisible(9901)">SetFocus(9901)</ondown>
 				  <orientation>horizontal</orientation>
-				  <!--<focusposition>2</focusposition>-->
 				  <include condition="Skin.HasSetting(home.menu2)">homepos2</include>
 				  <include condition="!Skin.HasSetting(home.menu2)">homepos1</include>
 				  <include>home_newmenu</include>				

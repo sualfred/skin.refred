@@ -20,8 +20,9 @@
   <item id="802">
     <label>$LOCALIZE[575]</label>
     <thumb fallback="backgrounds/fallback/fallback.jpg">$VAR[menu_widget_thumb]</thumb>
-	<onclick>SetFocus(9140,0)</onclick>
-	<visible>!Skin.HasSetting(homemenu.inprogress.disable) + Skin.HasSetting(widgets.enabled) + [!Player.HasMedia + !Player.HasAudio]</visible>
+	<!--<onclick>SetFocus(9140,0)</onclick>-->
+	<onclick>SetFocus(559)</onclick>
+	<visible>!Skin.HasSetting(homemenu.inprogress.disable)</visible>
   </item> 
   
   <item id="200">

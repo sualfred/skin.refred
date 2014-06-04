@@ -759,3 +759,47 @@ msgstr ""
 msgctxt "#32036"
 msgid "Change user"
 msgstr ""
+
+msgctxt "#32037"
+msgid "In progress movies"
+msgstr ""
+
+msgctxt "#32038"
+msgid "In progress episodes"
+msgstr ""
+
+msgctxt "#32039"
+msgid "Recently played albums"
+msgstr ""
+
+msgctxt "#32040"
+msgid "New movies"
+msgstr ""
+
+msgctxt "#32041"
+msgid "New episodes"
+msgstr ""
+
+msgctxt "#32042"
+msgid "New albums"
+msgstr ""
+
+msgctxt "#32043"
+msgid "In Progress Hub"
+msgstr ""
+
+msgctxt "#32044"
+msgid "Widgets"
+msgstr ""
+
+msgctxt "#32045"
+msgid "Use in progress movies instead of episodes"
+msgstr ""
+
+msgctxt "#32046"
+msgid "Enable widgets for inprogress/movies/tvshows/music"
+msgstr ""
+
+msgctxt "#32047"
+msgid "Enable weather widget"
+msgstr ""

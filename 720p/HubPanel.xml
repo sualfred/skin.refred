@@ -352,7 +352,204 @@
 		</control>
 		<include>hubwidget-panel</include>
 	</control>	
-	
+	<!-- hub panel inpgrogress -->
+	<control type="group" id="5565">
+		<visible>ControlGroup(5565).HasFocus()</visible> 
+		<!--<include>fadeinout</include>-->
+		<animation tween="Back" easing="InOut" effect="slide" start="0,720" end="0,0" time="1000" condition="ControlGroup(5565).HasFocus()">Visible</animation>
+		<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,720" time="1000" condition="!ControlGroup(5565).HasFocus()">Hidden</animation>
+		<!-- window title -->
+		<control type="label">
+			<left>840</left>
+			<top>70</top>
+			<width>950</width>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[32043]</label>
+			<font>light_Window</font>
+			<textcolor>Color1</textcolor>
+			<include>transition_WindowTitle</include>
+		</control>
+		<control type="label">
+			<left>100</left>
+			<top>70</top>
+			<width>950</width>
+			<aligny>center</aligny>
+			<label>$VAR[hubcategory]</label>
+			<font>light_Window</font>
+			<textcolor>Color1</textcolor>
+			<include>transition_WindowTitle</include>
+		</control>
+		<!--buttons-->
+		<control type="list" id="559">
+			<left>840</left>
+			<top>120</top>
+			<width>335</width>
+			<height>540</height>
+			<onback>9110</onback>
+			<onleft>5591</onleft>
+			<onup>559</onup>
+			<ondown>559</ondown>
+			<content>
+			<include>QuickNavInProgressHub</include>
+			</content>
+			<preloaditems>2</preloaditems>
+			<include>global_ListScroll</include>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="335" height="54" align="right">
+				<control type="image">
+					<width>335</width>
+					<height>54</height>
+					<texture>overlays/semitrans.png</texture>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>5</top>
+					<width>280</width>
+					<visible>true</visible>
+					<label>$VAR[global_Title]</label>
+					<include>container_Title</include>
+				</control>
+				<control type="image">
+					<top>54</top>
+					<width>335</width>
+					<height>1</height>
+					<texture colordiffuse="whitetrans0">white.png</texture>
+				</control>
+			</itemlayout>
+			<focusedlayout width="335" height="54">
+				<control type="image">
+					<width>335</width>
+					<height>54</height>
+					<texture>views/focus.png</texture>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>5</top>
+					<aligny>center</aligny>
+					<width>280</width>
+					<visible>true</visible>
+					<label>$VAR[global_Title]</label>
+					<include>container_Title-focus</include>
+				</control>
+			</focusedlayout>
+		</control>
+		<!-- widget window -->
+		<control type="image">
+			<left>100</left>
+			<top>120</top>
+			<width>730</width>
+			<height>540</height>
+			<texture>white.png</texture>
+			<visible>Control.HasFocus(5591)</visible>
+		</control>
+		<control type="image">
+			<left>100</left>
+			<top>120</top>
+			<width>730</width>
+			<height>540</height>
+			<texture>white.png</texture>
+			<include>bordertrans</include>
+			<visible>!Control.HasFocus(5591)</visible>
+		</control>
+		<control type="fixedlist" id="5591">
+			<visible>Container(559).HasFocus(3) | [!Container(559).HasFocus(1) + !Container(559).HasFocus(2) + !Container(559).HasFocus(4)]</visible>
+			<left>105</left>
+			<top>125</top>
+			<width>720</width>
+			<height>530</height>
+			<onback>9110</onback>
+			<onright>559</onright>
+			<onup>5591</onup>
+			<ondown>5591</ondown>
+			<content target="video">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]</content>
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<include>toggle_Menu</include>
+			<fadetime>1000</fadetime>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5591)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+				 <include>hubwidget-commons</include>
+			</itemlayout>
+			<focusedlayout width="720" height="530">
+				<include>hubwidget-commons</include>
+			</focusedlayout>
+		</control>
+		<control type="fixedlist" id="5591">
+			<visible>Container(559).HasFocus(4)</visible>
+			<left>105</left>
+			<top>125</top>
+			<width>720</width>
+			<height>530</height>
+			<onright>559</onright>
+			<onback>9110</onback>
+			<onup>5591</onup>
+			<ondown>5591</ondown>
+			<content target="video">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]</content>
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<fadetime>1000</fadetime>
+			<include>toggle_Menu</include>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5591)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+				 <include>hubwidget-commons</include>
+			</itemlayout>
+			<focusedlayout width="720" height="530">
+				<include>hubwidget-commons</include>
+			</focusedlayout>
+		</control>
+		<control type="fixedlist" id="5591">
+			<visible>Container(559).HasFocus(2)</visible>
+			<left>105</left>
+			<top>125</top>
+			<width>720</width>
+			<height>530</height>
+			<onright>559</onright>
+			<onup>5591</onup>
+			<onback>9110</onback>
+			<ondown>5591</ondown>
+			<content target="video">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]</content>
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<fadetime>1000</fadetime>
+			<include>toggle_Menu</include>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5591)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+			</itemlayout>
+			<focusedlayout width="720" height="530">				
+			</focusedlayout>
+		</control>
+		<control type="fixedlist" id="5591">
+			<visible>Container(559).HasFocus(1)</visible>
+			<left>105</left>
+			<top>125</top>
+			<width>720</width>
+			<height>530</height>
+			<onright>559</onright>
+			<onup>5591</onup>
+			<onback>9110</onback>
+			<ondown>5591</ondown>
+			<content target="video">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]</content>
+			<pagecontrol>70</pagecontrol>
+			<preloaditems>2</preloaditems>
+			<fadetime>1000</fadetime>
+			<include>toggle_Menu</include>
+			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5591)</autoscroll>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<itemlayout width="720" height="530">
+			</itemlayout>
+			<focusedlayout width="720" height="530">				
+			</focusedlayout>
+		</control>
+		<include>hubwidget-panel</include>
+	</control>
 	<!-- hub panel music -->
 	<control type="group" id="5564">
 		<visible>ControlGroup(5564).HasFocus()</visible> 
