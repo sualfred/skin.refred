@@ -43,10 +43,20 @@
 					<include>global_ListScroll</include>
 					<control type="radiobutton" id="11">
 						<width>250</width>
-						<label>$LOCALIZE[3]</label>
-						<onfocus>Skin.SetString(Section,Video)</onfocus>
+						<label>$LOCALIZE[575]</label>
+						<onfocus>Skin.SetString(Section,Inprogress)</onfocus>
 						<onclick>Skin.ToggleSetting(homemenu.videos.disable)</onclick>
 						<selected>!Skin.HasSetting(homemenu.videos.disable)</selected>
+						<radiowidth>24</radiowidth>
+						<include>dialog_Radio-alt</include>
+						<include>dialog_ControlCommons</include>
+					</control>
+					<control type="radiobutton" id="29">
+						<width>250</width>
+						<label>$LOCALIZE[3]</label>
+						<onfocus>Skin.SetString(Section,Video)</onfocus>
+						<onclick>Skin.ToggleSetting(homemenu.inprogress.disable)</onclick>
+						<selected>!Skin.HasSetting(homemenu.inprogress.disable)</selected>
 						<radiowidth>24</radiowidth>
 						<include>dialog_Radio-alt</include>
 						<include>dialog_ControlCommons</include>
@@ -1406,32 +1416,6 @@
 						<width>484</width>
 						<onclick>Skin.ToggleSetting(homemenu.reload.disable)</onclick>
 						<selected>!Skin.HasSetting(homemenu.reload.disable)</selected>
-						<include>dialog_Radio-alt</include>
-					</control>
-					<!--in progress button-->
-					<control type="radiobutton" id="503">
-						<label>$LOCALIZE[575] Button</label>
-						<width>484</width>
-						<onclick>Skin.ToggleSetting(homemenu.inprogress.disable)</onclick>
-						<selected>!Skin.HasSetting(homemenu.inprogress.disable)</selected>
-						<include>dialog_Radio-alt</include>
-					</control>
-					<!--use inprogress movies-->
-					<control type="radiobutton" id="504">
-						<label>- $LOCALIZE[32015]</label>
-						<width>484</width>
-						<onclick>Skin.Reset(inprogressWidgets.episodes)</onclick>
-						<onclick>Skin.ToggleSetting(inprogressWidgets.movies)</onclick>
-						<selected>Skin.HasSetting(inprogressWidgets.movies)</selected>
-						<include>dialog_Radio-alt</include>
-					</control>
-					<!--use inprogress episodes-->
-					<control type="radiobutton" id="505">
-						<label>- $LOCALIZE[32016]</label>
-						<width>484</width>
-						<onclick>Skin.Reset(inprogressWidgets.movies)</onclick>
-						<onclick>Skin.ToggleSetting(inprogressWidgets.episodes)</onclick>
-						<selected>Skin.HasSetting(inprogressWidgets.episodes)</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 				</control>
