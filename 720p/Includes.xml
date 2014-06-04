@@ -119,48 +119,51 @@
 	</include>
 	
 	<include name="clock">
-		<control type="label">
-			<label>$VAR[toast_Top]</label>
-			<include>toast_TopClock</include>
-			<shadowcolor>black</shadowcolor>
-		</control>
-		<control type="label">
-			<animation type="Conditional" reversible="false" condition="PVR.IsRecording | PVR.HasNonRecordingTimer" loop="true">
-				<effect type="fade" start="0" end="100" time="500" delay="0" />
-				<effect type="fade" start="100" end="0" time="500" delay="10000" />
-				<effect type="fade" start="100" end="0" time="500" delay="20000" />
-			</animation>
-			<label>$VAR[toast_Bottom]</label>
-			<textcolor>Color1</textcolor>
-			<include>toast_BottomClock</include>
-			<shadowcolor>black</shadowcolor>
-		</control>
-		<control type="label">
-			<animation type="Conditional" reversible="false" condition="PVR.IsRecording | PVR.HasNonRecordingTimer" loop="true">
-				<effect type="fade" start="0" end="100" time="500" delay="10500" />
-				<effect type="fade" start="100" end="0" time="500" delay="20000" />
-			</animation>
-			<label>$VAR[toast_PVRrec]</label>
-			<textcolor>Color1</textcolor>
-			<include>toast_BottomClock</include>
-			<shadowcolor>black</shadowcolor>
-			<visible>PVR.IsRecording | PVR.HasNonRecordingTimer</visible>
-		</control>
-		<control type="image">
-			<top>11</top>
-			<include>toast_IconClock</include>
-			<texture>$VAR[toast_Weather]</texture>
-			<colordiffuse>black</colordiffuse>
-		</control>
-		<control type="image">
-			<include>toast_IconClock</include>
-			<texture>$VAR[toast_Weather]</texture>
-			<shadowcolor>black</shadowcolor>
-		</control>
-		<control type="label">
-			<include>toast_Temp</include>
-			<label>[B]$INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][/B]</label>
-			<shadowcolor>black</shadowcolor>
+		<control type="group">
+			<visible>!Window.IsActive(musicoverlay)</visible>
+			<control type="label">
+				<label>$VAR[toast_Top]</label>
+				<include>toast_TopClock</include>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<animation type="Conditional" reversible="false" condition="PVR.IsRecording | PVR.HasNonRecordingTimer" loop="true">
+					<effect type="fade" start="0" end="100" time="500" delay="0" />
+					<effect type="fade" start="100" end="0" time="500" delay="10000" />
+					<effect type="fade" start="100" end="0" time="500" delay="20000" />
+				</animation>
+				<label>$VAR[toast_Bottom]</label>
+				<textcolor>Color1</textcolor>
+				<include>toast_BottomClock</include>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<animation type="Conditional" reversible="false" condition="PVR.IsRecording | PVR.HasNonRecordingTimer" loop="true">
+					<effect type="fade" start="0" end="100" time="500" delay="10500" />
+					<effect type="fade" start="100" end="0" time="500" delay="20000" />
+				</animation>
+				<label>$VAR[toast_PVRrec]</label>
+				<textcolor>Color1</textcolor>
+				<include>toast_BottomClock</include>
+				<shadowcolor>black</shadowcolor>
+				<visible>PVR.IsRecording | PVR.HasNonRecordingTimer</visible>
+			</control>
+			<control type="image">
+				<top>11</top>
+				<include>toast_IconClock</include>
+				<texture>$VAR[toast_Weather]</texture>
+				<colordiffuse>black</colordiffuse>
+			</control>
+			<control type="image">
+				<include>toast_IconClock</include>
+				<texture>$VAR[toast_Weather]</texture>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<include>toast_Temp</include>
+				<label>[B]$INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][/B]</label>
+				<shadowcolor>black</shadowcolor>
+			</control>
 		</control>
 	</include>
 	
