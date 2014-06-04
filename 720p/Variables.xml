@@ -164,6 +164,7 @@
 		<value condition="ControlGroup(5564).HasFocus()">$INFO[Container(5581).ListItem.Art(fanart)]</value>
 		<value condition="ControlGroup(5563).HasFocus()">$INFO[Container(5571).ListItem.Art(fanart)]</value>
 		<value condition="ControlGroup(5562).HasFocus()">$INFO[Container(5561).ListItem.Art(fanart)]</value>
+		<value condition="ControlGroup(5565).HasFocus()">$INFO[Container(5591).ListItem.Art(fanart)]</value>
 		<value condition="Container(9110).HasFocus(1)">overlays/debuggrid720.png</value>
 		<value condition="Container(9110).HasFocus(100) + !IsEmpty(Skin.String(videos.bg))">$INFO[Skin.String(videos.bg)]</value>
 		<value condition="Container(9110).HasFocus(400) + !IsEmpty(Skin.String(livetv.bg))">$INFO[Skin.String(livetv.bg)]</value>
