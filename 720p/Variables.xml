@@ -249,97 +249,21 @@
 		<value condition="Skin.HasSetting(widgets.inprogressmovies.enabled)">$INFO[ListItem.Thumb]</value>
 		<value condition="!Skin.HasSetting(widgets.inprogressmovies.enabled)">$INFO[ListItem.Art(tvshow.poster)]</value>
 	</variable>
-	
-	<variable name="widget_inprogress_plot">
-		<value condition="Container(9140).HasFocus(1)">$INFO[Window(Home).Property(RecommendedEpisode.1.Plot)]</value>
-		<value condition="Container(9140).HasFocus(2)">$INFO[Window(Home).Property(RecommendedEpisode.2.Plot)]</value>
-		<value condition="Container(9140).HasFocus(3)">$INFO[Window(Home).Property(RecommendedEpisode.3.Plot)]</value>
-		<value condition="Container(9140).HasFocus(4)">$INFO[Window(Home).Property(RecommendedEpisode.4.Plot)]</value>
-		<value condition="Container(9140).HasFocus(5)">$INFO[Window(Home).Property(RecommendedMovie.1.Plot)]</value>
-		<value condition="Container(9140).HasFocus(6)">$INFO[Window(Home).Property(RecommendedMovie.2.Plot)]</value>
-		<value condition="Container(9140).HasFocus(7)">$INFO[Window(Home).Property(RecommendedMovie.3.Plot)]</value>
-		<value condition="Container(9140).HasFocus(8)">$INFO[Window(Home).Property(RecommendedMovie.4.Plot)]</value>
-	</variable>
-	<variable name="widget_inprogress_thumb">
-		<value condition="Container(9140).HasFocus(1)">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(thumb))]</value>
-		<value condition="Container(9140).HasFocus(2)">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(thumb))]</value>
-		<value condition="Container(9140).HasFocus(3)">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(thumb))]</value>
-		<value condition="Container(9140).HasFocus(4)">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(thumb))]</value>
-		<value condition="Container(9140).HasFocus(5)">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(thumb))]</value>
-	</variable>
-	<variable name="widget_inprogress_logo">
-		<value condition="Container(9140).HasFocus(1)">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.clearlogo))]</value>
-		<value condition="Container(9140).HasFocus(2)">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.clearlogo))]</value>
-		<value condition="Container(9140).HasFocus(3)">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(cltvshow.clearlogoearlogo))]</value>
-		<value condition="Container(9140).HasFocus(4)">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.clearlogo))]</value>
-		<value condition="Container(9140).HasFocus(5)">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.clearlogo))]</value>
-	</variable>
-	<variable name="widget_inprogress_title">
-		<value condition="Container(9140).HasFocus(1)">$INFO[Window(Home).Property(RecommendedEpisode.1.Title)]</value>
-		<value condition="Container(9140).HasFocus(2)">$INFO[Window(Home).Property(RecommendedEpisode.2.Title)]</value>
-		<value condition="Container(9140).HasFocus(3)">$INFO[Window(Home).Property(RecommendedEpisode.3.Title)]</value>
-		<value condition="Container(9140).HasFocus(4)">$INFO[Window(Home).Property(RecommendedEpisode.4.Title)]</value>
-		<value condition="Container(9140).HasFocus(5)">$INFO[Window(Home).Property(RecommendedMovie.1.Title)]</value>
-		<value condition="Container(9140).HasFocus(6)">$INFO[Window(Home).Property(RecommendedMovie.2.Title)]</value>
-		<value condition="Container(9140).HasFocus(7)">$INFO[Window(Home).Property(RecommendedMovie.3.Title)]</value>
-		<value condition="Container(9140).HasFocus(8)">$INFO[Window(Home).Property(RecommendedMovie.4.Title)]</value>
 		
-	</variable>
-	<variable name="widget_inprogress_tvshowtitle">
-		<value condition="Container(9140).HasFocus(1)">$INFO[Window(Home).Property(RecommendedEpisode.1.TVshowTitle)]</value>
-		<value condition="Container(9140).HasFocus(2)">$INFO[Window(Home).Property(RecommendedEpisode.2.TVshowTitle)]</value>
-		<value condition="Container(9140).HasFocus(3)">$INFO[Window(Home).Property(RecommendedEpisode.3.TVshowTitle)]</value>
-		<value condition="Container(9140).HasFocus(4)">$INFO[Window(Home).Property(RecommendedEpisode.4.TVshowTitle)]</value>
-		<value condition="Container(9140).HasFocus(5)">$INFO[Window(Home).Property(RecommendedEpisode.5.TVshowTitle)]</value>
-	</variable>
-	<variable name="widget_inprogress_landscape">
-		<value condition="Container(9140).HasFocus(1)">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.landscape))]</value>
-		<value condition="Container(9140).HasFocus(2)">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.landscape))]</value>
-		<value condition="Container(9140).HasFocus(3)">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.landscape))]</value>
-		<value condition="Container(9140).HasFocus(4)">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.landscape))]</value>
-		<value condition="Container(9140).HasFocus(5)">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.landscape))]</value>
-	</variable>
-	<variable name="widget_inprogress_fanart">
-		<value condition="Container(9140).HasFocus(1)">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.fanart))]</value>
-		<value condition="Container(9140).HasFocus(2)">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.fanart))]</value>
-		<value condition="Container(9140).HasFocus(3)">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.fanart))]</value>
-		<value condition="Container(9140).HasFocus(4)">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.fanart))]</value>
-		<value condition="Container(9140).HasFocus(5)">$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.fanart))]</value>
-	</variable>
-	<variable name="widget_inprogress_poster">
-		<value condition="Container(9140).HasFocus(1)">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.poster))]</value>
-		<value condition="Container(9140).HasFocus(2)">$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.poster))]</value>
-		<value condition="Container(9140).HasFocus(3)">$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.poster))]</value>
-		<value condition="Container(9140).HasFocus(4)">$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.poster))]</value>
-		<value condition="Container(9140).HasFocus(5)">$INFO[Window(Home).Property(RecommendedMovie.1.Art(poster))]</value>
-		<value condition="Container(9140).HasFocus(6)">$INFO[Window(Home).Property(RecommendedMovie.2.Art(poster))]</value>
-		<value condition="Container(9140).HasFocus(7)">$INFO[Window(Home).Property(RecommendedMovie.3.Art(poster))]</value>
-		<value condition="Container(9140).HasFocus(8)">$INFO[Window(Home).Property(RecommendedMovie.4.Art(poster))]</value>		
-	</variable>
-	<variable name="widget_inprogress_nr">
-		<value condition="Container(9140).HasFocus(1)">$INFO[Window(Home).Property(RecommendedEpisode.1.EpisodeNo)]</value>
-		<value condition="Container(9140).HasFocus(2)">$INFO[Window(Home).Property(RecommendedEpisode.2.EpisodeNo)]</value>
-		<value condition="Container(9140).HasFocus(3)">$INFO[Window(Home).Property(RecommendedEpisode.3.EpisodeNo)]</value>
-		<value condition="Container(9140).HasFocus(4)">$INFO[Window(Home).Property(RecommendedEpisode.4.EpisodeNo)]</value>
-		<value condition="Container(9140).HasFocus(5)">$INFO[Window(Home).Property(RecommendedEpisode.5.EpisodeNo)]</value>
-	</variable>
-	<variable name="widget_inprogress_disc">
-		<value condition="Container(9140).HasFocus(5)">$INFO[Window(Home).Property(RecommendedMovie.1.Art(discart))]</value>
-		<value condition="Container(9140).HasFocus(6)">$INFO[Window(Home).Property(RecommendedMovie.2.Art(discart))]</value>
-		<value condition="Container(9140).HasFocus(7)">$INFO[Window(Home).Property(RecommendedMovie.3.Art(discart))]</value>
-		<value condition="Container(9140).HasFocus(8)">$INFO[Window(Home).Property(RecommendedMovie.4.Art(discart))]</value>		
-	</variable>
-	
-	<variable name="widget_inprogress_progress">
-		<value condition="Container(9140).HasFocus(1)">$INFO[Window(Home).Property(RecommendedEpisode.1.PercentPlayed)]</value>
-	</variable>
-	
 <!--widget music-->
 	<variable name="widget_music_cat">
 		<value condition="!Skin.HasSetting(widgets.randommusic.enabled)">plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]</value>
 		<value condition="Skin.HasSetting(widgets.randommusic.enabled)">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]</value>
 	</variable>
-
+	
+<!--widget season episode format-->
+	<variable name="widget_episodenr">
+		<value condition="IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Season,[COLOR Color2]S,]$INFO[ListItem.Episode,E,[/COLOR] ]$INFO[ListItem.Label]</value>
+		<value condition="!IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Season,[COLOR Color2]S0,]$INFO[ListItem.Episode,E,[/COLOR] ]$INFO[ListItem.Label]</value>
+		<value condition="IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Season,[COLOR Color2]S,]$INFO[ListItem.Episode,E0,[/COLOR] ]$INFO[ListItem.Label]</value>
+		<value condition="!IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Season,[COLOR Color2]S0,]$INFO[ListItem.Episode,E0,[/COLOR] ]$INFO[ListItem.Label]</value>
+	</variable>
+	
 <!--MENU-->
 	<variable name="view_Layout">
 		<value condition="Control.IsVisible(52)">$LOCALIZE[31120]: $LOCALIZE[31122]</value>
