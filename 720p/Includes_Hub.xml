@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<include name="QuickNavInProgressHub">
+        <item id="3">
+	        <label>32038</label>	        
+            <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recommendedepisodes,return)</onclick>
+		</item>
+	    <item id="4">
+	        <label>32041</label>	        
+            <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recentepisodes,return)</onclick>
+	    </item>			
+		<item id="1">
+	        <label>32037</label>	        
+			<onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recommendedmovies,return)</onclick>
+	    </item>	 
+	    <item id="2">
+	        <label>32040</label>	        
+            <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recentmovies,return)</onclick>
+	    </item>			   
+	    <item id="5">
+	        <label>137</label>
+            <onclick condition="Skin.HasSetting(search.addon)">RunScript(script.globalsearch,tvshows=true&episodes=true&movies=true)</onclick>
+			<onclick condition="!Skin.HasSetting(search.addon)">ActivateWindow(64)</onclick>
+	    </item>   
+        <item id="10">
+            <label>653</label>
+            <onclick>UpdateLibrary(video)</onclick>
+        </item>
+    </include>
+
     <include name="QuickNavMoviesHub">
         <item id="1">
 	        <label>32020</label>

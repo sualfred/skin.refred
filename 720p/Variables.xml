@@ -68,65 +68,81 @@
 		<value condition="Control.IsVisible(5564) + [Container(558).HasFocus(1) | [!Container(558).HasFocus(2) + !Container(558).HasFocus(14)]]">$LOCALIZE[32031]: $LOCALIZE[32033]</value>
 		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(2)">$LOCALIZE[32031]: $LOCALIZE[32021]</value>
 		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(14)">$LOCALIZE[32031]: $LOCALIZE[32034]</value>		
+		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(1)">$LOCALIZE[32031]: $LOCALIZE[32037]</value>	
+		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(2)">$LOCALIZE[32031]: $LOCALIZE[32040]</value>	
+		<value condition="Control.IsVisible(5565) + [Container(559).HasFocus(3) | [!Container(559).HasFocus(1) + !Container(559).HasFocus(2) + !Container(559).HasFocus(4)]">$LOCALIZE[32031]: $LOCALIZE[32038]</value>	
+		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(4)">$LOCALIZE[32031]: $LOCALIZE[32041]</value>	
 	</variable>
 	
 	<variable name="hubTitle">
 		<value condition="Control.IsVisible(5562)">$INFO[Container(5561).ListItem.Label]</value>
 		<value condition="Control.IsVisible(5563)">[COLOR Color2]$INFO[Container(5571).ListItem.TVShowTitle]:[/COLOR] $INFO[Container(5571).ListItem.Label]</value>
 		<value condition="Control.IsVisible(5564)">[COLOR Color2]$INFO[Container(5581).ListItem.Artist]:[/COLOR] $INFO[Container(5581).ListItem.Label]</value>
+		<value condition="Control.IsVisible(5565)">$INFO[Container(5591).ListItem.TVShowTitle,[COLOR Color2],:[/COLOR] ]$INFO[Container(5591).ListItem.Label]</value>
 	</variable>
 	
 	<variable name="hubProgress">
 		<value condition="Control.IsVisible(5562)">$INFO[Container(5561).ListItem.PercentPlayed]%</value>
 		<value condition="Control.IsVisible(5563)">$INFO[Container(5571).ListItem.PercentPlayed]%</value>
+		<value condition="Control.IsVisible(5565)">$INFO[Container(5591).ListItem.PercentPlayed]%</value>
 	</variable>
 	
 	<variable name="hubPosition">
 		<value condition="Control.IsVisible(5562)">$INFO[Container(5561).CurrentPage] / $INFO[Container(5561).NumPages]</value>
 		<value condition="Control.IsVisible(5563)">$INFO[Container(5571).CurrentPage] / $INFO[Container(5571).NumPages]</value>
 		<value condition="Control.IsVisible(5564)">$INFO[Container(5581).CurrentPage] / $INFO[Container(5581).NumPages]</value>
+		<value condition="Control.IsVisible(5565)">$INFO[Container(5591).CurrentPage] / $INFO[Container(5591).NumPages]</value>
 	</variable>
 	
 	<variable name="hubThumb">
 		<value condition="Control.IsVisible(5562)">$INFO[Container(5561).ListItem.Art(fanart)]</value>
 		<value condition="Control.IsVisible(5563)">$INFO[Container(5571).ListItem.Art(fanart)]</value>
 		<value condition="Control.IsVisible(5564)">$INFO[Container(5581).ListItem.Art(fanart)]</value>
+		<value condition="Control.IsVisible(5565)">$INFO[Container(5591).ListItem.Art(fanart)]</value>
 	</variable>
 		
 	<variable name="hubSub">
 		<value condition="Control.IsVisible(5562)">$INFO[Container(5561).ListItem.Duration,, Min]$INFO[Container(5561).ListItem.Year, • ,]$INFO[Container(5561).ListItem.Genre, • ,]</value>
 		<value condition="Control.IsVisible(5563)">[COLOR Color3]$INFO[Container(5571).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(5571).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(5571).ListItem.Duration, • , Min]$INFO[Container(5571).ListItem.Premiered, • ,][/COLOR]</value>
-		<value condition="Control.IsVisible(5564)">[COLOR Color3]$INFO[Container(5581).ListItem.Year,,]$INFO[Container(5581).ListItem.Genre, • ,][/COLOR]</value>
+		<value condition="Control.IsVisible(5564)">[COLOR Color3]$INFO[Container(5581).ListItem.Year,,]$INFO[Container(5581).ListItem.Genre, • ,][/COLOR]</value>	
+		<value condition="Control.IsVisible(5565) + [Container(559).HasFocus(1) | Container(559).HasFocus(2)]">[COLOR Color3]$INFO[Container(5591).ListItem.Year,,]$INFO[Container(5591).ListItem.Genre, • ,][/COLOR]</value>			
+		<value condition="Control.IsVisible(5565) + [!Container(559).HasFocus(1) + !Container(559).HasFocus(2)]">[COLOR Color3]$INFO[Container(5591).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(5591).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(5591).ListItem.Duration, • , Min]$INFO[Container(5591).ListItem.Premiered, • ,][/COLOR]</value>			
 	</variable>
 	
 	<variable name="hubRating">
 		<value condition="Control.IsVisible(5562)">$INFO[Container(5561).ListItem.Rating,rating/imdb/,.png]</value>
 		<value condition="Control.IsVisible(5563)">$INFO[Container(5571).ListItem.Rating,rating/imdb/,.png]</value>
+		<value condition="Control.IsVisible(5565)">$INFO[Container(5591).ListItem.Rating,rating/imdb/,.png]</value>
 	</variable>
 	
 	<variable name="hubVideoAspect">
 		<value condition="Control.IsVisible(5562)">$INFO[Container(5561)ListItem.VideoAspect,flags/video/aspectratio/,.png]</value>
 		<value condition="Control.IsVisible(5563)">$INFO[Container(5571)ListItem.VideoAspect,flags/video/aspectratio/,.png]</value>
+		<value condition="Control.IsVisible(5565)">$INFO[Container(5591)ListItem.VideoAspect,flags/video/aspectratio/,.png]</value>
 	</variable>
 	
 	<variable name="hubAudioChannels">
 		<value condition="Control.IsVisible(5562)">$INFO[Container(5561).ListItem.AudioChannels,flags/audio/,.png]</value>
 		<value condition="Control.IsVisible(5563)">$INFO[Container(5571).ListItem.AudioChannels,flags/audio/,.png]</value>
+		<value condition="Control.IsVisible(5565)">$INFO[Container(5591).ListItem.AudioChannels,flags/audio/,.png]</value>
 	</variable>
 	
 	<variable name="hubAudioCodec">
 		<value condition="Control.IsVisible(5562)">$INFO[Container(5561).ListItem.AudioCodec,flags/codec/,.png]</value>
 		<value condition="Control.IsVisible(5563)">$INFO[Container(5571).ListItem.AudioCodec,flags/codec/,.png]</value>
+		<value condition="Control.IsVisible(5565)">$INFO[Container(5591).ListItem.AudioCodec,flags/codec/,.png]</value>
 	</variable>
 	
 	<variable name="hubCodec">
 		<value condition="Control.IsVisible(5562)">$INFO[Container(5561).ListItem.VideoCodec,flags/codec/,.png]</value>
 		<value condition="Control.IsVisible(5563)">$INFO[Container(5571).ListItem.VideoCodec,flags/codec/,.png]</value>
+		<value condition="Control.IsVisible(5565)">$INFO[Container(5591).ListItem.VideoCodec,flags/codec/,.png]</value>
 	</variable>
 	
 	<variable name="hubResolution">
 		<value condition="Control.IsVisible(5562)">$INFO[Container(5561).ListItem.VideoResolution,flags/video/resolution/,.png]</value>
 		<value condition="Control.IsVisible(5563)">$INFO[Container(5571).ListItem.VideoResolution,flags/video/resolution/,.png]</value>
+		<value condition="Control.IsVisible(5565)">$INFO[Container(5591).ListItem.VideoResolution,flags/video/resolution/,.png]</value>
 	</variable>
 
 	
@@ -177,7 +193,7 @@
 		<value condition="Container(9110).HasFocus(908) + IsEmpty(Skin.String(Customb1main.bg))">backgrounds/fallback/fallback2.jpg</value>
 		<value condition="Container(9110).HasFocus(909) + IsEmpty(Skin.String(Customb2main.bg))">backgrounds/fallback/fallback2.jpg</value>
 		<value condition="Container(9110).HasFocus(801) + IsEmpty(Skin.String(power.bg))">backgrounds/fallback/power.jpg</value>
-		<value condition="[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(802) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(802) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9140).ListItem.Thumb]</value>
+		<value condition="[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(802) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(802) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9140).ListItem.Art(fanart)]</value>
 		<value condition="[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(500) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(500) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9170).ListItem.Art(fanart)]</value>
 		<value condition="[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.enabled)] + Container(9110).HasFocus(500) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(500) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9171).ListItem.Art(fanart)]</value>
 		<value condition="[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(300) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(300) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9160).ListItem.Art(fanart)]</value>
@@ -209,19 +225,26 @@
 	
 	
 	
-<!--widget movie-->
+<!--widget cat-->
 	<variable name="widget_movie_cat">
 		<value condition="!Skin.HasSetting(widgets.randommovies.enabled)">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]</value>
 		<value condition="Skin.HasSetting(widgets.randommovies.enabled)">plugin://service.library.data.provider?type=randommovies&reload=$INFO[Window.Property(randommovies)]</value>
 	</variable>
-	
-<!--widget  tvseries-->
 	<variable name="widget_episode_cat">
 		<value condition="!Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]</value>
 		<value condition="Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]</value>
 	</variable>
+	<variable name="widget_inprogress_cat">
+		<value condition="!Skin.HasSetting(widgets.inprogressmovies.enabled)">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]</value>
+		<value condition="Skin.HasSetting(widgets.inprogressmovies.enabled)">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]</value>
+	</variable>
 	
 <!--widget  inprogress-->
+	<variable name="widget_inprogress_poster">
+		<value condition="Skin.HasSetting(widgets.inprogressmovies.enabled)">$INFO[ListItem.Thumb]</value>
+		<value condition="!Skin.HasSetting(widgets.inprogressmovies.enabled)">$INFO[ListItem.Art(tvshow.poster)]</value>
+	</variable>
+	
 	<variable name="widget_inprogress_plot">
 		<value condition="Container(9140).HasFocus(1)">$INFO[Window(Home).Property(RecommendedEpisode.1.Plot)]</value>
 		<value condition="Container(9140).HasFocus(2)">$INFO[Window(Home).Property(RecommendedEpisode.2.Plot)]</value>
@@ -476,8 +499,9 @@
 		<value condition="Window.IsActive(pictures) + IsEmpty(ListItem.PictureLongDateTime) + !SubString(Container.FolderPath,addons://sources/)">$INFO[ListItem.Date]</value>
 		<value condition="!IsEmpty(ListItem.Studio)">$INFO[ListItem.Studio]</value>
 		<value condition="Control.IsVisible(9151)  + Control.HasFocus(9150)">$INFO[Container(9150).ListItem.Year,, • ]$INFO[Container(9150).ListItem.Duration,, Min • ]$INFO[Container(9150).ListItem.Genre]</value>
-		<value condition="Control.IsVisible(9141) + Control.HasFocus(9140)">$INFO[Container(9140).ListItem.Property(Year),, • ]$INFO[Container(9140).ListItem.Property(Runtime),, Min]$INFO[Container(9140).ListItem.Property(Genre), • ,]</value>
-		<value condition="Control.IsVisible(9161) + Control.HasFocus(9160)">[COLOR Color3]$INFO[Container(9160).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(9160).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(9160).ListItem.Duration, • , Min]$INFO[Container(9160).ListItem.Premiered, • ,][/COLOR]</value>
+		<value condition="Control.IsVisible(9161) + Control.HasFocus(9160)">[COLOR Color3]$INFO[Container(9160).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(9160).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(9160).ListItem.Duration, • , Min]$INFO[Container(9160).ListItem.Premiered, • ,][/COLOR]</value>		
+		<value condition="Control.IsVisible(9141) + Control.HasFocus(9140) + !Skin.HasSetting(widgets.inprogressmovies.enabled)">[COLOR Color3]$INFO[Container(9140).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(9140).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(9140).ListItem.Duration, • , Min]$INFO[Container(9140).ListItem.Premiered, • ,][/COLOR]</value>
+		<value condition="Control.IsVisible(9141) + Control.HasFocus(9140) + Skin.HasSetting(widgets.inprogressmovies.enabled)">$INFO[Container(9140).ListItem.Year,, • ]$INFO[Container(9140).ListItem.Duration,, Min • ]$INFO[Container(9140).ListItem.Genre]</value>
 	</variable>
 	
 	<variable name="global_Info_Short">
