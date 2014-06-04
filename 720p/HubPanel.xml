@@ -121,10 +121,10 @@
 			<include>transition_Info</include>
 			<include>transition_Content</include>
 			<itemlayout width="720" height="530">
-				 <include>hubwidget-commons</include>
+				  
 			</itemlayout>
 			<focusedlayout width="720" height="530">
-				<include>hubwidget-commons</include>
+				 
 			</focusedlayout>
 		</control>
 		<control type="fixedlist" id="5561">
@@ -146,10 +146,10 @@
 			<include>transition_Info</include>
 			<include>transition_Content</include>
 			<itemlayout width="720" height="530">
-				 <include>hubwidget-commons</include>
+				  
 			</itemlayout>
 			<focusedlayout width="720" height="530">
-				<include>hubwidget-commons</include>
+				 
 			</focusedlayout>
 		</control>
 		<control type="fixedlist" id="5561">
@@ -296,10 +296,10 @@
 			<include>transition_Info</include>
 			<include>transition_Content</include>
 			<itemlayout width="720" height="530">
-				 <include>hubwidget-commons</include>
+				  
 			</itemlayout>
 			<focusedlayout width="720" height="530">
-				<include>hubwidget-commons</include>
+				 
 			</focusedlayout>
 		</control>
 		<control type="fixedlist" id="5571">
@@ -321,10 +321,10 @@
 			<include>transition_Info</include>
 			<include>transition_Content</include>
 			<itemlayout width="720" height="530">
-				 <include>hubwidget-commons</include>
+				  
 			</itemlayout>
 			<focusedlayout width="720" height="530">
-				<include>hubwidget-commons</include>
+				 
 			</focusedlayout>
 		</control>
 		<control type="fixedlist" id="5571">
@@ -471,10 +471,10 @@
 			<include>transition_Info</include>
 			<include>transition_Content</include>
 			<itemlayout width="720" height="530">
-				 <include>hubwidget-commons</include>
+				  
 			</itemlayout>
 			<focusedlayout width="720" height="530">
-				<include>hubwidget-commons</include>
+				 
 			</focusedlayout>
 		</control>
 		<control type="fixedlist" id="5591">
@@ -496,10 +496,10 @@
 			<include>transition_Info</include>
 			<include>transition_Content</include>
 			<itemlayout width="720" height="530">
-				 <include>hubwidget-commons</include>
+				  
 			</itemlayout>
 			<focusedlayout width="720" height="530">
-				<include>hubwidget-commons</include>
+				 
 			</focusedlayout>
 		</control>
 		<control type="fixedlist" id="5591">
@@ -669,10 +669,10 @@
 			<include>transition_Info</include>
 			<include>transition_Content</include>
 			<itemlayout width="720" height="530">
-				 <include>hubwidget-commons</include>
+				  
 			</itemlayout>
 			<focusedlayout width="720" height="530">
-				<include>hubwidget-commons</include>
+				 
 			</focusedlayout>
 		</control>
 		<control type="fixedlist" id="5581">
@@ -694,10 +694,10 @@
 			<include>transition_Info</include>
 			<include>transition_Content</include>
 			<itemlayout width="720" height="530">
-				 <include>hubwidget-commons</include>
+				  
 			</itemlayout>
 			<focusedlayout width="720" height="530">
-				<include>hubwidget-commons</include>
+				 
 			</focusedlayout>
 		</control>
 		<control type="fixedlist" id="5581">

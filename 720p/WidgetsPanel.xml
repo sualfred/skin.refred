@@ -872,16 +872,15 @@
 					</control>
 					
 			</control>
-					
-			<!--invisible widget list for random pics-->
-			<control type="group" id="9185">
-				<visible>Container(9110).HasFocus(100)</visible>
-					<control type="list" id="9180">
+				
+			<!--invisible widget list for inpgrogress pics-->
+			<control type="group" id="9146">
+				<visible>Container(9110).HasFocus(802)</visible>
+					<control type="list" id="9141">
 						<orientation>horizontal</orientation>
 						<pagecontrol>25</pagecontrol>
 						<autoscroll delay="10000" time="5000" repeat="10000">True</autoscroll>
-						<include condition="!Skin.HasSetting(widgets.randommovies.enabled)">widgets_movies_new</include>
-						<include condition="Skin.HasSetting(widgets.randommovies.enabled)">widgets_movies_random</include>
+						<content target="video">$VAR[widget_inprogress_cat]</content>
 							 <itemlayout width="1" height="1">
 								<control type="label">
 								<width>1</width>
@@ -898,7 +897,6 @@
 							</focusedlayout>
 					</control>
 			</control>
-			
 			<!--invisible widget list for movie pics-->
 			<control type="group" id="9156">
 				<visible>Container(9110).HasFocus(200)</visible>

@@ -195,6 +195,7 @@
 		<value condition="Container(9110).HasFocus(909) + IsEmpty(Skin.String(Customb2main.bg))">backgrounds/fallback/fallback2.jpg</value>
 		<value condition="Container(9110).HasFocus(801) + IsEmpty(Skin.String(power.bg))">backgrounds/fallback/power.jpg</value>
 		<value condition="[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(802) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(802) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9140).ListItem.Art(fanart)]</value>
+		<value condition="[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.enabled)] + Container(9110).HasFocus(802) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(802) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9141).ListItem.Art(fanart)]</value>
 		<value condition="[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(500) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(500) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9170).ListItem.Art(fanart)]</value>
 		<value condition="[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.enabled)] + Container(9110).HasFocus(500) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(500) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9171).ListItem.Art(fanart)]</value>
 		<value condition="[Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(300) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(300) + !Player.HasMedia + !Player.HasAudio)]">$INFO[Container(9160).ListItem.Art(fanart)]</value>
@@ -221,6 +222,9 @@
 		
 		<!-- music widget invisible -->
 		<value condition="[!Skin.HasSetting(widgets.enabled) | [Skin.HasSetting(home.nowplaying) + [Player.HasMedia | Player.HasAudio]]] + Container(9110).HasFocus(500)">$INFO[Container(9171).ListItem.Art(fanart)]</value>
+		
+		<!-- inprogress widget invisible -->
+		<value condition="[!Skin.HasSetting(widgets.enabled) | [Skin.HasSetting(home.nowplaying) + [Player.HasMedia | Player.HasAudio]]] + Container(9110).HasFocus(802)">$INFO[Container(9181).ListItem.Art(fanart)]</value>
 			
 	</variable>
 	
