@@ -60,14 +60,14 @@
   </item>
 
   <item id="908">
-    <label>$INFO[Skin.String(Customb1.label]</label>
+    <label>$INFO[Skin.String(Customb1.label)]</label>
     <thumb fallback="backgrounds/fallback/fallback.jpg">$INFO[Skin.String(Customb1main.thumb)]</thumb>
 	<onclick>$VAR[customb1_click]</onclick>
 	<visible>Skin.HasSetting(homemenu.customb1.enable)</visible>
   </item>  
   
   <item id="909">
-    <label>$INFO[Skin.String(Customb2.label]</label>
+    <label>$INFO[Skin.String(Customb2.label)]</label>
     <thumb fallback="backgrounds/fallback/fallback.jpg">$INFO[Skin.String(Customb2main.thumb)]</thumb>
 	<onclick>$VAR[customb2_click]</onclick>
 	<visible>Skin.HasSetting(homemenu.customb2.enable)</visible>

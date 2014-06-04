@@ -7,7 +7,7 @@
 				<control type="group">
 				<visible>Skin.HasSetting(ownbg.enabled) + [!IsEmpty(Skin.String(homesingle.bg)) | !IsEmpty(Skin.String(homemulti.bg))]</visible>
 					<control type="image">
-						<texture background="true" fallback="backgrounds/fallback/fallback.jpg">$INFO[Skin.String(homesingle.bg]</texture>
+						<texture background="true" fallback="backgrounds/fallback/fallback.jpg">$INFO[Skin.String(homesingle.bg)]</texture>
 						<fadetime>1000</fadetime>
 						<include>transition_Content</include>
 						<visible>!IsEmpty(Skin.String(homesingle.bg))</visible>
@@ -15,7 +15,7 @@
 					<control type="multiimage">
 						<include>screen_Dimensions</include>
 						<aspectratio>scale</aspectratio>
-						<imagepath background="true">$INFO[Skin.String(homemulti.bg]</imagepath>
+						<imagepath background="true">$INFO[Skin.String(homemulti.bg)]</imagepath>
 						<timeperimage>10000</timeperimage>
 						<fadetime>850</fadetime>
 						<randomize>true</randomize>
@@ -1241,7 +1241,7 @@
 <!-- next recording widget -->	
 <include name="home_PVRrecwidget">
 	<control type="group">
-		<visible>[PVR.IsRecording | PVR.HasNonRecordingTimer] + [[Skin.HasSetting(overlay.pvr) + Container(9110).HasFocus(400) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(overlay.pvr) + Container(9110).HasFocus(400) + !Player.HasMedia + !Player.HasAudio)]]</visible>
+		<visible>[PVR.IsRecording | PVR.HasNonRecordingTimer] + [[Skin.HasSetting(overlay.pvr) + Container(9110).HasFocus(400) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(overlay.pvr) + Container(9110).HasFocus(400) + !Player.HasMedia + !Player.HasAudio]]</visible>
 		<control type="label">
 			<posx>100</posx>
 			<posy>45</posy>

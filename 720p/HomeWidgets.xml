@@ -55,7 +55,6 @@
 			 <icon>$INFO[Skin.String(CustomFavourite.8.Icon)]</icon>
 			 <onclick>SetFocus(9110)</onclick>
 			 <onclick>$INFO[Skin.String(CustomFavourite.8.Path)]</onclick>
-			 <visible>!IsEmpty[$INFO[Skin.String(CustomFavourite.8.Label)]]</visible>
 			 <visible>!IsEmpty(Skin.String(CustomFavourite.8.Label))</visible>
 		</item> 
 	</content>
@@ -236,7 +235,6 @@
 			 <icon>$INFO[Skin.String(LiveFav.8.Icon)]</icon>
 			 <onclick>SetFocus(9110)</onclick>
 			 <onclick>$INFO[Skin.String(LiveFav.8.Path)]</onclick>
-			 <visible>!IsEmpty[$INFO[Skin.String(LiveFav.8.Label)]]</visible>
 			 <visible>!IsEmpty(Skin.String(LiveFav.8.Label))</visible>
 		</item> 
 	</content>
