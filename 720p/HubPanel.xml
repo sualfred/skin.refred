@@ -736,7 +736,7 @@
 				<top>5</top>
 				<width>720</width>
 				<height>530</height>
-				<texture fallback="backgrounds/fallback/musicfallback.jpg">$VAR[hubThumb]</texture>
+				<texture  background="true" fallback="backgrounds/fallback/musicfallback.jpg">$VAR[hubThumb]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>500</fadetime>
 			</control>			
@@ -800,7 +800,7 @@
 				<top>5</top>
 				<width>720</width>
 				<height>530</height>
-				<texture fallback="backgrounds/fallback/fallback.jpg">$VAR[hubThumb]</texture>
+				<texture background="true" fallback="backgrounds/fallback/fallback.jpg">$VAR[hubThumb]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>500</fadetime>
 			</control>			

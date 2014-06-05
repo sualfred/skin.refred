@@ -17,7 +17,7 @@
 							<top>85</top>
 							<width>1280</width>
 							<height>157</height>
-							<texture>overlays/diffuse2.png</texture>
+							<texture background="true">overlays/diffuse2.png</texture>
 							<visible>Control.HasFocus(9140)</visible>
 							<include>fadeinoutdelay</include>
 						</control>
@@ -26,7 +26,7 @@
 							<top>85</top>
 							<width>1280</width>
 							<height>157</height>
-							<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+							<texture background="true" colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
 							<visible>Control.HasFocus(9140)</visible>
 							<include>fadeinoutdelay</include>
 						</control>
@@ -59,7 +59,7 @@
 						<control type="image">
 							<width>100</width>
 							<height>147</height>
-							<texture>$VAR[widget_inprogress_poster]</texture>
+							<texture background="true">$VAR[widget_inprogress_poster]</texture>
 							<bordertexture colordiffuse="base_5">white.png</bordertexture>
 							<bordersize>5</bordersize>
 							<aspectratio>scale</aspectratio>
@@ -67,7 +67,7 @@
 						<control type="image">
 							<width>100</width>
 							<height>147</height>
-							<texture>overlays/cover_overlay.png</texture>
+							<texture background="true">overlays/cover_overlay.png</texture>
 							<aspectratio>scale</aspectratio>
 							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 						</control>
@@ -77,13 +77,13 @@
 						<control type="image">
 							<width>100</width>
 							<height>147</height>
-							<texture>white.png</texture>
+							<texture background="true">white.png</texture>
 							<visible>Control.IsVisible(9141)</visible>
 							</control>
 						<control type="image">
 							<width>100</width>
 							<height>147</height>
-							<texture>$VAR[widget_inprogress_poster]</texture>
+							<texture background="true">$VAR[widget_inprogress_poster]</texture>
 							<bordertexture colordiffuse="base_5">white.png</bordertexture>
 							<aspectratio>scale</aspectratio>
 							<bordersize>5</bordersize>
@@ -91,7 +91,7 @@
 						<control type="image">
 							<width>100</width>
 							<height>147</height>
-							<texture>overlays/cover_overlay.png</texture>
+							<texture background="true">overlays/cover_overlay.png</texture>
 							<aspectratio>scale</aspectratio>
 							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 						</control>
@@ -159,7 +159,7 @@
 							<top>85</top>
 							<width>1280</width>
 							<height>157</height>
-							<texture>overlays/diffuse2.png</texture>
+							<texture background="true">overlays/diffuse2.png</texture>
 							<visible>Control.HasFocus(9150)</visible>
 							<include>fadeinoutdelay</include>
 						</control>
@@ -168,7 +168,7 @@
 							<top>85</top>
 							<width>1280</width>
 							<height>157</height>
-							<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+							<texture background="true" colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
 							<visible>Control.HasFocus(9150)</visible>
 							<include>fadeinoutdelay</include>
 						</control>
@@ -209,7 +209,7 @@
 								<control type="image">
 									<width>100</width>
 									<height>147</height>
-									<texture>overlays/cover_overlay.png</texture>
+									<texture background="true">overlays/cover_overlay.png</texture>
 									<aspectratio>scale</aspectratio>
 									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
@@ -218,7 +218,7 @@
 								<control type="image">
 									<width>100</width>
 									<height>147</height>
-									<texture>white.png</texture>
+									<texture background="true">white.png</texture>
 									<visible>Control.IsVisible(9152)</visible>
 									</control>
 								<control type="image">
@@ -232,7 +232,7 @@
 								<control type="image">
 									<width>100</width>
 									<height>147</height>
-									<texture>overlays/cover_overlay.png</texture>
+									<texture background="true">overlays/cover_overlay.png</texture>
 									<aspectratio>scale</aspectratio>
 									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
@@ -273,7 +273,7 @@
 							<top>85</top>
 							<width>1280</width>
 							<height>157</height>
-							<texture>overlays/diffuse2.png</texture>
+							<texture background="true">overlays/diffuse2.png</texture>
 							<visible>Control.HasFocus(9160)</visible>
 							<include>fadeinoutdelay</include>
 						</control>
@@ -282,7 +282,7 @@
 							<top>85</top>
 							<width>1280</width>
 							<height>157</height>
-							<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+							<texture background="true" colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
 							<visible>Control.HasFocus(9160)</visible>
 							<include>fadeinoutdelay</include>
 						</control>
@@ -328,7 +328,7 @@
 						<control type="image">
 							<width>100</width>
 							<height>147</height>
-							<texture>overlays/cover_overlay.png</texture>
+							<texture background="true">overlays/cover_overlay.png</texture>
 							<aspectratio>scale</aspectratio>
 							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 						</control>
@@ -337,7 +337,7 @@
 							<control type="image">
 							<width>100</width>
 							<height>147</height>
-							<texture>white.png</texture>
+							<texture background="true">white.png</texture>
 							<visible>Control.IsVisible(9162)</visible>
 							</control>
 						<control type="image">
@@ -351,7 +351,7 @@
 						<control type="image">
 							<width>100</width>
 							<height>147</height>
-							<texture>overlays/cover_overlay.png</texture>
+							<texture background="true">overlays/cover_overlay.png</texture>
 							<aspectratio>scale</aspectratio>
 							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 						</control>
@@ -442,7 +442,7 @@
 							<control type="image">
 								<width>100</width>
 								<height>100</height>
-								<texture>DefaultAddonAlbumInfo.png</texture>
+								<texture background="true">DefaultAddonAlbumInfo.png</texture>
 								<bordertexture colordiffuse="base_5">white.png</bordertexture>
 								<aspectratio>scale</aspectratio>
 								<bordersize>5</bordersize>
@@ -458,7 +458,7 @@
 							<control type="image">
 								<width>100</width>
 								<height>100</height>
-								<texture>overlays/cover_overlay.png</texture>
+								<texture background="true">overlays/cover_overlay.png</texture>
 								<aspectratio>scale</aspectratio>
 								<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 							</control>
@@ -468,13 +468,13 @@
 						<control type="image">
 							<width>100</width>
 							<height>100</height>
-							<texture>white.png</texture>
+							<texture background="true">white.png</texture>
 							<visible>Control.HasFocus(9170)</visible>
 						</control>
 						<control type="image">
 							<width>100</width>
 							<height>100</height>
-							<texture>DefaultAddonAlbumInfo.png</texture>
+							<texture background="true">DefaultAddonAlbumInfo.png</texture>
 							<bordertexture colordiffuse="base_5">white.png</bordertexture>
 							<aspectratio>scale</aspectratio>
 							<bordersize>5</bordersize>
@@ -490,7 +490,7 @@
 						<control type="image">
 							<width>100</width>
 							<height>100</height>
-							<texture>overlays/cover_overlay.png</texture>
+							<texture background="true">overlays/cover_overlay.png</texture>
 							<aspectratio>scale</aspectratio>
 							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 						</control>
@@ -571,7 +571,7 @@
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
-							<texture colordiffuse="base_5">white.png</texture>
+							<texture background="true" colordiffuse="base_5">white.png</texture>
 							<aspectratio>keep</aspectratio>						
 						</control>
 						<control type="image">
@@ -586,7 +586,7 @@
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
-							<texture>overlays/cover_overlay.png</texture>
+							<texture background="true">overlays/cover_overlay.png</texture>
 							<aspectratio>scale</aspectratio>
 							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 						</control>
@@ -597,14 +597,14 @@
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
-							<texture colordiffuse="base_5">white.png</texture>
+							<texture background="true" colordiffuse="base_5">white.png</texture>
 							<aspectratio>keep</aspectratio>						
 						</control>
 						<control type="image">
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
-							<texture>white.png</texture>
+							<texture background="true">white.png</texture>
 							<visible>Control.HasFocus(9180)</visible>
 							</control>
 						<control type="image">
@@ -619,7 +619,7 @@
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
-							<texture>overlays/cover_overlay.png</texture>
+							<texture background="true">overlays/cover_overlay.png</texture>
 							<aspectratio>scale</aspectratio>
 							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 						</control>
@@ -682,7 +682,7 @@
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
-							<texture colordiffuse="base_5">white.png</texture>
+							<texture background="true" colordiffuse="base_5">white.png</texture>
 							<aspectratio>keep</aspectratio>						
 						</control>
 						<control type="image">
@@ -697,7 +697,7 @@
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
-							<texture>overlays/cover_overlay.png</texture>
+							<texture background="true">overlays/cover_overlay.png</texture>
 							<aspectratio>scale</aspectratio>
 							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 						</control>
@@ -708,14 +708,14 @@
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
-							<texture colordiffuse="base_5">white.png</texture>
+							<texture background="true" colordiffuse="base_5">white.png</texture>
 							<aspectratio>keep</aspectratio>						
 						</control>
 						<control type="image">
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
-							<texture>white.png</texture>
+							<texture background="true">white.png</texture>
 							<visible>Control.HasFocus(9181)</visible>
 							</control>
 						<control type="image">
@@ -730,7 +730,7 @@
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
-							<texture>overlays/cover_overlay.png</texture>
+							<texture background="true">overlays/cover_overlay.png</texture>
 							<aspectratio>scale</aspectratio>
 							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 						</control>
@@ -793,7 +793,7 @@
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
-							<texture colordiffuse="base_5">white.png</texture>
+							<texture background="true" colordiffuse="base_5">white.png</texture>
 							<aspectratio>keep</aspectratio>						
 						</control>
 						<control type="image">
@@ -808,7 +808,7 @@
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
-							<texture>overlays/cover_overlay.png</texture>
+							<texture background="true">overlays/cover_overlay.png</texture>
 							<aspectratio>scale</aspectratio>
 							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 						</control>
@@ -819,14 +819,14 @@
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
-							<texture colordiffuse="base_5">white.png</texture>
+							<texture background="true" colordiffuse="base_5">white.png</texture>
 							<aspectratio>keep</aspectratio>						
 						</control>
 						<control type="image">
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
-							<texture>white.png</texture>
+							<texture background="true">white.png</texture>
 							<visible>Control.HasFocus(9183)</visible>
 							</control>
 						<control type="image">
@@ -841,7 +841,7 @@
 							<posx>100</posx>
 							<width>100</width>
 							<height>100</height>
-							<texture>overlays/cover_overlay.png</texture>
+							<texture background="true">overlays/cover_overlay.png</texture>
 							<aspectratio>scale</aspectratio>
 							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 						</control>
