@@ -45,8 +45,9 @@
 						<width>250</width>
 						<label>$LOCALIZE[575]</label>
 						<onfocus>Skin.SetString(Section,Inprogress)</onfocus>
-						<onclick>Skin.ToggleSetting(homemenu.videos.disable)</onclick>
-						<selected>!Skin.HasSetting(homemenu.videos.disable)</selected>
+						<onclick>Skin.ToggleSetting(homemenu.inprogress.disable)</onclick>
+						<selected>!Skin.HasSetting(homemenu.inprogress.disable)</selected>
+						
 						<radiowidth>24</radiowidth>
 						<include>dialog_Radio-alt</include>
 						<include>dialog_ControlCommons</include>
@@ -55,8 +56,8 @@
 						<width>250</width>
 						<label>$LOCALIZE[3]</label>
 						<onfocus>Skin.SetString(Section,Video)</onfocus>
-						<onclick>Skin.ToggleSetting(homemenu.inprogress.disable)</onclick>
-						<selected>!Skin.HasSetting(homemenu.inprogress.disable)</selected>
+						<onclick>Skin.ToggleSetting(homemenu.videos.disable)</onclick>
+						<selected>!Skin.HasSetting(homemenu.videos.disable)</selected>
 						<radiowidth>24</radiowidth>
 						<include>dialog_Radio-alt</include>
 						<include>dialog_ControlCommons</include>
