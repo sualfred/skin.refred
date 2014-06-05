@@ -2,13 +2,11 @@
 <window>
 	<defaultcontrol always="true">8000</defaultcontrol>
 	<allowoverlay>true</allowoverlay>
-	<allowoverlay>yes</allowoverlay>
 	<onload condition="System.HasAddon(script.tvtunes) + Skin.HasSetting(tvtunes.enable) + !SubString(Window(Videos).Property(CinemaExperienceRunning),True)">RunScript(script.tvtunes,backend=True)</onload>
 	<controls>
 		<control type="group">
 			<include>transition_Content</include>
 			<!--images-->
-				
 			<control type="group">
 				<width>486</width>
 				<height>720</height>
@@ -25,7 +23,6 @@
 						<height>720</height>
 						<texture background="true">$VAR[thumb_PortraitRightList]</texture>
 						<aspectratio>scale</aspectratio>
-						
 						<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
 					</control>
 					<control type="image">
@@ -64,7 +61,6 @@
 					</control>
 				</control>
 			</control>
-
 			<!--header-->
 			<control type="grouplist">
 				<visible>!Window.IsVisible(script-Actors-DialogInfo.xml)</visible>
@@ -409,7 +405,6 @@
 							<onright>8008</onright>
 						</control>
 					</control>
-					
 				</control>
 				<!--spacer-->
 				<control type="label">
@@ -436,7 +431,6 @@
 					<!--<onup>50</onup>-->
 					<!--<ondown>50</ondown>-->
 					<!--<onclick>ReplaceWindowAndFocus</onclick>-->
-					
 					<!--<onclick>RunScript(script.metadata.actors,$INFO[Container(50).Listitem.Label])</onclick>-->
 					<include>global_ListScroll</include>
 					<visible allowhiddenfocus="true">Control.HasFocus(8004) | Control.HasFocus(50) | Control.HasFocus(8008)</visible>
@@ -484,27 +478,26 @@
 				</control>
 				<control type="group">
 					<control type="button" id="8008">
-							<visible>ControlGroup(8000).HasFocus(8004) + System.HasAddon(script.metadata.actors)</visible>
-							<label>MetaActor</label>
-							<onclick>Dialog.Close(MovieInformation)</onclick>
-							<onclick>RunScript(script.metadata.actors,$INFO[Container(50).Listitem.Label])</onclick>
-							<onleft>50</onleft>
-							<onright>8004</onright>
-							<width>125</width>
-							<height>44</height>
-							<font>regular</font>
-							<align>center</align>
-							<aligny>center</aligny>
-							<textoffsety>4</textoffsety>
-							<textcolor>Color3</textcolor>
-							<focusedcolor>Color5</focusedcolor>
-							<selectedcolor>Color5</selectedcolor>
-							<texturenofocus colordiffuse="column2">white.png</texturenofocus>
-							<texturefocus colordiffuse="Color1">white.png</texturefocus>
-						</control>
+						<visible>ControlGroup(8000).HasFocus(8004) + System.HasAddon(script.metadata.actors)</visible>
+						<label>MetaActor</label>
+						<onclick>Dialog.Close(MovieInformation)</onclick>
+						<onclick>RunScript(script.metadata.actors,$INFO[Container(50).Listitem.Label])</onclick>
+						<onleft>50</onleft>
+						<onright>8004</onright>
+						<width>125</width>
+						<height>44</height>
+						<font>regular</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<textoffsety>4</textoffsety>
+						<textcolor>Color3</textcolor>
+						<focusedcolor>Color5</focusedcolor>
+						<selectedcolor>Color5</selectedcolor>
+						<texturenofocus colordiffuse="column2">white.png</texturenofocus>
+						<texturefocus colordiffuse="Color1">white.png</texturefocus>
+					</control>
 				</control>
 			</control>
-			
 			<!--flags-->
 			<control type="grouplist" id="100">
 				<left>520</left>
@@ -522,10 +515,10 @@
 				<control type="image">
 					<width>96</width>
 					<height>64</height>
-					<texture>$VAR[flag_VideoType]</texture>						
+					<texture>$VAR[flag_VideoType]</texture>
 					<aspectratio align="center">keep</aspectratio>
 					<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
-				</control>		
+				</control>
 				<control type="image">
 					<width>96</width>
 					<height>64</height>

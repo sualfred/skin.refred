@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">3</defaultcontrol>
 	<include>transition_Dialog</include>
@@ -8,7 +8,6 @@
 		<top>68</top>
 	</coordinates>
 	<controls>
-	
 		<control type="image">
 			<width>625</width>
 			<height>585</height>
@@ -128,7 +127,7 @@
 			<!--options-->
 			<control type="group" id="9005">
 				<top>240</top>
-				<animation effect="slide" start="0,0" end="0,-135"  time="0" condition="SubString(Control.GetLabel(3),$LOCALIZE[231])">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,-135" time="0" condition="SubString(Control.GetLabel(3),$LOCALIZE[231])">Conditional</animation>
 				<control type="label">
 					<width>617</width>
 					<label>$LOCALIZE[33063]</label>

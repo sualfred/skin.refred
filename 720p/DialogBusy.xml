@@ -1,30 +1,31 @@
-﻿<window id="136">
-    <zorder>5</zorder>
-		<animation type="WindowOpen" reversible="false">
-			<effect type="zoom" time="450" center="auto" start="190" end="100" tween="cubic" easing="out" />
-			<effect type="fade" time="450" start="0" easing="out" end="100" />
-		</animation>			
-		<animation type="WindowClose" reversible="false">
-			<effect type="zoom" time="450" center="auto" start="100" end="190" tween="cubic" easing="in" />
-			<effect type="fade" time="450" start="100" easing="in" end="0" />
-		</animation>		  
-		<animation type="Visible" reversible="false">
-			<effect type="zoom" time="450" center="auto" start="190" end="100" tween="cubic" easing="out" />
-			<effect type="fade" time="450" start="0" easing="out" end="100" />
-		</animation>			
-		<animation type="Hidden" reversible="false">
-			<effect type="zoom" time="450" center="auto" start="100" end="190" tween="cubic" easing="in" />
-			<effect type="fade" time="450" start="100" easing="in" end="0" />
-		</animation>
-		<controls>
+<?xml version="1.0" encoding="utf-8"?>
+<window id="136">
+	<zorder>5</zorder>
+	<animation type="WindowOpen" reversible="false">
+		<effect type="zoom" time="450" center="auto" start="190" end="100" tween="cubic" easing="out" />
+		<effect type="fade" time="450" start="0" easing="out" end="100" />
+	</animation>
+	<animation type="WindowClose" reversible="false">
+		<effect type="zoom" time="450" center="auto" start="100" end="190" tween="cubic" easing="in" />
+		<effect type="fade" time="450" start="100" easing="in" end="0" />
+	</animation>
+	<animation type="Visible" reversible="false">
+		<effect type="zoom" time="450" center="auto" start="190" end="100" tween="cubic" easing="out" />
+		<effect type="fade" time="450" start="0" easing="out" end="100" />
+	</animation>
+	<animation type="Hidden" reversible="false">
+		<effect type="zoom" time="450" center="auto" start="100" end="190" tween="cubic" easing="in" />
+		<effect type="fade" time="450" start="100" easing="in" end="0" />
+	</animation>
+	<controls>
 		<control type="image">
 			<include>screen_Dimensions</include>
 			<texture colordiffuse="base_1">overlays/base_color.png</texture>
 			<include>transition_Dialog</include>
 		</control>
 		<control type="group">
-				<posx>545</posx>
-				<posy>245</posy>
+			<posx>545</posx>
+			<posy>245</posy>
 			<control type="image">
 				<description>Busy animation</description>
 				<posx>0</posx>

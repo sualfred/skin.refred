@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
 	<defaultcontrol always="true">500</defaultcontrol>
 	<coordinates>
@@ -107,7 +107,7 @@
 				<onclick>XBMC.Reset()</onclick>
 				<include>dialog_MenuButton</include>
 			</control>
-			<!--logoff-->		
+			<!--logoff-->
 			<control type="button" id="510">
 				<width>352</width>
 				<label>$LOCALIZE[20126] $INFO[System.Profilename]</label>

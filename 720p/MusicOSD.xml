@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
 	<defaultcontrol always="true">700</defaultcontrol>
 	<controls>
@@ -6,13 +6,11 @@
 			<left>479</left>
 			<top>205</top>
 			<include>transition_Dialog</include>
-
 			<control type="image">
 				<width>322</width>
 				<height>60</height>
 				<texture border="20,0,20,1">overlays/diffuse.png</texture>
 			</control>
-
 			<control type="grouplist" id="700">
 				<left>7</left>
 				<top>8</top>

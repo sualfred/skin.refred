@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
 	<coordinates>
 		<system>1</system>
@@ -64,7 +64,7 @@
 					<include>dialog_ControlCommons</include>
 					<wrapmultiline>true</wrapmultiline>
 				</control>
-			<!--services-->
+				<!--services-->
 				<control type="list" id="150">
 					<top>40</top>
 					<width>250</width>
@@ -112,7 +112,7 @@
 						</control>
 					</focusedlayout>
 				</control>
-			<!--search results-->
+				<!--search results-->
 				<control type="list" id="120">
 					<left>250</left>
 					<top>40</top>

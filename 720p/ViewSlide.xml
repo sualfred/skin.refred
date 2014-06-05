@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="detail_Slide">
 		<control type="group">
@@ -56,7 +56,7 @@
 					<orientation>horizontal</orientation>
 					<control type="image">
 						<width>128</width>
-						<height>32</height> 
+						<height>32</height>
 						<texture>$VAR[global_Rating]</texture>
 						<aspectratio align="center">keep</aspectratio>
 						<visible>!Container.Content(files) + ![Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(seasons)]</visible>
@@ -109,13 +109,12 @@
 						<texture>$INFO[ListItem.VideoAspect,flags/video/aspectratio/,.png]</texture>
 						<aspectratio align="center">keep</aspectratio>
 						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(ListItem.VideoAspect)</visible>
-					</control>	
+					</control>
 				</control>
 			</control>
 		</control>
 	</include>
-
-<!--PORTRAIT-->
+	<!--PORTRAIT-->
 	<include name="view_SlidePoster">
 		<control type="fixedlist" id="52">
 			<viewtype label="31112">wrap</viewtype>
@@ -146,7 +145,6 @@
 	<include name="viewSlidePoster-ContainerCommons">
 		<control type="group">
 			<include>focus_SlidePoster</include>
-		
 			<control type="group">
 				<left>10</left>
 				<top>10</top>
@@ -172,7 +170,6 @@
 					<include>bordertrans</include>
 					<aspectratio align="center" aligny="top">scale</aspectratio>
 				</control>
-				
 				<control type="image">
 					<width>183</width>
 					<height>280</height>
@@ -180,7 +177,6 @@
 					<aspectratio align="center" aligny="top">scale</aspectratio>
 					<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 				</control>
-				
 				<control type="image">
 					<width>183</width>
 					<height>280</height>
@@ -197,7 +193,6 @@
 	</include>
 	<include name="viewSlidePoster-ContainerCommons-fo">
 		<control type="group">
-		
 			<include>focus_SlidePoster</include>
 			<control type="image">
 				<width>203</width>
@@ -208,7 +203,6 @@
 			<control type="group">
 				<left>10</left>
 				<top>10</top>
-					
 				<control type="image">
 					<width>183</width>
 					<height>280</height>
@@ -240,7 +234,6 @@
 					<colordiffuse>Color5</colordiffuse>
 					<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 				</control>
-							
 				<control type="image">
 					<width>183</width>
 					<height>280</height>
@@ -248,7 +241,6 @@
 					<include>bordertrans</include>
 					<aspectratio align="center" aligny="top">scale</aspectratio>
 				</control>
-				
 				<control type="image">
 					<width>183</width>
 					<height>280</height>
@@ -256,7 +248,6 @@
 					<aspectratio align="center" aligny="top">scale</aspectratio>
 					<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 				</control>
-				
 				<control type="image">
 					<width>183</width>
 					<height>280</height>
@@ -271,8 +262,7 @@
 			</control>
 		</control>
 	</include>
-
-<!--LANDSCAPE-->
+	<!--LANDSCAPE-->
 	<include name="view_SlideLandscape">
 		<control type="fixedlist" id="521">
 			<viewtype label="31112">bigwrap</viewtype>
@@ -304,11 +294,9 @@
 	<include name="view_SlideLandscape-ContainerCommons">
 		<control type="group">
 			<include>focus_SlideWide</include>
-			
 			<control type="group">
 				<left>10</left>
 				<top>10</top>
-				
 				<control type="image">
 					<left>164.5</left>
 					<top>71.5</top>
@@ -330,7 +318,6 @@
 					<height>64</height>
 					<include>art_ClearLogo</include>
 				</control>
-				
 				<control type="image">
 					<width>425</width>
 					<height>239</height>
@@ -338,14 +325,12 @@
 					<aspectratio>scale</aspectratio>
 					<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 				</control>
-				
 				<control type="image">
 					<width>425</width>
 					<height>239</height>
 					<texture background="true" colordiffuse="blacktrans">white.png</texture>
 					<animation effect="fade" tween="Quadratic" start="100" end="0" easing="Out" time="200">Focus</animation>
 				</control>
-				
 				<control type="group">
 					<left>407</left>
 					<top>221</top>
@@ -354,7 +339,6 @@
 			</control>
 		</control>
 	</include>
-	
 	<include name="view_SlideLandscape-ContainerCommons-fo">
 		<control type="group">
 			<include>focus_SlideWide</include>
@@ -367,7 +351,7 @@
 			<control type="group">
 				<left>10</left>
 				<top>10</top>
-				<control type="image">		
+				<control type="image">
 					<width>425</width>
 					<height>239</height>
 					<texture background="true">white.png</texture>
@@ -404,7 +388,6 @@
 					<height>64</height>
 					<include>art_ClearLogo</include>
 				</control>
-				
 				<control type="image">
 					<width>425</width>
 					<height>239</height>
@@ -412,14 +395,12 @@
 					<aspectratio>scale</aspectratio>
 					<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 				</control>
-				
 				<control type="image">
 					<width>425</width>
 					<height>239</height>
 					<texture background="true" colordiffuse="blacktrans">white.png</texture>
 					<animation effect="fade" tween="Quadratic" start="100" end="0" easing="Out" time="200">Focus</animation>
 				</control>
-				
 				<control type="group">
 					<left>407</left>
 					<top>221</top>
@@ -428,8 +409,7 @@
 			</control>
 		</control>
 	</include>
-
-<!--SQUARE-->
+	<!--SQUARE-->
 	<include name="view_SlideSquare">
 		<control type="fixedlist" id="522">
 			<viewtype label="31112">wrap</viewtype>
@@ -452,12 +432,11 @@
 			<itemlayout height="280" width="280">
 				<include>view_SlideSquare-ContainerCommons</include>
 			</itemlayout>
-			<focusedlayout height="280" width="280">	
+			<focusedlayout height="280" width="280">
 				<include>view_SlideSquare-ContainerCommons-fo</include>
 			</focusedlayout>
 		</control>
 	</include>
-	
 	<include name="view_SlideSquare-ContainerCommons">
 		<control type="group">
 			<include>focus_SlideMusic</include>
@@ -470,7 +449,6 @@
 			<control type="group">
 				<left>10</left>
 				<top>10</top>
-				
 				<control type="image">
 					<centerleft>130</centerleft>
 					<centertop>130</centertop>
@@ -495,15 +473,13 @@
 			</control>
 		</control>
 	</include>
-	
 	<include name="view_SlideSquare-ContainerCommons-fo">
 		<control type="group">
 			<include>focus_SlideMusic</include>
-		
 			<control type="group">
 				<left>10</left>
 				<top>10</top>
-				<control type="image">		
+				<control type="image">
 					<width>260</width>
 					<height>260</height>
 					<texture background="true">white.png</texture>
@@ -531,7 +507,7 @@
 					<height>260</height>
 					<texture background="true">$VAR[thumb_Square]</texture>
 					<aspectratio align="center">stretch</aspectratio>
-					<include>bordertrans</include>>
+					<include>bordertrans</include>&gt;
 				</control>
 				<control type="image">
 					<width>260</width>

@@ -1,85 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <defaultcontrol always="true">1000</defaultcontrol>
-    <zorder>6</zorder>
-    <include>Animation_DialogZoom</include>
-    <coordinates>
-        <left>0</left>
-        <top>0</top>
-        <system>1</system>
-    </coordinates>
-    <controls>
+	<defaultcontrol always="true">1000</defaultcontrol>
+	<zorder>6</zorder>
+	<include>Animation_DialogZoom</include>
+	<coordinates>
+		<left>0</left>
+		<top>0</top>
+		<system>1</system>
+	</coordinates>
+	<controls>
 		<control type="image">
 			<include>dialog_diffuse</include>
 		</control>
-        <control type="grouplist" id="1000">
+		<control type="grouplist" id="1000">
 			<include>fadeinout</include>
 			<include>screen_Width</include>
 			<include>screen_Height</include>
 			<left>515</left>
-            <align>center</align>
+			<align>center</align>
 			<aligny>center</aligny>
-            <onleft>800</onleft>
-            <onright>800</onright>
-            <onup>800</onup>
-            <ondown>800</ondown>
-            <orientation>vertical</orientation>
-            
-            <control type="button" id="1001">
-                <label>-</label>
-               
-                <include>dialog_MetaActor</include>
-            </control>
-            <control type="button" id="1002">
-                <label>-</label>
-               
-                <include>dialog_MetaActor</include>
-            </control>
-            <control type="button" id="1003">
-                <label>-</label>
-               
-                <include>dialog_MetaActor</include>
-            </control>
-            <control type="button" id="1004">
-                <label>-</label>
-               
-                <include>dialog_MetaActor</include>
-            </control>
-            <control type="button" id="1005">
-                <label>-</label>
-               
-                <include>dialog_MetaActor</include>
-            </control>
-            <control type="button" id="1006">
-                <label>-</label>
-               
-                <include>dialog_MetaActor</include>
-            </control>
-            <control type="button" id="1007">
-                <label>-</label>
-               
-                <include>dialog_MetaActor</include>
-            </control>
-            <control type="button" id="1008">
-                <label>-</label>
-               
-                <include>dialog_MetaActor</include>
-            </control>
-            <control type="button" id="1009">
-                <label>-</label>
-               
-                <include>dialog_MetaActor</include>
-            </control>
-            <control type="button" id="1010">
-                <label>-</label>
-               
-                <include>dialog_MetaActor</include>
-            </control>
-            <control type="button" id="1011">
-                <label>-</label>
-               
-                <include>dialog_MetaActor</include>
-            </control>
-        </control>
-    </controls>
+			<onleft>800</onleft>
+			<onright>800</onright>
+			<onup>800</onup>
+			<ondown>800</ondown>
+			<orientation>vertical</orientation>
+			<control type="button" id="1001">
+				<label>-</label>
+				<include>dialog_MetaActor</include>
+			</control>
+			<control type="button" id="1002">
+				<label>-</label>
+				<include>dialog_MetaActor</include>
+			</control>
+			<control type="button" id="1003">
+				<label>-</label>
+				<include>dialog_MetaActor</include>
+			</control>
+			<control type="button" id="1004">
+				<label>-</label>
+				<include>dialog_MetaActor</include>
+			</control>
+			<control type="button" id="1005">
+				<label>-</label>
+				<include>dialog_MetaActor</include>
+			</control>
+			<control type="button" id="1006">
+				<label>-</label>
+				<include>dialog_MetaActor</include>
+			</control>
+			<control type="button" id="1007">
+				<label>-</label>
+				<include>dialog_MetaActor</include>
+			</control>
+			<control type="button" id="1008">
+				<label>-</label>
+				<include>dialog_MetaActor</include>
+			</control>
+			<control type="button" id="1009">
+				<label>-</label>
+				<include>dialog_MetaActor</include>
+			</control>
+			<control type="button" id="1010">
+				<label>-</label>
+				<include>dialog_MetaActor</include>
+			</control>
+			<control type="button" id="1011">
+				<label>-</label>
+				<include>dialog_MetaActor</include>
+			</control>
+		</control>
+	</controls>
 </window>

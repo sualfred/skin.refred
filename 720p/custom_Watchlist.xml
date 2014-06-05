@@ -1,9 +1,9 @@
-﻿<window id="63">
+<?xml version="1.0" encoding="utf-8"?>
+<window id="63">
 	<defaultcontrol always="true">52</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-	
-	<!--background-->
+		<!--background-->
 		<control type="group">
 			<visible>[Control.HasFocus(52) | Control.HasFocus(71)] + !Skin.HasSetting(fanart.global) + ![Player.HasVideo + Skin.HasSetting(backgroundvideo.global)]</visible>
 			<control type="image">
@@ -20,8 +20,7 @@
 			</control>
 		</control>
 		<include>global_Background</include>
-	
-	<!--window title-->
+		<!--window title-->
 		<control type="label">
 			<left>35</left>
 			<label>$LOCALIZE[20343] [COLOR=Color2]$LOCALIZE[31013][/COLOR]</label>
@@ -34,14 +33,12 @@
 			<include>windowTitle</include>
 			<visible>Skin.String(Watchlist,Movies)</visible>
 		</control>
-	
-	<!--global includes-->
+		<!--global includes-->
 		<include>global_Includes</include>
 		<include>global_Itemcount</include>
 		<include>global_Clock</include>
 		<include>PageControls</include>
-
-	<!--content-->
+		<!--content-->
 		<control type="group">
 			<include>transition_Content</include>
 			<include>toggle_Menu</include>
@@ -101,7 +98,6 @@
 							<height>110</height>
 							<label>$INFO[Container(52).ListItem.Plot]</label>
 							<include>detail_Text</include>
-							<visibility>System.GetBool(videolibrary.showunwatchedplots)</visibility>
 						</control>
 					</control>
 					<control type="grouplist">

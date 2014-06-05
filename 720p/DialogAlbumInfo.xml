@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">8000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
@@ -38,7 +38,6 @@
 					<visible>!IsEmpty(Listitem.Property(Album_Label))</visible>
 				</control>
 			</control>
-			
 			<!--header-->
 			<control type="grouplist">
 				<left>520</left>
@@ -355,7 +354,7 @@
 						</control>
 					</focusedlayout>
 				</control>
-			</control>			
+			</control>
 		</control>
 	</controls>
 </window>

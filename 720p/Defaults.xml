@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<default type="scrollbar">
 		<width>8</width>
 		<showonepage>false</showonepage>
-		<texturesliderbackground>views/pagecontrol/background.png</texturesliderbackground>		
+		<texturesliderbackground>views/pagecontrol/background.png</texturesliderbackground>
 		<texturesliderbar>views/pagecontrol/grip-nf.png</texturesliderbar>
 		<texturesliderbarfocus>views/pagecontrol/grip-fo.png</texturesliderbarfocus>
 		<textureslidernib>-</textureslidernib>
@@ -12,7 +12,6 @@
 		<include>toggle_Menu</include>
 		<colordiffuse>Color1</colordiffuse>
 	</default>
-
 	<default type="label">
 		<font>regular</font>
 		<height>27</height>
@@ -24,7 +23,6 @@
 		<scrollspeed></scrollspeed>
 		<scrollsuffix> | </scrollsuffix>
 	</default>
-
 	<default type="button">
 		<width>110</width>
 		<height>40</height>
@@ -37,7 +35,6 @@
 		<selectedcolor>Selected</selectedcolor>
 		<pulseonselect>false</pulseonselect>
 	</default>
-	
 	<default type="radiobutton">
 		<font>regular</font>
 		<textureradioonnofocus>dialogs/radio/on-nf.png</textureradioonnofocus>
@@ -48,7 +45,6 @@
 		<radioposx></radioposx>
 		<radioposy></radioposy>
 	</default>
-
 	<default type="togglebutton">
 		<font>regular</font>
 		<textcolor>Color1</textcolor>
@@ -61,7 +57,6 @@
 		<alttexturefocus>-</alttexturefocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
-	
 	<default type="fadelabel">
 		<font>regular</font>
 		<height>27</height>
@@ -74,18 +69,16 @@
 		<pauseatend>200</pauseatend>
 		<resetonlabelchange>true</resetonlabelchange>
 	</default>
-
 	<default type="edit">
 		<label>-</label>
 		<hinttext>-</hinttext>
 		<textcolor>Color1</textcolor>
 		<disabledcolor>Disabled</disabledcolor>
-        <invalidcolor>FFFFFFFF</invalidcolor>
+		<invalidcolor>FFFFFFFF</invalidcolor>
 		<pulseonselect>false</pulseonselect>
 		<texturefocus>-</texturefocus>
-        <texturenofocus>-</texturenofocus>
+		<texturenofocus>-</texturenofocus>
 	</default>
-	
 	<default type="textbox">
 		<align>left</align>
 		<font>regular</font>
@@ -101,7 +94,6 @@
 		<spinposx>-</spinposx>
 		<spinposy>-</spinposy>
 	</default>
-	
 	<default type="progress">
 		<texturebg border="16,0,16,0" colordiffuse="Color3">dialogs/progress/back.png</texturebg>
 		<lefttexture border="16,0,0,0" colordiffuse="Color3">dialogs/progress/left.png</lefttexture>
@@ -109,7 +101,6 @@
 		<righttexture border="0,0,16,0" colordiffuse="Color3">dialogs/progress/right.png</righttexture>
 		<overlaytexture>-</overlaytexture>
 	</default>
-	
 	<default type="sliderex">
 		<height>40</height>
 		<texturefocus border="3">list-focus.png</texturefocus>
@@ -121,7 +112,6 @@
 		<textureslidernibfocus>-</textureslidernibfocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
-
 	<default type="spincontrol">
 		<height>40</height>
 		<font>regular</font>
@@ -140,7 +130,6 @@
 		<spinwidth>26</spinwidth>
 		<spinheight>26</spinheight>
 	</default>
-	
 	<default type="spincontrolex">
 		<font>regular</font>
 		<height>40</height>

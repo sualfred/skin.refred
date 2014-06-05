@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
 	<defaultcontrol>-</defaultcontrol>
 	<include>transition_Dialog</include>
@@ -14,8 +14,8 @@
 			<width>1</width>
 			<height>1</height>
 			<visible>false</visible>
-			<itemlayout width="1" height="1"/>
-			<focusedlayout width="1" height="1"/>
+			<itemlayout width="1" height="1" />
+			<focusedlayout width="1" height="1" />
 		</control>
 		<control type="group">
 			<control type="image">
@@ -28,7 +28,7 @@
 				<label>$INFO[Container(100).ListItem.Label]</label>
 				<include>dialog_Windowtitle</include>
 			</control>
-		<!--MAIN CONTAINER-->
+			<!--MAIN CONTAINER-->
 			<control type="group" id="101">
 				<left>4</left>
 				<top>60</top>
@@ -36,7 +36,7 @@
 					<width>617</width>
 					<include>dialog_Separator</include>
 				</control>
-			<!--MOVIES-->
+				<!--MOVIES-->
 				<control type="list" id="110">
 					<width>800</width>
 					<height>240</height>
@@ -176,7 +176,7 @@
 						</item>
 					</content>
 				</control>
-			<!--TV SHOWS-->
+				<!--TV SHOWS-->
 				<control type="list" id="120">
 					<width>800</width>
 					<height>200</height>
@@ -298,7 +298,7 @@
 						</item>
 					</content>
 				</control>
-			<!--SEASONS-->
+				<!--SEASONS-->
 				<control type="list" id="130">
 					<width>800</width>
 					<height>200</height>
@@ -402,7 +402,7 @@
 						</item>
 					</content>
 				</control>
-			<!--EPISODES-->
+				<!--EPISODES-->
 				<control type="list" id="140">
 					<width>800</width>
 					<height>200</height>
@@ -541,7 +541,7 @@
 						</item>
 					</content>
 				</control>
-			<!--MUSIC VIDEOS-->
+				<!--MUSIC VIDEOS-->
 				<control type="list" id="150">
 					<width>800</width>
 					<height>200</height>
@@ -675,8 +675,7 @@
 						</item>
 					</content>
 				</control>
-
-			<!--ARTISTS-->
+				<!--ARTISTS-->
 				<control type="list" id="160">
 					<width>800</width>
 					<height>200</height>
@@ -810,7 +809,7 @@
 						</item>
 					</content>
 				</control>
-			<!--ALBUMS-->
+				<!--ALBUMS-->
 				<control type="list" id="170">
 					<width>800</width>
 					<height>200</height>
@@ -951,7 +950,7 @@
 						</item>
 					</content>
 				</control>
-			<!--SONGS-->
+				<!--SONGS-->
 				<control type="list" id="180">
 					<width>800</width>
 					<height>200</height>
@@ -1091,9 +1090,9 @@
 						</item>
 					</content>
 				</control>
-			<!--DESCRIPTION-->
+				<!--DESCRIPTION-->
 				<control type="group">
-					<left>15</left>	
+					<left>15</left>
 					<control type="textbox">
 						<top>253</top>
 						<width>575</width>
@@ -1132,7 +1131,7 @@
 					<include>dialog_Separator</include>
 				</control>
 			</control>
-		<!--dialog controls-->
+			<!--dialog controls-->
 			<control type="group" id="190">
 				<left>97</left>
 				<top>545</top>

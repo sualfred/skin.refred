@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">21</defaultcontrol>
 	<include>transition_Dialog</include>
@@ -37,14 +37,12 @@
 			</control>
 			<control type="label" id="4">
 				<width>295</width>
-				<ondown>52</ondown>
-				<onright>9000</onright>
 				<align>center</align>
 				<include>dialog_Edit</include>
-			</control>	
+			</control>
 			<control type="group" id="9000">
 				<top>60</top>
-			<!--row 1-->
+				<!--row 1-->
 				<control type="grouplist">
 					<width>726</width>
 					<height>48</height>
@@ -80,7 +78,7 @@
 						<include>dialog_KeyboardButton</include>
 					</control>
 				</control>
-			<!--row 2-->
+				<!--row 2-->
 				<control type="grouplist">
 					<top>58</top>
 					<width>726</width>
@@ -118,7 +116,7 @@
 						<include>dialog_KeyboardButton</include>
 					</control>
 				</control>
-			<!--row 3-->
+				<!--row 3-->
 				<control type="grouplist">
 					<top>116</top>
 					<width>726</width>
@@ -147,7 +145,7 @@
 						<include>dialog_KeyboardButton</include>
 					</control>
 				</control>
-			<!--row 4-->
+				<!--row 4-->
 				<control type="grouplist">
 					<top>174</top>
 					<width>726</width>

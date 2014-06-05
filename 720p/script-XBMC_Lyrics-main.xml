@@ -33,7 +33,6 @@
 						<label fallback="">$INFO[ListItem.Label]</label>
 						<font>lyrics</font>
 						<textcolor>Color2</textcolor>
-						
 						<wrapmultiline>true</wrapmultiline>
 					</control>
 				</itemlayout>
@@ -44,7 +43,6 @@
 						<label fallback="">$INFO[ListItem.Label]</label>
 						<font>lyrics2</font>
 						<textcolor>Color1</textcolor>
-						
 						<wrapmultiline>true</wrapmultiline>
 					</control>
 				</focusedlayout>

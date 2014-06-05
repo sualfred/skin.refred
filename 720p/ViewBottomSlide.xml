@@ -1,7 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	
-<!--PORTRAIT-->
+	<!--PORTRAIT-->
 	<include name="view_BottomSlide">
 		<control type="group">
 			<include>transition_Info</include>
@@ -28,14 +27,14 @@
 					<width>630</width>
 					<label>$INFO[Container(554).ListItem.Label]</label>
 					<font>font_MainMenu</font>
-				</control>	
+				</control>
 				<control type="label">
 					<top>85</top>
 					<width>700</width>
 					<label>$VAR[global_Info]</label>
 					<include>detail_Sub</include>
 					<visible>![Container.Content(addons) | Container.Content(programs)]</visible>
-				</control>				
+				</control>
 				<control type="grouplist">
 					<top>113</top>
 					<left>2</left>
@@ -80,13 +79,13 @@
 						<height>40</height>
 						<aspectratio align="left" aligny="center">keep</aspectratio>
 						<texture>$INFO[Container(554).ListItem.AudioChannels,flags/audio/,.png]</texture>
-					</control>	
+					</control>
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
 						<texture>$INFO[Container(554).ListItem.VideoAspect,flags/video/aspectratio/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
-					</control>					
+					</control>
 				</control>
 				<control type="textbox">
 					<top>150</top>
@@ -106,7 +105,7 @@
 						<height>250</height>
 						<fadetime>1000</fadetime>
 						<texture fallback="overlays/cdart.png" diffuse="overlays/discdiffuse.png">$INFO[Container(554).ListItem.Art(fanart)]</texture>
-						<aspectratio align="center" aligny="center"  scalediffuse="false">scale</aspectratio>
+						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>IsEmpty(ListItem.Art(discart)) + !IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="image">
@@ -116,7 +115,7 @@
 						<height>50</height>
 						<fadetime>1000</fadetime>
 						<texture>$VAR[flag_Studio]</texture>
-						<aspectratio align="center" aligny="center"  scalediffuse="false">keep</aspectratio>
+						<aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
 						<visible>IsEmpty(ListItem.Art(discart)) + !IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="image">
@@ -126,7 +125,7 @@
 						<height>50</height>
 						<fadetime>1000</fadetime>
 						<texture>$INFO[Container(554).ListItem.Art(clearlogo)]</texture>
-						<aspectratio align="center" aligny="center"  scalediffuse="false">keep</aspectratio>
+						<aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
 						<visible>IsEmpty(ListItem.Art(discart)) + !IsEmpty(ListItem.Title) + !IsEmpty(ListItem.Art(clearlogo))</visible>
 					</control>
 					<control type="label">
@@ -134,12 +133,8 @@
 						<right>20</right>
 						<width>210</width>
 						<height>50</height>
-						<textwidth>170</textwidth>
 						<align>center</align>
-						<fadetime>1000</fadetime>
 						<label>[B]$INFO[Container(554).ListItem.Label][/B]</label>
-						<textshadow>black</textshadow>
-						<autoscroll>false</autoscroll>
 						<font>semibold_Smaller-U</font>
 						<visible>IsEmpty(ListItem.Art(discart)) + !IsEmpty(ListItem.Title) + IsEmpty(ListItem.Art(clearlogo))</visible>
 					</control>
@@ -148,7 +143,6 @@
 						<height>250</height>
 						<fadetime>1000</fadetime>
 						<aspectratio>keep</aspectratio>
-						<fadetime>1000</fadetime>
 						<texture fallback="overlays/cdart.png">$INFO[Container(554).ListItem.Art(discart)]</texture>
 						<visible>!IsEmpty(ListItem.Art(discart))</visible>
 					</control>
@@ -171,7 +165,7 @@
 					<height>400</height>
 					<texture>overlays/cover_overlay.png</texture>
 					<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(globalGlass.disable)</visible>
-				</control>	
+				</control>
 			</control>
 			<!-- tv shows -->
 			<control type="group">
@@ -193,14 +187,14 @@
 					<width>630</width>
 					<label>$INFO[Container(554).ListItem.Label]</label>
 					<font>font_MainMenu</font>
-				</control>	
+				</control>
 				<control type="label">
 					<top>85</top>
 					<width>700</width>
 					<label>$VAR[global_Info]</label>
 					<include>detail_Sub</include>
 					<visible>![Container.Content(addons) | Container.Content(programs)]</visible>
-				</control>				
+				</control>
 				<control type="grouplist">
 					<top>113</top>
 					<left>2</left>
@@ -238,13 +232,13 @@
 						<height>40</height>
 						<aspectratio align="left" aligny="center">keep</aspectratio>
 						<texture>$INFO[Container(554).ListItem.AudioChannels,flags/audio/,.png]</texture>
-					</control>	
+					</control>
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
 						<texture>$INFO[Container(554).ListItem.VideoAspect,flags/video/aspectratio/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
-					</control>					
+					</control>
 				</control>
 				<control type="textbox">
 					<top>150</top>
@@ -264,7 +258,7 @@
 						<height>250</height>
 						<fadetime>1000</fadetime>
 						<texture fallback="overlays/cdart.png" diffuse="overlays/discdiffuse.png">$INFO[Container(554).ListItem.Art(fanart)]</texture>
-						<aspectratio align="center" aligny="center"  scalediffuse="false">scale</aspectratio>
+						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>!IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="image">
@@ -274,7 +268,7 @@
 						<height>50</height>
 						<fadetime>1000</fadetime>
 						<texture>$VAR[flag_Studio]</texture>
-						<aspectratio align="center" aligny="center"  scalediffuse="false">keep</aspectratio>
+						<aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
 						<visible>IsEmpty(ListItem.Art(discart)) + !IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="image">
@@ -284,7 +278,7 @@
 						<height>50</height>
 						<fadetime>1000</fadetime>
 						<texture>$INFO[Container(554).ListItem.Art(clearlogo)]</texture>
-						<aspectratio align="center" aligny="center"  scalediffuse="false">keep</aspectratio>
+						<aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
 						<visible>!IsEmpty(ListItem.Title)</visible>
 					</control>
 					<control type="label">
@@ -292,12 +286,8 @@
 						<right>20</right>
 						<width>205</width>
 						<height>50</height>
-						<textwidth>170</textwidth>
 						<align>center</align>
-						<fadetime>1000</fadetime>
 						<label>[B]$INFO[Container(554).ListItem.Label][/B]</label>
-						<textshadow>black</textshadow>
-						<autoscroll>false</autoscroll>
 						<font>semibold_Smaller-U</font>
 						<visible>IsEmpty(ListItem.Art(discart)) + !IsEmpty(ListItem.Title) + IsEmpty(ListItem.Art(clearlogo))</visible>
 					</control>
@@ -320,10 +310,9 @@
 					<height>400</height>
 					<texture>overlays/cover_overlay.png</texture>
 					<visible>!IsEmpty(ListItem.Title) + !Skin.HasSetting(globalGlass.disable)</visible>
-				</control>	
+				</control>
 			</control>
 		</control>
-		
 		<control type="group">
 			<include>global_Scrolltime</include>
 			<include>transition_Content</include>
@@ -374,7 +363,6 @@
 	<include name="viewBottomSlide-ContainerCommons">
 		<control type="group">
 			<include>focus_BottomSlide</include>
-		
 			<control type="group">
 				<left>10</left>
 				<top>10</top>
@@ -410,7 +398,6 @@
 	</include>
 	<include name="viewBottomSlide-ContainerCommons-fo">
 		<control type="group">
-		
 			<include>focus_BottomSlide</include>
 			<control type="image">
 				<width>120</width>
@@ -418,7 +405,7 @@
 				<texture border="10">frames/frame-alt.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
-				<control type="group">
+			<control type="group">
 				<left>10</left>
 				<top>10</top>
 				<control type="image">
@@ -452,7 +439,6 @@
 					<colordiffuse>Color5</colordiffuse>
 					<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 				</control>
-				
 				<control type="image">
 					<width>100</width>
 					<height>147</height>
@@ -460,7 +446,6 @@
 					<include>bordertrans</include>
 					<aspectratio align="center" aligny="top">scale</aspectratio>
 				</control>
-				
 				<control type="image">
 					<width>100</width>
 					<height>147</height>
@@ -468,20 +453,17 @@
 					<aspectratio align="center" aligny="top">scale</aspectratio>
 					<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 				</control>
-				
 				<control type="image">
 					<width>183</width>
 					<height>280</height>
 					<texture background="true" colordiffuse="blacktrans">white.png</texture>
 					<animation effect="fade" tween="Quadratic" start="100" end="0" easing="Out" time="200">Focus</animation>
 				</control>
-				
 				<control type="group">
 					<left>82</left>
 					<top>129</top>
 					<include>overlay_Watch</include>
-				</control>			
-				
+				</control>
 			</control>
 		</control>
 	</include>

@@ -6,7 +6,7 @@
 	<onload condition="System.HasAddon(script.tv.show.next.aired) + !Skin.HasSetting(nextaired.disable)">XBMC.RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<onload condition="System.HasAddon(script.tvtunes) + Skin.HasSetting(tvtunes.enable)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
 	<controls>
-	<!--trigger-->
+		<!--trigger-->
 		<control type="button" id="8000">
 			<label>SHOULD NOT SEE ME</label>
 			<onup>53</onup>
@@ -16,40 +16,52 @@
 			<width>500</width>
 			<visible allowhiddenfocus="true">false</visible>
 		</control>
-
-	<!--global includes-->
+		<!--global includes-->
 		<include>global_Background</include>
-		
-	<!--view includes-->
-		<include>view_List</include><!--50-->
-		<include>view_BigList</include><!--51-->
-		<include>view_RightList</include><!--55-->
-		<include>view_LeftList</include><!--555-->
-		<include>view_BottomSlide</include><!--554-->
-		<include>view_SlidePoster</include><!--52-->
-		<include>view_SlideLandscape</include><!--521-->
-		<include>view_SlideSquare</include><!--522-->
-		<include>view_Gallery</include><!--53-->
-		<include>view_GalleryFull</include><!--531-->
-		<include>view_Banner</include><!--54-->
-		<include>view_BigBanner</include><!--541-->
-		<include>view_IconPortrait</include><!--57-->
-		<include>view_IconPortraitSmall</include><!--571-->
-		<include>view_IconSquare</include><!--572-->
-		<include>view_IconSquareSmall</include><!--574-->
-		<include>view_IconWide</include><!--575-->
-		
+		<!--view includes-->
+		<include>view_List</include>
+		<!--50-->
+		<include>view_BigList</include>
+		<!--51-->
+		<include>view_RightList</include>
+		<!--55-->
+		<include>view_LeftList</include>
+		<!--555-->
+		<include>view_BottomSlide</include>
+		<!--554-->
+		<include>view_SlidePoster</include>
+		<!--52-->
+		<include>view_SlideLandscape</include>
+		<!--521-->
+		<include>view_SlideSquare</include>
+		<!--522-->
+		<include>view_Gallery</include>
+		<!--53-->
+		<include>view_GalleryFull</include>
+		<!--531-->
+		<include>view_Banner</include>
+		<!--54-->
+		<include>view_BigBanner</include>
+		<!--541-->
+		<include>view_IconPortrait</include>
+		<!--57-->
+		<include>view_IconPortraitSmall</include>
+		<!--571-->
+		<include>view_IconSquare</include>
+		<!--572-->
+		<include>view_IconSquareSmall</include>
+		<!--574-->
+		<include>view_IconWide</include>
+		<!--575-->
 		<include>global_MenuGuide</include>
 		<include>global_Includes</include>
 		<include>windowTitle_Video</include>
-
-	<!--detail includes-->
+		<!--detail includes-->
 		<include>detail_ListMusic</include>
 		<include>detail_ListAddons</include>
 		<include>detail_Slide</include>
 		<include>detail_Thumbnails</include>
-
-	<!--list-->
+		<!--list-->
 		<control type="group">
 			<include>toggle_Menu</include>
 			<include>transition_Info</include>
@@ -62,7 +74,6 @@
 					<left>680</left>
 					<top>90</top>
 					<visible>[[Container.Content(movies) | Container.Content(tvshows)] + Skin.HasSetting(view.list.fanart)] | Container.Content(artists) | Container.Content(episodes)</visible>
-					
 					<control type="group">
 						<left>7</left>
 						<top>7</top>
@@ -102,7 +113,7 @@
 						<control type="textbox">
 							<top>315</top>
 							<width>532</width>
-							<height max="280">auto</height>
+							<height>auto</height>
 							<label>$VAR[global_Plot]</label>
 							<include>detail_Text</include>
 						</control>
@@ -115,7 +126,6 @@
 				<top>80</top>
 				<control type="group">
 					<visible>[Container.Content(movies) | Container.Content(tvshows)] + [!Skin.HasSetting(view.list.fanart) | SubString(Container.FolderPath,plugin://)] | Container.Content(actors) | Container.Content(seasons) | Container.Content(sets)</visible>
-					
 					<control type="group">
 						<left>7</left>
 						<top>7</top>
@@ -151,7 +161,7 @@
 							<aspectratio align="center" aligny="center">scale</aspectratio>
 							<fadetime>fadetime_Thumb</fadetime>
 							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
-						</control>						
+						</control>
 					</control>
 				</control>
 			</control>
@@ -188,10 +198,9 @@
 				</control>
 			</control>
 		</control>
-
-	<!--scrollbars-->
+		<!--scrollbars-->
 		<include>PageControls</include>
-	<!--menu-->
+		<!--menu-->
 		<include>menu_Video</include>
 	</controls>
 </window>

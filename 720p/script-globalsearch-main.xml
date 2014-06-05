@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
@@ -8,7 +8,7 @@
 		<top>0</top>
 	</coordinates>
 	<controls>
-	<!--background-->
+		<!--background-->
 		<control type="image">
 			<include>screen_Dimensions</include>
 			<texture background="true">$INFO[Container(111).ListItem.Property(Fanart)]</texture>
@@ -74,8 +74,7 @@
 			<visible>Control.HasFocus(181) | Container(9000).HasFocus(8)</visible>
 		</control>
 		<include>global_Background</include>
-		
-	<!--window titles-->
+		<!--window titles-->
 		<!--searching-->
 		<control type="group">
 			<left>34</left>
@@ -141,12 +140,10 @@
 			<include>windowTitle</include>
 			<visible>Control.IsVisible(199)</visible>
 		</control>
-
 		<include>global_Includes</include>
-
 		<control type="group">
 			<include>transition_Content</include>
-		<!--category list-->
+			<!--category list-->
 			<control type="list" id="9000">
 				<left>40</left>
 				<top>80</top>
@@ -296,7 +293,6 @@
 					</item>
 				</content>
 			</control>
-
 			<!--new search button trigger-->
 			<control type="button" id="198">
 				<left>2000</left>
@@ -334,11 +330,10 @@
 				<label>-</label>
 				<font>-</font>
 			</control>
-
-		<!--search results-->
+			<!--search results-->
 			<control type="group" id="101">
 				<left>360</left>
-			<!--movie results-->
+				<!--movie results-->
 				<control type="group" id="119">
 					<control type="label" id="110">
 						<!--hide control, use list to trigger to-->
@@ -393,7 +388,7 @@
 							<control type="group">
 								<left>126</left>
 								<top>4</top>
-								<control type="label">	
+								<control type="label">
 									<width>657</width>
 									<label>$VAR[global_Title]</label>
 									<include>container_Title</include>
@@ -464,7 +459,7 @@
 								<control type="group">
 									<left>126</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>657</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title-focus</include>
@@ -510,7 +505,7 @@
 								<control type="group">
 									<left>126</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>657</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title</include>
@@ -579,8 +574,7 @@
 						<visible>Container(9000).HasFocus(1)</visible>
 					</control>
 				</control>
-
-			<!--tv show results-->
+				<!--tv show results-->
 				<control type="group" id="129">
 					<control type="label" id="120">
 						<!--hide control, use list to trigger to-->
@@ -600,7 +594,7 @@
 						<orientation>vertical</orientation>
 						<include>global_Scrolltime</include>
 						<include>fadeinout</include>
-						<visible>Container(9000).HasFocus(2)</visible>					
+						<visible>Container(9000).HasFocus(2)</visible>
 						<itemlayout width="880" height="150">
 							<control type="image">
 								<width>104</width>
@@ -635,7 +629,7 @@
 							<control type="group">
 								<left>126</left>
 								<top>4</top>
-								<control type="label">	
+								<control type="label">
 									<width>657</width>
 									<label>$VAR[global_Title]</label>
 									<include>container_Title</include>
@@ -679,7 +673,7 @@
 								<control type="group">
 									<left>126</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>657</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title-focus</include>
@@ -723,7 +717,7 @@
 								<control type="group">
 									<left>126</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>657</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title</include>
@@ -790,8 +784,7 @@
 						<visible>Container(9000).HasFocus(2)</visible>
 					</control>
 				</control>
-
-			<!--season results-->
+				<!--season results-->
 				<control type="group" id="139">
 					<control type="label" id="130">
 						<!--hide control, use list to trigger to-->
@@ -811,7 +804,7 @@
 						<orientation>vertical</orientation>
 						<include>global_Scrolltime</include>
 						<include>fadeinout</include>
-						<visible>Container(9000).HasFocus(3)</visible>		
+						<visible>Container(9000).HasFocus(3)</visible>
 						<itemlayout width="880" height="150">
 							<control type="image">
 								<width>104</width>
@@ -846,7 +839,7 @@
 							<control type="group">
 								<left>126</left>
 								<top>4</top>
-								<control type="label">	
+								<control type="label">
 									<width>735</width>
 									<label>$VAR[global_Title]</label>
 									<include>container_Title</include>
@@ -876,7 +869,7 @@
 								<control type="group">
 									<left>126</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>735</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title-focus</include>
@@ -905,7 +898,7 @@
 								<control type="group">
 									<left>126</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>735</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title</include>
@@ -958,8 +951,7 @@
 						<visible>Container(9000).HasFocus(3)</visible>
 					</control>
 				</control>
-			
-			<!--episode results-->
+				<!--episode results-->
 				<control type="group" id="149">
 					<control type="label" id="140">
 						<!--hide control, use list to trigger to-->
@@ -1014,7 +1006,7 @@
 							<control type="group">
 								<left>248</left>
 								<top>4</top>
-								<control type="label">	
+								<control type="label">
 									<width>500</width>
 									<label>$VAR[global_Title]</label>
 									<include>container_Title</include>
@@ -1053,7 +1045,7 @@
 								<control type="group">
 									<left>248</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>500</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title-focus</include>
@@ -1092,7 +1084,7 @@
 								<control type="group">
 									<left>248</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>500</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title</include>
@@ -1154,8 +1146,7 @@
 						<visible>Container(9000).HasFocus(4)</visible>
 					</control>
 				</control>
-
-			<!--music video results-->
+				<!--music video results-->
 				<control type="group" id="159">
 					<control type="label" id="150">
 						<!--hide control, use list to trigger to-->
@@ -1210,7 +1201,7 @@
 							<control type="group">
 								<left>248</left>
 								<top>4</top>
-								<control type="label">	
+								<control type="label">
 									<width>500</width>
 									<label>$VAR[global_Title]</label>
 									<include>container_Title</include>
@@ -1246,7 +1237,7 @@
 								<control type="group">
 									<left>248</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>500</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title-focus</include>
@@ -1281,7 +1272,7 @@
 								<control type="group">
 									<left>248</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>500</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title</include>
@@ -1340,8 +1331,7 @@
 						<visible>Container(9000).HasFocus(5)</visible>
 					</control>
 				</control>
-
-			<!--artist results-->
+				<!--artist results-->
 				<control type="group" id="169">
 					<control type="label" id="160">
 						<!--hide control, use list to trigger to-->
@@ -1396,7 +1386,7 @@
 							<control type="group">
 								<left>136</left>
 								<top>4</top>
-								<control type="label">	
+								<control type="label">
 									<width>657</width>
 									<label>$VAR[global_Title]</label>
 									<include>container_Title</include>
@@ -1433,7 +1423,7 @@
 								<control type="group">
 									<left>136</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>657</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title-focus</include>
@@ -1469,7 +1459,7 @@
 								<control type="group">
 									<left>136</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>657</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title</include>
@@ -1522,8 +1512,7 @@
 						<visible>Container(9000).HasFocus(6)</visible>
 					</control>
 				</control>
-
-			<!--album results-->
+				<!--album results-->
 				<control type="group" id="179">
 					<control type="label" id="170">
 						<!--hide control, use list to trigger to-->
@@ -1579,7 +1568,7 @@
 							<control type="group">
 								<left>136</left>
 								<top>4</top>
-								<control type="label">	
+								<control type="label">
 									<width>657</width>
 									<label>$VAR[global_Title]</label>
 									<include>container_Title</include>
@@ -1609,7 +1598,7 @@
 								<control type="group">
 									<left>136</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>657</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title-focus</include>
@@ -1638,7 +1627,7 @@
 								<control type="group">
 									<left>136</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>657</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title</include>
@@ -1692,8 +1681,7 @@
 						<visible>Container(9000).HasFocus(7)</visible>
 					</control>
 				</control>
-
-			<!--song results-->
+				<!--song results-->
 				<control type="group" id="189">
 					<control type="label" id="180">
 						<!--hide control, use list to trigger to-->
@@ -1749,7 +1737,7 @@
 							<control type="group">
 								<left>136</left>
 								<top>4</top>
-								<control type="label">	
+								<control type="label">
 									<width>657</width>
 									<label>$VAR[global_Title]</label>
 									<include>container_Title</include>
@@ -1787,7 +1775,7 @@
 								<control type="group">
 									<left>136</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>657</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title-focus</include>
@@ -1816,7 +1804,7 @@
 								<control type="group">
 									<left>136</left>
 									<top>4</top>
-									<control type="label">	
+									<control type="label">
 										<width>657</width>
 										<label>$VAR[global_Title]</label>
 										<include>container_Title</include>

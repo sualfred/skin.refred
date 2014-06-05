@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>5</defaultcontrol>
 	<include>transition_Dialog</include>
@@ -16,7 +16,6 @@
 			<include>screen_Dimensions</include>
 			<texture colordiffuse="base_1">overlays/base_color.png</texture>
 			<include>transition_Dialog</include>
-			
 		</control>
 		<control type="group">
 			<visible>Player.HasMedia + !Window.IsActive(sliderdialog)</visible>
@@ -31,7 +30,7 @@
 				<width>600</width>
 				<height>515</height>
 				<visible>Window.IsActive(osdaudiosettings)</visible>
-			</control>	
+			</control>
 			<control type="label" id="2">
 				<width>592</width>
 				<include>dialog_Windowtitle</include>

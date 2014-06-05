@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">700</defaultcontrol>
 	<visible>[!Window.IsActive(VideoOSD) + [Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)] + [Player.ShowInfo | Player.DisplayAfterSeek | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Player.Caching] + ![Window.IsActive(infodialog) | Window.IsActive(SubtitleSearch) | Player.ShowCodec]] | Player.DisplayAfterSeek</visible>
@@ -12,21 +12,7 @@
 			</control>-->
 			<include condition="!Window.IsActive(MusicOSD)">seek_animation</include>
 			<include>clock</include>
-			<include>fadeinout</include>-->
-			<control type="label">
-				<left>40</left>
-				<top>30</top>
-				<width>screen_Width</width>
-				<label>$VAR[player_Status]</label>
-				<textcolor>Color1</textcolor>
-				<font>light_Header</font>
-				<visible>Window.IsActive(MusicOSD)</visible>
-			</control>
-			<control type="group" id="1">			
-				<include>osd_Video</include>
-				<visible>!Window.IsActive(VideoOSD) + Player.HasVideo</visible>
-			</control>
-		</control>
+			<include>fadeinout</include>--&gt;
+			<control type="label"><left>40</left><top>30</top><width>screen_Width</width><label>$VAR[player_Status]</label><textcolor>Color1</textcolor><font>light_Header</font><visible>Window.IsActive(MusicOSD)</visible></control><control type="group" id="1"><include>osd_Video</include><visible>!Window.IsActive(VideoOSD) + Player.HasVideo</visible></control></control>
 	</controls>
 </window>
-

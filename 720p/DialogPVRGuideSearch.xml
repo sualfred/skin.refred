@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">9</defaultcontrol>
 	<include>transition_Dialog</include>
@@ -141,7 +141,7 @@
 					<height>318</height>
 					<include>dialog_Separator-y</include>
 				</control>
-			<!--right pane-->
+				<!--right pane-->
 				<control type="grouplist" id="9002">
 					<left>446</left>
 					<width>446</width>
@@ -212,7 +212,7 @@
 					</control>
 				</control>
 			</control>
-		<!--window controls-->
+			<!--window controls-->
 			<control type="group" id="9000">
 				<left>19</left>
 				<top>460</top>

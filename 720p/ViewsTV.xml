@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
-<!--TV CHANNELS-->
+	<!--TV CHANNELS-->
 	<include name="view_TVChannels">
 		<control type="list" id="11">
 			<onup>11</onup>
@@ -17,15 +17,12 @@
 			<include>transition_Content</include>
 			<include>toggle_Menu</include>
 			<visible>Container(11).HasFocus + !ControlGroup(6000).HasFocus</visible>
-			<top>7</top>
 			<right>20</right>
 			<include>screen_Dimensions</include>
 			<control type="label">
 				<top>125</top>
 				<width>350</width>
 				<label>$INFO[ListItem.Title]</label>
-				<scrolltime>50</scrolltime>
-				<scroll>auto</scroll>
 				<textcolor>Color1</textcolor>
 				<include>detail_Title</include>
 			</control>
@@ -42,7 +39,7 @@
 				<height>420</height>
 				<label fallback="416">$INFO[ListItem.Plot]</label>
 				<include>container_TextSmall</include>
-				 <autoscroll delay="10000" time="4000" repeat="10000">Container(11).HasFocus + !ControlGroup(6000).HasFocus</autoscroll>
+				<autoscroll delay="10000" time="4000" repeat="10000">Container(11).HasFocus + !ControlGroup(6000).HasFocus</autoscroll>
 			</control>
 			<control type="image">
 				<top>0</top>
@@ -57,28 +54,26 @@
 				<height>114</height>
 				<texture>overlays/cover_overlay.png</texture>
 				<include>bordertrans</include>
-				<aspectratio aligny="top" align="center"></aspectratio>
 				<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 			</control>
 		</control>
 	</include>
-<!--RADIO CHANNELS-->
-	<include name="view_RadioChannels">		
+	<!--RADIO CHANNELS-->
+	<include name="view_RadioChannels">
 		<control type="list" id="12">
 			<onup>12</onup>
 			<ondown>12</ondown>
 			<include>list_Channels</include>
 		</control>
 	</include>
-
 	<include name="list_Channels-commons">
 		<control type="image">
-				<top>1</top>
-				<left>1</left>
-				<width>736</width>
-				<height>99</height>
-				<texture colordiffuse="whitetrans">white.png</texture>
-				<visible>ListItem.IsPlaying</visible>
+			<top>1</top>
+			<left>1</left>
+			<width>736</width>
+			<height>99</height>
+			<texture colordiffuse="whitetrans">white.png</texture>
+			<visible>ListItem.IsPlaying</visible>
 		</control>
 		<control type="group">
 			<left>7</left>
@@ -140,25 +135,23 @@
 				<visible>!IsEmpty(ListItem.NextTitle)</visible>
 			</control>
 		</control>
-		
 	</include>
-	
 	<include name="list_Channels-commons-fo">
 		<control type="image">
-				<top>1</top>
-				<left>1</left>
-				<width>736</width>
-				<height>99</height>
-				<texture colordiffuse="whitetrans">white.png</texture>
-				<visible>ListItem.IsPlaying</visible>
+			<top>1</top>
+			<left>1</left>
+			<width>736</width>
+			<height>99</height>
+			<texture colordiffuse="whitetrans">white.png</texture>
+			<visible>ListItem.IsPlaying</visible>
 		</control>
 		<control type="image">
-				<top>1</top>
-				<left>1</left>
-				<width>736</width>
-				<height>99</height>
-				<texture colordiffuse="whitetrans2">white.png</texture>
-				<visible>!ControlGroup(6000).HasFocus</visible>
+			<top>1</top>
+			<left>1</left>
+			<width>736</width>
+			<height>99</height>
+			<texture colordiffuse="whitetrans2">white.png</texture>
+			<visible>!ControlGroup(6000).HasFocus</visible>
 		</control>
 		<control type="group">
 			<left>7</left>
@@ -196,7 +189,6 @@
 		<control type="group">
 			<left>130</left>
 			<width>600</width>
-			
 			<control type="label">
 				<width>600</width>
 				<label>[COLOR Color2]$INFO[ListItem.ChannelNumber,,  ][/COLOR]$INFO[ListItem.ChannelName]</label>
@@ -227,10 +219,8 @@
 				<include>container_Sub</include>
 				<visible>!IsEmpty(ListItem.NextTitle)</visible>
 			</control>
-			
 		</control>
 	</include>
-	
 	<include name="list_Channels">
 		<left>40</left>
 		<top>90</top>
@@ -252,8 +242,7 @@
 			<include>list_Channels-commons-fo</include>
 		</focusedlayout>
 	</include>
-
-<!--RECORDINGS-->
+	<!--RECORDINGS-->
 	<include name="view_TV-recordings">
 		<control type="list" id="13">
 			<left>35</left>
@@ -446,8 +435,7 @@
 			</focusedlayout>
 		</control>
 	</include>
-
-<!--GUIDE CHANNELS VIEW-->
+	<!--GUIDE CHANNELS VIEW-->
 	<include name="view_EPG-channels">
 		<control type="group">
 			<left>39</left>
@@ -581,8 +569,7 @@
 			</control>
 		</control>
 	</include>
-
-<!--GUIDE NOW/NEXT VIEW-->
+	<!--GUIDE NOW/NEXT VIEW-->
 	<include name="view_EPG-now">
 		<control type="group">
 			<left>39</left>
@@ -739,8 +726,7 @@
 			</control>
 		</control>
 	</include>
-
-<!--GUIDE TIMELINE-->
+	<!--GUIDE TIMELINE-->
 	<include name="view_EPG-timeline-Commons">
 		<control type="label" id="1">
 			<left>8</left>
@@ -769,7 +755,7 @@
 		</control>
 	</include>
 	<include name="view_EPG-timeline">
-	<!--epg grid-->
+		<!--epg grid-->
 		<control type="epggrid" id="10">
 			<left>35</left>
 			<top>91</top>
@@ -873,8 +859,7 @@
 			</focusedlayout>
 		</control>
 	</include>
-
-<!--TIMERS VIEW-->
+	<!--TIMERS VIEW-->
 	<include name="view_TV-timers">
 		<control type="group">
 			<left>35</left>
@@ -1038,8 +1023,7 @@
 			</control>
 		</control>
 	</include>
-
-<!--SEARCH-->
+	<!--SEARCH-->
 	<include name="view_TV-search">
 		<control type="group">
 			<left>35</left>

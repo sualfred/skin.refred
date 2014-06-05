@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>5</defaultcontrol>
 	<include>transition_Dialog</include>
@@ -20,7 +20,7 @@
 				<label>$LOCALIZE[5]</label>
 				<include>dialog_Windowtitle</include>
 			</control>
-		<!--control area-->
+			<!--control area-->
 			<control type="group">
 				<left>4</left>
 				<top>60</top>
@@ -48,7 +48,7 @@
 				</control>
 			</control>
 		</control>
-	<!--default controls-->
+		<!--default controls-->
 		<control type="sliderex" id="10">
 			<include>dialog_Slider</include>
 			<include>dialog_ControlCommons</include>
@@ -64,7 +64,7 @@
 			<include>dialog_Spin</include>
 			<include>dialog_ControlCommons</include>
 		</control>
-	<!--dialog buttons-->
+		<!--dialog buttons-->
 		<control type="group" id="9001">
 			<left>19</left>
 			<top>439</top>

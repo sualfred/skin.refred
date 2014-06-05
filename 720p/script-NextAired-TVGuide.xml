@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>9000</defaultcontrol>
-    <controls>
-    <!--fanart-->
-	    <control type="group">
-	    	<include>transition_Background</include>
-	    	<visible>!Skin.HasSetting(fanart.global)</visible>
+	<controls>
+		<!--fanart-->
+		<control type="group">
+			<include>transition_Background</include>
+			<visible>!Skin.HasSetting(fanart.global)</visible>
 			<control type="image">
 				<include>screen_Dimensions</include>
 				<texture background="true">$INFO[Container(200).ListItem.Property(Art(fanart))]</texture>
@@ -56,22 +56,19 @@
 				<visible>StringCompare(Window(Home).Property(tvguide),sunday)</visible>
 			</control>
 		</control>
-
-	<!--global includes-->
+		<!--global includes-->
 		<include>global_Background</include>
 		<include>global_Includes</include>
-
-	<!--window title-->
+		<!--window title-->
 		<control type="label">
 			<left>34</left>
 			<label>$LOCALIZE[31606]</label>
 			<include>windowTitle</include>
 		</control>
-
-	<!--content-->
-	<control type="group">
-		<include>transition_Content</include>
-		<!--day label-->
+		<!--content-->
+		<control type="group">
+			<include>transition_Content</include>
+			<!--day label-->
 			<control type="label">
 				<left>362</left>
 				<top>65</top>
@@ -79,8 +76,7 @@
 				<label>$VAR[nextaired_Header]</label>
 				<include>column_Header</include>
 			</control>
-			
-		<!--day list-->
+			<!--day list-->
 			<control type="grouplist" id="9000">
 				<left>40</left>
 				<top>98</top>
@@ -179,7 +175,7 @@
 					</control>
 				</control>
 			</control>
-		<!--results list-->
+			<!--results list-->
 			<control type="group" id="199">
 				<left>360</left>
 				<top>98</top>
@@ -269,5 +265,5 @@
 			<height>screen_Height</height>
 			<onleft>199</onleft>
 		</control>
-    </controls>
+	</controls>
 </window>

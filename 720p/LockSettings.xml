@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>5</defaultcontrol>
 	<include>transition_Dialog</include>
@@ -40,7 +40,7 @@
 				<ondown>28</ondown>
 			</control>
 		</control>
-	<!--defaults-->
+		<!--defaults-->
 		<control type="button" id="7">
 			<include>dialog_ControlCommons</include>
 		</control>
@@ -52,7 +52,7 @@
 			<include>dialog_Spin</include>
 			<include>dialog_ControlCommons</include>
 		</control>
-	<!--dialog controls-->
+		<!--dialog controls-->
 		<control type="group" id="9001">
 			<left>19</left>
 			<top>400</top>

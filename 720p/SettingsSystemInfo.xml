@@ -1,14 +1,12 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-
-	<!--global includes-->
+		<!--global includes-->
 		<include>global_Background</include>
 		<include>global_Includes</include>
 		<include>windowTitle_System</include>
-
 		<control type="group">
 			<left>65</left>
 			<top>90</top>
@@ -180,7 +178,7 @@
 							<include>settings_Listbutton</include>
 						</control>
 					</control>
-				</control>				
+				</control>
 				<control type="grouplist">
 					<itemgap>2</itemgap>
 					<visible>Control.HasFocus(195)</visible>

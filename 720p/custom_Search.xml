@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="64">
 	<defaultcontrol always="true">100</defaultcontrol>
 	<include>transition_Dialog</include>
@@ -31,7 +31,7 @@
 					<width>352</width>
 					<label>$LOCALIZE[157]</label>
 					<onclick>Close</onclick>
-					<onclick>ActivateWindow(VideoLibrary)</onclick>						
+					<onclick>ActivateWindow(VideoLibrary)</onclick>
 					<onclick>SendClick(8)</onclick>
 					<include>dialog_ControlCommons</include>
 				</control>
@@ -39,7 +39,7 @@
 					<width>352</width>
 					<label>$LOCALIZE[2]</label>
 					<onclick>Close</onclick>
-					<onclick>ActivateWindow(MusicLibrary)</onclick>						
+					<onclick>ActivateWindow(MusicLibrary)</onclick>
 					<onclick>SendClick(8)</onclick>
 					<include>dialog_ControlCommons</include>
 				</control>

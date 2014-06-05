@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">901</defaultcontrol>
 	<include>transition_Dialog</include>
@@ -131,7 +131,7 @@
 						</item>
 					</content>
 				</control>
-			<!--rating value-->
+				<!--rating value-->
 				<control type="image">
 					<left>447</left>
 					<top>368</top>
@@ -142,7 +142,7 @@
 					<colordiffuse>Color4</colordiffuse>
 				</control>
 			</control>
-		<!--dialog controls-->
+			<!--dialog controls-->
 			<control type="group" id="901">
 				<left>45</left>
 				<top>480</top>
@@ -173,7 +173,7 @@
 					<include>dialog_WindowButton</include>
 				</control>
 				<!--ok-->
-				<control type="button" id ="10">
+				<control type="button" id="10">
 					<left>260</left>
 					<label>$LOCALIZE[186]</label>
 					<onleft>12</onleft>

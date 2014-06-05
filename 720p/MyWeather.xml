@@ -1,21 +1,18 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<onunload>ClearProperty(MenuOpen)</onunload>
 	<controls>
-
-	<!--trigger button-->
+		<!--trigger button-->
 		<control type="button" id="50">
 			<label>SHOULD NOT SEE ME</label>
 			<onleft>SetFocus(6000)</onleft>
 			<visible allowhiddenfocus="true">false</visible>
 		</control>
-
-	<!--backgrounds-->
+		<!--backgrounds-->
 		<include>global_Background</include>
-
-	<!--weather images-->
+		<!--weather images-->
 		<control type="multiimage" id="1">
 			<include>screen_Dimensions</include>
 			<aspectratio>scale</aspectratio>
@@ -28,13 +25,11 @@
 			<include>toggle_Menu</include>
 			<visible>Skin.HasSetting(fanart.weather) + !IsEmpty(Skin.String(fanart.weather.path))</visible>
 		</control>
-
-	<!--global includes-->
+		<!--global includes-->
 		<include>global_MenuGuide</include>
 		<include>windowTitle_Weather</include>
 		<include>global_Itemcount</include>
-	
-	<!--content-->
+		<!--content-->
 		<control type="group">
 			<left>55</left>
 			<top>330</top>
@@ -44,7 +39,7 @@
 			<control type="group" id="5000">
 				<onleft>6000</onleft>
 				<animation type="WindowOpen">
-					<effect type="fade" start="0" end="85" time="300"/>
+					<effect type="fade" start="0" end="85" time="300" />
 				</animation>
 				<control type="image">
 					<width>230</width>
@@ -119,7 +114,7 @@
 			<control type="group">
 				<left>235</left>
 				<animation type="WindowOpen">
-					<effect type="fade" start="0" end="85" time="300" delay="100"/>
+					<effect type="fade" start="0" end="85" time="300" delay="100" />
 				</animation>
 				<control type="image">
 					<width>230</width>
@@ -165,7 +160,7 @@
 			<control type="group">
 				<left>470</left>
 				<animation type="WindowOpen">
-					<effect type="fade" start="0" end="85" time="300" delay="200"/>
+					<effect type="fade" start="0" end="85" time="300" delay="200" />
 				</animation>
 				<control type="image">
 					<width>230</width>
@@ -211,7 +206,7 @@
 			<control type="group">
 				<left>705</left>
 				<animation type="WindowOpen">
-					<effect type="fade" start="0" end="85" time="300" delay="300"/>
+					<effect type="fade" start="0" end="85" time="300" delay="300" />
 				</animation>
 				<control type="image">
 					<width>230</width>
@@ -257,7 +252,7 @@
 			<control type="group">
 				<left>940</left>
 				<animation type="WindowOpen">
-					<effect type="fade" start="0" end="85" time="300" delay="400"/>
+					<effect type="fade" start="0" end="85" time="300" delay="400" />
 				</animation>
 				<control type="image">
 					<width>230</width>
@@ -299,9 +294,8 @@
 					</control>
 				</control>
 			</control>
-		</control>	
-
-	<!--menu-->
-	<include>menu_Weather</include>
+		</control>
+		<!--menu-->
+		<include>menu_Weather</include>
 	</controls>
 </window>

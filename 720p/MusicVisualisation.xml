@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<onload condition="System.HasAddon(script.artistslideshow) + !Skin.HasSetting(artistslideshow.disable)">RunScript(script.artistslideshow, daemon=True)</onload>	
+	<onload condition="System.HasAddon(script.artistslideshow) + !Skin.HasSetting(artistslideshow.disable)">RunScript(script.artistslideshow, daemon=True)</onload>
 	<controls>
 		<control type="visualisation" id="2">
 			<include>screen_Dimensions</include>
@@ -36,8 +36,8 @@
 			<animation effect="fade" time="600">WindowClose</animation>
 			<animation effect="fade" time="400">Visible</animation>
 			<animation effect="fade" time="400">Hidden</animation>
-			<visible>Player.HasAudio + !Skin.HasSetting(displaylyrics.enable) + Skin.HasSetting(musictextscroll.enable)</visible>			
-			<control type="group" id="3333">	
+			<visible>Player.HasAudio + !Skin.HasSetting(displaylyrics.enable) + Skin.HasSetting(musictextscroll.enable)</visible>
+			<control type="group" id="3333">
 				<visible> IntegerGreaterThan(System.Time(ss),41)</visible>
 				<animation effect="fade" time="600">Visible</animation>
 				<animation effect="fade" time="600">Hidden</animation>
@@ -82,8 +82,7 @@
 					<angle>45</angle>
 					<align>left</align>
 					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
-				</control>			
+				</control>
 				<control type="label">
 					<description>Player Times</description>
 					<posx>70</posx>
@@ -95,12 +94,12 @@
 					<angle>-45</angle>
 					<textcolor>33white</textcolor>
 				</control>
-      </control>
+			</control>
 			<control type="group" id="3334">
 				<visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),21)</visible>
 				<animation effect="fade" time="600">Visible</animation>
 				<animation effect="fade" time="600">Hidden</animation>
-			  <control type="label">
+				<control type="label">
 					<description>Now Playing</description>
 					<posx>0</posx>
 					<posy>500</posy>
@@ -113,7 +112,7 @@
 					<textcolor>77white</textcolor>
 					<align>left</align>
 				</control>
-			  <control type="label">
+				<control type="label">
 					<description>Now Playing</description>
 					<posx>0</posx>
 					<posy>600</posy>
@@ -126,7 +125,7 @@
 					<align>left</align>
 					<scrollspeed>100</scrollspeed>
 				</control>
-			  <control type="label">
+				<control type="label">
 					<description>Now Playing</description>
 					<posx>0</posx>
 					<posy>600</posy>
@@ -138,9 +137,8 @@
 					<textcolor>99grey</textcolor>
 					<align>left</align>
 					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
-				</control>			
-			  <control type="label">
+				</control>
+				<control type="label">
 					<description>Player Times</description>
 					<posx>760</posx>
 					<posy>80</posy>
@@ -149,9 +147,9 @@
 					<align>left</align>
 					<font>FontSize_230</font>
 					<textcolor>33white</textcolor>
-			  </control>
-      </control>
-			<control type="group" id="3335">	
+				</control>
+			</control>
+			<control type="group" id="3335">
 				<visible> IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),41)</visible>
 				<animation effect="fade" time="600">Visible</animation>
 				<animation effect="fade" time="600">Hidden</animation>
@@ -168,7 +166,7 @@
 					<angle>90</angle>
 					<textcolor>77white</textcolor>
 				</control>
-			  <control type="label">
+				<control type="label">
 					<description>Now Playing</description>
 					<posx>580</posx>
 					<posy>900</posy>
@@ -182,7 +180,7 @@
 					<angle>90</angle>
 					<scrollspeed>100</scrollspeed>
 				</control>
-			  <control type="label">
+				<control type="label">
 					<description>Now Playing</description>
 					<posx>580</posx>
 					<posy>900</posy>
@@ -195,9 +193,8 @@
 					<align>left</align>
 					<angle>90</angle>
 					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
 				</control>
-			  <control type="label">
+				<control type="label">
 					<description>Player Times</description>
 					<posx>-40</posx>
 					<posy>280</posy>
@@ -206,10 +203,9 @@
 					<align>left</align>
 					<font>FontSize_230</font>
 					<textcolor>33white</textcolor>
-			  </control>
-      </control>
-    </control>
-	
+				</control>
+			</control>
+		</control>
 		<control type="group">
 			<visible>Player.ShowCodec</visible>
 			<control type="image" id="1">
@@ -230,10 +226,8 @@
 				<control type="label" id="11">
 					<top>26</top>
 					<width>1260</width>
-					<label>$LOCALIZE[250]: $INFO[Visualisation.Name] [I]($LOCALIZE[20166])[/I] · FPS: $INFO[System.FPS]</label>>
-					<font>regular_Small</font>
-					<textcolor>Color1</textcolor>
-				</control>
+					<label>$LOCALIZE[250]: $INFO[Visualisation.Name] [I]($LOCALIZE[20166])[/I] · FPS: $INFO[System.FPS]</label>&gt;
+					<font>regular_Small</font><textcolor>Color1</textcolor></control>
 				<control type="label" id="12">
 					<top>52</top>
 					<width>1260</width>

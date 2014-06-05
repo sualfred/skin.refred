@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>5</defaultcontrol>
 	<include>transition_Dialog</include>
@@ -36,7 +36,7 @@
 				<width>563</width>
 				<include>dialog_Separator</include>
 			</control>
-		<!--control area-->
+			<!--control area-->
 			<control type="grouplist" id="5">
 				<left>19</left>
 				<top>75</top>

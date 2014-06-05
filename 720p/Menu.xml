@@ -46,7 +46,7 @@
 		<height>50</height>
 		<font>semibold_Small-U</font>
 		<textoffsetx>15</textoffsetx>
-		<textoffsety>4</textoffsety> 
+		<textoffsety>4</textoffsety>
 		<textcolor>Color3</textcolor>
 	</include>
 	<include name="menu_Button">
@@ -74,8 +74,7 @@
 		<radioheight>24</radioheight>
 		<disabledcolor>Disabled</disabledcolor>
 	</include>
-
-<!--COMMON CONTROLS-->
+	<!--COMMON CONTROLS-->
 	<!--
 	<include name="menu_QuickNav">
 		<control type="label" id="100">
@@ -167,7 +166,6 @@
 			<label>$LOCALIZE[587]</label>
 			<onclick>right</onclick>
 			<onclick>Filter</onclick>
-			<selected>Container.Filtered</selected>
 			<include>menu_Button</include>
 			<visible>Container.CanFilterAdvanced</visible>
 		</control>
@@ -221,8 +219,7 @@
 			</visible>
 		</control>
 	</include>
-
-<!--VIDEO MENU-->
+	<!--VIDEO MENU-->
 	<include name="menu_Video">
 		<control type="group">
 			<include>menu_Commons</include>
@@ -230,7 +227,7 @@
 				<include>menu_ContainerCommons</include>
 				<!--<include>menu_QuickNav</include>-->
 				<include>menu_ViewMode</include>
-			<!--viewtype options-->
+				<!--viewtype options-->
 				<!--list: poster or fanart-->
 				<control type="togglebutton" id="110">
 					<label>$LOCALIZE[31120]: $LOCALIZE[31121]</label>
@@ -283,8 +280,7 @@
 					<include>menu_Button</include>
 					<visible>[Control.IsVisible(54) | Control.IsVisible(541)] +  [Container.Content(tvshows) | [Container.Content(movies) + Skin.HasSetting(banner.movies.enable)]]</visible>
 				</control>
-				
-			<!--options-->
+				<!--options-->
 				<include>menu_Sorting</include>
 				<include>menu_LibraryHeader</include>
 				<include>menu_Shares</include>
@@ -295,8 +291,8 @@
 				<include>menu_Search</include>
 				<include>menu_Playing</include>
 			</control>
-		<!--viewtypes-->
-			<control type="group">	
+			<!--viewtypes-->
+			<control type="group">
 				<control type="grouplist" id="4000">
 					<include>menu_SubContainerCommons</include>
 					<control type="label" id="401">
@@ -450,15 +446,14 @@
 			-->
 		</control>
 	</include>
-
-<!--MUSIC MENU-->
+	<!--MUSIC MENU-->
 	<include name="menu_Music">
 		<control type="group">
 			<include>menu_Commons</include>
 			<control type="grouplist" id="6000">
 				<include>menu_ContainerCommons</include>
 				<include>menu_ViewMode</include>
-			<!--viewtype options-->
+				<!--viewtype options-->
 				<!--list: artist thumb or fanart-->
 				<control type="togglebutton" id="110">
 					<label>$LOCALIZE[31120]: $LOCALIZE[31122]</label>
@@ -477,7 +472,7 @@
 					<include>menu_Button</include>
 					<visible>[Control.IsVisible(521) | Control.IsVisible(522)] + Container.Content(artists)</visible>
 				</control>
-			<!--options-->
+				<!--options-->
 				<include>menu_Sorting</include>
 				<include>menu_LibraryHeader</include>
 				<include>menu_SwitchMode</include>
@@ -489,8 +484,8 @@
 				<include>menu_Playing</include>
 			</control>
 		</control>
-	<!--viewtypes-->
-		<control type="group">	
+		<!--viewtypes-->
+		<control type="group">
 			<control type="grouplist" id="4000">
 				<include>menu_SubContainerCommons</include>
 				<control type="label" id="401">
@@ -541,15 +536,14 @@
 			</control>
 		</control>
 	</include>
-
-<!--FILES MENU-->
+	<!--FILES MENU-->
 	<include name="menu_Files">
 		<control type="group">
 			<include>menu_Commons</include>
 			<control type="grouplist" id="6000">
 				<include>menu_ContainerCommons</include>
 				<include>menu_ViewMode</include>
-			<!--viewtype options-->
+				<!--viewtype options-->
 				<!--thumbnails: small or large grid (add-ons)-->
 				<control type="button" id="110">
 					<label>$VAR[view_Layout]</label>
@@ -558,7 +552,7 @@
 					<include>menu_Button</include>
 					<visible>[Control.IsVisible(572) | Control.IsVisible(574)] + !Window.IsActive(pictures)</visible>
 				</control>
-			<!--options-->
+				<!--options-->
 				<include>menu_Sorting</include>
 				<!--slideshow-->
 				<control type="label" id="203">
@@ -591,11 +585,11 @@
 				<include>menu_SwitchMode</include>
 				<include>menu_Filter</include>
 				<include>menu_Search</include>
-				<include>menu_Playing</include>			
+				<include>menu_Playing</include>
 			</control>
 		</control>
-	<!--viewtypes-->
-		<control type="group">	
+		<!--viewtypes-->
+		<control type="group">
 			<control type="grouplist" id="4000">
 				<include>menu_SubContainerCommons</include>
 				<control type="label" id="401">
@@ -635,15 +629,14 @@
 			</control>
 		</control>
 	</include>
-
-<!--ADD-ONS MENU-->
+	<!--ADD-ONS MENU-->
 	<include name="menu_Addons">
 		<control type="group">
 			<include>menu_Commons</include>
 			<control type="grouplist" id="6000">
 				<include>menu_ContainerCommons</include>
 				<include>menu_ViewMode</include>
-			<!--viewtype options-->
+				<!--viewtype options-->
 				<!--thumbnails: small or large grid (add-ons)-->
 				<control type="button" id="110">
 					<label>$VAR[view_Layout]</label>
@@ -652,7 +645,7 @@
 					<include>menu_Button</include>
 					<visible>Control.IsVisible(572) | Control.IsVisible(574)</visible>
 				</control>
-			<!--options-->
+				<!--options-->
 				<include>menu_Sorting</include>
 				<!--add-ons header-->
 				<control type="label" id="203">
@@ -665,14 +658,14 @@
 					<onclick>SendClick(5)</onclick>
 					<include>menu_Button</include>
 					<include>menu_RadioButton</include>
-				</control>		
+				</control>
 				<!--notifications-->
 				<control type="radiobutton" id="205">
 					<label>$LOCALIZE[25000]</label>
 					<onclick>SendClick(6)</onclick>
 					<include>menu_Button</include>
 					<include>menu_RadioButton</include>
-				</control>	
+				</control>
 				<!--hide foreign-->
 				<control type="radiobutton" id="206">
 					<label>$LOCALIZE[25001]</label>
@@ -684,8 +677,8 @@
 				<include>menu_Search</include>
 				<include>menu_Playing</include>
 			</control>
-		<!--viewtypes-->
-			<control type="group">	
+			<!--viewtypes-->
+			<control type="group">
 				<control type="grouplist" id="4000">
 					<include>menu_SubContainerCommons</include>
 					<control type="label" id="401">
@@ -719,8 +712,7 @@
 			</control>
 		</control>
 	</include>
-
-<!--PLAYLIST MENU-->
+	<!--PLAYLIST MENU-->
 	<include name="menu_Playlist">
 		<control type="group">
 			<include>menu_Commons</include>
@@ -746,7 +738,7 @@
 				<control type="button" id="21">
 					<label>$LOCALIZE[190]</label>
 					<include>menu_Button</include>
-				</control>		
+				</control>
 				<!--clear-->
 				<control type="button" id="22">
 					<label>$LOCALIZE[192]</label>
@@ -759,14 +751,13 @@
 			</control>
 		</control>
 	</include>
-
-<!--TV MENU-->
+	<!--TV MENU-->
 	<include name="menu_TV">
 		<control type="group">
 			<include>menu_Commons</include>
 			<control type="grouplist" id="6000">
 				<include>menu_ContainerCommons</include>
-			<!--options-->
+				<!--options-->
 				<control type="label" id="203">
 					<label>$LOCALIZE[33063]</label>
 					<include>menu_Header</include>
@@ -788,7 +779,7 @@
 					<onback>PreviousMenu</onback>
 					<label>$LOCALIZE[19222]: $LOCALIZE[19030]</label>
 					<include>menu_Button</include>
-				</control>		
+				</control>
 				<!--recordings-->
 				<control type="button" id="34">
 					<onback>PreviousMenu</onback>
@@ -812,8 +803,7 @@
 			</control>
 		</control>
 	</include>
-
-<!--WEATHER-->
+	<!--WEATHER-->
 	<include name="menu_Weather">
 		<control type="group">
 			<include>menu_Commons</include>
@@ -842,7 +832,6 @@
 					</control>
 					<control type="label" id="301">
 						<label>$LOCALIZE[35500]</label>
-						<textwidth>175</textwidth>
 						<include>menu_Button</include>
 					</control>
 				</control>

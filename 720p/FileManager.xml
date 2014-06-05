@@ -1,16 +1,14 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">20</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-
-	<!--global includes-->
+		<!--global includes-->
 		<include>global_Background</include>
 		<include>global_Includes</include>
 		<include>windowTitle_System</include>
 		<include>global_Itemcount</include>
-
-	<!--content-->
+		<!--content-->
 		<control type="group">
 			<left>40</left>
 			<top>100</top>

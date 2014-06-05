@@ -4,18 +4,15 @@
 	<allowoverlay>yes</allowoverlay>
 	<onunload>ClearProperty(Fanartgrabber,skinsettings)</onunload>
 	<controls>
-
-	<!--global includes-->
+		<!--global includes-->
 		<include>global_Background</include>
 		<include>global_Includes</include>
 		<include>windowTitle_System</include>
-
 		<control type="group">
 			<left>65</left>
 			<top>90</top>
 			<include>transition_Content</include>
-
-		<!--CATEGORIES-->
+			<!--CATEGORIES-->
 			<control type="grouplist" id="9001">
 				<height>800</height>
 				<itemgap>2</itemgap>
@@ -104,10 +101,9 @@
 					</control>
 				</control>
 			</control>
-
 			<control type="group">
 				<left>302</left>
-			<!--HOME SCREEN-->
+				<!--HOME SCREEN-->
 				<control type="grouplist" id="100">
 					<width>850</width>
 					<height>598</height>
@@ -188,7 +184,7 @@
 						<include>settings_Radiobutton</include>
 					</control>
 				</control>
-			<!--widgets-->	
+				<!--widgets-->
 				<control type="grouplist" id="500">
 					<width>850</width>
 					<height>598</height>
@@ -237,7 +233,7 @@
 						<selected>Skin.HasSetting(widgets.inprogressmovies.enabled)</selected>
 						<enable>Skin.HasSetting(widgets.enabled)</enable>
 						<include>settings_Radiobutton</include>
-					</control>					
+					</control>
 					<!--live tv recordingwidget-->
 					<control type="radiobutton" id="506">
 						<label>$LOCALIZE[32017]</label>
@@ -253,8 +249,7 @@
 						<include>settings_Radiobutton</include>
 					</control>
 				</control>
-
-			<!--ARTWORK-->
+				<!--ARTWORK-->
 				<control type="grouplist" id="600">
 					<width>850</width>
 					<height>598</height>
@@ -361,8 +356,7 @@
 						<visible>Skin.HasSetting(landscapethumb.enable)</visible>
 					</control>
 				</control>
-
-			<!--VIEW SETTINGS-->					
+				<!--VIEW SETTINGS-->
 				<control type="grouplist" id="700">
 					<width>850</width>
 					<height>598</height>
@@ -454,8 +448,7 @@
 						<include>settings_Radiobutton</include>
 					</control>
 				</control>
-
-			<!--ADDONS-->
+				<!--ADDONS-->
 				<control type="grouplist" id="800">
 					<width>850</width>
 					<height>598</height>
@@ -513,8 +506,7 @@
 						<enable>System.HasAddon(script.tvtunes)</enable>
 					</control>
 				</control>
-
-			<!--OTHER-->
+				<!--OTHER-->
 				<control type="grouplist" id="900">
 					<width>850</width>
 					<height>598</height>
@@ -531,7 +523,8 @@
 						<onclick>Skin.ToggleSetting(globalGlass.disable)</onclick>
 						<selected>Skin.HasSetting(globalGlass.disable)</selected>
 						<include>settings_Radiobutton</include>
-					</control><!--keyboard-->
+					</control>
+					<!--keyboard-->
 					<control type="radiobutton" id="902">
 						<label>$LOCALIZE[31263]</label>
 						<onclick>Skin.ToggleSetting(keyboard.enable)</onclick>
@@ -561,8 +554,7 @@
 						<include>settings_Listbutton</include>
 					</control>
 				</control>
-
-			<!--SKIN CREDITS-->			
+				<!--SKIN CREDITS-->
 				<control type="grouplist" id="1000">
 					<width>850</width>
 					<height>598</height>
@@ -581,7 +573,7 @@
 					</control>
 					<control type="button" id="1002">
 						<label>Sebastian Saenger (except the reused reFocus parts :P)</label>
-						<onclick>noop</onclick> 
+						<onclick>noop</onclick>
 						<include>settings_Listbutton</include>
 					</control>
 					<!--
@@ -605,7 +597,7 @@
 					</control>
 					<control type="button" id="1006">
 						<label>Jeroen Pardon for making the skin reFocus - the base I choosed for creating this skin</label>
-						<onclick>noop</onclick> 
+						<onclick>noop</onclick>
 						<include>settings_Listbutton</include>
 					</control>
 					<control type="button" id="1007">
@@ -616,12 +608,12 @@
 					</control>
 					<control type="button" id="1008">
 						<label>Climacons by Adam Whitcroft - [B]adamwhitcroft.com/climacons[/B]</label>
-						<onclick>noop</onclick> 
+						<onclick>noop</onclick>
 						<include>settings_Listbutton</include>
 					</control>
 					<control type="button" id="1008">
 						<label>reFocus skin by Jeroen Pardon</label>
-						<onclick>noop</onclick> 
+						<onclick>noop</onclick>
 						<include>settings_Listbutton</include>
 					</control>
 					<control type="button" id="10010">
@@ -630,7 +622,6 @@
 						<textcolor>Color2</textcolor>
 						<include>settings_Listbutton</include>
 					</control>
-
 					<control type="group">
 						<height>44</height>
 						<control type="grouplist">
@@ -639,7 +630,7 @@
 							<control type="button" id="1011">
 								<label>[B]English: [/B]Sebastian Saenger</label>
 								<width>283</width>
-								<onclick>noop</onclick> 
+								<onclick>noop</onclick>
 								<include>settings_Listbutton</include>
 							</control>
 							<!--
@@ -663,7 +654,7 @@
 							<control type="button" id="1011">
 								<label>[B]German: [/B]Sebastian Saenger</label>
 								<width>283</width>
-								<onclick>noop</onclick> 
+								<onclick>noop</onclick>
 								<include>settings_Listbutton</include>
 							</control>
 							<!--<control type="button" id="1011">
@@ -711,7 +702,7 @@
 					</control>
 					<control type="button" id="1041">
 						<label>Please consider supporting the development of xbmc - [B]xbmc.org/contribute/[/B]</label>
-						<onclick>noop</onclick> 
+						<onclick>noop</onclick>
 						<include>settings_Listbutton</include>
 					</control>
 				</control>

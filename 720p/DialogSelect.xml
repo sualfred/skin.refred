@@ -153,7 +153,7 @@
 					</focusedlayout>
 				</control>
 			</control>
-		<!--manual-->
+			<!--manual-->
 			<control type="button" id="5">
 				<left>19</left>
 				<top>480</top>

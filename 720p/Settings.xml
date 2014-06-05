@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
@@ -17,7 +17,7 @@
 				<onup>50</onup>
 				<ondown>50</ondown>
 				<include>global_ListScroll</include>
-				<include>transition_Content</include>	
+				<include>transition_Content</include>
 				<itemlayout width="550" height="100">
 					<control type="image">
 						<width>94</width>
@@ -81,7 +81,7 @@
 						<include>detail_Sub</include>
 					</control>
 				</focusedlayout>
-			 	<content>
+				<content>
 					<item id="1">
 						<label>$LOCALIZE[157]</label>
 						<icon>DefaultVideo.png</icon>
@@ -155,7 +155,7 @@
 						<onclick>ActivateWindow(systeminfo)</onclick>
 					</item>
 				</content>
-			</control>  
+			</control>
 		</control>
 	</controls>
 </window>

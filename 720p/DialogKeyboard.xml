@@ -1,9 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window id="103">
 	<defaultcontrol>300</defaultcontrol>
 	<coordinates>
 		<system>2</system>
-		
 	</coordinates>
 	<include>transition_Dialog</include>
 	<controls>
@@ -13,8 +12,8 @@
 			<include>transition_Dialog</include>
 		</control>
 		<control type="group">
-		<left>256</left>
-		<top>300</top>
+			<left>256</left>
+			<top>300</top>
 			<visible>!Window.IsVisible(numericinput)</visible>
 			<animation effect="slide" start="0,0" end="0,200" time="0" condition="Skin.HasSetting(keyboard.enable)">Conditional</animation>
 			<control type="image" id="1">
@@ -53,15 +52,13 @@
 				<left>19</left>
 				<top>59</top>
 				<width>726</width>
-				<ondown>52</ondown>
-				<onright>8</onright>
 				<align>center</align>
 				<include>dialog_Edit</include>
 			</control>
 			<control type="group" id="9000">
 				<left>19</left>
 				<top>120</top>
-			<!--row 1-->
+				<!--row 1-->
 				<control type="grouplist">
 					<width>726</width>
 					<height>48</height>
@@ -158,7 +155,7 @@
 						</control>
 					</control>
 				</control>
-			<!--row 2-->
+				<!--row 2-->
 				<control type="grouplist">
 					<top>58</top>
 					<width>726</width>
@@ -174,7 +171,6 @@
 						<ondown>302</ondown>
 						<alttexturenofocus border="3">dialogs/button-ac.png</alttexturenofocus>
 						<alttexturefocus border="3">dialogs/button-fo.png</alttexturefocus>
-						<selectedcolor>Selected</selectedcolor>
 						<include>dialog_KeyboardButton</include>
 					</control>
 					<control type="button" id="81">
@@ -248,7 +244,7 @@
 						<include>dialog_KeyboardButton</include>
 					</control>
 				</control>
-			<!--row 3-->
+				<!--row 3-->
 				<control type="grouplist">
 					<top>116</top>
 					<width>726</width>
@@ -319,7 +315,7 @@
 						<onup>80</onup>
 						<ondown>32</ondown>
 						<include>dialog_KeyboardButton</include>
-					</control>	
+					</control>
 					<control type="button" id="300">
 						<description>DONE button</description>
 						<width>98</width>
@@ -329,7 +325,7 @@
 						<include>dialog_KeyboardButton</include>
 					</control>
 				</control>
-			<!--row 4-->
+				<!--row 4-->
 				<control type="grouplist">
 					<top>174</top>
 					<width>726</width>

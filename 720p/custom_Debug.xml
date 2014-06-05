@@ -2,7 +2,6 @@
 <window type="dialog" id="98">
 	<zorder>20</zorder>
 	<visible>!Window.IsVisible(startup) + Skin.HasSetting(dev.overlay)</visible>
-
 	<controls>
 		<!--grid-->
 		<!--<control type="image">
@@ -21,14 +20,12 @@
 				<font>semibold</font>
 				<height>18</height>
 				<textcolor>yellow</textcolor>
-				
 			</control>
 			<control type="label" id="2">
 				<label>$INFO[System.CurrentControl]</label>
 				<font>semibold_Small</font>
 				<height>18</height>
 				<textcolor>yellow</textcolor>
-				
 			</control>
 			<control type="label" id="3">
 				<label>$INFO[Container.FolderName,, - ]$INFO[Container.FolderPath]</label>
@@ -36,14 +33,12 @@
 				<font>semibold_Small</font>
 				<height>18</height>
 				<textcolor>yellow</textcolor>
-				
 			</control>
 			<control type="label" id="4">
 				<label>$INFO[System.ScreenResolution]</label>
 				<font>semibold_Small</font>
 				<height>18</height>
 				<textcolor>yellow</textcolor>
-				
 			</control>
 		</control>
 	</controls>

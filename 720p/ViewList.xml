@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="view_List">
 		<control type="list" id="50">
-			<viewtype label="535">list</viewtype> 	
+			<viewtype label="535">list</viewtype>
 			<left>30</left>
 			<top>90</top>
 			<width>624</width>
@@ -51,89 +51,89 @@
 			</focusedlayout>
 			<itemlayout condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | SubString(Container.FolderPath,playlistvideo://) | [[Container.Content(files) | Container.Content(addons) | Window.IsActive(pictures)] + Container.HasFiles]" width="620" height="67">
 				<control type="group">
-				<control type="label">
-					<left>15</left>
-					<top>6</top>
-					<width>460</width>
-					<height>27</height>
-					<label>$VAR[global_Title]</label>
-					<include>container_Title</include>
-				</control>
-				<control type="label">
-					<left>15</left>
-					<top>28</top>
-					<width>580</width>
-					<label>$VAR[global_Info]</label>
-					<include>container_Sub</include>
-				</control>
-				<control type="image">
-					<left>485</left>
-					<top>9</top>
-					<width>128</width>
-					<height>22</height>
-					<texture>$VAR[global_Rating]</texture>
-					<aspectratio align="right">keep</aspectratio>
-					<visible>!Container.Content(artists) + ![Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(seasons)]</visible>
-				</control>
-				<control type="image">
-					<left>485</left>
-					<top>9</top>
-					<width>128</width>
-					<height>22</height>
-					<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
-					<aspectratio align="right">keep</aspectratio>
-					<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(seasons)]</visible>
-				</control>
-				<control type="group">
-					<left>0</left>
-					<top>13</top>
-					<include>overlay_Watch</include>
-					<visible>!Container.Content(files)</visible>
-				</control>
+					<control type="label">
+						<left>15</left>
+						<top>6</top>
+						<width>460</width>
+						<height>27</height>
+						<label>$VAR[global_Title]</label>
+						<include>container_Title</include>
+					</control>
+					<control type="label">
+						<left>15</left>
+						<top>28</top>
+						<width>580</width>
+						<label>$VAR[global_Info]</label>
+						<include>container_Sub</include>
+					</control>
+					<control type="image">
+						<left>485</left>
+						<top>9</top>
+						<width>128</width>
+						<height>22</height>
+						<texture>$VAR[global_Rating]</texture>
+						<aspectratio align="right">keep</aspectratio>
+						<visible>!Container.Content(artists) + ![Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(seasons)]</visible>
+					</control>
+					<control type="image">
+						<left>485</left>
+						<top>9</top>
+						<width>128</width>
+						<height>22</height>
+						<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
+						<aspectratio align="right">keep</aspectratio>
+						<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(seasons)]</visible>
+					</control>
+					<control type="group">
+						<left>0</left>
+						<top>13</top>
+						<include>overlay_Watch</include>
+						<visible>!Container.Content(files)</visible>
+					</control>
 				</control>
 			</itemlayout>
 			<itemlayout condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists)" width="620" height="67">
 				<control type="group">
-				<left>5</left>
-				<control type="label">
-					<left>25</left>
-					<top>6</top>
-					<width>460</width>
-					<height>27</height>
-					<label>$VAR[global_Title]</label>
-					<include>container_Title</include>
-				</control>
-				<control type="label">
-					<left>25</left>
-					<top>28</top>
-					<width>580</width>
-					<label>$VAR[global_Info]</label>
-					<include>container_Sub</include>
-				</control>
-				<control type="image">
-					<left>485</left>
-					<top>9</top>
-					<width>128</width>
-					<height>22</height>
-					<texture>$VAR[global_Rating]</texture>
-					<aspectratio align="right">keep</aspectratio>
-					<visible>!Container.Content(artists) + ![Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(seasons)]</visible>
-				</control>
-				<control type="image">
-					<left>485</left>
-					<top>9</top>
-					<width>128</width>
-					<height>22</height>
-					<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
-					<aspectratio align="right">keep</aspectratio>
-					<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(seasons)]</visible>
-				</control>
-				<control type="group">
-					<left>0</left>
-					<top>13</top>
-					<include>overlay_Watch</include>
-					<visible>!Container.Content(files)</visible>
-				</control>
+					<left>5</left>
+					<control type="label">
+						<left>25</left>
+						<top>6</top>
+						<width>460</width>
+						<height>27</height>
+						<label>$VAR[global_Title]</label>
+						<include>container_Title</include>
+					</control>
+					<control type="label">
+						<left>25</left>
+						<top>28</top>
+						<width>580</width>
+						<label>$VAR[global_Info]</label>
+						<include>container_Sub</include>
+					</control>
+					<control type="image">
+						<left>485</left>
+						<top>9</top>
+						<width>128</width>
+						<height>22</height>
+						<texture>$VAR[global_Rating]</texture>
+						<aspectratio align="right">keep</aspectratio>
+						<visible>!Container.Content(artists) + ![Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(seasons)]</visible>
+					</control>
+					<control type="image">
+						<left>485</left>
+						<top>9</top>
+						<width>128</width>
+						<height>22</height>
+						<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
+						<aspectratio align="right">keep</aspectratio>
+						<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(seasons)]</visible>
+					</control>
+					<control type="group">
+						<left>0</left>
+						<top>13</top>
+						<include>overlay_Watch</include>
+						<visible>!Container.Content(files)</visible>
+					</control>
 				</control>
 			</itemlayout>
 			<focusedlayout condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | SubString(Container.FolderPath,playlistvideo://) | [[Container.Content(files) | Container.Content(addons) | Window.IsActive(pictures)] + Container.HasFiles]" width="624" height="67">
@@ -315,7 +315,6 @@
 			</focusedlayout>
 		</control>
 	</include>
-
 	<include name="detail_ListMusic">
 		<control type="group">
 			<left>680</left>
@@ -337,7 +336,6 @@
 					<control type="group">
 						<left>7</left>
 						<top>7</top>
-						
 						<control type="image">
 							<centerleft>266</centerleft>
 							<centertop>147.5</centertop>
@@ -363,7 +361,7 @@
 						<control type="textbox">
 							<top>315</top>
 							<width>532</width>
-							<height max="280">auto</height>
+							<height>auto</height>
 							<label>$VAR[global_Plot]</label>
 							<include>detail_Text</include>
 						</control>
@@ -405,7 +403,6 @@
 			</control>
 		</control>
 	</include>
-
 	<include name="detail_ListAddons">
 		<control type="group">
 			<left>680</left>
@@ -446,14 +443,12 @@
 			</control>
 		</control>
 	</include>
-
-<!--BIG LIST-->
+	<!--BIG LIST-->
 	<include name="view_BigList">
 		<control type="group">
 			<include>transition_Content</include>
 			<include>transition_Info</include>
 			<include>toggle_Menu</include>
-			
 			<!--container-->
 			<control type="fixedlist" id="51">
 				<viewtype label="537">biglist</viewtype>
@@ -471,14 +466,14 @@
 				<preloaditems>2</preloaditems>
 				<orientation>vertical</orientation>
 				<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)</visible>
-			<!--landscape layout-->
+				<!--landscape layout-->
 				<itemlayout condition="!SubString(Container.FolderPath,plugin://) + [[Container.Content(movies) | Container.Content(tvshows)] + !Skin.HasSetting(view.biglist.posters)] | Container.Content(episodes)" width="1205" height="154">
 					<include>view_BigList-LandscapeCommons</include>
 				</itemlayout>
 				<focusedlayout condition="!SubString(Container.FolderPath,plugin://) + [[Container.Content(movies) | Container.Content(tvshows)] + !Skin.HasSetting(view.biglist.posters)] | Container.Content(episodes)" width="1205" height="154">
 					<include>view_BigList-LandscapeCommons-fo</include>
 				</focusedlayout>
-			<!--portrait layout-->
+				<!--portrait layout-->
 				<itemlayout condition="[[Container.Content(tvshows) | Container.Content(movies)] + Skin.HasSetting(view.biglist.posters)] | [[Container.Content(tvshows) | Container.Content(movies)] + SubString(Container.FolderPath,plugin://)]" width="1205" height="154">
 					<include>view_BigList-PortraitCommons</include>
 				</itemlayout>
@@ -490,11 +485,9 @@
 	</include>
 	<!--landscape layout commons-->
 	<include name="view_BigList-LandscapeCommons">
-		
 		<control type="group">
 			<left>7</left>
 			<top>7</top>
-			
 			<control type="image">
 				<centerleft>115.5</centerleft>
 				<centertop>65</centertop>
@@ -529,49 +522,47 @@
 				<include>overlay_Watch</include>
 			</control>
 		</control>
-					<control type="group">
-						<left>260</left>
-						<top>4</top>
-						<control type="label">
-							<width>920</width>
-							<label>$VAR[global_Title]</label>
-							<include>container_Title</include>
-						</control>
-						<control type="label">
-							<top>28</top>
-							<width>920</width>
-							<label>$VAR[global_Info]</label>
-							<include>container_Sub</include>
-							<visible>!SubString(Container.FolderPath,plugin)</visible>
-						</control>
-						<control type="label">
-							<top>28</top>
-							<width>920</width>
-							<label>$VAR[global_Info.Addon]</label>
-							<include>container_Sub</include>
-							<visible>SubString(Container.FolderPath,plugin)</visible>
-						</control>
-						<control type="textbox" id="4">
-							<top>66</top>
-							<width>920</width>
-							<height>59</height>
-							<label>$VAR[global_Plot]</label>
-							<include>container_Text</include>
-						</control>
-						<control type="image">
-							<left>800</left>
-							<top>11</top>
-							<width>128</width>
-							<height>22</height>
-							<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
-							<aspectratio align="right">keep</aspectratio>
-							<visible>!IsEmpty(ListItem.Title)</visible>
-						</control>
-					</control>		
+		<control type="group">
+			<left>260</left>
+			<top>4</top>
+			<control type="label">
+				<width>920</width>
+				<label>$VAR[global_Title]</label>
+				<include>container_Title</include>
+			</control>
+			<control type="label">
+				<top>28</top>
+				<width>920</width>
+				<label>$VAR[global_Info]</label>
+				<include>container_Sub</include>
+				<visible>!SubString(Container.FolderPath,plugin)</visible>
+			</control>
+			<control type="label">
+				<top>28</top>
+				<width>920</width>
+				<label>$VAR[global_Info.Addon]</label>
+				<include>container_Sub</include>
+				<visible>SubString(Container.FolderPath,plugin)</visible>
+			</control>
+			<control type="textbox" id="4">
+				<top>66</top>
+				<width>920</width>
+				<height>59</height>
+				<label>$VAR[global_Plot]</label>
+				<include>container_Text</include>
+			</control>
+			<control type="image">
+				<left>800</left>
+				<top>11</top>
+				<width>128</width>
+				<height>22</height>
+				<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
+				<aspectratio align="right">keep</aspectratio>
+				<visible>!IsEmpty(ListItem.Title)</visible>
+			</control>
+		</control>
 	</include>
-	
 	<include name="view_BigList-LandscapeCommons-fo">
-		
 		<control type="group">
 			<left>7</left>
 			<top>7</top>
@@ -618,55 +609,54 @@
 			</control>
 		</control>
 		<control type="group">
-						<left>260</left>
-						<top>4</top>
-						<control type="image">
-								<left>-10</left>
-								<top>3</top>
-								<width>945</width>
-								<height>131</height>
-								<texture colordiffuse="whitetrans">white.png</texture>
-						</control>
-						<control type="label">
-							<width>920</width>
-							<label>$VAR[global_Title]</label>
-							<include>container_Title</include>
-						</control>
-						<control type="label">
-							<top>28</top>
-							<width>920</width>
-							<label>$VAR[global_Info]</label>
-							<include>container_Sub</include>
-							<visible>!SubString(Container.FolderPath,plugin)</visible>
-						</control>
-						<control type="label">
-							<top>28</top>
-							<width>920</width>
-							<label>$VAR[global_Info.Addon]</label>
-							<include>container_Sub</include>
-							<visible>SubString(Container.FolderPath,plugin)</visible>
-						</control>
-						<control type="textbox" id="4">
-							<top>66</top>
-							<width>920</width>
-							<height>59</height>
-							<label>$VAR[global_Plot]</label>
-							<include>container_Text</include>
-						</control>
-						<control type="image">
-							<left>800</left>
-							<top>11</top>
-							<width>128</width>
-							<height>22</height>
-							<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
-							<aspectratio align="right">keep</aspectratio>
-							<visible>!IsEmpty(ListItem.Title)</visible>
-						</control>
-					</control>	
-	</include>	
+			<left>260</left>
+			<top>4</top>
+			<control type="image">
+				<left>-10</left>
+				<top>3</top>
+				<width>945</width>
+				<height>131</height>
+				<texture colordiffuse="whitetrans">white.png</texture>
+			</control>
+			<control type="label">
+				<width>920</width>
+				<label>$VAR[global_Title]</label>
+				<include>container_Title</include>
+			</control>
+			<control type="label">
+				<top>28</top>
+				<width>920</width>
+				<label>$VAR[global_Info]</label>
+				<include>container_Sub</include>
+				<visible>!SubString(Container.FolderPath,plugin)</visible>
+			</control>
+			<control type="label">
+				<top>28</top>
+				<width>920</width>
+				<label>$VAR[global_Info.Addon]</label>
+				<include>container_Sub</include>
+				<visible>SubString(Container.FolderPath,plugin)</visible>
+			</control>
+			<control type="textbox" id="4">
+				<top>66</top>
+				<width>920</width>
+				<height>59</height>
+				<label>$VAR[global_Plot]</label>
+				<include>container_Text</include>
+			</control>
+			<control type="image">
+				<left>800</left>
+				<top>11</top>
+				<width>128</width>
+				<height>22</height>
+				<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
+				<aspectratio align="right">keep</aspectratio>
+				<visible>!IsEmpty(ListItem.Title)</visible>
+			</control>
+		</control>
+	</include>
 	<!--portrait layout commons-->
 	<include name="view_BigList-PortraitCommons">
-		
 		<control type="group">
 			<left>7</left>
 			<top>7</top>
@@ -697,62 +687,57 @@
 				<include>overlay_Watch</include>
 			</control>
 		</control>
-		
 		<control type="group">
-						<left>126</left>
-						<top>4</top>
-						<control type="label">	
-							<width>775</width>
-							<label>$VAR[global_Title]</label>
-							<include>container_Title</include>
-						</control>
-						<control type="label">
-							<top>28</top>
-							<width>775</width>
-							<label>$VAR[global_Info]</label>
-							<include>container_Sub</include>
-							<visible>!SubString(Container.FolderPath,plugin)</visible>
-						</control>
-						<control type="label">
-							<top>28</top>
-							<width>775</width>
-							<label>$VAR[global_Info.Addon]</label>
-							<include>container_Sub</include>
-							<visible>SubString(Container.FolderPath,plugin)</visible>
-						</control>
-						<control type="textbox" id="4">
-							<top>66</top>
-							<width>1075</width>
-							<height>60</height>
-							<label>$VAR[global_Plot]</label>
-							<autoscroll delay="300000" time="1000">!Control.HasFocus(13)</autoscroll>
-							<include>container_Text</include>
-						</control>
-						<control type="image">
-							<left>934</left>
-							<top>11</top>
-							<width>128</width>
-							<height>22</height>
-							<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
-							<aspectratio align="right">keep</aspectratio>
-							<visible>!IsEmpty(ListItem.Title)</visible>
-						</control>
-					</control>	
+			<left>126</left>
+			<top>4</top>
+			<control type="label">
+				<width>775</width>
+				<label>$VAR[global_Title]</label>
+				<include>container_Title</include>
+			</control>
+			<control type="label">
+				<top>28</top>
+				<width>775</width>
+				<label>$VAR[global_Info]</label>
+				<include>container_Sub</include>
+				<visible>!SubString(Container.FolderPath,plugin)</visible>
+			</control>
+			<control type="label">
+				<top>28</top>
+				<width>775</width>
+				<label>$VAR[global_Info.Addon]</label>
+				<include>container_Sub</include>
+				<visible>SubString(Container.FolderPath,plugin)</visible>
+			</control>
+			<control type="textbox" id="4">
+				<top>66</top>
+				<width>1075</width>
+				<height>60</height>
+				<label>$VAR[global_Plot]</label>
+				<autoscroll delay="300000" time="1000">!Control.HasFocus(13)</autoscroll>
+				<include>container_Text</include>
+			</control>
+			<control type="image">
+				<left>934</left>
+				<top>11</top>
+				<width>128</width>
+				<height>22</height>
+				<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
+				<aspectratio align="right">keep</aspectratio>
+				<visible>!IsEmpty(ListItem.Title)</visible>
+			</control>
+		</control>
 	</include>
-	
 	<include name="view_BigList-PortraitCommons-fo">
-		
 		<control type="group">
 			<left>7</left>
 			<top>7</top>
-			
 			<control type="image">
 				<width>104</width>
 				<height>144</height>
 				<texture background="true">white.png</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
-			
 			<control type="image">
 				<left>28</left>
 				<top>41</top>
@@ -761,7 +746,6 @@
 				<include>art_DefaultIcon</include>
 				<colordiffuse>Color5</colordiffuse>
 			</control>
-			
 			<control type="image">
 				<width>104</width>
 				<height>144</height>
@@ -782,101 +766,97 @@
 				<include>overlay_Watch</include>
 			</control>
 		</control>
-		
 		<control type="group">
-						<left>126</left>
-						<top>4</top>
-						<control type="group">
-							<visible>![ControlGroup(6000).HasFocus | ControlGroup(4000).HasFocus]</visible>
-							<control type="image">
-								<left>-5</left>
-								<top>2</top>
-								<width>1075</width>
-								<height>145</height>
-								<texture colordiffuse="whitetrans">white.png</texture>
-							</control>
-							
-							<control type="label">
-								<width>775</width>
-								<label>$VAR[global_Title]</label>
-								<include>container_Title</include>
-							</control>
-							<control type="label">
-								<top>28</top>
-								<width>775</width>
-								<label>$VAR[global_Info]</label>
-								<include>container_Sub</include>
-								<visible>!SubString(Container.FolderPath,plugin)</visible>
-							</control>
-							<control type="label">
-								<top>28</top>
-								<width>775</width>
-								<label>$VAR[global_Info.Addon]</label>
-								<include>container_Sub</include>
-								<visible>SubString(Container.FolderPath,plugin)</visible>
-							</control>
-							<control type="textbox" id="4">
-								<top>66</top>
-								<width>1075</width>
-								<height>60</height>
-								<label>$VAR[global_Plot]</label>
-								<include>autoscroll-plot</include>
-								<include>container_Text</include>
-							</control>
-							<control type="image">
-								<left>934</left>
-								<top>11</top>
-								<width>128</width>
-								<height>22</height>
-								<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>								
-								<aspectratio align="right">keep</aspectratio>
-								<visible>!IsEmpty(ListItem.Title)</visible>
-							</control>
-						</control>
-						<control type="group">
-							<visible>[ControlGroup(6000).HasFocus | ControlGroup(4000).HasFocus]</visible>
-							<control type="label">
-								<width>775</width>
-								<label>$VAR[global_Title]</label>
-								<include>container_Title</include>
-							</control>
-							<control type="label">
-								<top>28</top>
-								<width>775</width>
-								<label>$VAR[global_Info]</label>
-								<include>container_Sub</include>
-								<visible>!SubString(Container.FolderPath,plugin)</visible>
-							</control>
-							<control type="label">
-								<top>28</top>
-								<width>775</width>
-								<label>$VAR[global_Info.Addon]</label>
-								<include>container_Sub</include>
-								<visible>SubString(Container.FolderPath,plugin)</visible>
-							</control>
-							<control type="textbox" id="4">
-								<top>66</top>
-								<width>1075</width>
-								<height>60</height>
-								<label>$VAR[global_Plot]</label>
-								<include>autoscroll-plot</include>
-								<include>container_Text</include>
-							</control>
-							<control type="image">
-								<left>934</left>
-								<top>11</top>
-								<width>128</width>
-								<height>22</height>
-								<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
-								<aspectratio align="right">keep</aspectratio>
-								<visible>!IsEmpty(ListItem.Title)</visible>
-							</control>
-						</control>
-					</control>
-		
+			<left>126</left>
+			<top>4</top>
+			<control type="group">
+				<visible>![ControlGroup(6000).HasFocus | ControlGroup(4000).HasFocus]</visible>
+				<control type="image">
+					<left>-5</left>
+					<top>2</top>
+					<width>1075</width>
+					<height>145</height>
+					<texture colordiffuse="whitetrans">white.png</texture>
+				</control>
+				<control type="label">
+					<width>775</width>
+					<label>$VAR[global_Title]</label>
+					<include>container_Title</include>
+				</control>
+				<control type="label">
+					<top>28</top>
+					<width>775</width>
+					<label>$VAR[global_Info]</label>
+					<include>container_Sub</include>
+					<visible>!SubString(Container.FolderPath,plugin)</visible>
+				</control>
+				<control type="label">
+					<top>28</top>
+					<width>775</width>
+					<label>$VAR[global_Info.Addon]</label>
+					<include>container_Sub</include>
+					<visible>SubString(Container.FolderPath,plugin)</visible>
+				</control>
+				<control type="textbox" id="4">
+					<top>66</top>
+					<width>1075</width>
+					<height>60</height>
+					<label>$VAR[global_Plot]</label>
+					<include>autoscroll-plot</include>
+					<include>container_Text</include>
+				</control>
+				<control type="image">
+					<left>934</left>
+					<top>11</top>
+					<width>128</width>
+					<height>22</height>
+					<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
+					<aspectratio align="right">keep</aspectratio>
+					<visible>!IsEmpty(ListItem.Title)</visible>
+				</control>
+			</control>
+			<control type="group">
+				<visible>[ControlGroup(6000).HasFocus | ControlGroup(4000).HasFocus]</visible>
+				<control type="label">
+					<width>775</width>
+					<label>$VAR[global_Title]</label>
+					<include>container_Title</include>
+				</control>
+				<control type="label">
+					<top>28</top>
+					<width>775</width>
+					<label>$VAR[global_Info]</label>
+					<include>container_Sub</include>
+					<visible>!SubString(Container.FolderPath,plugin)</visible>
+				</control>
+				<control type="label">
+					<top>28</top>
+					<width>775</width>
+					<label>$VAR[global_Info.Addon]</label>
+					<include>container_Sub</include>
+					<visible>SubString(Container.FolderPath,plugin)</visible>
+				</control>
+				<control type="textbox" id="4">
+					<top>66</top>
+					<width>1075</width>
+					<height>60</height>
+					<label>$VAR[global_Plot]</label>
+					<include>autoscroll-plot</include>
+					<include>container_Text</include>
+				</control>
+				<control type="image">
+					<left>934</left>
+					<top>11</top>
+					<width>128</width>
+					<height>22</height>
+					<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
+					<aspectratio align="right">keep</aspectratio>
+					<visible>!IsEmpty(ListItem.Title)</visible>
+				</control>
+			</control>
+		</control>
 	</include>
-
-<!--MUSIC PLAYLIST VIEW-->
+	<!--MUSIC PLAYLIST VIEW-->
 	<include name="view_Playlist-Commons">
 		<control type="group">
 			<control type="image">
@@ -942,7 +922,7 @@
 				</control>
 			</control>
 			<control type="list" id="50">
-				<viewtype label="535">list</viewtype> 	
+				<viewtype label="535">list</viewtype>
 				<top>35</top>
 				<width>1200</width>
 				<height>528</height>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="61">
 	<defaultcontrol always="true">10</defaultcontrol>
 	<onload>SetProperty(HomeConfig,active,Home)</onload>
@@ -7,7 +7,6 @@
 	<coordinates>
 		<system>1</system>
 	</coordinates>
-
 	<controls>
 		<control type="image">
 			<include>screen_Dimensions</include>
@@ -15,12 +14,11 @@
 			<include>transition_Dialog</include>
 		</control>
 		<control type="group">
-		<left>265</left>
-		<top>28</top>
+			<left>265</left>
+			<top>28</top>
 			<include condition="Window.IsVisible(Home)">transition_Dialog-HomeMenuSettings</include>
 			<include condition="!Window.IsVisible(Home)">transition_Dialog</include>
 			<visible>!Window.IsVisible(96) + !Window.IsVisible(10126)</visible>
-			
 			<!-- header -->
 			<control type="label">
 				<label>$LOCALIZE[31210]</label>
@@ -28,9 +26,8 @@
 				<include>dialog_Windowtitle</include>
 			</control>
 			<control type="group">
-				<top>60</top>	
-				
-			<!--button area-->	
+				<top>60</top>
+				<!--button area-->
 				<control type="grouplist" id="10">
 					<width>250</width>
 					<height>535</height>
@@ -47,7 +44,6 @@
 						<onfocus>Skin.SetString(Section,Inprogress)</onfocus>
 						<onclick>Skin.ToggleSetting(homemenu.inprogress.disable)</onclick>
 						<selected>!Skin.HasSetting(homemenu.inprogress.disable)</selected>
-						
 						<radiowidth>24</radiowidth>
 						<include>dialog_Radio-alt</include>
 						<include>dialog_ControlCommons</include>
@@ -100,7 +96,7 @@
 						<radiowidth>24</radiowidth>
 						<include>dialog_Radio-alt</include>
 						<include>dialog_ControlCommons</include>
-					</control>					
+					</control>
 					<control type="radiobutton" id="17">
 						<width>250</width>
 						<label>$LOCALIZE[1]</label>
@@ -184,7 +180,7 @@
 						<selected>!Skin.HasSetting(homemenu.system.disable)</selected>
 						<include>dialog_Radio-alt</include>
 						<include>dialog_ControlCommons</include>
-					</control>					
+					</control>
 					<control type="radiobutton" id="26">
 						<width>250</width>
 						<label>MyMenu</label>
@@ -210,10 +206,9 @@
 						<include>dialog_ControlCommons</include>
 					</control>
 				</control>
-				
-			<!---control area-->	
+				<!---control area-->
 				<control type="group">
-				<!--video submenu-->
+					<!--video submenu-->
 					<control type="grouplist" id="500">
 						<left>270</left>
 						<width>484</width>
@@ -312,7 +307,7 @@
 							<include>dialog_Radio-alt</include>
 						</control>
 					</control>
-				<!--movies submenu-->
+					<!--movies submenu-->
 					<control type="grouplist" id="500">
 						<left>270</left>
 						<width>484</width>
@@ -501,7 +496,7 @@
 							<include>dialog_Radio-alt</include>
 						</control>
 					</control>
-				<!--tv shows submenu-->
+					<!--tv shows submenu-->
 					<control type="grouplist" id="500">
 						<left>270</left>
 						<width>484</width>
@@ -642,7 +637,7 @@
 							<include>dialog_Radio-alt</include>
 						</control>
 					</control>
-				<!--livetv submenu-->
+					<!--livetv submenu-->
 					<control type="grouplist" id="500">
 						<left>270</left>
 						<width>484</width>
@@ -706,7 +701,7 @@
 							<include>dialog_Radio-alt</include>
 						</control>
 					</control>
-				<!--music submenu-->
+					<!--music submenu-->
 					<control type="grouplist" id="500">
 						<left>270</left>
 						<width>484</width>
@@ -772,7 +767,7 @@
 							<selected>Skin.HasSetting(musicmenu.addons)</selected>
 							<include>dialog_Radio-alt</include>
 							<enable>!Skin.HasSetting(homemenu.music.disable)</enable>
-						</control>			
+						</control>
 						<!--music playlists-->
 						<control type="radiobutton" id="508">
 							<label>$LOCALIZE[136]</label>
@@ -810,8 +805,7 @@
 							<enable>!Skin.HasSetting(homemenu.music.disable) + Library.HasContent(musicvideos)</enable>
 						</control>
 					</control>
-
-				<!--pictures submenu-->
+					<!--pictures submenu-->
 					<control type="grouplist" id="500">
 						<left>270</left>
 						<width>484</width>
@@ -851,8 +845,7 @@
 							<include>dialog_Radio-alt</include>
 						</control>
 					</control>
-
-				<!--addons submenu-->
+					<!--addons submenu-->
 					<control type="grouplist" id="500">
 						<left>270</left>
 						<width>484</width>
@@ -983,25 +976,24 @@
 						<include>dialog_Radio-alt</include>
 					</control>
 					<control type="radiobutton" id="508">
-							<label>Background: $INFO[Skin.String(settings.bg]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(settings.bg)</onclick>
-							<onclick>Skin.SetImage(settings.bg)</onclick>
-							<selected>!IsEmpty(Skin.String(settings.bg)</selected>
-							<include>dialog_Radio-alt</include>
+						<label>Background: $INFO[Skin.String(settings.bg]</label>
+						<width>484</width>
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(settings.bg)</onclick>
+						<onclick>Skin.SetImage(settings.bg)</onclick>
+						<selected>!IsEmpty(Skin.String(settings.bg)</selected>
+						<include>dialog_Radio-alt</include>
 					</control>
 					<control type="radiobutton" id="509">
-							<label>Thumb: $INFO[Skin.String(settings.thumb]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(settings.thumb)</onclick>
-							<onclick>Skin.SetImage(settings.thumb)</onclick>
-							<selected>!IsEmpty(Skin.String(settings.thumb)</selected>
-							<include>dialog_Radio-alt</include>
+						<label>Thumb: $INFO[Skin.String(settings.thumb]</label>
+						<width>484</width>
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(settings.thumb)</onclick>
+						<onclick>Skin.SetImage(settings.thumb)</onclick>
+						<selected>!IsEmpty(Skin.String(settings.thumb)</selected>
+						<include>dialog_Radio-alt</include>
 					</control>
 				</control>
-				
 				<!--fav submenu-->
 				<control type="grouplist" id="500">
 					<left>270</left>
@@ -1088,25 +1080,24 @@
 						<include>dialog_Radio-alt</include>
 					</control>
 					<control type="radiobutton" id="509">
-							<label>Background: $INFO[Skin.String(fav.bg]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(fav.bg)</onclick>
-							<onclick>Skin.SetImage(fav.bg)</onclick>
-							<selected>!IsEmpty(Skin.String(fav.bg)</selected>
-							<include>dialog_Radio-alt</include>
+						<label>Background: $INFO[Skin.String(fav.bg]</label>
+						<width>484</width>
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(fav.bg)</onclick>
+						<onclick>Skin.SetImage(fav.bg)</onclick>
+						<selected>!IsEmpty(Skin.String(fav.bg)</selected>
+						<include>dialog_Radio-alt</include>
 					</control>
 					<control type="radiobutton" id="510">
-							<label>Thumb: $INFO[Skin.String(fav.thumb]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(fav.thumb)</onclick>
-							<onclick>Skin.SetImage(fav.thumb)</onclick>
-							<selected>!IsEmpty(Skin.String(fav.thumb)</selected>
-							<include>dialog_Radio-alt</include>
+						<label>Thumb: $INFO[Skin.String(fav.thumb]</label>
+						<width>484</width>
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(fav.thumb)</onclick>
+						<onclick>Skin.SetImage(fav.thumb)</onclick>
+						<selected>!IsEmpty(Skin.String(fav.thumb)</selected>
+						<include>dialog_Radio-alt</include>
 					</control>
 				</control>
-				
 				<!--customb1 submenu-->
 				<control type="grouplist" id="500">
 					<left>270</left>
@@ -1245,9 +1236,8 @@
 						<onclick>RunScript(script.favourites,property=Customb1.8)</onclick>
 						<selected>!IsEmpty(Skin.String(Customb1.8.Label))</selected>
 						<include>dialog_Radio-alt</include>
-					</control>				
+					</control>
 				</control>
-				
 				<!--customb2 submenu-->
 				<control type="grouplist" id="500">
 					<left>270</left>
@@ -1386,10 +1376,8 @@
 						<onclick>RunScript(script.favourites,property=Customb2.8)</onclick>
 						<selected>!IsEmpty(Skin.String(Customb2.8.Label))</selected>
 						<include>dialog_Radio-alt</include>
-					</control>				
+					</control>
 				</control>
-
-
 				<!--other submenu-->
 				<control type="grouplist" id="500">
 					<left>270</left>
@@ -1420,219 +1408,208 @@
 						<include>dialog_Radio-alt</include>
 					</control>
 				</control>
-				
 				<!--weather submenu-->
-					<control type="grouplist" id="500">
-						<left>270</left>
+				<control type="grouplist" id="500">
+					<left>270</left>
+					<width>484</width>
+					<height>535</height>
+					<onleft>10</onleft>
+					<onright>70</onright>
+					<onup>500</onup>
+					<ondown>600</ondown>
+					<itemgap>5</itemgap>
+					<pagecontrol>70</pagecontrol>
+					<visible>Skin.String(Section,Weather)</visible>
+					<!--add-ons-->
+					<control type="radiobutton" id="501">
+						<label>Background: $INFO[Skin.String(weather.bg]</label>
 						<width>484</width>
-						<height>535</height>
-						<onleft>10</onleft>
-						<onright>70</onright>
-						<onup>500</onup>
-						<ondown>600</ondown>
-						<itemgap>5</itemgap>
-						<pagecontrol>70</pagecontrol>
-						<visible>Skin.String(Section,Weather)</visible>
-						<!--add-ons-->
-						<control type="radiobutton" id="501">
-							<label>Background: $INFO[Skin.String(weather.bg]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(weather.bg)</onclick>
-							<onclick>Skin.SetImage(weather.bg)</onclick>
-							<selected>!IsEmpty(Skin.String(weather.bg)</selected>
-							<include>dialog_Radio-alt</include>
-						</control>
-						<control type="radiobutton" id="502">
-							<label>Thumb: $INFO[Skin.String(weather.thumb]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(weather.thumb)</onclick>
-							<onclick>Skin.SetImage(weather.thumb)</onclick>
-							<selected>!IsEmpty(Skin.String(weather.thumb)</selected>
-							<include>dialog_Radio-alt</include>
-						</control>
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(weather.bg)</onclick>
+						<onclick>Skin.SetImage(weather.bg)</onclick>
+						<selected>!IsEmpty(Skin.String(weather.bg)</selected>
+						<include>dialog_Radio-alt</include>
 					</control>
-					
+					<control type="radiobutton" id="502">
+						<label>Thumb: $INFO[Skin.String(weather.thumb]</label>
+						<width>484</width>
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(weather.thumb)</onclick>
+						<onclick>Skin.SetImage(weather.thumb)</onclick>
+						<selected>!IsEmpty(Skin.String(weather.thumb)</selected>
+						<include>dialog_Radio-alt</include>
+					</control>
+				</control>
 				<!--disc submenu-->
-					<control type="grouplist" id="500">
-						<left>270</left>
+				<control type="grouplist" id="500">
+					<left>270</left>
+					<width>484</width>
+					<height>535</height>
+					<onleft>10</onleft>
+					<onright>70</onright>
+					<onup>500</onup>
+					<ondown>600</ondown>
+					<itemgap>5</itemgap>
+					<pagecontrol>70</pagecontrol>
+					<visible>Skin.String(Section,Disc)</visible>
+					<!--add-ons-->
+					<control type="radiobutton" id="501">
+						<label>Background: $INFO[Skin.String(disc.bg]</label>
 						<width>484</width>
-						<height>535</height>
-						<onleft>10</onleft>
-						<onright>70</onright>
-						<onup>500</onup>
-						<ondown>600</ondown>
-						<itemgap>5</itemgap>
-						<pagecontrol>70</pagecontrol>
-						<visible>Skin.String(Section,Disc)</visible>
-						<!--add-ons-->
-						<control type="radiobutton" id="501">
-							<label>Background: $INFO[Skin.String(disc.bg]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(disc.bg)</onclick>
-							<onclick>Skin.SetImage(disc.bg)</onclick>
-							<selected>!IsEmpty(Skin.String(disc.bg)</selected>
-							<include>dialog_Radio-alt</include>
-						</control>
-						<control type="radiobutton" id="502">
-							<label>Thumb: $INFO[Skin.String(disc.thumb]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(disc.thumb)</onclick>
-							<onclick>Skin.SetImage(disc.thumb)</onclick>
-							<selected>!IsEmpty(Skin.String(disc.thumb)</selected>
-							<include>dialog_Radio-alt</include>
-						</control>
-					</control>	
-					
-					<!--search submenu-->
-					<control type="grouplist" id="500">
-						<left>270</left>
-						<width>484</width>
-						<height>535</height>
-						<onleft>10</onleft>
-						<onright>70</onright>
-						<onup>500</onup>
-						<ondown>600</ondown>
-						<itemgap>5</itemgap>
-						<pagecontrol>70</pagecontrol>
-						<visible>Skin.String(Section,Search)</visible>
-						<!--add-ons-->
-						<control type="radiobutton" id="501">
-							<label>Background: $INFO[Skin.String(search.bg]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(search.bg)</onclick>
-							<onclick>Skin.SetImage(search.bg)</onclick>
-							<selected>!IsEmpty(Skin.String(search.bg)</selected>
-							<include>dialog_Radio-alt</include>
-						</control>
-						<control type="radiobutton" id="502">
-							<label>Thumb: $INFO[Skin.String(search.thumb]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(search.thumb)</onclick>
-							<onclick>Skin.SetImage(search.thumb)</onclick>
-							<selected>!IsEmpty(Skin.String(search.thumb)</selected>
-							<include>dialog_Radio-alt</include>
-						</control>
-					</control>	
-					
-					<!--yt submenu-->
-					<control type="grouplist" id="500">
-						<left>270</left>
-						<width>484</width>
-						<height>535</height>
-						<onleft>10</onleft>
-						<onright>70</onright>
-						<onup>500</onup>
-						<ondown>600</ondown>
-						<itemgap>5</itemgap>
-						<pagecontrol>70</pagecontrol>
-						<visible>Skin.String(Section,Youtube)</visible>
-						<!--add-ons-->
-						<control type="radiobutton" id="501">
-							<label>Background: $INFO[Skin.String(yt.bg]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(yt.bg)</onclick>
-							<onclick>Skin.SetImage(yt.bg)</onclick>
-							<selected>!IsEmpty(Skin.String(yt.bg)</selected>
-							<include>dialog_Radio-alt</include>
-						</control>
-						<control type="radiobutton" id="502">
-							<label>Thumb: $INFO[Skin.String(yt.thumb]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(yt.thumb)</onclick>
-							<onclick>Skin.SetImage(yt.thumb)</onclick>
-							<selected>!IsEmpty(Skin.String(yt.thumb)</selected>
-							<include>dialog_Radio-alt</include>
-						</control>
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(disc.bg)</onclick>
+						<onclick>Skin.SetImage(disc.bg)</onclick>
+						<selected>!IsEmpty(Skin.String(disc.bg)</selected>
+						<include>dialog_Radio-alt</include>
 					</control>
-
-					<!--power submenu-->
-					<control type="grouplist" id="500">
-						<left>270</left>
+					<control type="radiobutton" id="502">
+						<label>Thumb: $INFO[Skin.String(disc.thumb]</label>
 						<width>484</width>
-						<height>535</height>
-						<onleft>10</onleft>
-						<onright>70</onright>
-						<onup>500</onup>
-						<ondown>600</ondown>
-						<itemgap>5</itemgap>
-						<pagecontrol>70</pagecontrol>
-						<visible>Skin.String(Section,Power)</visible>
-						<!--add-ons-->
-						<control type="radiobutton" id="501">
-							<label>Background: $INFO[Skin.String(power.bg]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(power.bg)</onclick>
-							<onclick>Skin.SetImage(power.bg)</onclick>
-							<selected>!IsEmpty(Skin.String(power.bg)</selected>
-							<include>dialog_Radio-alt</include>
-						</control>
-						<control type="radiobutton" id="502">
-							<label>Thumb: $INFO[Skin.String(power.thumb]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(power.thumb)</onclick>
-							<onclick>Skin.SetImage(power.thumb)</onclick>
-							<selected>!IsEmpty(Skin.String(power.thumb)</selected>
-							<include>dialog_Radio-alt</include>
-						</control>
-					</control>					
-					
-					<!--programms submenu-->
-					<control type="grouplist" id="500">
-						<left>270</left>
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(disc.thumb)</onclick>
+						<onclick>Skin.SetImage(disc.thumb)</onclick>
+						<selected>!IsEmpty(Skin.String(disc.thumb)</selected>
+						<include>dialog_Radio-alt</include>
+					</control>
+				</control>
+				<!--search submenu-->
+				<control type="grouplist" id="500">
+					<left>270</left>
+					<width>484</width>
+					<height>535</height>
+					<onleft>10</onleft>
+					<onright>70</onright>
+					<onup>500</onup>
+					<ondown>600</ondown>
+					<itemgap>5</itemgap>
+					<pagecontrol>70</pagecontrol>
+					<visible>Skin.String(Section,Search)</visible>
+					<!--add-ons-->
+					<control type="radiobutton" id="501">
+						<label>Background: $INFO[Skin.String(search.bg]</label>
 						<width>484</width>
-						<height>535</height>
-						<onleft>10</onleft>
-						<onright>70</onright>
-						<onup>500</onup>
-						<ondown>600</ondown>
-						<itemgap>5</itemgap>
-						<pagecontrol>70</pagecontrol>
-						<visible>Skin.String(Section,Programs)</visible>
-						<!--add-ons-->
-						<control type="radiobutton" id="501">
-							<label>Background: $INFO[Skin.String(programs.bg]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(programs.bg)</onclick>
-							<onclick>Skin.SetImage(programs.bg)</onclick>
-							<selected>!IsEmpty(Skin.String(programs.bg)</selected>
-							<include>dialog_Radio-alt</include>
-						</control>
-						<control type="radiobutton" id="502">
-							<label>Thumb: $INFO[Skin.String(programs.thumb]</label>
-							<width>484</width>
-							<textwidth>400</textwidth>
-							<onclick>Skin.Reset(programs.thumb)</onclick>
-							<onclick>Skin.SetImage(programs.thumb)</onclick>
-							<selected>!IsEmpty(Skin.String(programs.thumb)</selected>
-							<include>dialog_Radio-alt</include>
-						</control>
-					</control>	
-					
-					
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(search.bg)</onclick>
+						<onclick>Skin.SetImage(search.bg)</onclick>
+						<selected>!IsEmpty(Skin.String(search.bg)</selected>
+						<include>dialog_Radio-alt</include>
+					</control>
+					<control type="radiobutton" id="502">
+						<label>Thumb: $INFO[Skin.String(search.thumb]</label>
+						<width>484</width>
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(search.thumb)</onclick>
+						<onclick>Skin.SetImage(search.thumb)</onclick>
+						<selected>!IsEmpty(Skin.String(search.thumb)</selected>
+						<include>dialog_Radio-alt</include>
+					</control>
+				</control>
+				<!--yt submenu-->
+				<control type="grouplist" id="500">
+					<left>270</left>
+					<width>484</width>
+					<height>535</height>
+					<onleft>10</onleft>
+					<onright>70</onright>
+					<onup>500</onup>
+					<ondown>600</ondown>
+					<itemgap>5</itemgap>
+					<pagecontrol>70</pagecontrol>
+					<visible>Skin.String(Section,Youtube)</visible>
+					<!--add-ons-->
+					<control type="radiobutton" id="501">
+						<label>Background: $INFO[Skin.String(yt.bg]</label>
+						<width>484</width>
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(yt.bg)</onclick>
+						<onclick>Skin.SetImage(yt.bg)</onclick>
+						<selected>!IsEmpty(Skin.String(yt.bg)</selected>
+						<include>dialog_Radio-alt</include>
+					</control>
+					<control type="radiobutton" id="502">
+						<label>Thumb: $INFO[Skin.String(yt.thumb]</label>
+						<width>484</width>
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(yt.thumb)</onclick>
+						<onclick>Skin.SetImage(yt.thumb)</onclick>
+						<selected>!IsEmpty(Skin.String(yt.thumb)</selected>
+						<include>dialog_Radio-alt</include>
+					</control>
+				</control>
+				<!--power submenu-->
+				<control type="grouplist" id="500">
+					<left>270</left>
+					<width>484</width>
+					<height>535</height>
+					<onleft>10</onleft>
+					<onright>70</onright>
+					<onup>500</onup>
+					<ondown>600</ondown>
+					<itemgap>5</itemgap>
+					<pagecontrol>70</pagecontrol>
+					<visible>Skin.String(Section,Power)</visible>
+					<!--add-ons-->
+					<control type="radiobutton" id="501">
+						<label>Background: $INFO[Skin.String(power.bg]</label>
+						<width>484</width>
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(power.bg)</onclick>
+						<onclick>Skin.SetImage(power.bg)</onclick>
+						<selected>!IsEmpty(Skin.String(power.bg)</selected>
+						<include>dialog_Radio-alt</include>
+					</control>
+					<control type="radiobutton" id="502">
+						<label>Thumb: $INFO[Skin.String(power.thumb]</label>
+						<width>484</width>
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(power.thumb)</onclick>
+						<onclick>Skin.SetImage(power.thumb)</onclick>
+						<selected>!IsEmpty(Skin.String(power.thumb)</selected>
+						<include>dialog_Radio-alt</include>
+					</control>
+				</control>
+				<!--programms submenu-->
+				<control type="grouplist" id="500">
+					<left>270</left>
+					<width>484</width>
+					<height>535</height>
+					<onleft>10</onleft>
+					<onright>70</onright>
+					<onup>500</onup>
+					<ondown>600</ondown>
+					<itemgap>5</itemgap>
+					<pagecontrol>70</pagecontrol>
+					<visible>Skin.String(Section,Programs)</visible>
+					<!--add-ons-->
+					<control type="radiobutton" id="501">
+						<label>Background: $INFO[Skin.String(programs.bg]</label>
+						<width>484</width>
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(programs.bg)</onclick>
+						<onclick>Skin.SetImage(programs.bg)</onclick>
+						<selected>!IsEmpty(Skin.String(programs.bg)</selected>
+						<include>dialog_Radio-alt</include>
+					</control>
+					<control type="radiobutton" id="502">
+						<label>Thumb: $INFO[Skin.String(programs.thumb]</label>
+						<width>484</width>
+						<textwidth>400</textwidth>
+						<onclick>Skin.Reset(programs.thumb)</onclick>
+						<onclick>Skin.SetImage(programs.thumb)</onclick>
+						<selected>!IsEmpty(Skin.String(programs.thumb)</selected>
+						<include>dialog_Radio-alt</include>
+					</control>
+				</control>
 			</control>
-
 			<!--pagecontrol-->
 			<control type="scrollbar" id="70">
 				<left>758</left>
 				<top>60</top>
-				<left>500</left>
 				<height>535</height>
 				<onleft>500</onleft>
 				<onright>80</onright>
 				<include>dialog_Scrollbar</include>
 			</control>
-			
 			<control type="scrollbar" id="71">
 				<left>253</left>
 				<top>60</top>
@@ -1641,7 +1618,6 @@
 				<onright>80</onright>-->
 				<include>dialog_Scrollbar</include>
 			</control>
-
 			<!--ok-->
 			<control type="button" id="80">
 				<left>634</left>

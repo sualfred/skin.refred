@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">34</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
@@ -9,7 +9,7 @@
 		<top>68</top>
 	</coordinates>
 	<controls>
-		<control type="group">			
+		<control type="group">
 			<control type="image">
 				<width>900</width>
 				<height>585</height>
@@ -27,7 +27,7 @@
 				<include>dialog_Windowtitle</include>
 				<visible>!IsEmpty(Window.Property(IsRadio))</visible>
 			</control>
-		<!--main-->
+			<!--main-->
 			<control type="group">
 				<left>4</left>
 				<top>60</top>
@@ -48,7 +48,7 @@
 					<include>dialog_ControlCommons</include>
 					<include>dialog_Spin</include>
 				</control>
-			<!--left pane-->
+				<!--left pane-->
 				<control type="group" id="6000">
 					<top>40</top>
 					<control type="image">
@@ -255,10 +255,10 @@
 						</control>
 					</control>
 				</control>
-			<!--right pane-->
+				<!--right pane-->
 				<control type="group">
 					<left>446</left>
-					<top>40</top>		
+					<top>40</top>
 					<control type="grouplist" id="8000">
 						<width>446</width>
 						<height>600</height>
@@ -268,51 +268,51 @@
 						<ondown>5</ondown>
 						<itemgap>0</itemgap>
 						<!--active-->
-						<control type="radiobutton" id ="7">
+						<control type="radiobutton" id="7">
 							<label>$LOCALIZE[19074]</label>
 							<width>446</width>
 							<include>dialog_Radio</include>
 						</control>
 						<!--channel name-->
-						<control type="edit" id ="8">
+						<control type="edit" id="8">
 							<label>19201</label>
 							<width>446</width>
 							<include>dialog_ControlCommons</include>
 						</control>
 						<!--client-->
-						<control type="label" id ="11">
+						<control type="label" id="11">
 							<label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>
 							<width>446</width>
 							<textcolor>Disabled</textcolor>
 							<include>dialog_ControlCommons</include>
 						</control>
 						<!--activate epg-->
-						<control type="radiobutton" id ="12">
+						<control type="radiobutton" id="12">
 							<label>$LOCALIZE[19206]</label>
 							<width>446</width>
 							<include>dialog_Radio</include>
 						</control>
 						<!--epg source-->
-						<control type="spincontrolex" id ="13">
+						<control type="spincontrolex" id="13">
 							<label>$LOCALIZE[19200]</label>
 							<width>446</width>
 							<include>dialog_ControlCommons</include>
 							<include>dialog_Spin</include>
 						</control>
 						<!--parental locked-->
-						<control type="radiobutton" id ="14">
+						<control type="radiobutton" id="14">
 							<label>$LOCALIZE[19267]</label>
 							<width>446</width>
 							<include>dialog_Radio</include>
 						</control>
 						<!--channel icon label-->
-						<control type="button" id ="9">
+						<control type="button" id="9">
 							<label>$LOCALIZE[19202]</label>
 							<width>446</width>
 							<include>dialog_ControlCommons</include>
 						</control>
 						<!--channel icon-->
-						<control type="image" id ="10">
+						<control type="image" id="10">
 							<width>446</width>
 							<height>119</height>
 							<aspectratio align="center">keep</aspectratio>
@@ -332,12 +332,12 @@
 					</control>
 				</control>
 			</control>
-		<!--window controls-->
+			<!--window controls-->
 			<control type="group" id="9000">
 				<left>19</left>
 				<top>520</top>
 				<!--group manager-->
-				<control type="button" id ="30">
+				<control type="button" id="30">
 					<width>200</width>
 					<label>$LOCALIZE[19205]</label>
 					<onleft>6</onleft>

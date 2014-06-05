@@ -1,455 +1,448 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="home_Background">	
+	<include name="home_Background">
 		<!-- home background logic -->
-			<control type="group">	
-				<!-- global backgrounds -->
-				<control type="group">
+		<control type="group">
+			<!-- global backgrounds -->
+			<control type="group">
 				<visible>Skin.HasSetting(ownbg.enabled) + [!IsEmpty(Skin.String(homesingle.bg)) | !IsEmpty(Skin.String(homemulti.bg))]</visible>
-					<control type="image">
-						<texture background="true" fallback="backgrounds/fallback/fallback.jpg">$INFO[Skin.String(homesingle.bg)]</texture>
-						<fadetime>1000</fadetime>
-						<include>transition_Content</include>
-						<visible>!IsEmpty(Skin.String(homesingle.bg))</visible>
-					</control>					
-					<control type="multiimage">
-						<include>screen_Dimensions</include>
-						<aspectratio>scale</aspectratio>
-						<imagepath background="true">$INFO[Skin.String(homemulti.bg)]</imagepath>
-						<timeperimage>10000</timeperimage>
-						<fadetime>850</fadetime>
-						<randomize>true</randomize>
-						<loop>yes</loop>
-						<include>transition_Content</include>
-						<visible>!IsEmpty(Skin.String(homemulti.bg))</visible>
-					</control>
+				<control type="image">
+					<texture background="true" fallback="backgrounds/fallback/fallback.jpg">$INFO[Skin.String(homesingle.bg)]</texture>
+					<fadetime>1000</fadetime>
+					<include>transition_Content</include>
+					<visible>!IsEmpty(Skin.String(homesingle.bg))</visible>
 				</control>
-				<control type="group">
+				<control type="multiimage">
+					<include>screen_Dimensions</include>
+					<aspectratio>scale</aspectratio>
+					<imagepath background="true">$INFO[Skin.String(homemulti.bg)]</imagepath>
+					<timeperimage>10000</timeperimage>
+					<fadetime>850</fadetime>
+					<randomize>true</randomize>
+					<loop>yes</loop>
+					<include>transition_Content</include>
+					<visible>!IsEmpty(Skin.String(homemulti.bg))</visible>
+				</control>
+			</control>
+			<control type="group">
 				<visible>!Skin.HasSetting(ownbg.enabled) | [IsEmpty(Skin.String(homesingle.bg)) + IsEmpty(Skin.String(homemulti.bg))]</visible>
-					<control type="image">
-						<texture background="true" fallback="backgrounds/fallback/fallback.jpg">$VAR[menu_backgrounds]</texture>
-						<visible>![Container(9110).HasFocus(900) + Skin.HasSetting(fanart.weather) + !IsEmpty(Skin.String(fanart.weather.path))]</visible>
-						<fadetime>1000</fadetime>
-						<include>transition_Content</include>
-					</control>					
-					<control type="multiimage">
-						<include>screen_Dimensions</include>
-						<aspectratio>scale</aspectratio>
-						<imagepath background="true">$INFO[Skin.String(fanart.weather.path)]/$INFO[Weather.FanartCode]</imagepath>
-						<timeperimage>10000</timeperimage>
-						<fadetime>850</fadetime>
-						<randomize>true</randomize>
-						<loop>yes</loop>
-						<include>transition_Content</include>
-						<visible>Container(9110).HasFocus(900) + Skin.HasSetting(fanart.weather) + !IsEmpty(Skin.String(fanart.weather.path))</visible>
-					</control>
+				<control type="image">
+					<texture background="true" fallback="backgrounds/fallback/fallback.jpg">$VAR[menu_backgrounds]</texture>
+					<visible>![Container(9110).HasFocus(900) + Skin.HasSetting(fanart.weather) + !IsEmpty(Skin.String(fanart.weather.path))]</visible>
+					<fadetime>1000</fadetime>
+					<include>transition_Content</include>
 				</control>
-				
-				<!-- background livetv -->
-				<control type="group">
+				<control type="multiimage">
+					<include>screen_Dimensions</include>
+					<aspectratio>scale</aspectratio>
+					<imagepath background="true">$INFO[Skin.String(fanart.weather.path)]/$INFO[Weather.FanartCode]</imagepath>
+					<timeperimage>10000</timeperimage>
+					<fadetime>850</fadetime>
+					<randomize>true</randomize>
+					<loop>yes</loop>
+					<include>transition_Content</include>
+					<visible>Container(9110).HasFocus(900) + Skin.HasSetting(fanart.weather) + !IsEmpty(Skin.String(fanart.weather.path))</visible>
+				</control>
+			</control>
+			<!-- background livetv -->
+			<control type="group">
 				<height>240</height>
 				<include>transition_Toast</include>
-				<visible>VideoPlayer.Content(livetv)</visible>				
-					<!-- cinescope border fix -->
-					<control type="image">
-						<include>screen_Dimensions</include>
-						<texture>white.png</texture>					
-						<colordiffuse>Color5</colordiffuse>
-						<visible>Skin.HasSetting(backgroundvideo.global)</visible>
-					</control>				
-					<control type="videowindow">		
-						<include>screen_Dimensions</include>
-						<visible>Player.HasVideo + Skin.HasSetting(backgroundvideo.global)</visible>
-					</control>				
-					<control type="image">
-						<width>screen_Width</width>
-						<height>screen_Height</height>
-						<texture>overlays/base_color.png</texture>
-						<colordiffuse>$VAR[diffusebg]</colordiffuse>	
-					</control>					
-					<!-- play now widget -->
-					<control type="group">
-						<include>fadeinout</include>
-						<visible>Skin.HasSetting(home.nowplaying) + !Control.IsVisible(5562) + !Control.IsVisible(5563) + !Control.IsVisible(5564) + !Control.IsVisible(5565)</visible>
-						<control type="label">
-							<posx>100</posx>
-							<posy>45</posy>
-							<label>$LOCALIZE[575]</label>
-							<font>light_Header</font>
-						</control>
-						<control type="image">
-								<posx>35</posx>
-								<posy>45</posy>
-								<width>30</width>
-								<height>30</height>
-								<texture colordiffuse="Color1">toast/play.png</texture>
-						</control>
-						<control type="group">						
-							<top>70</top>
-							<control type="label">
-								<width>800</width>
-								<posx>270</posx>
-								<posy>20</posy>
-								<label>$INFO[VideoPlayer.Title]</label>
-								<font>regular_Big-U</font>
-								<textcolor>Color1</textcolor>	
-							</control>
-							<control type="label">
-								<posx>270</posx>
-								<posy>45</posy>
-								<width>auto</width>
-								<label>$INFO[VideoPlayer.ChannelName]</label>
-								<font>regular_Big</font>
-								<textcolor>Color2</textcolor>		
-							</control>
-							<control type="group">
-								<posx>271</posx>
-								<posy>77</posy>
-								<include>osd_Seekbar_Home</include>
-							</control>
-							<control type="textbox">
-								<posx>270</posx>
-								<posy>88</posy>
-								<width>800</width>
-								<height>80</height>
-								<label>[COLOR Color2]$LOCALIZE[19081][/COLOR] [B]$INFO[Player.FinishTime][/B] [COLOR Disabled]•[/COLOR] [COLOR Color2]$LOCALIZE[19031]:[/COLOR] [B]$INFO[VideoPlayer.NextTitle][/B]</label>
-								<font>regular_Small</font>
-								<textcolor>Color1</textcolor>
-							</control>	
-							<control type="image">
-								<posx>100</posx>
-								<posy>20</posy>
-								<width>150</width>
-								<height>115</height>
-								<aligny>top</aligny>
-								<texture colordiffuse="base_5">white.png</texture>
-								<aspectratio>scale</aspectratio>
-								<visible>VideoPlayer.Content(livetv)</visible>
-							</control>
-							<control type="image">
-								<posx>100</posx>
-								<posy>20</posy>
-								<width>150</width>
-								<height>115</height>
-								<aligny>top</aligny>
-								<texture>$INFO[VideoPlayer.Cover]</texture>
-								<aspectratio align="center" aligny="center">keep</aspectratio>
-								<bordersize>5</bordersize>
-								<visible>VideoPlayer.Content(livetv)</visible>
-							</control>
-								<control type="image">
-								<posx>100</posx>
-								<posy>20</posy>
-								<width>150</width>
-								<height>115</height>
-								<aligny>top</aligny>
-								<texture>overlays/cover_overlay.png</texture>
-								<aspectratio>scale</aspectratio>
-								<visible>VideoPlayer.Content(livetv) + !Skin.HasSetting(globalGlass.disable)</visible>
-								</control>	
-						</control>
-					</control>
-											
+				<visible>VideoPlayer.Content(livetv)</visible>
+				<!-- cinescope border fix -->
+				<control type="image">
+					<include>screen_Dimensions</include>
+					<texture>white.png</texture>
+					<colordiffuse>Color5</colordiffuse>
+					<visible>Skin.HasSetting(backgroundvideo.global)</visible>
 				</control>
-				
-				<!-- background movie -->
-				<control type="group">
-					<height>240</height>
-					<include>transition_Toast</include>
-					<visible>Player.HasVideo + !VideoPlayer.Content(livetv) + !VideoPlayer.Content(episodes)</visible>				
-					<!-- cinescope border fix -->
-					<control type="image">
-						<include>screen_Dimensions</include>
-						<texture>white.png</texture>					
-						<colordiffuse>Color5</colordiffuse>
-						<visible>Skin.HasSetting(backgroundvideo.global)</visible>
-					</control>				
-					<control type="videowindow">		
-						<include>screen_Dimensions</include>
-						<visible>Player.HasVideo + Skin.HasSetting(backgroundvideo.global)</visible>
-					</control>				
-					<control type="image">
-						<width>screen_Width</width>
-						<height>screen_Height</height>
-						<texture>overlays/base_color.png</texture>
-						<colordiffuse>$VAR[diffusebg]</colordiffuse>
-					</control>
-					<!-- play now widget -->
-					<control type="group">
-						<include>fadeinout</include>
-						<visible>Skin.HasSetting(home.nowplaying) + !Control.IsVisible(5562) + !Control.IsVisible(5563) + !Control.IsVisible(5564) + !Control.IsVisible(5565)</visible>					
-						<control type="label">
-							<posx>100</posx>
-							<posy>45</posy>
-							<label>$LOCALIZE[575]</label>
-							<font>light_Header</font>
-						</control>
-						<control type="image">
-							<posx>35</posx>
-							<posy>45</posy>
-							<width>30</width>
-							<height>30</height>
-							<texture colordiffuse="Color1">toast/play.png</texture>
-						</control>							
-						<control type="group">
-							<top>70</top>
-							<control type="label">
-								<width>800</width>
-								<posx>270</posx>
-								<posy>20</posy>
-								<label>$INFO[VideoPlayer.Title]</label>
-								<font>regular_Big-U</font>
-								<textcolor>Color1</textcolor>	
-							</control>						
-							<control type="label">
-								<posx>270</posx>
-								<posy>45</posy>
-								<width>auto</width>
-								<label>$INFO[VideoPlayer.Genre] </label>
-								<font>regular_Big</font>
-								<textcolor>Color2</textcolor>	
-							</control>							
-							<control type="group">
-								<posx>271</posx>
-								<posy>77</posy>
-								<include>osd_Seekbar_Home</include>
-							</control>
-							<control type="textbox">
-								<posx>270</posx>
-								<posy>88</posy>
-								<width>800</width>
-								<height>80</height>
-								<label>[COLOR Color2]$LOCALIZE[19081][/COLOR] [B]$INFO[Player.FinishTime][/B] $INFO[VideoPlayer.Rating,[COLOR Disabled]•[/COLOR] [COLOR Color2]$LOCALIZE[563]:[/COLOR][B] ,[/B]]</label>
-								<font>regular_Small</font>
-								<textcolor>Color1</textcolor>
-							</control>												
-							<control type="image">
-								<posx>100</posx>
-								<posy>20</posy>
-								<width>150</width>
-								<height>220</height>
-								<aligny>top</aligny>
-								<texture>$VAR[osd_Art]</texture>
-								<bordertexture colordiffuse="base_5">white.png</bordertexture>
-								<aspectratio>scale</aspectratio>
-								<bordersize>5</bordersize>
-							</control>							
-							<control type="image">
-								<posx>100</posx>
-								<posy>20</posy>
-								<width>150</width>
-								<height>220</height>
-								<aligny>top</aligny>
-								<texture>overlays/cover_overlay.png</texture>
-								<aspectratio>scale</aspectratio>
-								<visible>!Skin.HasSetting(globalGlass.disable)</visible>
-							</control>							
-						</control>
-					</control>
+				<control type="videowindow">
+					<include>screen_Dimensions</include>
+					<visible>Player.HasVideo + Skin.HasSetting(backgroundvideo.global)</visible>
 				</control>
-				
-				<!-- background tvshow -->
+				<control type="image">
+					<width>screen_Width</width>
+					<height>screen_Height</height>
+					<texture>overlays/base_color.png</texture>
+					<colordiffuse>$VAR[diffusebg]</colordiffuse>
+				</control>
+				<!-- play now widget -->
 				<control type="group">
-					<height>240</height>
-					<include>transition_Toast</include>
-					<visible>VideoPlayer.Content(episodes)</visible>				
-					<!-- cinescope border fix -->
-					<control type="image">
-						<include>screen_Dimensions</include>
-						<texture>white.png</texture>					
-						<colordiffuse>Color5</colordiffuse>
-						<visible>Skin.HasSetting(backgroundvideo.global)</visible>
-					</control>				
-					<control type="videowindow">		
-						<include>screen_Dimensions</include>
-						<visible>Player.HasVideo + Skin.HasSetting(backgroundvideo.global)</visible>
-					</control>				
-					<control type="image">
-						<width>screen_Width</width>
-						<height>screen_Height</height>
-						<texture>overlays/base_color.png</texture>
-						<colordiffuse>$VAR[diffusebg]</colordiffuse>
+					<include>fadeinout</include>
+					<visible>Skin.HasSetting(home.nowplaying) + !Control.IsVisible(5562) + !Control.IsVisible(5563) + !Control.IsVisible(5564) + !Control.IsVisible(5565)</visible>
+					<control type="label">
+						<posx>100</posx>
+						<posy>45</posy>
+						<label>$LOCALIZE[575]</label>
+						<font>light_Header</font>
 					</control>
-					<!-- play now widget -->
+					<control type="image">
+						<posx>35</posx>
+						<posy>45</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture colordiffuse="Color1">toast/play.png</texture>
+					</control>
 					<control type="group">
-						<include>fadeinout</include>
-						<visible>Skin.HasSetting(home.nowplaying) + !Control.IsVisible(5562) + !Control.IsVisible(5563) + !Control.IsVisible(5564) + !Control.IsVisible(5565)</visible>
+						<top>70</top>
 						<control type="label">
-							<posx>100</posx>
-							<posy>45</posy>
-							<label>$LOCALIZE[575]</label>
-							<font>light_Header</font>
+							<width>800</width>
+							<posx>270</posx>
+							<posy>20</posy>
+							<label>$INFO[VideoPlayer.Title]</label>
+							<font>regular_Big-U</font>
+							<textcolor>Color1</textcolor>
 						</control>
-						<control type="image">
-								<posx>35</posx>
-								<posy>45</posy>
-								<width>30</width>
-								<height>30</height>
-								<texture colordiffuse="Color1">toast/play.png</texture>
+						<control type="label">
+							<posx>270</posx>
+							<posy>45</posy>
+							<width>auto</width>
+							<label>$INFO[VideoPlayer.ChannelName]</label>
+							<font>regular_Big</font>
+							<textcolor>Color2</textcolor>
 						</control>
 						<control type="group">
-							<top>70</top>					
-							<control type="label">
-								<width>800</width>
-								<posx>270</posx>
-								<posy>20</posy>
-								<label>$INFO[VideoPlayer.Title]</label>
-								<font>regular_Big-U</font>
-								<textcolor>Color1</textcolor>	
-							</control>						
-							<control type="label">
-								<posx>270</posx>
-								<posy>45</posy>
-								<width>auto</width>
-								<label>$INFO[VideoPlayer.TVShowTitle] </label>
-								<font>regular_Big</font>
-								<textcolor>Color2</textcolor>	
-							</control>							
-							<control type="group">
-								<posx>271</posx>
-								<posy>77</posy>
-								<include>osd_Seekbar_Home</include>
-							</control>							
-							<control type="textbox">
-								<posx>270</posx>
-								<posy>88</posy>
-								<width>800</width>
-								<height>80</height>
-								<label>[COLOR Color2]$LOCALIZE[19081][/COLOR] [B]$INFO[Player.FinishTime][/B] [COLOR Disabled]•[/COLOR] [COLOR Color2]iMDB:[/COLOR] [B]$INFO[VideoPlayer.Rating][/B]</label>
-								<font>regular_Small</font>
-								<textcolor>Color1</textcolor>
-							</control>												
-							<control type="image">
-								<posx>100</posx>
-								<posy>20</posy>
-								<width>150</width>
-								<height>220</height>
-								<aligny>top</aligny>
-								<texture>$INFO[Player.Art(tvshow.poster)]</texture>
-								<bordertexture colordiffuse="base_5">white.png</bordertexture>
-								<aspectratio>scale</aspectratio>
-								<bordersize>5</bordersize>
-							</control>							
-							<control type="image">
-							<posx>100</posx>
-								<posy>20</posy>
-								<width>150</width>
-								<height>220</height>
-								<aligny>top</aligny>
-								<texture>overlays/cover_overlay.png</texture>
-								<aspectratio>scale</aspectratio>
-								<visible>!Skin.HasSetting(globalGlass.disable)</visible>
-							</control>
+							<posx>271</posx>
+							<posy>77</posy>
+							<include>osd_Seekbar_Home</include>
 						</control>
-					</control>	
-				</control>
-				
-				<!-- music background -->
-				<control type="group">
-					<visible>Player.HasAudio</visible>
-					<control type="visualisation">
-						<include>screen_Dimensions</include>
-						<visible>Player.HasAudio + Skin.HasSetting(backgroundvideo.global) + [!Skin.HasSetting(fanart.visualization) | Skin.HasSetting(fanart.visualization.blend)]</visible>
-					</control>
-					<control type="image">
-						<include>screen_Dimensions</include>
-						<texture>$VAR[fanart_Fallback.Player]</texture>
-						<animation effect="fade" start="0" end="35" time="0" condition="Skin.HasSetting(fanart.visualization.blend)">Conditional</animation>
-						<visible>[Skin.HasSetting(fanart.visualization) + Skin.HasSetting(artistslideshow.disable) + Skin.HasSetting(backgroundvideo.global)]</visible>
-					</control>
-					<control type="multiimage">
-						<include>screen_Dimensions</include>
-						<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-						<aspectratio>scale</aspectratio>
-						<timeperimage>8000</timeperimage>
-						<fadetime>fadetime_Slideshow</fadetime>
-						<animation effect="fade" start="0" end="35" time="250" condition="Skin.HasSetting(fanart.visualization.blend)">Conditional</animation>
-						<visible>Skin.HasSetting(fanart.visualization) + !Skin.HasSetting(artistslideshow.disable) + Skin.HasSetting(backgroundvideo.global)</visible>
-					</control>
-					<control type="image">
-						<width>screen_Width</width>
-						<height>screen_Height</height>
-						<texture>overlays/base_color.png</texture>
-						<colordiffuse>$VAR[diffusebg]</colordiffuse>
-					</control>
-					<!--play now widget -->
-					<control type="group">
-						<include>fadeinout</include>
-						<visible>Skin.HasSetting(home.nowplaying) + !Control.IsVisible(5562) + !Control.IsVisible(5563) + !Control.IsVisible(5564) + !Control.IsVisible(5565)</visible>
-						<control type="label">
-							<posx>100</posx>
-							<posy>45</posy>
-							<label>$LOCALIZE[575]</label>
-							<font>light_Header</font>
+						<control type="textbox">
+							<posx>270</posx>
+							<posy>88</posy>
+							<width>800</width>
+							<height>80</height>
+							<label>[COLOR Color2]$LOCALIZE[19081][/COLOR] [B]$INFO[Player.FinishTime][/B] [COLOR Disabled]•[/COLOR] [COLOR Color2]$LOCALIZE[19031]:[/COLOR] [B]$INFO[VideoPlayer.NextTitle][/B]</label>
+							<font>regular_Small</font>
+							<textcolor>Color1</textcolor>
 						</control>
 						<control type="image">
-								<posx>35</posx>
-								<posy>45</posy>
-								<width>30</width>
-								<height>30</height>
-								<texture colordiffuse="Color1">toast/play.png</texture>
-						</control>							
-						<control type="group">
-							<top>70</top>
-							<control type="label">
-								<width>800</width>
-								<posx>270</posx>
-								<posy>20</posy>
-								<label>$INFO[MusicPlayer.Title]</label>
-								<font>regular_Big-U</font>
-								<textcolor>Color1</textcolor>	
-							</control>						
-							<control type="label">
-								<posx>270</posx>
-								<posy>45</posy>
-								<width>auto</width>
-								<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, [COLOR Disabled]•[/COLOR] [COLOR Color1]$LOCALIZE[558]:[/COLOR] ,]</label>
-								<font>regular_Big</font>
-								<textcolor>Color2</textcolor>	
-							</control>							
-							<control type="group">
-								<posx>271</posx>
-								<posy>77</posy>
-								<include>osd_Seekbar_Home</include>
-								<visible>!IsEmpty(Player.TimeRemaining)</visible>
-							</control>							
-							<control type="textbox">
-								<posx>270</posx>
-								<posy>88</posy>
-								<width>800</width>
-								<height>80</height>
-								<label>$INFO[Player.TimeRemaining,[COLOR Color2]$LOCALIZE[19081][/COLOR] [B]-,[/B] [COLOR Disabled]•[/COLOR] ][COLOR Color2]$LOCALIZE[19031]:[/COLOR] [B]$INFO[MusicPlayer.Offset(1).Artist,]$INFO[MusicPlayer.Offset(1).Title, • ][/B] [COLOR Color2]($INFO[MusicPlayer.PlaylistPosition,]$INFO[MusicPlayer.PlaylistLength,/])[/COLOR]</label>
-								<font>regular_Small</font>
-								<textcolor>Color1</textcolor>
-								<visible>!IsEmpty(Player.TimeRemaining)</visible>
-							</control>												
-							<control type="image">
-								<posx>100</posx>
-								<posy>20</posy>
-								<width>150</width>
-								<height>150</height>
-								<aligny>top</aligny>
-								<texture>$INFO[MusicPlayer.Cover]</texture>
-								<aspectratio>scale</aspectratio>
-								<include>bordertrans</include>
-							</control>							
-							<control type="image">
-								<posx>100</posx>
-								<posy>20</posy>
-								<width>150</width>
-								<height>150</height>
-								<aligny>top</aligny>
-								<texture>overlays/cover_overlay.png</texture>
-								<aspectratio>scale</aspectratio>
-								<visible>!Skin.HasSetting(globalGlass.disable)</visible>
-							</control>							
-						</control>	
+							<posx>100</posx>
+							<posy>20</posy>
+							<width>150</width>
+							<height>115</height>
+							<aligny>top</aligny>
+							<texture colordiffuse="base_5">white.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>VideoPlayer.Content(livetv)</visible>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<posy>20</posy>
+							<width>150</width>
+							<height>115</height>
+							<aligny>top</aligny>
+							<texture>$INFO[VideoPlayer.Cover]</texture>
+							<aspectratio align="center" aligny="center">keep</aspectratio>
+							<bordersize>5</bordersize>
+							<visible>VideoPlayer.Content(livetv)</visible>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<posy>20</posy>
+							<width>150</width>
+							<height>115</height>
+							<aligny>top</aligny>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>VideoPlayer.Content(livetv) + !Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
 					</control>
 				</control>
 			</control>
+			<!-- background movie -->
+			<control type="group">
+				<height>240</height>
+				<include>transition_Toast</include>
+				<visible>Player.HasVideo + !VideoPlayer.Content(livetv) + !VideoPlayer.Content(episodes)</visible>
+				<!-- cinescope border fix -->
+				<control type="image">
+					<include>screen_Dimensions</include>
+					<texture>white.png</texture>
+					<colordiffuse>Color5</colordiffuse>
+					<visible>Skin.HasSetting(backgroundvideo.global)</visible>
+				</control>
+				<control type="videowindow">
+					<include>screen_Dimensions</include>
+					<visible>Player.HasVideo + Skin.HasSetting(backgroundvideo.global)</visible>
+				</control>
+				<control type="image">
+					<width>screen_Width</width>
+					<height>screen_Height</height>
+					<texture>overlays/base_color.png</texture>
+					<colordiffuse>$VAR[diffusebg]</colordiffuse>
+				</control>
+				<!-- play now widget -->
+				<control type="group">
+					<include>fadeinout</include>
+					<visible>Skin.HasSetting(home.nowplaying) + !Control.IsVisible(5562) + !Control.IsVisible(5563) + !Control.IsVisible(5564) + !Control.IsVisible(5565)</visible>
+					<control type="label">
+						<posx>100</posx>
+						<posy>45</posy>
+						<label>$LOCALIZE[575]</label>
+						<font>light_Header</font>
+					</control>
+					<control type="image">
+						<posx>35</posx>
+						<posy>45</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture colordiffuse="Color1">toast/play.png</texture>
+					</control>
+					<control type="group">
+						<top>70</top>
+						<control type="label">
+							<width>800</width>
+							<posx>270</posx>
+							<posy>20</posy>
+							<label>$INFO[VideoPlayer.Title]</label>
+							<font>regular_Big-U</font>
+							<textcolor>Color1</textcolor>
+						</control>
+						<control type="label">
+							<posx>270</posx>
+							<posy>45</posy>
+							<width>auto</width>
+							<label>$INFO[VideoPlayer.Genre] </label>
+							<font>regular_Big</font>
+							<textcolor>Color2</textcolor>
+						</control>
+						<control type="group">
+							<posx>271</posx>
+							<posy>77</posy>
+							<include>osd_Seekbar_Home</include>
+						</control>
+						<control type="textbox">
+							<posx>270</posx>
+							<posy>88</posy>
+							<width>800</width>
+							<height>80</height>
+							<label>[COLOR Color2]$LOCALIZE[19081][/COLOR] [B]$INFO[Player.FinishTime][/B] $INFO[VideoPlayer.Rating,[COLOR Disabled]•[/COLOR] [COLOR Color2]$LOCALIZE[563]:[/COLOR][B] ,[/B]]</label>
+							<font>regular_Small</font>
+							<textcolor>Color1</textcolor>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<posy>20</posy>
+							<width>150</width>
+							<height>220</height>
+							<aligny>top</aligny>
+							<texture>$VAR[osd_Art]</texture>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<aspectratio>scale</aspectratio>
+							<bordersize>5</bordersize>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<posy>20</posy>
+							<width>150</width>
+							<height>220</height>
+							<aligny>top</aligny>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+					</control>
+				</control>
+			</control>
+			<!-- background tvshow -->
+			<control type="group">
+				<height>240</height>
+				<include>transition_Toast</include>
+				<visible>VideoPlayer.Content(episodes)</visible>
+				<!-- cinescope border fix -->
+				<control type="image">
+					<include>screen_Dimensions</include>
+					<texture>white.png</texture>
+					<colordiffuse>Color5</colordiffuse>
+					<visible>Skin.HasSetting(backgroundvideo.global)</visible>
+				</control>
+				<control type="videowindow">
+					<include>screen_Dimensions</include>
+					<visible>Player.HasVideo + Skin.HasSetting(backgroundvideo.global)</visible>
+				</control>
+				<control type="image">
+					<width>screen_Width</width>
+					<height>screen_Height</height>
+					<texture>overlays/base_color.png</texture>
+					<colordiffuse>$VAR[diffusebg]</colordiffuse>
+				</control>
+				<!-- play now widget -->
+				<control type="group">
+					<include>fadeinout</include>
+					<visible>Skin.HasSetting(home.nowplaying) + !Control.IsVisible(5562) + !Control.IsVisible(5563) + !Control.IsVisible(5564) + !Control.IsVisible(5565)</visible>
+					<control type="label">
+						<posx>100</posx>
+						<posy>45</posy>
+						<label>$LOCALIZE[575]</label>
+						<font>light_Header</font>
+					</control>
+					<control type="image">
+						<posx>35</posx>
+						<posy>45</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture colordiffuse="Color1">toast/play.png</texture>
+					</control>
+					<control type="group">
+						<top>70</top>
+						<control type="label">
+							<width>800</width>
+							<posx>270</posx>
+							<posy>20</posy>
+							<label>$INFO[VideoPlayer.Title]</label>
+							<font>regular_Big-U</font>
+							<textcolor>Color1</textcolor>
+						</control>
+						<control type="label">
+							<posx>270</posx>
+							<posy>45</posy>
+							<width>auto</width>
+							<label>$INFO[VideoPlayer.TVShowTitle] </label>
+							<font>regular_Big</font>
+							<textcolor>Color2</textcolor>
+						</control>
+						<control type="group">
+							<posx>271</posx>
+							<posy>77</posy>
+							<include>osd_Seekbar_Home</include>
+						</control>
+						<control type="textbox">
+							<posx>270</posx>
+							<posy>88</posy>
+							<width>800</width>
+							<height>80</height>
+							<label>[COLOR Color2]$LOCALIZE[19081][/COLOR] [B]$INFO[Player.FinishTime][/B] [COLOR Disabled]•[/COLOR] [COLOR Color2]iMDB:[/COLOR] [B]$INFO[VideoPlayer.Rating][/B]</label>
+							<font>regular_Small</font>
+							<textcolor>Color1</textcolor>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<posy>20</posy>
+							<width>150</width>
+							<height>220</height>
+							<aligny>top</aligny>
+							<texture>$INFO[Player.Art(tvshow.poster)]</texture>
+							<bordertexture colordiffuse="base_5">white.png</bordertexture>
+							<aspectratio>scale</aspectratio>
+							<bordersize>5</bordersize>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<posy>20</posy>
+							<width>150</width>
+							<height>220</height>
+							<aligny>top</aligny>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+					</control>
+				</control>
+			</control>
+			<!-- music background -->
+			<control type="group">
+				<visible>Player.HasAudio</visible>
+				<control type="visualisation">
+					<include>screen_Dimensions</include>
+					<visible>Player.HasAudio + Skin.HasSetting(backgroundvideo.global) + [!Skin.HasSetting(fanart.visualization) | Skin.HasSetting(fanart.visualization.blend)]</visible>
+				</control>
+				<control type="image">
+					<include>screen_Dimensions</include>
+					<texture>$VAR[fanart_Fallback.Player]</texture>
+					<animation effect="fade" start="0" end="35" time="0" condition="Skin.HasSetting(fanart.visualization.blend)">Conditional</animation>
+					<visible>[Skin.HasSetting(fanart.visualization) + Skin.HasSetting(artistslideshow.disable) + Skin.HasSetting(backgroundvideo.global)]</visible>
+				</control>
+				<control type="multiimage">
+					<include>screen_Dimensions</include>
+					<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+					<aspectratio>scale</aspectratio>
+					<timeperimage>8000</timeperimage>
+					<fadetime>fadetime_Slideshow</fadetime>
+					<animation effect="fade" start="0" end="35" time="250" condition="Skin.HasSetting(fanart.visualization.blend)">Conditional</animation>
+					<visible>Skin.HasSetting(fanart.visualization) + !Skin.HasSetting(artistslideshow.disable) + Skin.HasSetting(backgroundvideo.global)</visible>
+				</control>
+				<control type="image">
+					<width>screen_Width</width>
+					<height>screen_Height</height>
+					<texture>overlays/base_color.png</texture>
+					<colordiffuse>$VAR[diffusebg]</colordiffuse>
+				</control>
+				<!--play now widget -->
+				<control type="group">
+					<include>fadeinout</include>
+					<visible>Skin.HasSetting(home.nowplaying) + !Control.IsVisible(5562) + !Control.IsVisible(5563) + !Control.IsVisible(5564) + !Control.IsVisible(5565)</visible>
+					<control type="label">
+						<posx>100</posx>
+						<posy>45</posy>
+						<label>$LOCALIZE[575]</label>
+						<font>light_Header</font>
+					</control>
+					<control type="image">
+						<posx>35</posx>
+						<posy>45</posy>
+						<width>30</width>
+						<height>30</height>
+						<texture colordiffuse="Color1">toast/play.png</texture>
+					</control>
+					<control type="group">
+						<top>70</top>
+						<control type="label">
+							<width>800</width>
+							<posx>270</posx>
+							<posy>20</posy>
+							<label>$INFO[MusicPlayer.Title]</label>
+							<font>regular_Big-U</font>
+							<textcolor>Color1</textcolor>
+						</control>
+						<control type="label">
+							<posx>270</posx>
+							<posy>45</posy>
+							<width>auto</width>
+							<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, [COLOR Disabled]•[/COLOR] [COLOR Color1]$LOCALIZE[558]:[/COLOR] ,]</label>
+							<font>regular_Big</font>
+							<textcolor>Color2</textcolor>
+						</control>
+						<control type="group">
+							<posx>271</posx>
+							<posy>77</posy>
+							<include>osd_Seekbar_Home</include>
+							<visible>!IsEmpty(Player.TimeRemaining)</visible>
+						</control>
+						<control type="textbox">
+							<posx>270</posx>
+							<posy>88</posy>
+							<width>800</width>
+							<height>80</height>
+							<label>$INFO[Player.TimeRemaining,[COLOR Color2]$LOCALIZE[19081][/COLOR] [B]-,[/B] [COLOR Disabled]•[/COLOR] ][COLOR Color2]$LOCALIZE[19031]:[/COLOR] [B]$INFO[MusicPlayer.Offset(1).Artist,]$INFO[MusicPlayer.Offset(1).Title, • ][/B] [COLOR Color2]($INFO[MusicPlayer.PlaylistPosition,]$INFO[MusicPlayer.PlaylistLength,/])[/COLOR]</label>
+							<font>regular_Small</font>
+							<textcolor>Color1</textcolor>
+							<visible>!IsEmpty(Player.TimeRemaining)</visible>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<posy>20</posy>
+							<width>150</width>
+							<height>150</height>
+							<aligny>top</aligny>
+							<texture>$INFO[MusicPlayer.Cover]</texture>
+							<aspectratio>scale</aspectratio>
+							<include>bordertrans</include>
+						</control>
+						<control type="image">
+							<posx>100</posx>
+							<posy>20</posy>
+							<width>150</width>
+							<height>150</height>
+							<aligny>top</aligny>
+							<texture>overlays/cover_overlay.png</texture>
+							<aspectratio>scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+					</control>
+				</control>
+			</control>
+		</control>
 	</include>
-
-
 	<!-- widget movie container -->
 	<include name="widget_container">
 		<!-- movies -->
@@ -479,7 +472,7 @@
 					<label>$VAR[global_Info]</label>
 					<textcolor>Color2</textcolor>
 					<font>detail_Sub</font>
-				</control>					
+				</control>
 				<control type="grouplist">
 					<top>110</top>
 					<left>1</left>
@@ -497,9 +490,9 @@
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
-						<texture>$VAR[flag_VideoType]</texture>						
-						<aspectratio align="center">keep</aspectratio>						
-					</control>	
+						<texture>$VAR[flag_VideoType]</texture>
+						<aspectratio align="center">keep</aspectratio>
+					</control>
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
@@ -523,15 +516,14 @@
 						<height>40</height>
 						<aspectratio align="left" aligny="center">keep</aspectratio>
 						<texture>$INFO[Container(9150).ListItem.AudioChannels,flags/audio/,.png]</texture>
-					</control>	
+					</control>
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
 						<texture>$INFO[Container(9150).ListItem.VideoAspect,flags/video/aspectratio/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
-					</control>					
+					</control>
 				</control>
-		
 				<control type="textbox">
 					<top>150</top>
 					<width>600</width>
@@ -550,7 +542,7 @@
 						<height>250</height>
 						<fadetime>1000</fadetime>
 						<texture fallback="overlays/cdart.png" diffuse="overlays/discdiffuse.png">$INFO[Container(9150).ListItem.Thumb]</texture>
-						<aspectratio align="center" aligny="center"  scalediffuse="false">scale</aspectratio>
+						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>IsEmpty(Container(9150).ListItem.Property(Discart))</visible>
 					</control>
 					<control type="image">
@@ -560,7 +552,7 @@
 						<height>50</height>
 						<fadetime>1000</fadetime>
 						<texture>$INFO[Container(9150).ListItem.Studio,flags/studios/,.png]</texture>
-						<aspectratio align="center" aligny="center"  scalediffuse="false">keep</aspectratio>
+						<aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
 						<visible>IsEmpty(Container(9150).ListItem.Art(discart))</visible>
 					</control>
 					<control type="image">
@@ -570,7 +562,7 @@
 						<height>50</height>
 						<fadetime>1000</fadetime>
 						<texture>$INFO[Container(9150).ListItem.Property(Clearlogo)]</texture>
-						<aspectratio align="center" aligny="center"  scalediffuse="false">keep</aspectratio>
+						<aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
 						<visible>IsEmpty(Container(9150).ListItem.Art(discart))</visible>
 					</control>
 					<control type="label">
@@ -578,12 +570,8 @@
 						<right>20</right>
 						<width>200</width>
 						<height>50</height>
-						<textwidth>170</textwidth>
 						<align>center</align>
-						<fadetime>1000</fadetime>
 						<label>[B]$INFO[Container(9150).ListItem.Label][/B]</label>
-						<textshadow>black</textshadow>
-						<autoscroll>false</autoscroll>
 						<font>semibold_Smaller-U</font>
 						<visible>IsEmpty(Container(9150).ListItem.Art(discart)) + IsEmpty(Container(9150).ListItem.Art(clearlogo))</visible>
 					</control>
@@ -592,7 +580,6 @@
 						<height>250</height>
 						<fadetime>1000</fadetime>
 						<aspectratio>keep</aspectratio>
-						<fadetime>1000</fadetime>
 						<texture fallback="overlays/cdart.png">$INFO[Container(9150).ListItem.Art(discart)]</texture>
 						<visible>!IsEmpty(Container(9150).ListItem.Art(discart))</visible>
 					</control>
@@ -615,7 +602,7 @@
 					<height>400</height>
 					<texture>overlays/cover_overlay.png</texture>
 					<visible>!Skin.HasSetting(globalGlass.disable)</visible>
-				</control>		
+				</control>
 			</control>
 		</control>
 		<!-- episodes -->
@@ -630,7 +617,7 @@
 			</control>
 			<control type="group">
 				<include>fadeinout</include>
-				<visible>Control.HasFocus(9160)</visible>			
+				<visible>Control.HasFocus(9160)</visible>
 				<posx>100</posx>
 				<posy>50</posy>
 				<width>1080</width>
@@ -648,7 +635,7 @@
 					<label>$INFO[Container(9160).ListItem.TVShowTitle]</label>
 					<textcolor>Color2</textcolor>
 					<font>font_MainMenu</font>
-				</control>				
+				</control>
 				<control type="grouplist">
 					<top>110</top>
 					<align>left</align>
@@ -666,8 +653,8 @@
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
-						<texture>$VAR[flag_VideoType]</texture>						
-						<aspectratio align="center">keep</aspectratio>						
+						<texture>$VAR[flag_VideoType]</texture>
+						<aspectratio align="center">keep</aspectratio>
 					</control>
 					<control type="image">
 						<width>59</width>
@@ -692,15 +679,14 @@
 						<height>40</height>
 						<aspectratio align="left" aligny="center">keep</aspectratio>
 						<texture>$INFO[Container(9160).ListItem.AudioChannels,flags/audio/,.png]</texture>
-					</control>	
+					</control>
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
 						<texture>$INFO[Container(9160).ListItem.VideoAspect,flags/video/aspectratio/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
-					</control>					
+					</control>
 				</control>
-				
 				<control type="label">
 					<top>50</top>
 					<width>630</width>
@@ -767,7 +753,7 @@
 			<!-- tv show-->
 			<control type="group">
 				<include>fadeinout</include>
-				<visible>Control.HasFocus(9140) + !Skin.HasSetting(widgets.inprogressmovies.enabled)</visible>			
+				<visible>Control.HasFocus(9140) + !Skin.HasSetting(widgets.inprogressmovies.enabled)</visible>
 				<posx>100</posx>
 				<posy>50</posy>
 				<width>1080</width>
@@ -825,8 +811,8 @@
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
-						<texture>$VAR[flag_VideoType]</texture>						
-						<aspectratio align="center">keep</aspectratio>						
+						<texture>$VAR[flag_VideoType]</texture>
+						<aspectratio align="center">keep</aspectratio>
 					</control>
 					<control type="image">
 						<width>59</width>
@@ -851,14 +837,14 @@
 						<height>40</height>
 						<aspectratio align="left" aligny="center">keep</aspectratio>
 						<texture>$INFO[Container(9140).ListItem.AudioChannels,flags/audio/,.png]</texture>
-					</control>	
+					</control>
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
 						<texture>$INFO[Container(9140).ListItem.VideoAspect,flags/video/aspectratio/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
-					</control>					
-				</control>				
+					</control>
+				</control>
 				<control type="label">
 					<top>50</top>
 					<width>630</width>
@@ -914,7 +900,7 @@
 			<!--movie-->
 			<control type="group">
 				<include>fadeinout</include>
-				<visible>Control.HasFocus(9140) + Skin.HasSetting(widgets.inprogressmovies.enabled)</visible>		
+				<visible>Control.HasFocus(9140) + Skin.HasSetting(widgets.inprogressmovies.enabled)</visible>
 				<posx>100</posx>
 				<posy>0</posy>
 				<width>1080</width>
@@ -925,7 +911,7 @@
 					<label>$VAR[global_Info]</label>
 					<textcolor>Color2</textcolor>
 					<font>detail_Sub</font>
-				</control>	
+				</control>
 				<control type="label">
 					<top>50</top>
 					<width>630</width>
@@ -953,7 +939,7 @@
 						<textcolor>Color1</textcolor>
 						<font>semibold_Small-U</font>
 					</control>
-				</control>				
+				</control>
 				<control type="grouplist">
 					<top>110</top>
 					<left>0</left>
@@ -971,8 +957,8 @@
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
-						<texture>$VAR[flag_VideoType]</texture>						
-						<aspectratio align="center">keep</aspectratio>						
+						<texture>$VAR[flag_VideoType]</texture>
+						<aspectratio align="center">keep</aspectratio>
 					</control>
 					<control type="image">
 						<width>59</width>
@@ -997,13 +983,13 @@
 						<height>40</height>
 						<aspectratio align="left" aligny="center">keep</aspectratio>
 						<texture>$INFO[Container(9140).ListItem.AudioChannels,flags/audio/,.png]</texture>
-					</control>	
+					</control>
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
 						<texture>$INFO[Container(9140).ListItem.VideoAspect,flags/video/aspectratio/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
-					</control>					
+					</control>
 				</control>
 				<control type="textbox">
 					<top>180</top>
@@ -1023,7 +1009,7 @@
 						<height>250</height>
 						<fadetime>1000</fadetime>
 						<texture fallback="overlays/cdart.png" diffuse="overlays/discdiffuse.png">$INFO[Container(9140).ListItem.Art(fanart)]</texture>
-						<aspectratio align="center" aligny="center"  scalediffuse="false">scale</aspectratio>
+						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
 						<visible>IsEmpty(Container(9140).ListItem.Art(discart))</visible>
 					</control>
 					<control type="image">
@@ -1033,7 +1019,7 @@
 						<height>50</height>
 						<fadetime>1000</fadetime>
 						<texture>$INFO[Container(9140).ListItem.Studio,flags/studios/,.png]</texture>
-						<aspectratio align="center" aligny="center"  scalediffuse="false">keep</aspectratio>
+						<aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
 						<visible>IsEmpty(Container(9140).ListItem.Art(discart))</visible>
 					</control>
 					<control type="image">
@@ -1043,7 +1029,7 @@
 						<height>50</height>
 						<fadetime>1000</fadetime>
 						<texture>$INFO[Container(9140).ListItem.Art(clearlogo)]</texture>
-						<aspectratio align="center" aligny="center"  scalediffuse="false">keep</aspectratio>
+						<aspectratio align="center" aligny="center" scalediffuse="false">keep</aspectratio>
 						<visible>IsEmpty(Container(9140).ListItem.Art(discart))</visible>
 					</control>
 					<control type="label">
@@ -1051,12 +1037,8 @@
 						<right>20</right>
 						<width>200</width>
 						<height>50</height>
-						<textwidth>170</textwidth>
 						<align>center</align>
-						<fadetime>1000</fadetime>
 						<label>[B]$INFO[Container(9140).ListItem.Label][/B]</label>
-						<textshadow>black</textshadow>
-						<autoscroll>false</autoscroll>
 						<font>semibold_Smaller-U</font>
 						<visible>IsEmpty(Container(9140).ListItem.Art(discart)) + IsEmpty(Container(9140).ListItem.Art(clearlogo))</visible>
 					</control>
@@ -1065,7 +1047,6 @@
 						<height>250</height>
 						<fadetime>1000</fadetime>
 						<aspectratio>keep</aspectratio>
-						<fadetime>1000</fadetime>
 						<texture fallback="overlays/cdart.png">$INFO[Container(9140).ListItem.Art(discart)]</texture>
 						<visible>!IsEmpty(Container(9140).ListItem.Art(discart))</visible>
 					</control>
@@ -1092,7 +1073,6 @@
 			</control>
 		</control>
 	</include>
-	
 	<include name="home_Slideshow">
 		<include>screen_Dimensions</include>
 		<aspectratio align="center" aligny="true">scale</aspectratio>
@@ -1101,7 +1081,6 @@
 		<timeperimage>slideshow_Timer</timeperimage>
 		<fadetime>fadetime_Slideshow</fadetime>
 	</include>
-	
 	<include name="home_NowPlaying">
 		<control type="group">
 			<left>380</left>
@@ -1116,7 +1095,7 @@
 					<textcolor>Color1</textcolor>
 				</control>
 				<control type="label">
-					<top>28</top>		
+					<top>28</top>
 					<width>1150</width>
 					<label>$INFO[MusicPlayer.Artist]</label>
 					<font>semibold-U</font>
@@ -1132,14 +1111,10 @@
 			</control>
 		</control>
 	</include>
-
-	
-	
-	
 	<include name="home_MenuButton">
 		<width>200</width>
 		<height>80</height>
-		<font>light_Home</font>	
+		<font>light_Home</font>
 		<textoffsetx>15</textoffsetx>
 		<textoffsety>5</textoffsety>
 		<textcolor>Color3</textcolor>
@@ -1153,7 +1128,6 @@
 		<onleft>Skin.SetString(HomeSub,none)</onleft>
 		<onback>Skin.SetString(HomeSub,none)</onback>
 	</include>
-
 	<include name="home_SubMenuButton">
 		<width>150</width>
 		<height>30</height>
@@ -1165,8 +1139,8 @@
 		<textoffsety>0</textoffsety>
 		<textcolor>Color1</textcolor>
 		<focusedcolor>Focused</focusedcolor>
-		<texturenofocus border="0" colordiffuse="base_5">white.png</texturenofocus>	
-		<texturefocus border="0" colordiffuse="Color1">white.png</texturefocus>	
+		<texturenofocus border="0" colordiffuse="base_5">white.png</texturenofocus>
+		<texturefocus border="0" colordiffuse="Color1">white.png</texturefocus>
 		<radioheight>30</radioheight>
 		<radiowidth>30</radiowidth>
 		<onleft>Skin.SetString(HomeSub,none)</onleft>
@@ -1185,8 +1159,8 @@
 		<textoffsety>0</textoffsety>
 		<textcolor>Color1</textcolor>
 		<focusedcolor>Focused</focusedcolor>
-		<texturenofocus border="0" colordiffuse="blacktrans">overlays/diffuse.png</texturenofocus>	
-		<texturefocus border="0" colordiffuse="Color1">white.png</texturefocus>	
+		<texturenofocus border="0" colordiffuse="blacktrans">overlays/diffuse.png</texturenofocus>
+		<texturefocus border="0" colordiffuse="Color1">white.png</texturefocus>
 		<radioheight>30</radioheight>
 		<radiowidth>30</radiowidth>
 		<onleft>Skin.SetString(HomeSub,none)</onleft>
@@ -1194,7 +1168,6 @@
 		<include>fadeinout</include>
 		<visible>IsEmpty(Window(Home).Property(HomeConfig))</visible>
 	</include>
-	
 	<include name="home_SubMenuTrigger">
 		<posy>690</posy>
 		<scroll>true</scroll>
@@ -1203,18 +1176,17 @@
 		<height>700</height>
 		<itemgap>1</itemgap>
 		<texture>white.png</texture>
-		<pagecontrol>80</pagecontrol>		
+		<pagecontrol>80</pagecontrol>
 		<animation type="Focus">
-			<effect type="slide" end="0,-45" time="300" easing="InOut"/>
-			<effect type="face" start="0" end="100" time="300" easing="InOut"/>
+			<effect type="slide" end="0,-45" time="300" easing="InOut" />
+			<effect type="face" start="0" end="100" time="300" easing="InOut" />
 		</animation>
 		<animation condition="Control.HasFocus(9110)" type="Conditional">
-			<effect type="slide" end="0,45" time="300" easing="InOut"/>
-			<effect type="face" start="100" end="0" time="300" easing="InOut"/>
+			<effect type="slide" end="0,45" time="300" easing="InOut" />
+			<effect type="face" start="100" end="0" time="300" easing="InOut" />
 		</animation>
 		<orientation>horizontal</orientation>
 	</include>
-	
 	<include name="home_SubMenuTrigger2_bg">
 		<control type="image">
 			<posy>459</posy>
@@ -1247,98 +1219,95 @@
 		<height>700</height>
 		<itemgap>1</itemgap>
 		<texture>white.png</texture>
-		<pagecontrol>80</pagecontrol>	
-		<orientation>horizontal</orientation>		
+		<pagecontrol>80</pagecontrol>
+		<orientation>horizontal</orientation>
 	</include>
-
-<!-- widget row position -->	
-<include name="centerwidgets">
-	<posy>160</posy>			
-</include>
-<include name="centerwidgets_Square">
-	<posy>200</posy>			
-</include>
-<include name="topwidgets">
-	<posy>90</posy>			
-</include>
-
-<!-- next recording widget -->	
-<include name="home_PVRrecwidget">
-	<control type="group">
-		<visible>[PVR.IsRecording | PVR.HasNonRecordingTimer] + [[Skin.HasSetting(overlay.pvr) + Container(9110).HasFocus(400) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(overlay.pvr) + Container(9110).HasFocus(400) + !Player.HasMedia + !Player.HasAudio]]</visible>
-		<control type="label">
-			<posx>100</posx>
-			<posy>45</posy>
-			<label>$VAR[rec_Label]</label>
-			<font>light_Header</font>
+	<!-- widget row position -->
+	<include name="centerwidgets">
+		<posy>160</posy>
+	</include>
+	<include name="centerwidgets_Square">
+		<posy>200</posy>
+	</include>
+	<include name="topwidgets">
+		<posy>90</posy>
+	</include>
+	<!-- next recording widget -->
+	<include name="home_PVRrecwidget">
+		<control type="group">
+			<visible>[PVR.IsRecording | PVR.HasNonRecordingTimer] + [[Skin.HasSetting(overlay.pvr) + Container(9110).HasFocus(400) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(overlay.pvr) + Container(9110).HasFocus(400) + !Player.HasMedia + !Player.HasAudio]]</visible>
+			<control type="label">
+				<posx>100</posx>
+				<posy>45</posy>
+				<label>$VAR[rec_Label]</label>
+				<font>light_Header</font>
+			</control>
+			<control type="image">
+				<posx>35</posx>
+				<posy>45</posy>
+				<width>30</width>
+				<height>30</height>
+				<texture colordiffuse="Color1">DefaultTimer.png</texture>
+			</control>
 		</control>
-		<control type="image">
-			<posx>35</posx>
-			<posy>45</posy>
-			<width>30</width>
-			<height>30</height>
-			<texture colordiffuse="Color1">DefaultTimer.png</texture>
+		<control type="group">
+			<top>70</top>
+			<visible>[PVR.IsRecording | PVR.HasNonRecordingTimer] + [[Skin.HasSetting(overlay.pvr) + Container(9110).HasFocus(400) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(overlay.pvr) + Container(9110).HasFocus(400) + !Player.HasMedia + !Player.HasAudio)]]</visible>
+			<control type="label">
+				<width>800</width>
+				<posx>270</posx>
+				<posy>20</posy>
+				<label>$VAR[rec_Title]</label>
+				<font>regular_Big-U</font>
+				<textcolor>Color1</textcolor>
+			</control>
+			<control type="label">
+				<posx>270</posx>
+				<posy>45</posy>
+				<width>auto</width>
+				<label>$VAR[rec_Channel]</label>
+				<font>regular_Big</font>
+				<textcolor>Color2</textcolor>
+			</control>
+			<control type="label">
+				<posx>270</posx>
+				<posy>71</posy>
+				<width>auto</width>
+				<label>$VAR[rec_Time]</label>
+				<font>regular_Big</font>
+				<textcolor>Color1</textcolor>
+			</control>
+			<control type="image">
+				<posx>100</posx>
+				<posy>20</posy>
+				<width>150</width>
+				<height>115</height>
+				<aligny>top</aligny>
+				<texture colordiffuse="base_5">white.png</texture>
+				<aspectratio>scale</aspectratio>
+			</control>
+			<control type="image">
+				<posx>100</posx>
+				<posy>20</posy>
+				<width>150</width>
+				<height>115</height>
+				<aligny>top</aligny>
+				<texture>$VAR[rec_ChannelIcon]</texture>
+				<aspectratio align="center" aligny="center">keep</aspectratio>
+				<bordersize>5</bordersize>
+			</control>
+			<control type="image">
+				<posx>100</posx>
+				<posy>20</posy>
+				<width>150</width>
+				<height>115</height>
+				<aligny>top</aligny>
+				<texture>overlays/cover_overlay.png</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+			</control>
 		</control>
-	</control>
-	<control type="group">
-		<top>70</top>
-		<visible>[PVR.IsRecording | PVR.HasNonRecordingTimer] + [[Skin.HasSetting(overlay.pvr) + Container(9110).HasFocus(400) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(overlay.pvr) + Container(9110).HasFocus(400) + !Player.HasMedia + !Player.HasAudio)]]</visible>
-		<control type="label">
-			<width>800</width>
-			<posx>270</posx>
-			<posy>20</posy>
-			<label>$VAR[rec_Title]</label>
-			<font>regular_Big-U</font>
-			<textcolor>Color1</textcolor>	
-		</control>
-		<control type="label">
-			<posx>270</posx>
-			<posy>45</posy>
-			<width>auto</width>
-			<label>$VAR[rec_Channel]</label>
-			<font>regular_Big</font>
-			<textcolor>Color2</textcolor>		
-		</control>
-		<control type="label">
-			<posx>270</posx>
-			<posy>71</posy>
-			<width>auto</width>
-			<label>$VAR[rec_Time]</label>
-			<font>regular_Big</font>
-			<textcolor>Color1</textcolor>		
-		</control>		
-		<control type="image">
-			<posx>100</posx>
-			<posy>20</posy>
-			<width>150</width>
-			<height>115</height>
-			<aligny>top</aligny>
-			<texture colordiffuse="base_5">white.png</texture>
-			<aspectratio>scale</aspectratio>
-		</control>
-		<control type="image">
-			<posx>100</posx>
-			<posy>20</posy>
-			<width>150</width>
-			<height>115</height>
-			<aligny>top</aligny>
-			<texture>$VAR[rec_ChannelIcon]</texture>
-			<aspectratio align="center" aligny="center">keep</aspectratio>
-			<bordersize>5</bordersize>
-		</control>	
-		<control type="image">
-			<posx>100</posx>
-			<posy>20</posy>
-			<width>150</width>
-			<height>115</height>
-			<aligny>top</aligny>
-			<texture>overlays/cover_overlay.png</texture>
-			<aspectratio>scale</aspectratio>
-			<visible>!Skin.HasSetting(globalGlass.disable)</visible>
-		</control>	
-	</control>
-</include>
-	
+	</include>
 	<include name="home_weather">
 		<control type="label">
 			<posx>100</posx>
@@ -1347,25 +1316,25 @@
 			<include>fadeinout</include>
 			<font>light_Header</font>
 			<visible>[Skin.HasSetting(widgets.weather.enabled) + Container(9110).HasFocus(900) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.weather.enabled) + Container(9110).HasFocus(900) + !Player.HasMedia + !Player.HasAudio)]</visible>
-			</control>
-		<control type="group">
-				<visible>[Skin.HasSetting(widgets.weather.enabled) + Container(9110).HasFocus(900) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying) + IsEmpty(Window(Weather).Property(Day0.Outlook))] | [Skin.HasSetting(widgets.weather.enabled) + Container(9110).HasFocus(900) + !Player.HasMedia + !Player.HasAudio) + IsEmpty(Window(Weather).Property(Day0.Outlook))]</visible>
-				<include>fadeinout</include>
-				<posx>100</posx>
-				<posy>90</posy>
-				<control type="label">
-					<width>300</width>
-					<label>$LOCALIZE[416]</label>
-					<font>semibold</font>
-					<textcolor>Color2</textcolor>
-				</control>
 		</control>
 		<control type="group">
-				<visible>[Skin.HasSetting(widgets.weather.enabled) + Container(9110).HasFocus(900) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying) + !IsEmpty(Window(Weather).Property(Day0.Outlook))] | [Skin.HasSetting(widgets.weather.enabled) + Container(9110).HasFocus(900) + !Player.HasMedia + !Player.HasAudio) + !IsEmpty(Window(Weather).Property(Day0.Outlook))]</visible>
-				<posx>100</posx>
-				<posy>90</posy>
-				<include>fadeinout</include>
-				<control type="group">
+			<visible>[Skin.HasSetting(widgets.weather.enabled) + Container(9110).HasFocus(900) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying) + IsEmpty(Window(Weather).Property(Day0.Outlook))] | [Skin.HasSetting(widgets.weather.enabled) + Container(9110).HasFocus(900) + !Player.HasMedia + !Player.HasAudio) + IsEmpty(Window(Weather).Property(Day0.Outlook))]</visible>
+			<include>fadeinout</include>
+			<posx>100</posx>
+			<posy>90</posy>
+			<control type="label">
+				<width>300</width>
+				<label>$LOCALIZE[416]</label>
+				<font>semibold</font>
+				<textcolor>Color2</textcolor>
+			</control>
+		</control>
+		<control type="group">
+			<visible>[Skin.HasSetting(widgets.weather.enabled) + Container(9110).HasFocus(900) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying) + !IsEmpty(Window(Weather).Property(Day0.Outlook))] | [Skin.HasSetting(widgets.weather.enabled) + Container(9110).HasFocus(900) + !Player.HasMedia + !Player.HasAudio) + !IsEmpty(Window(Weather).Property(Day0.Outlook))]</visible>
+			<posx>100</posx>
+			<posy>90</posy>
+			<include>fadeinout</include>
+			<control type="group">
 				<control type="image">
 					<width>100</width>
 					<height>147</height>
@@ -1384,7 +1353,6 @@
 					<top>5</top>
 					<control type="label">
 						<width>105</width>
-						<textwidth>80</textwidth>
 						<label>$LOCALIZE[19030]</label>
 						<font>semibold-U</font>
 						<scroll>true</scroll>
@@ -1394,7 +1362,6 @@
 					<control type="label">
 						<top>25</top>
 						<width>105</width>
-						<textwidth>80</textwidth>
 						<label>$INFO[Weather.Conditions]</label>
 						<scroll>true</scroll>
 						<font>regular_Smaller</font>
@@ -1411,60 +1378,59 @@
 						<top>105</top>
 						<label>$INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
 						<width>100</width>
-						<textwidth>80</textwidth>
 						<font>semibold_Big</font>
 						<align>center</align>
 					</control>
 				</control>
 				<control type="group">
-						<posx>120</posx>
-						<control type="label">
-							<left>220</left>
-							<label>$LOCALIZE[20088]:</label>
-							<width>350</width>
-							<font>semibold</font>
-							<align>left</align>
-						</control>								
-						<control type="label">
-							<top>25</top>
-							<left>220</left>
-							<label>[COLOR Color2]$LOCALIZE[406]:[/COLOR] $INFO[Window(Weather).Property(Current.Humidity)]</label>
-							<width>350</width>
-							<font>regular_Small</font>
-							<align>left</align>
-						</control>
-						<control type="label">
-							<top>50</top>
-							<left>220</left>
-							<label>[COLOR Color2]$LOCALIZE[404]:[/COLOR] $INFO[Window(Weather).Property(Current.Wind)]</label>
-							<width>350</width>
-							<font>regular_Small</font>
-							<align>left</align>
-						</control>
-						<control type="label">
-							<left>0</left>
-							<width>190</width>
-							<label>$LOCALIZE[33006] ($INFO[Window(Weather).Property(Day0.Title)])</label>
-							<font>semibold</font>
-							<align>left</align>
-						</control>
-						<control type="label">
-							<left>0</left>
-							<top>25</top>
-							<width>190</width>
-							<label>[COLOR Color2]$LOCALIZE[401]:[/COLOR] $INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits,, / ]$INFO[Window(Weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
-							<font>regular_Small</font>
-							<align>left</align>
-						</control>
-						<control type="label">
-							<left>0</left>
-							<top>50</top>
-							<width>190</width>
-							<label>[COLOR Color2]$LOCALIZE[12600]:[/COLOR] $INFO[Window(Weather).Property(Day0.Outlook)]</label>
-							<font>regular_Small</font>
-							<align>left</align>
-						</control>
+					<posx>120</posx>
+					<control type="label">
+						<left>220</left>
+						<label>$LOCALIZE[20088]:</label>
+						<width>350</width>
+						<font>semibold</font>
+						<align>left</align>
 					</control>
+					<control type="label">
+						<top>25</top>
+						<left>220</left>
+						<label>[COLOR Color2]$LOCALIZE[406]:[/COLOR] $INFO[Window(Weather).Property(Current.Humidity)]</label>
+						<width>350</width>
+						<font>regular_Small</font>
+						<align>left</align>
+					</control>
+					<control type="label">
+						<top>50</top>
+						<left>220</left>
+						<label>[COLOR Color2]$LOCALIZE[404]:[/COLOR] $INFO[Window(Weather).Property(Current.Wind)]</label>
+						<width>350</width>
+						<font>regular_Small</font>
+						<align>left</align>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<width>190</width>
+						<label>$LOCALIZE[33006] ($INFO[Window(Weather).Property(Day0.Title)])</label>
+						<font>semibold</font>
+						<align>left</align>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<top>25</top>
+						<width>190</width>
+						<label>[COLOR Color2]$LOCALIZE[401]:[/COLOR] $INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits,, / ]$INFO[Window(Weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
+						<font>regular_Small</font>
+						<align>left</align>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<top>50</top>
+						<width>190</width>
+						<label>[COLOR Color2]$LOCALIZE[12600]:[/COLOR] $INFO[Window(Weather).Property(Day0.Outlook)]</label>
+						<font>regular_Small</font>
+						<align>left</align>
+					</control>
+				</control>
 			</control>
 		</control>
 	</include>

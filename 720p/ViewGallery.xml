@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
-<!--STRIP LAYOUT-->	
+	<!--STRIP LAYOUT-->
 	<include name="view_Gallery">
 		<!--content detail-->
 		<control type="group">
@@ -70,7 +70,6 @@
 				</control>
 			</control>
 		</control>
-
 		<!--strip top-->
 		<control type="group">
 			<include>toggle_Menu</include>
@@ -157,7 +156,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout width="770" height="422">
-					
 					<control type="group">
 						<control type="image">
 							<width>770</width>
@@ -217,13 +215,10 @@
 					</control>
 				</focusedlayout>
 			</control>
-			
 		</control>
 	</include>
-
-<!--fullscreen layout-->
+	<!--fullscreen layout-->
 	<include name="view_GalleryFull-Commons">
-		
 		<control type="image">
 			<include>screen_Dimensions</include>
 			<texture background="true">$VAR[thumb_Landscape]</texture>
@@ -248,10 +243,9 @@
 			<width>96</width>
 			<height>96</height>
 			<include>art_DefaultIcon</include>
-			
 		</control>
 	</include>
-	<include name="view_GalleryFull">																													
+	<include name="view_GalleryFull">
 		<control type="wraplist" id="531">
 			<viewtype label="Gallery">biginfo</viewtype>
 			<include>screen_Dimensions</include>
@@ -299,7 +293,7 @@
 					<selectedcolor>Color1</selectedcolor>
 				</control>
 				<control type="label">
-					<top>30</top>		
+					<top>30</top>
 					<width>1150</width>
 					<label>$VAR[global_Info]</label>
 					<font>semibold-U</font>

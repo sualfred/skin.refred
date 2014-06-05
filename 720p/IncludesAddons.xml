@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <includes>
-<!--NEXTAIRED-->
+	<!--NEXTAIRED-->
 	<include name="TVGuideLayout">
 		<itemlayout width="880" height="150">
 			<control type="image">
@@ -28,7 +28,7 @@
 			<control type="group">
 				<left>265</left>
 				<top>4</top>
-				<control type="label">	
+				<control type="label">
 					<width>657</width>
 					<label>$INFO[ListItem.Label,,: ]$INFO[ListItem.Property(NextTitle)]</label>
 					<include>container_Title</include>
@@ -73,7 +73,7 @@
 				<control type="group">
 					<left>265</left>
 					<top>4</top>
-					<control type="label">	
+					<control type="label">
 						<width>657</width>
 						<label>$INFO[ListItem.Label,,: ]$INFO[ListItem.Property(NextTitle)]</label>
 						<include>container_Title-focus</include>
@@ -111,7 +111,7 @@
 				<control type="group">
 					<left>265</left>
 					<top>4</top>
-					<control type="label">	
+					<control type="label">
 						<width>657</width>
 						<label>$INFO[ListItem.Label,,: ]$INFO[ListItem.Property(NextTitle)]</label>
 						<include>container_Title</include>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>450</defaultcontrol>
 	<include>transition_Dialog</include>
@@ -6,7 +6,7 @@
 		<system>1</system>
 		<left>0</left>
 		<top>0</top>
-		<origin x="480" y="200"/>
+		<origin x="480" y="200" />
 	</coordinates>
 	<controls>
 		<control type="image">
