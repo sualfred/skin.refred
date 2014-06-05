@@ -387,7 +387,7 @@
 						<label>BottomSlide</label>
 						<include>menu_Button</include>
 						<onclick>Container.SetViewMode(554)</onclick>
-						<visible>[Container.Content(seasons) | Container.Content(tvshows) | [Container.Content(movies)] + !SubString(Container.FolderPath,plugin://plugin)</visible>
+						<visible>[Container.Content(seasons) | Container.Content(tvshows) | Container.Content(movies)] + !SubString(Container.FolderPath,plugin://plugin)</visible>
 					</control>
 				</control>
 			</control>

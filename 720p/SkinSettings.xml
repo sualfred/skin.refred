@@ -148,7 +148,7 @@
 						<onclick>Skin.Reset(homesingle.bg)</onclick>
 						<onclick>Skin.Reset(homemulti.bg)</onclick>
 						<onclick>Skin.SetImage(homesingle.bg)</onclick>
-						<selected>!IsEmpty(Skin.String(homesingle.bg)</selected>
+						<selected>!IsEmpty(Skin.String(homesingle.bg))</selected>
 						<visible>Skin.HasSetting(ownbg.enabled)</visible>
 						<include>settings_Radiobutton</include>
 					</control>
@@ -158,7 +158,7 @@
 						<onclick>Skin.Reset(homemulti.bg)</onclick>
 						<onclick>Skin.Reset(homesingle.bg)</onclick>
 						<onclick>Skin.SetPath(homemulti.bg)</onclick>
-						<selected>!IsEmpty(Skin.String(homemulti.bg)</selected>
+						<selected>!IsEmpty(Skin.String(homemulti.bg))</selected>
 						<visible>Skin.HasSetting(ownbg.enabled)</visible>
 						<include>settings_Radiobutton</include>
 					</control>

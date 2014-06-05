@@ -294,16 +294,16 @@
 							<textwidth>400</textwidth>
 							<onclick>Skin.Reset(videos.bg)</onclick>
 							<onclick>Skin.SetImage(videos.bg)</onclick>
-							<selected>!IsEmpty(Skin.String(videos.bg)</selected>
+							<selected>!IsEmpty(Skin.String(videos.bg))</selected>
 							<include>dialog_Radio-alt</include>
 						</control>
 						<control type="radiobutton" id="516">
-							<label>Thumb: $INFO[Skin.String(videos.thumb]</label>
+							<label>Thumb: $INFO[Skin.String(videos.thumb)]</label>
 							<width>484</width>
 							<textwidth>400</textwidth>
 							<onclick>Skin.Reset(videos.thumb)</onclick>
 							<onclick>Skin.SetImage(videos.thumb)</onclick>
-							<selected>!IsEmpty(Skin.String(videos.thumb)</selected>
+							<selected>!IsEmpty(Skin.String(videos.thumb))</selected>
 							<include>dialog_Radio-alt</include>
 						</control>
 					</control>
@@ -688,16 +688,16 @@
 							<textwidth>400</textwidth>
 							<onclick>Skin.Reset(livetv.bg)</onclick>
 							<onclick>Skin.SetImage(livetv.bg)</onclick>
-							<selected>!IsEmpty(Skin.String(livetv.bg)</selected>
+							<selected>!IsEmpty(Skin.String(livetv.bg))</selected>
 							<include>dialog_Radio-alt</include>
 						</control>
 						<control type="radiobutton" id="516">
-							<label>Thumb: $INFO[Skin.String(livetv.thumb]</label>
+							<label>Thumb: $INFO[Skin.String(livetv.thumb)]</label>
 							<width>484</width>
 							<textwidth>400</textwidth>
 							<onclick>Skin.Reset(livetv.thumb)</onclick>
 							<onclick>Skin.SetImage(livetv.thumb)</onclick>
-							<selected>!IsEmpty(Skin.String(livetv.thumb)</selected>
+							<selected>!IsEmpty(Skin.String(livetv.thumb))</selected>
 							<include>dialog_Radio-alt</include>
 						</control>
 					</control>
@@ -827,21 +827,21 @@
 							<enable>!Skin.HasSetting(homemenu.pictures.disable)</enable>
 						</control>
 						<control type="radiobutton" id="504">
-							<label>Background: $INFO[Skin.String(pictures.bg]</label>
+							<label>Background: $INFO[Skin.String(pictures.bg)]</label>
 							<width>484</width>
 							<textwidth>400</textwidth>
 							<onclick>Skin.Reset(pictures.bg)</onclick>
 							<onclick>Skin.SetImage(pictures.bg)</onclick>
-							<selected>!IsEmpty(Skin.String(pictures.bg)</selected>
+							<selected>!IsEmpty(Skin.String(pictures.bg))</selected>
 							<include>dialog_Radio-alt</include>
 						</control>
 						<control type="radiobutton" id="505">
-							<label>Thumb: $INFO[Skin.String(pictures.thumb]</label>
+							<label>Thumb: $INFO[Skin.String(pictures.thumb)]</label>
 							<width>484</width>
 							<textwidth>400</textwidth>
 							<onclick>Skin.Reset(pictures.thumb)</onclick>
 							<onclick>Skin.SetImage(pictures.thumb)</onclick>
-							<selected>!IsEmpty(Skin.String(pictures.thumb)</selected>
+							<selected>!IsEmpty(Skin.String(pictures.thumb))</selected>
 							<include>dialog_Radio-alt</include>
 						</control>
 					</control>
@@ -908,16 +908,16 @@
 							<textwidth>400</textwidth>
 							<onclick>Skin.Reset(addons.bg)</onclick>
 							<onclick>Skin.SetImage(addons.bg)</onclick>
-							<selected>!IsEmpty(Skin.String(addons.bg)</selected>
+							<selected>!IsEmpty(Skin.String(addons.bg))</selected>
 							<include>dialog_Radio-alt</include>
 						</control>
 						<control type="radiobutton" id="512">
-							<label>Thumb: $INFO[Skin.String(addons.thumb]</label>
+							<label>Thumb: $INFO[Skin.String(addons.thumb)]</label>
 							<width>484</width>
 							<textwidth>400</textwidth>
 							<onclick>Skin.Reset(addons.thumb)</onclick>
 							<onclick>Skin.SetImage(addons.thumb)</onclick>
-							<selected>!IsEmpty(Skin.String(addons.thumb)</selected>
+							<selected>!IsEmpty(Skin.String(addons.thumb))</selected>
 							<include>dialog_Radio-alt</include>
 						</control>
 					</control>
@@ -981,16 +981,16 @@
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(settings.bg)</onclick>
 						<onclick>Skin.SetImage(settings.bg)</onclick>
-						<selected>!IsEmpty(Skin.String(settings.bg)</selected>
+						<selected>!IsEmpty(Skin.String(settings.bg))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 					<control type="radiobutton" id="509">
-						<label>Thumb: $INFO[Skin.String(settings.thumb]</label>
+						<label>Thumb: $INFO[Skin.String(settings.thumb)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(settings.thumb)</onclick>
 						<onclick>Skin.SetImage(settings.thumb)</onclick>
-						<selected>!IsEmpty(Skin.String(settings.thumb)</selected>
+						<selected>!IsEmpty(Skin.String(settings.thumb))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 				</control>
@@ -1085,16 +1085,16 @@
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(fav.bg)</onclick>
 						<onclick>Skin.SetImage(fav.bg)</onclick>
-						<selected>!IsEmpty(Skin.String(fav.bg)</selected>
+						<selected>!IsEmpty(Skin.String(fav.bg))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 					<control type="radiobutton" id="510">
-						<label>Thumb: $INFO[Skin.String(fav.thumb]</label>
+						<label>Thumb: $INFO[Skin.String(fav.thumb)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(fav.thumb)</onclick>
 						<onclick>Skin.SetImage(fav.thumb)</onclick>
-						<selected>!IsEmpty(Skin.String(fav.thumb)</selected>
+						<selected>!IsEmpty(Skin.String(fav.thumb))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 				</control>
@@ -1148,21 +1148,21 @@
 					</control>
 					<!--bg-->
 					<control type="radiobutton" id="506">
-						<label>Thumb: $INFO[Skin.String(Customb1main.thumb]</label>
+						<label>Thumb: $INFO[Skin.String(Customb1main.thumb)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(Customb1main.thumb)</onclick>
 						<onclick>Skin.SetImage(Customb1main.thumb)</onclick>
-						<selected>!IsEmpty(Skin.String(Customb1main.thumb)</selected>
+						<selected>!IsEmpty(Skin.String(Customb1main.thumb))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 					<control type="radiobutton" id="507">
-						<label>Background: $INFO[Skin.String(Customb1main.bg]</label>
+						<label>Background: $INFO[Skin.String(Customb1main.bg)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(Customb1main.bg)</onclick>
 						<onclick>Skin.SetImage(Customb1main.bg)</onclick>
-						<selected>!IsEmpty(Skin.String(Customb1main.bg)</selected>
+						<selected>!IsEmpty(Skin.String(Customb1main.bg))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 					<!--1-->
@@ -1288,21 +1288,21 @@
 					</control>
 					<!--bg-->
 					<control type="radiobutton" id="506">
-						<label>Thumb: $INFO[Skin.String(Customb2main.thumb]</label>
+						<label>Thumb: $INFO[Skin.String(Customb2main.thumb)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(Customb2main.thumb)</onclick>
 						<onclick>Skin.SetImage(Customb2main.thumb)</onclick>
-						<selected>!IsEmpty(Skin.String(Customb2main.thumb)</selected>
+						<selected>!IsEmpty(Skin.String(Customb2main.thumb))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 					<control type="radiobutton" id="507">
-						<label>Background: $INFO[Skin.String(Customb2main.bg]</label>
+						<label>Background: $INFO[Skin.String(Customb2main.bg)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(Customb2main.bg)</onclick>
 						<onclick>Skin.SetImage(Customb2main.bg)</onclick>
-						<selected>!IsEmpty(Skin.String(Customb2main.bg)</selected>
+						<selected>!IsEmpty(Skin.String(Customb2main.bg))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 					<!--1-->
@@ -1422,21 +1422,21 @@
 					<visible>Skin.String(Section,Weather)</visible>
 					<!--add-ons-->
 					<control type="radiobutton" id="501">
-						<label>Background: $INFO[Skin.String(weather.bg]</label>
+						<label>Background: $INFO[Skin.String(weather.bg)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(weather.bg)</onclick>
 						<onclick>Skin.SetImage(weather.bg)</onclick>
-						<selected>!IsEmpty(Skin.String(weather.bg)</selected>
+						<selected>!IsEmpty(Skin.String(weather.bg))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 					<control type="radiobutton" id="502">
-						<label>Thumb: $INFO[Skin.String(weather.thumb]</label>
+						<label>Thumb: $INFO[Skin.String(weather.thumb)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(weather.thumb)</onclick>
 						<onclick>Skin.SetImage(weather.thumb)</onclick>
-						<selected>!IsEmpty(Skin.String(weather.thumb)</selected>
+						<selected>!IsEmpty(Skin.String(weather.thumb))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 				</control>
@@ -1454,12 +1454,12 @@
 					<visible>Skin.String(Section,Disc)</visible>
 					<!--add-ons-->
 					<control type="radiobutton" id="501">
-						<label>Background: $INFO[Skin.String(disc.bg]</label>
+						<label>Background: $INFO[Skin.String(disc.bg)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(disc.bg)</onclick>
 						<onclick>Skin.SetImage(disc.bg)</onclick>
-						<selected>!IsEmpty(Skin.String(disc.bg)</selected>
+						<selected>!IsEmpty(Skin.String(disc.bg))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 					<control type="radiobutton" id="502">
@@ -1468,7 +1468,7 @@
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(disc.thumb)</onclick>
 						<onclick>Skin.SetImage(disc.thumb)</onclick>
-						<selected>!IsEmpty(Skin.String(disc.thumb)</selected>
+						<selected>!IsEmpty(Skin.String(disc.thumb))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 				</control>
@@ -1486,21 +1486,21 @@
 					<visible>Skin.String(Section,Search)</visible>
 					<!--add-ons-->
 					<control type="radiobutton" id="501">
-						<label>Background: $INFO[Skin.String(search.bg]</label>
+						<label>Background: $INFO[Skin.String(search.bg)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(search.bg)</onclick>
 						<onclick>Skin.SetImage(search.bg)</onclick>
-						<selected>!IsEmpty(Skin.String(search.bg)</selected>
+						<selected>!IsEmpty(Skin.String(search.bg))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 					<control type="radiobutton" id="502">
-						<label>Thumb: $INFO[Skin.String(search.thumb]</label>
+						<label>Thumb: $INFO[Skin.String(search.thumb)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(search.thumb)</onclick>
 						<onclick>Skin.SetImage(search.thumb)</onclick>
-						<selected>!IsEmpty(Skin.String(search.thumb)</selected>
+						<selected>!IsEmpty(Skin.String(search.thumb))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 				</control>
@@ -1518,21 +1518,21 @@
 					<visible>Skin.String(Section,Youtube)</visible>
 					<!--add-ons-->
 					<control type="radiobutton" id="501">
-						<label>Background: $INFO[Skin.String(yt.bg]</label>
+						<label>Background: $INFO[Skin.String(yt.bg)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(yt.bg)</onclick>
 						<onclick>Skin.SetImage(yt.bg)</onclick>
-						<selected>!IsEmpty(Skin.String(yt.bg)</selected>
+						<selected>!IsEmpty(Skin.String(yt.bg))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 					<control type="radiobutton" id="502">
-						<label>Thumb: $INFO[Skin.String(yt.thumb]</label>
+						<label>Thumb: $INFO[Skin.String(yt.thumb)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(yt.thumb)</onclick>
 						<onclick>Skin.SetImage(yt.thumb)</onclick>
-						<selected>!IsEmpty(Skin.String(yt.thumb)</selected>
+						<selected>!IsEmpty(Skin.String(yt.thumb))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 				</control>
@@ -1550,12 +1550,12 @@
 					<visible>Skin.String(Section,Power)</visible>
 					<!--add-ons-->
 					<control type="radiobutton" id="501">
-						<label>Background: $INFO[Skin.String(power.bg]</label>
+						<label>Background: $INFO[Skin.String(power.bg)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(power.bg)</onclick>
 						<onclick>Skin.SetImage(power.bg)</onclick>
-						<selected>!IsEmpty(Skin.String(power.bg)</selected>
+						<selected>!IsEmpty(Skin.String(power.bg))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 					<control type="radiobutton" id="502">
@@ -1564,7 +1564,7 @@
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(power.thumb)</onclick>
 						<onclick>Skin.SetImage(power.thumb)</onclick>
-						<selected>!IsEmpty(Skin.String(power.thumb)</selected>
+						<selected>!IsEmpty(Skin.String(power.thumb))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 				</control>
@@ -1582,21 +1582,21 @@
 					<visible>Skin.String(Section,Programs)</visible>
 					<!--add-ons-->
 					<control type="radiobutton" id="501">
-						<label>Background: $INFO[Skin.String(programs.bg]</label>
+						<label>Background: $INFO[Skin.String(programs.bg)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(programs.bg)</onclick>
 						<onclick>Skin.SetImage(programs.bg)</onclick>
-						<selected>!IsEmpty(Skin.String(programs.bg)</selected>
+						<selected>!IsEmpty(Skin.String(programs.bg))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 					<control type="radiobutton" id="502">
-						<label>Thumb: $INFO[Skin.String(programs.thumb]</label>
+						<label>Thumb: $INFO[Skin.String(programs.thumb)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
 						<onclick>Skin.Reset(programs.thumb)</onclick>
 						<onclick>Skin.SetImage(programs.thumb)</onclick>
-						<selected>!IsEmpty(Skin.String(programs.thumb)</selected>
+						<selected>!IsEmpty(Skin.String(programs.thumb))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
 				</control>

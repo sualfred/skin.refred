@@ -7,7 +7,7 @@
 			<include>fadeinout</include>
 			<include>toggle_Menu</include>
 			<include>transition_Info</include>
-			<visible>Control.IsVisible(555) + !IsEmpty(ListItem.Title) + [Container.Content(movies) | Container.Content(tvshows | Container.Content(seasons] + !Container.Content(episodes)</visible>
+			<visible>Control.IsVisible(555) + !IsEmpty(ListItem.Title) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + !Container.Content(episodes)</visible>
 			
 				<control type="group">
 					<top>175</top>
@@ -495,7 +495,7 @@
 				<include>fadeinout</include>
 				<include>toggle_Menu</include>
 				<include>transition_Info</include>
-				<visible>Control.IsVisible(555) + [Container.Content(movies) | Container.Content(tvshows | Container.Content(seasons] + !Container.Content(episodes) + !IsEmpty(ListItem.Title)</visible>
+				<visible>Control.IsVisible(555) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)] + !Container.Content(episodes) + !IsEmpty(ListItem.Title)</visible>
 				
 				<top>575</top>
 				<width>1180</width>
