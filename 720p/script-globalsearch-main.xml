@@ -286,7 +286,7 @@
 						<label>$LOCALIZE[134]</label>
 						<label2>$INFO[Control.GetLabel(180)]</label2>
 						<onclick>noop</onclick>
-						<visible>Control.IsVisible(169)</visible>
+						<visible>Control.IsVisible(189)</visible>
 					</item>
 					<item id="9">
 						<label>[B]$LOCALIZE[31604][/B]</label>
@@ -371,12 +371,6 @@
 								<control type="image">
 									<width>90</width>
 									<height>130</height>
-									<texture>thumbs/default_Portrait.png</texture>
-									<aspectratio>scale</aspectratio>
-								</control>
-								<control type="image">
-									<width>90</width>
-									<height>130</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -387,6 +381,13 @@
 									<height>64</height>
 									<texture>DefaultMovie.png</texture>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>90</width>
+									<height>130</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 							<control type="group">
@@ -441,12 +442,6 @@
 									<control type="image">
 										<width>90</width>
 										<height>130</height>
-										<texture>thumbs/default_Portrait.png</texture>
-										<aspectratio>scale</aspectratio>
-									</control>
-									<control type="image">
-										<width>90</width>
-										<height>130</height>
 										<texture>$INFO[ListItem.Art(thumb)]</texture>
 										<aspectratio>scale</aspectratio>
 									</control>
@@ -457,6 +452,13 @@
 										<height>64</height>
 										<texture>DefaultMovie.png</texture>
 										<visible>IsEmpty(ListItem.Art(thumb))</visible>
+									</control>
+									<control type="image">
+										<width>90</width>
+										<height>130</height>
+										<texture>overlays/cover_overlay.png</texture>
+										<aspectratio>scale</aspectratio>
+										<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 									</control>
 								</control>
 								<control type="group">
@@ -549,12 +551,6 @@
 								<control type="image">
 									<width>90</width>
 									<height>130</height>
-									<texture>thumbs/default_Portrait.png</texture>
-									<aspectratio>scale</aspectratio>
-								</control>
-								<control type="image">
-									<width>90</width>
-									<height>130</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -565,6 +561,13 @@
 									<height>64</height>
 									<texture>DefaultMovie.png</texture>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>90</width>
+									<height>130</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 						</focusedlayout>
@@ -610,12 +613,6 @@
 								<control type="image">
 									<width>90</width>
 									<height>130</height>
-									<texture>thumbs/default_Portrait.png</texture>
-									<aspectratio>scale</aspectratio>
-								</control>
-								<control type="image">
-									<width>90</width>
-									<height>130</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -626,6 +623,13 @@
 									<height>64</height>
 									<texture>DefaultTVShows.png</texture>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>90</width>
+									<height>130</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 							<control type="group">
@@ -758,12 +762,6 @@
 								<control type="image">
 									<width>90</width>
 									<height>130</height>
-									<texture>thumbs/default_TVShows.png</texture>
-									<aspectratio>keep</aspectratio>
-								</control>
-								<control type="image">
-									<width>90</width>
-									<height>130</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -774,6 +772,13 @@
 									<height>64</height>
 									<texture>DefaultMovie.png</texture>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>90</width>
+									<height>130</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 						</focusedlayout>
@@ -819,12 +824,6 @@
 								<control type="image">
 									<width>90</width>
 									<height>130</height>
-									<texture>thumbs/default_Portrait.png</texture>
-									<aspectratio>scale</aspectratio>
-								</control>
-								<control type="image">
-									<width>90</width>
-									<height>130</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -835,6 +834,13 @@
 									<height>64</height>
 									<texture>DefaultTVShows.png</texture>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>90</width>
+									<height>130</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 							<control type="group">
@@ -924,12 +930,6 @@
 								<control type="image">
 									<width>90</width>
 									<height>130</height>
-									<texture>thumbs/default_Portrait.png</texture>
-									<aspectratio>scale</aspectratio>
-								</control>
-								<control type="image">
-									<width>90</width>
-									<height>130</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -940,6 +940,13 @@
 									<height>64</height>
 									<texture>DefaultTVShows.png</texture>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>90</width>
+									<height>130</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 						</focusedlayout>
@@ -985,12 +992,6 @@
 								<control type="image">
 									<width>212</width>
 									<height>130</height>
-									<texture>thumbs/default_Landscape.png</texture>
-									<aspectratio>keep</aspectratio>
-								</control>
-								<control type="image">
-									<width>212</width>
-									<height>130</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -1001,6 +1002,13 @@
 									<height>64</height>
 									<texture>DefaultTVShows.png</texture>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>212</width>
+									<height>130</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 							<control type="group">
@@ -1118,12 +1126,6 @@
 								<control type="image">
 									<width>212</width>
 									<height>130</height>
-									<texture>thumbs/default_Landscape.png</texture>
-									<aspectratio>keep</aspectratio>
-								</control>
-								<control type="image">
-									<width>212</width>
-									<height>130</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -1134,6 +1136,13 @@
 									<height>64</height>
 									<texture>DefaultTVShows.png</texture>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>212</width>
+									<height>130</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 						</focusedlayout>
@@ -1179,12 +1188,6 @@
 								<control type="image">
 									<width>212</width>
 									<height>130</height>
-									<texture>thumbs/default_Landscape.png</texture>
-									<aspectratio>keep</aspectratio>
-								</control>
-								<control type="image">
-									<width>212</width>
-									<height>130</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -1195,6 +1198,13 @@
 									<height>64</height>
 									<texture>DefaultMusicVideo.png</texture>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>212</width>
+									<height>130</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 							<control type="group">
@@ -1302,12 +1312,6 @@
 								<control type="image">
 									<width>212</width>
 									<height>130</height>
-									<texture>thumbs/default_Landscape.png</texture>
-									<aspectratio>keep</aspectratio>
-								</control>
-								<control type="image">
-									<width>212</width>
-									<height>130</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -1318,6 +1322,13 @@
 									<height>64</height>
 									<texture>DefaultMusicVideo.png</texture>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>212</width>
+									<height>130</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 						</focusedlayout>
@@ -1363,12 +1374,6 @@
 								<control type="image">
 									<width>100</width>
 									<height>100</height>
-									<texture>thumbs/default_Square.png</texture>
-									<aspectratio>keep</aspectratio>
-								</control>
-								<control type="image">
-									<width>100</width>
-									<height>100</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -1379,6 +1384,13 @@
 									<height>64</height>
 									<texture>DefaultArtist.png</texture>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>100</width>
+									<height>100</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 							<control type="group">
@@ -1482,12 +1494,6 @@
 								<control type="image">
 									<width>100</width>
 									<height>100</height>
-									<texture>thumbs/default_Square.png</texture>
-									<aspectratio>keep</aspectratio>
-								</control>
-								<control type="image">
-									<width>100</width>
-									<height>100</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -1498,6 +1504,13 @@
 									<height>64</height>
 									<texture>DefaultArtist.png</texture>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>100</width>
+									<height>100</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 						</focusedlayout>
@@ -1543,12 +1556,6 @@
 								<control type="image">
 									<width>100</width>
 									<height>100</height>
-									<texture>thumbs/default_Square.png</texture>
-									<aspectratio>keep</aspectratio>
-								</control>
-								<control type="image">
-									<width>100</width>
-									<height>100</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -1560,6 +1567,13 @@
 									<texture>DefaultAlbumCover.png</texture>
 									<aspectratio>keep</aspectratio>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>100</width>
+									<height>100</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 							<control type="group">
@@ -1649,12 +1663,6 @@
 								<control type="image">
 									<width>100</width>
 									<height>100</height>
-									<texture>thumbs/default_Square.png</texture>
-									<aspectratio>keep</aspectratio>
-								</control>
-								<control type="image">
-									<width>100</width>
-									<height>100</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -1666,6 +1674,13 @@
 									<texture>DefaultAlbumCover.png</texture>
 									<aspectratio>keep</aspectratio>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>100</width>
+									<height>100</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 						</focusedlayout>
@@ -1711,12 +1726,6 @@
 								<control type="image">
 									<width>100</width>
 									<height>100</height>
-									<texture>thumbs/default_Square.png</texture>
-									<aspectratio>keep</aspectratio>
-								</control>
-								<control type="image">
-									<width>100</width>
-									<height>100</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -1728,6 +1737,13 @@
 									<texture>DefaultMusicSongs.png</texture>
 									<aspectratio>keep</aspectratio>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>100</width>
+									<height>100</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 							<control type="group">
@@ -1825,12 +1841,6 @@
 								<control type="image">
 									<width>100</width>
 									<height>100</height>
-									<texture>thumbs/default_Square.png</texture>
-									<aspectratio>keep</aspectratio>
-								</control>
-								<control type="image">
-									<width>100</width>
-									<height>100</height>
 									<texture>$INFO[ListItem.Art(thumb)]</texture>
 									<aspectratio>scale</aspectratio>
 								</control>
@@ -1842,6 +1852,13 @@
 									<texture>DefaultMusicSongs.png</texture>
 									<aspectratio>keep</aspectratio>
 									<visible>IsEmpty(ListItem.Art(thumb))</visible>
+								</control>
+								<control type="image">
+									<width>100</width>
+									<height>100</height>
+									<texture>overlays/cover_overlay.png</texture>
+									<aspectratio>scale</aspectratio>
+									<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 								</control>
 							</control>
 						</focusedlayout>
