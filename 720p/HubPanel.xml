@@ -18,6 +18,7 @@
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>
+			<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
 		</control>
 		<control type="label">
 			<left>100</left>
@@ -28,6 +29,7 @@
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>
+			<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
 		</control>
 		<!--buttons-->
 		<control type="list" id="556">
@@ -91,7 +93,7 @@
 			<width>730</width>
 			<height>540</height>
 			<texture>white.png</texture>
-			<visible>Control.HasFocus(5561)</visible>
+			<visible>!Window.IsActive(script-globalsearch-main.xml) + Control.HasFocus(5561)</visible>
 		</control>
 		<control type="image">
 			<left>100</left>
@@ -100,7 +102,7 @@
 			<height>540</height>
 			<texture>white.png</texture>
 			<include>bordertrans</include>
-			<visible>!Control.HasFocus(5561)</visible>
+			<visible>!Window.IsActive(script-globalsearch-main.xml) + !Control.HasFocus(5561)</visible>
 		</control>
 		<control type="fixedlist" id="5561">
 			<visible>!Container(556).HasFocus(2) + !Container(556).HasFocus(14)</visible>
@@ -193,6 +195,7 @@
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>
+			<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
 		</control>
 		<control type="label">
 			<left>100</left>
@@ -203,6 +206,7 @@
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>
+			<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
 		</control>
 		<!--buttons-->
 		<control type="list" id="557">
@@ -266,7 +270,7 @@
 			<width>730</width>
 			<height>540</height>
 			<texture>white.png</texture>
-			<visible>Control.HasFocus(5571)</visible>
+			<visible>!Window.IsActive(script-globalsearch-main.xml) + Control.HasFocus(5571)</visible>
 		</control>
 		<control type="image">
 			<left>100</left>
@@ -275,7 +279,7 @@
 			<height>540</height>
 			<texture>white.png</texture>
 			<include>bordertrans</include>
-			<visible>!Control.HasFocus(5571)</visible>
+			<visible>!Window.IsActive(script-globalsearch-main.xml) + !Control.HasFocus(5571)</visible>
 		</control>
 		<control type="fixedlist" id="5571">
 			<visible>!Container(557).HasFocus(2) + !Container(557).HasFocus(14)</visible>
@@ -368,6 +372,7 @@
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>
+			<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
 		</control>
 		<control type="label">
 			<left>100</left>
@@ -378,6 +383,7 @@
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>
+			<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
 		</control>
 		<!--buttons-->
 		<control type="list" id="559">
@@ -441,7 +447,7 @@
 			<width>730</width>
 			<height>540</height>
 			<texture>white.png</texture>
-			<visible>Control.HasFocus(5591)</visible>
+			<visible>!Window.IsActive(script-globalsearch-main.xml) + Control.HasFocus(5591)</visible>
 		</control>
 		<control type="image">
 			<left>100</left>
@@ -450,7 +456,7 @@
 			<height>540</height>
 			<texture>white.png</texture>
 			<include>bordertrans</include>
-			<visible>!Control.HasFocus(5591)</visible>
+			<visible>!Window.IsActive(script-globalsearch-main.xml) + !Control.HasFocus(5591)</visible>
 		</control>
 		<control type="fixedlist" id="5591">
 			<visible>Container(559).HasFocus(3) | [!Container(559).HasFocus(1) + !Container(559).HasFocus(2) + !Container(559).HasFocus(4)]</visible>
@@ -566,6 +572,7 @@
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>
+			<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
 		</control>
 		<control type="label">
 			<left>100</left>
@@ -576,6 +583,7 @@
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>
+			<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
 		</control>
 		<!--buttons-->
 		<control type="list" id="558">
@@ -639,7 +647,7 @@
 			<width>730</width>
 			<height>540</height>
 			<texture>white.png</texture>
-			<visible>Control.HasFocus(5581)</visible>
+			<visible>!Window.IsActive(script-globalsearch-main.xml) + Control.HasFocus(5581)</visible>
 		</control>
 		<control type="image">
 			<left>100</left>
@@ -648,7 +656,7 @@
 			<height>540</height>
 			<texture>white.png</texture>
 			<include>bordertrans</include>
-			<visible>!Control.HasFocus(5581)</visible>
+			<visible>!Window.IsActive(script-globalsearch-main.xml) + !Control.HasFocus(5581)</visible>
 		</control>
 		<control type="fixedlist" id="5581">
 			<visible>!Container(558).HasFocus(2) + !Container(558).HasFocus(14)</visible>
@@ -729,6 +737,7 @@
 	
 	<include name="hubwidget-panelmusic">
 		<control type="group">
+		<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
 		<left>100</left>
 		<top>120</top>
 			<control type="image">
@@ -793,6 +802,7 @@
 	
 	<include name="hubwidget-panel">
 		<control type="group">
+		<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
 		<left>100</left>
 		<top>120</top>
 			<control type="image">
