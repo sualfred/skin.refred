@@ -867,6 +867,12 @@
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
+						<texture>$VAR[flag_VideoType]</texture>
+						<aspectratio align="center">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
 						<texture>$VAR[hubResolution]</texture>
 						<aspectratio align="left">keep</aspectratio>
 					</control>

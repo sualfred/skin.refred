@@ -201,48 +201,54 @@
 						<height>64</height>
 						<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
 						<aspectratio align="center">keep</aspectratio>
+					</control>					
+					<control type="image">
+						<width>96</width>
+						<height>64</height>
+						<texture>$VAR[flag_VideoType]</texture>
+						<aspectratio align="center">keep</aspectratio>
+						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
 					</control>
 					<control type="image">
 						<width>96</width>
 						<height>64</height>
 						<texture>$INFO[ListItem.VideoResolution,flags/video/resolution/,.png]</texture>
 						<aspectratio align="center">keep</aspectratio>
-						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(Listitem.VideoResolution)</visible>
+						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(ListItem.VideoResolution)</visible>
 					</control>
 					<control type="image">
 						<width>96</width>
 						<height>64</height>
-						<texture>$INFO[Listitem.VideoCodec,flags/codec/,.png]</texture>
+						<texture>$INFO[ListItem.VideoCodec,flags/codec/,.png]</texture>
 						<aspectratio align="center">keep</aspectratio>
-						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(Listitem.VideoCodec)</visible>
+						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(ListItem.VideoCodec)</visible>
 					</control>
 					<control type="image">
 						<width>96</width>
 						<height>64</height>
-						<texture>$INFO[Listitem.AudioCodec,flags/codec/,.png]</texture>
+						<texture>$INFO[ListItem.AudioCodec,flags/codec/,.png]</texture>
 						<aspectratio align="center">keep</aspectratio>
-						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(Listitem.AudioCodec)</visible>
+						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(ListItem.AudioCodec)</visible>
 					</control>
 					<control type="image">
 						<width>53</width>
 						<height>64</height>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
-						<texture>$INFO[Listitem.AudioChannels,flags/audio/,.png]</texture>
-						<visible>!IsEmpty(Listitem.AudioChannels)</visible>
+						<texture>$INFO[ListItem.AudioChannels,flags/audio/,.png]</texture>
+						<visible>!IsEmpty(ListItem.AudioChannels)</visible>
 					</control>	
 					<control type="image">
 						<width>96</width>
 						<height>64</height>
-						<texture>$INFO[Listitem.VideoAspect,flags/video/aspectratio/,.png]</texture>
+						<texture>$INFO[ListItem.VideoAspect,flags/video/aspectratio/,.png]</texture>
 						<aspectratio align="center">keep</aspectratio>
-						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(Listitem.VideoAspect)</visible>
+						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(ListItem.VideoAspect)</visible>
 					</control>	
 				</control>
 		</control>
 		
 		<!-- details episodes -->
 		<control type="group">
-				<!--<include>fadeinout</include>-->
 				<include>toggle_Menu</include>
 				<include>transition_Info</include>
 				<visible>Control.IsVisible(55) + Container.Content(episodes) + !IsEmpty(ListItem.Title)</visible>
@@ -297,41 +303,48 @@
 						<height>64</height>
 						<texture>$INFO[ListItem.Rating,rating/imdb/,.png]</texture>
 						<aspectratio align="center">keep</aspectratio>
+					</control>					
+					<control type="image">
+						<width>96</width>
+						<height>64</height>
+						<texture>$VAR[flag_VideoType]</texture>
+						<aspectratio align="center">keep</aspectratio>
+						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
 					</control>
 					<control type="image">
 						<width>96</width>
 						<height>64</height>
 						<texture>$INFO[ListItem.VideoResolution,flags/video/resolution/,.png]</texture>
 						<aspectratio align="center">keep</aspectratio>
-						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(Listitem.VideoResolution)</visible>
+						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(ListItem.VideoResolution)</visible>
 					</control>
 					<control type="image">
 						<width>96</width>
 						<height>64</height>
-						<texture>$INFO[Listitem.VideoCodec,flags/codec/,.png]</texture>
+						<texture>$INFO[ListItem.VideoCodec,flags/codec/,.png]</texture>
 						<aspectratio align="center">keep</aspectratio>
-						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(Listitem.VideoCodec)</visible>
+						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(ListItem.VideoCodec)</visible>
 					</control>
 					<control type="image">
 						<width>96</width>
 						<height>64</height>
-						<texture>$INFO[Listitem.AudioCodec,flags/codec/,.png]</texture>
+						<texture>$INFO[ListItem.AudioCodec,flags/codec/,.png]</texture>
 						<aspectratio align="center">keep</aspectratio>
-						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(Listitem.AudioCodec)</visible>
+						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(ListItem.AudioCodec)</visible>
 					</control>
 					<control type="image">
 						<width>53</width>
 						<height>64</height>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
-						<texture>$INFO[Listitem.AudioChannels,flags/audio/,.png]</texture>
-						<visible>!IsEmpty(Listitem.AudioChannels)</visible>
+						<texture>$INFO[ListItem.AudioChannels,flags/audio/,.png]</texture>
+						<visible>!IsEmpty(ListItem.AudioChannels)</visible>
 					</control>	
 					<control type="image">
 						<width>96</width>
 						<height>64</height>
-						<texture>$INFO[Listitem.VideoAspect,flags/video/aspectratio/,.png]</texture>
+						<texture>$INFO[ListItem.VideoAspect,flags/video/aspectratio/,.png]</texture>
 						<aspectratio align="center">keep</aspectratio>
-						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(Listitem.VideoAspect)</visible>
+						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)] + !IsEmpty(ListItem.VideoAspect)</visible>
 					</control>	
 				</control>
 		</control>

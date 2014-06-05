@@ -728,7 +728,29 @@
 		<value condition="Skin.HasSetting(overlay.enable)">$INFO[ListItem.Overlay,overlays/info/unwatched/]</value>
 		<value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
 	</variable>
-	<variable name="flag_VideoType">
+	<variable name="flag_VideoType">	
+		<value condition="Container(554).ListItem.IsStereoscopic + Control.HasFocus(554)">flags/video/3D/nf-3D.png</value>
+		<value condition="IntegerGreaterThan(Container(554).ListItem.VideoResolution,540) + Control.HasFocus(554)">flags/video/HD/nf-HD.png</value>
+		<value condition="!IntegerGreaterThan(Container(554).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + Control.HasFocus(554)">flags/video/SD/nf-SD.png</value>	
+		
+		<value condition="Container(5561).ListItem.IsStereoscopic + ControlGroup(5562).HasFocus()">flags/video/3D/nf-3D.png</value>
+		<value condition="IntegerGreaterThan(Container(5561).ListItem.VideoResolution,540) + ControlGroup(5562).HasFocus()">flags/video/HD/nf-HD.png</value>
+		<value condition="!IntegerGreaterThan(Container(5561).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + ControlGroup(5562).HasFocus()">flags/video/SD/nf-SD.png</value>		
+		<value condition="Container(5571).ListItem.IsStereoscopic + ControlGroup(5563).HasFocus()">flags/video/3D/nf-3D.png</value>
+		<value condition="IntegerGreaterThan(Container(5571).ListItem.VideoResolution,540) + ControlGroup(5563).HasFocus()">flags/video/HD/nf-HD.png</value>
+		<value condition="!IntegerGreaterThan(Container(5571).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + ControlGroup(5563).HasFocus()">flags/video/SD/nf-SD.png</value>		
+		<value condition="Container(5591).ListItem.IsStereoscopic + ControlGroup(5565).HasFocus()">flags/video/3D/nf-3D.png</value>
+		<value condition="IntegerGreaterThan(Container(5591).ListItem.VideoResolution,540) + ControlGroup(5565).HasFocus()">flags/video/HD/nf-HD.png</value>
+		<value condition="!IntegerGreaterThan(Container(5591).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + ControlGroup(5565).HasFocus()">flags/video/SD/nf-SD.png</value>		
+		<value condition="Container(9150).ListItem.IsStereoscopic + Control.HasFocus(9150)">flags/video/3D/nf-3D.png</value>
+		<value condition="IntegerGreaterThan(Container(9150).ListItem.VideoResolution,540) + Control.HasFocus(9150)">flags/video/HD/nf-HD.png</value>
+		<value condition="!IntegerGreaterThan(Container(9150).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + Control.HasFocus(9150)">flags/video/SD/nf-SD.png</value>
+		<value condition="Container(9160).ListItem.IsStereoscopic + Control.HasFocus(9160)">flags/video/3D/nf-3D.png</value>
+		<value condition="IntegerGreaterThan(Container(9160).ListItem.VideoResolution,540) + Control.HasFocus(9160)">flags/video/HD/nf-HD.png</value>
+		<value condition="!IntegerGreaterThan(Container(9160).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + Control.HasFocus(9160)">flags/video/SD/nf-SD.png</value>
+		<value condition="Container(9140).ListItem.IsStereoscopic + Control.HasFocus(9140)">flags/video/3D/nf-3D.png</value>
+		<value condition="IntegerGreaterThan(Container(9140).ListItem.VideoResolution,540) + Control.HasFocus(9140)">flags/video/HD/nf-HD.png</value>
+		<value condition="!IntegerGreaterThan(Container(9140).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + Control.HasFocus(9140)">flags/video/SD/nf-SD.png</value>
 		<value condition="ListItem.IsStereoscopic">flags/video/3D/nf-3D.png</value>
 		<value condition="IntegerGreaterThan(ListItem.VideoResolution,540)">flags/video/HD/nf-HD.png</value>
 		<value condition="!IntegerGreaterThan(ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder">flags/video/SD/nf-SD.png</value>

@@ -53,6 +53,13 @@
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
+						<texture>$VAR[flag_VideoType]</texture>
+						<aspectratio align="center">keep</aspectratio>
+						<visible>[Container.Content(movies) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
 						<texture>$INFO[Container(554).ListItem.VideoResolution,flags/video/resolution/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
 					</control>

@@ -497,6 +497,12 @@
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
+						<texture>$VAR[flag_VideoType]</texture>						
+						<aspectratio align="center">keep</aspectratio>						
+					</control>	
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
 						<texture>$INFO[Container(9150).ListItem.VideoResolution,flags/video/resolution/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
 					</control>
@@ -660,6 +666,12 @@
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
+						<texture>$VAR[flag_VideoType]</texture>						
+						<aspectratio align="center">keep</aspectratio>						
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
 						<texture>$INFO[Container(9160).ListItem.VideoResolution,flags/video/resolution/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
 					</control>
@@ -813,6 +825,12 @@
 					<control type="image">
 						<width>59</width>
 						<height>40</height>
+						<texture>$VAR[flag_VideoType]</texture>						
+						<aspectratio align="center">keep</aspectratio>						
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
 						<texture>$INFO[Container(9140).ListItem.VideoResolution,flags/video/resolution/,.png]</texture>
 						<aspectratio align="left">keep</aspectratio>
 					</control>
@@ -949,6 +967,12 @@
 						<height>40</height>
 						<texture>$INFO[Container(9140).ListItem.Rating,rating/imdb/,.png]</texture>
 						<aspectratio align="center">keep</aspectratio>
+					</control>
+					<control type="image">
+						<width>59</width>
+						<height>40</height>
+						<texture>$VAR[flag_VideoType]</texture>						
+						<aspectratio align="center">keep</aspectratio>						
 					</control>
 					<control type="image">
 						<width>59</width>
