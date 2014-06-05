@@ -632,74 +632,75 @@
 					</control>
 
 					<control type="group">
-						<height>135</height>
+						<height>44</height>
 						<control type="grouplist">
 							<width>283</width>
 							<itemgap>2</itemgap>
 							<control type="button" id="1011">
-								<label>[B]Czech: [/B]rosiste</label>
+								<label>[B]English: [/B]Sebastian Saenger</label>
+								<width>283</width>
+								<onclick>noop</onclick> 
+								<include>settings_Listbutton</include>
+							</control>
+							<!--
+							<control type="button" id="1011">
+								<label>[B]Germany: [/B]Sebastian Saenger</label>
 								<width>283</width>
 								<onclick>noop</onclick> 
 								<include>settings_Listbutton</include>
 							</control>
 							<control type="button" id="1011">
-								<label>[B]Danish: [/B]LoADrunner</label>
+								<label>[B]Finnish: [/B] </label>
 								<width>283</width>
 								<onclick>noop</onclick> 
 								<include>settings_Listbutton</include>
-							</control>
-							<control type="button" id="1011">
-								<label>[B]Finnish: [/B]ZZRX</label>
-								<width>283</width>
-								<onclick>noop</onclick> 
-								<include>settings_Listbutton</include>
-							</control>
+							</control>-->
 						</control>
 						<control type="grouplist">
+							<width>283</width>
+							<itemgap>2</itemgap>
 							<left>285</left>
-							<width>283</width>
-							<itemgap>2</itemgap>
-							<control type="button" id="1021">
-								<label>[B]French: [/B]legostrike &amp; Frisson</label>
+							<control type="button" id="1011">
+								<label>[B]German: [/B]Sebastian Saenger</label>
 								<width>283</width>
 								<onclick>noop</onclick> 
 								<include>settings_Listbutton</include>
 							</control>
-							<control type="button" id="1022">
-								<label>[B]Italian: [/B]peppe_sr</label>
+							<!--<control type="button" id="1011">
+								<label>[B]Germany: [/B]Sebastian Saenger</label>
 								<width>283</width>
 								<onclick>noop</onclick> 
 								<include>settings_Listbutton</include>
 							</control>
-							<control type="button" id="1023">
-								<label>[B]Korean: [/B]epoke</label>
+							<control type="button" id="1011">
+								<label>[B]Finnish: [/B] </label>
 								<width>283</width>
 								<onclick>noop</onclick> 
 								<include>settings_Listbutton</include>
-							</control>
+							</control>-->
 						</control>
 						<control type="grouplist">
-							<left>570</left>
 							<width>283</width>
 							<itemgap>2</itemgap>
-							<control type="button" id="1031">
-								<label>[B]Polish: [/B]Okashu</label>
+							<left>570</left>
+							<!--<control type="button" id="1011">
+								<label>[B]English: [/B]Sebastian Saenger</label>
 								<width>283</width>
 								<onclick>noop</onclick> 
 								<include>settings_Listbutton</include>
 							</control>
-							<control type="button" id="1032">
-								<label>[B]Portuguese: [/B]fabiodacosta</label>
+							<control type="button" id="1011">
+								<label>[B]Germany: [/B]Sebastian Saenger</label>
 								<width>283</width>
 								<onclick>noop</onclick> 
 								<include>settings_Listbutton</include>
 							</control>
-							<control type="button" id="1033">
-								<label>[B]Romanian: [/B]Galefury</label>
+							<control type="button" id="1011">
+								<label>[B]Finnish: [/B] </label>
 								<width>283</width>
 								<onclick>noop</onclick> 
 								<include>settings_Listbutton</include>
-							</control>
+							</control>-->
 						</control>
 					</control>
 					<control type="button" id="1040">
