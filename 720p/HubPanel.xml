@@ -105,7 +105,6 @@
 			<visible>!Window.IsActive(script-globalsearch-main.xml) + !Control.HasFocus(5561)</visible>
 		</control>
 		<control type="fixedlist" id="5561">
-			<visible>!Container(556).HasFocus(2) + !Container(556).HasFocus(14)</visible>
 			<left>105</left>
 			<top>125</top>
 			<width>720</width>
@@ -114,7 +113,7 @@
 			<onright>556</onright>
 			<onup>5561</onup>
 			<ondown>5561</ondown>
-			<content>videodb://movies/titles/</content>
+			<content target="video">$VAR[hubcategoryContent]</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<include>toggle_Menu</include>
@@ -122,59 +121,9 @@
 			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5561)</autoscroll>
 			<include>transition_Info</include>
 			<include>transition_Content</include>
-			<itemlayout width="720" height="530">
-				  
+			<itemlayout width="720" height="530">				  
 			</itemlayout>
-			<focusedlayout width="720" height="530">
-				 
-			</focusedlayout>
-		</control>
-		<control type="fixedlist" id="5561">
-			<visible>Container(556).HasFocus(2)</visible>
-			<left>105</left>
-			<top>125</top>
-			<width>720</width>
-			<height>530</height>
-			<onright>556</onright>
-			<onback>9110</onback>
-			<onup>5561</onup>
-			<ondown>5561</ondown>
-			<content target="video">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]</content>
-			<pagecontrol>70</pagecontrol>
-			<preloaditems>2</preloaditems>
-			<fadetime>1000</fadetime>
-			<include>toggle_Menu</include>
-			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5561)</autoscroll>
-			<include>transition_Info</include>
-			<include>transition_Content</include>
-			<itemlayout width="720" height="530">
-				  
-			</itemlayout>
-			<focusedlayout width="720" height="530">
-				 
-			</focusedlayout>
-		</control>
-		<control type="fixedlist" id="5561">
-			<visible>Container(556).HasFocus(14)</visible>
-			<left>105</left>
-			<top>125</top>
-			<width>720</width>
-			<height>530</height>
-			<onright>556</onright>
-			<onup>5561</onup>
-			<onback>9110</onback>
-			<ondown>5561</ondown>
-			<content target="video">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]&limit=10</content>
-			<pagecontrol>70</pagecontrol>
-			<preloaditems>2</preloaditems>
-			<fadetime>1000</fadetime>
-			<include>toggle_Menu</include>
-			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5561)</autoscroll>
-			<include>transition_Info</include>
-			<include>transition_Content</include>
-			<itemlayout width="720" height="530">
-			</itemlayout>
-			<focusedlayout width="720" height="530">				
+			<focusedlayout width="720" height="530">				 
 			</focusedlayout>
 		</control>
 		<include>hubwidget-panel</include>
@@ -282,7 +231,6 @@
 			<visible>!Window.IsActive(script-globalsearch-main.xml) + !Control.HasFocus(5571)</visible>
 		</control>
 		<control type="fixedlist" id="5571">
-			<visible>!Container(557).HasFocus(2) + !Container(557).HasFocus(14)</visible>
 			<left>105</left>
 			<top>125</top>
 			<width>720</width>
@@ -291,67 +239,17 @@
 			<onright>557</onright>
 			<onup>5571</onup>
 			<ondown>5571</ondown>
-			<content target="video">plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]&limit=10</content>
+			<content target="video">$VAR[hubcategoryContent]</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<include>toggle_Menu</include>
 			<fadetime>1000</fadetime>
-			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5571)</autoscroll>
-			<include>transition_Info</include>
-			<include>transition_Content</include>
-			<itemlayout width="720" height="530">
-				  
-			</itemlayout>
-			<focusedlayout width="720" height="530">
-				 
-			</focusedlayout>
-		</control>
-		<control type="fixedlist" id="5571">
-			<visible>Container(557).HasFocus(2)</visible>
-			<left>105</left>
-			<top>125</top>
-			<width>720</width>
-			<height>530</height>
-			<onright>557</onright>
-			<onback>9110</onback>
-			<onup>5571</onup>
-			<ondown>5571</ondown>
-			<content target="video">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]&limit=10</content>
-			<pagecontrol>70</pagecontrol>
-			<preloaditems>2</preloaditems>
-			<fadetime>1000</fadetime>
-			<include>toggle_Menu</include>
-			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5571)</autoscroll>
-			<include>transition_Info</include>
-			<include>transition_Content</include>
-			<itemlayout width="720" height="530">
-				  
-			</itemlayout>
-			<focusedlayout width="720" height="530">
-				 
-			</focusedlayout>
-		</control>
-		<control type="fixedlist" id="5571">
-			<visible>Container(557).HasFocus(14)</visible>
-			<left>105</left>
-			<top>125</top>
-			<width>720</width>
-			<height>530</height>
-			<onright>557</onright>
-			<onup>5571</onup>
-			<onback>9110</onback>
-			<ondown>5571</ondown>
-			<content target="video">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=20</content>
-			<pagecontrol>70</pagecontrol>
-			<preloaditems>2</preloaditems>
-			<fadetime>1000</fadetime>
-			<include>toggle_Menu</include>
 			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5571)</autoscroll>
 			<include>transition_Info</include>
 			<include>transition_Content</include>
 			<itemlayout width="720" height="530">
 			</itemlayout>
-			<focusedlayout width="720" height="530">				
+			<focusedlayout width="720" height="530">
 			</focusedlayout>
 		</control>
 		<include>hubwidget-panel</include>
@@ -459,7 +357,6 @@
 			<visible>!Window.IsActive(script-globalsearch-main.xml) + !Control.HasFocus(5591)</visible>
 		</control>
 		<control type="fixedlist" id="5591">
-			<visible>Container(559).HasFocus(3) | [!Container(559).HasFocus(1) + !Container(559).HasFocus(2) + !Container(559).HasFocus(4)]</visible>
 			<left>105</left>
 			<top>125</top>
 			<width>720</width>
@@ -468,7 +365,7 @@
 			<onright>559</onright>
 			<onup>5591</onup>
 			<ondown>5591</ondown>
-			<content target="video">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=20</content>
+			<content target="video">$VAR[hubcategoryContent]</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<include>toggle_Menu</include>
@@ -476,82 +373,9 @@
 			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5591)</autoscroll>
 			<include>transition_Info</include>
 			<include>transition_Content</include>
-			<itemlayout width="720" height="530">
-				  
+			<itemlayout width="720" height="530">				  
 			</itemlayout>
-			<focusedlayout width="720" height="530">
-				 
-			</focusedlayout>
-		</control>
-		<control type="fixedlist" id="5591">
-			<visible>Container(559).HasFocus(4)</visible>
-			<left>105</left>
-			<top>125</top>
-			<width>720</width>
-			<height>530</height>
-			<onright>559</onright>
-			<onback>9110</onback>
-			<onup>5591</onup>
-			<ondown>5591</ondown>
-			<content target="video">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]&limit=10</content>
-			<pagecontrol>70</pagecontrol>
-			<preloaditems>2</preloaditems>
-			<fadetime>1000</fadetime>
-			<include>toggle_Menu</include>
-			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5591)</autoscroll>
-			<include>transition_Info</include>
-			<include>transition_Content</include>
-			<itemlayout width="720" height="530">
-				  
-			</itemlayout>
-			<focusedlayout width="720" height="530">
-				 
-			</focusedlayout>
-		</control>
-		<control type="fixedlist" id="5591">
-			<visible>Container(559).HasFocus(2)</visible>
-			<left>105</left>
-			<top>125</top>
-			<width>720</width>
-			<height>530</height>
-			<onright>559</onright>
-			<onup>5591</onup>
-			<onback>9110</onback>
-			<ondown>5591</ondown>
-			<content target="video">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]&limit=10</content>
-			<pagecontrol>70</pagecontrol>
-			<preloaditems>2</preloaditems>
-			<fadetime>1000</fadetime>
-			<include>toggle_Menu</include>
-			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5591)</autoscroll>
-			<include>transition_Info</include>
-			<include>transition_Content</include>
-			<itemlayout width="720" height="530">
-			</itemlayout>
-			<focusedlayout width="720" height="530">				
-			</focusedlayout>
-		</control>
-		<control type="fixedlist" id="5591">
-			<visible>Container(559).HasFocus(1)</visible>
-			<left>105</left>
-			<top>125</top>
-			<width>720</width>
-			<height>530</height>
-			<onright>559</onright>
-			<onup>5591</onup>
-			<onback>9110</onback>
-			<ondown>5591</ondown>
-			<content target="video">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]&limit=10</content>
-			<pagecontrol>70</pagecontrol>
-			<preloaditems>2</preloaditems>
-			<fadetime>1000</fadetime>
-			<include>toggle_Menu</include>
-			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5591)</autoscroll>
-			<include>transition_Info</include>
-			<include>transition_Content</include>
-			<itemlayout width="720" height="530">
-			</itemlayout>
-			<focusedlayout width="720" height="530">				
+			<focusedlayout width="720" height="530">				 
 			</focusedlayout>
 		</control>
 		<include>hubwidget-panel</include>
@@ -659,7 +483,6 @@
 			<visible>!Window.IsActive(script-globalsearch-main.xml) + !Control.HasFocus(5581)</visible>
 		</control>
 		<control type="fixedlist" id="5581">
-			<visible>!Container(558).HasFocus(2) + !Container(558).HasFocus(14)</visible>
 			<left>105</left>
 			<top>125</top>
 			<width>720</width>
@@ -668,7 +491,7 @@
 			<onright>558</onright>
 			<onup>5581</onup>
 			<ondown>5581</ondown>
-			<content target="music">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]&limit=10</content>
+			<content target="music">$VAR[hubcategoryContent]</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<include>toggle_Menu</include>
@@ -676,59 +499,9 @@
 			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5581)</autoscroll>
 			<include>transition_Info</include>
 			<include>transition_Content</include>
-			<itemlayout width="720" height="530">
-				  
+			<itemlayout width="720" height="530">				  
 			</itemlayout>
-			<focusedlayout width="720" height="530">
-				 
-			</focusedlayout>
-		</control>
-		<control type="fixedlist" id="5581">
-			<visible>Container(558).HasFocus(2)</visible>
-			<left>105</left>
-			<top>125</top>
-			<width>720</width>
-			<height>530</height>
-			<onright>558</onright>
-			<onback>9110</onback>
-			<onup>5581</onup>
-			<ondown>5581</ondown>
-			<content target="music">plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]&limit=20</content>
-			<pagecontrol>70</pagecontrol>
-			<preloaditems>2</preloaditems>
-			<fadetime>1000</fadetime>
-			<include>toggle_Menu</include>
-			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5581)</autoscroll>
-			<include>transition_Info</include>
-			<include>transition_Content</include>
-			<itemlayout width="720" height="530">
-				  
-			</itemlayout>
-			<focusedlayout width="720" height="530">
-				 
-			</focusedlayout>
-		</control>
-		<control type="fixedlist" id="5581">
-			<visible>Container(558).HasFocus(14)</visible>
-			<left>105</left>
-			<top>125</top>
-			<width>720</width>
-			<height>530</height>
-			<onright>558</onright>
-			<onup>5581</onup>
-			<onback>9110</onback>
-			<ondown>5581</ondown>
-			<content target="music">plugin://service.library.data.provider?type=recommendedalbums&reload=$INFO[Window.Property(recommendedalbums)]&limit=10</content>
-			<pagecontrol>70</pagecontrol>
-			<preloaditems>2</preloaditems>
-			<fadetime>1000</fadetime>
-			<include>toggle_Menu</include>
-			<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(5581)</autoscroll>
-			<include>transition_Info</include>
-			<include>transition_Content</include>
-			<itemlayout width="720" height="530">
-			</itemlayout>
-			<focusedlayout width="720" height="530">				
+			<focusedlayout width="720" height="530">				 
 			</focusedlayout>
 		</control>
 		<include>hubwidget-panelmusic</include>
@@ -913,6 +686,7 @@
 			</control>
 			<control type="group">
 				<visible>[Control.IsVisible(5563) + Container(557).HasFocus(14)] | [Control.IsVisible(5562) + Container(556).HasFocus(14)]</visible>
+				<include>fadeinout</include>
 				<top>5</top>
 				<left>5</left>
 				<control type="image">					

@@ -74,6 +74,26 @@
 		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(4)">$LOCALIZE[32031]: $LOCALIZE[32041]</value>	
 	</variable>
 	
+	<variable name="hubcategoryContent">
+		<!-- episodes -->
+		<value condition="Control.IsVisible(5563) + [Container(557).HasFocus(1) | [!Container(557).HasFocus(2) + !Container(557).HasFocus(14)]]">plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]&limit=10</value>
+		<value condition="Control.IsVisible(5563) + Container(557).HasFocus(2)">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]&limit=10</value>
+		<value condition="Control.IsVisible(5563) + Container(557).HasFocus(14)">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=20</value>
+		<!--movies-->
+		<value condition="Control.IsVisible(5562) + [Container(556).HasFocus(1) | [!Container(556).HasFocus(2) + !Container(556).HasFocus(14)]]">videodb://movies/titles/</value>
+		<value condition="Control.IsVisible(5562) + Container(556).HasFocus(2)">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]</value>
+		<value condition="Control.IsVisible(5562) + Container(556).HasFocus(14)">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]&limit=10</value>
+		<!--music-->
+		<value condition="Control.IsVisible(5564) + [Container(558).HasFocus(1) | [!Container(558).HasFocus(2) + !Container(558).HasFocus(14)]]">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]&limit=10</value>
+		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(2)">plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]&limit=20</value>
+		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(14)">plugin://service.library.data.provider?type=recommendedalbums&reload=$INFO[Window.Property(recommendedalbums)]&limit=10</value>		
+		<!-- inprogress-->
+		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(1)">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]&limit=10</value>	
+		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(2)">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]&limit=10</value>	
+		<value condition="Control.IsVisible(5565) + [Container(559).HasFocus(3) | [!Container(559).HasFocus(1) + !Container(559).HasFocus(2) + !Container(559).HasFocus(4)]">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=20</value>	
+		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(4)">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]&limit=10</value>	
+	</variable>
+	
 	<variable name="hubTitle">
 		<value condition="Control.IsVisible(5562)">$INFO[Container(5561).ListItem.Label]</value>
 		<value condition="Control.IsVisible(5563)">[COLOR Color2]$INFO[Container(5571).ListItem.TVShowTitle]:[/COLOR] $INFO[Container(5571).ListItem.Label]</value>
@@ -226,20 +246,20 @@
 	
 <!--widget cat-->
 	<variable name="widget_movie_cat">
-		<value condition="!Skin.HasSetting(widgets.randommovies.enabled)">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]&limit=10</value>
-		<value condition="Skin.HasSetting(widgets.randommovies.enabled)">plugin://service.library.data.provider?type=randommovies&reload=$INFO[Window.Property(randommovies)]&limit=10</value>
+		<value condition="Container(9110).HasFocus(200) + !Skin.HasSetting(widgets.randommovies.enabled)">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]&limit=10</value>
+		<value condition="Container(9110).HasFocus(200) + Skin.HasSetting(widgets.randommovies.enabled)">plugin://service.library.data.provider?type=randommovies&reload=$INFO[Window.Property(randommovies)]&limit=10</value>
 	</variable>
 	<variable name="widget_episode_cat">
-		<value condition="!Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]&limit=10</value>
-		<value condition="Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]&limit=10</value>
+		<value condition="Container(9110).HasFocus(300) + !Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]&limit=10</value>
+		<value condition="Container(9110).HasFocus(300) + Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]&limit=10</value>
 	</variable>
 	<variable name="widget_inprogress_cat">
-		<value condition="!Skin.HasSetting(widgets.inprogressmovies.enabled)">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=10</value>
-		<value condition="Skin.HasSetting(widgets.inprogressmovies.enabled)">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]&limit=10</value>
+		<value condition="Container(9110).HasFocus(802) +!Skin.HasSetting(widgets.inprogressmovies.enabled)">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=10</value>
+		<value condition="Container(9110).HasFocus(802) + Skin.HasSetting(widgets.inprogressmovies.enabled)">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]&limit=10</value>
 	</variable>
 	<variable name="widget_music_cat">
-		<value condition="!Skin.HasSetting(widgets.randommusic.enabled)">plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]&limit=10</value>
-		<value condition="Skin.HasSetting(widgets.randommusic.enabled)">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]&limit=10</value>
+		<value condition="Container(9110).HasFocus(500) + !Skin.HasSetting(widgets.randommusic.enabled)">plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]&limit=10</value>
+		<value condition="Container(9110).HasFocus(500) + Skin.HasSetting(widgets.randommusic.enabled)">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]&limit=10</value>
 	</variable>
 	
 <!--widget inprogress-->
