@@ -164,7 +164,7 @@
 			<onup>5561</onup>
 			<onback>9110</onback>
 			<ondown>5561</ondown>
-			<content target="video">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]</content>
+			<content target="video">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]&limit=10</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<fadetime>1000</fadetime>
@@ -291,7 +291,7 @@
 			<onright>557</onright>
 			<onup>5571</onup>
 			<ondown>5571</ondown>
-			<content target="video">plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]</content>
+			<content target="video">plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]&limit=10</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<include>toggle_Menu</include>
@@ -316,7 +316,7 @@
 			<onback>9110</onback>
 			<onup>5571</onup>
 			<ondown>5571</ondown>
-			<content target="video">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]</content>
+			<content target="video">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]&limit=10</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<fadetime>1000</fadetime>
@@ -341,7 +341,7 @@
 			<onup>5571</onup>
 			<onback>9110</onback>
 			<ondown>5571</ondown>
-			<content target="video">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]</content>
+			<content target="video">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=20</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<fadetime>1000</fadetime>
@@ -468,7 +468,7 @@
 			<onright>559</onright>
 			<onup>5591</onup>
 			<ondown>5591</ondown>
-			<content target="video">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]</content>
+			<content target="video">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=20</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<include>toggle_Menu</include>
@@ -493,7 +493,7 @@
 			<onback>9110</onback>
 			<onup>5591</onup>
 			<ondown>5591</ondown>
-			<content target="video">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]</content>
+			<content target="video">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]&limit=10</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<fadetime>1000</fadetime>
@@ -518,7 +518,7 @@
 			<onup>5591</onup>
 			<onback>9110</onback>
 			<ondown>5591</ondown>
-			<content target="video">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]</content>
+			<content target="video">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]&limit=10</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<fadetime>1000</fadetime>
@@ -541,7 +541,7 @@
 			<onup>5591</onup>
 			<onback>9110</onback>
 			<ondown>5591</ondown>
-			<content target="video">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]</content>
+			<content target="video">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]&limit=10</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<fadetime>1000</fadetime>
@@ -668,7 +668,7 @@
 			<onright>558</onright>
 			<onup>5581</onup>
 			<ondown>5581</ondown>
-			<content target="music">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]</content>
+			<content target="music">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]&limit=10</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<include>toggle_Menu</include>
@@ -693,7 +693,7 @@
 			<onback>9110</onback>
 			<onup>5581</onup>
 			<ondown>5581</ondown>
-			<content target="music">plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]</content>
+			<content target="music">plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]&limit=20</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<fadetime>1000</fadetime>
@@ -718,7 +718,7 @@
 			<onup>5581</onup>
 			<onback>9110</onback>
 			<ondown>5581</ondown>
-			<content target="music">plugin://service.library.data.provider?type=recommendedalbums&reload=$INFO[Window.Property(recommendedalbums)]</content>
+			<content target="music">plugin://service.library.data.provider?type=recommendedalbums&reload=$INFO[Window.Property(recommendedalbums)]&limit=10</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<fadetime>1000</fadetime>

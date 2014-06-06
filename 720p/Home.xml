@@ -14,7 +14,7 @@
 			<include>home_NowPlaying</include>
 			<control type="image">
 				<include>screen_Dimensions</include>
-				<texture colordiffuse="base_1play">overlays/base_color.png</texture>
+				<texture background="true" colordiffuse="base_1play">overlays/base_color.png</texture>
 				<visible>!Player.HasMedia + !Player.HasAudio</visible>
 				<include>fadeinout</include>
 			</control>
@@ -44,14 +44,14 @@
 					<width>1280</width>
 					<height>100</height>
 					<posy>460</posy>
-					<texture colordiffuse="base_1play">overlays/diffuse.png</texture>
+					<texture background="true" colordiffuse="base_1play">overlays/diffuse.png</texture>
 					<visible>Skin.HasSetting(home.menu2)</visible>
 				</control>
 				<control type="image">
 					<width>1280</width>
 					<height>141</height>
 					<posy>460</posy>
-					<texture colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
+					<texture background="true" colordiffuse="whitetrans">overlays/cover_overlay.png</texture>
 					<visible>Skin.HasSetting(home.menu2)</visible>
 				</control>
 				<control type="wraplist" id="9110">
@@ -158,7 +158,7 @@
 								<posy>50</posy>
 								<width>450</width>
 								<height>255</height>
-								<texture>overlays/cover_overlay.png</texture>
+								<texture background="true">overlays/cover_overlay.png</texture>
 								<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 							</control>
 						</control>
@@ -240,7 +240,7 @@
 		<control type="image">
 			<top>screen_Height</top>
 			<include>screen_Dimensions</include>
-			<texture>special://skin/fanart.jpg</texture>
+			<texture background="true">special://skin/fanart.jpg</texture>
 			<animation type="WindowOpen" condition="Window.Previous(startup)" reversible="false">
 				<effect type="slide" time="500" start="0,-720" end="0,0" tween="Cubic" easing="InOut" center="screen_Center" delay="0" />
 			</animation>

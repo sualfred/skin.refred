@@ -846,97 +846,57 @@
 		</control>
 		<!--invisible widget list for inpgrogress pics-->
 		<control type="group" id="9146">
-			<visible>Container(9110).HasFocus(802)</visible>
+			<visible>[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.enabled)] + Container(9110).HasFocus(802) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(802) + !Player.HasMedia + !Player.HasAudio]</visible>
 			<control type="list" id="9141">
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">True</autoscroll>
 				<content target="video">$VAR[widget_inprogress_cat]</content>
 				<itemlayout width="1" height="1">
-					<control type="label">
-						<width>1</width>
-						<height>1</height>
-						<info>ListItem.Label</info>
-					</control>
 				</itemlayout>
 				<focusedlayout height="1" width="1">
-					<control type="label">
-						<width>1</width>
-						<height>1</height>
-						<info>ListItem.Label</info>
-					</control>
 				</focusedlayout>
 			</control>
 		</control>
 		<!--invisible widget list for movie pics-->
 		<control type="group" id="9156">
-			<visible>Container(9110).HasFocus(200)</visible>
+			<visible>[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.enabled)] + Container(9110).HasFocus(200) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(200) + !Player.HasMedia + !Player.HasAudio]</visible>
 			<control type="list" id="9151">
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">True</autoscroll>
 				<content target="video">$VAR[widget_movie_cat]</content>
-				<itemlayout width="1" height="1">
-					<control type="label">
-						<width>1</width>
-						<height>1</height>
-						<info>ListItem.Label</info>
-					</control>
+				<itemlayout width="1" height="1">				
 				</itemlayout>
-				<focusedlayout height="1" width="1">
-					<control type="label">
-						<width>1</width>
-						<height>1</height>
-						<info>ListItem.Label</info>
-					</control>
+				<focusedlayout height="1" width="1">					
 				</focusedlayout>
 			</control>
 		</control>
 		<!--invisible widget list for tvshow pics-->
 		<control type="group" id="9166">
-			<visible>Container(9110).HasFocus(300)</visible>
+			<visible>[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.enabled)] + Container(9110).HasFocus(300) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(300) + !Player.HasMedia + !Player.HasAudio]</visible>
 			<control type="list" id="9161">
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">True</autoscroll>
 				<content target="video">$VAR[widget_episode_cat]</content>
-				<itemlayout width="1" height="1">
-					<control type="label">
-						<width>1</width>
-						<height>1</height>
-						<info>ListItem.Label</info>
-					</control>
+				<itemlayout width="1" height="1">					
 				</itemlayout>
-				<focusedlayout height="1" width="1">
-					<control type="label">
-						<width>1</width>
-						<height>1</height>
-						<info>ListItem.Label</info>
-					</control>
+				<focusedlayout height="1" width="1">					
 				</focusedlayout>
 			</control>
 		</control>
 		<!--invisible widget list for music pics-->
 		<control type="group" id="9176">
-			<visible>Container(9110).HasFocus(500)</visible>
+			<visible>[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.enabled)] + Container(9110).HasFocus(500) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.enabled) + Container(9110).HasFocus(500) + !Player.HasMedia + !Player.HasAudio]</visible>
 			<control type="list" id="9171">
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">True</autoscroll>
 				<content target="video">$VAR[widget_music_cat]</content>
 				<itemlayout width="1" height="1">
-					<control type="label">
-						<width>1</width>
-						<height>1</height>
-						<info>ListItem.Label</info>
-					</control>
 				</itemlayout>
 				<focusedlayout height="1" width="1">
-					<control type="label">
-						<width>1</width>
-						<height>1</height>
-						<info>ListItem.Label</info>
-					</control>
 				</focusedlayout>
 			</control>
 		</control>
