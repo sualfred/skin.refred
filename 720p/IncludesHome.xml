@@ -527,7 +527,7 @@
 				<control type="textbox">
 					<top>160</top>
 					<width>600</width>
-					<height>230</height>
+					<height>245</height>
 					<label>$INFO[Container(9150).ListItem.Plot]</label>
 					<include>autoscroll-plot</include>
 				</control>
@@ -696,7 +696,7 @@
 				<control type="textbox">
 					<top>165</top>
 					<width>600</width>
-					<height>212</height>
+					<height>217</height>
 					<label>$INFO[Container(9160).ListItem.Plot]</label>
 					<include>autoscroll-plot</include>
 				</control>
@@ -994,7 +994,7 @@
 				<control type="textbox">
 					<top>190</top>
 					<width>600</width>
-					<height>213</height>
+					<height>218</height>
 					<label>$INFO[Container(9140).ListItem.Plot]</label>
 					<include>autoscroll-plot</include>
 				</control>
