@@ -4,15 +4,26 @@
 	<visible>[!Window.IsActive(VideoOSD) + [Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)] + [Player.ShowInfo | Player.DisplayAfterSeek | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Player.Caching] + ![Window.IsActive(infodialog) | Window.IsActive(SubtitleSearch) | Player.ShowCodec]] | Player.DisplayAfterSeek</visible>
 	<controls>
 		<control type="group">
-			<!--<control type="image">
-				<include>screen_Dimensions</include>
-				<texture colordiffuse="base_1play">overlays/base_color.png</texture>
-				<include>transition_Dialog</include>
-				<visible>[Player.Paused | [Player.DisplayAfterSeek + ![Player.Forwarding | Player.Rewinding]]] + !Window.IsActive(MusicOSD) + !Window.IsActive(visualisation)</visible>
-			</control>-->
-			<include condition="!Window.IsActive(MusicOSD)">seek_animation</include>
+			<control type="label">
+				<visible>!Window.IsActive(MusicOSD) + !Window.IsActive(VideoOSD)</visible>
+				<include>seek_Top</include>
+				<label>$VAR[player_Status]</label>
+			</control>
 			<include>clock</include>
-			<include>fadeinout</include>--&gt;
-			<control type="label"><left>40</left><top>30</top><width>screen_Width</width><label>$VAR[player_Status]</label><textcolor>Color1</textcolor><font>light_Header</font><visible>Window.IsActive(MusicOSD)</visible></control><control type="group" id="1"><include>osd_Video</include><visible>!Window.IsActive(VideoOSD) + Player.HasVideo</visible></control></control>
+			<include>fadeinout</include>
+			<control type="label">
+				<left>40</left>
+				<top>30</top>
+				<width>screen_Width</width>
+				<label>$VAR[player_Status]</label>
+				<textcolor>Color1</textcolor>
+				<font>light_Header</font>
+				<visible>Window.IsActive(MusicOSD)</visible>
+			</control>
+			<control type="group" id="1">
+				<include>osd_Video</include>
+				<visible>!Window.IsActive(VideoOSD) + Player.HasVideo</visible>
+			</control>
+		</control>
 	</controls>
 </window>

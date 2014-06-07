@@ -571,82 +571,12 @@
 		<colordiffuse>Color4</colordiffuse>
 	</include>
 	<!--NOTIFICATIONS-->
-	<include name="seek_animation">
-		<control type="group">
-			<animation type="WindowOpen" reversible="false">
-				<effect type="zoom" time="450" center="auto" start="190" end="100" tween="cubic" easing="out" />
-				<effect type="fade" time="450" start="0" easing="out" end="100" />
-			</animation>
-			<animation type="WindowClose" reversible="false">
-				<effect type="zoom" time="450" center="auto" start="100" end="190" tween="cubic" easing="in" />
-				<effect type="fade" time="450" start="100" easing="in" end="0" />
-			</animation>
-			<animation type="Visible" reversible="false">
-				<effect type="zoom" time="450" center="auto" start="190" end="100" tween="cubic" easing="out" />
-				<effect type="fade" time="450" start="0" easing="out" end="100" />
-			</animation>
-			<animation type="Hidden" reversible="false">
-				<effect type="zoom" time="450" center="auto" start="100" end="190" tween="cubic" easing="in" />
-				<effect type="fade" time="450" start="100" easing="in" end="0" />
-			</animation>
-			<visible>Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Player.Caching</visible>
-			<control type="group">
-				<posx>545</posx>
-				<posy>245</posy>
-				<control type="image">
-					<description>Busy animation</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>220</width>
-					<height>220</height>
-					<texture>dialogs/busy/animation_1.png</texture>
-					<aspectratio>keep</aspectratio>
-					<animation effect="rotate" start="0" end="360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
-				</control>
-				<control type="image">
-					<description>Busy animation</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>220</width>
-					<height>220</height>
-					<texture>dialogs/busy/animation_2.png</texture>
-					<aspectratio>keep</aspectratio>
-					<animation effect="rotate" start="0" end="-360" center="auto" time="2500" loop="true" condition="true">conditional</animation>
-				</control>
-				<control type="label">
-					<description>Busy label</description>
-					<posx>-90</posx>
-					<posy>190</posy>
-					<width>400</width>
-					<height>35</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$VAR[player_Status]</label>
-					<font>light_Dialog</font>
-					<textcolor>Color1</textcolor>
-				</control>
-				<control type="label">
-					<description>Busy label</description>
-					<posx>-90</posx>
-					<posy>90</posy>
-					<width>400</width>
-					<height>35</height>
-					<align>center</align>
-					<aligny>center</aligny>
-					<label>$INFO[Player.CacheLevel]%</label>
-					<font>regular_Big</font>
-					<textcolor>Color1</textcolor>
-					<visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
-				</control>
-			</control>
-		</control>
-	</include>
 	<include name="seek_Top">
 		<width>screen_Width</width>
-		<height>screen_Height</height>
-		<align>center</align>
-		<aligny>center</aligny>
-		<textcolor>whitetrans3</textcolor>
+		<left>20</left>
+		<top>20</top>
+		<textcolor>Color1</textcolor>
+		<shadowcolor>black</shadowcolor>
 		<font>semibold_Seek</font>
 		<include>transition_Toast</include>
 	</include>
@@ -1370,7 +1300,6 @@
 		<control type="group">
 			<posy>520</posy>
 			<include>transition_OSD</include>
-			<!--<visible>Window.IsActive(VideoOSD) | Window.IsActive(DialogSeekBar) | ![Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(SliderDialog) | Window.IsVisible(selectdialog) | Window.IsActive(SubtitleSearch)]</visible>-->
 			<control type="group">
 				<!-- poster -->
 				<control type="group">
@@ -1429,7 +1358,7 @@
 						<width>200</width>
 						<height>293</height>
 						<texture>$VAR[osd_Art]</texture>
-						<bordertexture colordiffuse="base_5">white.png</bordertexture>
+						<bordertexture colordiffuse="whitetrans3">white.png</bordertexture>
 						<bordersize>5</bordersize>
 						<aspectratio>scale</aspectratio>
 						<visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -1706,7 +1635,7 @@
 						<width>200</width>
 						<height>293</height>
 						<texture>$VAR[osd_Art]</texture>
-						<bordertexture colordiffuse="base_5">white.png</bordertexture>
+						<bordertexture colordiffuse="whitetrans3">white.png</bordertexture>
 						<bordersize>5</bordersize>
 						<aspectratio>scale</aspectratio>
 						<visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -1834,7 +1763,7 @@
 						<width>700</width>
 						<label>$VAR[player_Plot]</label>
 						<include>osd_Text_white</include>
-						<autoscroll delay="20000" time="3000" repeat="10000"></autoscroll>
+						<include>autoscroll-plot</include>
 						<visible>Player.HasVideo</visible>
 					</control>
 					<control type="label">
@@ -2028,7 +1957,7 @@
 						<label>$VAR[player_Plot]</label>
 						<textcolor>Color1</textcolor>
 						<include>container_TextSmall</include>
-						<autoscroll delay="10000" time="4000" repeat="10000">Container(11).HasFocus + !ControlGroup(6000).HasFocus</autoscroll>
+						<include>autoscroll-plot</include>
 					</control>
 				</control>
 			</control>

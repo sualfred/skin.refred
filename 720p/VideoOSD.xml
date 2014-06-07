@@ -17,6 +17,6 @@
 			<visible>![Window.IsActive(fullscreeninfo) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 		</control>
 		<include>osd_video_controls</include>
-		<include>global_clock</include>
+		<include>clock</include>
 	</controls>
 </window>

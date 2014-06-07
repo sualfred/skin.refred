@@ -456,10 +456,10 @@
 		<value condition="Window.IsActive(pictures) + !IsEmpty(ListItem.PictureLongDateTime)">$INFO[ListItem.PictureLongDateTime]</value>
 		<value condition="Window.IsActive(pictures) + IsEmpty(ListItem.PictureLongDateTime) + !SubString(Container.FolderPath,addons://sources/)">$INFO[ListItem.Date]</value>
 		<value condition="!IsEmpty(ListItem.Studio)">$INFO[ListItem.Studio]</value>
-		<value condition="Control.IsVisible(9151)  + Control.HasFocus(9150)">$INFO[Container(9150).ListItem.Year,, • ]$INFO[Container(9150).ListItem.Duration,, Min • ]$INFO[Container(9150).ListItem.Genre]</value>
-		<value condition="Control.IsVisible(9161) + Control.HasFocus(9160)">[COLOR Color3]$INFO[Container(9160).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(9160).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(9160).ListItem.Duration, • , Min]$INFO[Container(9160).ListItem.Premiered, • ,][/COLOR]</value>		
-		<value condition="Control.IsVisible(9141) + Control.HasFocus(9140) + !Skin.HasSetting(widgets.inprogressmovies.enabled)">[COLOR Color3]$INFO[Container(9140).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(9140).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(9140).ListItem.Duration, • , Min]$INFO[Container(9140).ListItem.Premiered, • ,][/COLOR]</value>
-		<value condition="Control.IsVisible(9141) + Control.HasFocus(9140) + Skin.HasSetting(widgets.inprogressmovies.enabled)">$INFO[Container(9140).ListItem.Year,, • ]$INFO[Container(9140).ListItem.Duration,, Min • ]$INFO[Container(9140).ListItem.Genre]</value>
+		<value condition="Control.IsVisible(9152)">$INFO[Container(9150).ListItem.Year,, • ]$INFO[Container(9150).ListItem.Duration,, Min • ]$INFO[Container(9150).ListItem.Genre]</value>
+		<value condition="Control.IsVisible(9162)">[COLOR Color2]$INFO[Container(9160).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(9160).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(9160).ListItem.Duration, • , Min]$INFO[Container(9160).ListItem.Premiered, • ,][/COLOR]</value>		
+		<value condition="Control.IsVisible(9141) + !Skin.HasSetting(widgets.inprogressmovies.enabled)">[COLOR Color2]$INFO[Container(9140).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(9140).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(9140).ListItem.Duration, • , Min]$INFO[Container(9140).ListItem.Premiered, • ,][/COLOR]</value>
+		<value condition="Control.IsVisible(9141) + Skin.HasSetting(widgets.inprogressmovies.enabled)">$INFO[Container(9140).ListItem.Year,, • ]$INFO[Container(9140).ListItem.Duration,, Min • ]$INFO[Container(9140).ListItem.Genre]</value>
 	</variable>
 	
 	<variable name="global_Info_Short">
@@ -623,8 +623,8 @@
 	</variable>
 	<variable name="osd_Info">
 		<value condition="VideoPlayer.Content(files)">$INFO[Player.FolderPath]$INFO[VideoPlayer.RatingAndVotes, • $LOCALIZE[368],]</value>
-		<value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Genre]$INFO[VideoPlayer.Director, • ]$INFO[VideoPlayer.Studio, • ]$INFO[VideoPlayer.Year, • ]$INFO[VideoPlayer.RatingAndVotes, • $LOCALIZE[368] ,]</value>
-		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Season,$LOCALIZE[20373] , - ]$INFO[VideoPlayer.Episode,$LOCALIZE[20359] ]$INFO[VideoPlayer.RatingAndVotes, • $LOCALIZE[368] ,]</value>
+		<value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Genre]$INFO[VideoPlayer.Director, • ]$INFO[VideoPlayer.Studio, • ]$INFO[VideoPlayer.Year, • ]</value>
+		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Season,$LOCALIZE[20373] , - ]$INFO[VideoPlayer.Episode,$LOCALIZE[20359] ]</value>
 		<value condition="VideoPlayer.Content(musicvideos)">$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.Album, • ]$INFO[VideoPlayer.Year, • ]$INFO[VideoPlayer.RatingAndVotes, • $LOCALIZE[368] ,]</value>
 		<value condition="VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelName]</value>
 		<value condition="Player.ChapterCount">$LOCALIZE[21396]$INFO[Player.Chapter,: ]$INFO[Player.ChapterCount, / ]$INFO[Player.ChapterName, • ,]</value>
@@ -649,7 +649,7 @@
 	<variable name="player_Status">
 		<value condition="VideoPlayer.Content(LiveTV) + [Player.DisplayAfterSeek + ![Player.Forwarding | Player.Rewinding]]">$LOCALIZE[19020]$INFO[VideoPlayer.ChannelGroup, - ]</value>
 		<value condition="Player.DisplayAfterSeek + ![Player.Forwarding | Player.Rewinding]">$LOCALIZE[773] $INFO[Player.SeekOffset]</value>
-		<value condition="[Player.Paused + Player.Caching] + !Player.Seeking">$LOCALIZE[15107]</value>
+		<value condition="[Player.Paused + Player.Caching] + !Player.Seeking">$LOCALIZE[15107] $INFO[Player.CacheLevel]%</value>
 		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">$LOCALIZE[112]</value>
 		<value condition="Player.Forwarding2x">$LOCALIZE[31300]</value>
 		<value condition="Player.Forwarding4x">$LOCALIZE[31301]</value>
