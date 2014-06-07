@@ -474,7 +474,7 @@
 					<font>detail_Sub</font>
 				</control>
 				<control type="grouplist">
-					<top>110</top>
+					<top>115</top>
 					<left>1</left>
 					<align>left</align>
 					<width>635</width>
@@ -525,11 +525,11 @@
 					</control>
 				</control>
 				<control type="textbox">
-					<top>150</top>
+					<top>160</top>
 					<width>600</width>
-					<height>240</height>
+					<height>230</height>
 					<label>$INFO[Container(9150).ListItem.Plot]</label>
-					<autoscroll delay="8000" time="2000" repeat="10000"></autoscroll>
+					<include>autoscroll-plot</include>
 				</control>
 				<control type="group">
 					<top>125</top>
@@ -633,11 +633,11 @@
 					<top>5</top>
 					<width>600</width>
 					<label>$INFO[Container(9160).ListItem.TVShowTitle]</label>
-					<textcolor>Color2</textcolor>
+					<textcolor>Color3</textcolor>
 					<font>font_MainMenu</font>
 				</control>
 				<control type="grouplist">
-					<top>110</top>
+					<top>120</top>
 					<align>left</align>
 					<left>2</left>
 					<width>635</width>
@@ -694,11 +694,11 @@
 					<font>font_MainMenu</font>
 				</control>
 				<control type="textbox">
-					<top>150</top>
+					<top>165</top>
 					<width>600</width>
 					<height>212</height>
 					<label>$INFO[Container(9160).ListItem.Plot]</label>
-					<autoscroll delay="8000" time="2000" repeat="10000"></autoscroll>
+					<include>autoscroll-plot</include>
 				</control>
 				<control type="image">
 					<top>0</top>
@@ -759,7 +759,7 @@
 				<width>1080</width>
 				<height>420</height>
 				<control type="label">
-					<top>85</top>
+					<top>90</top>
 					<width>630</width>
 					<label>$VAR[global_Info]</label>
 					<textcolor>Color2</textcolor>
@@ -769,11 +769,11 @@
 					<top>5</top>
 					<width>600</width>
 					<label>$INFO[Container(9140).ListItem.TVShowTitle]</label>
-					<textcolor>Color2</textcolor>
+					<textcolor>Color3</textcolor>
 					<font>font_MainMenu</font>
 				</control>
 				<control type="grouplist">
-					<top>160</top>
+					<top>165</top>
 					<height>15</height>
 					<itemgap>10</itemgap>
 					<orientation>horizontal</orientation>
@@ -795,7 +795,7 @@
 					</control>
 				</control>
 				<control type="grouplist">
-					<top>110</top>
+					<top>115</top>
 					<left>2</left>
 					<align>left</align>
 					<width>635</width>
@@ -852,11 +852,11 @@
 					<font>font_MainMenu</font>
 				</control>
 				<control type="textbox">
-					<top>180</top>
+					<top>190</top>
 					<width>600</width>
-					<height>190</height>
+					<height>185</height>
 					<label>$INFO[Container(9140).ListItem.Plot]</label>
-					<autoscroll delay="8000" time="2000" repeat="10000"></autoscroll>
+					<include>autoscroll-plot</include>
 				</control>
 				<control type="image">
 					<top>0</top>
@@ -941,7 +941,7 @@
 					</control>
 				</control>
 				<control type="grouplist">
-					<top>110</top>
+					<top>115</top>
 					<left>0</left>
 					<align>left</align>
 					<width>635</width>
@@ -992,11 +992,11 @@
 					</control>
 				</control>
 				<control type="textbox">
-					<top>180</top>
+					<top>190</top>
 					<width>600</width>
-					<height>190</height>
+					<height>213</height>
 					<label>$INFO[Container(9140).ListItem.Plot]</label>
-					<autoscroll delay="8000" time="2000" repeat="10000"></autoscroll>
+					<include>autoscroll-plot</include>
 				</control>
 				<control type="group">
 					<top>125</top>
