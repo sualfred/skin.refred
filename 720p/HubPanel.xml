@@ -685,8 +685,7 @@
 					</control>					
 			</control>
 			<control type="group">
-				<visible>[Control.IsVisible(5563) + Container(557).HasFocus(14)] | [Control.IsVisible(5562) + Container(556).HasFocus(14)]</visible>
-				
+				<visible>[Control.IsVisible(5563) + Container(557).HasFocus(14)] | [Control.IsVisible(5562) + Container(556).HasFocus(14)] | [Control.IsVisible(5565) + [Container(559).HasFocus(3) | Container(559).HasFocus(1)]]</visible>
 				<top>5</top>
 				<left>5</left>
 				<control type="image">					
@@ -700,7 +699,6 @@
 					<texture>overlays/diffuse.png</texture>
 				</control>
 				<control type="grouplist">
-					<visible>[Control.IsVisible(5563) + Container(557).HasFocus(14)] | [Control.IsVisible(5562) + Container(556).HasFocus(14)]</visible>
 					<top>10</top>
 					<left>10</left>
 					<height>15</height>
@@ -725,6 +723,16 @@
 						<midtexture colordiffuse="Selected">player/progress-middle.png</midtexture>
 						<righttexture>-</righttexture>
 						<visible>Control.IsVisible(5563) + Container(557).HasFocus(14)</visible>
+					</control>					
+					<control type="progress">
+						<width>665</width>
+						<height>10</height>
+						<info>Container(5591).ListItem.PercentPlayed</info>
+						<texturebg>player/progress-back.png</texturebg>
+						<lefttexture>-</lefttexture>
+						<midtexture colordiffuse="Selected">player/progress-middle.png</midtexture>
+						<righttexture>-</righttexture>
+						<visible>Control.IsVisible(5565) + [Container(559).HasFocus(1) | Container(559).HasFocus(3)]</visible>
 					</control>
 					<control type="label">
 						<height>10</height>
