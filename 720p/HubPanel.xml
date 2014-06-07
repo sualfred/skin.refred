@@ -686,7 +686,7 @@
 			</control>
 			<control type="group">
 				<visible>[Control.IsVisible(5563) + Container(557).HasFocus(14)] | [Control.IsVisible(5562) + Container(556).HasFocus(14)]</visible>
-				<include>fadeinout</include>
+				
 				<top>5</top>
 				<left>5</left>
 				<control type="image">					

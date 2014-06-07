@@ -45,7 +45,6 @@
 				<visible>Skin.HasSetting(widgets.inprogressmovies.enabled) + IntegerGreaterThan(Container(9140).NumItems,0)</visible>
 			</control>
 			<control type="list" id="9140">
-				<visible>Skin.HasSetting(widgets.inprogressmovies.enabled)</visible>
 				<top>90</top>
 				<left>100</left>
 				<width>1090</width>
