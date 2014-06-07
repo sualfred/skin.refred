@@ -3,8 +3,6 @@
 # Addon id: skin.refred
 # Addon version: 0.1.0
 # Addon Provider: Sebastian Saenger
-# Translators: Sebastian Saenger
-# Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: skin.refred\n"
@@ -786,3 +784,7 @@ msgstr "Enable widgets for inprogress/movies/tvshows/music"
 msgctxt "#32047"
 msgid "Enable weather widget"
 msgstr "Enable weather widget"
+
+msgctxt "#32048"
+msgid "Settings Level"
+msgstr "Settings Level"
