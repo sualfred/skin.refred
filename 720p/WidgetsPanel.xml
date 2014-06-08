@@ -61,6 +61,7 @@
 						<texture background="true">$VAR[widget_inprogress_poster]</texture>
 						<bordertexture colordiffuse="base_5">white.png</bordertexture>
 						<bordersize>5</bordersize>
+						<fadetime>1000</fadetime>
 						<aspectratio>scale</aspectratio>
 					</control>
 					<control type="image">
@@ -85,6 +86,7 @@
 							<texture background="true">$VAR[widget_inprogress_poster]</texture>
 							<bordertexture colordiffuse="base_5">white.png</bordertexture>
 							<aspectratio>scale</aspectratio>
+							<fadetime>1000</fadetime>
 							<bordersize>5</bordersize>
 						</control>
 						<control type="image">
@@ -202,6 +204,7 @@
 						<info>ListItem.Thumb</info>
 						<bordertexture colordiffuse="base_5">white.png</bordertexture>
 						<bordersize>5</bordersize>
+						<fadetime>1000</fadetime>
 						<aspectratio>scale</aspectratio>
 					</control>
 					<control type="image">
@@ -223,6 +226,7 @@
 						<width>100</width>
 						<height>147</height>
 						<info>ListItem.Thumb</info>
+						<fadetime>1000</fadetime>
 						<bordertexture colordiffuse="base_5">white.png</bordertexture>
 						<aspectratio>scale</aspectratio>
 						<bordersize>5</bordersize>
@@ -310,11 +314,6 @@
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(9160)</autoscroll>
 				<content target="video">$VAR[widget_episode_cat]</content>
-				<control type="image">
-					<include>screen_Dimensions</include>
-					<info>ListItem.Thumb</info>
-					<aspectratio>scale</aspectratio>
-				</control>
 				<itemlayout width="109" height="720">
 					<control type="image">
 						<width>100</width>
@@ -322,6 +321,7 @@
 						<info>ListItem.Art(tvshow.poster)</info>
 						<bordertexture colordiffuse="base_5">white.png</bordertexture>
 						<bordersize>5</bordersize>
+						<fadetime>1000</fadetime>
 						<aspectratio>scale</aspectratio>
 					</control>
 					<control type="image">
@@ -345,6 +345,7 @@
 						<info>ListItem.Art(tvshow.poster)</info>
 						<bordertexture colordiffuse="base_5">white.png</bordertexture>
 						<aspectratio>scale</aspectratio>
+						<fadetime>1000</fadetime>
 						<bordersize>5</bordersize>
 					</control>
 					<control type="image">
@@ -429,11 +430,6 @@
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(9170)</autoscroll>
 				<content target="video">$VAR[widget_music_cat]</content>
-				<control type="image">
-					<include>screen_Dimensions</include>
-					<info>ListItem.Thumb</info>
-					<aspectratio>scale</aspectratio>
-				</control>
 				<itemlayout width="109" height="720">
 					<control type="image">
 						<width>100</width>
@@ -449,6 +445,7 @@
 						<info>ListItem.Thumb</info>
 						<bordertexture colordiffuse="base_5">white.png</bordertexture>
 						<bordersize>5</bordersize>
+						<fadetime>1000</fadetime>
 						<aspectratio>scale</aspectratio>
 					</control>
 					<control type="image">
@@ -478,6 +475,7 @@
 						<width>100</width>
 						<height>100</height>
 						<info>ListItem.Thumb</info>
+						<fadetime>1000</fadetime>
 						<bordertexture colordiffuse="base_5">white.png</bordertexture>
 						<aspectratio>scale</aspectratio>
 						<bordersize>5</bordersize>
@@ -651,6 +649,7 @@
 				<visible>IntegerGreaterThan(Container(9181).NumItems,0)</visible>
 			</control>
 			<control type="list" id="9181">
+				<visible>IntegerGreaterThan(Container(9181).NumItems,0)</visible>
 				<posy>90</posy>
 				<include>screen_Dimensions</include>
 				<ondown>9110</ondown>
