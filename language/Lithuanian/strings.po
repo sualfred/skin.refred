@@ -1,0 +1,790 @@
+# XBMC Media Center language file
+# Addon Name: refred
+# Addon id: skin.refred
+# Addon version: 0.1.0
+# Addon Provider: Sebastian Saenger
+# Translators: Sebastian Saenger
+# Translators:
+# Translators:
+# Zapata11 <raimondas.duzinskas@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: skin.refred\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2014-06-08 17:20+0000\n"
+"Last-Translator: Zapata11 <raimondas.duzinskas@gmail.com>\n"
+"Language-Team: Lithuanian (http://www.transifex.com/projects/p/skinrefred/language/lt/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: lt\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: HOME
+msgctxt "#31000"
+msgid "Home Menu"
+msgstr "Pradinis meniu"
+
+#: Home Menu
+msgctxt "#31010"
+msgid "New Episodes"
+msgstr "Nauji epizodai"
+
+msgctxt "#31011"
+msgid "New Movies"
+msgstr "Nauji filmai"
+
+msgctxt "#31012"
+msgid "New Albums"
+msgstr "Nauji albumai"
+
+msgctxt "#31013"
+msgid "Watchlist"
+msgstr "Peržiūros sąrašas"
+
+msgctxt "#31014"
+msgid "Live TV"
+msgstr "Live TV"
+
+msgctxt "#31015"
+msgid "Trailers"
+msgstr "Filmų anonsai"
+
+msgctxt "#31016"
+msgid "Recently Played"
+msgstr "Vėliausiai atkurta"
+
+msgctxt "#31017"
+msgid "Recommended"
+msgstr "Rekomenduojama"
+
+#: Home shelf
+msgctxt "#31030"
+msgid "Recommended Movies"
+msgstr "Rekomenduojami filmai"
+
+msgctxt "#31031"
+msgid "Recommended Episodes"
+msgstr "Rekomenduojami epizodai"
+
+msgctxt "#31032"
+msgid "Recommended Albums"
+msgstr "Rekomenduojami albumai"
+
+msgctxt "#31033"
+msgid "Showing"
+msgstr "Rodoma"
+
+msgctxt "#31034"
+msgid "Now Playing"
+msgstr "Šiuo metu atkuriama"
+
+msgctxt "#31035"
+msgid "Select tv shows widget source"
+msgstr "Pasirinkti TV laidų valdiklio šaltinį"
+
+msgctxt "#31036"
+msgid "Select movies widget source"
+msgstr "Pasirinkti filmų valdiklio šaltinį"
+
+#: Home Customization
+msgctxt "#31050"
+msgid "Enable this section"
+msgstr "Įjungti šį skyrių"
+
+msgctxt "#31051"
+msgid "Smart Playlist"
+msgstr "Išmanusis grojaraštis"
+
+msgctxt "#31052"
+msgid "Select custom item type"
+msgstr "Pasirinkite individualaus elemento tipą"
+
+msgctxt "#31053"
+msgid "Select a folder"
+msgstr "Pasirinkite aplanką"
+
+msgctxt "#31054"
+msgid "Select a playlist"
+msgstr "Pasirinkite grojaraštį"
+
+msgctxt "#31055"
+msgid "Select an add-on"
+msgstr "Pasirinkite priedą"
+
+#: MENU / VIEWS
+msgctxt "#31100"
+msgid "Available Views"
+msgstr "Galimi rodiniai"
+
+msgctxt "#31110"
+msgid "Banners"
+msgstr "Baneriai"
+
+msgctxt "#31111"
+msgid "Gallery"
+msgstr "Galerija"
+
+msgctxt "#31112"
+msgid "Slide"
+msgstr "Čiuožykla"
+
+msgctxt "#31113"
+msgid "Thumbnails"
+msgstr "Miniatiūros"
+
+msgctxt "#31114"
+msgid "View"
+msgstr "Rodinys"
+
+msgctxt "#31120"
+msgid "Layout"
+msgstr "Išdėstymas"
+
+msgctxt "#31121"
+msgid "Landscape"
+msgstr "Gulsčias"
+
+msgctxt "#31122"
+msgid "Portrait"
+msgstr "Stačias"
+
+msgctxt "#31123"
+msgid "Large grid"
+msgstr "Didelis tinklelis"
+
+msgctxt "#31124"
+msgid "Small grid"
+msgstr "Mažas tinklelis"
+
+msgctxt "#31125"
+msgid "Fullscreen"
+msgstr "Visame ekrane"
+
+msgctxt "#31126"
+msgid "Strip"
+msgstr "Juostelė"
+
+msgctxt "#31140"
+msgid "Sorting"
+msgstr "Rūšiavimas"
+
+msgctxt "#31142"
+msgid "Selected"
+msgstr "Pasirinkta"
+
+msgctxt "#31143"
+msgid "Items"
+msgstr "Elementai"
+
+msgctxt "#31144"
+msgid "By"
+msgstr "Pagal"
+
+msgctxt "#31145"
+msgid "Genre unknown"
+msgstr "Žanras nežinomas"
+
+msgctxt "#31146"
+msgid "Date unknown"
+msgstr "Data nežinoma"
+
+msgctxt "#31147"
+msgid "Unwatched episode"
+msgstr "Neperžiūrėti epizodas"
+
+msgctxt "#31148"
+msgid "Unwatched episodes"
+msgstr "Neperžiūrėti epizodai"
+
+msgctxt "#31149"
+msgid "Sort by"
+msgstr "Rūšiuoti pagal"
+
+msgctxt "#31150"
+msgid "Files mode"
+msgstr "Failų režimas"
+
+#: SETTINGS
+msgctxt "#31200"
+msgid "Homescreen"
+msgstr "Pradinis ekranas"
+
+msgctxt "#31201"
+msgid "Artwork"
+msgstr "Iliustracijos"
+
+msgctxt "#31202"
+msgid "View settings"
+msgstr "Rodinio nustatymai"
+
+msgctxt "#31203"
+msgid "Other"
+msgstr "Kita"
+
+msgctxt "#31204"
+msgid "About"
+msgstr "Apie"
+
+msgctxt "#31210"
+msgid "Customize Home menu"
+msgstr "Tinkinti pagrindinį meniu"
+
+msgctxt "#31211"
+msgid "Enable shelf"
+msgstr "Įjungti lentyną"
+
+msgctxt "#31212"
+msgid "Use single image as background"
+msgstr "Naudoti vieną atvaizdą kaip foną"
+
+msgctxt "#31213"
+msgid "Use a folder of images as background slideshow"
+msgstr "Naudoti atvaizdų aplanką kaip fono skaidrių peržiūrą"
+
+msgctxt "#31214"
+msgid "Use a slideshow of your fanart"
+msgstr "Naudoti FanArt skaidrių peržiūrą"
+
+msgctxt "#31215"
+msgid "Show now playing video in background"
+msgstr "Rodyti šiuo metu atkuriamą vaizdo įrašą fone"
+
+msgctxt "#31216"
+msgid "Show now playing item in homescreen"
+msgstr "Rodyti šiuo metu atkuriamą elementą pradiniame ekrane"
+
+msgctxt "#31217"
+msgid "Show fanart information"
+msgstr "Rodyti FanArt informaciją"
+
+msgctxt "#31218"
+msgid "this will log you out and reload the skin"
+msgstr ""
+
+msgctxt "#31230"
+msgid "Enable Global Fanart Background"
+msgstr "Įjungti globalų FanArt foną"
+
+msgctxt "#31231"
+msgid "Use weather fanart"
+msgstr "Naudoti orų FanArt"
+
+msgctxt "#31232"
+msgid "Set weather fanart path"
+msgstr "Nustatyti kelią iki orų FanArt"
+
+msgctxt "#31234"
+msgid "Use fanart in now playing screen"
+msgstr "Naudoti FanArt šiuo metu atkuriamo įrašo ekrane"
+
+msgctxt "#31235"
+msgid "Blend visualisation and fanart"
+msgstr "Sulieti vizualizaciją ir FanArt"
+
+msgctxt "#31236"
+msgid "Enable logos for tv shows"
+msgstr "Įjungti logotipus TV laidoms"
+
+msgctxt "#31237"
+msgid "Enable logos for movies"
+msgstr "Įjungti logotipus filmams"
+
+msgctxt "#31238"
+msgid "Download logos"
+msgstr "Atsisiųsti logotipus"
+
+msgctxt "#31239"
+msgid "Enable banners for movies"
+msgstr "Įjungti filmų banerius"
+
+msgctxt "#31240"
+msgid "Download banners"
+msgstr "Atsisiųsti banerius"
+
+msgctxt "#31241"
+msgid "Prefer landscape thumbnails when available"
+msgstr "Teikti pirmenybę gulsčioms miniatiūroms, kai įmanoma"
+
+msgctxt "#31242"
+msgid "Download thumbnails"
+msgstr "Atsisiųsti miniatiūras"
+
+msgctxt "#31251"
+msgid "Highlight first letter while scrolling"
+msgstr "Paryškinti pirmąją raidę slenkant sąrašą"
+
+msgctxt "#31252"
+msgid "Enable now playing button in options menu"
+msgstr "Įjungti šiuo metu atkuriamo įrašo mygtuką parinkčių meniu"
+
+msgctxt "#31253"
+msgid "Enable media overlays"
+msgstr "Įjungti media įrašų perdangas"
+
+msgctxt "#31254"
+msgid "Show watched indicators for movies"
+msgstr "Rodyti peržiūrėjimo indikatorius filmams"
+
+msgctxt "#31255"
+msgid "Show watched indicators for TV shows"
+msgstr "Rodyti peržiūrėjimo indikatorius TV laidoms"
+
+msgctxt "#31256"
+msgid "Show watched indicators for episodes"
+msgstr "Rodyti peržiūrėjimo indikatorius epizodams"
+
+msgctxt "#31257"
+msgid "Show watched indicators for video files"
+msgstr "Rodyti peržiūrėjimo indikatorius vaizdo failams"
+
+msgctxt "#31258"
+msgid "Show resumable indicators"
+msgstr "Rodyti nebaigtų žiūrėti indikatorius"
+
+msgctxt "#31259"
+msgid "Disable Next Aired add-on"
+msgstr "Išjungti Next Aired priedą"
+
+msgctxt "#31260"
+msgid "Use GlobalSearch add-on"
+msgstr "Naudoti GlobalSearch priedą"
+
+msgctxt "#31261"
+msgid "Disable Artist Slideshow add-on"
+msgstr "Išjungti Artist Slideshow priedą"
+
+msgctxt "#31263"
+msgid "Enable virtual keyboard"
+msgstr "Įjungti virtualią klaviatūrą"
+
+msgctxt "#31264"
+msgid "Enable kiosk mode"
+msgstr "Įjungti kiosko režimą"
+
+msgctxt "#31280"
+msgid "Plugin"
+msgstr "Įskiepis"
+
+msgctxt "#31281"
+msgid "Output"
+msgstr "Išvestis"
+
+msgctxt "#31282"
+msgid "Enable TV Tunes add-on"
+msgstr "Įjungti TV Tunes priedą"
+
+msgctxt "#31283"
+msgid "Show current playlist button when playback is stopped"
+msgstr "Rodyti dabartinio grojaraščio mygtuką, kai atkūrimas sustabdytas"
+
+#: OSD / PLAYER
+msgctxt "#31300"
+msgid "Fwd 2X"
+msgstr ">> 2x"
+
+msgctxt "#31301"
+msgid "Fwd 4X"
+msgstr ">> 4X"
+
+msgctxt "#31302"
+msgid "Fwd 8X"
+msgstr ">> 8X"
+
+msgctxt "#31303"
+msgid "Fwd 16X"
+msgstr ">> 16X"
+
+msgctxt "#31304"
+msgid "Fwd 32X"
+msgstr ">> 32X"
+
+msgctxt "#31305"
+msgid "Rwd 2X"
+msgstr "<< 2X"
+
+msgctxt "#31306"
+msgid "Rwd 4X"
+msgstr "<< 4X"
+
+msgctxt "#31307"
+msgid "Rwd 8X"
+msgstr "<< 8X"
+
+msgctxt "#31308"
+msgid "Rwd 16X"
+msgstr "<< 16X"
+
+msgctxt "#31309"
+msgid "Rwd 32X"
+msgstr "<< 32X"
+
+msgctxt "#31320"
+msgid "Get subtitles"
+msgstr "Gauti subtitrus"
+
+msgctxt "#31321"
+msgid "Disable subtitles"
+msgstr "Išjungti subtitrus"
+
+msgctxt "#31322"
+msgid "Get lyrics"
+msgstr "Gauti dainos žodžius"
+
+msgctxt "#31323"
+msgid "Finish Time:"
+msgstr "Pabaigos laikas:"
+
+msgctxt "#31324"
+msgid "2D"
+msgstr "2D"
+
+msgctxt "#31325"
+msgid "3D"
+msgstr "3D"
+
+msgctxt "#31326"
+msgid "3D mode"
+msgstr "3D režimas"
+
+msgctxt "#31327"
+msgid "Next subtitles"
+msgstr "Kiti subtitrai"
+
+msgctxt "#31328"
+msgid "Playlist"
+msgstr "Grojaraštis"
+
+#: PVR
+msgctxt "#31400"
+msgid "Available groups"
+msgstr "Galimos grupės"
+
+msgctxt "#31401"
+msgid "Add group"
+msgstr "Pridėti grupę"
+
+msgctxt "#31402"
+msgid "Rename group"
+msgstr "Pervadinti grupę"
+
+msgctxt "#31403"
+msgid "Delete group"
+msgstr "Pašalinti grupę"
+
+msgctxt "#31404"
+msgid "Hidden channels"
+msgstr "Paslėpti kanalai"
+
+msgctxt "#31405"
+msgid "Apply"
+msgstr "Pritaikyti"
+
+#: MEDIA INFO
+msgctxt "#31500"
+msgid "Age"
+msgstr "Amžius"
+
+msgctxt "#31501"
+msgid "Last aired on"
+msgstr ""
+
+msgctxt "#31502"
+msgid "Airs next on"
+msgstr ""
+
+msgctxt "#31503"
+msgid "Status"
+msgstr "Būsena"
+
+msgctxt "#31520"
+msgid "Change artwork"
+msgstr "Pakeisti iliustracijas"
+
+msgctxt "#31521"
+msgid "Download TV Tune"
+msgstr "Atsisiųsti TV melodiją"
+
+msgctxt "#31522"
+msgid "Teletext"
+msgstr "Teletekstas"
+
+#: ADD-ONS
+msgctxt "#31600"
+msgid "Browse all movies in your library"
+msgstr "Naršyti visus filmus bibliotekoje"
+
+msgctxt "#31601"
+msgid "Browse all TV shows in your library"
+msgstr "Naršyti visas TV laidas bibliotekoje"
+
+msgctxt "#31602"
+msgid "The 25 most recently added movies"
+msgstr ""
+
+msgctxt "#31603"
+msgid "The 25 most recently added episodes"
+msgstr ""
+
+msgctxt "#31604"
+msgid "New search"
+msgstr "Nauja paieška"
+
+msgctxt "#31605"
+msgid "Currently"
+msgstr "Šiuo metu"
+
+msgctxt "#31606"
+msgid "TV Guide"
+msgstr "TV gidas"
+
+msgctxt "#31607"
+msgid "Set default lyrics add-on"
+msgstr "Nustatyti numatytąjį dainų žodžių priedą"
+
+msgctxt "#31608"
+msgid "Activate lyrics addon"
+msgstr "Aktyvuoti dainų žodžių priedą"
+
+#: VARIABLES / OTHER
+msgctxt "#31700"
+msgid "Repositories"
+msgstr "Saugyklos"
+
+msgctxt "#31701"
+msgid "Min"
+msgstr "Min"
+
+msgctxt "#31702"
+msgid "Last played on"
+msgstr "Paskutinį kartą atkurta"
+
+msgctxt "#31703"
+msgid "[COLOR=Color2]New[/COLOR] Episodes"
+msgstr "[COLOR=Color2]Nauji[/COLOR] epizodai"
+
+msgctxt "#31704"
+msgid "[COLOR=Color2]New[/COLOR] Movies"
+msgstr "[COLOR=Color2]Nauji[/COLOR] filmai"
+
+msgctxt "#31705"
+msgid "[COLOR=Color2]Recently[/COLOR] Played"
+msgstr "[COLOR=Color2]Vėliausiai[/COLOR] atkurta"
+
+msgctxt "#31706"
+msgid "System [COLOR=Color2]Information[/COLOR]"
+msgstr "Sistemos [COLOR=Color2]informacija[/COLOR]"
+
+msgctxt "#31708"
+msgid "Welcome"
+msgstr "Sveiki"
+
+msgctxt "#31709"
+msgid "Please log in"
+msgstr "Prašome prisijungti"
+
+msgctxt "#31710"
+msgid "[COLOR=Color2]New[/COLOR] Music Videos"
+msgstr "[COLOR=Color2]Nauji[/COLOR] muzikiniai vaizdo klipai"
+
+msgctxt "#31711"
+msgid "Searching"
+msgstr "Ieškoma"
+
+msgctxt "#31712"
+msgid "Working"
+msgstr "Dirbama"
+
+msgctxt "#31713"
+msgid "Reset all skin settings"
+msgstr "Atstatyti visus teminės išvaizdos nustatymus"
+
+#: new values
+msgctxt "#32000"
+msgid "Unwatched Episodes"
+msgstr "Neperžiūrėti epizodai"
+
+msgctxt "#32001"
+msgid "Unwatched Episodes (Total)"
+msgstr "Neperžiūrėti epizodai (iš viso)"
+
+msgctxt "#32003"
+msgid "Unwatched Movies"
+msgstr "Neperžiūrėti filmai"
+
+msgctxt "#32004"
+msgid "Use classic home menu"
+msgstr "Naudoti klasikinį pradinį meniu"
+
+msgctxt "#32005"
+msgid "Center widget panel"
+msgstr "Centruoti valdiklių skydelį"
+
+msgctxt "#32006"
+msgid "Use random episodes instead of recently added"
+msgstr "Naudoti atsitiktinius epizodus, vietoje vėliausiai įkeltų"
+
+msgctxt "#32007"
+msgid "Use random movies instead of recently added"
+msgstr "Naudoti atsitiktinius filmus, vietoje vėliausiai įkeltų"
+
+msgctxt "#32008"
+msgid "Show scrolling text while fullscreen music playback"
+msgstr "Rodyti slenkantį tekstą, kai muzika atkuriama visame ekrane"
+
+msgctxt "#32009"
+msgid "Hide music info panels in visualization after a few seconds"
+msgstr "Slėpti muzikos informacinius skydelius vizualizacijoje po kelių sekundžių"
+
+msgctxt "#32010"
+msgid "Enable own global background"
+msgstr "Įjungti nuosavą globalų foną"
+
+msgctxt "#32011"
+msgid "Use a single background image"
+msgstr "Naudoti vieną fono atvaizdą"
+
+msgctxt "#32012"
+msgid "Define a folder for slideshow"
+msgstr "Nustatyti skaidrių peržiūros aplanką"
+
+msgctxt "#32013"
+msgid "Use random albums instead of recently added"
+msgstr "Naudoti atsitiktinius albumus, vietoje vėliausiai įkeltų"
+
+msgctxt "#32014"
+msgid "Recently added music"
+msgstr "Vėliausiai įkelta muzika"
+
+msgctxt "#32015"
+msgid "Use in progress movies only"
+msgstr "Naudoti tik nebaigtus žiūrėti filmus"
+
+msgctxt "#32016"
+msgid "Use in progress episodes only"
+msgstr "Naudoti tik nebaigtus žiūrėti epizodus"
+
+msgctxt "#32017"
+msgid "Show (scheduled) recording in PVR and Home screen"
+msgstr "Rodyti (suplanuotus) įrašymus PVR ir pradiniame ekrane"
+
+msgctxt "#32018"
+msgid "Deactivate glass effect overlays"
+msgstr "Pasyvinti stiklo efekto perdangas"
+
+msgctxt "#32019"
+msgid "Enable hub"
+msgstr "Įjungti šakotuvą"
+
+msgctxt "#32020"
+msgid "All movies"
+msgstr "Visi filmai"
+
+msgctxt "#32021"
+msgid "Recently added"
+msgstr "Vėliausiai įkelta"
+
+msgctxt "#32022"
+msgid "All TV shows"
+msgstr "Visos TV laidos"
+
+msgctxt "#32023"
+msgid "In progress"
+msgstr "Atkuriama"
+
+msgctxt "#32024"
+msgid "Next scheduled recording"
+msgstr "Kitas suplanuotas įrašymas"
+
+msgctxt "#32025"
+msgid "Now recording"
+msgstr "Šiuo metu įrašoma"
+
+msgctxt "#32026"
+msgid "Next recording"
+msgstr "Kitas įrašymas"
+
+msgctxt "#32027"
+msgid "Recording"
+msgstr "Įrašoma"
+
+msgctxt "#32028"
+msgid "Movie Hub"
+msgstr "Filmų šakotuvas"
+
+msgctxt "#32029"
+msgid "TV Show Hub"
+msgstr "TV laidų šakotuvas"
+
+msgctxt "#32030"
+msgid "Music Hub"
+msgstr "Muzikos šakotuvas"
+
+msgctxt "#32031"
+msgid "Showing"
+msgstr "Rodoma"
+
+msgctxt "#32032"
+msgid "Random"
+msgstr "Atsitiktinai"
+
+msgctxt "#32033"
+msgid "Random albums"
+msgstr "Atsitiktiniai albumai"
+
+msgctxt "#32034"
+msgid "Recommended"
+msgstr "Rekomenduojama"
+
+msgctxt "#32035"
+msgid "Recently played"
+msgstr "Vėliausiai atkurta"
+
+msgctxt "#32036"
+msgid "Change user"
+msgstr "Pakeisti vartotoją"
+
+msgctxt "#32037"
+msgid "In progress movies"
+msgstr "Nebaigti žiūrėti filmai"
+
+msgctxt "#32038"
+msgid "In progress episodes"
+msgstr "Nebaigti žiūrėti epizodai"
+
+msgctxt "#32039"
+msgid "Recently played albums"
+msgstr "Vėliausiai atkurti albumai"
+
+msgctxt "#32040"
+msgid "New movies"
+msgstr "Nauji filmai"
+
+msgctxt "#32041"
+msgid "New episodes"
+msgstr "Nauji epizodai"
+
+msgctxt "#32042"
+msgid "New albums"
+msgstr "Nauji albumai"
+
+msgctxt "#32043"
+msgid "In Progress Hub"
+msgstr ""
+
+msgctxt "#32044"
+msgid "Widgets"
+msgstr "Valdikliai"
+
+msgctxt "#32045"
+msgid "Use in progress movies instead of episodes"
+msgstr "Naudoti nebaigtus žiūrėti filmus, vietoje epizodų"
+
+msgctxt "#32046"
+msgid "Enable widgets for inprogress/movies/tvshows/music"
+msgstr "Įjungti valdiklius šiuo metu atkuriamiems/filmams/tv laidoms/muzikai"
+
+msgctxt "#32047"
+msgid "Enable weather widget"
+msgstr "Įjungti orų valdiklį"

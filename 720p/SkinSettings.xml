@@ -674,13 +674,13 @@
 							<width>283</width>
 							<itemgap>2</itemgap>
 							<left>570</left>
-							<!--<control type="button" id="1011">
-								<label>[B]English: [/B]Sebastian Saenger</label>
+							<control type="button" id="1011">
+								<label>[B]Lithuanian: [/B]Zapata11</label>
 								<width>283</width>
 								<onclick>noop</onclick> 
 								<include>settings_Listbutton</include>
 							</control>
-							<control type="button" id="1011">
+							<!--<control type="button" id="1011">
 								<label>[B]Germany: [/B]Sebastian Saenger</label>
 								<width>283</width>
 								<onclick>noop</onclick> 
