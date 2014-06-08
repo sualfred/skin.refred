@@ -23,7 +23,7 @@
 				<width>335</width>
 				<left>9</left>
 				<label>$LOCALIZE[20410]</label>
-				<onclick>SendClick(2003,11)</onclick>
+				<onclick>PlayMedia($ESCINFO[ListItem.Trailer])</onclick>
 				<visible>Container.Content(Movies) + !IsEmpty(ListItem.Trailer)</visible>
 				<include>dialog_ControlCommons</include>
 			</control>
