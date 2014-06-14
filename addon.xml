@@ -3,7 +3,9 @@
 	<requires>
 		<import addon="xbmc.gui" version="5.0.1"/>
 		<!--<import addon="script.grab.fanart" version="0.12.8"/>-->
+		<import addon="script.module.unidecode" version="0.4.14"/>
 		<import addon="service.library.data.provider" version="0.0.4"/>
+		<import addon="script.skinshortcuts" version="0.3.3PR2"/>
 		<import addon="script.favourites" version="5.0.2"/>
 		<import addon="script.tv.show.next.aired" version="6.0.2"/>
 		<import addon="script.artistslideshow" version="1.6.3"/>

@@ -3,6 +3,7 @@
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<onunload>ClearProperty(Fanartgrabber,skinsettings)</onunload>
+	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9110&amp;group=favouriteswidgets|pictureswidgets|ytwidgets|settingswidgets|powerwidgets|custom1widgets|custom2widgets|custom3widgets|discwidgets|videoswidgets|programswidgets|addonswidgets|pvrwidgets|searchwidgets)</onunload>
 	<controls>
 		<!--global includes-->
 		<include>global_Background</include>
@@ -24,18 +25,6 @@
 						<onfocus>Skin.SetString(SkinSettings,Home)</onfocus>
 						<onup>19</onup>
 						<onright>SetFocus(100)</onright>
-						<ondown>11</ondown>
-						<include>settings_Menu</include>
-					</control>
-				</control>
-				<!--widgets-->
-				<control type="group">
-					<height>44</height>
-					<control type="button" id="11">
-						<label>$LOCALIZE[32044]</label>
-						<onfocus>Skin.SetString(SkinSettings,Widgets)</onfocus>
-						<onup>10</onup>
-						<onright>SetFocus(500)</onright>
 						<ondown>15</ondown>
 						<include>settings_Menu</include>
 					</control>
@@ -174,78 +163,6 @@
 						<onclick>Skin.ToggleSetting(widgets.center.enabled)</onclick>
 						<selected>Skin.HasSetting(widgets.center.enabled)</selected>
 						<visible>Skin.HasSetting(widgets.enabled) + Skin.HasSetting(home.menu2)</visible>
-						<include>settings_Radiobutton</include>
-					</control>
-					<!-- enable hub -->
-					<control type="radiobutton" id="116">
-						<label>$LOCALIZE[32019]</label>
-						<onclick>Skin.ToggleSetting(videohub.enable)</onclick>
-						<selected>Skin.HasSetting(videohub.enable)</selected>
-						<include>settings_Radiobutton</include>
-					</control>
-				</control>
-				<!--widgets-->
-				<control type="grouplist" id="500">
-					<width>850</width>
-					<height>598</height>
-					<onleft>9001</onleft>
-					<onright>70</onright>
-					<onup>500</onup>
-					<ondown>500</ondown>
-					<itemgap>2</itemgap>
-					<pagecontrol>70</pagecontrol>
-					<visible>Skin.String(SkinSettings,Widgets)</visible>
-					<!--widgets-->
-					<control type="radiobutton" id="501">
-						<label>$LOCALIZE[32046]</label>
-						<onclick>Skin.ToggleSetting(widgets.enabled)</onclick>
-						<selected>Skin.HasSetting(widgets.enabled)</selected>
-						<include>settings_Radiobutton</include>
-					</control>
-					<!--randomepisodes-->
-					<control type="radiobutton" id="502">
-						<label>- $LOCALIZE[32006]</label>
-						<onclick>Skin.ToggleSetting(widgets.randomepisodes.enabled)</onclick>
-						<selected>Skin.HasSetting(widgets.randomepisodes.enabled)</selected>
-						<enable>Skin.HasSetting(widgets.enabled)</enable>
-						<include>settings_Radiobutton</include>
-					</control>
-					<!--randommovies-->
-					<control type="radiobutton" id="503">
-						<label>- $LOCALIZE[32007]</label>
-						<onclick>Skin.ToggleSetting(widgets.randommovies.enabled)</onclick>
-						<selected>Skin.HasSetting(widgets.randommovies.enabled)</selected>
-						<enable>Skin.HasSetting(widgets.enabled)</enable>
-						<include>settings_Radiobutton</include>
-					</control>
-					<!--randommusic-->
-					<control type="radiobutton" id="504">
-						<label>- $LOCALIZE[32013]</label>
-						<onclick>Skin.ToggleSetting(widgets.randommusic.enabled)</onclick>
-						<selected>Skin.HasSetting(widgets.randommusic.enabled)</selected>
-						<enable>Skin.HasSetting(widgets.enabled)</enable>
-						<include>settings_Radiobutton</include>
-					</control>
-					<!--inprogress-->
-					<control type="radiobutton" id="505">
-						<label>- $LOCALIZE[32045]</label>
-						<onclick>Skin.ToggleSetting(widgets.inprogressmovies.enabled)</onclick>
-						<selected>Skin.HasSetting(widgets.inprogressmovies.enabled)</selected>
-						<enable>Skin.HasSetting(widgets.enabled)</enable>
-						<include>settings_Radiobutton</include>
-					</control>
-					<!--live tv recordingwidget-->
-					<control type="radiobutton" id="506">
-						<label>$LOCALIZE[32017]</label>
-						<onclick>Skin.ToggleSetting(overlay.pvr)</onclick>
-						<selected>Skin.HasSetting(overlay.pvr)</selected>
-						<include>settings_Radiobutton</include>
-					</control>
-					<!--weather widget-->
-					<control type="radiobutton" id="507">
-						<label>$LOCALIZE[32047]</label>
-						<onclick>Skin.ToggleSetting(widgets.weather.enabled)</onclick>
-						<selected>Skin.HasSetting(widgets.weather.enabled)</selected>
 						<include>settings_Radiobutton</include>
 					</control>
 				</control>

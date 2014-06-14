@@ -22,6 +22,7 @@
 	<include file="WidgetsPanel.xml" />
 	<include file="Includes_Hub.xml" />
 	<include file="HubPanel.xml" />
+	<include file="script-skinshortcuts-includes.xml"/>
 	<!--CONSTANTS-->
 	<constant name="screen_Width">1280</constant>
 	<constant name="screen_Height">720</constant>
@@ -52,6 +53,12 @@
 	</include>
 	<include name="homepos2">
 		<focusposition>2</focusposition>
+	</include>
+	<include name="subhomepos1">
+		<focusposition>0</focusposition>
+	</include>
+	<include name="subhomepos2">
+		<focusposition>3</focusposition>
 	</include>
 	<include name="global_ListScroll">
 		<scrolltime tween="Quadratic" easing="Out">300</scrolltime>
@@ -433,6 +440,13 @@
 		<texturefocus colordiffuse="Color1">views/focus.png</texturefocus>
 		<alttexturenofocus colordiffuse="column2">views/focus.png</alttexturenofocus>
 		<alttexturefocus colordiffuse="Color1">views/focus.png</alttexturefocus>
+	</include>
+	<include name="settings_Skinshortcuts">
+		<width>300</width>
+		<height>32</height>
+		<font>light_Settings</font>
+		<align>left</align>
+		<textcolor>Color1</textcolor>
 	</include>
 	<include name="settings_Listbutton">
 		<width>850</width>

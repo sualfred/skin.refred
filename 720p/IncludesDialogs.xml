@@ -129,6 +129,7 @@
 	<include name="dialog_Radio">
 		<height>40</height>
 		<font>regular</font>
+		<textwidth>420</textwidth>
 		<textoffsetx>15</textoffsetx>
 		<textoffsety>5</textoffsety>
 		<radiowidth>48</radiowidth>

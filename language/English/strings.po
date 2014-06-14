@@ -788,3 +788,15 @@ msgstr "Enable weather widget"
 msgctxt "#32048"
 msgid "Settings Level"
 msgstr "Settings Level"
+
+msgctxt "#32049"
+msgid "Edit sub-menu items"
+msgstr "Edit sub-menu items"
+
+msgctxt "#32050"
+msgid "Edit custom widget row"
+msgstr "Edit custom widget row"
+
+msgctxt "#32051"
+msgid "Enable widgets"
+msgstr "Enable widgets"
