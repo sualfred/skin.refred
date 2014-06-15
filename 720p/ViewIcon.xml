@@ -221,6 +221,7 @@
 				<height>22</height>
 				<aspectratio align="right" aligny="top">keep</aspectratio>
 				<include>detail_StarRating</include>
+				<visible>!SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
 			</control>
 		</control>
 		<control type="panel" id="572">
@@ -240,16 +241,70 @@
 			<include>transition_Info</include>
 			<include>toggle_Menu</include>
 			<visible>Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(songs) | Window.IsActive(pictures) | SubString(Container.FolderPath,plugin)</visible>
-			<itemlayout width="188" height="188">
+			<itemlayout condition="!SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)" width="188" height="188">
 				<include>view_IconSquare-ContainerCommons</include>
 			</itemlayout>
-			<focusedlayout height="188" width="188">
+			<focusedlayout condition="!SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)" height="188" width="188">
 				<control type="image">
 					<width>178</width>
 					<height>178</height>
 					<include>art_Frame-fo</include>
 				</control>
 				<include>view_IconSquare-ContainerCommons</include>
+			</focusedlayout>
+			<itemlayout condition="SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)" width="125" height="188">
+				<control type="image">
+						<width>119</width>
+						<height>174</height>
+						<include>art_Frame-nf</include>
+					</control>
+					<control type="group">
+						<left>7</left>
+						<top>7</top>
+						<control type="image">
+							<centerleft>53</centerleft>
+							<centertop>80</centertop>
+							<width>96</width>
+							<height>96</height>
+							<include>art_DefaultIcon</include>
+						</control>
+						<control type="image">
+							<width>105</width>
+							<height>160</height>
+							<texture background="true">$VAR[thumb_Square]</texture>
+							<aspectratio>scale</aspectratio>
+						</control>
+					</control>
+			</itemlayout>
+			<focusedlayout condition="SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)" height="188" width="125">
+				<control type="image">
+						<width>119</width>
+						<height>174</height>
+						<include>art_Frame-nf</include>
+					</control>
+					<control type="image">
+						<width>119</width>
+						<height>174</height>
+						<include>art_Frame-fo</include>
+					</control>
+					<control type="group">
+						<left>7</left>
+						<top>7</top>
+						<control type="image">
+							<centerleft>53</centerleft>
+							<centertop>80</centertop>
+							<width>96</width>
+							<height>96</height>
+							<include>art_DefaultIcon</include>							
+							<colordiffuse condition="Control.HasFocus">Focused</colordiffuse>
+						</control>
+						<control type="image">
+							<width>105</width>
+							<height>160</height>
+							<texture background="true">$VAR[thumb_Square]</texture>
+							<aspectratio>scale</aspectratio>
+						</control>
+					</control>
 			</focusedlayout>
 		</control>
 	</include>
@@ -279,6 +334,7 @@
 				<control type="image">
 					<aspectratio align="left" aligny="center">keep</aspectratio>
 					<include>detail_StarRating</include>
+					<visible>!SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
 				</control>
 				<control type="textbox" id="4">
 					<width>440</width>
@@ -312,7 +368,7 @@
 				<preloaditems>2</preloaditems>
 				<include>global_ListScroll</include>
 				<visible>Container.Content(addons) | Container.Content(albums) | Container.Content(artists) | Container.Content(songs) | Window.IsActive(pictures) | SubString(Container.FolderPath,plugin)</visible>
-				<itemlayout height="184" width="184">
+				<itemlayout condition="!SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)" height="184" width="184">
 					<control type="image">
 						<width>174</width>
 						<height>174</height>
@@ -321,11 +377,6 @@
 					<control type="group">
 						<left>7</left>
 						<top>7</top>
-						<control type="image">
-							<width>160</width>
-							<height>160</height>
-							<texture>thumbs/default_Square.png</texture>
-						</control>
 						<control type="image">
 							<centerleft>80</centerleft>
 							<centertop>80</centertop>
@@ -341,7 +392,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="184" width="184">
+				<focusedlayout condition="!SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)" height="184" width="184">
 					<control type="image">
 						<width>174</width>
 						<height>174</height>
@@ -356,19 +407,69 @@
 						<left>7</left>
 						<top>7</top>
 						<control type="image">
-							<width>160</width>
-							<height>160</height>
-							<texture>thumbs/default_Square.png</texture>
+							<centerleft>80</centerleft>
+							<centertop>80</centertop>
+							<width>96</width>
+							<height>96</height>
+							<include>art_DefaultIcon</include>
+							<colordiffuse condition="Control.HasFocus">Focused</colordiffuse>
 						</control>
 						<control type="image">
-							<centerleft>80</centerleft>
+							<width>160</width>
+							<height>160</height>
+							<texture background="true">$VAR[thumb_Square]</texture>
+							<aspectratio>scale</aspectratio>
+						</control>
+					</control>
+				</focusedlayout>
+				<itemlayout condition="SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)" height="184" width="125">
+					<control type="image">
+						<width>119</width>
+						<height>174</height>
+						<include>art_Frame-nf</include>
+					</control>
+					<control type="group">
+						<left>7</left>
+						<top>7</top>
+						<control type="image">
+							<centerleft>53</centerleft>
 							<centertop>80</centertop>
 							<width>96</width>
 							<height>96</height>
 							<include>art_DefaultIcon</include>
 						</control>
 						<control type="image">
-							<width>160</width>
+							<width>105</width>
+							<height>160</height>
+							<texture background="true">$VAR[thumb_Square]</texture>
+							<aspectratio>scale</aspectratio>
+						</control>
+					</control>
+				</itemlayout>
+				<focusedlayout condition="SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)" height="184" width="125">
+					<control type="image">
+						<width>119</width>
+						<height>174</height>
+						<include>art_Frame-nf</include>
+					</control>
+					<control type="image">
+						<width>119</width>
+						<height>174</height>
+						<include>art_Frame-fo</include>
+					</control>
+					<control type="group">
+						<left>7</left>
+						<top>7</top>
+						<control type="image">
+							<centerleft>53</centerleft>
+							<centertop>80</centertop>
+							<width>96</width>
+							<height>96</height>
+							<include>art_DefaultIcon</include>							
+							<colordiffuse condition="Control.HasFocus">Focused</colordiffuse>
+						</control>
+						<control type="image">
+							<width>105</width>
 							<height>160</height>
 							<texture background="true">$VAR[thumb_Square]</texture>
 							<aspectratio>scale</aspectratio>

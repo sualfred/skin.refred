@@ -13,6 +13,10 @@
 		<!--view includes-->
 		<include>view_List</include>
 		<!--50-->
+		<include>view_SlidePoster</include>
+		<!--52-->
+		<include>view_SlideLandscape</include>
+		<!--521-->
 		<include>view_SlideSquare</include>
 		<!--522-->
 		<include>view_IconSquare</include>
@@ -29,8 +33,7 @@
 			<include>transition_Info</include>
 			<include>transition_Content</include>
 			<include>fadeinout</include>
-			<visible>Control.IsVisible(50)</visible>
-			
+			<visible>Control.IsVisible(50)</visible>			
 			<control type="group">
 				<left>750</left>
 				<top>80</top>
@@ -74,8 +77,9 @@
 						</control>
 					</control>
 				</control>
-			</control>
-			
+			</control>			
 		</control>
+		<!--scrollbars-->
+		<include>PageControls</include>
 	</controls>
 </window>
