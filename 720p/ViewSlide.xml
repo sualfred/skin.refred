@@ -428,7 +428,7 @@
 			<include>transition_Content</include>
 			<include>transition_Info</include>
 			<include>toggle_Menu</include>
-			<visible>Container.Content(albums) | Container.Content(songs) | Container.Content(singles) | Container.Content(artists) | Container.Content(addons)</visible>
+			<visible>Container.Content(albums) | Container.Content(songs) | Container.Content(singles) | Container.Content(artists) | Container.Content(addons) | SubString(Container.FolderPath,plugin)</visible>
 			<itemlayout height="280" width="280">
 				<include>view_SlideSquare-ContainerCommons</include>
 			</itemlayout>

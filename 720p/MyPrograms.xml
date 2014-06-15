@@ -24,5 +24,58 @@
 		<include>detail_Slide</include>
 		<!--menu-->
 		<include>menu_Files</include>
+		<control type="group">
+			<include>toggle_Menu</include>
+			<include>transition_Info</include>
+			<include>transition_Content</include>
+			<include>fadeinout</include>
+			<visible>Control.IsVisible(50)</visible>
+			
+			<control type="group">
+				<left>750</left>
+				<top>80</top>
+				<control type="group">					
+					<control type="group">
+						<visible>SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/?)</visible>
+						<left>7</left>
+						<top>7</top>
+						<control type="image">
+							<width>420</width>
+							<height>614</height>
+							<texture background="true">white.png</texture>
+							<fadetime>fadetime_Thumb</fadetime>
+							<aspectratio align="center" aligny="top">scale</aspectratio>
+							<visible>Container.Position(0)</visible>
+						</control>
+						<control type="image">
+							<left>139</left>
+							<top>236</top>
+							<width>128</width>
+							<height>128</height>
+							<include>art_DefaultIcon</include>
+							<colordiffuse condition="Container.Position(0)">Color5</colordiffuse>
+							<fadetime>fadetime_Thumb</fadetime>
+						</control>
+						<control type="image">
+							<width>420</width>
+							<height>614</height>
+							<texture background="true">$VAR[thumb_Portrait]</texture>
+							<include>bordertrans</include>
+							<aspectratio align="center" aligny="center">scale</aspectratio>
+							<fadetime>fadetime_Thumb</fadetime>
+						</control>
+						<control type="image">
+							<width>420</width>
+							<height>614</height>
+							<texture background="true">overlays/cover_overlay.png</texture>
+							<aspectratio align="center" aligny="center">scale</aspectratio>
+							<fadetime>fadetime_Thumb</fadetime>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+					</control>
+				</control>
+			</control>
+			
+		</control>
 	</controls>
 </window>

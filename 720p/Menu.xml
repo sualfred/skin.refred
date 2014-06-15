@@ -609,7 +609,7 @@
 					<textwidth>250</textwidth>
 					<include>menu_Button</include>
 					<onclick>Container.SetViewMode(522)</onclick>
-					<visible>Container.Content(addons)</visible>
+					<visible>Container.Content(addons) | SubString(Container.FolderPath,plugin)</visible>
 				</control>
 				<!--thumbnails-->
 				<control type="button" id="403">
