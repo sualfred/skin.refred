@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window type="dialog" id="97000">
+<window type="dialog" id="96">
 	<zorder>1</zorder>
 	<allowoverlay>yes</allowoverlay>
 	<defaultcontrol always="true">100</defaultcontrol>

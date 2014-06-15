@@ -541,9 +541,9 @@
 						<width>250</width>
 						<height>250</height>
 						<fadetime>1000</fadetime>
-						<texture background="true" fallback="overlays/cdart.png" diffuse="overlays/discdiffuse.png">$INFO[Container(9150).ListItem.Thumb]</texture>
+						<texture background="true" fallback="overlays/cdart.png" diffuse="overlays/discdiffuse.png">$INFO[Container(9150).ListItem.Art(fanart)]</texture>
 						<aspectratio align="center" aligny="center" scalediffuse="false">scale</aspectratio>
-						<visible>IsEmpty(Container(9150).ListItem.Property(Discart))</visible>
+						<visible>IsEmpty(Container(9150).ListItem.Art(discart))</visible>
 					</control>
 					<control type="image">
 						<top>100</top>
@@ -569,6 +569,7 @@
 						<top>170</top>
 						<right>20</right>
 						<width>200</width>
+						<textwidth>180</textwidth>
 						<height>50</height>
 						<align>center</align>
 						<label>[B]$INFO[Container(9150).ListItem.Label][/B]</label>

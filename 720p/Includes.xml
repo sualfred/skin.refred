@@ -1241,6 +1241,7 @@
 					<top>-110</top>
 					<left>10</left>
 					<control type="group">
+						<visible>!IsEmpty(Player.Art(thumb)]</visible>
 						<left>10</left>
 						<top>-10</top>
 						<width>180</width>
@@ -1257,8 +1258,9 @@
 							<top>33</top>
 							<width>180</width>
 							<height>180</height>
+							<textwidth>140</textwidth>
 							<align>center</align>
-							<label>[B]$INFO[MusicPlayer.Artist][/B]</label>
+							<label>[B]$INFO[MusicPlayer.Album][/B]</label>
 							<shadowcolor>black</shadowcolor>
 							<font>semibold_Small-U</font>
 						</control>
@@ -1291,7 +1293,7 @@
 						<top>70</top>
 						<width>200</width>
 						<height>200</height>
-						<texture>$VAR[osd_Art]</texture>
+						<texture fallback="DefaultAddonAlbumInfo.png">$VAR[osd_Art]</texture>
 						<bordertexture colordiffuse="blacktrans3">white.png</bordertexture>
 						<bordersize>5</bordersize>
 						<aspectratio>stretch</aspectratio>

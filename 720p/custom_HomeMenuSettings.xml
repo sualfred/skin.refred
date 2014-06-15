@@ -19,7 +19,7 @@
 			<top>28</top>
 			<include condition="Window.IsVisible(Home)">transition_Dialog-HomeMenuSettings</include>
 			<include condition="!Window.IsVisible(Home)">transition_Dialog</include>
-			<visible>!Window.IsVisible(96) + !Window.IsVisible(10126) + !Window.IsActive(97000)</visible>
+			<visible>!Window.IsVisible(96) + !Window.IsVisible(10126)</visible>
 			<!-- header -->
 			<control type="label">
 				<label>$LOCALIZE[31210]</label>
@@ -224,7 +224,7 @@
 						<onright>70</onright>
 						<pagecontrol>70</pagecontrol>
 						<onup>500</onup>
-						<ondown>600</ondown>
+						<ondown>500</ondown>
 						<itemgap>5</itemgap>
 						<visible>Skin.String(Section,Inprogress)</visible>
 						<include>global_ListScroll</include>
@@ -270,7 +270,7 @@
 						<onright>70</onright>
 						<pagecontrol>70</pagecontrol>
 						<onup>500</onup>
-						<ondown>600</ondown>
+						<ondown>500</ondown>
 						<itemgap>5</itemgap>
 						<visible>Skin.String(Section,Video)</visible>
 						<include>global_ListScroll</include>
@@ -418,19 +418,11 @@
 						<onleft>10</onleft>
 						<onright>70</onright>
 						<onup>500</onup>
-						<ondown>600</ondown>
+						<ondown>500</ondown>
 						<itemgap>5</itemgap>
 						<pagecontrol>70</pagecontrol>
 						<include>global_ListScroll</include>
 						<visible>Skin.String(Section,TV)</visible>
-						<!-- recording widget -->
-						<control type="radiobutton" id="504">
-							<label>$LOCALIZE[32017]</label>
-							<width>484</width>
-							<onclick>Skin.ToggleSetting(overlay.pvr)</onclick>
-							<selected>Skin.HasSetting(overlay.pvr)</selected>
-							<include>dialog_Radio-alt</include>
-						</control>
 						<!--widget state -->
 						<control type="radiobutton" id="501">
 							<label>$LOCALIZE[32051]</label>
@@ -447,8 +439,16 @@
 							<include>dialog_Radio-alt</include>
 							<enable>Skin.HasSetting(widgets.pvr.enabled)</enable>
 						</control>
+						<!-- recording widget -->
+						<control type="radiobutton" id="502">
+							<label>$LOCALIZE[32017]</label>
+							<width>484</width>
+							<onclick>Skin.ToggleSetting(overlay.pvr)</onclick>
+							<selected>Skin.HasSetting(overlay.pvr)</selected>
+							<include>dialog_Radio-alt</include>
+						</control>
 						<!--submenu items-->
-						<control type="button" id="502">
+						<control type="button" id="508">
 							<label>$LOCALIZE[32049]</label>
 							<width>484</width>							
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=livetv)</onclick>
@@ -481,7 +481,7 @@
 						<onleft>10</onleft>
 						<onright>70</onright>
 						<onup>500</onup>
-						<ondown>600</ondown>
+						<ondown>500</ondown>
 						<itemgap>5</itemgap>
 						<pagecontrol>70</pagecontrol>
 						<include>global_ListScroll</include>
@@ -527,9 +527,10 @@
 						<onleft>10</onleft>
 						<onright>70</onright>
 						<onup>500</onup>
-						<ondown>600</ondown>
+						<ondown>500</ondown>
 						<itemgap>5</itemgap>
 						<pagecontrol>70</pagecontrol>
+						<include>global_ListScroll</include>
 						<visible>Skin.String(Section,Pictures)</visible>
 						<!--widget state -->
 						<control type="radiobutton" id="501">
@@ -554,7 +555,7 @@
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=pictures)</onclick>
 							<include>dialog_Radio-alt</include>
 						</control>
-						<control type="radiobutton" id="504">
+						<control type="radiobutton" id="508">
 							<label>Background: $INFO[Skin.String(pictures.bg)]</label>
 							<width>484</width>
 							<textwidth>400</textwidth>
@@ -563,7 +564,7 @@
 							<selected>!IsEmpty(Skin.String(pictures.bg))</selected>
 							<include>dialog_Radio-alt</include>
 						</control>
-						<control type="radiobutton" id="505">
+						<control type="radiobutton" id="509">
 							<label>Thumb: $INFO[Skin.String(pictures.thumb)]</label>
 							<width>484</width>
 							<textwidth>400</textwidth>
@@ -581,7 +582,7 @@
 						<onleft>10</onleft>
 						<onright>70</onright>
 						<onup>500</onup>
-						<ondown>600</ondown>
+						<ondown>500</ondown>
 						<itemgap>5</itemgap>
 						<include>global_ListScroll</include>
 						<visible>Skin.String(Section,Addons)</visible>
@@ -636,7 +637,7 @@
 					<onleft>10</onleft>
 					<onright>70</onright>
 					<onup>500</onup>
-					<ondown>600</ondown>
+					<ondown>500</ondown>
 					<itemgap>5</itemgap>
 					<pagecontrol>70</pagecontrol>
 					<include>global_ListScroll</include>
@@ -691,7 +692,7 @@
 					<onleft>10</onleft>
 					<onright>70</onright>
 					<onup>500</onup>
-					<ondown>600</ondown>
+					<ondown>500</ondown>
 					<itemgap>5</itemgap>
 					<pagecontrol>70</pagecontrol>
 					<include>global_ListScroll</include>
@@ -746,7 +747,7 @@
 					<onleft>10</onleft>
 					<onright>70</onright>
 					<onup>500</onup>
-					<ondown>600</ondown>
+					<ondown>500</ondown>
 					<itemgap>5</itemgap>
 					<pagecontrol>70</pagecontrol>
 					<include>global_ListScroll</include>
@@ -812,7 +813,7 @@
 						<include>dialog_Radio-alt</include>
 					</control>
 					<!--widget state -->
-					<control type="radiobutton" id="510">
+					<control type="radiobutton" id="509">
 						<label>$LOCALIZE[32051]</label>
 						<width>484</width>
 						<onclick>Skin.ToggleSetting(widgets.custom1.enabled)</onclick>
@@ -820,7 +821,7 @@
 						<include>dialog_Radio-alt</include>
 					</control>
 					<!--widgets items-->
-					<control type="button" id="509">
+					<control type="button" id="510">
 						<label>$LOCALIZE[32050]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=custom1widgets)</onclick>
@@ -836,7 +837,7 @@
 					<onleft>10</onleft>
 					<onright>70</onright>
 					<onup>500</onup>
-					<ondown>600</ondown>
+					<ondown>500</ondown>
 					<itemgap>5</itemgap>
 					<pagecontrol>70</pagecontrol>
 					<include>global_ListScroll</include>
@@ -902,7 +903,7 @@
 						<include>dialog_Radio-alt</include>
 					</control>
 					<!--widget state -->
-					<control type="radiobutton" id="510">
+					<control type="radiobutton" id="509">
 						<label>$LOCALIZE[32051]</label>
 						<width>484</width>
 						<onclick>Skin.ToggleSetting(widgets.custom2.enabled)</onclick>
@@ -910,7 +911,7 @@
 						<include>dialog_Radio-alt</include>
 					</control>					
 					<!--widgets items-->
-					<control type="button" id="509">
+					<control type="button" id="510">
 						<label>$LOCALIZE[32050]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=custom2widgets)</onclick>
@@ -926,7 +927,7 @@
 					<onleft>10</onleft>
 					<onright>70</onright>
 					<onup>500</onup>
-					<ondown>600</ondown>
+					<ondown>500</ondown>
 					<itemgap>5</itemgap>
 					<pagecontrol>70</pagecontrol>
 					<include>global_ListScroll</include>
@@ -956,7 +957,7 @@
 					<onleft>10</onleft>
 					<onright>70</onright>
 					<onup>500</onup>
-					<ondown>600</ondown>
+					<ondown>500</ondown>
 					<itemgap>5</itemgap>
 					<pagecontrol>70</pagecontrol>
 					<visible>Skin.String(Section,Weather)</visible>
@@ -1003,12 +1004,13 @@
 					<onleft>10</onleft>
 					<onright>70</onright>
 					<onup>500</onup>
-					<ondown>600</ondown>
+					<ondown>500</ondown>
 					<itemgap>5</itemgap>
 					<pagecontrol>70</pagecontrol>
+					<include>global_ListScroll</include>
 					<visible>Skin.String(Section,Disc)</visible>
 					<!--widget state -->
-					<control type="radiobutton" id="510">
+					<control type="radiobutton" id="501">
 						<label>$LOCALIZE[32051]</label>
 						<width>484</width>
 						<onclick>Skin.ToggleSetting(widgets.disc.enabled)</onclick>
@@ -1016,7 +1018,7 @@
 						<include>dialog_Radio-alt</include>
 					</control>					
 					<!--widgets items-->
-					<control type="button" id="509">
+					<control type="button" id="503">
 						<label>$LOCALIZE[32050]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=discwidgets)</onclick>
@@ -1031,7 +1033,7 @@
 						<include>dialog_Radio-alt</include>
 					</control>
 					<!--add-ons-->
-					<control type="radiobutton" id="503">
+					<control type="radiobutton" id="508">
 						<label>Background: $INFO[Skin.String(disc.bg)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
@@ -1040,7 +1042,7 @@
 						<selected>!IsEmpty(Skin.String(disc.bg))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
-					<control type="radiobutton" id="504">
+					<control type="radiobutton" id="509">
 						<label>Thumb: $INFO[Skin.String(disc.thumb]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
@@ -1058,9 +1060,10 @@
 					<onleft>10</onleft>
 					<onright>70</onright>
 					<onup>500</onup>
-					<ondown>600</ondown>
+					<ondown>500</ondown>
 					<itemgap>5</itemgap>
 					<pagecontrol>70</pagecontrol>
+					<include>global_ListScroll</include>
 					<visible>Skin.String(Section,Search)</visible>
 					<!--widget state -->
 					<control type="radiobutton" id="501">
@@ -1086,7 +1089,7 @@
 						<include>dialog_Radio-alt</include>
 					</control>
 					<!--bg-->
-					<control type="radiobutton" id="504">
+					<control type="radiobutton" id="508">
 						<label>Background: $INFO[Skin.String(search.bg)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
@@ -1095,7 +1098,7 @@
 						<selected>!IsEmpty(Skin.String(search.bg))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
-					<control type="radiobutton" id="505">
+					<control type="radiobutton" id="509">
 						<label>Thumb: $INFO[Skin.String(search.thumb)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
@@ -1113,7 +1116,7 @@
 					<onleft>10</onleft>
 					<onright>70</onright>
 					<onup>500</onup>
-					<ondown>600</ondown>
+					<ondown>500</ondown>
 					<itemgap>5</itemgap>
 					<pagecontrol>70</pagecontrol>
 					<visible>Skin.String(Section,Youtube)</visible>
@@ -1162,15 +1165,16 @@
 				</control>
 				<!--power submenu-->
 				<control type="grouplist" id="500">
-					<left>270</left>
+				<left>270</left>
 					<width>484</width>
 					<height>535</height>
 					<onleft>10</onleft>
 					<onright>70</onright>
 					<onup>500</onup>
-					<ondown>600</ondown>
+					<ondown>500</ondown>
 					<itemgap>5</itemgap>
 					<pagecontrol>70</pagecontrol>
+					<include>global_ListScroll</include>
 					<visible>Skin.String(Section,Power)</visible>
 					<!--widget state -->
 					<control type="radiobutton" id="501">
@@ -1196,7 +1200,7 @@
 						<include>dialog_Radio-alt</include>
 					</control>
 					<!--bgs-->
-					<control type="radiobutton" id="504">
+					<control type="radiobutton" id="508">
 						<label>Background: $INFO[Skin.String(power.bg)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
@@ -1205,7 +1209,7 @@
 						<selected>!IsEmpty(Skin.String(power.bg))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
-					<control type="radiobutton" id="505">
+					<control type="radiobutton" id="509">
 						<label>Thumb: $INFO[Skin.String(power.thumb]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
@@ -1223,9 +1227,10 @@
 					<onleft>10</onleft>
 					<onright>70</onright>
 					<onup>500</onup>
-					<ondown>600</ondown>
+					<ondown>500</ondown>
 					<itemgap>5</itemgap>
 					<pagecontrol>70</pagecontrol>
+					<include>global_ListScroll</include>
 					<visible>Skin.String(Section,Programs)</visible>
 					<!--widget state -->
 					<control type="radiobutton" id="501">
@@ -1251,7 +1256,7 @@
 						<include>dialog_Radio-alt</include>
 					</control>
 					<!--bg-->
-					<control type="radiobutton" id="504">
+					<control type="radiobutton" id="508">
 						<label>Background: $INFO[Skin.String(programs.bg)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>
@@ -1260,7 +1265,7 @@
 						<selected>!IsEmpty(Skin.String(programs.bg))</selected>
 						<include>dialog_Radio-alt</include>
 					</control>
-					<control type="radiobutton" id="505">
+					<control type="radiobutton" id="509">
 						<label>Thumb: $INFO[Skin.String(programs.thumb)]</label>
 						<width>484</width>
 						<textwidth>400</textwidth>

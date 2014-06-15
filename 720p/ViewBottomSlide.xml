@@ -132,6 +132,7 @@
 						<top>170</top>
 						<right>20</right>
 						<width>210</width>
+						<textwidth>160</textwidth>
 						<height>50</height>
 						<align>center</align>
 						<label>[B]$INFO[Container(554).ListItem.Label][/B]</label>
@@ -287,6 +288,7 @@
 						<width>205</width>
 						<height>50</height>
 						<align>center</align>
+						<textwidth>160</textwidth>
 						<label>[B]$INFO[Container(554).ListItem.Label][/B]</label>
 						<font>semibold_Smaller-U</font>
 						<visible>IsEmpty(ListItem.Art(discart)) + !IsEmpty(ListItem.Title) + IsEmpty(ListItem.Art(clearlogo))</visible>

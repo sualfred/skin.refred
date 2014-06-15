@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>	
 	<include name="hub">
-			
+		<control type="image">
+			<include>screen_Dimensions</include>
+			<texture background="true" colordiffuse="base_1osd">overlays/base_color.png</texture>
+			<visible>ControlGroup(5562).HasFocus() | ControlGroup(5563).HasFocus() | ControlGroup(5564).HasFocus()</visible>
+			<include>fadeinout</include>
+		</control>		
 	<!-- hub panel movies-->>
 	<control type="group" id="5562">
 		<visible>ControlGroup(5562).HasFocus()</visible> 
