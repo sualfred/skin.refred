@@ -9,23 +9,26 @@
 		<system>1</system>
 	</coordinates>
 	<controls>
+		<include>transition_Content</include>
+		<control type="image">
+			<include>screen_Dimensions</include>
+			<texture background="true">backgrounds/fallback/refred.jpg</texture>			
+		</control>
 		<control type="image">
 			<include>screen_Dimensions</include>
 			<texture colordiffuse="base_1">overlays/base_color.png</texture>
-			<include>transition_Dialog</include>
 		</control>
-		<control type="group">
+		<control type="label">
+			<left>35</left>
+			<label>$LOCALIZE[32055] [COLOR=Color2]$LOCALIZE[32057][/COLOR]</label>
+			<include>windowTitle</include>
+		</control>
+		<control type="group" id="961">
 			<left>265</left>
 			<top>28</top>
 			<include condition="Window.IsVisible(Home)">transition_Dialog-HomeMenuSettings</include>
 			<include condition="!Window.IsVisible(Home)">transition_Dialog</include>
 			<visible>!Window.IsVisible(96) + !Window.IsVisible(10126)</visible>
-			<!-- header -->
-			<control type="label">
-				<label>$LOCALIZE[31210]</label>
-				<width>742</width>
-				<include>dialog_Windowtitle</include>
-			</control>
 			<control type="group">
 				<top>60</top>
 				<!--button area-->

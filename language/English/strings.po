@@ -804,3 +804,23 @@ msgstr "Enable widgets"
 msgctxt "#32052"
 msgid "Use poster style"
 msgstr "Use poster style"
+
+msgctxt "#32053"
+msgid "Add from category:"
+msgstr "Add from category:"
+
+msgctxt "#32054"
+msgid "Current used items"
+msgstr "Current used items"
+
+msgctxt "#32055"
+msgid "Menu"
+msgstr "Menu"
+
+msgctxt "#32056"
+msgid "Change items"
+msgstr "Change items"
+
+msgctxt "#32057"
+msgid "Edit"
+msgstr "Edit"
