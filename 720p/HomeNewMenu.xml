@@ -188,8 +188,9 @@
 				<include>fadeinout</include>
 			</control>	
 		</control>
-		<control type="wraplist" id="9901">
+		<control type="fixedlist" id="9901">
 			<visible>Skin.HasSetting(home.menu2)</visible>
+			<animation effect="slide" start="0,0" end="-90,0" time="0" condition="StringCompare(Container(9901).NumItems,2) | StringCompare(Container(9901).NumItems,4) | StringCompare(Container(9901).NumItems,6)">conditional</animation>
 			<include>home_SubMenuTrigger2</include>		
 			<orientation>horizontal</orientation>
 			<onup>9110</onup>
@@ -197,6 +198,7 @@
 			<height>50</height>
 			<content>plugin://script.skinshortcuts?type=submenu&amp;mainmenuID=9110&amp;group=inprogress,movies,tvshows,music,favourites,pictures,yt,settings,power,custom1,custom2,custom3,power,dvd,videos,weather,programs,addons,livetv,search</content>
 			<focusposition>3</focusposition>
+			<movement>3</movement>
 			<itemlayout width="182" height="40">
 				<control type="image">
 					<width>180</width>
