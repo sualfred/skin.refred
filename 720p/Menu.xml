@@ -490,7 +490,7 @@
 			<control type="grouplist" id="6000">
 				<include>menu_ContainerCommons</include>
 				<include>menu_ViewMode</include>
-				<!--viewtype options-->
+				<!--viewtype options-->				
 				<!--thumbnails: small or large grid (add-ons)-->
 				<control type="button" id="110">
 					<label>$VAR[view_Layout]</label>
@@ -498,6 +498,24 @@
 					<onclick condition="Control.IsVisible(572)">Container.SetViewMode(574)</onclick>
 					<include>menu_Button</include>
 					<visible>[Control.IsVisible(572) | Control.IsVisible(574)] + !Window.IsActive(pictures)</visible>
+				</control>
+				<!--thumbnails: sposter or square-->
+				<control type="radiobutton" id="108">
+					<label>$LOCALIZE[32052]</label>
+					<onclick>Skin.ToggleSetting(viewicon.poster)</onclick>
+					<selected>Skin.HasSetting(viewicon.poster)</selected>
+					<include>menu_Button</include>
+					<include>menu_RadioButton</include>
+					<visible>[Control.IsVisible(574) | Control.IsVisible(572) | Control.IsVisible(522)] + SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
+				</control>
+				<!--list: sposter or square-->
+				<control type="radiobutton" id="109">
+					<label>$LOCALIZE[32052]</label>
+					<onclick>Skin.ToggleSetting(viewlist.poster)</onclick>
+					<selected>Skin.HasSetting(viewlist.poster)</selected>
+					<include>menu_Button</include>
+					<include>menu_RadioButton</include>
+					<visible>Control.IsVisible(50) + SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
 				</control>
 				<!--options-->
 				<include>menu_Sorting</include>

@@ -17,7 +17,7 @@
 			<control type="group">
 				<left>192</left>
 				<top>477</top>
-				<animation effect="slide" start="0" end="57" time="0" condition="Control.IsVisible(522) + !SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)">Conditional</animation>
+				<animation effect="slide" start="0" end="57" time="0" condition="Control.IsVisible(522) + !Skin.HasSetting(viewicon.poster)">Conditional</animation>
 				<control type="group">
 					<control type="label">
 						<width>960</width>
@@ -412,7 +412,7 @@
 	<!--SQUARE-->
 	<include name="view_SlideSquare">
 		<control type="group">
-		<animation effect="slide" start="0" end="0,-20" time="0" condition="SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)">Conditional</animation>
+		<animation effect="slide" start="0" end="0,-20" time="0" condition="SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/) + Skin.HasSetting(viewicon.poster)">Conditional</animation>
 		<control type="fixedlist" id="522">
 			<viewtype label="31112">wrap</viewtype>
 			<left>9</left>
@@ -431,16 +431,16 @@
 			<include>transition_Info</include>
 			<include>toggle_Menu</include>
 			<visible>Container.Content(albums) | Container.Content(songs) | Container.Content(singles) | Container.Content(artists) | Container.Content(addons) | SubString(Container.FolderPath,plugin)</visible>
-			<itemlayout condition="!SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)"  height="280" width="280">
+			<itemlayout condition="!SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/) | [SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/) + !Skin.HasSetting(viewicon.poster)]"  height="280" width="280">
 				<include>view_SlideSquare-ContainerCommons</include>
 			</itemlayout>
-			<focusedlayout condition="!SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)" height="280" width="280">
+			<focusedlayout condition="!SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/) | [SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/) + !Skin.HasSetting(viewicon.poster)]" height="280" width="280">
 				<include>view_SlideSquare-ContainerCommons-fo</include>
 			</focusedlayout>
-			<itemlayout condition="SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)"  width="200" height="300">
+			<itemlayout condition="SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/) + Skin.HasSetting(viewicon.poster)"  width="200" height="300">
 				<include>view_SlideSquareAL-ContainerCommons</include>
 			</itemlayout>
-			<focusedlayout condition="SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)" width="200" height="300">
+			<focusedlayout condition="SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/) + Skin.HasSetting(viewicon.poster)" width="200" height="300">
 				<include>view_SlideSquareAL-ContainerCommons-fo</include>
 			</focusedlayout>
 		</control>
@@ -470,7 +470,7 @@
 					<height>260</height>
 					<texture background="true">$VAR[thumb_Square]</texture>
 					<include>bordertrans</include>
-					<aspectratio align="center">stretch</aspectratio>
+					<aspectratio align="center">scale</aspectratio>
 				</control>
 				<control type="image">
 					<width>260</width>
@@ -515,7 +515,7 @@
 					<width>260</width>
 					<height>260</height>
 					<texture background="true">$VAR[thumb_Square]</texture>
-					<aspectratio align="center">stretch</aspectratio>
+					<aspectratio align="center">scale</aspectratio>
 					<include>bordertrans</include>&gt;
 				</control>
 				<control type="image">

@@ -800,3 +800,7 @@ msgstr "Edit custom widget row"
 msgctxt "#32051"
 msgid "Enable widgets"
 msgstr "Enable widgets"
+
+msgctxt "#32052"
+msgid "Use poster style"
+msgstr "Use poster style"

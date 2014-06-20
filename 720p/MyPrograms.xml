@@ -33,13 +33,66 @@
 			<include>transition_Info</include>
 			<include>transition_Content</include>
 			<include>fadeinout</include>
-			<visible>Control.IsVisible(50)</visible>			
+			<visible>Control.IsVisible(50)</visible>
+			<!--landscape-->
+			<control type="group">
+				<control type="group">
+					<left>680</left>
+					<top>90</top>
+					<visible>!Skin.HasSetting(viewlist.poster) + SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/?)</visible>
+					<control type="group">
+						<left>7</left>
+						<top>7</top>
+						<control type="image">
+							<width>546</width>
+							<height>309</height>
+							<texture background="true">white.png</texture>
+							<fadetime>fadetime_Thumb</fadetime>
+							<aspectratio align="center" aligny="top">scale</aspectratio>
+							<visible>Container.Position(0)</visible>
+						</control>
+						<control type="image">
+							<left>202</left>
+							<top>83.5</top>
+							<width>128</width>
+							<height>128</height>
+							<include>art_DefaultIcon</include>
+							<colordiffuse condition="Container.Position(0)">Color5</colordiffuse>
+							<fadetime>fadetime_Thumb</fadetime>
+						</control>
+						<control type="image">
+							<width>546</width>
+							<height>309</height>
+							<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+							<include>bordertrans</include>
+							<fadetime>fadetime_Thumb</fadetime>
+							<aspectratio align="center" aligny="top">scale</aspectratio>
+						</control>
+						<control type="image">
+							<width>546</width>
+							<height>309</height>
+							<texture background="true">overlays/cover_overlay.png</texture>
+							<fadetime>fadetime_Thumb</fadetime>
+							<aspectratio align="center" aligny="top">scale</aspectratio>
+							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+						</control>
+						<control type="textbox">
+							<top>315</top>
+							<width>532</width>
+							<height>auto</height>
+							<label>$VAR[global_Plot]</label>
+							<include>detail_Text</include>
+						</control>
+					</control>
+				</control>
+			</control>		
+			<!-- poster -->
 			<control type="group">
 				<left>750</left>
 				<top>80</top>
 				<control type="group">					
 					<control type="group">
-						<visible>SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/?)</visible>
+						<visible>Skin.HasSetting(viewlist.poster) + SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/?)</visible>
 						<left>7</left>
 						<top>7</top>
 						<control type="image">
@@ -73,7 +126,7 @@
 							<texture background="true">overlays/cover_overlay.png</texture>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
 							<fadetime>fadetime_Thumb</fadetime>
-							<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+							<visible>!Skin.HasSetting(globalGlass.disable) + !IsEmpty(ListItem.Thumb)</visible>
 						</control>
 					</control>
 				</control>
