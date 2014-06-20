@@ -824,3 +824,7 @@ msgstr "Change items"
 msgctxt "#32057"
 msgid "Edit"
 msgstr "Edit"
+
+msgctxt "#32058"
+msgid "Slide SNES"
+msgstr "Slide SNES"

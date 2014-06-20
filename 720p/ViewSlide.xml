@@ -17,7 +17,7 @@
 			<control type="group">
 				<left>192</left>
 				<top>477</top>
-				<animation effect="slide" start="0" end="57" time="0" condition="Control.IsVisible(522) + !Skin.HasSetting(viewicon.poster)">Conditional</animation>
+				<animation effect="slide" start="0" end="57" time="0" condition="Control.IsVisible(522)">Conditional</animation>
 				<control type="group">
 					<control type="label">
 						<width>960</width>
@@ -133,7 +133,7 @@
 			<include>transition_Content</include>
 			<include>transition_Info</include>
 			<include>toggle_Menu</include>
-			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)</visible>
+			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/?)</visible>
 			<itemlayout width="200" height="300">
 				<include>viewSlidePoster-ContainerCommons</include>
 			</itemlayout>
@@ -282,7 +282,7 @@
 			<include>transition_Content</include>
 			<include>transition_Info</include>
 			<include>toggle_Menu</include>
-			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | [Container.Content(files) + Container.HasFiles + !SubString(Container.FolderPath,plugin://plugin)]</visible>
+			<visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | [Container.Content(files) + Container.HasFiles + !SubString(Container.FolderPath,plugin://plugin)] | SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/?)</visible>
 			<itemlayout width="445" height="259">
 				<include>view_SlideLandscape-ContainerCommons</include>
 			</itemlayout>
@@ -431,17 +431,11 @@
 			<include>transition_Info</include>
 			<include>toggle_Menu</include>
 			<visible>Container.Content(albums) | Container.Content(songs) | Container.Content(singles) | Container.Content(artists) | Container.Content(addons) | SubString(Container.FolderPath,plugin)</visible>
-			<itemlayout condition="!SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/) | [SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/) + !Skin.HasSetting(viewicon.poster)]"  height="280" width="280">
+			<itemlayout height="280" width="280">
 				<include>view_SlideSquare-ContainerCommons</include>
 			</itemlayout>
-			<focusedlayout condition="!SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/) | [SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/) + !Skin.HasSetting(viewicon.poster)]" height="280" width="280">
+			<focusedlayout height="280" width="280">
 				<include>view_SlideSquare-ContainerCommons-fo</include>
-			</focusedlayout>
-			<itemlayout condition="SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/) + Skin.HasSetting(viewicon.poster)"  width="200" height="300">
-				<include>view_SlideSquareAL-ContainerCommons</include>
-			</itemlayout>
-			<focusedlayout condition="SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/) + Skin.HasSetting(viewicon.poster)" width="200" height="300">
-				<include>view_SlideSquareAL-ContainerCommons-fo</include>
 			</focusedlayout>
 		</control>
 		</control>
@@ -524,116 +518,6 @@
 					<texture background="true">overlays/cover_overlay.png</texture>
 					<aspectratio align="center" aligny="top">scale</aspectratio>
 					<visible>!Skin.HasSetting(globalGlass.disable)</visible>
-				</control>
-			</control>
-		</control>
-	</include>
-	<include name="view_SlideSquareAL-ContainerCommons">
-		<control type="group">
-			<include>focus_SlidePoster</include>
-			<control type="group">
-				<left>10</left>
-				<top>10</top>
-				<control type="image">
-					<width>183</width>
-					<height>280</height>
-					<texture background="true">thumbs/default_Portrait.png</texture>
-					<aspectratio align="center">stretch</aspectratio>
-					<include>bordertrans</include>
-					<visible>IsEmpty($VAR[thumb_Square])</visible>
-				</control>
-				<control type="image">
-					<left>43.5</left>
-					<top>92</top>
-					<width>96</width>
-					<height>96</height>
-					<include>art_DefaultIcon</include>
-				</control>
-				<control type="image">
-					<width>183</width>
-					<height>280</height>
-					<texture background="true">$VAR[thumb_Square]</texture>
-					<include>bordertrans</include>
-					<aspectratio align="center" aligny="top">scale</aspectratio>
-				</control>
-				<control type="image">
-					<width>183</width>
-					<height>280</height>
-					<texture background="true">overlays/cover_overlay.png</texture>
-					<aspectratio align="center" aligny="top">scale</aspectratio>
-					<visible>!Skin.HasSetting(globalGlass.disable)</visible>
-				</control>
-				<control type="image">
-					<width>183</width>
-					<height>280</height>
-					<texture background="true" colordiffuse="blacktrans">white.png</texture>
-					<animation effect="fade" tween="Quadratic" start="100" end="0" easing="Out" time="200">Focus</animation>
-				</control>
-			</control>
-		</control>
-	</include>
-	<include name="view_SlideSquareAL-ContainerCommons-fo">
-		<control type="group">
-			<include>focus_SlidePoster</include>
-			<control type="image">
-				<width>203</width>
-				<height>300</height>
-				<texture border="10">frames/frame-alt.png</texture>
-				<aspectratio>stretch</aspectratio>
-			</control>
-			<control type="group">
-				<left>10</left>
-				<top>10</top>
-				<control type="image">
-					<width>183</width>
-					<height>280</height>
-					<texture background="true">white.png</texture>
-					<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
-					<aspectratio align="center" aligny="top">scale</aspectratio>
-				</control>
-				<control type="image">
-					<width>183</width>
-					<height>280</height>
-					<texture background="true">thumbs/default_Portrait.png</texture>
-					<aspectratio align="center">stretch</aspectratio>
-					<include>bordertrans</include>
-					<visible>IsEmpty($VAR[thumb_Square])</visible>
-				</control>
-				<control type="image">
-					<left>43.5</left>
-					<top>92</top>
-					<width>96</width>
-					<height>96</height>
-					<include>art_DefaultIcon</include>
-				</control>
-				<control type="image">
-					<left>43.5</left>
-					<top>92</top>
-					<width>96</width>
-					<height>96</height>
-					<include>art_DefaultIcon</include>
-					<colordiffuse>Color5</colordiffuse>
-					<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
-				</control>
-				<control type="image">
-					<width>183</width>
-					<height>280</height>
-					<texture background="true">$VAR[thumb_Square]</texture>
-					<include>bordertrans</include>
-					<aspectratio align="center" aligny="top">scale</aspectratio>
-				</control>
-				<control type="image">
-					<width>183</width>
-					<height>280</height>
-					<texture background="true">overlays/cover_overlay.png</texture>
-					<aspectratio align="center" aligny="top">scale</aspectratio>
-					<visible>!Skin.HasSetting(globalGlass.disable)</visible>
-				</control>
-				<control type="image">
-					<width>183</width>
-					<height>280</height>
-					<texture background="true" colordiffuse="blacktrans">white.png</texture>
-					<animation effect="fade" tween="Quadratic" start="100" end="0" easing="Out" time="200">Focus</animation>
 				</control>
 			</control>
 		</control>

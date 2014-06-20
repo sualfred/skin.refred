@@ -506,7 +506,7 @@
 					<selected>Skin.HasSetting(viewicon.poster)</selected>
 					<include>menu_Button</include>
 					<include>menu_RadioButton</include>
-					<visible>[Control.IsVisible(574) | Control.IsVisible(572) | Control.IsVisible(522)] + SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
+					<visible>[Control.IsVisible(574) | Control.IsVisible(572)] + SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/)</visible>
 				</control>
 				<!--list: sposter or square-->
 				<control type="radiobutton" id="109">
@@ -575,6 +575,22 @@
 					<include>menu_Button</include>
 					<onclick>Container.SetViewMode(522)</onclick>
 					<visible>Container.Content(addons) | SubString(Container.FolderPath,plugin)</visible>
+				</control>
+				<!--slide landscape-->
+				<control type="button" id="404">
+					<label>$LOCALIZE[31112] $LOCALIZE[31121]</label>
+					<textwidth>250</textwidth>
+					<include>menu_Button</include>
+					<onclick>Container.SetViewMode(521)</onclick>
+					<visible>SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/?)</visible>
+				</control>
+				<!--slide poster-->
+				<control type="button" id="405">
+					<label>$LOCALIZE[31112] $LOCALIZE[31122]</label>
+					<textwidth>250</textwidth>
+					<include>menu_Button</include>
+					<onclick>Container.SetViewMode(52)</onclick>
+					<visible>SubString(Container.FolderPath,plugin://plugin.program.advanced.launcher/?)</visible>
 				</control>
 				<!--thumbnails-->
 				<control type="button" id="406">
