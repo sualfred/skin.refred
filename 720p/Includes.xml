@@ -1515,7 +1515,7 @@
 						<orientation>vertical</orientation><control type="image"><width>66</width><height>20</height><texture>$INFO[VideoPlayer.VideoResolution,flags/video/resolution/,.png]</texture><aspectratio align="center">keep</aspectratio><visible>!IsEmpty(VideoPlayer.VideoResolution)</visible></control><control type="image"><width>66</width><height>20</height><texture>$INFO[VideoPlayer.AudioCodec,flags/codec/,.png]</texture><aspectratio align="center">keep</aspectratio><visible>!IsEmpty(VideoPlayer.AudioCodec)</visible></control><control type="image"><width>66</width><height>20</height><aspectratio align="center" aligny="center">keep</aspectratio><texture>$INFO[VideoPlayer.AudioChannels,flags/audio/,.png]</texture><visible>!IsEmpty(VideoPlayer.AudioChannels)</visible></control><control type="image"><width>66</width><height>20</height><texture>$INFO[VideoPlayer.VideoAspect,flags/video/aspectratio/,.png]</texture><aspectratio align="center">keep</aspectratio><visible>!IsEmpty(VideoPlayer.VideoAspect)</visible></control></control>
 					<!--rest-->
 					<control type="label">
-						<width>90</width>
+						<width>100</width>
 						<top>28</top>
 						<label>$INFO[VideoPlayer.StartTime]</label>
 						<textcolor>Color3</textcolor>
@@ -1531,11 +1531,11 @@
 					</control>
 					<control type="label">
 						<top>28</top>
-						<left>90</left>
+						<left>100</left>
+						<width>705</width>
 						<scroll>true</scroll>
 						<label>$VAR[osd_Title]</label>
 						<include>detail_Title_OSD</include>
-						<width>800</width>
 					</control>
 					<control type="label">
 						<top>-18</top>
@@ -1553,7 +1553,7 @@
 					</control>
 					<control type="label">
 						<top>82</top>
-						<width>90</width>
+						<width>100</width>
 						<label>$INFO[VideoPlayer.NextStartTime]</label>
 						<textcolor>whitetrans2</textcolor>
 						<include>detail_Title_OSD</include>
@@ -1568,7 +1568,8 @@
 					</control>
 					<control type="label">
 						<top>82</top>
-						<left>90</left>
+						<left>100</left>
+						<width>705</width>
 						<scroll>true</scroll>
 						<label>$INFO[VideoPlayer.NextTitle]</label>
 						<textcolor>whitetrans2</textcolor>
@@ -1830,7 +1831,7 @@
 					<orientation>vertical</orientation><control type="image"><width>66</width><height>20</height><texture>$INFO[VideoPlayer.VideoResolution,flags/video/resolution/,.png]</texture><aspectratio align="center">keep</aspectratio><visible>!IsEmpty(VideoPlayer.VideoResolution)</visible></control><control type="image"><width>66</width><height>20</height><texture>$INFO[VideoPlayer.AudioCodec,flags/codec/,.png]</texture><aspectratio align="center">keep</aspectratio><visible>!IsEmpty(VideoPlayer.AudioCodec)</visible></control><control type="image"><width>66</width><height>20</height><aspectratio align="center" aligny="center">keep</aspectratio><texture>$INFO[VideoPlayer.AudioChannels,flags/audio/,.png]</texture><visible>!IsEmpty(VideoPlayer.AudioChannels)</visible></control><control type="image"><width>66</width><height>20</height><texture>$INFO[VideoPlayer.VideoAspect,flags/video/aspectratio/,.png]</texture><aspectratio align="center">keep</aspectratio><visible>!IsEmpty(VideoPlayer.VideoAspect)</visible></control></control>
 					<!--rest-->
 					<control type="label">
-						<width>90</width>
+						<width>100</width>
 						<top>28</top>
 						<label>$INFO[VideoPlayer.StartTime]</label>
 						<textcolor>Color3</textcolor>
@@ -1846,7 +1847,8 @@
 					</control>
 					<control type="label">
 						<top>28</top>
-						<left>90</left>
+						<left>100</left>
+						<width>705</width>
 						<scroll>true</scroll>
 						<label>$VAR[osd_Title]</label>
 						<include>detail_Title_OSD</include>
@@ -1876,7 +1878,7 @@
 					</control>
 					<control type="label">
 						<top>82</top>
-						<width>90</width>
+						<width>100</width>
 						<label>$INFO[VideoPlayer.NextStartTime]</label>
 						<textcolor>whitetrans2</textcolor>
 						<include>detail_Title_OSD</include>
@@ -1891,7 +1893,8 @@
 					</control>
 					<control type="label">
 						<top>82</top>
-						<left>90</left>
+						<left>100</left>
+						<width>705</width>
 						<scroll>true</scroll>
 						<label>$INFO[VideoPlayer.NextTitle]</label>
 						<textcolor>whitetrans2</textcolor>
