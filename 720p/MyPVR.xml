@@ -36,7 +36,6 @@
 			<include>transition_Content</include>
 			<visible>[Control.IsVisible(10) | Control.IsVisible(15) |  Control.IsVisible(16) | Control.IsVisible(17)] + !IsEmpty(ListItem.Title)</visible>
 			<control type="group">
-				<top>7</top>
 				<control type="image">
 					<centerleft>64</centerleft>
 					<centertop>64</centertop>
@@ -49,9 +48,8 @@
 					<width>142</width>
 					<height>142</height>
 					<texture>$INFO[ListItem.Icon]</texture>
-					<aspectratio align="center" aligny="top">keep</aspectratio>
-					<bordertexture colordiffuse="base_5">white.png</bordertexture>
-					<bordersize>5</bordersize>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<include>bordertrans</include>
 				</control>
 				<control type="image">
 					<width>142</width>
