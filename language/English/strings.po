@@ -826,5 +826,9 @@ msgid "Edit"
 msgstr "Edit"
 
 msgctxt "#32058"
-msgid "Slide SNES"
-msgstr "Slide SNES"
+msgid "Normal"
+msgstr "Normal"
+
+msgctxt "#32059"
+msgid "Fanart"
+msgstr "Fanart"

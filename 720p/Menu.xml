@@ -228,6 +228,24 @@
 				<!--<include>menu_QuickNav</include>-->
 				<include>menu_ViewMode</include>
 				<!--viewtype options-->
+				<!--leftlist: poster or fanart movies-->
+				<control type="togglebutton" id="108">
+					<label>$LOCALIZE[31120]: $LOCALIZE[32059]</label>
+					<altlabel>$LOCALIZE[31120]: $LOCALIZE[32058]</altlabel>
+					<onclick>Skin.ToggleSetting(leftlist.landscape.movies)</onclick>
+					<usealttexture>!Skin.HasSetting(leftlist.landscape.movies)</usealttexture>
+					<include>menu_Button</include>
+					<visible>Control.IsVisible(555) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
+				</control>
+				<!--leftlist: poster or fanart episodes-->
+				<control type="togglebutton" id="109">
+					<label>$LOCALIZE[31120]: $LOCALIZE[32059]</label>
+					<altlabel>$LOCALIZE[31120]: $LOCALIZE[32058]</altlabel>
+					<onclick>Skin.ToggleSetting(leftlist.landscape.episodes)</onclick>
+					<usealttexture>!Skin.HasSetting(leftlist.landscape.episodes)</usealttexture>
+					<include>menu_Button</include>
+					<visible>Control.IsVisible(555) + Container.Content(episodes)</visible>
+				</control>
 				<!--list: poster or fanart-->
 				<control type="togglebutton" id="110">
 					<label>$LOCALIZE[31120]: $LOCALIZE[31121]</label>
