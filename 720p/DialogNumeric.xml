@@ -8,6 +8,13 @@
 		<top>177</top>
 	</coordinates>
 	<controls>
+		<control type="image">
+			<left>-474</left>
+			<top>-177</top>
+			<include>screen_Dimensions</include>
+			<texture colordiffuse="base_1">overlays/base_color.png</texture>
+			<include>transition_Dialog</include>
+		</control>
 		<control type="image" id="1">
 			<include>dialog_Window</include>
 			<width>332</width>
