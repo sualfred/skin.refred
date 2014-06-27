@@ -780,7 +780,6 @@
 					</control>
 				</control>
 		</control>
-		
 		<!-- details episodes -->
 		<control type="group">
 				<include>toggle_Menu</include>

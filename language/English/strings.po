@@ -830,5 +830,5 @@ msgid "Normal"
 msgstr "Normal"
 
 msgctxt "#32059"
-msgid "Fanart"
-msgstr "Fanart"
+msgid "Plot"
+msgstr "Plot"

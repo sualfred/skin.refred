@@ -237,7 +237,7 @@
 					<include>menu_Button</include>
 					<visible>Control.IsVisible(555) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 				</control>
-				<!--leftlist: poster or fanart episodes-->
+				<!--leftlist: poster or fanart episode-->
 				<control type="togglebutton" id="109">
 					<label>$LOCALIZE[31120]: $LOCALIZE[32059]</label>
 					<altlabel>$LOCALIZE[31120]: $LOCALIZE[32058]</altlabel>
