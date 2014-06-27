@@ -190,7 +190,7 @@
 		<value condition="Container(9110).HasFocus(400) + !IsEmpty(Skin.String(livetv.bg))">$INFO[Skin.String(livetv.bg)]</value>
 		<value condition="Container(9110).HasFocus(600) + !IsEmpty(Skin.String(pictures.bg))">$INFO[Skin.String(pictures.bg)]</value>
 		<value condition="Container(9110).HasFocus(700) + !IsEmpty(Skin.String(addons.bg))">$INFO[Skin.String(addons.bg)]</value>
-		<value condition="Container(9110).HasFocus(800) + !IsEmpty(Skin.String(livetv.bg))">$INFO[Skin.String(settings.bg)]</value>
+		<value condition="Container(9110).HasFocus(800) + !IsEmpty(Skin.String(settings.bg))">$INFO[Skin.String(settings.bg)]</value>
 		<value condition="Container(9110).HasFocus(900) + !IsEmpty(Skin.String(weather.bg))">$INFO[Skin.String(weather.bg)]</value>
 		<value condition="Container(9110).HasFocus(901) + !IsEmpty(Skin.String(disc.bg))">$INFO[Skin.String(disc.bg)]</value>
 		<value condition="Container(9110).HasFocus(904) + !IsEmpty(Skin.String(fav.bg))">$INFO[Skin.String(fav.bg)]</value>
