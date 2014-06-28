@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<onunload>ClearProperty(Fanartgrabber,skinsettings)</onunload>
-	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9110&amp;group=favouriteswidgets|pictureswidgets|ytwidgets|settingswidgets|powerwidgets|custom1widgets|custom2widgets|custom3widgets|discwidgets|videoswidgets|programswidgets|addonswidgets|pvrwidgets|searchwidgets)</onunload>
+	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9110&amp;group=inprogress|movies|tvshows|music|favourites|pictures|yt|settings|power|custom1|custom2|custom3|power|dvd|videos|weather|programs|addons|livetv|search|favouriteswidgets|pictureswidgets|ytwidgets|settingswidgets|powerwidgets|custom1widgets|custom2widgets|custom3widgets|discwidgets|videoswidgets|programswidgets|addonswidgets|pvrwidgets|searchwidgets)</onunload>
 	<controls>
 		<!--global includes-->
 		<include>global_Background</include>

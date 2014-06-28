@@ -196,7 +196,8 @@
 			<onup>9110</onup>
 			<width>1280</width>
 			<height>50</height>
-			<content>plugin://script.skinshortcuts?type=submenu&amp;mainmenuID=9110&amp;group=inprogress,movies,tvshows,music,favourites,pictures,yt,settings,power,custom1,custom2,custom3,power,dvd,videos,weather,programs,addons,livetv,search</content>
+			<content><include>skinshortcuts-submenu</include></content>
+			<!--<content>plugin://script.skinshortcuts?type=submenu&amp;mainmenuID=9110&amp;group=inprogress,movies,tvshows,music,favourites,pictures,yt,settings,power,custom1,custom2,custom3,power,dvd,videos,weather,programs,addons,livetv,search</content>-->
 			<focusposition>3</focusposition>
 			<movement>3</movement>
 			<itemlayout width="182" height="40">
@@ -264,7 +265,8 @@
 			<onup>9110</onup>
 			<width>1080</width>
 			<height>50</height>
-			<content>plugin://script.skinshortcuts?type=submenu&amp;mainmenuID=9110&amp;group=inprogress,movies,tvshows,music,favourites,pictures,yt,settings,power,custom1,custom2,custom3,power,dvd,videos,weather,programs,addons,livetv,search</content>
+			<content><include>skinshortcuts-submenu</include></content>
+			<!--<content>plugin://script.skinshortcuts?type=submenu&amp;mainmenuID=9110&amp;group=inprogress,movies,tvshows,music,favourites,pictures,yt,settings,power,custom1,custom2,custom3,power,dvd,videos,weather,programs,addons,livetv,search</content>-->
 			<focusposition>0</focusposition>
 			<itemlayout width="182" height="40">
 				<control type="image">
