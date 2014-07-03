@@ -3,6 +3,8 @@
 # Addon id: skin.refred
 # Addon version: 0.1.0
 # Addon Provider: Sebastian Saenger
+msgid ""
+msgstr ""
 "Project-Id-Version: skin.refred\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
