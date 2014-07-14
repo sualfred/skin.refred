@@ -229,6 +229,18 @@
 		<value condition="!IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
 		<value>$INFO[ListItem.Thumb]</value>
 	</variable>
+	
+	<variable name="widget_listcontent">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]&limit=10</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=10</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]&limit=10</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]&limit=10</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">plugin://service.library.data.provider?type=randommovies&reload=$INFO[Window.Property(randommovies)]&limit=10</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]&limit=10</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomalbums)">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]&limit=10</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recommendedalbums)">plugin://service.library.data.provider?type=recommendedalbums&reload=$INFO[Window.Property(recommendedalbums)]&limit=10</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentalbums)">plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]&limit=10</value>
+	</variable>
 
 <!-- widget detail containers -->
 	<variable name="widget_Label">

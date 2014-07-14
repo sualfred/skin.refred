@@ -354,7 +354,7 @@
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91411) + !Control.HasFocus(91412) + !Control.HasFocus(91413) + !Control.HasFocus(91511) + !Control.HasFocus(91512) + !Control.HasFocus(91513)</autoscroll>
-				<content>plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]&limit=10</content>
+				<content>$VAR[widget_listcontent]</content>
 				<itemlayout width="109" height="720">
 					<include>poster-nf</include>
 				</itemlayout>
@@ -405,7 +405,7 @@
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91411) + !Control.HasFocus(91412) + !Control.HasFocus(91413) + !Control.HasFocus(91511) + !Control.HasFocus(91512) + !Control.HasFocus(91513)</autoscroll>
-				<content>plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=10</content>
+				<content>$VAR[widget_listcontent]</content>
 				<itemlayout width="109" height="720">
 					<include>poster-nf</include>
 				</itemlayout>
@@ -455,7 +455,7 @@
 				<onback>9110</onback>
 				<orientation>horizontal</orientation>
 				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91411) + !Control.HasFocus(91412) + !Control.HasFocus(91413) + !Control.HasFocus(91511) + !Control.HasFocus(91512) + !Control.HasFocus(91513)</autoscroll>
-				<content>plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]&limit=10</content>
+				<content>$VAR[widget_listcontent]</content>
 				<itemlayout width="109" height="720">
 					<include>poster-nf</include>
 				</itemlayout>
@@ -505,7 +505,7 @@
 				<onback>9110</onback>
 				<orientation>horizontal</orientation>
 				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91411) + !Control.HasFocus(91412) + !Control.HasFocus(91413) + !Control.HasFocus(91511) + !Control.HasFocus(91512) + !Control.HasFocus(91513)</autoscroll>
-				<content>plugin://service.library.data.provider?type=randommovies&reload=$INFO[Window.Property(randommovies)]&limit=10</content>
+				<content>$VAR[widget_listcontent]</content>
 				<itemlayout width="109" height="720">
 					<include>poster-nf</include>
 				</itemlayout>
@@ -556,7 +556,7 @@
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91411) + !Control.HasFocus(91412) + !Control.HasFocus(91413) + !Control.HasFocus(91511) + !Control.HasFocus(91512) + !Control.HasFocus(91513)</autoscroll>
-				<content>plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]&limit=10</content>
+				<content>$VAR[widget_listcontent]</content>
 				<itemlayout width="109" height="720">
 					<include>poster-nf</include>
 				</itemlayout>
@@ -607,7 +607,7 @@
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91411) + !Control.HasFocus(91412) + !Control.HasFocus(91413) + !Control.HasFocus(91511) + !Control.HasFocus(91512) + !Control.HasFocus(91513)</autoscroll>
-				<content>plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]&limit=10</content>
+				<content>$VAR[widget_listcontent]</content>
 				<itemlayout width="109" height="720">
 					<include>poster-nf</include>
 				</itemlayout>
@@ -640,7 +640,7 @@
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91611) + !Control.HasFocus(91612) + !Control.HasFocus(91613)</autoscroll>
-				<content>plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]&limit=10</content>
+				<content>$VAR[widget_listcontent]</content>
 				<itemlayout width="109" height="720">
 					<include>square-nf</include>
 				</itemlayout>
@@ -673,7 +673,7 @@
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91611) + !Control.HasFocus(91612) + !Control.HasFocus(91613)</autoscroll>
-				<content>plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]&limit=10</content>
+				<content>$VAR[widget_listcontent]</content>
 				<itemlayout width="109" height="720">
 					<include>square-nf</include>
 				</itemlayout>
@@ -706,7 +706,7 @@
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91611) + !Control.HasFocus(91612) + !Control.HasFocus(91613)</autoscroll>
-				<content>plugin://service.library.data.provider?type=recommendedalbums&reload=$INFO[Window.Property(recommendedalbums)]&limit=10</content>
+				<content>$VAR[widget_listcontent]</content>
 				<itemlayout width="109" height="720">
 					<include>square-nf</include>
 				</itemlayout>
