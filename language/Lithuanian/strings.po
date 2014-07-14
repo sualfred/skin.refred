@@ -601,190 +601,190 @@ msgid "Reset all skin settings"
 msgstr "Atstatyti visus teminės išvaizdos nustatymus"
 
 #: new values
-msgctxt "#32000"
+msgctxt "#31800"
 msgid "Unwatched Episodes"
 msgstr "Neperžiūrėti epizodai"
 
-msgctxt "#32001"
+msgctxt "#31801"
 msgid "Unwatched Episodes (Total)"
 msgstr "Neperžiūrėti epizodai (iš viso)"
 
-msgctxt "#32003"
+msgctxt "#31803"
 msgid "Unwatched Movies"
 msgstr "Neperžiūrėti filmai"
 
-msgctxt "#32004"
+msgctxt "#31804"
 msgid "Use classic home menu"
 msgstr "Naudoti klasikinį pradinį meniu"
 
-msgctxt "#32005"
+msgctxt "#31805"
 msgid "Center widget panel"
 msgstr "Centruoti valdiklių skydelį"
 
-msgctxt "#32006"
+msgctxt "#31806"
 msgid "Use random episodes instead of recently added"
 msgstr "Naudoti atsitiktinius epizodus, vietoje vėliausiai įkeltų"
 
-msgctxt "#32007"
+msgctxt "#31807"
 msgid "Use random movies instead of recently added"
 msgstr "Naudoti atsitiktinius filmus, vietoje vėliausiai įkeltų"
 
-msgctxt "#32008"
+msgctxt "#31808"
 msgid "Show scrolling text while fullscreen music playback"
 msgstr "Rodyti slenkantį tekstą, kai muzika atkuriama visame ekrane"
 
-msgctxt "#32009"
+msgctxt "#31809"
 msgid "Hide music info panels in visualization after a few seconds"
 msgstr "Slėpti muzikos informacinius skydelius vizualizacijoje po kelių sekundžių"
 
-msgctxt "#32010"
+msgctxt "#31810"
 msgid "Enable own global background"
 msgstr "Įjungti nuosavą globalų foną"
 
-msgctxt "#32011"
+msgctxt "#31811"
 msgid "Use a single background image"
 msgstr "Naudoti vieną fono atvaizdą"
 
-msgctxt "#32012"
+msgctxt "#31812"
 msgid "Define a folder for slideshow"
 msgstr "Nustatyti skaidrių peržiūros aplanką"
 
-msgctxt "#32013"
+msgctxt "#31813"
 msgid "Use random albums instead of recently added"
 msgstr "Naudoti atsitiktinius albumus, vietoje vėliausiai įkeltų"
 
-msgctxt "#32014"
+msgctxt "#31814"
 msgid "Recently added music"
 msgstr "Vėliausiai įkelta muzika"
 
-msgctxt "#32015"
+msgctxt "#31815"
 msgid "Use in progress movies only"
 msgstr "Naudoti tik nebaigtus žiūrėti filmus"
 
-msgctxt "#32016"
+msgctxt "#31816"
 msgid "Use in progress episodes only"
 msgstr "Naudoti tik nebaigtus žiūrėti epizodus"
 
-msgctxt "#32017"
+msgctxt "#31817"
 msgid "Show (scheduled) recording in PVR and Home screen"
 msgstr "Rodyti (suplanuotus) įrašymus PVR ir pradiniame ekrane"
 
-msgctxt "#32018"
+msgctxt "#31818"
 msgid "Deactivate glass effect overlays"
 msgstr "Pasyvinti stiklo efekto perdangas"
 
-msgctxt "#32019"
+msgctxt "#31819"
 msgid "Enable hub"
 msgstr "Įjungti šakotuvą"
 
-msgctxt "#32020"
+msgctxt "#31820"
 msgid "All movies"
 msgstr "Visi filmai"
 
-msgctxt "#32021"
+msgctxt "#31821"
 msgid "Recently added"
 msgstr "Vėliausiai įkelta"
 
-msgctxt "#32022"
+msgctxt "#31822"
 msgid "All TV shows"
 msgstr "Visos TV laidos"
 
-msgctxt "#32023"
+msgctxt "#31823"
 msgid "In progress"
 msgstr "Atkuriama"
 
-msgctxt "#32024"
+msgctxt "#31824"
 msgid "Next scheduled recording"
 msgstr "Kitas suplanuotas įrašymas"
 
-msgctxt "#32025"
+msgctxt "#31825"
 msgid "Now recording"
 msgstr "Šiuo metu įrašoma"
 
-msgctxt "#32026"
+msgctxt "#31826"
 msgid "Next recording"
 msgstr "Kitas įrašymas"
 
-msgctxt "#32027"
+msgctxt "#31827"
 msgid "Recording"
 msgstr "Įrašoma"
 
-msgctxt "#32028"
+msgctxt "#31828"
 msgid "Movie Hub"
 msgstr "Filmų šakotuvas"
 
-msgctxt "#32029"
+msgctxt "#31829"
 msgid "TV Show Hub"
 msgstr "TV laidų šakotuvas"
 
-msgctxt "#32030"
+msgctxt "#31830"
 msgid "Music Hub"
 msgstr "Muzikos šakotuvas"
 
-msgctxt "#32031"
+msgctxt "#31831"
 msgid "Showing"
 msgstr "Rodoma"
 
-msgctxt "#32032"
+msgctxt "#31832"
 msgid "Random"
 msgstr "Atsitiktinai"
 
-msgctxt "#32033"
+msgctxt "#31833"
 msgid "Random albums"
 msgstr "Atsitiktiniai albumai"
 
-msgctxt "#32034"
+msgctxt "#31834"
 msgid "Recommended"
 msgstr "Rekomenduojama"
 
-msgctxt "#32035"
+msgctxt "#31835"
 msgid "Recently played"
 msgstr "Vėliausiai atkurta"
 
-msgctxt "#32036"
+msgctxt "#31836"
 msgid "Change user"
 msgstr "Pakeisti vartotoją"
 
-msgctxt "#32037"
+msgctxt "#31837"
 msgid "In progress movies"
 msgstr "Nebaigti žiūrėti filmai"
 
-msgctxt "#32038"
+msgctxt "#31838"
 msgid "In progress episodes"
 msgstr "Nebaigti žiūrėti epizodai"
 
-msgctxt "#32039"
+msgctxt "#31839"
 msgid "Recently played albums"
 msgstr "Vėliausiai atkurti albumai"
 
-msgctxt "#32040"
+msgctxt "#31840"
 msgid "New movies"
 msgstr "Nauji filmai"
 
-msgctxt "#32041"
+msgctxt "#31841"
 msgid "New episodes"
 msgstr "Nauji epizodai"
 
-msgctxt "#32042"
+msgctxt "#31842"
 msgid "New albums"
 msgstr "Nauji albumai"
 
-msgctxt "#32043"
+msgctxt "#31843"
 msgid "In Progress Hub"
 msgstr ""
 
-msgctxt "#32044"
+msgctxt "#31844"
 msgid "Widgets"
 msgstr "Valdikliai"
 
-msgctxt "#32045"
+msgctxt "#31845"
 msgid "Use in progress movies instead of episodes"
 msgstr "Naudoti nebaigtus žiūrėti filmus, vietoje epizodų"
 
-msgctxt "#32046"
+msgctxt "#31846"
 msgid "Enable widgets for inprogress/movies/tvshows/music"
 msgstr "Įjungti valdiklius šiuo metu atkuriamiems/filmams/tv laidoms/muzikai"
 
-msgctxt "#32047"
+msgctxt "#31847"
 msgid "Enable weather widget"
 msgstr "Įjungti orų valdiklį"

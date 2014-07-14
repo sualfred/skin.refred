@@ -597,238 +597,330 @@ msgid "Reset all skin settings"
 msgstr "Reset all skin settings"
 
 #: new values
-msgctxt "#32000"
+msgctxt "#31800"
 msgid "Unwatched Episodes"
 msgstr "Unwatched Episodes"
 
-msgctxt "#32001"
+msgctxt "#31801"
 msgid "Unwatched Episodes (Total)"
 msgstr "Unwatched Episodes (Total)"
 
-msgctxt "#32003"
+msgctxt "#31803"
 msgid "Unwatched Movies"
 msgstr "Unwatched Movies"
 
-msgctxt "#32004"
+msgctxt "#31804"
 msgid "Use classic home menu"
 msgstr "Use classic home menu"
 
-msgctxt "#32005"
+msgctxt "#31805"
 msgid "Center widget panel"
 msgstr "Center widget panel"
 
-msgctxt "#32006"
+msgctxt "#31806"
 msgid "Use random episodes instead of recently added"
 msgstr "Use random episodes instead of recently added"
 
-msgctxt "#32007"
+msgctxt "#31807"
 msgid "Use random movies instead of recently added"
 msgstr "Use random movies instead of recently added"
 
-msgctxt "#32008"
+msgctxt "#31808"
 msgid "Show scrolling text while fullscreen music playback"
 msgstr "Show scrolling text while fullscreen music playback"
 
-msgctxt "#32009"
+msgctxt "#31809"
 msgid "Hide music info panels in visualization after a few seconds"
 msgstr "Hide music info panels in visualization after a few seconds"
 
-msgctxt "#32010"
+msgctxt "#31810"
 msgid "Enable own global background"
 msgstr "Enable own global background"
 
-msgctxt "#32011"
+msgctxt "#31811"
 msgid "Use a single background image"
 msgstr "Use a single background image"
 
-msgctxt "#32012"
+msgctxt "#31812"
 msgid "Define a folder for slideshow"
 msgstr "Define a folder for slideshow"
 
-msgctxt "#32013"
+msgctxt "#31813"
 msgid "Use random albums instead of recently added"
 msgstr "Use random albums instead of recently added"
 
-msgctxt "#32014"
+msgctxt "#31814"
 msgid "Recently added music"
 msgstr "Recently added music"
 
-msgctxt "#32015"
+msgctxt "#31815"
 msgid "Use in progress movies only"
 msgstr "Use in progress movies only"
 
-msgctxt "#32016"
+msgctxt "#31816"
 msgid "Use in progress episodes only"
 msgstr "Use in progress episodes only"
 
-msgctxt "#32017"
-msgid "Show (scheduled) recording in PVR and Home screen"
-msgstr "Show (scheduled) recording in PVR and Home screen"
+msgctxt "#31817"
+msgid "Show current/next recording information"
+msgstr "Show current/nnext recording information"
 
-msgctxt "#32018"
+msgctxt "#31818"
 msgid "Deactivate glass effect overlays"
 msgstr "Deactivate glass effect overlays"
 
-msgctxt "#32019"
+msgctxt "#31819"
 msgid "Enable hub"
 msgstr "Enable hub"
 
-msgctxt "#32020"
+msgctxt "#31820"
 msgid "All movies"
 msgstr "All movies"
 
-msgctxt "#32021"
+msgctxt "#31821"
 msgid "Recently added"
 msgstr "Recently added"
 
-msgctxt "#32022"
+msgctxt "#31822"
 msgid "All TV shows"
 msgstr "All TV shows"
 
-msgctxt "#32023"
+msgctxt "#31823"
 msgid "In progress"
 msgstr "In progress"
 
-msgctxt "#32024"
+msgctxt "#31824"
 msgid "Next scheduled recording"
 msgstr "Next scheduled recording"
 
-msgctxt "#32025"
+msgctxt "#31825"
 msgid "Now recording"
 msgstr "Now recording"
 
-msgctxt "#32026"
+msgctxt "#31826"
 msgid "Next recording"
 msgstr "Next recording"
 
-msgctxt "#32027"
+msgctxt "#31827"
 msgid "Recording"
 msgstr "Recording"
 
-msgctxt "#32028"
+msgctxt "#31828"
 msgid "Movie Hub"
 msgstr "Movie Hub"
 
-msgctxt "#32029"
+msgctxt "#31829"
 msgid "TV Show Hub"
 msgstr "TV Show Hub"
 
-msgctxt "#32030"
+msgctxt "#31830"
 msgid "Music Hub"
 msgstr "Music Hub"
 
-msgctxt "#32031"
+msgctxt "#31831"
 msgid "Showing"
 msgstr "Showing"
 
-msgctxt "#32032"
+msgctxt "#31832"
 msgid "Random"
 msgstr "Random"
 
-msgctxt "#32033"
+msgctxt "#31833"
 msgid "Random albums"
 msgstr "Random albums"
 
-msgctxt "#32034"
+msgctxt "#31834"
 msgid "Recommended"
 msgstr "Recommended"
 
-msgctxt "#32035"
+msgctxt "#31835"
 msgid "Recently played"
 msgstr "Recently played"
 
-msgctxt "#32036"
+msgctxt "#31836"
 msgid "Change user"
 msgstr "Change user"
 
-msgctxt "#32037"
+msgctxt "#31837"
 msgid "In progress movies"
 msgstr "In progress movies"
 
-msgctxt "#32038"
+msgctxt "#31838"
 msgid "In progress episodes"
 msgstr "In progress episodes"
 
-msgctxt "#32039"
+msgctxt "#31839"
 msgid "Recently played albums"
 msgstr "Recently played albums"
 
-msgctxt "#32040"
+msgctxt "#31840"
 msgid "New movies"
 msgstr "New movies"
 
-msgctxt "#32041"
+msgctxt "#31841"
 msgid "New episodes"
 msgstr "New episodes"
 
-msgctxt "#32042"
+msgctxt "#31842"
 msgid "New albums"
 msgstr "New albums"
 
-msgctxt "#32043"
+msgctxt "#31843"
 msgid "In Progress Hub"
 msgstr "In Progress Hub"
 
-msgctxt "#32044"
+msgctxt "#31844"
 msgid "Widgets"
 msgstr "Widgets"
 
-msgctxt "#32045"
+msgctxt "#31845"
 msgid "Use in progress movies instead of episodes"
 msgstr "Use in progress movies instead of episodes"
 
-msgctxt "#32046"
+msgctxt "#31846"
 msgid "Enable widgets for inprogress/movies/tvshows/music"
 msgstr "Enable widgets for inprogress/movies/tvshows/music"
 
-msgctxt "#32047"
-msgid "Enable weather widget"
-msgstr "Enable weather widget"
+msgctxt "#31847"
+msgid "Weather Widget"
+msgstr "Weather Widget"
 
-msgctxt "#32048"
+msgctxt "#31848"
 msgid "Settings Level"
 msgstr "Settings Level"
 
-msgctxt "#32049"
-msgid "Edit sub-menu items"
-msgstr "Edit sub-menu items"
+msgctxt "#31849"
+msgid "Submenu"
+msgstr "Submenu"
 
-msgctxt "#32050"
-msgid "Edit custom widget row"
-msgstr "Edit custom widget row"
+msgctxt "#31850"
+msgid "Custom widgets"
+msgstr "Custom widgets"
 
-msgctxt "#32051"
+msgctxt "#31851"
 msgid "Enable widgets"
 msgstr "Enable widgets"
 
-msgctxt "#32052"
+msgctxt "#31852"
 msgid "Use poster style"
 msgstr "Use poster style"
 
-msgctxt "#32053"
+msgctxt "#31853"
 msgid "Add from category:"
 msgstr "Add from category:"
 
-msgctxt "#32054"
+msgctxt "#31854"
 msgid "Current used items"
 msgstr "Current used items"
 
-msgctxt "#32055"
+msgctxt "#31855"
 msgid "Menu"
 msgstr "Menu"
 
-msgctxt "#32056"
+msgctxt "#31856"
 msgid "Change items"
 msgstr "Change items"
 
-msgctxt "#32057"
+msgctxt "#31857"
 msgid "Edit"
 msgstr "Edit"
 
-msgctxt "#32058"
+msgctxt "#31858"
 msgid "Normal"
 msgstr "Normal"
 
-msgctxt "#32059"
+msgctxt "#31859"
 msgid "Plot"
 msgstr "Plot"
+
+msgctxt "#31860"
+msgid "No recordings scheduled"
+msgstr "No recordings scheduled"
+
+msgctxt "#31861"
+msgid "Watchlist with HUB"
+msgstr "Watchlist with HUB"
+
+msgctxt "#31862"
+msgid "Custom Widgets 1"
+msgstr "Custom Widgets 1"
+
+msgctxt "#31863"
+msgid "Custom Widgets 2"
+msgstr "Custom Widgets 2"
+
+msgctxt "#31864"
+msgid "Custom Widgets 3"
+msgstr "Custom Widgets 3"
+
+msgctxt "#31865"
+msgid "Custom Widgets 4"
+msgstr "Custom Widgets 4"
+
+msgctxt "#31866"
+msgid "Custom Widgets 5"
+msgstr "Custom Widgets 5"
+
+msgctxt "#31867"
+msgid "Custom Widgets 6"
+msgstr "Custom Widgets 6"
+
+msgctxt "#31868"
+msgid "Custom Widgets 7"
+msgstr "Custom Widgets 7"
+
+msgctxt "#31869"
+msgid "Custom Widgets 8"
+msgstr "Custom Widgets 8"
+
+msgctxt "#31870"
+msgid "Custom Widgets 9"
+msgstr "Custom Widgets 9"
+
+msgctxt "#31871"
+msgid "Custom Widgets 10"
+msgstr "Custom Widgets 10"
+
+msgctxt "#31872"
+msgid "In progress movies"
+msgstr "In progress movies"
+
+msgctxt "#31873"
+msgid "In progress episodes"
+msgstr "In progress episodes"
+
+msgctxt "#31874"
+msgid "Recently added movies"
+msgstr "Recently added movies"
+
+msgctxt "#31875"
+msgid "Recently added episodes"
+msgstr "Recently added episodes"
+
+msgctxt "#31876"
+msgid "Recently added albums"
+msgstr "Recently added albums"
+
+msgctxt "#31877"
+msgid "Random albums"
+msgstr "Random albums"
+
+msgctxt "#31878"
+msgid "Random movies"
+msgstr "Random movies"
+
+msgctxt "#31879"
+msgid "Random episodes"
+msgstr "Random episodes"
+
+msgctxt "#31880"
+msgid "PVR widget: Next scheduled recording"
+msgstr "PVR widget: Next scheduled recording"
+
+msgctxt "#31881"
+msgid "Recommended albums"
+msgstr "Recommended albums"
+
+msgctxt "#31882"
+msgid "Override widget group label"
+msgstr "Override widget group label"

@@ -457,7 +457,10 @@
 		<textcolor>Color1</textcolor>
 		<focusedcolor>Focused</focusedcolor>
 		<texturenofocus colordiffuse="column2">views/focus.png</texturenofocus>p
-		<texturefocus colordiffuse="Color1">views/focus.png</texturefocus><radioheight>30</radioheight><radiowidth>30</radiowidth></include>
+		<texturefocus colordiffuse="Color1">views/focus.png</texturefocus>
+		<radioheight>30</radioheight>
+		<radiowidth>30</radiowidth>
+	</include>
 	<include name="settings_Radiobutton">
 		<width>850</width>
 		<height>44</height>
@@ -804,24 +807,6 @@
 				<onclick>Skin.SetString(playercontrols,visible)</onclick>
 				<onclick>SetFocus(600)</onclick>
 			</control>
-			<!--<control type="togglebutton" id="710">
-				<texturefocus>overlays/diffuse.bg</texturefocus>
-				<texturenofocus>overlays/diffuse.bg</texturenofocus>
-				<usealttexture>overlays/diffuse.bg</usealttexture>
-				<alttexturefocus>overlays/diffuse.bg</alttexturefocus>
-				<alttexturenofocus>overlays/diffuse.bg</alttexturenofocus>
-				<label>Settings</label>
-				<font>regular_Small-U</font>
-				<textcolor>Color3</textcolor>
-				<focusedcolor>Color1</focusedcolor>
-				<textoffsetx>7</textoffsetx>
-				<textoffsety>4</textoffsety>
-				<width>100</width>
-				<height>48</height>
-				<onfocus>Skin.SetString(playercontrols,invisible)</onfocus>
-				<onclick>Skin.SetString(playercontrols,visible)</onclick>
-				<onclick>SetFocus(600)</onclick>
-			</control>-->
 		</control>
 	</include>
 	<include name="player_Controls-commons-osd-home">

@@ -4,7 +4,7 @@
 	<allowoverlay>no</allowoverlay>
 	<onload>CancelAlarm(StartupCheck,true)</onload>
 	<onload>AlarmClock(StartupComplete,SetProperty(StartupComplete,true,Home),00:05,silent)</onload>
-	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9110&amp;group=inprogress|movies|tvshows|music|favourites|pictures|yt|settings|power|custom1|custom2|custom3|power|dvd|videos|weather|programs|addons|livetv|search|favouriteswidgets|pictureswidgets|ytwidgets|settingswidgets|powerwidgets|custom1widgets|custom2widgets|custom3widgets|discwidgets|videoswidgets|programswidgets|addonswidgets|pvrwidgets|searchwidgets)</onload> 
+	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9110&amp;group=mainmenu|submenu|pvrwidgets|widgets1|widgets2|widgets3|widgets4|widgets5|widgets6|widgets7|widgets8|widgets9|widgets10)</onload>
 	<controls>
 		<control type="group">
 			<include>transition_Home</include>
@@ -24,7 +24,7 @@
 			<include>home_PVRrecwidget</include>
 			<!--clock-->
 			<control type="group">
-				<visible>Skin.HasSetting(home.time) + ![Control.HasFocus(9130) | Control.HasFocus(9140) | Control.HasFocus(9150) | Control.HasFocus(9160) |Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)]</visible>
+				<visible>Skin.HasSetting(home.time) + ![Control.HasFocus(91411) | Control.HasFocus(91412) | Control.HasFocus(91413) | Control.HasFocus(91511) | Control.HasFocus(91512) | Control.HasFocus(91513) | Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog)]</visible>
 				<include>clock</include>
 				<include>fadeinout</include>
 			</control>
@@ -32,8 +32,8 @@
 			<control type="group">
 				<posx>0</posx>
 				<posy>30</posy>
-				<animation tween="Back" easing="InOut" effect="slide" end="0,400" time="1000" condition="Control.HasFocus(9150) | Control.HasFocus(9160) | Control.HasFocus(9140)">Conditional</animation>
-				<animation tween="Back" easing="InOut" effect="slide" start="0,250" end="0,0" time="1000" condition="!Control.HasFocus(9150) | !Control.HasFocus(9160) | !Control.HasFocus(9140)">Conditional</animation>
+				<animation tween="Back" easing="InOut" effect="slide" end="0,400" time="1000" condition="ControlGroup(91401).HasFocus() | ControlGroup(91402).HasFocus() | ControlGroup(91403).HasFocus() | ControlGroup(91501).HasFocus() | ControlGroup(91502).HasFocus() | ControlGroup(91503).HasFocus()">Conditional</animation>
+				<animation tween="Back" easing="InOut" effect="slide" start="0,250" end="0,0" time="1000" condition="!ControlGroup(91401).HasFocus() + !ControlGroup(91402).HasFocus() + !ControlGroup(91403).HasFocus() + !ControlGroup(91501).HasFocus() + !ControlGroup(91502).HasFocus() + !ControlGroup(91503).HasFocus()">Conditional</animation>
 				<animation tween="Back" easing="InOut" effect="slide" start="0,250" end="0,0" time="1000">WindowOpen</animation>
 				<animation tween="Back" easing="InOut" effect="slide" start="0,-720" end="0,0" time="1000" condition="!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus() + !ControlGroup(5565).HasFocus()">Conditional</animation>
 				<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,-720" time="500" delay="500" condition="ControlGroup(5562).HasFocus() | ControlGroup(5563).HasFocus() | ControlGroup(5564).HasFocus() | ControlGroup(5565).HasFocus()">Conditional</animation>
@@ -55,20 +55,22 @@
 				<control type="wraplist" id="9110">
 					<posy>327</posy>
 					<width>1500</width>
-					<imagepath>white.png</imagepath>
-					<visible>true</visible>
-					<onup condition="Control.IsVisible(9145) + Container(9110).HasFocus(802)">SetFocus(9140,0)</onup>
-					<onup condition="Control.IsVisible(9155) + Container(9110).HasFocus(200)">SetFocus(9150,0)</onup>
-					<onup condition="Control.IsVisible(9165) + Container(9110).HasFocus(300)">SetFocus(9160,0)</onup>
-					<onup condition="Control.IsVisible(9175) + Container(9110).HasFocus(500)">SetFocus(9170,0)</onup>
-					<onup condition="Control.IsVisible(9185) + Container(9110).HasFocus(904)">SetFocus(9180,0)</onup>
-					<onup condition="Control.IsVisible(9186)">9186</onup>
-					<onup condition="Control.IsVisible(9188) + Container(9110).HasFocus(909)">SetFocus(9183,0)</onup>
+					<animation effect="slide" start="0,0" end="-50,0" time="0" condition="!Skin.HasSetting(home.menu2)">Conditional</animation>
+					
+					<onup condition="Control.IsVisible(91401) + !IsEmpty(Container(9110).ListItem.Property(widget))">SetFocus(91411,0)</onup>
+					<onup condition="Control.IsVisible(91501) + !IsEmpty(Container(9110).ListItem.Property(widget))">SetFocus(91511,0)</onup>
+					<onup condition="Control.IsVisible(91601) + !IsEmpty(Container(9110).ListItem.Property(widget))">SetFocus(91611,0)</onup>
+					<onup condition="Control.IsVisible(91402) + !IsEmpty(Container(9110).ListItem.Property(widget))">SetFocus(91412,0)</onup>
+					<onup condition="Control.IsVisible(91502) + !IsEmpty(Container(9110).ListItem.Property(widget))">SetFocus(91512,0)</onup>
+					<onup condition="Control.IsVisible(91602) + !IsEmpty(Container(9110).ListItem.Property(widget))">SetFocus(91612,0)</onup>
+					<onup condition="Control.IsVisible(91403) + !IsEmpty(Container(9110).ListItem.Property(widget))">SetFocus(91413,0)</onup>
+					<onup condition="Control.IsVisible(91503) + !IsEmpty(Container(9110).ListItem.Property(widget))">SetFocus(91513,0)</onup>
+					<onup condition="Control.IsVisible(91603) + !IsEmpty(Container(9110).ListItem.Property(widget))">SetFocus(91613,0)</onup><onup condition="Control.IsVisible(9186) + !IsEmpty(Container(9110).ListItem.Property(widget))">SetFocus(918111,0)</onup>				
 					<ondown condition="Control.IsVisible(9901) + IntegerGreaterThan(Container(9901).NumItems,0)">SetFocus(9901)</ondown>
 					<orientation>horizontal</orientation>
 					<include condition="Skin.HasSetting(home.menu2)">homepos2</include>
 					<include condition="!Skin.HasSetting(home.menu2)">homepos1</include>
-					<include>home_newmenu</include>
+					<content><include>skinshortcuts-mainmenu</include></content>
 					<itemlayout width="320" height="150" condition="Skin.HasSetting(home.menu2)">
 						<control type="group">
 							<posx>0</posx>
@@ -82,7 +84,7 @@
 							</control>
 						</control>
 					</itemlayout>
-					<focusedlayout height="150" width="320" condition="Skin.HasSetting(home.menu2)">
+					<focusedlayout height="150" width="350" condition="Skin.HasSetting(home.menu2)">
 						<control type="group">
 							<posx>0</posx>
 							<posy>130</posy>
@@ -106,7 +108,7 @@
 							</control>
 						</control>
 					</focusedlayout>
-					<itemlayout width="200" height="150" condition="!Skin.HasSetting(home.menu2)">
+					<itemlayout width="250" height="150" condition="!Skin.HasSetting(home.menu2)">
 						<control type="group">
 							<posx>0</posx>
 							<posy>130</posy>
@@ -146,7 +148,7 @@
 								<posy>50</posy>
 								<width>450</width>
 								<height>255</height>
-								<info>ListItem.Thumb</info>
+								<info>ListItem.Icon</info>
 								<fadetime>500</fadetime>
 								<include>bordertrans_Big</include>
 								<aspectratio>scale</aspectratio>

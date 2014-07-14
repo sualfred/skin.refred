@@ -21,6 +21,7 @@
 	<color name="whitetrans">1affffff</color><!--secondary overlay / menu color (home menu)-->
 	<color name="whitetrans2">3affffff</color><!--secondary overlay / menu color (home menu)-->
 	<color name="whitetrans3">9affffff</color><!--secondary overlay / menu color (home menu)-->
+	<color name="whitetrans4">ccffffff</color><!--secondary overlay / menu color (home menu)-->
 	<color name="accent_1">ff0c2c40</color><!--primary accent color (seekbar)-->
 	<color name="accent_2">ff245678</color><!--secondary accent color (home submenu)-->
 	

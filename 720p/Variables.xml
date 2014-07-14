@@ -59,19 +59,19 @@
 
 <!-- hub -->
 	<variable name="hubcategory">
-		<value condition="Control.IsVisible(5563) + [Container(557).HasFocus(1) | [!Container(557).HasFocus(2) + !Container(557).HasFocus(14)]]">$LOCALIZE[32031]: $LOCALIZE[32032]</value>
-		<value condition="Control.IsVisible(5563) + Container(557).HasFocus(2)">$LOCALIZE[32031]: $LOCALIZE[32021]</value>
-		<value condition="Control.IsVisible(5563) + Container(557).HasFocus(14)">$LOCALIZE[32031]: $LOCALIZE[32023]</value>
-		<value condition="Control.IsVisible(5562) + [Container(556).HasFocus(1) | [!Container(556).HasFocus(2) + !Container(556).HasFocus(14)]]">$LOCALIZE[32031]: $LOCALIZE[32020]</value>
-		<value condition="Control.IsVisible(5562) + Container(556).HasFocus(2)">$LOCALIZE[32031]: $LOCALIZE[32021]</value>
-		<value condition="Control.IsVisible(5562) + Container(556).HasFocus(14)">$LOCALIZE[32031]: $LOCALIZE[32023]</value>
-		<value condition="Control.IsVisible(5564) + [Container(558).HasFocus(1) | [!Container(558).HasFocus(2) + !Container(558).HasFocus(14)]]">$LOCALIZE[32031]: $LOCALIZE[32033]</value>
-		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(2)">$LOCALIZE[32031]: $LOCALIZE[32021]</value>
-		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(14)">$LOCALIZE[32031]: $LOCALIZE[32034]</value>		
-		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(1)">$LOCALIZE[32031]: $LOCALIZE[32037]</value>	
-		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(2)">$LOCALIZE[32031]: $LOCALIZE[32040]</value>	
-		<value condition="Control.IsVisible(5565) + [Container(559).HasFocus(3) | [!Container(559).HasFocus(1) + !Container(559).HasFocus(2) + !Container(559).HasFocus(4)]">$LOCALIZE[32031]: $LOCALIZE[32038]</value>	
-		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(4)">$LOCALIZE[32031]: $LOCALIZE[32041]</value>	
+		<value condition="Control.IsVisible(5563) + [Container(557).HasFocus(1) | [!Container(557).HasFocus(2) + !Container(557).HasFocus(14)]]">$LOCALIZE[31831]: $LOCALIZE[31832]</value>
+		<value condition="Control.IsVisible(5563) + Container(557).HasFocus(2)">$LOCALIZE[31831]: $LOCALIZE[31821]</value>
+		<value condition="Control.IsVisible(5563) + Container(557).HasFocus(14)">$LOCALIZE[31831]: $LOCALIZE[31823]</value>
+		<value condition="Control.IsVisible(5562) + [Container(556).HasFocus(1) | [!Container(556).HasFocus(2) + !Container(556).HasFocus(14)]]">$LOCALIZE[31831]: $LOCALIZE[31820]</value>
+		<value condition="Control.IsVisible(5562) + Container(556).HasFocus(2)">$LOCALIZE[31831]: $LOCALIZE[31821]</value>
+		<value condition="Control.IsVisible(5562) + Container(556).HasFocus(14)">$LOCALIZE[31831]: $LOCALIZE[31823]</value>
+		<value condition="Control.IsVisible(5564) + [Container(558).HasFocus(1) | [!Container(558).HasFocus(2) + !Container(558).HasFocus(14)]]">$LOCALIZE[31831]: $LOCALIZE[31833]</value>
+		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(2)">$LOCALIZE[31831]: $LOCALIZE[31821]</value>
+		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(14)">$LOCALIZE[31831]: $LOCALIZE[31834]</value>		
+		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(1)">$LOCALIZE[31831]: $LOCALIZE[31837]</value>	
+		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(2)">$LOCALIZE[31831]: $LOCALIZE[31840]</value>	
+		<value condition="Control.IsVisible(5565) + [Container(559).HasFocus(3) | [!Container(559).HasFocus(1) + !Container(559).HasFocus(2) + !Container(559).HasFocus(4)]">$LOCALIZE[31831]: $LOCALIZE[31838]</value>	
+		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(4)">$LOCALIZE[31831]: $LOCALIZE[31841]</value>	
 	</variable>
 	
 	<variable name="hubcategoryContent">
@@ -165,131 +165,196 @@
 		<value condition="Control.IsVisible(5565)">$INFO[Container(5591).ListItem.VideoResolution,flags/video/resolution/,.png]</value>
 	</variable>
 
-	
-<!-- custom menu onclick -->
-	<variable name="customb1_click">
-		<value condition="Skin.String(Customb1.9.Path)">$INFO[Skin.String(Customb1.9.Path)]</value>
-		<value condition="Skin.String(Customb1.9.Addon)">RunAddon($INFO[Skin.String(Customb1.9.Addon)])</value>
-		<value condition="Skin.String(Customb1.9.Exe)">RunScript($INFO[Skin.String(Customb1.9.Exe)])</value>
-	</variable>
-	
-	<variable name="customb2_click">
-		<value condition="Skin.String(Customb2.9.Path)">$INFO[Skin.String(Customb2.9.Path)]</value>
-		<value condition="Skin.String(Customb2.9.Addon)">RunAddon($INFO[Skin.String(Customb2.9.Addon)])</value>
-		<value condition="Skin.String(Customb2.9.Exe)">RunScript($INFO[Skin.String(Customb2.9.Exe)])</value>
-	</variable>
-	
 <!-- background menu logic -->
 	<variable name="menu_backgrounds">
+		<!-- hub backgrounds -->
 		<value condition="ControlGroup(5564).HasFocus()">$INFO[Container(5581).ListItem.Art(fanart)]</value>
 		<value condition="ControlGroup(5563).HasFocus()">$INFO[Container(5571).ListItem.Art(fanart)]</value>
 		<value condition="ControlGroup(5562).HasFocus()">$INFO[Container(5561).ListItem.Art(fanart)]</value>
 		<value condition="ControlGroup(5565).HasFocus()">$INFO[Container(5591).ListItem.Art(fanart)]</value>
-		<value condition="Container(9110).HasFocus(1)">overlays/debuggrid720.png</value>
-		<value condition="Container(9110).HasFocus(100) + !IsEmpty(Skin.String(videos.bg))">$INFO[Skin.String(videos.bg)]</value>
-		<value condition="Container(9110).HasFocus(400) + !IsEmpty(Skin.String(livetv.bg))">$INFO[Skin.String(livetv.bg)]</value>
-		<value condition="Container(9110).HasFocus(600) + !IsEmpty(Skin.String(pictures.bg))">$INFO[Skin.String(pictures.bg)]</value>
-		<value condition="Container(9110).HasFocus(700) + !IsEmpty(Skin.String(addons.bg))">$INFO[Skin.String(addons.bg)]</value>
-		<value condition="Container(9110).HasFocus(800) + !IsEmpty(Skin.String(settings.bg))">$INFO[Skin.String(settings.bg)]</value>
-		<value condition="Container(9110).HasFocus(900) + !IsEmpty(Skin.String(weather.bg))">$INFO[Skin.String(weather.bg)]</value>
-		<value condition="Container(9110).HasFocus(901) + !IsEmpty(Skin.String(disc.bg))">$INFO[Skin.String(disc.bg)]</value>
-		<value condition="Container(9110).HasFocus(904) + !IsEmpty(Skin.String(fav.bg))">$INFO[Skin.String(fav.bg)]</value>
-		<value condition="Container(9110).HasFocus(905) + !IsEmpty(Skin.String(search.bg))">$INFO[Skin.String(search.bg)]</value>
-		<value condition="Container(9110).HasFocus(903) + !IsEmpty(Skin.String(yt.bg))">$INFO[Skin.String(yt.bg)]</value>
-		<value condition="Container(9110).HasFocus(907) + !IsEmpty(Skin.String(programs.bg))">$INFO[Skin.String(programs.bg)]</value>
-		<value condition="Container(9110).HasFocus(908) + !IsEmpty(Skin.String(Customb1main.bg))">$INFO[Skin.String(Customb1main.bg)]</value>
-		<value condition="Container(9110).HasFocus(909) + !IsEmpty(Skin.String(Customb2main.bg))">$INFO[Skin.String(Customb2main.bg)]</value>
-		<value condition="Container(9110).HasFocus(801) + !IsEmpty(Skin.String(power.bg))">$INFO[Skin.String(power.bg)]</value>
-		<value condition="Container(9110).HasFocus(100) + IsEmpty(Skin.String(videos.bg))">backgrounds/fallback/video.jpg</value>
-		<value condition="Container(9110).HasFocus(400) + IsEmpty(Skin.String(livetv.bg))">backgrounds/fallback/livetv.jpg</value>
-		<value condition="Container(9110).HasFocus(600) + IsEmpty(Skin.String(pictures.bg))">backgrounds/fallback/pictures.jpg</value>
-		<value condition="Container(9110).HasFocus(700) + IsEmpty(Skin.String(addons.bg))">backgrounds/fallback/addons.jpg</value>
-		<value condition="Container(9110).HasFocus(800) + IsEmpty(Skin.String(settings.bg))">backgrounds/fallback/system.jpg</value>
-		<value condition="Container(9110).HasFocus(900) + IsEmpty(Skin.String(weather.bg))">backgrounds/fallback/weather.jpg</value>
-		<value condition="Container(9110).HasFocus(901) + IsEmpty(Skin.String(disc.bg))">backgrounds/fallback/disc.jpg</value>
-		<value condition="Container(9110).HasFocus(904) + IsEmpty(Skin.String(fav.bg))">backgrounds/fallback/fav.jpg</value>
-		<value condition="Container(9110).HasFocus(905) + IsEmpty(Skin.String(search.bg))">backgrounds/fallback/search.jpg</value>
-		<value condition="Container(9110).HasFocus(903) + IsEmpty(Skin.String(yt.bg))">backgrounds/fallback/yt.jpg</value>
-		<value condition="Container(9110).HasFocus(907) + IsEmpty(Skin.String(programs.bg))">backgrounds/fallback/programs.jpg</value>
-		<value condition="Container(9110).HasFocus(908) + IsEmpty(Skin.String(Customb1main.bg))">backgrounds/fallback/fallback2.jpg</value>
-		<value condition="Container(9110).HasFocus(909) + IsEmpty(Skin.String(Customb2main.bg))">backgrounds/fallback/fallback2.jpg</value>
-		<value condition="Container(9110).HasFocus(801) + IsEmpty(Skin.String(power.bg))">backgrounds/fallback/power.jpg</value>
-		<value condition="[Skin.HasSetting(widgets.inprogress.enabled) + Container(9110).HasFocus(802) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.inprogress.enabled) + Container(9110).HasFocus(802) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(9140).ListItem.Art(fanart)]</value>
-		<value condition="[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.inprogress.enabled)] + Container(9110).HasFocus(802) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.inprogress.enabled) + Container(9110).HasFocus(802) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(9141).ListItem.Art(fanart)]</value>
-		<value condition="[Skin.HasSetting(widgets.music.enabled) + Container(9110).HasFocus(500) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.music.enabled) + Container(9110).HasFocus(500) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(9170).ListItem.Art(fanart)]</value>
-		<value condition="[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.music.enabled)] + Container(9110).HasFocus(500) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.music.enabled) + Container(9110).HasFocus(500) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(9171).ListItem.Art(fanart)]</value>
-		<value condition="[Skin.HasSetting(widgets.episodes.enabled) + Container(9110).HasFocus(300) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.episodes.enabled) + Container(9110).HasFocus(300) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(9160).ListItem.Art(fanart)]</value>
-		<value condition="[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.episodes.enabled)] + Container(9110).HasFocus(300) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.episodes.enabled) + Container(9110).HasFocus(300) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(9161).ListItem.Art(fanart)]</value>
-		<value condition="[Skin.HasSetting(widgets.movies.enabled) + Container(9110).HasFocus(200) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.movies.enabled) + Container(9110).HasFocus(200) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(9150).ListItem.Art(fanart)]</value>		
-		<value condition="[[!Skin.HasSetting(backgroundvideo.global) | !Skin.HasSetting(widgets.movies.enabled)] + Container(9110).HasFocus(200) + [Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [!Skin.HasSetting(widgets.movies.enabled) + Container(9110).HasFocus(200) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(9151).ListItem.Art(fanart)]</value>
+		<!-- check if the item has its own background -->
+		<value condition="!IsEmpty(Container(9110).ListItem.Property(background))">$INFO[Container(9110).ListItem.Property(background)]</value>
+		<!-- widget backgrounds -->
+		<!--movies-->
+		<value condition="[StringCompare(Container(9110).ListItem.Property(widget),recentmovies) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),recentmovies) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(91511).ListItem.Art(fanart)]</value>
+		<value condition="[StringCompare(Container(9110).ListItem.Property(widget),randommovies) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),randommovies) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(91512).ListItem.Art(fanart)]</value>
+		<value condition="[StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(91513).ListItem.Art(fanart)]</value>
+		<!--episodes-->
+		<value condition="[StringCompare(Container(9110).ListItem.Property(widget),recentepisodes) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),recentepisodes) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(91411).ListItem.Art(fanart)]</value>
+		<value condition="[StringCompare(Container(9110).ListItem.Property(widget),randomepisodes) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),randomepisodes) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(91412).ListItem.Art(fanart)]</value>
+		<value condition="[StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(91413).ListItem.Art(fanart)]</value>
+		<!--music-->
+		<value condition="[StringCompare(Container(9110).ListItem.Property(widget),recentalbums) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),recentalbums) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(91611).ListItem.Art(fanart)]</value>
+		<value condition="[StringCompare(Container(9110).ListItem.Property(widget),randomalbums) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),randomalbums) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(91612).ListItem.Art(fanart)]</value>
+		<value condition="[StringCompare(Container(9110).ListItem.Property(widget),recommendedalbums) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),recommendedalbums) + !Player.HasMedia + !Player.HasAudio]">$INFO[Container(91613).ListItem.Art(fanart)]</value>
+		<!-- fallback backgrounds -->		
+		<value condition="StringCompare(Container(9110).ListItem.Property(labelID),videos)">backgrounds/bg/videos.jpg</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(labelID),livetv)">backgrounds/bg/livetv.jpg</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(labelID),pictures">backgrounds/bg/pictures.jpg</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(labelID),settings)">backgrounds/bg/settings.jpg</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(labelID),weather)">backgrounds/bg/weather.jpg</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(labelID),dvd)">backgrounds/bg/dvd.jpg</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(labelID),programs)">backgrounds/bg/programs.jpg</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(labelID),tvshows)">backgrounds/bg/tvshows.jpg</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(labelID),movies)">backgrounds/bg/movies.jpg</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(labelID),music)">backgrounds/bg/music.jpg</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(labelID),musicvideos)">backgrounds/bg/musicvideos.jpg</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(labelID),$LOCALIZE[31013])">backgrounds/bg/watchlist.jpg</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(labelID),$LOCALIZE[33060])">backgrounds/bg/power.jpg</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(labelID),YouTube)">backgrounds/bg/yt.jpg</value>		
+		<value>backgrounds/fallback/fallback.jpg</value>
 	</variable>
-	
-	<variable name="menu_widget_thumb">
-		<value condition="[[Skin.HasSetting(widgets.inprogress.enabled) + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.inprogress.enabled) + !Player.HasMedia + !Player.HasAudio]] + Container(9110).HasFocus(802)">$INFO[Container(9140).ListItem.Art(fanart)]</value>
-		<!--<value condition="[[Skin.HasSetting(widgets.enabled) + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.enabled) + !Player.HasMedia + !Player.HasAudio]] + Container(9110).HasFocus(100)">$INFO[Container(9180).ListItem.Art(fanart)]</value>-->
-		<value condition="[[Skin.HasSetting(widgets.movies.enabled) + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.movies.enabled) + !Player.HasMedia + !Player.HasAudio]] + Container(9110).HasFocus(200)">$INFO[Container(9150).ListItem.Art(fanart)]</value>
-		<value condition="[[Skin.HasSetting(widgets.episodes.enabled) + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.episodes.enabled) + !Player.HasMedia + !Player.HasAudio]] + Container(9110).HasFocus(300)">$INFO[Container(9160).ListItem.Art(fanart)]</value>
-		<value condition="[[Skin.HasSetting(widgets.music.enabled) + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.music.enabled) + !Player.HasMedia + !Player.HasAudio]] + Container(9110).HasFocus(500)">$INFO[Container(9170).ListItem.Art(fanart)]</value>		
-		<!-- video button -->
-		<value condition="Container(9110).HasFocus(100)">$INFO[Container(9180).ListItem.Thumb]</value>				
-		<!-- movie widget invisible -->
-		<value condition="[!Skin.HasSetting(widgets.movies.enabled) | [Skin.HasSetting(home.nowplaying) + [Player.HasMedia | Player.HasAudio]]] + Container(9110).HasFocus(200)">$INFO[Container(9151).ListItem.Art(fanart)]</value>		
-		<!-- tvshow widget invisible -->
-		<value condition="[!Skin.HasSetting(widgets.episodes.enabled) | [Skin.HasSetting(home.nowplaying) + [Player.HasMedia | Player.HasAudio]]] + Container(9110).HasFocus(300)">$INFO[Container(9161).ListItem.Art(fanart)]</value>		
-		<!-- music widget invisible -->
-		<value condition="[!Skin.HasSetting(widgets.music.enabled) | [Skin.HasSetting(home.nowplaying) + [Player.HasMedia | Player.HasAudio]]] + Container(9110).HasFocus(500)">$INFO[Container(9171).ListItem.Art(fanart)]</value>		
-		<!-- inprogress widget invisible -->
-		<value condition="[!Skin.HasSetting(widgets.inprogress.enabled) | [Skin.HasSetting(home.nowplaying) + [Player.HasMedia | Player.HasAudio]]] + Container(9110).HasFocus(802)">$INFO[Container(9181).ListItem.Art(fanart)]</value>			
-	</variable>
-	
 	
 <!--custom widgets -->	
 	<variable name="thumb_subwidgets">
 		<value condition="!IsEmpty(ListItem.Icon)">DefaultIconError.png</value>
 		<value>ListItem.Icon</value>
 	</variable>
+	<variable name="widgets_custom_label">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),widgets1) + !IsEmpty(Skin.String(widgets1.label)">$INFO[Skin.String(widgets1.label)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),widgets2) + !IsEmpty(Skin.String(widgets2.label)">$INFO[Skin.String(widgets2.label)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),widgets3) + !IsEmpty(Skin.String(widgets3.label)">$INFO[Skin.String(widgets3.label)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),widgets4) + !IsEmpty(Skin.String(widgets4.label)">$INFO[Skin.String(widgets4.label)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),widgets5) + !IsEmpty(Skin.String(widgets5.label)">$INFO[Skin.String(widgets5.label)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),widgets6) + !IsEmpty(Skin.String(widgets6.label)">$INFO[Skin.String(widgets6.label)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),widgets7) + !IsEmpty(Skin.String(widgets7.label)">$INFO[Skin.String(widgets7.label)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),widgets8) + !IsEmpty(Skin.String(widgets8.label)">$INFO[Skin.String(widgets8.label)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),widgets9) + !IsEmpty(Skin.String(widgets9.label)">$INFO[Skin.String(widgets9.label)]</value>		
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),widgets10) + !IsEmpty(Skin.String(widgets10.label)">$INFO[Skin.String(widgets10.label)]</value>
+		<value>$INFO[Container(9110).ListItem.Property(widgetName)]</value>
+	</variable>
 	
-<!--widget cat-->
-	<variable name="widget_movie_cat">
-		<value condition="Control.IsVisible(9150) + !Skin.HasSetting(widgets.randommovies.enabled)">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]&limit=10</value>
-		<value condition="Control.IsVisible(9150) + Skin.HasSetting(widgets.randommovies.enabled)">plugin://service.library.data.provider?type=randommovies&reload=$INFO[Window.Property(randommovies)]&limit=10</value>
+<!--widget rows-->
+	<variable name="widget_poster">
+		<value condition="!IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+		<value>$INFO[ListItem.Thumb]</value>
 	</variable>
-	<variable name="widget_episode_cat">
-		<value condition="Control.IsVisible(9160) + !Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]&limit=10</value>
-		<value condition="Control.IsVisible(9160) + Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]&limit=10</value>
+
+<!-- widget detail containers -->
+	<variable name="widget_Label">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">$INFO[Container(91511).ListItem.Label]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">$INFO[Container(91512).ListItem.Label]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">$INFO[Container(91513).ListItem.Label]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">$INFO[Container(91411).ListItem.Label]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">$INFO[Container(91412).ListItem.Label]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">$INFO[Container(91413).ListItem.Label]</value>
 	</variable>
-	<variable name="widget_inprogress_cat">
-		<value condition="Control.IsVisible(9140) + !Skin.HasSetting(widgets.inprogressmovies.enabled)">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=10</value>
-		<value condition="Control.IsVisible(9140) + Skin.HasSetting(widgets.inprogressmovies.enabled)">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]&limit=10</value>
+	<variable name="widget_TVShowTitle">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">$INFO[Container(91411).ListItem.TVShowTitle]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">$INFO[Container(91412).ListItem.TVShowTitle]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">$INFO[Container(91413).ListItem.TVShowTitle]</value>
 	</variable>
-	<variable name="widget_music_cat">
-		<value condition="Control.IsVisible(9170) + !Skin.HasSetting(widgets.randommusic.enabled)">plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]&limit=10</value>
-		<value condition="Control.IsVisible(9170) + Skin.HasSetting(widgets.randommusic.enabled)">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]&limit=10</value>
+	<variable name="widget_Thumbnail">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">$INFO[Container(91411).ListItem.thumb]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">$INFO[Container(91412).ListItem.thumb]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">$INFO[Container(91413).ListItem.thumb]</value>
 	</variable>
-	<!--
-	<variable name="widget_movie_cat">
-		<value condition="Container(9110).HasFocus(200) + !Skin.HasSetting(widgets.randommovies.enabled)">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]&limit=10</value>
-		<value condition="Container(9110).HasFocus(200) + Skin.HasSetting(widgets.randommovies.enabled)">plugin://service.library.data.provider?type=randommovies&reload=$INFO[Window.Property(randommovies)]&limit=10</value>
+	<variable name="widget_Plot">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">$INFO[Container(91511).ListItem.Plot]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">$INFO[Container(91512).ListItem.Plot]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">$INFO[Container(91513).ListItem.Plot]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">$INFO[Container(91411).ListItem.Plot]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">$INFO[Container(91412).ListItem.Plot]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">$INFO[Container(91413).ListItem.Plot]</value>
 	</variable>
-	<variable name="widget_episode_cat">
-		<value condition="Container(9110).HasFocus(300) + !Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]&limit=10</value>
-		<value condition="Container(9110).HasFocus(300) + Skin.HasSetting(widgets.randomepisodes.enabled)">plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]&limit=10</value>
+	<variable name="widget_Discart">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">$INFO[Container(91511).ListItem.Art(discart)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">$INFO[Container(91512).ListItem.Art(discart)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">$INFO[Container(91513).ListItem.Art(discart)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">$INFO[Container(91411).ListItem.Art(discart)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">$INFO[Container(91412).ListItem.Art(discart)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">$INFO[Container(91413).ListItem.Art(discart)]</value>
 	</variable>
-	<variable name="widget_inprogress_cat">
-		<value condition="Container(9110).HasFocus(802) +!Skin.HasSetting(widgets.inprogressmovies.enabled)">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=10</value>
-		<value condition="Container(9110).HasFocus(802) + Skin.HasSetting(widgets.inprogressmovies.enabled)">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]&limit=10</value>
+	<variable name="widget_Clearlogo">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">$INFO[Container(91511).ListItem.Art(clearlogo)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">$INFO[Container(91512).ListItem.Art(clearlogo)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">$INFO[Container(91513).ListItem.Art(clearlogo)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">$INFO[Container(91411).ListItem.Art(clearlogo)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">$INFO[Container(91412).ListItem.Art(clearlogo)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">$INFO[Container(91413).ListItem.Art(clearlogo)]</value>
 	</variable>
-	<variable name="widget_music_cat">
-		<value condition="Container(9110).HasFocus(500) + !Skin.HasSetting(widgets.randommusic.enabled)">plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]&limit=10</value>
-		<value condition="Container(9110).HasFocus(500) + Skin.HasSetting(widgets.randommusic.enabled)">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]&limit=10</value>
-	</variable>-->
-	
-<!--widget inprogress-->
-	<variable name="widget_inprogress_poster">
-		<value condition="Skin.HasSetting(widgets.inprogressmovies.enabled)">$INFO[ListItem.Thumb]</value>
-		<value condition="!Skin.HasSetting(widgets.inprogressmovies.enabled)">$INFO[ListItem.Art(tvshow.poster)]</value>
+	<variable name="widget_Posterthumb">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">$INFO[Container(91511).ListItem.Art(poster)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">$INFO[Container(91512).ListItem.Art(poster)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">$INFO[Container(91513).ListItem.Art(poster)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">$INFO[Container(91411).ListItem.Art(poster)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">$INFO[Container(91412).ListItem.Art(poster)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">$INFO[Container(91413).ListItem.Art(poster)]</value>
+	</variable>
+	<variable name="widget_Fanart">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">$INFO[Container(91511).ListItem.Art(fanart)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">$INFO[Container(91512).ListItem.Art(fanart)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">$INFO[Container(91513).ListItem.Art(fanart)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">$INFO[Container(91411).ListItem.Art(fanart)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">$INFO[Container(91412).ListItem.Art(fanart)]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">$INFO[Container(91413).ListItem.Art(fanart)]</value>
+	</variable>
+	<variable name="widget_Studio">		
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">$INFO[Container(91511)..ListItem.Studio,flags/studios/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">$INFO[Container(91512)..ListItem.Studio,flags/studios/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">$INFO[Container(91513)..ListItem.Studio,flags/studios/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">$INFO[Container(91411)..ListItem.Studio,flags/studios/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">$INFO[Container(91412)..ListItem.Studio,flags/studios/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">$INFO[Container(91413)..ListItem.Studio,flags/studios/,.png]</value>		
+	</variable>
+	<variable name="widget_Rating">		
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">$INFO[Container(91511)..ListItem.Rating,rating/imdb/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">$INFO[Container(91512)..ListItem.Rating,rating/imdb/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">$INFO[Container(91513)..ListItem.Rating,rating/imdb/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">$INFO[Container(91411)..ListItem.Rating,rating/imdb/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">$INFO[Container(91412)..ListItem.Rating,rating/imdb/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">$INFO[Container(91413)..ListItem.Rating,rating/imdb/,.png]</value>		
+	</variable>
+	<variable name="widget_VideoResolution">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">$INFO[Container(91511).ListItem.VideoResolution,flags/video/resolution/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">$INFO[Container(91512).ListItem.VideoResolution,flags/video/resolution/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">$INFO[Container(91513).ListItem.VideoResolution,flags/video/resolution/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">$INFO[Container(91411).ListItem.VideoResolution,flags/video/resolution/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">$INFO[Container(91412).ListItem.VideoResolution,flags/video/resolution/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">$INFO[Container(91413).ListItem.VideoResolution,flags/video/resolution/,.png]</value>
+	</variable>
+	<variable name="widget_VideoCodec">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">$INFO[Container(91511).ListItem.VideoCodec,flags/codec/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">$INFO[Container(91512).ListItem.VideoCodec,flags/codec/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">$INFO[Container(91513).ListItem.VideoCodec,flags/codec/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">$INFO[Container(91411).ListItem.VideoCodec,flags/codec/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">$INFO[Container(91412).ListItem.VideoCodec,flags/codec/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">$INFO[Container(91413).ListItem.VideoCodec,flags/codec/,.png]</value>
+	</variable>
+	<variable name="widget_AudioCodec">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">$INFO[Container(91511).ListItem.AudioCodec,flags/codec/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">$INFO[Container(91512).ListItem.AudioCodec,flags/codec/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">$INFO[Container(91513).ListItem.AudioCodec,flags/codec/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">$INFO[Container(91411).ListItem.AudioCodec,flags/codec/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">$INFO[Container(91412).ListItem.AudioCodec,flags/codec/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">$INFO[Container(91413).ListItem.AudioCodec,flags/codec/,.png]</value>
 	</variable>	
-	
+	<variable name="widget_AudioChannels">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">$INFO[Container(91511).ListItem.AudioChannels,flags/audio/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">$INFO[Container(91512).ListItem.AudioChannels,flags/audio/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">$INFO[Container(91513).ListItem.AudioChannels,flags/audio/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">$INFO[Container(91411).ListItem.AudioChannels,flags/audio/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">$INFO[Container(91412).ListItem.AudioChannels,flags/audio/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">$INFO[Container(91413).ListItem.AudioChannels,flags/audio/,.png]</value>
+	</variable>
+	<variable name="widget_VideoAspect">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">$INFO[Container(91511).ListItem.VideoAspect,flags/video/aspectratio/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">$INFO[Container(91512).ListItem.VideoAspect,flags/video/aspectratio/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">$INFO[Container(91513).ListItem.VideoAspect,flags/video/aspectratio/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">$INFO[Container(91411).ListItem.VideoAspect,flags/video/aspectratio/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">$INFO[Container(91412).ListItem.VideoAspect,flags/video/aspectratio/,.png]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">$INFO[Container(91413).ListItem.VideoAspect,flags/video/aspectratio/,.png]</value>
+	</variable>
+	<variable name="widget_Info">
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">$INFO[Container(91511).ListItem.Year,, • ]$INFO[Container(91511).ListItem.Duration,, Min • ]$INFO[Container(91511).ListItem.Genre]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">$INFO[Container(91512).ListItem.Year,, • ]$INFO[Container(91512).ListItem.Duration,, Min • ]$INFO[Container(91512).ListItem.Genre]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">$INFO[Container(91513).ListItem.Year,, • ]$INFO[Container(91513).ListItem.Duration,, Min • ]$INFO[Container(91513).ListItem.Genre]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">[COLOR Color2]$INFO[Container(91611).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(91411).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(91411).ListItem.Duration, • , Min]$INFO[Container(91411).ListItem.Premiered, • ,][/COLOR]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">[COLOR Color2]$INFO[Container(91412).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(91412).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(91412).ListItem.Duration, • , Min]$INFO[Container(91412).ListItem.Premiered, • ,][/COLOR]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">[COLOR Color2]$INFO[Container(91413).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(91413).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(91413).ListItem.Duration, • , Min]$INFO[Container(91413).ListItem.Premiered, • ,][/COLOR]</value>
+	</variable>
+		
+		
 <!--widget season episode format-->
     <variable name="widget_episodenr">
         <value condition="IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Season,[COLOR Color2]S,[/COLOR]]$INFO[ListItem.Episode,[COLOR Color2]E,[/COLOR] ]$INFO[ListItem.Label]</value>
@@ -316,12 +381,13 @@
 
 <!--pvr recording widget -->
 	<variable name="rec_Label">
-		<value condition="!PVR.IsRecording + PVR.HasNonRecordingTimer">$LOCALIZE[32024]</value>
-		<value condition="PVR.IsRecording">$LOCALIZE[32025]</value>
+		<value condition="PVR.IsRecording">$LOCALIZE[31825]</value>
+		<value>$LOCALIZE[31824]</value>
 	</variable>
 	<variable name="rec_Title">
 		<value condition="!PVR.IsRecording + PVR.HasNonRecordingTimer">$INFO[Pvr.NextRecordingTitle]</value>
 		<value condition="PVR.IsRecording">$INFO[Pvr.NowRecordingTitle]</value>
+		<value>[COLOR Color2]$LOCALIZE[31860][/COLOR]</value>
 	</variable>
 	<variable name="rec_Channel">
 		<value condition="PVR.IsRecording">$INFO[Pvr.NowRecordingChannel]</value>
@@ -347,8 +413,8 @@
 		<value condition="Window.IsActive(fullscreenvideo)">$LOCALIZE[31323] $INFO[Player.FinishTime]</value>
 	</variable>
 	<variable name="toast_PVRrec">		
-		<value condition="Skin.HasSetting(overlay.pvr) + PVR.HasNonRecordingTimer">$LOCALIZE[32026]: $INFO[Pvr.NextRecordingChannel,, • ]$INFO[Pvr.NextRecordingTitle]</value>
-		<value condition="Skin.HasSetting(overlay.pvr) + PVR.IsRecording">$LOCALIZE[32027]: $INFO[Pvr.NowRecordingChannel,, • ]$INFO[Pvr.NowRecordingTitle]</value>	
+		<value condition="Skin.HasSetting(overlay.pvr) + PVR.HasNonRecordingTimer">$LOCALIZE[31826]: $INFO[Pvr.NextRecordingChannel,, • ]$INFO[Pvr.NextRecordingTitle]</value>
+		<value condition="Skin.HasSetting(overlay.pvr) + PVR.IsRecording">$LOCALIZE[31827]: $INFO[Pvr.NowRecordingChannel,, • ]$INFO[Pvr.NowRecordingTitle]</value>	
 	</variable>
 	<variable name="toast_Video">
 		<value condition="VideoPlayer.Content(livetv)">$LOCALIZE[209]$INFO[VideoPlayer.NextTitle,: ]</value>
@@ -416,9 +482,9 @@
 	</variable>
 
 	<variable name="unwatchedinfo">
-		<!--<value condition="Container.Content(movies)">$INFO[Window(0).Property(Movies.Unwatched),$LOCALIZE[32003] ,]</value>-->
-		<value condition="Container.Content(seasons)">$INFO[ListItem.Property(UnWatchedEpisodes),$LOCALIZE[32000] ,]</value>
-		<!--<value condition="Container.Content(tvshows)">$INFO[Window(0).Property(Episodes.Unwatched),$LOCALIZE[32001] ,]</value>-->
+		<!--<value condition="Container.Content(movies)">$INFO[Window(0).Property(Movies.Unwatched),$LOCALIZE[31803] ,]</value>-->
+		<value condition="Container.Content(seasons)">$INFO[ListItem.Property(UnWatchedEpisodes),$LOCALIZE[31800] ,]</value>
+		<!--<value condition="Container.Content(tvshows)">$INFO[Window(0).Property(Episodes.Unwatched),$LOCALIZE[31801] ,]</value>-->
 	</variable>
 	
 <!--MEDIA INFO-->
@@ -461,10 +527,6 @@
 		<value condition="Window.IsActive(pictures) + !IsEmpty(ListItem.PictureLongDateTime)">$INFO[ListItem.PictureLongDateTime]</value>
 		<value condition="Window.IsActive(pictures) + IsEmpty(ListItem.PictureLongDateTime) + !SubString(Container.FolderPath,addons://sources/)">$INFO[ListItem.Date]</value>
 		<value condition="!IsEmpty(ListItem.Studio)">$INFO[ListItem.Studio]</value>
-		<value condition="Control.IsVisible(9152)">$INFO[Container(9150).ListItem.Year,, • ]$INFO[Container(9150).ListItem.Duration,, Min • ]$INFO[Container(9150).ListItem.Genre]</value>
-		<value condition="Control.IsVisible(9162)">[COLOR Color2]$INFO[Container(9160).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(9160).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(9160).ListItem.Duration, • , Min]$INFO[Container(9160).ListItem.Premiered, • ,][/COLOR]</value>		
-		<value condition="Control.IsVisible(9141) + !Skin.HasSetting(widgets.inprogressmovies.enabled)">[COLOR Color2]$INFO[Container(9140).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(9140).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(9140).ListItem.Duration, • , Min]$INFO[Container(9140).ListItem.Premiered, • ,][/COLOR]</value>
-		<value condition="Control.IsVisible(9141) + Skin.HasSetting(widgets.inprogressmovies.enabled)">$INFO[Container(9140).ListItem.Year,, • ]$INFO[Container(9140).ListItem.Duration,, Min • ]$INFO[Container(9140).ListItem.Genre]</value>
 	</variable>
 	
 	<variable name="global_Info_Short">
@@ -769,22 +831,36 @@
 		
 		<value condition="Container(5561).ListItem.IsStereoscopic + ControlGroup(5562).HasFocus()">flags/video/3D/nf-3D.png</value>
 		<value condition="IntegerGreaterThan(Container(5561).ListItem.VideoResolution,540) + ControlGroup(5562).HasFocus()">flags/video/HD/nf-HD.png</value>
-		<value condition="!IntegerGreaterThan(Container(5561).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + ControlGroup(5562).HasFocus()">flags/video/SD/nf-SD.png</value>		
+		<value condition="!IntegerGreaterThan(Container(5561).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + ControlGroup(5562).HasFocus()">flags/video/SD/nf-SD.png</value>
+		
 		<value condition="Container(5571).ListItem.IsStereoscopic + ControlGroup(5563).HasFocus()">flags/video/3D/nf-3D.png</value>
 		<value condition="IntegerGreaterThan(Container(5571).ListItem.VideoResolution,540) + ControlGroup(5563).HasFocus()">flags/video/HD/nf-HD.png</value>
-		<value condition="!IntegerGreaterThan(Container(5571).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + ControlGroup(5563).HasFocus()">flags/video/SD/nf-SD.png</value>		
+		<value condition="!IntegerGreaterThan(Container(5571).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + ControlGroup(5563).HasFocus()">flags/video/SD/nf-SD.png</value>	
+		
 		<value condition="Container(5591).ListItem.IsStereoscopic + ControlGroup(5565).HasFocus()">flags/video/3D/nf-3D.png</value>
 		<value condition="IntegerGreaterThan(Container(5591).ListItem.VideoResolution,540) + ControlGroup(5565).HasFocus()">flags/video/HD/nf-HD.png</value>
-		<value condition="!IntegerGreaterThan(Container(5591).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + ControlGroup(5565).HasFocus()">flags/video/SD/nf-SD.png</value>		
-		<value condition="Container(9150).ListItem.IsStereoscopic + Control.HasFocus(9150)">flags/video/3D/nf-3D.png</value>
-		<value condition="IntegerGreaterThan(Container(9150).ListItem.VideoResolution,540) + Control.HasFocus(9150)">flags/video/HD/nf-HD.png</value>
-		<value condition="!IntegerGreaterThan(Container(9150).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + Control.HasFocus(9150)">flags/video/SD/nf-SD.png</value>
-		<value condition="Container(9160).ListItem.IsStereoscopic + Control.HasFocus(9160)">flags/video/3D/nf-3D.png</value>
-		<value condition="IntegerGreaterThan(Container(9160).ListItem.VideoResolution,540) + Control.HasFocus(9160)">flags/video/HD/nf-HD.png</value>
-		<value condition="!IntegerGreaterThan(Container(9160).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + Control.HasFocus(9160)">flags/video/SD/nf-SD.png</value>
-		<value condition="Container(9140).ListItem.IsStereoscopic + Control.HasFocus(9140)">flags/video/3D/nf-3D.png</value>
-		<value condition="IntegerGreaterThan(Container(9140).ListItem.VideoResolution,540) + Control.HasFocus(9140)">flags/video/HD/nf-HD.png</value>
-		<value condition="!IntegerGreaterThan(Container(9140).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + Control.HasFocus(9140)">flags/video/SD/nf-SD.png</value>
+		<value condition="!IntegerGreaterThan(Container(5591).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + ControlGroup(5565).HasFocus()">flags/video/SD/nf-SD.png</value>	
+		
+		<value condition="Container(91411).ListItem.IsStereoscopic + Control.HasFocus(91411)">flags/video/3D/nf-3D.png</value>
+		<value condition="Container(91412).ListItem.IsStereoscopic + Control.HasFocus(91412)">flags/video/3D/nf-3D.png</value>
+		<value condition="Container(91413).ListItem.IsStereoscopic + Control.HasFocus(91413)">flags/video/3D/nf-3D.png</value>
+		<value condition="IntegerGreaterThan(Container(91411).ListItem.VideoResolution,540) + Control.HasFocus(91411)">flags/video/HD/nf-HD.png</value>
+		<value condition="IntegerGreaterThan(Container(91412).ListItem.VideoResolution,540) + Control.HasFocus(91412)">flags/video/HD/nf-HD.png</value>
+		<value condition="IntegerGreaterThan(Container(91413).ListItem.VideoResolution,540) + Control.HasFocus(91413)">flags/video/HD/nf-HD.png</value>
+		<value condition="!IntegerGreaterThan(Container(91411).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + Control.HasFocus(91411)">flags/video/SD/nf-SD.png</value>
+		<value condition="!IntegerGreaterThan(Container(91412).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + Control.HasFocus(91412)">flags/video/SD/nf-SD.png</value>
+		<value condition="!IntegerGreaterThan(Container(91413).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + Control.HasFocus(91413)">flags/video/SD/nf-SD.png</value>
+		
+		<value condition="Container(91511).ListItem.IsStereoscopic + Control.IsVisible(91511)">flags/video/3D/nf-3D.png</value>
+		<value condition="Container(91512).ListItem.IsStereoscopic + Control.IsVisible(91512)">flags/video/3D/nf-3D.png</value>
+		<value condition="Container(91513).ListItem.IsStereoscopic + Control.IsVisible(91513)">flags/video/3D/nf-3D.png</value>
+		<value condition="IntegerGreaterThan(Container(91511).ListItem.VideoResolution,540) + Control.IsVisible(91511)">flags/video/HD/nf-HD.png</value>
+		<value condition="IntegerGreaterThan(Container(91512).ListItem.VideoResolution,540) + Control.IsVisible(91512)">flags/video/HD/nf-HD.png</value>
+		<value condition="IntegerGreaterThan(Container(91513).ListItem.VideoResolution,540) + Control.IsVisible(91513)">flags/video/HD/nf-HD.png</value>
+		<value condition="!IntegerGreaterThan(Container(91511).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + Control.IsVisible(91511)">flags/video/SD/nf-SD.png</value>
+		<value condition="!IntegerGreaterThan(Container(91512).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + Control.IsVisible(91512)">flags/video/SD/nf-SD.png</value>
+		<value condition="!IntegerGreaterThan(Container(91513).ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder + Control.IsVisible(91513)">flags/video/SD/nf-SD.png</value>
+		
 		<value condition="ListItem.IsStereoscopic">flags/video/3D/nf-3D.png</value>
 		<value condition="IntegerGreaterThan(ListItem.VideoResolution,540)">flags/video/HD/nf-HD.png</value>
 		<value condition="!IntegerGreaterThan(ListItem.VideoResolution,540) + !SubString(ListItem.Icon,default) + !ListItem.IsFolder">flags/video/SD/nf-SD.png</value>
@@ -817,7 +893,12 @@
 	</variable>
 
 <!--WINDOW TITLES-->
-	<variable name="window_Title.Video">
+	<variable name="window_Title.Skinshortcuts">
+		<value condition="StringCompare(Window.Property(groupname),mainmenu)">$LOCALIZE[31855]</value>
+		<value condition="SubString(Window.Property(groupname),w)">$LOCALIZE[31844]</value>
+		<value condition="!IsEmpty(Window.Property(groupname)">$LOCALIZE[31849]</value>
+	</variable>
+	<variable name="window_Title.Video">		
 		<value condition="IsEmpty(Container.FolderPath)">$LOCALIZE[157]</value>
 		<!--<value condition="SubString(Container.FolderPath,?type=recommendedmovies)">$LOCALIZE[342] [COLOR=Color2]$LOCALIZE[31013][/COLOR]</value>-->
 		<value condition="StringCompare(Container.FolderPath,plugin://service.library.data.provider/)">$LOCALIZE[14022]</value>

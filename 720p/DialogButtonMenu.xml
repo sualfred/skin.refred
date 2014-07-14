@@ -146,7 +146,7 @@
 			<!-- change user -->
 			<control type="button" id="514">
 				<width>352</width>
-				<label>$LOCALIZE[32036]</label>
+				<label>$LOCALIZE[31836]</label>
 				<onclick>Dialog.Close(shutdownmenu)</onclick>
 				<onclick>ActivateWindow(loginscreen)</onclick>
 				<include>dialog_MenuButton</include>

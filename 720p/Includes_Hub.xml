@@ -2,19 +2,19 @@
 <includes>
 	<include name="QuickNavInProgressHub">
         <item id="3">
-	        <label>32038</label>	        
+	        <label>31838</label>	        
             <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recommendedepisodes,return)</onclick>
 		</item>
 	    <item id="4">
-	        <label>32041</label>	        
+	        <label>31841</label>	        
             <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recentepisodes,return)</onclick>
 	    </item>			
 		<item id="1">
-	        <label>32037</label>	        
+	        <label>31837</label>	        
 			<onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recommendedmovies,return)</onclick>
 	    </item>	 
 	    <item id="2">
-	        <label>32040</label>	        
+	        <label>31840</label>	        
             <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recentmovies,return)</onclick>
 	    </item>			   
 	    <item id="5">
@@ -30,16 +30,16 @@
 
     <include name="QuickNavMoviesHub">
         <item id="1">
-	        <label>32020</label>
+	        <label>31820</label>
             <onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 	    </item>
 	    <item id="2">
-	        <label>32021</label>	        
+	        <label>31821</label>	        
             <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recentmovies,return)</onclick>
 	    </item>
 	    
 		<item id="14">
-	        <label>32023</label>	        
+	        <label>31823</label>	        
 			<onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recommendedmovies,return)</onclick>
 	    </item>	    
 	    <item id="3">
@@ -79,15 +79,15 @@
 	
     <include name="QuickNavTvshowsHub">
         <item id="1">
-	        <label>32022</label>
+	        <label>31822</label>
             <onclick>ActivateWindow(Videos,TvShowTitles,return)</onclick>
 	    </item>
 	    <item id="2">
-	        <label>32021</label>	        
+	        <label>31821</label>	        
             <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recentepisodes,return)</onclick>
 	    </item>		
 		<item id="14">
-	        <label>32023</label>	        
+	        <label>31823</label>	        
             <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recommendedepisodes,return)</onclick>
 		</item>
 		<item id="3">
@@ -131,11 +131,11 @@
             <onclick>ActivateWindow(Music,Artists,return)</onclick>
 		</item>
 	    <item id="2">
-	        <label>32021</label>
+	        <label>31821</label>
 			<onclick>ActivateWindow(Music,RecentlyAddedAlbums,return)</onclick>-->
 	    </item>
 		<item id="14">
-	        <label>32035</label>	        
+	        <label>31835</label>	        
             <onclick>ActivateWindow(Music,RecentlyPlayedAlbums,return)</onclick>
 	    </item>	    
 	    <item id="3">

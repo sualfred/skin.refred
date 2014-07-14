@@ -2,8 +2,7 @@
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<onunload>ClearProperty(Fanartgrabber,skinsettings)</onunload>
-	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9110&amp;group=inprogress|movies|tvshows|music|favourites|pictures|yt|settings|power|custom1|custom2|custom3|power|dvd|videos|weather|programs|addons|livetv|search|favouriteswidgets|pictureswidgets|ytwidgets|settingswidgets|powerwidgets|custom1widgets|custom2widgets|custom3widgets|discwidgets|videoswidgets|programswidgets|addonswidgets|pvrwidgets|searchwidgets)</onunload>
+<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9110&amp;group=mainmenu|submenu|pvrwidgets|widgets1|widgets2|widgets3|widgets4|widgets5|widgets6|widgets7|widgets8|widgets9|widgets10)</onunload>
 	<controls>
 		<!--global includes-->
 		<include>global_Background</include>
@@ -25,6 +24,18 @@
 						<onfocus>Skin.SetString(SkinSettings,Home)</onfocus>
 						<onup>19</onup>
 						<onright>SetFocus(100)</onright>
+						<ondown>11</ondown>
+						<include>settings_Menu</include>
+					</control>
+				</control>
+				<!--widgets-->
+				<control type="group">
+					<height>44</height>
+					<control type="button" id="11">
+						<label>$LOCALIZE[31850]</label>
+						<onfocus>Skin.SetString(SkinSettings,Widgets)</onfocus>
+						<onup>10</onup>
+						<onright>SetFocus(100)</onright>
 						<ondown>15</ondown>
 						<include>settings_Menu</include>
 					</control>
@@ -36,7 +47,7 @@
 						<label>$LOCALIZE[31201]</label>
 						<onfocus>Skin.SetString(SkinSettings,Artwork)</onfocus>
 						<onright>600</onright>
-						<onup>10</onup>
+						<onup>11</onup>
 						<ondown>16</ondown>
 						<include>settings_Menu</include>
 					</control>
@@ -121,19 +132,20 @@
 					<control type="button" id="103">
 						<label>$LOCALIZE[31210]</label>
 						<onfocus>Skin.SetString(SubMenu,Video)</onfocus>
-						<onclick>ActivateWindow(61)</onclick>
+						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
+						<!--<onclick>ActivateWindow(61)</onclick>-->
 						<include>settings_Listbutton</include>
 					</control>
 					<!--overwrite backgrounds-->
 					<control type="radiobutton" id="104">
-						<label>$LOCALIZE[32010]</label>
+						<label>$LOCALIZE[31810]</label>
 						<onclick>Skin.ToggleSetting(ownbg.enabled)</onclick>
 						<selected>Skin.HasSetting(ownbg.enabled)</selected>
 						<include>settings_Radiobutton</include>
 					</control>
 					<!--use single image-->
 					<control type="radiobutton" id="105">
-						<label>- $LOCALIZE[32011]</label>
+						<label>- $LOCALIZE[31811]</label>
 						<onclick>Skin.Reset(homesingle.bg)</onclick>
 						<onclick>Skin.Reset(homemulti.bg)</onclick>
 						<onclick>Skin.SetImage(homesingle.bg)</onclick>
@@ -143,7 +155,7 @@
 					</control>
 					<!--use multiimage-->
 					<control type="radiobutton" id="106">
-						<label>- $LOCALIZE[32012]</label>
+						<label>- $LOCALIZE[31812]</label>
 						<onclick>Skin.Reset(homemulti.bg)</onclick>
 						<onclick>Skin.Reset(homesingle.bg)</onclick>
 						<onclick>Skin.SetPath(homemulti.bg)</onclick>
@@ -152,18 +164,76 @@
 						<include>settings_Radiobutton</include>
 					</control>
 					<!--home menu  2-->
-					<control type="radiobutton" id="114">
-						<label>$LOCALIZE[32004]</label>
+					<control type="radiobutton" id="107">
+						<label>$LOCALIZE[31804]</label>
 						<onclick>Skin.ToggleSetting(home.menu2)</onclick>
 						<selected>Skin.HasSetting(home.menu2)</selected>
 						<include>settings_Radiobutton</include>
 					</control>
-					<control type="radiobutton" id="115">
-						<label>- $LOCALIZE[32005]</label>
-						<onclick>Skin.ToggleSetting(widgets.center.enabled)</onclick>
-						<selected>Skin.HasSetting(widgets.center.enabled)</selected>
-						<visible>Skin.HasSetting(widgets.enabled) + Skin.HasSetting(home.menu2)</visible>
-						<include>settings_Radiobutton</include>
+				</control>
+				<!--WIDGETS SCREEN-->
+				<control type="group" id="9002">
+				<visible>Skin.String(SkinSettings,Widgets)</visible>
+					<control type="grouplist" id="100">
+						<width>850</width>
+						<height>598</height>
+						<onleft>9001</onleft>
+						<onright>1000</onright>
+						<onup>100</onup>
+						<ondown>100</ondown>
+						<itemgap>2</itemgap>
+						<pagecontrol>70</pagecontrol>
+						<!--widgets-->
+						<control type="button" id="101">
+							<label>$LOCALIZE[31862] $INFO[Skin.String(widgets1.label),[COLOR Color2]","[/COLOR]]</label>							
+							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=widgets1)</onclick>
+							<include>settings_Listbutton</include>
+						</control>					
+						<control type="button" id="102">
+							<label>$LOCALIZE[31863] $INFO[Skin.String(widgets2.label),[COLOR Color2]","[/COLOR]]</label>							
+							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=widgets2)</onclick>
+							<include>settings_Listbutton</include>
+						</control>
+						<control type="button" id="103">
+							<label>$LOCALIZE[31864] $INFO[Skin.String(widgets3.label),[COLOR Color2]","[/COLOR]]</label>							
+							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=widgets3)</onclick>
+							<include>settings_Listbutton</include>
+						</control>
+						<control type="button" id="104">
+							<label>$LOCALIZE[31865] $INFO[Skin.String(widgets4.label),[COLOR Color2]","[/COLOR]]</label>							
+							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=widgets4)</onclick>
+							<include>settings_Listbutton</include>
+						</control>
+						<control type="button" id="105">
+							<label>$LOCALIZE[31866] $INFO[Skin.String(widgets5.label),[COLOR Color2]","[/COLOR]]</label>							
+							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=widgets5)</onclick>
+							<include>settings_Listbutton</include>
+						</control>
+						<control type="button" id="106">
+							<label>$LOCALIZE[31867] $INFO[Skin.String(widgets6.label),[COLOR Color2]","[/COLOR]]</label>							
+							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=widgets6)</onclick>
+							<include>settings_Listbutton</include>
+						</control>
+						<control type="button" id="107">
+							<label>$LOCALIZE[31868] $INFO[Skin.String(widgets7.label),[COLOR Color2]","[/COLOR]]</label>							
+							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=widgets7)</onclick>
+							<include>settings_Listbutton</include>
+						</control>
+						<control type="button" id="108">
+							<label>$LOCALIZE[31869] $INFO[Skin.String(widgets8.label),[COLOR Color2]","[/COLOR]]</label>							
+							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=widgets8)</onclick>
+							<include>settings_Listbutton</include>
+						</control>
+						<control type="button" id="109">
+							<label>$LOCALIZE[31870] $INFO[Skin.String(widgets9.label),[COLOR Color2]","[/COLOR]]</label>							
+							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=widgets9)</onclick>
+							<include>settings_Listbutton</include>
+						</control>
+						<control type="button" id="110">
+							<label>$LOCALIZE[31871] $INFO[Skin.String(widgets10.label),[COLOR Color2]","[/COLOR]]</label>							
+							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=widgets10)</onclick>
+							<include>settings_Listbutton</include>
+						</control>
 					</control>
 				</control>
 				<!--ARTWORK-->
@@ -352,14 +422,14 @@
 					</control>
 					<!--music scrolling text-->
 					<control type="radiobutton" id="711">
-						<label>$LOCALIZE[32008]</label>
+						<label>$LOCALIZE[31808]</label>
 						<onclick>Skin.ToggleSetting(musictextscroll.enable)</onclick>
 						<selected>Skin.HasSetting(musictextscroll.enable)</selected>
 						<include>settings_Radiobutton</include>
 					</control>
 					<!--hide music fullscreen info-->
 					<control type="radiobutton" id="712">
-						<label>$LOCALIZE[32009]</label>
+						<label>$LOCALIZE[31809]</label>
 						<onclick>Skin.ToggleSetting(hidemusicinfo.enable)</onclick>
 						<selected>Skin.HasSetting(hidemusicinfo.enable)</selected>
 						<include>settings_Radiobutton</include>
@@ -436,7 +506,7 @@
 					<visible>Skin.String(SkinSettings,Other)</visible>
 					<!--glass effect-->
 					<control type="radiobutton" id="904">
-						<label>$LOCALIZE[32018]</label>
+						<label>$LOCALIZE[31818]</label>
 						<onclick>Skin.ToggleSetting(globalGlass.disable)</onclick>
 						<selected>Skin.HasSetting(globalGlass.disable)</selected>
 						<include>settings_Radiobutton</include>

@@ -19,7 +19,7 @@
 			<top>70</top>
 			<width>950</width>
 			<aligny>center</aligny>
-			<label>$LOCALIZE[32028]</label>
+			<label>$LOCALIZE[31828]</label>
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>
@@ -145,7 +145,7 @@
 			<top>70</top>
 			<width>950</width>
 			<aligny>center</aligny>
-			<label>$LOCALIZE[32029]</label>
+			<label>$LOCALIZE[31829]</label>
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>
@@ -271,7 +271,7 @@
 			<top>70</top>
 			<width>950</width>
 			<aligny>center</aligny>
-			<label>$LOCALIZE[32043]</label>
+			<label>$LOCALIZE[31843]</label>
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>
@@ -397,7 +397,7 @@
 			<top>70</top>
 			<width>950</width>
 			<aligny>center</aligny>
-			<label>$LOCALIZE[32030]</label>
+			<label>$LOCALIZE[31830]</label>
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>

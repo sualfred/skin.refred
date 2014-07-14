@@ -1,0 +1,103 @@
+<overrides>
+<!-- window titles -->
+<settingslabel type="main">[COLOR Color2]$LOCALIZE[31857][/COLOR] $LOCALIZE[31855]</settingslabel>
+<settingslabel type="submenu">Pick submenu items for ::MENUNAME::</settingslabel>
+<settingslabel type="reset">Reset all shortcuts back to default</settingslabel>
+<!-- optional shortcuts -->
+<shortcut label="::LOCAL::31013" type="::LOCAL::31013" grouping="common">SetFocus(91413,0)</shortcut>
+<shortcut label="::LOCAL::33060" type="::LOCAL::33060" grouping="common">ActivateWindow(10111)</shortcut>
+<!-- shortcut action overrides -->
+<!-- watchlist hub-->
+<override action="SetFocus(91413,0)">
+	<condition>!Skin.HasSetting(hub.inpgrogress.enabled) + StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)</condition>
+</override>
+<override action="SetFocus(91413,0)">
+	<condition>!Skin.HasSetting(hub.inpgrogress.enabled) + StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)</condition>
+	<action>SetFocus(91513,0)</action>
+</override>
+<override action="SetFocus(91413,0)">
+	<condition>Skin.HasSetting(hub.inpgrogress.enabled)</condition>
+	<action>SetFocus(559)</action>
+</override>
+<override action="SetFocus(91413,0)">
+	<condition>!Skin.HasSetting(hub.inpgrogress.enabled) + !StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies) + !StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)</condition>
+	<action>SetFocus(559)</action>
+</override>
+<!-- movie hub -->
+<override action="ActivateWindow(Videos,MovieTitles,return)">
+	<condition>!Skin.HasSetting(hub.movies.enabled)</condition>
+</override>
+<override action="ActivateWindow(Videos,MovieTitles,return)">
+	<condition>Skin.HasSetting(hub.movies.enabled)</condition>
+	<action>SetFocus(556)</action>
+</override>
+<!-- episodes hub -->
+<override action="ActivateWindow(Videos,TVShowTitles,return)">
+	<condition>!Skin.HasSetting(hub.episodes.enabled)</condition>
+</override>
+<override action="ActivateWindow(Videos,TVShowTitles,return)">
+	<condition>Skin.HasSetting(hub.episodes.enabled)</condition>
+	<action>SetFocus(557)</action>
+</override>
+<!-- music hub -->
+<override action="ActivateWindow(Music)">
+	<condition>!Skin.HasSetting(hub.music.enabled)</condition>
+</override>
+<override action="ActivateWindow(Music)">
+	<condition>Skin.HasSetting(hub.music.enabled)</condition>
+	<action>SetFocus(558)</action>
+</override>
+<!-- icon overrides -->
+<icon labelID="settings">backgrounds/bg/settings.jpg</icon>
+<icon labelID="movies">backgrounds/bg/movies.jpg</icon>
+<icon labelID="tvshows">backgrounds/bg/tvshows.jpg</icon>
+<icon labelID="music">backgrounds/bg/music.jpg</icon>
+<icon labelID="31013">backgrounds/bg/watchlist.jpg</icon>
+<icon labelID="pictures">backgrounds/bg/pictures.jpg</icon>
+<icon labelID="livetv">backgrounds/bg/livetv.jpg</icon>
+<icon labelID="videos">backgrounds/bg/videos.jpg</icon>
+<icon labelID="weather">backgrounds/bg/weather.jpg</icon>
+<icon labelID="programs">backgrounds/bg/programs.jpg</icon>
+<icon labelID="dvd">backgrounds/bg/dvd.jpg</icon>
+<icon labelID="musicvideos">backgrounds/bg/musicvideos.jpg</icon>
+<icon labelID="youtube">backgrounds/bg/yt.jpg</icon>
+<icon labelID="33060">backgrounds/bg/power.jpg</icon>
+<!--own backgrounds -->
+<backgroundBrowse>True</backgroundBrowse>
+<background label="8">backgrounds/bg/weather.jpg</background>
+<background label="342">backgrounds/bg/movies.jpg</background>
+<background label="youtube">backgrounds/bg/yt.jpg</background>
+<background label="20343">backgrounds/bg/tvshows.jpg</background>
+<background label="19180">backgrounds/bg/livetv.jpg</background>
+<background label="3">backgrounds/bg/videos.jpg</background>
+<background label="350">backgrounds/bg/programs.jpg</background>
+<background label="10004">backgrounds/bg/settings.jpg</background>
+<background label="33060">backgrounds/bg/power.jpg</background>
+<background label="1">backgrounds/bg/pictures.jpg</background>
+<background label="31013">backgrounds/bg/watchlist.jpg</background>
+<background label="dvd">backgrounds/bg/dvd.jpg</background>
+<background label="1211">backgrounds/bg/music.jpg</background>
+<background label="20389">backgrounds/bg/musicvideos.jpg</background>
+<!-- available widgets -->
+<widget label="31847">weatherwidget</widget>
+<widget label="31872">inprogressmovies</widget>
+<widget label="31873">inprogressepisodes</widget>
+<widget label="31881">recommendedalbums</widget>
+<widget label="31874">recentmovies</widget>
+<widget label="31875">recentepisodes</widget>
+<widget label="31876">recentalbums</widget>
+<widget label="31878">randommovies</widget>
+<widget label="31879">randomepisodes</widget>
+<widget label="31877">randomalbums</widget>
+<widget label="31862">widgets1</widget>
+<widget label="31863">widgets2</widget>
+<widget label="31864">widgets3</widget>
+<widget label="31865">widgets4</widget>
+<widget label="31866">widgets5</widget>
+<widget label="31867">widgets6</widget>
+<widget label="31868">widgets7</widget>
+<widget label="31869">widgets8</widget>
+<widget label="31870">widgets9</widget>
+<widget label="31871">widgets10</widget>
+<!-- -->
+</overrides>

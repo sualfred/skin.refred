@@ -20,7 +20,7 @@
 		</control>
 		<control type="label">
 			<left>35</left>
-			<label>$LOCALIZE[32055] [COLOR=Color2]$LOCALIZE[32057][/COLOR]</label>
+			<label>$LOCALIZE[31855] [COLOR=Color2]$LOCALIZE[31857][/COLOR]</label>
 			<include>windowTitle</include>
 		</control>
 		<control type="group" id="961">
@@ -233,7 +233,7 @@
 						<include>global_ListScroll</include>
 						<!--hub -->
 						<control type="radiobutton" id="501">
-							<label>$LOCALIZE[32019]</label>
+							<label>$LOCALIZE[31819]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(hub.inprogress.enabled)</onclick>
 							<selected>Skin.HasSetting(hub.inprogress.enabled)</selected>
@@ -241,7 +241,7 @@
 						</control>
 						<!--widget state -->
 						<control type="radiobutton" id="503">
-							<label>$LOCALIZE[32051]</label>
+							<label>$LOCALIZE[31851]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(widgets.inprogress.enabled)</onclick>
 							<selected>Skin.HasSetting(widgets.inprogress.enabled)</selected>
@@ -249,7 +249,7 @@
 						</control>
 						<!--widget type-->
 						<control type="radiobutton" id="504">
-							<label>$LOCALIZE[32045]</label>
+							<label>$LOCALIZE[31845]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(widgets.inprogressmovies.enabled)</onclick>
 							<selected>Skin.HasSetting(widgets.inprogressmovies.enabled)</selected>
@@ -258,7 +258,7 @@
 						</control>
 						<!--submenu items-->
 						<control type="button" id="502">
-							<label>$LOCALIZE[32049]</label>
+							<label>$LOCALIZE[31849]</label>
 							<width>484</width>							
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=inprogress)</onclick>
 							<include>dialog_Radio-alt</include>
@@ -279,7 +279,7 @@
 						<include>global_ListScroll</include>
 						<!--widget state -->
 						<control type="radiobutton" id="501">
-							<label>$LOCALIZE[32051]</label>
+							<label>$LOCALIZE[31851]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(widgets.videos.enabled)</onclick>
 							<selected>Skin.HasSetting(widgets.videos.enabled)</selected>
@@ -287,7 +287,7 @@
 						</control>
 						<!--submenu items-->
 						<control type="button" id="503">
-							<label>$LOCALIZE[32050]</label>
+							<label>$LOCALIZE[31850]</label>
 							<width>484</width>							
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=videoswidgets)</onclick>
 							<include>dialog_Radio-alt</include>
@@ -295,7 +295,7 @@
 						</control>
 						<!--submenu items-->
 						<control type="button" id="502">
-							<label>$LOCALIZE[32049]</label>
+							<label>$LOCALIZE[31849]</label>
 							<width>484</width>							
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=videos)</onclick>
 							<include>dialog_Radio-alt</include>
@@ -336,7 +336,7 @@
 						<visible>Skin.String(Section,Movies)</visible>
 						<!--hub -->
 						<control type="radiobutton" id="501">
-							<label>$LOCALIZE[32019]</label>
+							<label>$LOCALIZE[31819]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(hub.movies.enabled)</onclick>
 							<selected>Skin.HasSetting(hub.movies.enabled)</selected>
@@ -344,7 +344,7 @@
 						</control>
 						<!--widget state -->
 						<control type="radiobutton" id="503">
-							<label>$LOCALIZE[32051]</label>
+							<label>$LOCALIZE[31851]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(widgets.movies.enabled)</onclick>
 							<selected>Skin.HasSetting(widgets.movies.enabled)</selected>
@@ -352,7 +352,7 @@
 						</control>
 						<!--widget type-->
 						<control type="radiobutton" id="504">
-							<label>$LOCALIZE[32007]</label>
+							<label>$LOCALIZE[31807]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(widgets.randommovies.enabled)</onclick>
 							<selected>Skin.HasSetting(widgets.randommovies.enabled)</selected>
@@ -361,7 +361,7 @@
 						</control>
 						<!--submenu items-->
 						<control type="button" id="502">
-							<label>$LOCALIZE[32049]</label>
+							<label>$LOCALIZE[31849]</label>
 							<width>484</width>							
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=movies)</onclick>
 							<include>dialog_Radio-alt</include>
@@ -382,7 +382,7 @@
 						<visible>Skin.String(Section,Shows)</visible>
 						<!--hub -->
 						<control type="radiobutton" id="501">
-							<label>$LOCALIZE[32019]</label>
+							<label>$LOCALIZE[31819]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(hub.episodes.enabled)</onclick>
 							<selected>Skin.HasSetting(hub.episodes.enabled)</selected>
@@ -390,7 +390,7 @@
 						</control>
 						<!--widget state -->
 						<control type="radiobutton" id="503">
-							<label>$LOCALIZE[32051]</label>
+							<label>$LOCALIZE[31851]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(widgets.episodes.enabled)</onclick>
 							<selected>Skin.HasSetting(widgets.episodes.enabled)</selected>
@@ -398,7 +398,7 @@
 						</control>
 						<!--widget type-->
 						<control type="radiobutton" id="504">
-							<label>$LOCALIZE[32006]</label>
+							<label>$LOCALIZE[31806]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(widgets.randomepisodes.enabled)</onclick>
 							<selected>Skin.HasSetting(widgets.randomepisodes.enabled)</selected>
@@ -407,7 +407,7 @@
 						</control>
 						<!--submenu items-->
 						<control type="button" id="502">
-							<label>$LOCALIZE[32049]</label>
+							<label>$LOCALIZE[31849]</label>
 							<width>484</width>							
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=tvshows)</onclick>
 							<include>dialog_Radio-alt</include>
@@ -428,7 +428,7 @@
 						<visible>Skin.String(Section,TV)</visible>
 						<!--widget state -->
 						<control type="radiobutton" id="501">
-							<label>$LOCALIZE[32051]</label>
+							<label>$LOCALIZE[31851]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(widgets.pvr.enabled)</onclick>
 							<selected>Skin.HasSetting(widgets.pvr.enabled)</selected>
@@ -436,7 +436,7 @@
 						</control>
 						<!--widget items-->
 						<control type="button" id="503">
-							<label>$LOCALIZE[32050]</label>
+							<label>$LOCALIZE[31850]</label>
 							<width>484</width>							
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=pvrwidgets)</onclick>
 							<include>dialog_Radio-alt</include>
@@ -444,7 +444,7 @@
 						</control>
 						<!-- recording widget -->
 						<control type="radiobutton" id="502">
-							<label>$LOCALIZE[32017]</label>
+							<label>$LOCALIZE[31817]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(overlay.pvr)</onclick>
 							<selected>Skin.HasSetting(overlay.pvr)</selected>
@@ -452,7 +452,7 @@
 						</control>
 						<!--submenu items-->
 						<control type="button" id="508">
-							<label>$LOCALIZE[32049]</label>
+							<label>$LOCALIZE[31849]</label>
 							<width>484</width>							
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=livetv)</onclick>
 							<include>dialog_Radio-alt</include>
@@ -491,7 +491,7 @@
 						<visible>Skin.String(Section,Music)</visible>
 						<!--hub -->
 						<control type="radiobutton" id="501">
-							<label>$LOCALIZE[32019]</label>
+							<label>$LOCALIZE[31819]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(hub.music.enabled)</onclick>
 							<selected>Skin.HasSetting(hub.music.enabled)</selected>
@@ -499,7 +499,7 @@
 						</control>
 						<!--widget state -->
 						<control type="radiobutton" id="503">
-							<label>$LOCALIZE[32051]</label>
+							<label>$LOCALIZE[31851]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(widgets.music.enabled)</onclick>
 							<selected>Skin.HasSetting(widgets.music.enabled)</selected>
@@ -507,7 +507,7 @@
 						</control>
 						<!--widget type-->
 						<control type="radiobutton" id="504">
-							<label>$LOCALIZE[32013]</label>
+							<label>$LOCALIZE[31813]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(widgets.randommusic.enabled)</onclick>
 							<selected>Skin.HasSetting(widgets.randommusic.enabled)</selected>
@@ -516,7 +516,7 @@
 						</control>
 						<!--submenu items-->
 						<control type="button" id="502">
-							<label>$LOCALIZE[32049]</label>
+							<label>$LOCALIZE[31849]</label>
 							<width>484</width>							
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=music)</onclick>
 							<include>dialog_Radio-alt</include>
@@ -537,7 +537,7 @@
 						<visible>Skin.String(Section,Pictures)</visible>
 						<!--widget state -->
 						<control type="radiobutton" id="501">
-							<label>$LOCALIZE[32051]</label>
+							<label>$LOCALIZE[31851]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(widgets.pictures.enabled)</onclick>
 							<selected>Skin.HasSetting(widgets.pictures.enabled)</selected>
@@ -545,7 +545,7 @@
 						</control>						
 						<!--widgets items-->
 						<control type="button" id="503">
-							<label>$LOCALIZE[32050]</label>
+							<label>$LOCALIZE[31850]</label>
 							<width>484</width>							
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=pictureswidgets)</onclick>
 							<include>dialog_Radio-alt</include>
@@ -553,7 +553,7 @@
 						</control>
 						<!--submenu items-->
 						<control type="button" id="502">
-							<label>$LOCALIZE[32049]</label>
+							<label>$LOCALIZE[31849]</label>
 							<width>484</width>							
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=pictures)</onclick>
 							<include>dialog_Radio-alt</include>
@@ -591,7 +591,7 @@
 						<visible>Skin.String(Section,Addons)</visible>
 						<!--widget state -->
 						<control type="radiobutton" id="501">
-							<label>$LOCALIZE[32051]</label>
+							<label>$LOCALIZE[31851]</label>
 							<width>484</width>
 							<onclick>Skin.ToggleSetting(widgets.addons.enabled)</onclick>
 							<selected>Skin.HasSetting(widgets.addons.enabled)</selected>
@@ -599,7 +599,7 @@
 						</control>						
 						<!--submenu widgets-->
 						<control type="button" id="503">
-							<label>$LOCALIZE[32050]</label>
+							<label>$LOCALIZE[31850]</label>
 							<width>484</width>							
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=addonswidgets)</onclick>
 							<include>dialog_Radio-alt</include>
@@ -607,7 +607,7 @@
 						</control>
 						<!--submenu items-->
 						<control type="button" id="502">
-							<label>$LOCALIZE[32049]</label>
+							<label>$LOCALIZE[31849]</label>
 							<width>484</width>							
 							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=addons)</onclick>
 							<include>dialog_Radio-alt</include>
@@ -647,7 +647,7 @@
 					<visible>Skin.String(Section,System)</visible>
 					<!--widget state -->
 					<control type="radiobutton" id="501">
-						<label>$LOCALIZE[32051]</label>
+						<label>$LOCALIZE[31851]</label>
 						<width>484</width>
 						<onclick>Skin.ToggleSetting(widgets.settings.enabled)</onclick>
 						<selected>Skin.HasSetting(widgets.settings.enabled)</selected>
@@ -655,7 +655,7 @@
 					</control>
 					<!--widgets items-->
 					<control type="button" id="503">
-						<label>$LOCALIZE[32050]</label>
+						<label>$LOCALIZE[31850]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=settingswidgets)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -663,7 +663,7 @@
 					</control>
 					<!--submenu items-->
 					<control type="button" id="502">
-						<label>$LOCALIZE[32049]</label>
+						<label>$LOCALIZE[31849]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=settings)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -702,7 +702,7 @@
 					<visible>Skin.String(Section,Fav)</visible>
 					<!--widget state -->
 					<control type="radiobutton" id="501">
-						<label>$LOCALIZE[32051]</label>
+						<label>$LOCALIZE[31851]</label>
 						<width>484</width>
 						<onclick>Skin.ToggleSetting(widgets.favourites.enabled)</onclick>
 						<selected>Skin.HasSetting(widgets.favourites.enabled)</selected>
@@ -710,7 +710,7 @@
 					</control>
 					<!--widgets items-->
 					<control type="button" id="503">
-						<label>$LOCALIZE[32050]</label>
+						<label>$LOCALIZE[31850]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=favouriteswidgets)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -718,7 +718,7 @@
 					</control>
 					<!--submenu items-->
 					<control type="button" id="502">
-						<label>$LOCALIZE[32049]</label>
+						<label>$LOCALIZE[31849]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=favourites)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -810,14 +810,14 @@
 						<include>dialog_Radio-alt</include>
 					</control><!--submenu items-->
 					<control type="button" id="508">
-						<label>$LOCALIZE[32049]</label>
+						<label>$LOCALIZE[31849]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=custom1)</onclick>
 						<include>dialog_Radio-alt</include>
 					</control>
 					<!--widget state -->
 					<control type="radiobutton" id="509">
-						<label>$LOCALIZE[32051]</label>
+						<label>$LOCALIZE[31851]</label>
 						<width>484</width>
 						<onclick>Skin.ToggleSetting(widgets.custom1.enabled)</onclick>
 						<selected>Skin.HasSetting(widgets.custom1.enabled)</selected>
@@ -825,7 +825,7 @@
 					</control>
 					<!--widgets items-->
 					<control type="button" id="510">
-						<label>$LOCALIZE[32050]</label>
+						<label>$LOCALIZE[31850]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=custom1widgets)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -900,14 +900,14 @@
 						<include>dialog_Radio-alt</include>
 					</control><!--submenu items-->
 					<control type="button" id="508">
-						<label>$LOCALIZE[32049]</label>
+						<label>$LOCALIZE[31849]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=custom2)</onclick>
 						<include>dialog_Radio-alt</include>
 					</control>
 					<!--widget state -->
 					<control type="radiobutton" id="509">
-						<label>$LOCALIZE[32051]</label>
+						<label>$LOCALIZE[31851]</label>
 						<width>484</width>
 						<onclick>Skin.ToggleSetting(widgets.custom2.enabled)</onclick>
 						<selected>Skin.HasSetting(widgets.custom2.enabled)</selected>
@@ -915,7 +915,7 @@
 					</control>					
 					<!--widgets items-->
 					<control type="button" id="510">
-						<label>$LOCALIZE[32050]</label>
+						<label>$LOCALIZE[31850]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=custom2widgets)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -966,7 +966,7 @@
 					<visible>Skin.String(Section,Weather)</visible>
 					<!--weather widget-->
 					<control type="radiobutton" id="501">
-						<label>$LOCALIZE[32047]</label>
+						<label>$LOCALIZE[31847]</label>
 						<width>484</width>					
 						<onclick>Skin.ToggleSetting(widgets.weather.enabled)</onclick>
 						<selected>Skin.HasSetting(widgets.weather.enabled)</selected>
@@ -974,7 +974,7 @@
 					</control>
 					<!--submenu items-->
 					<control type="button" id="502">
-						<label>$LOCALIZE[32049]</label>
+						<label>$LOCALIZE[31849]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=weather)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -1014,7 +1014,7 @@
 					<visible>Skin.String(Section,Disc)</visible>
 					<!--widget state -->
 					<control type="radiobutton" id="501">
-						<label>$LOCALIZE[32051]</label>
+						<label>$LOCALIZE[31851]</label>
 						<width>484</width>
 						<onclick>Skin.ToggleSetting(widgets.disc.enabled)</onclick>
 						<selected>Skin.HasSetting(widgets.disc.enabled)</selected>
@@ -1022,7 +1022,7 @@
 					</control>					
 					<!--widgets items-->
 					<control type="button" id="503">
-						<label>$LOCALIZE[32050]</label>
+						<label>$LOCALIZE[31850]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=discwidgets)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -1030,7 +1030,7 @@
 					</control>
 					<!--submenu items-->
 					<control type="button" id="502">
-						<label>$LOCALIZE[32049]</label>
+						<label>$LOCALIZE[31849]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=dvd)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -1070,7 +1070,7 @@
 					<visible>Skin.String(Section,Search)</visible>
 					<!--widget state -->
 					<control type="radiobutton" id="501">
-						<label>$LOCALIZE[32051]</label>
+						<label>$LOCALIZE[31851]</label>
 						<width>484</width>
 						<onclick>Skin.ToggleSetting(widgets.search.enabled)</onclick>
 						<selected>Skin.HasSetting(widgets.search.enabled)</selected>
@@ -1078,7 +1078,7 @@
 					</control>					
 					<!--widgets items-->
 					<control type="button" id="503">
-						<label>$LOCALIZE[32050]</label>
+						<label>$LOCALIZE[31850]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=searchwidgets)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -1086,7 +1086,7 @@
 					</control>
 					<!--submenu items-->
 					<control type="button" id="502">
-						<label>$LOCALIZE[32049]</label>
+						<label>$LOCALIZE[31849]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=search)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -1125,7 +1125,7 @@
 					<visible>Skin.String(Section,Youtube)</visible>
 					<!--widget state -->
 					<control type="radiobutton" id="501">
-						<label>$LOCALIZE[32051]</label>
+						<label>$LOCALIZE[31851]</label>
 						<width>484</width>
 						<onclick>Skin.ToggleSetting(widgets.yt.enabled)</onclick>
 						<selected>Skin.HasSetting(widgets.yt.enabled)</selected>
@@ -1133,7 +1133,7 @@
 					</control>					
 					<!--widgets items-->
 					<control type="button" id="503">
-						<label>$LOCALIZE[32050]</label>
+						<label>$LOCALIZE[31850]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=ytwidgets)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -1141,7 +1141,7 @@
 					</control>
 					<!--submenu items-->
 					<control type="button" id="502">
-						<label>$LOCALIZE[32049]</label>
+						<label>$LOCALIZE[31849]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=yt)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -1181,7 +1181,7 @@
 					<visible>Skin.String(Section,Power)</visible>
 					<!--widget state -->
 					<control type="radiobutton" id="501">
-						<label>$LOCALIZE[32051]</label>
+						<label>$LOCALIZE[31851]</label>
 						<width>484</width>
 						<onclick>Skin.ToggleSetting(widgets.power.enabled)</onclick>
 						<selected>Skin.HasSetting(widgets.power.enabled)</selected>
@@ -1189,7 +1189,7 @@
 					</control>					
 					<!--widgets items-->
 					<control type="button" id="503">
-						<label>$LOCALIZE[32050]</label>
+						<label>$LOCALIZE[31850]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=powerwidgets)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -1197,7 +1197,7 @@
 					</control>
 					<!--submenu items-->
 					<control type="button" id="502">
-						<label>$LOCALIZE[32049]</label>
+						<label>$LOCALIZE[31849]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=power)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -1237,7 +1237,7 @@
 					<visible>Skin.String(Section,Programs)</visible>
 					<!--widget state -->
 					<control type="radiobutton" id="501">
-						<label>$LOCALIZE[32051]</label>
+						<label>$LOCALIZE[31851]</label>
 						<width>484</width>
 						<onclick>Skin.ToggleSetting(widgets.programs.enabled)</onclick>
 						<selected>Skin.HasSetting(widgets.programs.enabled)</selected>
@@ -1245,7 +1245,7 @@
 					</control>					
 					<!--widgets items-->
 					<control type="button" id="503">
-						<label>$LOCALIZE[32050]</label>
+						<label>$LOCALIZE[31850]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=programswidgets)</onclick>
 						<include>dialog_Radio-alt</include>
@@ -1253,7 +1253,7 @@
 					</control>
 					<!--submenu items-->
 					<control type="button" id="502">
-						<label>$LOCALIZE[32049]</label>
+						<label>$LOCALIZE[31849]</label>
 						<width>484</width>							
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=programs)</onclick>
 						<include>dialog_Radio-alt</include>

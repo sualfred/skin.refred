@@ -230,8 +230,8 @@
 				<!--viewtype options-->
 				<!--leftlist: poster or fanart movies-->
 				<control type="togglebutton" id="108">
-					<label>$LOCALIZE[31120]: $LOCALIZE[32059]</label>
-					<altlabel>$LOCALIZE[31120]: $LOCALIZE[32058]</altlabel>
+					<label>$LOCALIZE[31120]: $LOCALIZE[31859]</label>
+					<altlabel>$LOCALIZE[31120]: $LOCALIZE[31858]</altlabel>
 					<onclick>Skin.ToggleSetting(leftlist.landscape.movies)</onclick>
 					<usealttexture>!Skin.HasSetting(leftlist.landscape.movies)</usealttexture>
 					<include>menu_Button</include>
@@ -239,8 +239,8 @@
 				</control>
 				<!--leftlist: poster or fanart episode-->
 				<control type="togglebutton" id="109">
-					<label>$LOCALIZE[31120]: $LOCALIZE[32059]</label>
-					<altlabel>$LOCALIZE[31120]: $LOCALIZE[32058]</altlabel>
+					<label>$LOCALIZE[31120]: $LOCALIZE[31859]</label>
+					<altlabel>$LOCALIZE[31120]: $LOCALIZE[31858]</altlabel>
 					<onclick>Skin.ToggleSetting(leftlist.landscape.episodes)</onclick>
 					<usealttexture>!Skin.HasSetting(leftlist.landscape.episodes)</usealttexture>
 					<include>menu_Button</include>
@@ -519,7 +519,7 @@
 				</control>
 				<!--thumbnails: sposter or square-->
 				<control type="radiobutton" id="108">
-					<label>$LOCALIZE[32052]</label>
+					<label>$LOCALIZE[31852]</label>
 					<onclick>Skin.ToggleSetting(viewicon.poster)</onclick>
 					<selected>Skin.HasSetting(viewicon.poster)</selected>
 					<include>menu_Button</include>
@@ -528,7 +528,7 @@
 				</control>
 				<!--list: sposter or square-->
 				<control type="radiobutton" id="109">
-					<label>$LOCALIZE[32052]</label>
+					<label>$LOCALIZE[31852]</label>
 					<onclick>Skin.ToggleSetting(viewlist.poster)</onclick>
 					<selected>Skin.HasSetting(viewlist.poster)</selected>
 					<include>menu_Button</include>
@@ -810,7 +810,7 @@
 				<include>menu_ContainerCommons</include>
 				<!--Settings level-->
 				<control type="label" id="19">
-					<label>$LOCALIZE[32048]</label>
+					<label>$LOCALIZE[31848]</label>
 					<include>menu_Header</include>
 				</control>
 				<control type="button" id="20">
