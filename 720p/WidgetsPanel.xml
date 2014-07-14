@@ -3,7 +3,7 @@
 	<include name="widgetspanel">
 		<!-- custom widget 1 -->
 		<control type="group" id="9186">
-			<visible>[Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets1) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets1) + !Player.HasMedia + !Player.HasAudio]</visible>
+			<visible>[StringCompare(Container(9110).ListItem.Property(widget),widgets1) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),widgets1) + !Player.HasMedia + !Player.HasAudio]</visible>
 			<include>fadeinout</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
@@ -34,7 +34,7 @@
 		</control>
 		<!-- custom widget 2 -->
 		<control type="group" id="9186">
-			<visible>[Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets2) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets2) + !Player.HasMedia + !Player.HasAudio]</visible>
+			<visible>[StringCompare(Container(9110).ListItem.Property(widget),widgets2) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),widgets2) + !Player.HasMedia + !Player.HasAudio]</visible>
 			<include>fadeinout</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
@@ -65,7 +65,7 @@
 		</control>
 		<!-- custom widgets3 -->
 		<control type="group" id="9186">
-			<visible>[Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets3) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets3) + !Player.HasMedia + !Player.HasAudio]</visible>
+			<visible>[StringCompare(Container(9110).ListItem.Property(widget),widgets3) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),widgets3) + !Player.HasMedia + !Player.HasAudio]</visible>
 			<include>fadeinout</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
@@ -96,7 +96,7 @@
 		</control>
 		<!-- custom widgets4 -->
 		<control type="group" id="9186">
-			<visible>[Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets4) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets4) + !Player.HasMedia + !Player.HasAudio]</visible>
+			<visible>[StringCompare(Container(9110).ListItem.Property(widget),widgets4) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),widgets4) + !Player.HasMedia + !Player.HasAudio]</visible>
 			<include>fadeinout</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
@@ -127,7 +127,7 @@
 		</control>
 		<!-- custom widgets5 -->
 		<control type="group" id="9186">
-			<visible>[Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets5) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets5) + !Player.HasMedia + !Player.HasAudio]</visible>
+			<visible>[StringCompare(Container(9110).ListItem.Property(widget),widgets5) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),widgets5) + !Player.HasMedia + !Player.HasAudio]</visible>
 			<include>fadeinout</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
@@ -158,7 +158,7 @@
 		</control>
 		<!-- custom widgets6 -->
 		<control type="group" id="9186">
-			<visible>[Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets6) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets6) + !Player.HasMedia + !Player.HasAudio]</visible>
+			<visible>[StringCompare(Container(9110).ListItem.Property(widget),widgets6) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),widgets6) + !Player.HasMedia + !Player.HasAudio]</visible>
 			<include>fadeinout</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
@@ -189,7 +189,7 @@
 		</control>
 		<!-- custom widgets7 -->
 		<control type="group" id="9186">
-			<visible>[Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets7) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets7) + !Player.HasMedia + !Player.HasAudio]</visible>
+			<visible>[StringCompare(Container(9110).ListItem.Property(widget),widgets7) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),widgets7) + !Player.HasMedia + !Player.HasAudio]</visible>
 			<include>fadeinout</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
@@ -220,7 +220,7 @@
 		</control>
 		<!-- custom widgets8 -->
 		<control type="group" id="9186">
-			<visible>[Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets8) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets8) + !Player.HasMedia + !Player.HasAudio]</visible>
+			<visible>[StringCompare(Container(9110).ListItem.Property(widget),widgets8) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),widgets8) + !Player.HasMedia + !Player.HasAudio]</visible>
 			<include>fadeinout</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
@@ -251,7 +251,7 @@
 		</control>
 		<!-- custom widgets9 -->
 		<control type="group" id="9186">
-			<visible>[Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets9) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets9) + !Player.HasMedia + !Player.HasAudio]</visible>
+			<visible>[StringCompare(Container(9110).ListItem.Property(widget),widgets9) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),widgets9) + !Player.HasMedia + !Player.HasAudio]</visible>
 			<include>fadeinout</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
@@ -282,7 +282,7 @@
 		</control>
 		<!-- custom widgets10 -->
 		<control type="group" id="9186">
-			<visible>[Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets10) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(widgets.settings.enabled) + StringCompare(Container(9110).ListItem.Property(widget),widgets10) + !Player.HasMedia + !Player.HasAudio]</visible>
+			<visible>[StringCompare(Container(9110).ListItem.Property(widget),widgets10) + [Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [StringCompare(Container(9110).ListItem.Property(widget),widgets10) + !Player.HasMedia + !Player.HasAudio]</visible>
 			<include>fadeinout</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
