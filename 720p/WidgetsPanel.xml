@@ -4,7 +4,7 @@
 		<!-- custom widget 1 -->
 		<control type="group" id="9186">
 			<visible>[[[Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [!Player.HasMedia + !Player.HasAudio] | Skin.HasSetting(home.menu2)] + [!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus() + !ControlGroup(5565).HasFocus()] + StringCompare(Container(9110).ListItem.Property(widget),widgets1)</visible>
-			<include>fadeinout</include>
+			<include>widgetfade</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
 			<control type="label">
@@ -35,7 +35,7 @@
 		<!-- custom widget 2 -->
 		<control type="group" id="9186">
 			<visible>[[[Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [!Player.HasMedia + !Player.HasAudio] | Skin.HasSetting(home.menu2)] + [!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus() + !ControlGroup(5565).HasFocus()] + StringCompare(Container(9110).ListItem.Property(widget),widgets2)</visible>
-			<include>fadeinout</include>
+			<include>widgetfade</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
 			<control type="label">
@@ -66,7 +66,7 @@
 		<!-- custom widgets3 -->
 		<control type="group" id="9186">
 			<visible>[[[Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [!Player.HasMedia + !Player.HasAudio] | Skin.HasSetting(home.menu2)] + [!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus() + !ControlGroup(5565).HasFocus()] + StringCompare(Container(9110).ListItem.Property(widget),widgets3)</visible>
-			<include>fadeinout</include>
+			<include>widgetfade</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
 			<control type="label">
@@ -97,7 +97,7 @@
 		<!-- custom widgets4 -->
 		<control type="group" id="9186">
 			<visible>[[[Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [!Player.HasMedia + !Player.HasAudio] | Skin.HasSetting(home.menu2)] + [!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus() + !ControlGroup(5565).HasFocus()] + StringCompare(Container(9110).ListItem.Property(widget),widgets4)</visible>
-			<include>fadeinout</include>
+			<include>widgetfade</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
 			<control type="label">
@@ -128,7 +128,7 @@
 		<!-- custom widgets5 -->
 		<control type="group" id="9186">
 			<visible>[[[Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [!Player.HasMedia + !Player.HasAudio] | Skin.HasSetting(home.menu2)] + [!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus() + !ControlGroup(5565).HasFocus()] + StringCompare(Container(9110).ListItem.Property(widget),widgets5)</visible>
-			<include>fadeinout</include>
+			<include>widgetfade</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
 			<control type="label">
@@ -159,7 +159,7 @@
 		<!-- custom widgets6 -->
 		<control type="group" id="9186">
 			<visible>[[[Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [!Player.HasMedia + !Player.HasAudio] | Skin.HasSetting(home.menu2)] + [!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus() + !ControlGroup(5565).HasFocus()] + StringCompare(Container(9110).ListItem.Property(widget),widgets6)</visible>
-			<include>fadeinout</include>
+			<include>widgetfade</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
 			<control type="label">
@@ -190,7 +190,7 @@
 		<!-- custom widgets7 -->
 		<control type="group" id="9186">
 			<visible>[[[Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [!Player.HasMedia + !Player.HasAudio] | Skin.HasSetting(home.menu2)] + [!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus() + !ControlGroup(5565).HasFocus()] + StringCompare(Container(9110).ListItem.Property(widget),widgets7)</visible>
-			<include>fadeinout</include>
+			<include>widgetfade</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
 			<control type="label">
@@ -221,7 +221,7 @@
 		<!-- custom widgets8 -->
 		<control type="group" id="9186">
 			<visible>[[[Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [!Player.HasMedia + !Player.HasAudio] | Skin.HasSetting(home.menu2)] + [!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus() + !ControlGroup(5565).HasFocus()] + StringCompare(Container(9110).ListItem.Property(widget),widgets8)</visible>
-			<include>fadeinout</include>
+			<include>widgetfade</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
 			<control type="label">
@@ -252,7 +252,7 @@
 		<!-- custom widgets9 -->
 		<control type="group" id="9186">
 			<visible>[[[Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [!Player.HasMedia + !Player.HasAudio] | Skin.HasSetting(home.menu2)] + [!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus() + !ControlGroup(5565).HasFocus()] + StringCompare(Container(9110).ListItem.Property(widget),widgets9)</visible>
-			<include>fadeinout</include>
+			<include>widgetfade</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
 			<control type="label">
@@ -283,7 +283,7 @@
 		<!-- custom widgets10 -->
 		<control type="group" id="9186">
 			<visible>[[[Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [!Player.HasMedia + !Player.HasAudio] | Skin.HasSetting(home.menu2)] + [!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus() + !ControlGroup(5565).HasFocus()] + StringCompare(Container(9110).ListItem.Property(widget),widgets10)</visible>
-			<include>fadeinout</include>
+			<include>widgetfade</include>
 			<include>screen_Dimensions</include>
 			<include condition=" Skin.HasSetting(home.menu2)">centerwidgets_Square</include>			
 			<control type="label">
@@ -346,6 +346,7 @@
 				<visible>IntegerGreaterThan(Container(91513).NumItems,0)</visible>
 			</control>
 			<control type="list" id="91513">
+				
 				<top>90</top>
 				<left>100</left>
 				<width>1090</width>
