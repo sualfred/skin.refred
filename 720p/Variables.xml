@@ -394,8 +394,9 @@
 		<value condition="!PVR.IsRecording + PVR.HasNonRecordingTimer">$INFO[Pvr.NextRecordingChannel]</value>
 	</variable>
 	<variable name="rec_ChannelIcon">
-		<value condition="PVR.IsRecording">$INFO[Pvr.NowRecordingChannelIcon]</value>
-		<value condition="!PVR.IsRecording + PVR.HasNonRecordingTimer">$INFO[Pvr.NextRecordingChannelIcon]</value>
+		<value condition="PVR.IsRecording + !IsEmpty(Pvr.NowRecordingChannelIcon)">$INFO[Pvr.NowRecordingChannelIcon]</value>
+		<value condition="!PVR.IsRecording + PVR.HasNonRecordingTimer + !IsEmpty(Pvr.NextRecordingChannelIcon)">$INFO[Pvr.NextRecordingChannelIcon]</value>
+		<value>LiveTV.png</value>
 	</variable>
 	<variable name="rec_Time">
 		<value condition="PVR.IsRecording">$INFO[Pvr.NowRecordingDateTime]</value>
