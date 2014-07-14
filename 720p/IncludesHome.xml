@@ -995,14 +995,14 @@
 	</include>
 	<!-- animations for poster widgets -->
 	<include name="widget_poster_animations">
-		<include>fadeinout</include>		
+		<include>widgetfade</include>		
 		<animation tween="Back" easing="InOut" effect="slide" start="0,-720" end="0,0" time="1000" condition="!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus() + !ControlGroup(5565).HasFocus()">Conditional</animation>
 		<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,-720" time="1000" delay="500" condition="ControlGroup(5562).HasFocus() | ControlGroup(5563).HasFocus() | ControlGroup(5564).HasFocus() | ControlGroup(5565).HasFocus()">Conditional</animation>
 		<include condition="Skin.HasSetting(home.menu2)">widgetslide_Center</include>
 		<include condition="!Skin.HasSetting(home.menu2)">widgetslide</include>	
 	</include>
 	<include name="widget_square_animations">
-		<include>fadeinout</include>			
+		<include>widgetfade</include>			
 		<animation tween="Back" easing="InOut" effect="slide" start="0,-720" end="0,0" time="1000" condition="!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus() + !ControlGroup(5565).HasFocus()">Conditional</animation>
 		<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,-720" time="1000" delay="500" condition="ControlGroup(5562).HasFocus() | ControlGroup(5563).HasFocus() | ControlGroup(5564).HasFocus() | ControlGroup(5565).HasFocus()">Conditional</animation>
 	</include>

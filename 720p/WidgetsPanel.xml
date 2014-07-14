@@ -353,8 +353,8 @@
 				<onback>9110</onback>
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
-				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91411) + !Control.HasFocus(91412) + !Control.HasFocus(91413) + !Control.HasFocus(91511) + !Control.HasFocus(91512) + !Control.HasFocus(91513)</autoscroll>
-				<content>$VAR[widget_listcontent]</content>
+				<autoscroll delay="10000" time="5000" repeat="10000">StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies) + !Control.HasFocus(91513)</autoscroll>
+				<content>$VAR[widget_inprogressmovies]</content>
 				<itemlayout width="109" height="720">
 					<include>poster-nf</include>
 				</itemlayout>
@@ -404,8 +404,8 @@
 				<onback>9110</onback>
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
-				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91411) + !Control.HasFocus(91412) + !Control.HasFocus(91413) + !Control.HasFocus(91511) + !Control.HasFocus(91512) + !Control.HasFocus(91513)</autoscroll>
-				<content>$VAR[widget_listcontent]</content>
+				<autoscroll delay="10000" time="5000" repeat="10000">StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes) + !Control.HasFocus(91413)</autoscroll>
+				<content>$VAR[widget_inprogressepisodes]</content>
 				<itemlayout width="109" height="720">
 					<include>poster-nf</include>
 				</itemlayout>
@@ -454,8 +454,8 @@
 				<ondown>9110</ondown>
 				<onback>9110</onback>
 				<orientation>horizontal</orientation>
-				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91411) + !Control.HasFocus(91412) + !Control.HasFocus(91413) + !Control.HasFocus(91511) + !Control.HasFocus(91512) + !Control.HasFocus(91513)</autoscroll>
-				<content>$VAR[widget_listcontent]</content>
+				<autoscroll delay="10000" time="5000" repeat="10000">StringCompare(Container(9110).ListItem.Property(widget),recentmovies) + !Control.HasFocus(91511)</autoscroll>
+				<content>$VAR[widget_recentmovies]</content>
 				<itemlayout width="109" height="720">
 					<include>poster-nf</include>
 				</itemlayout>
@@ -504,8 +504,8 @@
 				<ondown>9110</ondown>
 				<onback>9110</onback>
 				<orientation>horizontal</orientation>
-				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91411) + !Control.HasFocus(91412) + !Control.HasFocus(91413) + !Control.HasFocus(91511) + !Control.HasFocus(91512) + !Control.HasFocus(91513)</autoscroll>
-				<content>$VAR[widget_listcontent]</content>
+				<autoscroll delay="10000" time="5000" repeat="10000">StringCompare(Container(9110).ListItem.Property(widget),randommovies) + !Control.HasFocus(91512)</autoscroll>
+				<content>$VAR[widget_randommovies]</content>
 				<itemlayout width="109" height="720">
 					<include>poster-nf</include>
 				</itemlayout>
@@ -555,8 +555,8 @@
 				<onback>9110</onback>
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
-				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91411) + !Control.HasFocus(91412) + !Control.HasFocus(91413) + !Control.HasFocus(91511) + !Control.HasFocus(91512) + !Control.HasFocus(91513)</autoscroll>
-				<content>$VAR[widget_listcontent]</content>
+				<autoscroll delay="10000" time="5000" repeat="10000">StringCompare(Container(9110).ListItem.Property(widget),recentepisodes) + !Control.HasFocus(91411)</autoscroll>
+				<content>$VAR[widget_recentepisodes]</content>
 				<itemlayout width="109" height="720">
 					<include>poster-nf</include>
 				</itemlayout>
@@ -606,8 +606,8 @@
 				<onback>9110</onback>
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
-				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91411) + !Control.HasFocus(91412) + !Control.HasFocus(91413) + !Control.HasFocus(91511) + !Control.HasFocus(91512) + !Control.HasFocus(91513)</autoscroll>
-				<content>$VAR[widget_listcontent]</content>
+				<autoscroll delay="10000" time="5000" repeat="10000">StringCompare(Container(9110).ListItem.Property(widget),randomepisodes) + !Control.HasFocus(91412)</autoscroll>
+				<content>$VAR[widget_randomepisodes]</content>
 				<itemlayout width="109" height="720">
 					<include>poster-nf</include>
 				</itemlayout>
@@ -639,8 +639,8 @@
 				<onclick>9110</onclick>
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
-				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91611) + !Control.HasFocus(91612) + !Control.HasFocus(91613)</autoscroll>
-				<content>$VAR[widget_listcontent]</content>
+				<autoscroll delay="10000" time="5000" repeat="10000">StringCompare(Container(9110).ListItem.Property(widget),recentalbums) + !Control.HasFocus(91611)</autoscroll>
+				<content>$VAR[widget_recentalbums]</content>
 				<itemlayout width="109" height="720">
 					<include>square-nf</include>
 				</itemlayout>
@@ -672,8 +672,8 @@
 				<onclick>9110</onclick>
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
-				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91611) + !Control.HasFocus(91612) + !Control.HasFocus(91613)</autoscroll>
-				<content>$VAR[widget_listcontent]</content>
+				<autoscroll delay="10000" time="5000" repeat="10000">StringCompare(Container(9110).ListItem.Property(widget),randomalbums) + !Control.HasFocus(91612)</autoscroll>
+				<content>$VAR[widget_randomalbums]</content>
 				<itemlayout width="109" height="720">
 					<include>square-nf</include>
 				</itemlayout>
@@ -705,8 +705,8 @@
 				<onclick>9110</onclick>
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
-				<autoscroll delay="10000" time="5000" repeat="10000">!Control.HasFocus(91611) + !Control.HasFocus(91612) + !Control.HasFocus(91613)</autoscroll>
-				<content>$VAR[widget_listcontent]</content>
+				<autoscroll delay="10000" time="5000" repeat="10000">StringCompare(Container(9110).ListItem.Property(widget),recommendedalbums) + !Control.HasFocus(91613)</autoscroll>
+				<content>$VAR[widget_recommendedalbums]</content>
 				<itemlayout width="109" height="720">
 					<include>square-nf</include>
 				</itemlayout>
