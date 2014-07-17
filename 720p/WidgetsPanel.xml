@@ -764,7 +764,8 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!Container.Position(9) + !Container.Position(8)</visible>
+						<visible>
+						[Control.HasFocus(91411) + [!Container(91411).Position(9) + !Container(91411).Position(8)]] | [Control.HasFocus(91412) + [!Container(91412).Position(9) + !Container(91412).Position(8)]] | [Control.HasFocus(91413) + [!Container(91413).Position(9) + !Container(91413).Position(8)]] | [Control.HasFocus(91511) + [!Container(91511).Position(9) + !Container(91511).Position(8)]] | [Control.HasFocus(91512) + [!Container(91512).Position(9) + !Container(91512).Position(8)]] | [Control.HasFocus(91513) + [!Container(91513).Position(9) + !Container(91513).Position(8)]]</visible>
 						<control type="label">
 							<posy>150</posy>
 							<width>430</width>
@@ -779,13 +780,13 @@
 							<height>22</height>
 							<font>regular_Small</font>
 							<align>left</align>
-							<info>ListItem.TVShowTitle</info>
+							<info>ListItem.TVShowTitle</info>-->
 							<visible>!IsEmpty(ListItem.TVShowTitle)</visible>
 							<include>fadeinout</include>
 						</control>
 					</control>
 					<control type="group">
-						<visible>Container.Position(9) | Container.Position(8)</visible>
+						<visible>[Control.HasFocus(91411) + [Container(91411).Position(9) | Container(91411).Position(8)]] | [Control.HasFocus(91412) + [Container(91412).Position(9) | Container(91412).Position(8)]] | [Control.HasFocus(91413) + [Container(91413).Position(9) | Container(91413).Position(8)]] | [Control.HasFocus(91511) + [Container(91511).Position(9) | Container(91511).Position(8)]] | [Control.HasFocus(91512) + [Container(91512).Position(9) | Container(91512).Position(8)]] | [Control.HasFocus(91513) + [Container(91513).Position(9) | Container(91513).Position(8)]]</visible>
 						<control type="label">
 							<posx>100</posx>
 							<posy>150</posy>
@@ -874,7 +875,7 @@
 						<font>regular_Small</font>
 						<align>left</align>
 						<info>ListItem.Artist</info>
-						<visible>!Container.Position(9) + !Container.Position(8)</visible>
+						<visible>[Control.HasFocus(91611) + [!Container(91611).Position(9) + !Container(91611).Position(8)]] | [Control.HasFocus(91612) + [!Container(91612).Position(9) + !Container(91612).Position(8)]] | [Control.HasFocus(91613) + [!Container(91613).Position(9) + !Container(91613).Position(8)]]</visible>
 					</control>
 					<control type="label">
 						<posy>123</posy>
@@ -883,7 +884,7 @@
 						<font>regular_Small</font>
 						<align>left</align>
 						<info>ListItem.Label</info>
-						<visible>!Container.Position(9) + !Container.Position(8)</visible>
+						<visible>[Control.HasFocus(91611) + [!Container(91611).Position(9) + !Container(91611).Position(8)]] | [Control.HasFocus(91612) + [!Container(91612).Position(9) + !Container(91612).Position(8)]] | [Control.HasFocus(91613) + [!Container(91613).Position(9) + !Container(91613).Position(8)]]</visible>
 					</control>
 					<control type="label">
 						<posx>100</posx>
@@ -893,7 +894,7 @@
 						<font>regular_Small</font>
 						<align>right</align>
 						<info>ListItem.Artist</info>
-						<visible>Container.Position(9) | Container.Position(8)</visible>
+						<visible>[Control.HasFocus(91611) + [Container(91611).Position(9) | Container(91611).Position(8)]] | [Control.HasFocus(91612) + [Container(91612).Position(9) | Container(91612).Position(8)]] | [Control.HasFocus(91613) + [Container(91613).Position(9) | Container(91613).Position(8)]]</visible>
 					</control>
 					<control type="label">
 						<posx>100</posx>
@@ -903,7 +904,7 @@
 						<font>regular_Small</font>
 						<align>right</align>
 						<info>ListItem.Label</info>
-						<visible>Container.Position(9) | Container.Position(8)</visible>
+						<visible>[Control.HasFocus(91611) + [Container(91611).Position(9) | Container(91611).Position(8)]] | [Control.HasFocus(91612) + [Container(91612).Position(9) | Container(91612).Position(8)]] | [Control.HasFocus(91613) + [Container(91613).Position(9) | Container(91613).Position(8)]]</visible>
 					</control>
 	</include>
 	
