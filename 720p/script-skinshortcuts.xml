@@ -357,8 +357,8 @@
 						<label2>$INFO[Container(211).ListItem.Property(widgetName)]</label2>
 						<include>dialog_ControlCommons</include>
 						<visible>StringCompare(Window.Property("groupname"),mainmenu)</visible>
-					</control>
-					<!--movie hub item-->
+					</control>					
+					<!-- hubs WAITING FOR UPDATE
 					<control type="radiobutton" id="350">
 						<width>550</width>
 						<label>$LOCALIZE[31819]</label>
@@ -367,16 +367,14 @@
 						<include>dialog_Radio-alt</include>
 						<visible>StringCompare(Container(211).ListItem.Property(labelID),movies)</visible>
 					</control>
-					<!--tvshow hub item-->
 					<control type="radiobutton" id="351">
 						<width>550</width>
 						<label>$LOCALIZE[31819]</label>
 						<onclick>Skin.ToggleSetting(hub.episodes.enabled)</onclick>
 						<selected>Skin.HasSetting(hub.episodes.enabled)</selected>
-						<include>dialog_Radio-alt</include>
+						<include>dialog_Radio-alt</include>	
 						<visible>StringCompare(Container(211).ListItem.Property(labelID),tvshows)</visible>
 					</control>
-					<!--music hub item-->
 					<control type="radiobutton" id="352">
 						<width>550</width>
 						<label>$LOCALIZE[31819]</label>
@@ -385,7 +383,6 @@
 						<include>dialog_Radio-alt</include>
 						<visible>StringCompare(Container(211).ListItem.Property(labelID),music)</visible>
 					</control>
-					<!--watchlist hub item-->
 					<control type="radiobutton" id="353">
 						<width>550</width>
 						<label>$LOCALIZE[31819]</label>
@@ -394,7 +391,6 @@
 						<include>dialog_Radio-alt</include>
 						<visible>StringCompare(Container(211).ListItem.Property(labelID),31013)</visible>
 					</control>
-					<!--pvr recording widget item-->
 					<control type="radiobutton" id="354">
 						<width>550</width>
 						<label>$LOCALIZE[31817]</label>
@@ -402,8 +398,8 @@
 						<selected>Skin.HasSetting(pvr.recording.widget)</selected>
 						<include>dialog_Radio-alt</include>
 						<visible>StringCompare(Container(211).ListItem.Property(labelID),livetv)</visible>
-					</control>
-					<!--conditional weather fanart-->
+					</control>-->
+					<!--conditional weather fanart
 					<control type="radiobutton" id="355">
 						<width>550</width>
 						<label>$LOCALIZE[31231]</label>
@@ -421,7 +417,7 @@
 						<enable>Skin.HasSetting(fanart.weather)</enable>
 						<include>dialog_ControlCommons</include>
 						<visible>StringCompare(Container(211).ListItem.Property(labelID),weather) + Skin.HasSetting(fanart.weather)</visible>
-					</control>
+					</control>-->
 				</control>
 		</control>	
 	</controls>

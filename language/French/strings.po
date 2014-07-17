@@ -3,41 +3,43 @@
 # Addon id: skin.refred
 # Addon version: 0.1.0
 # Addon Provider: Sebastian Saenger
+# Translators:
+# vlitkowski <vlitkowski@yahoo.fr>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: skin.refred\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2014-06-05 09:14+0000\n"
-"Last-Translator: sualfred <su4lfred@gmail.com>\n"
-"Language-Team: English (http://www.transifex.com/projects/p/skinrefred/language/en/)\n"
+"PO-Revision-Date: 2014-07-16 06:30+0000\n"
+"Last-Translator: vlitkowski <vlitkowski@yahoo.fr>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/skinrefred/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: HOME
 msgctxt "#31000"
 msgid "Home Menu"
-msgstr "Home Menu"
+msgstr "Accueil"
 
 #: Home Menu
 msgctxt "#31010"
 msgid "New Episodes"
-msgstr "New Episodes"
+msgstr "Nouveaux Episodes"
 
 msgctxt "#31011"
 msgid "New Movies"
-msgstr "New Movies"
+msgstr "Nouveaux Films"
 
 msgctxt "#31012"
 msgid "New Albums"
-msgstr "New Albums"
+msgstr "Nouveaux Albums"
 
 msgctxt "#31013"
 msgid "Watchlist"
-msgstr "Watchlist"
+msgstr "En Cours"
 
 msgctxt "#31014"
 msgid "Live TV"
@@ -45,49 +47,49 @@ msgstr "Live TV"
 
 msgctxt "#31015"
 msgid "Trailers"
-msgstr "Trailers"
+msgstr "Bandes Annonces"
 
 msgctxt "#31016"
 msgid "Recently Played"
-msgstr "Recently Played"
+msgstr "Recemment Joué"
 
 msgctxt "#31017"
 msgid "Recommended"
-msgstr "Recommended"
+msgstr "Recommandé"
 
 #: Home shelf
 msgctxt "#31030"
 msgid "Recommended Movies"
-msgstr "Recommended Movies"
+msgstr "Films Recommandés"
 
 msgctxt "#31031"
 msgid "Recommended Episodes"
-msgstr "Recommended Episodes"
+msgstr "Episodes Recommandés"
 
 msgctxt "#31032"
 msgid "Recommended Albums"
-msgstr "Recommended Albums"
+msgstr "Album Recommandés"
 
 msgctxt "#31033"
 msgid "Showing"
-msgstr "Showing"
+msgstr "Films en cours"
 
 msgctxt "#31034"
 msgid "Now Playing"
-msgstr "Now Playing"
+msgstr "En cours"
 
 msgctxt "#31035"
 msgid "Select tv shows widget source"
-msgstr "Select tv shows widget source"
+msgstr "Selectionner la source du widget Séries TV"
 
 msgctxt "#31036"
 msgid "Select movies widget source"
-msgstr "Select movies widget source"
+msgstr "Selectionner la source du widget Films"
 
 #: Home Customization
 msgctxt "#31050"
 msgid "Enable this section"
-msgstr "Enable this section"
+msgstr "Activer cette section"
 
 msgctxt "#31051"
 msgid "Smart Playlist"
@@ -95,28 +97,28 @@ msgstr "Smart Playlist"
 
 msgctxt "#31052"
 msgid "Select custom item type"
-msgstr "Select custom item type"
+msgstr "Sélectionner le type d'objet"
 
 msgctxt "#31053"
 msgid "Select a folder"
-msgstr "Select a folder"
+msgstr "Selectionner un dossier"
 
 msgctxt "#31054"
 msgid "Select a playlist"
-msgstr "Select a playlist"
+msgstr "Sélectionner une playlist"
 
 msgctxt "#31055"
 msgid "Select an add-on"
-msgstr "Select an add-on"
+msgstr "Selectionner une playlist"
 
 #: MENU / VIEWS
 msgctxt "#31100"
 msgid "Available Views"
-msgstr "Available Views"
+msgstr "Vues disponibles"
 
 msgctxt "#31110"
 msgid "Banners"
-msgstr "Banners"
+msgstr "Bandeaux"
 
 msgctxt "#31111"
 msgid "Gallery"
@@ -128,11 +130,11 @@ msgstr "Slide"
 
 msgctxt "#31113"
 msgid "Thumbnails"
-msgstr "Thumbnails"
+msgstr "Miniatures"
 
 msgctxt "#31114"
 msgid "View"
-msgstr "View"
+msgstr "Vue"
 
 msgctxt "#31120"
 msgid "Layout"
@@ -140,7 +142,7 @@ msgstr "Layout"
 
 msgctxt "#31121"
 msgid "Landscape"
-msgstr "Landscape"
+msgstr "Paysage"
 
 msgctxt "#31122"
 msgid "Portrait"
@@ -148,15 +150,15 @@ msgstr "Portrait"
 
 msgctxt "#31123"
 msgid "Large grid"
-msgstr "Large grid"
+msgstr "Grille Large"
 
 msgctxt "#31124"
 msgid "Small grid"
-msgstr "Small grid"
+msgstr "Grille Petite"
 
 msgctxt "#31125"
 msgid "Fullscreen"
-msgstr "Fullscreen"
+msgstr "Plein Ecran"
 
 msgctxt "#31126"
 msgid "Strip"
@@ -164,200 +166,200 @@ msgstr "Strip"
 
 msgctxt "#31140"
 msgid "Sorting"
-msgstr "Sorting"
+msgstr "Trier"
 
 msgctxt "#31142"
 msgid "Selected"
-msgstr "Selected"
+msgstr "Selectionnés"
 
 msgctxt "#31143"
 msgid "Items"
-msgstr "Items"
+msgstr "Objets"
 
 msgctxt "#31144"
 msgid "By"
-msgstr "By"
+msgstr "Par"
 
 msgctxt "#31145"
 msgid "Genre unknown"
-msgstr "Genre unknown"
+msgstr "Genre Inconnu"
 
 msgctxt "#31146"
 msgid "Date unknown"
-msgstr "Date unknown"
+msgstr "Date Inconnue"
 
 msgctxt "#31147"
 msgid "Unwatched episode"
-msgstr "Unwatched episode"
+msgstr "Epidose non vu"
 
 msgctxt "#31148"
 msgid "Unwatched episodes"
-msgstr "Unwatched episodes"
+msgstr "Episodes non vus"
 
 msgctxt "#31149"
 msgid "Sort by"
-msgstr "Sort by"
+msgstr "Trie par"
 
 msgctxt "#31150"
 msgid "Files mode"
-msgstr "Files mode"
+msgstr "Mode Fichier"
 
 #: SETTINGS
 msgctxt "#31200"
 msgid "Homescreen"
-msgstr "Homescreen"
+msgstr "Accueil"
 
 msgctxt "#31201"
 msgid "Artwork"
-msgstr "Artwork"
+msgstr "Graphisme"
 
 msgctxt "#31202"
 msgid "View settings"
-msgstr "View settings"
+msgstr "Paramètres des vues"
 
 msgctxt "#31203"
 msgid "Other"
-msgstr "Other"
+msgstr "Autres"
 
 msgctxt "#31204"
 msgid "About"
-msgstr "About"
+msgstr "A propos"
 
 msgctxt "#31210"
 msgid "Customize Home menu"
-msgstr "Customize Home menu"
+msgstr "Paramètre le menu d'accueil"
 
 msgctxt "#31211"
 msgid "Enable shelf"
-msgstr "Enable shelf"
+msgstr "Activer Shelf"
 
 msgctxt "#31212"
 msgid "Use single image as background"
-msgstr "Use single image as background"
+msgstr "Utilise une seule image en tant que fond"
 
 msgctxt "#31213"
 msgid "Use a folder of images as background slideshow"
-msgstr "Use a folder of images as background slideshow"
+msgstr "Utilise un dossier d'image en tant que slideshow de fond"
 
 msgctxt "#31214"
 msgid "Use a slideshow of your fanart"
-msgstr "Use a slideshow of your fanart"
+msgstr "Utilise un slideshow à partir des fanart"
 
 msgctxt "#31215"
 msgid "Show now playing video in background"
-msgstr "Show now playing video in background"
+msgstr "Affiche la vidéo en cours dans le fond d'écran"
 
 msgctxt "#31216"
 msgid "Show now playing item in homescreen"
-msgstr "Show now playing item in homescreen"
+msgstr "Affiche les objets en cours de lecture sur l'accueil"
 
 msgctxt "#31217"
 msgid "Show fanart information"
-msgstr "Show fanart information"
+msgstr "Affiche les informations des fanart"
 
 msgctxt "#31218"
 msgid "this will log you out and reload the skin"
-msgstr "this will log you out and reload the skin"
+msgstr "Déconnecter et relancer le skin"
 
 msgctxt "#31230"
 msgid "Enable Global Fanart Background"
-msgstr "Enable Global Fanart Background"
+msgstr "Activer les fanart globaux en fond d'écran"
 
 msgctxt "#31231"
 msgid "Use weather fanart"
-msgstr "Use weather fanart"
+msgstr "Utilise le fanart méteo"
 
 msgctxt "#31232"
 msgid "Set weather fanart path"
-msgstr "Set weather fanart path"
+msgstr "Chemin d'accès aux fanart météo"
 
 msgctxt "#31234"
 msgid "Use fanart in now playing screen"
-msgstr "Use fanart in now playing screen"
+msgstr "Utiliser les fanart dans l'écran en cours"
 
 msgctxt "#31235"
 msgid "Blend visualisation and fanart"
-msgstr "Blend visualisation and fanart"
+msgstr "Mélanger visualisations et fanart"
 
 msgctxt "#31236"
 msgid "Enable logos for tv shows"
-msgstr "Enable logos for tv shows"
+msgstr "Activer les logos pour les Séries TV"
 
 msgctxt "#31237"
 msgid "Enable logos for movies"
-msgstr "Enable logos for movies"
+msgstr "Activer les logos pour les Films"
 
 msgctxt "#31238"
 msgid "Download logos"
-msgstr "Download logos"
+msgstr "Télécharger les logos"
 
 msgctxt "#31239"
 msgid "Enable banners for movies"
-msgstr "Enable banners for movies"
+msgstr "Activer les bandeaux pour les films"
 
 msgctxt "#31240"
 msgid "Download banners"
-msgstr "Download banners"
+msgstr "Télécharger les bandeaux"
 
 msgctxt "#31241"
 msgid "Prefer landscape thumbnails when available"
-msgstr "Prefer landscape thumbnails when available"
+msgstr "Préréfer les miniatures en portrait si disponible"
 
 msgctxt "#31242"
 msgid "Download thumbnails"
-msgstr "Download thumbnails"
+msgstr "Télécharger les miniatures"
 
 msgctxt "#31251"
 msgid "Highlight first letter while scrolling"
-msgstr "Highlight first letter while scrolling"
+msgstr "Surligner la première lettre en déroulant"
 
 msgctxt "#31252"
 msgid "Enable now playing button in options menu"
-msgstr "Enable now playing button in options menu"
+msgstr "Activer le bouton \"lecture en cours\" dans les options de menu"
 
 msgctxt "#31253"
 msgid "Enable media overlays"
-msgstr "Enable media overlays"
+msgstr "Activer l'overlay"
 
 msgctxt "#31254"
 msgid "Show watched indicators for movies"
-msgstr "Show watched indicators for movies"
+msgstr "Montrer l'indicateur Films vus"
 
 msgctxt "#31255"
 msgid "Show watched indicators for TV shows"
-msgstr "Show watched indicators for TV shows"
+msgstr "Montrer l'indicateur Séries TV vues"
 
 msgctxt "#31256"
 msgid "Show watched indicators for episodes"
-msgstr "Show watched indicators for episodes"
+msgstr "Montrer l'indicateur Episodes vus"
 
 msgctxt "#31257"
 msgid "Show watched indicators for video files"
-msgstr "Show watched indicators for video files"
+msgstr "Montrer l'indicateur Vidéos vues"
 
 msgctxt "#31258"
 msgid "Show resumable indicators"
-msgstr "Show resumable indicators"
+msgstr "Montrer l'indicateur de Reprise"
 
 msgctxt "#31259"
 msgid "Disable Next Aired add-on"
-msgstr "Disable Next Aired add-on"
+msgstr "Désactiver l'add-on Next Aired"
 
 msgctxt "#31260"
 msgid "Use GlobalSearch add-on"
-msgstr "Use GlobalSearch add-on"
+msgstr "Utiliser l'add-on GlobalSearch"
 
 msgctxt "#31261"
 msgid "Disable Artist Slideshow add-on"
-msgstr "Disable Artist Slideshow add-on"
+msgstr "Désactiver l'add-on Artist Slideshow"
 
 msgctxt "#31263"
 msgid "Enable virtual keyboard"
-msgstr "Enable virtual keyboard"
+msgstr "Activer le clavier virtuel"
 
 msgctxt "#31264"
 msgid "Enable kiosk mode"
-msgstr "Enable kiosk mode"
+msgstr "Activer le mode kioske"
 
 msgctxt "#31280"
 msgid "Plugin"
@@ -365,72 +367,72 @@ msgstr "Plugin"
 
 msgctxt "#31281"
 msgid "Output"
-msgstr "Output"
+msgstr "Sortie"
 
 msgctxt "#31282"
 msgid "Enable TV Tunes add-on"
-msgstr "Enable TV Tunes add-on"
+msgstr "Activer l'add-on TV Tunes"
 
 msgctxt "#31283"
 msgid "Show current playlist button when playback is stopped"
-msgstr "Show current playlist button when playback is stopped"
+msgstr "Afficher le bouton playlist en cours quand la lecteur est arretée "
 
 #: OSD / PLAYER
 msgctxt "#31300"
 msgid "Fwd 2X"
-msgstr "Fwd 2X"
+msgstr "Fwd 2x"
 
 msgctxt "#31301"
 msgid "Fwd 4X"
-msgstr "Fwd 4X"
+msgstr "Fwd 4x"
 
 msgctxt "#31302"
 msgid "Fwd 8X"
-msgstr "Fwd 8X"
+msgstr "Fwd 8x"
 
 msgctxt "#31303"
 msgid "Fwd 16X"
-msgstr "Fwd 16X"
+msgstr "Fwd 16x"
 
 msgctxt "#31304"
 msgid "Fwd 32X"
-msgstr "Fwd 32X"
+msgstr "Fwd 32x"
 
 msgctxt "#31305"
 msgid "Rwd 2X"
-msgstr "Rwd 2X"
+msgstr "Ret 2x"
 
 msgctxt "#31306"
 msgid "Rwd 4X"
-msgstr "Rwd 4X"
+msgstr "Ret 4x"
 
 msgctxt "#31307"
 msgid "Rwd 8X"
-msgstr "Rwd 8X"
+msgstr "Ret 8x"
 
 msgctxt "#31308"
 msgid "Rwd 16X"
-msgstr "Rwd 16X"
+msgstr "Ret 16x"
 
 msgctxt "#31309"
 msgid "Rwd 32X"
-msgstr "Rwd 32X"
+msgstr "Ret 32x"
 
 msgctxt "#31320"
 msgid "Get subtitles"
-msgstr "Get subtitles"
+msgstr "Obtenir Sous-Titres"
 
 msgctxt "#31321"
 msgid "Disable subtitles"
-msgstr "Disable subtitles"
+msgstr "Désactiver Sous-Titres"
 
 msgctxt "#31322"
 msgid "Get lyrics"
-msgstr "Get lyrics"
+msgstr "Obtenir Paroles"
 
 msgctxt "#31323"
 msgid "Finish Time:"
-msgstr "Finish Time:"
+msgstr "Heure de Fin:"
 
 msgctxt "#31324"
 msgid "2D"
@@ -442,11 +444,11 @@ msgstr "3D"
 
 msgctxt "#31326"
 msgid "3D mode"
-msgstr "3D mode"
+msgstr "Mode 3D"
 
 msgctxt "#31327"
 msgid "Next subtitles"
-msgstr "Next subtitles"
+msgstr "Sous-Titre suivant"
 
 msgctxt "#31328"
 msgid "Playlist"
@@ -455,27 +457,27 @@ msgstr "Playlist"
 #: PVR
 msgctxt "#31400"
 msgid "Available groups"
-msgstr "Available groups"
+msgstr "Groupes Disponibles"
 
 msgctxt "#31401"
 msgid "Add group"
-msgstr "Add group"
+msgstr "Ajouter un Groupe"
 
 msgctxt "#31402"
 msgid "Rename group"
-msgstr "Rename group"
+msgstr "Renommer un Groupe "
 
 msgctxt "#31403"
 msgid "Delete group"
-msgstr "Delete group"
+msgstr "Effacer un Groupe"
 
 msgctxt "#31404"
 msgid "Hidden channels"
-msgstr "Hidden channels"
+msgstr "Chaînes Masquées"
 
 msgctxt "#31405"
 msgid "Apply"
-msgstr "Apply"
+msgstr "Appliquer"
 
 #: MEDIA INFO
 msgctxt "#31500"
@@ -484,11 +486,11 @@ msgstr "Age"
 
 msgctxt "#31501"
 msgid "Last aired on"
-msgstr "Last aired on"
+msgstr "Dernièrement diffusé sur"
 
 msgctxt "#31502"
 msgid "Airs next on"
-msgstr "Airs next on"
+msgstr "Diffusion prochaine sur"
 
 msgctxt "#31503"
 msgid "Status"
@@ -496,57 +498,57 @@ msgstr "Status"
 
 msgctxt "#31520"
 msgid "Change artwork"
-msgstr "Change artwork"
+msgstr "Changer l'image"
 
 msgctxt "#31521"
 msgid "Download TV Tune"
-msgstr "Download TV Tune"
+msgstr "Télécharger TV Tune"
 
 msgctxt "#31522"
 msgid "Teletext"
-msgstr "Teletext"
+msgstr "Télétexte"
 
 #: ADD-ONS
 msgctxt "#31600"
 msgid "Browse all movies in your library"
-msgstr "Browse all movies in your library"
+msgstr "Parcourir tous les films dans la bibliothèque "
 
 msgctxt "#31601"
 msgid "Browse all TV shows in your library"
-msgstr "Browse all TV shows in your library"
+msgstr "Parcourir toutes les Séries TV dans la bibliothèque"
 
 msgctxt "#31602"
 msgid "The 25 most recently added movies"
-msgstr "The 25 most recently added movies"
+msgstr "Les 25 Films les plus récents"
 
 msgctxt "#31603"
 msgid "The 25 most recently added episodes"
-msgstr "The 25 most recently added episodes"
+msgstr "Les 25 Episodes les plus récents"
 
 msgctxt "#31604"
 msgid "New search"
-msgstr "New search"
+msgstr "Nouvelle recherche"
 
 msgctxt "#31605"
 msgid "Currently"
-msgstr "Currently"
+msgstr "En cours"
 
 msgctxt "#31606"
 msgid "TV Guide"
-msgstr "TV Guide"
+msgstr "Guide TV"
 
 msgctxt "#31607"
 msgid "Set default lyrics add-on"
-msgstr "Set default lyrics add-on"
+msgstr "Définir l'add-on de Paroles par défaut"
 
 msgctxt "#31608"
 msgid "Activate lyrics addon"
-msgstr "Activate lyrics addon"
+msgstr "Activer l'add-on de Paroles"
 
 #: VARIABLES / OTHER
 msgctxt "#31700"
 msgid "Repositories"
-msgstr "Repositories"
+msgstr "Repositories "
 
 msgctxt "#31701"
 msgid "Min"
@@ -554,220 +556,220 @@ msgstr "Min"
 
 msgctxt "#31702"
 msgid "Last played on"
-msgstr "Last played on"
+msgstr "Dernièrement joué sur"
 
 msgctxt "#31703"
 msgid "[COLOR=Color2]New[/COLOR] Episodes"
-msgstr "[COLOR=Color2]New[/COLOR] Episodes"
+msgstr "Episodes"
 
 msgctxt "#31704"
 msgid "[COLOR=Color2]New[/COLOR] Movies"
-msgstr "[COLOR=Color2]New[/COLOR] Movies"
+msgstr "Films"
 
 msgctxt "#31705"
 msgid "[COLOR=Color2]Recently[/COLOR] Played"
-msgstr "[COLOR=Color2]Recently[/COLOR] Played"
+msgstr "Joués"
 
 msgctxt "#31706"
 msgid "System [COLOR=Color2]Information[/COLOR]"
-msgstr "System [COLOR=Color2]Information[/COLOR]"
+msgstr "Informations"
 
 msgctxt "#31708"
 msgid "Welcome"
-msgstr "Welcome"
+msgstr "Bienvenue"
 
 msgctxt "#31709"
 msgid "Please log in"
-msgstr "Please log in"
+msgstr "Merci de vous connecter"
 
 msgctxt "#31710"
 msgid "[COLOR=Color2]New[/COLOR] Music Videos"
-msgstr "[COLOR=Color2]New[/COLOR] Music Videos"
+msgstr "Music Videos"
 
 msgctxt "#31711"
 msgid "Searching"
-msgstr "Searching"
+msgstr "Recherche en cours"
 
 msgctxt "#31712"
 msgid "Working"
-msgstr "Working"
+msgstr "En cours de travail"
 
 msgctxt "#31713"
 msgid "Reset all skin settings"
-msgstr "Reset all skin settings"
+msgstr "Reset des paramètres du Skin"
 
 #: new values
 msgctxt "#31800"
 msgid "Unwatched Episodes"
-msgstr "Unwatched Episodes"
+msgstr "Episodes non vus"
 
 msgctxt "#31801"
 msgid "Unwatched Episodes (Total)"
-msgstr "Unwatched Episodes (Total)"
+msgstr "Episodes non vus (Total)"
 
 msgctxt "#31803"
 msgid "Unwatched Movies"
-msgstr "Unwatched Movies"
+msgstr "Films non vus"
 
 msgctxt "#31804"
 msgid "Use classic home menu"
-msgstr "Use classic home menu"
+msgstr "Utiliser le menu d'accueil classic"
 
 msgctxt "#31805"
 msgid "Center widget panel"
-msgstr "Center widget panel"
+msgstr "Centrer le panneau de Widget"
 
 msgctxt "#31806"
 msgid "Use random episodes instead of recently added"
-msgstr "Use random episodes instead of recently added"
+msgstr "Utiliser Episodes aléatoires au lieu d'ajoutés récemment "
 
 msgctxt "#31807"
 msgid "Use random movies instead of recently added"
-msgstr "Use random movies instead of recently added"
+msgstr "Utiliser Films aléatoires au lieu d'ajoutés récemment "
 
 msgctxt "#31808"
 msgid "Show scrolling text while fullscreen music playback"
-msgstr "Show scrolling text while fullscreen music playback"
+msgstr "Afficher le texte déroulant lors de l'affichage musique plein écran"
 
 msgctxt "#31809"
 msgid "Hide music info panels in visualization after a few seconds"
-msgstr "Hide music info panels in visualization after a few seconds"
+msgstr "Cacher le panneau d'information musique après quelques secondes"
 
 msgctxt "#31810"
 msgid "Enable own global background"
-msgstr "Enable own global background"
+msgstr "Activer les fanart globaux en fond d'écran"
 
 msgctxt "#31811"
 msgid "Use a single background image"
-msgstr "Use a single background image"
+msgstr "Utiliser une seule image en tant que fond"
 
 msgctxt "#31812"
 msgid "Define a folder for slideshow"
-msgstr "Define a folder for slideshow"
+msgstr "Utilise un dossier d'image en tant que slideshow de fond"
 
 msgctxt "#31813"
 msgid "Use random albums instead of recently added"
-msgstr "Use random albums instead of recently added"
+msgstr "Utiliser Albums aléatoires au lieu d'ajoutés récemment "
 
 msgctxt "#31814"
 msgid "Recently added music"
-msgstr "Recently added music"
+msgstr "Recemment Joué"
 
 msgctxt "#31815"
 msgid "Use in progress movies only"
-msgstr "Use in progress movies only"
+msgstr "Utiliser Films en cours seulement"
 
 msgctxt "#31816"
 msgid "Use in progress episodes only"
-msgstr "Use in progress episodes only"
+msgstr "Utiliser Episodes en cours seulement"
 
 msgctxt "#31817"
 msgid "Show current/next recording information"
-msgstr "Show current/nnext recording information"
+msgstr "Afficher les informations d'enregistrement en cours/suivant"
 
 msgctxt "#31818"
 msgid "Deactivate glass effect overlays"
-msgstr "Deactivate glass effect overlays"
+msgstr "Désactiver l'effet de superposition glass"
 
 msgctxt "#31819"
 msgid "Enable hub"
-msgstr "Enable hub"
+msgstr "Activer Hub"
 
 msgctxt "#31820"
 msgid "All movies"
-msgstr "All movies"
+msgstr "Tous les films"
 
 msgctxt "#31821"
 msgid "Recently added"
-msgstr "Recently added"
+msgstr "Récemment ajoutés"
 
 msgctxt "#31822"
 msgid "All TV shows"
-msgstr "All TV shows"
+msgstr "Toutes les Séries TV"
 
 msgctxt "#31823"
 msgid "In progress"
-msgstr "In progress"
+msgstr "En cours"
 
 msgctxt "#31824"
 msgid "Next scheduled recording"
-msgstr "Next scheduled recording"
+msgstr "Enregistrement planifié suivant"
 
 msgctxt "#31825"
 msgid "Now recording"
-msgstr "Now recording"
+msgstr "Enregistrement en cours"
 
 msgctxt "#31826"
 msgid "Next recording"
-msgstr "Next recording"
+msgstr "Enregistrement Suivant"
 
 msgctxt "#31827"
 msgid "Recording"
-msgstr "Recording"
+msgstr "Enregistrement"
 
 msgctxt "#31828"
 msgid "Movie Hub"
-msgstr "Movie Hub"
+msgstr "Hub FIlms"
 
 msgctxt "#31829"
 msgid "TV Show Hub"
-msgstr "TV Show Hub"
+msgstr "Hub Séries TV"
 
 msgctxt "#31830"
 msgid "Music Hub"
-msgstr "Music Hub"
+msgstr "Hub Musique"
 
 msgctxt "#31831"
 msgid "Showing"
-msgstr "Showing"
+msgstr "En cours"
 
 msgctxt "#31832"
 msgid "Random"
-msgstr "Random"
+msgstr "Aléatoire"
 
 msgctxt "#31833"
 msgid "Random albums"
-msgstr "Random albums"
+msgstr "Albums Aléatoires"
 
 msgctxt "#31834"
 msgid "Recommended"
-msgstr "Recommended"
+msgstr "Recommandé"
 
 msgctxt "#31835"
 msgid "Recently played"
-msgstr "Recently played"
+msgstr "Recemment Joué"
 
 msgctxt "#31836"
 msgid "Change user"
-msgstr "Change user"
+msgstr "Changer l'utilisateur"
 
 msgctxt "#31837"
 msgid "In progress movies"
-msgstr "In progress movies"
+msgstr "Films en cours"
 
 msgctxt "#31838"
 msgid "In progress episodes"
-msgstr "In progress episodes"
+msgstr "Episodes en cours"
 
 msgctxt "#31839"
 msgid "Recently played albums"
-msgstr "Recently played albums"
+msgstr "Albums Recemment Joués "
 
 msgctxt "#31840"
 msgid "New movies"
-msgstr "New movies"
+msgstr "Nouveaux Films"
 
 msgctxt "#31841"
 msgid "New episodes"
-msgstr "New episodes"
+msgstr "Nouveaux Episodes"
 
 msgctxt "#31842"
 msgid "New albums"
-msgstr "New albums"
+msgstr "Nouveaux Albums"
 
 msgctxt "#31843"
-msgid "Watchlist Hub"
-msgstr "Watchlist Hub"
+msgid "In Progress Hub"
+msgstr "Hub en cours"
 
 msgctxt "#31844"
 msgid "Widgets"
@@ -775,43 +777,43 @@ msgstr "Widgets"
 
 msgctxt "#31845"
 msgid "Use in progress movies instead of episodes"
-msgstr "Use in progress movies instead of episodes"
+msgstr "Utiliser les Films en cours au lieu des Episodes"
 
 msgctxt "#31846"
 msgid "Enable widgets for inprogress/movies/tvshows/music"
-msgstr "Enable widgets for inprogress/movies/tvshows/music"
+msgstr "Activer les wigdets pour les Films/Séries TV/Musiques en cours"
 
 msgctxt "#31847"
 msgid "Weather Widget"
-msgstr "Weather Widget"
+msgstr "Widget Météo"
 
 msgctxt "#31848"
 msgid "Settings Level"
-msgstr "Settings Level"
+msgstr "Niveau de paramètrage "
 
 msgctxt "#31849"
 msgid "Submenu"
-msgstr "Submenu"
+msgstr "Sous-menu"
 
 msgctxt "#31850"
 msgid "Custom widgets"
-msgstr "Custom widgets"
+msgstr "Custom Widgets"
 
 msgctxt "#31851"
 msgid "Enable widgets"
-msgstr "Enable widgets"
+msgstr "Activer widgets"
 
 msgctxt "#31852"
 msgid "Use poster style"
-msgstr "Use poster style"
+msgstr "Utiliser le style poster"
 
 msgctxt "#31853"
 msgid "Add from category:"
-msgstr "Add from category:"
+msgstr "Ajouter à partir de la catégorie:"
 
 msgctxt "#31854"
 msgid "Current used items"
-msgstr "Current used items"
+msgstr "Objets en cours d'utilisation"
 
 msgctxt "#31855"
 msgid "Menu"
@@ -819,11 +821,11 @@ msgstr "Menu"
 
 msgctxt "#31856"
 msgid "Change items"
-msgstr "Change items"
+msgstr "Changer l'objet"
 
 msgctxt "#31857"
 msgid "Edit"
-msgstr "Edit"
+msgstr "Editer"
 
 msgctxt "#31858"
 msgid "Normal"
@@ -831,15 +833,15 @@ msgstr "Normal"
 
 msgctxt "#31859"
 msgid "Plot"
-msgstr "Plot"
+msgstr "Point"
 
 msgctxt "#31860"
 msgid "No recordings scheduled"
-msgstr "No recordings scheduled"
+msgstr "Pas d'enregistrement planifié"
 
 msgctxt "#31861"
 msgid "Watchlist with HUB"
-msgstr "Watchlist with HUB"
+msgstr "En cours avec HUB"
 
 msgctxt "#31862"
 msgid "Custom Widgets 1"
@@ -883,44 +885,44 @@ msgstr "Custom Widgets 10"
 
 msgctxt "#31872"
 msgid "In progress movies"
-msgstr "In progress movies"
+msgstr "Films en cours"
 
 msgctxt "#31873"
 msgid "In progress episodes"
-msgstr "In progress episodes"
+msgstr "Episodes en cours"
 
 msgctxt "#31874"
 msgid "Recently added movies"
-msgstr "Recently added movies"
+msgstr "Films récemment ajoutés"
 
 msgctxt "#31875"
 msgid "Recently added episodes"
-msgstr "Recently added episodes"
+msgstr "Episodes récemment ajoutés"
 
 msgctxt "#31876"
 msgid "Recently added albums"
-msgstr "Recently added albums"
+msgstr "Albums récemment ajoutés"
 
 msgctxt "#31877"
 msgid "Random albums"
-msgstr "Random albums"
+msgstr "Albums Aléatoires"
 
 msgctxt "#31878"
 msgid "Random movies"
-msgstr "Random movies"
+msgstr "Films Aléatoires"
 
 msgctxt "#31879"
 msgid "Random episodes"
-msgstr "Random episodes"
+msgstr "Episodes Alétaoires"
 
 msgctxt "#31880"
 msgid "PVR widget: Next scheduled recording"
-msgstr "PVR widget: Next scheduled recording"
+msgstr "PVR Widget : Prochain enregistrement planifié"
 
 msgctxt "#31881"
 msgid "Recommended albums"
-msgstr "Recommended albums"
+msgstr "Album Recommandés"
 
 msgctxt "#31882"
 msgid "Override widget group label"
-msgstr "Override widget group label"
+msgstr "Override l'équipe du groupe de widget"

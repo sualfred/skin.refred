@@ -28,6 +28,17 @@
 				<include>clock</include>
 				<include>fadeinout</include>
 			</control>
+			<control type="rss" id="1">
+				<top>690</top>
+				<width>1280</width>			  
+				<font>font12</font>
+				<textcolor>Color3</textcolor>
+				<headlinecolor>Color3</headlinecolor>
+				<titlecolor>Color2</titlecolor>
+				<include>fadeinout</include>
+				<visible>[[Control.HasFocus(9110) | Control.HasFocus(9901) | Control.HasFocus(918111) | Control.HasFocus(91611) | Control.HasFocus(91612) | Control.HasFocus(91613)] + Skin.HasSetting(home.menu2)] | [[Control.HasFocus(9110) | Control.HasFocus(918111) | Control.HasFocus(91611) | Control.HasFocus(91612) | Control.HasFocus(91613)] + !Skin.HasSetting(home.menu2)]</visible>			  
+			</control>
+			
 			<!--Menu new-->
 			<control type="group">
 				<posx>0</posx>
