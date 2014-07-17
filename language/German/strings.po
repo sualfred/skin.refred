@@ -3,8 +3,6 @@
 # Addon id: skin.refred
 # Addon version: 0.1.0
 # Addon Provider: Sebastian Saenger
-# Translators: Sebastian Saenger
-# Translators:
 # Translators:
 # sualfred <su4lfred@gmail.com>, 2014
 msgid ""
@@ -12,7 +10,7 @@ msgstr ""
 "Project-Id-Version: skin.refred\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2014-06-05 09:18+0000\n"
+"PO-Revision-Date: 2014-07-17 11:54+0000\n"
 "Last-Translator: sualfred <su4lfred@gmail.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/skinrefred/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -666,8 +664,8 @@ msgid "Use in progress episodes only"
 msgstr "Zeige nur in-progress Episoden"
 
 msgctxt "#31817"
-msgid "Show (scheduled) recording in PVR and Home screen"
-msgstr "Zeige PVR Aufnahme Widget im Home Screen"
+msgid "Show current/next recording information"
+msgstr "Zeige aktuelle/geplante Aufnahme"
 
 msgctxt "#31818"
 msgid "Deactivate glass effect overlays"
@@ -786,5 +784,145 @@ msgid "Enable widgets for inprogress/movies/tvshows/music"
 msgstr "Aktiviere Widgets für Im Gange/Filme/TV Serien/Musik"
 
 msgctxt "#31847"
-msgid "Enable weather widget"
-msgstr "Aktiviere Wetter Widget"
+msgid "Weather Widget"
+msgstr "Wetter Widget"
+
+msgctxt "#31848"
+msgid "Settings Level"
+msgstr "Settings Level"
+
+msgctxt "#31849"
+msgid "Submenu"
+msgstr "Untermenü"
+
+msgctxt "#31850"
+msgid "Custom widgets"
+msgstr "Eigene Widgets"
+
+msgctxt "#31851"
+msgid "Enable widgets"
+msgstr "Aktiviere Widgets"
+
+msgctxt "#31852"
+msgid "Use poster style"
+msgstr "Benutze Poster Stil"
+
+msgctxt "#31853"
+msgid "Add from category:"
+msgstr "Anhand Kategorie hinzufügen:"
+
+msgctxt "#31854"
+msgid "Current used items"
+msgstr "Verwendete Einträge"
+
+msgctxt "#31855"
+msgid "Menu"
+msgstr "Menue"
+
+msgctxt "#31856"
+msgid "Change items"
+msgstr "Aendere Eintraege"
+
+msgctxt "#31857"
+msgid "Edit"
+msgstr "Edit"
+
+msgctxt "#31858"
+msgid "Normal"
+msgstr "Normal"
+
+msgctxt "#31859"
+msgid "Plot"
+msgstr "Plot"
+
+msgctxt "#31860"
+msgid "No recordings scheduled"
+msgstr "Keine Aufnahmen geplant"
+
+msgctxt "#31861"
+msgid "Watchlist with HUB"
+msgstr "Watchlist mit HUB"
+
+msgctxt "#31862"
+msgid "Custom Widgets 1"
+msgstr "Eigene Widgets 1"
+
+msgctxt "#31863"
+msgid "Custom Widgets 2"
+msgstr "Eigene Widgets 2"
+
+msgctxt "#31864"
+msgid "Custom Widgets 3"
+msgstr "Eigene Widgets 3"
+
+msgctxt "#31865"
+msgid "Custom Widgets 4"
+msgstr "Eigene Widgets 4"
+
+msgctxt "#31866"
+msgid "Custom Widgets 5"
+msgstr "Eigene Widgets 5"
+
+msgctxt "#31867"
+msgid "Custom Widgets 6"
+msgstr "Eigene Widgets 6"
+
+msgctxt "#31868"
+msgid "Custom Widgets 7"
+msgstr "Eigene Widgets 7"
+
+msgctxt "#31869"
+msgid "Custom Widgets 8"
+msgstr "Eigene Widgets 8"
+
+msgctxt "#31870"
+msgid "Custom Widgets 9"
+msgstr "Eigene Widgets 9"
+
+msgctxt "#31871"
+msgid "Custom Widgets 10"
+msgstr "Eigene Widgets 10"
+
+msgctxt "#31872"
+msgid "In progress movies"
+msgstr "Filme im Gange"
+
+msgctxt "#31873"
+msgid "In progress episodes"
+msgstr "Episoden im Gange"
+
+msgctxt "#31874"
+msgid "Recently added movies"
+msgstr "Kuerzlich hinzugefuegte Filme"
+
+msgctxt "#31875"
+msgid "Recently added episodes"
+msgstr "Kuerzlich hinzugefuegte Episoden"
+
+msgctxt "#31876"
+msgid "Recently added albums"
+msgstr "Kuerzlich hinzugefuegte Alben"
+
+msgctxt "#31877"
+msgid "Random albums"
+msgstr "Gemischte Alben"
+
+msgctxt "#31878"
+msgid "Random movies"
+msgstr "Gemischte Filme"
+
+msgctxt "#31879"
+msgid "Random episodes"
+msgstr "Gemischte Episoden"
+
+msgctxt "#31880"
+msgid "PVR widget: Next scheduled recording"
+msgstr "PVR Widget: Geplante Aufnahmen"
+
+msgctxt "#31881"
+msgid "Recommended albums"
+msgstr "Empfohlene Alben"
+
+msgctxt "#31882"
+msgid "Override widget group label"
+msgstr "Setze Widgets Bezeichnung"
