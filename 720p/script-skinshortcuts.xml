@@ -358,7 +358,7 @@
 						<include>dialog_ControlCommons</include>
 						<visible>StringCompare(Window.Property("groupname"),mainmenu)</visible>
 					</control>					
-					<!-- hubs WAITING FOR UPDATE
+					<!-- WAITING FOR UPDATE
 					<control type="radiobutton" id="350">
 						<width>550</width>
 						<label>$LOCALIZE[31819]</label>

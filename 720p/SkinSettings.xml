@@ -114,28 +114,28 @@
 					<itemgap>2</itemgap>
 					<pagecontrol>70</pagecontrol>
 					<visible>Skin.String(SkinSettings,Home)</visible>
-					<!--date & time-->
-					<control type="radiobutton" id="101">
-						<label>$LOCALIZE[14063]</label>
-						<onclick>Skin.ToggleSetting(home.time)</onclick>
-						<selected>Skin.HasSetting(home.time)</selected>
-						<include>settings_Radiobutton</include>
-					</control>
-					<!--playing item on home-->
-					<control type="radiobutton" id="102">
-						<label>$LOCALIZE[31216]</label>
-						<onclick>Skin.ToggleSetting(home.nowplaying)</onclick>
-						<selected>Skin.HasSetting(home.nowplaying)</selected>
-						<include>settings_Radiobutton</include>
-					</control>
 					<!--home menu configuration-->
-					<control type="button" id="103">
+					<control type="button" id="101">
 						<label>$LOCALIZE[31210]</label>
 						<onfocus>Skin.SetString(SubMenu,Video)</onfocus>
 						<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
 						<!--<onclick>ActivateWindow(61)</onclick>-->
 						<include>settings_Listbutton</include>
 					</control>
+					<!--date & time-->
+					<control type="radiobutton" id="102">
+						<label>$LOCALIZE[14063]</label>
+						<onclick>Skin.ToggleSetting(home.time)</onclick>
+						<selected>Skin.HasSetting(home.time)</selected>
+						<include>settings_Radiobutton</include>
+					</control>
+					<!--playing item on home-->
+					<control type="radiobutton" id="103">
+						<label>$LOCALIZE[31216]</label>
+						<onclick>Skin.ToggleSetting(home.nowplaying)</onclick>
+						<selected>Skin.HasSetting(home.nowplaying)</selected>
+						<include>settings_Radiobutton</include>
+					</control>					
 					<!--overwrite backgrounds-->
 					<control type="radiobutton" id="104">
 						<label>$LOCALIZE[31810]</label>
@@ -168,6 +168,34 @@
 						<label>$LOCALIZE[31804]</label>
 						<onclick>Skin.ToggleSetting(home.menu2)</onclick>
 						<selected>Skin.HasSetting(home.menu2)</selected>
+						<include>settings_Radiobutton</include>
+					</control>										
+					<!--movie hub item-->
+					<control type="radiobutton" id="108">
+						<label>$LOCALIZE[31828]</label>
+						<onclick>Skin.ToggleSetting(hub.movies.enabled)</onclick>
+						<selected>Skin.HasSetting(hub.movies.enabled)</selected>
+						<include>settings_Radiobutton</include>
+					</control>
+					<!--tvshow hub item-->
+					<control type="radiobutton" id="109">
+						<label>$LOCALIZE[31829]</label>
+						<onclick>Skin.ToggleSetting(hub.episodes.enabled)</onclick>
+						<selected>Skin.HasSetting(hub.episodes.enabled)</selected>
+						<include>settings_Radiobutton</include>
+					</control>
+					<!--music hub item-->
+					<control type="radiobutton" id="110">
+						<label>$LOCALIZE[31830]</label>
+						<onclick>Skin.ToggleSetting(hub.music.enabled)</onclick>
+						<selected>Skin.HasSetting(hub.music.enabled)</selected>
+						<include>settings_Radiobutton</include>
+					</control>
+					<!--watchlist hub item-->
+					<control type="radiobutton" id="111">
+						<label>$LOCALIZE[31843]</label>
+						<onclick>Skin.ToggleSetting(hub.inpgrogress.enabled)</onclick>
+						<selected>Skin.HasSetting(hub.inpgrogress.enabled)</selected>
 						<include>settings_Radiobutton</include>
 					</control>
 				</control>
@@ -610,7 +638,7 @@
 						<include>settings_Listbutton</include>
 					</control>
 					<control type="group">
-						<height>44</height>
+						<height>85</height>
 						<control type="grouplist">
 							<width>283</width>
 							<itemgap>2</itemgap>
@@ -620,14 +648,14 @@
 								<onclick>noop</onclick>
 								<include>settings_Listbutton</include>
 							</control>
-							<!--
+							
 							<control type="button" id="1011">
-								<label>[B]Germany: [/B]Sebastian Saenger</label>
+								<label>[B]French: [/B]Vlitkowski</label>
 								<width>283</width>
 								<onclick>noop</onclick> 
 								<include>settings_Listbutton</include>
 							</control>
-							<control type="button" id="1011">
+							<!--<control type="button" id="1011">
 								<label>[B]Finnish: [/B] </label>
 								<width>283</width>
 								<onclick>noop</onclick> 
@@ -644,13 +672,13 @@
 								<onclick>noop</onclick>
 								<include>settings_Listbutton</include>
 							</control>
-							<!--<control type="button" id="1011">
-								<label>[B]Germany: [/B]Sebastian Saenger</label>
+							<control type="button" id="1011">
+								<label>[B]Spanish: [/B]Masequeira</label>
 								<width>283</width>
 								<onclick>noop</onclick> 
 								<include>settings_Listbutton</include>
 							</control>
-							<control type="button" id="1011">
+							<!--<control type="button" id="1011">
 								<label>[B]Finnish: [/B] </label>
 								<width>283</width>
 								<onclick>noop</onclick> 
