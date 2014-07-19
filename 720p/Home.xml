@@ -4,7 +4,8 @@
 	<allowoverlay>no</allowoverlay>
 	<onload>CancelAlarm(StartupCheck,true)</onload>
 	<onload>AlarmClock(StartupComplete,SetProperty(StartupComplete,true,Home),00:05,silent)</onload>
-	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9110&amp;group=mainmenu|submenu|pvrwidgets|widgets1|widgets2|widgets3|widgets4|widgets5|widgets6|widgets7|widgets8|widgets9|widgets10)</onload>
+	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9110&amp;levels=0&amp;group=mainmenu|widgets1|widgets2|widgets3|widgets4|widgets5|widgets6|widgets7|widgets8|widgets9|widgets10)</onload>
+	
 	<controls>
 		<control type="group">
 			<include>transition_Home</include>
