@@ -765,7 +765,7 @@
 					</control>
 					<control type="group">
 						<visible>
-						[Control.HasFocus(91411) + [!Container(91411).Position(9) + !Container(91411).Position(8)]] | [Control.HasFocus(91412) + [!Container(91412).Position(9) + !Container(91412).Position(8)]] | [Control.HasFocus(91413) + [!Container(91413).Position(9) + !Container(91413).Position(8)]] | [Control.HasFocus(91511) + [!Container(91511).Position(9) + !Container(91511).Position(8)]] | [Control.HasFocus(91512) + [!Container(91512).Position(9) + !Container(91512).Position(8)]] | [Control.HasFocus(91513) + [!Container(91513).Position(9) + !Container(91513).Position(8)]]</visible>
+						[Control.IsVisible(91401) + [!Container(91411).Position(9) + !Container(91411).Position(8)]] | [Control.IsVisible(91402) + [!Container(91412).Position(9) + !Container(91412).Position(8)]] | [Control.IsVisible(91403) + [!Container(91413).Position(9) + !Container(91413).Position(8)]] | [Control.IsVisible(91501) + [!Container(91511).Position(9) + !Container(91511).Position(8)]] | [Control.IsVisible(91502) + [!Container(91512).Position(9) + !Container(91512).Position(8)]] | [Control.IsVisible(91503) + [!Container(91513).Position(9) + !Container(91513).Position(8)]]</visible>
 						<control type="label">
 							<posy>150</posy>
 							<width>430</width>
@@ -786,7 +786,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>[Control.HasFocus(91411) + [Container(91411).Position(9) | Container(91411).Position(8)]] | [Control.HasFocus(91412) + [Container(91412).Position(9) | Container(91412).Position(8)]] | [Control.HasFocus(91413) + [Container(91413).Position(9) | Container(91413).Position(8)]] | [Control.HasFocus(91511) + [Container(91511).Position(9) | Container(91511).Position(8)]] | [Control.HasFocus(91512) + [Container(91512).Position(9) | Container(91512).Position(8)]] | [Control.HasFocus(91513) + [Container(91513).Position(9) | Container(91513).Position(8)]]</visible>
+						<visible>[Control.IsVisible(91401) + [Container(91411).Position(9) | Container(91411).Position(8)]] | [Control.IsVisible(91402) + [Container(91412).Position(9) | Container(91412).Position(8)]] | [Control.IsVisible(91403) + [Container(91413).Position(9) | Container(91413).Position(8)]] | [Control.IsVisible(91501) + [Container(91511).Position(9) | Container(91511).Position(8)]] | [Control.IsVisible(91502) + [Container(91512).Position(9) | Container(91512).Position(8)]] | [Control.IsVisible(91503) + [Container(91513).Position(9) | Container(91513).Position(8)]]</visible>
 						<control type="label">
 							<posx>100</posx>
 							<posy>150</posy>
@@ -875,7 +875,7 @@
 						<font>regular_Small</font>
 						<align>left</align>
 						<info>ListItem.Artist</info>
-						<visible>[Control.HasFocus(91611) + [!Container(91611).Position(9) + !Container(91611).Position(8)]] | [Control.HasFocus(91612) + [!Container(91612).Position(9) + !Container(91612).Position(8)]] | [Control.HasFocus(91613) + [!Container(91613).Position(9) + !Container(91613).Position(8)]]</visible>
+						<visible>[Control.IsVisible(91601) + [!Container(91611).Position(9) + !Container(91611).Position(8)]] | [Control.IsVisible(91602) + [!Container(91612).Position(9) + !Container(91612).Position(8)]] | [Control.IsVisible(91603) + [!Container(91613).Position(9) + !Container(91613).Position(8)]]</visible>
 					</control>
 					<control type="label">
 						<posy>123</posy>
@@ -884,7 +884,7 @@
 						<font>regular_Small</font>
 						<align>left</align>
 						<info>ListItem.Label</info>
-						<visible>[Control.HasFocus(91611) + [!Container(91611).Position(9) + !Container(91611).Position(8)]] | [Control.HasFocus(91612) + [!Container(91612).Position(9) + !Container(91612).Position(8)]] | [Control.HasFocus(91613) + [!Container(91613).Position(9) + !Container(91613).Position(8)]]</visible>
+						<visible>[Control.IsVisible(91601) + [!Container(91611).Position(9) + !Container(91611).Position(8)]] | [Control.IsVisible(91602) + [!Container(91612).Position(9) + !Container(91612).Position(8)]] | [Control.IsVisible(91603) + [!Container(91613).Position(9) + !Container(91613).Position(8)]]</visible>
 					</control>
 					<control type="label">
 						<posx>100</posx>
@@ -894,7 +894,7 @@
 						<font>regular_Small</font>
 						<align>right</align>
 						<info>ListItem.Artist</info>
-						<visible>[Control.HasFocus(91611) + [Container(91611).Position(9) | Container(91611).Position(8)]] | [Control.HasFocus(91612) + [Container(91612).Position(9) | Container(91612).Position(8)]] | [Control.HasFocus(91613) + [Container(91613).Position(9) | Container(91613).Position(8)]]</visible>
+						<visible>[Control.IsVisible(91601) + [Container(91611).Position(9) | Container(91611).Position(8)]] | [Control.IsVisible(91602) + [Container(91612).Position(9) | Container(91612).Position(8)]] | [Control.IsVisible(91603) + [Container(91613).Position(9) | Container(91613).Position(8)]]</visible>
 					</control>
 					<control type="label">
 						<posx>100</posx>
@@ -904,7 +904,7 @@
 						<font>regular_Small</font>
 						<align>right</align>
 						<info>ListItem.Label</info>
-						<visible>[Control.HasFocus(91611) + [Container(91611).Position(9) | Container(91611).Position(8)]] | [Control.HasFocus(91612) + [Container(91612).Position(9) | Container(91612).Position(8)]] | [Control.HasFocus(91613) + [Container(91613).Position(9) | Container(91613).Position(8)]]</visible>
+						<visible>[Control.IsVisible(91601) + [Container(91611).Position(9) | Container(91611).Position(8)]] | [Control.IsVisible(91602) + [Container(91612).Position(9) | Container(91612).Position(8)]] | [Control.IsVisible(91603) + [Container(91613).Position(9) | Container(91613).Position(8)]]</visible>
 					</control>
 	</include>
 	
