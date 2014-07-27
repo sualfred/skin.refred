@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9110&amp;levels=0&amp;group=mainmenu|widgets1|widgets2|widgets3|widgets4|widgets5|widgets6|widgets7|widgets8|widgets9|widgets10)</onunload>
+	<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9110&amp;group=mainmenu|widgets1|widgets2|widgets3|widgets4|widgets5|widgets6|widgets7|widgets8|widgets9|widgets10)</onunload>
 	<controls>
 		<!--global includes-->
 		<include>global_Background</include>

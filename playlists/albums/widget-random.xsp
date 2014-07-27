@@ -3,5 +3,5 @@
     <name>Random</name>
     <match>all</match>
     <limit>10</limit>
-    <order direction="descending">dateadded</order>
+    <order>random</order>
 </smartplaylist>
