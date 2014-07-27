@@ -641,7 +641,7 @@
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">StringCompare(Container(9110).ListItem.Property(widget),recentalbums) + !Control.HasFocus(91611)</autoscroll>
-				<content>$VAR[widget_recentalbums]</content>
+				<content target="music">$VAR[widget_recentalbums]</content>
 				<itemlayout width="109" height="720">
 					<include>square-nf</include>
 				</itemlayout>
@@ -674,7 +674,7 @@
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">StringCompare(Container(9110).ListItem.Property(widget),randomalbums) + !Control.HasFocus(91612)</autoscroll>
-				<content>$VAR[widget_randomalbums]</content>
+				<content target="music">$VAR[widget_randomalbums]</content>
 				<itemlayout width="109" height="720">
 					<include>square-nf</include>
 				</itemlayout>
@@ -707,7 +707,7 @@
 				<orientation>horizontal</orientation>
 				<pagecontrol>25</pagecontrol>
 				<autoscroll delay="10000" time="5000" repeat="10000">StringCompare(Container(9110).ListItem.Property(widget),recommendedalbums) + !Control.HasFocus(91613)</autoscroll>
-				<content>$VAR[widget_recommendedalbums]</content>
+				<content target="music">$VAR[widget_recommendedalbums]</content>
 				<itemlayout width="109" height="720">
 					<include>square-nf</include>
 				</itemlayout>
