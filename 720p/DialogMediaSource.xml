@@ -66,7 +66,7 @@
 			</control>
 			<control type="list" id="10">
 				<top>40</top>
-				<width>572</width>
+				<width>692</width>
 				<height>200</height>
 				<onup>9001</onup>
 				<onleft>-</onleft>
@@ -75,29 +75,31 @@
 				<include>global_ListScroll</include>
 				<itemlayout height="40">
 					<control type="label">
-						<width>543</width>
+						<width>692</width>
 						<info>ListItem.Label</info>
 						<include>dialog_CommonListItem</include>
 					</control>
 				</itemlayout>
 				<focusedlayout height="40">
 					<control type="image">
-						<width>572</width>
+						<width>692</width>
+						<selectedcolor>Focused</selectedcolor>
 						<include>dialog_CommonListFocus</include>
-						<visible>Control.HasFocus(10)</visible>
+						<visible>Control.HasFocus(10) | ControlGroup(9000).HasFocus()</visible>
 					</control>
 					<control type="label">
-						<width>552</width>
+						<width>692</width>
 						<info>ListItem.Label</info>
 						<textcolor>Color4</textcolor>
 						<include>dialog_CommonListItemFocus</include>
-						<visible>!Control.HasFocus(10)</visible>
+						<visible>!Control.HasFocus(10) + !ControlGroup(9000).HasFocus()</visible>
 					</control>
 					<control type="label">
-						<width>552</width>
+						<width>692</width>
 						<info>ListItem.Label</info>
+						<selectedcolor>Focused</selectedcolor>
 						<include>dialog_CommonListItemFocus</include>
-						<visible>Control.HasFocus(10)</visible>
+						<visible>Control.HasFocus(10) | ControlGroup(9000).HasFocus()</visible>
 					</control>
 				</focusedlayout>
 			</control>

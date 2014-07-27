@@ -57,7 +57,7 @@
 					<control type="label">
 						<width>556</width>
 						<label>$INFO[Control.GetLabel(3)]</label>
-						<textcolor>Color1</textcolor>
+						<textcolor>Focused</textcolor>
 						<include>dialog_ControlCommons</include>
 						<visible>Control.HasFocus(3)</visible>
 					</control>
