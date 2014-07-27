@@ -57,47 +57,48 @@
 		<value condition="Skin.HasSetting(backgroundvideo.global) + VideoPlayer.Content(livetv)">base_1play</value>
 	</variable>
 
-<!-- hub -->
-	<variable name="hubcategory">
-		<value condition="Control.IsVisible(5563) + [Container(557).HasFocus(1) | [!Container(557).HasFocus(2) + !Container(557).HasFocus(14)]]">$LOCALIZE[31831]: $LOCALIZE[31832]</value>
-		<value condition="Control.IsVisible(5563) + Container(557).HasFocus(2)">$LOCALIZE[31831]: $LOCALIZE[31821]</value>
-		<value condition="Control.IsVisible(5563) + Container(557).HasFocus(14)">$LOCALIZE[31831]: $LOCALIZE[31823]</value>
-		<value condition="Control.IsVisible(5562) + [Container(556).HasFocus(1) | [!Container(556).HasFocus(2) + !Container(556).HasFocus(14)]]">$LOCALIZE[31831]: $LOCALIZE[31820]</value>
-		<value condition="Control.IsVisible(5562) + Container(556).HasFocus(2)">$LOCALIZE[31831]: $LOCALIZE[31821]</value>
-		<value condition="Control.IsVisible(5562) + Container(556).HasFocus(14)">$LOCALIZE[31831]: $LOCALIZE[31823]</value>
-		<value condition="Control.IsVisible(5564) + [Container(558).HasFocus(1) | [!Container(558).HasFocus(2) + !Container(558).HasFocus(14)]]">$LOCALIZE[31831]: $LOCALIZE[31833]</value>
-		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(2)">$LOCALIZE[31831]: $LOCALIZE[31821]</value>
-		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(14)">$LOCALIZE[31831]: $LOCALIZE[31834]</value>		
-		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(1)">$LOCALIZE[31831]: $LOCALIZE[31837]</value>	
-		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(2)">$LOCALIZE[31831]: $LOCALIZE[31840]</value>	
-		<value condition="Control.IsVisible(5565) + [Container(559).HasFocus(3) | [!Container(559).HasFocus(1) + !Container(559).HasFocus(2) + !Container(559).HasFocus(4)]">$LOCALIZE[31831]: $LOCALIZE[31838]</value>	
-		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(4)">$LOCALIZE[31831]: $LOCALIZE[31841]</value>	
-	</variable>
-	
+<!-- hub -->	
 	<variable name="hubcategoryContent">
+	
 		<!-- episodes -->
-		<value condition="Control.IsVisible(5563) + [Container(557).HasFocus(1) | [!Container(557).HasFocus(2) + !Container(557).HasFocus(14)]]">plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]&limit=10</value>
-		<value condition="Control.IsVisible(5563) + Container(557).HasFocus(2)">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]&limit=10</value>
+		<value condition="Control.IsVisible(5563) + [Container(557).HasFocus(1) | [!Container(557).HasFocus(2) + !Container(557).HasFocus(14) + !Container(557).HasFocus(15)]]">videodb://tvshows/titles/</value>
+		<value condition="Control.IsVisible(5563) + Container(557).HasFocus(2)">videodb://recentlyaddedepisodes/</value>
 		<value condition="Control.IsVisible(5563) + Container(557).HasFocus(14)">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=20</value>
+		<value condition="Control.IsVisible(5563) + Container(557).HasFocus(15)">special://skin/playlists/episodes/lastplayed.xsp</value>
+		
 		<!--movies-->
-		<value condition="Control.IsVisible(5562) + [Container(556).HasFocus(1) | [!Container(556).HasFocus(2) + !Container(556).HasFocus(14)]]">videodb://movies/titles/</value>
-		<value condition="Control.IsVisible(5562) + Container(556).HasFocus(2)">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]</value>
+		<value condition="Control.IsVisible(5562) + [Container(556).HasFocus(1) | [!Container(556).HasFocus(2) + !Container(556).HasFocus(14) + !Container(556).HasFocus(15)]]">videodb://movies/titles/</value>
+		<value condition="Control.IsVisible(5562) + Container(556).HasFocus(2)">videodb://recentlyaddedmovies/</value>
 		<value condition="Control.IsVisible(5562) + Container(556).HasFocus(14)">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]&limit=10</value>
+		<value condition="Control.IsVisible(5562) + Container(556).HasFocus(15)">special://skin/playlists/movies/lastplayed.xsp</value>
+		
 		<!--music-->
-		<value condition="Control.IsVisible(5564) + [Container(558).HasFocus(1) | [!Container(558).HasFocus(2) + !Container(558).HasFocus(14)]]">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]&limit=10</value>
-		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(2)">plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]&limit=20</value>
-		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(14)">plugin://service.library.data.provider?type=recommendedalbums&reload=$INFO[Window.Property(recommendedalbums)]&limit=10</value>		
+		<value condition="Control.IsVisible(5564) + [Container(558).HasFocus(1) | [!Container(558).HasFocus(2) + !Container(558).HasFocus(14) + !Container(558).HasFocus(4) + !Container(558).HasFocus(3) + !Container(558).HasFocus(17)]]">musicdb://artists/</value>
+		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(2)">special://skin/playlists/albums/recent.xsp</value>
+		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(14)">special://skin/playlists/albums/lastplayed.xsp</value>	
+		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(4)">special://skin/playlists/albums/top100.xsp</value>	
+		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(3)">special://skin/playlists/songs/top100.xsp</value>
+		<value condition="Control.IsVisible(5564) + Container(558).HasFocus(17)">special://skin/playlists/songs/random.xsp</value>	
+		
 		<!-- inprogress-->
 		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(1)">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]&limit=10</value>	
-		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(2)">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]&limit=10</value>	
-		<value condition="Control.IsVisible(5565) + [Container(559).HasFocus(3) | [!Container(559).HasFocus(1) + !Container(559).HasFocus(2) + !Container(559).HasFocus(4)]">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=20</value>	
-		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(4)">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]&limit=10</value>	
+		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(2)">videodb://recentlyaddedmovies/</value>	
+		<value condition="Control.IsVisible(5565) + [Container(559).HasFocus(3) | [!Container(559).HasFocus(1) + !Container(559).HasFocus(2) + !Container(559).HasFocus(4) + !Container(559).HasFocus(6) + !Container(559).HasFocus(11)]">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=20</value>	
+		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(4)">videodb://recentlyaddedepisodes/</value>	
+		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(6)">special://skin/playlists/episodes/lastplayed.xsp</value>	
+		<value condition="Control.IsVisible(5565) + Container(559).HasFocus(11)">special://skin/playlists/movies/lastplayed.xsp</value>	
 	</variable>
 	
 	<variable name="hubTitle">
+		<!--movies-->
 		<value condition="Control.IsVisible(5562)">$INFO[Container(5561).ListItem.Label]</value>
+		<!--episodes-->
+		<value condition="Control.IsVisible(5563) + IsEmpty(Container(5571).ListItem.Season)">$INFO[Container(5571).ListItem.Label]</value>
 		<value condition="Control.IsVisible(5563)">[COLOR Color2]$INFO[Container(5571).ListItem.TVShowTitle]:[/COLOR] $INFO[Container(5571).ListItem.Label]</value>
+		<!--music-->
 		<value condition="Control.IsVisible(5564)">[COLOR Color2]$INFO[Container(5581).ListItem.Artist]:[/COLOR] $INFO[Container(5581).ListItem.Label]</value>
+		<value condition="Control.IsVisible(5564)">[COLOR Color2]$INFO[Container(5581).ListItem.Artist]:[/COLOR] $INFO[Container(5581).ListItem.Label]</value>
+		<!--inprogress-->
 		<value condition="Control.IsVisible(5565)">$INFO[Container(5591).ListItem.TVShowTitle,[COLOR Color2],:[/COLOR] ]$INFO[Container(5591).ListItem.Label]</value>
 	</variable>
 	
@@ -115,15 +116,18 @@
 	</variable>
 	
 	<variable name="hubThumb">
-		<value condition="Control.IsVisible(5562)">$INFO[Container(5561).ListItem.Art(fanart)]</value>
-		<value condition="Control.IsVisible(5563)">$INFO[Container(5571).ListItem.Art(fanart)]</value>
-		<value condition="Control.IsVisible(5564)">$INFO[Container(5581).ListItem.Art(fanart)]</value>
-		<value condition="Control.IsVisible(5565)">$INFO[Container(5591).ListItem.Art(fanart)]</value>
+		<value condition="Control.IsVisible(5562) + !IsEmpty(Container(5561).ListItem.Art(fanart))">$INFO[Container(5561).ListItem.Art(fanart)]</value>
+		<value condition="Control.IsVisible(5563) + !IsEmpty(Container(5571).ListItem.Art(fanart))">$INFO[Container(5571).ListItem.Art(fanart)]</value>
+		<value condition="Control.IsVisible(5564) + !IsEmpty(Container(5581).ListItem.Art(fanart))">$INFO[Container(5581).ListItem.Art(fanart)]</value>
+		<value condition="Control.IsVisible(5565) + !IsEmpty(Container(5591).ListItem.Art(fanart))">$INFO[Container(5591).ListItem.Art(fanart)]</value>
+		<value condition="Control.IsVisible(5564)">backgrounds/bg/music.jpg</value>
+		<value>backgrounds/fallback/fallback.jpg</value>
 	</variable>
 		
 	<variable name="hubSub">
 		<value condition="Control.IsVisible(5562)">$INFO[Container(5561).ListItem.Duration,, Min]$INFO[Container(5561).ListItem.Year, • ,]$INFO[Container(5561).ListItem.Genre, • ,]</value>
-		<value condition="Control.IsVisible(5563)">[COLOR Color3]$INFO[Container(5571).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(5571).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(5571).ListItem.Duration, • , Min]$INFO[Container(5571).ListItem.Premiered, • ,][/COLOR]</value>
+		<value condition="Control.IsVisible(5563) + !IsEmpty(Container(5571).ListItem.Season)">[COLOR Color3]$INFO[Container(5571).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(5571).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(5571).ListItem.Duration, • , Min]$INFO[Container(5571).ListItem.Premiered, • ,][/COLOR]</value>
+		<value condition="Control.IsVisible(5563) + IsEmpty(Container(5571).ListItem.Season)">[COLOR Color3]$INFO[Container(5571).ListItem.Episode,, $LOCALIZE[20453] ,]$INFO[Container(5571).ListItem.Duration, • , Min]$INFO[Container(5571).ListItem.Premiered, • ,][/COLOR]</value>
 		<value condition="Control.IsVisible(5564)">[COLOR Color3]$INFO[Container(5581).ListItem.Year,,]$INFO[Container(5581).ListItem.Genre, • ,][/COLOR]</value>	
 		<value condition="Control.IsVisible(5565) + [Container(559).HasFocus(1) | Container(559).HasFocus(2)]">[COLOR Color3]$INFO[Container(5591).ListItem.Year,,]$INFO[Container(5591).ListItem.Genre, • ,][/COLOR]</value>			
 		<value condition="Control.IsVisible(5565) + [!Container(559).HasFocus(1) + !Container(559).HasFocus(2)]">[COLOR Color3]$INFO[Container(5591).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(5591).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(5591).ListItem.Duration, • , Min]$INFO[Container(5591).ListItem.Premiered, • ,][/COLOR]</value>			
@@ -237,25 +241,25 @@
 		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]&limit=10</value>
 	</variable>
 	<variable name="widget_recentmovies">	
-		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">plugin://service.library.data.provider?type=recentmovies&reload=$INFO[Window.Property(recentmovies)]&limit=10</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">special://skin/playlists/movies/widget-recent.xsp</value>
 	</variable>
 	<variable name="widget_recentepisodes">
-		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]&limit=10</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">special://skin/playlists/episodes/widget-recent.xsp</value>
 	</variable>
 	<variable name="widget_randommovies">
-		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">plugin://service.library.data.provider?type=randommovies&reload=$INFO[Window.Property(randommovies)]&limit=10</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">special://skin/playlists/movies/widget-random.xsp</value>
 	</variable>
 	<variable name="widget_randomepisodes">
-		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]&limit=10</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">special://skin/playlists/episodes/widget-random.xsp</value>
 	</variable>
 	<variable name="widget_randomalbums">
-		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomalbums)">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]&limit=10</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomalbums)">special://skin/playlists/albums/widget-random.xsp</value>
 	</variable>
 	<variable name="widget_recommendedalbums">
 		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recommendedalbums)">plugin://service.library.data.provider?type=recommendedalbums&reload=$INFO[Window.Property(recommendedalbums)]&limit=10</value>
 	</variable>
 	<variable name="widget_recentalbums">
-		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentalbums)">plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]&limit=10</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentalbums)">special://skin/playlists/albums/widget-recent.xsp</value>
 	</variable>
 
 <!-- widget detail containers -->
@@ -377,7 +381,7 @@
 		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentmovies)">$INFO[Container(91511).ListItem.Year,, • ]$INFO[Container(91511).ListItem.Duration,, Min • ]$INFO[Container(91511).ListItem.Genre]</value>
 		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randommovies)">$INFO[Container(91512).ListItem.Year,, • ]$INFO[Container(91512).ListItem.Duration,, Min • ]$INFO[Container(91512).ListItem.Genre]</value>
 		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressmovies)">$INFO[Container(91513).ListItem.Year,, • ]$INFO[Container(91513).ListItem.Duration,, Min • ]$INFO[Container(91513).ListItem.Genre]</value>
-		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">[COLOR Color2]$INFO[Container(91611).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(91411).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(91411).ListItem.Duration, • , Min]$INFO[Container(91411).ListItem.Premiered, • ,][/COLOR]</value>
+		<value condition="StringCompare(Container(9110).ListItem.Property(widget),recentepisodes)">[COLOR Color2]$INFO[Container(91411).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(91411).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(91411).ListItem.Duration, • , Min]$INFO[Container(91411).ListItem.Premiered, • ,][/COLOR]</value>
 		<value condition="StringCompare(Container(9110).ListItem.Property(widget),randomepisodes)">[COLOR Color2]$INFO[Container(91412).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(91412).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(91412).ListItem.Duration, • , Min]$INFO[Container(91412).ListItem.Premiered, • ,][/COLOR]</value>
 		<value condition="StringCompare(Container(9110).ListItem.Property(widget),inprogressepisodes)">[COLOR Color2]$INFO[Container(91413).ListItem.Season,$LOCALIZE[20373] ,]$INFO[Container(91413).ListItem.Episode, • $LOCALIZE[20359] ,]$INFO[Container(91413).ListItem.Duration, • , Min]$INFO[Container(91413).ListItem.Premiered, • ,][/COLOR]</value>
 	</variable>
@@ -930,12 +934,16 @@
 	<variable name="window_Title.Video">		
 		<value condition="IsEmpty(Container.FolderPath)">$LOCALIZE[157]</value>
 		<!--<value condition="SubString(Container.FolderPath,?type=recommendedmovies)">$LOCALIZE[342] [COLOR=Color2]$LOCALIZE[31013][/COLOR]</value>-->
+		<value condition="StringCompare(Container.FolderPath,plugin://service.library.data.provider/?type=recommendedepisodes)">$LOCALIZE[575] [COLOR=Color2]$LOCALIZE[342][/COLOR]</value>
+		<value condition="StringCompare(Container.FolderPath,plugin://service.library.data.provider/?type=recommendedmovies)">$LOCALIZE[575] [COLOR=Color2]$LOCALIZE[20360][/COLOR]</value>
 		<value condition="StringCompare(Container.FolderPath,plugin://service.library.data.provider/)">$LOCALIZE[14022]</value>
 		<value condition="StringCompare(Container.FolderPath,videodb://movies/)">$LOCALIZE[342]</value>
 		<value condition="StringCompare(Container.FolderPath,special://skin/playlists/movies/unwatched.xsp)">$LOCALIZE[342] [COLOR=Color2]$LOCALIZE[16101][/COLOR]</value>
 		<value condition="StringCompare(Container.FolderPath,special://skin/playlists/albums/recommended.xsp)">$LOCALIZE[1211] [COLOR=Color2]$LOCALIZE[517][/COLOR]</value>
-		<value condition="StringCompare(Container.FolderPath,special://skin/playlists/movies/inprogress.xsp)">$LOCALIZE[342] [COLOR=Color2]$LOCALIZE[575][/COLOR]</value>
+		<value condition="StringCompare(Container.FolderPath,special://skin/playlists/movies/inprogress.xsp)">$LOCALIZE[342] [COLOR=Color2]$LOCALIZE[575][/COLOR]</value>		
+		<value condition="StringCompare(Container.FolderPath,special://skin/playlists/movies/lastplayed.xsp)">$LOCALIZE[31886] [COLOR=Color2]$LOCALIZE[342][/COLOR]</value>		
 		<value condition="StringCompare(Container.FolderPath,special://skin/playlists/episodes/unwatched.xsp)">$LOCALIZE[20360] [COLOR=Color2]$LOCALIZE[16101][/COLOR]</value>
+		<value condition="StringCompare(Container.FolderPath,special://skin/playlists/episodes/lastplayed.xsp)">$LOCALIZE[31886] [COLOR=Color2]$LOCALIZE[20453][/COLOR]</value>
 		<value condition="StringCompare(Container.FolderName,$LOCALIZE[626])">$LOCALIZE[20343] [COLOR=Color2]$LOCALIZE[575][/COLOR]</value>
 		<value condition="StringCompare(Container.FolderPath,videodb://tvshows/)">$LOCALIZE[20343]</value>
 		<value condition="StringCompare(Container.FolderPath,videodb://musicvideos/)">$LOCALIZE[20389]</value>

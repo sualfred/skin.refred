@@ -7,7 +7,11 @@
 		</item>
 	    <item id="4">
 	        <label>31841</label>	        
-            <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recentepisodes,return)</onclick>
+            <onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
+	    </item>	
+		<item id="6">
+	        <label>31883</label>	        
+            <onclick>ActivateWindow(Videos,special://skin/playlists/episodes/lastplayed.xsp,return)</onclick>
 	    </item>			
 		<item id="1">
 	        <label>31837</label>	        
@@ -15,8 +19,12 @@
 	    </item>	 
 	    <item id="2">
 	        <label>31840</label>	        
-            <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recentmovies,return)</onclick>
-	    </item>			   
+            <onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
+	    </item>
+		<item id="11">
+	        <label>31884</label>	        
+            <onclick>ActivateWindow(Videos,special://skin/playlists/movies/lastplayed.xsp,return)</onclick>
+	    </item>				
 	    <item id="5">
 	        <label>137</label>
             <onclick condition="Skin.HasSetting(search.addon)">RunScript(script.globalsearch,tvshows=true&episodes=true&movies=true)</onclick>
@@ -35,13 +43,16 @@
 	    </item>
 	    <item id="2">
 	        <label>31821</label>	        
-            <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recentmovies,return)</onclick>
-	    </item>
-	    
+            <onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
+	    </item>	    
 		<item id="14">
 	        <label>31823</label>	        
 			<onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recommendedmovies,return)</onclick>
-	    </item>	    
+	    </item>	
+		<item id="15">
+	        <label>31884</label>	        
+            <onclick>ActivateWindow(Videos,special://skin/playlists/movies/lastplayed.xsp,return)</onclick>
+	    </item>		    
 	    <item id="3">
 	        <label>137</label>
             <onclick condition="Skin.HasSetting(search.addon)">RunScript(script.globalsearch,tvshows=true&episodes=true&movies=true)</onclick>
@@ -84,12 +95,16 @@
 	    </item>
 	    <item id="2">
 	        <label>31821</label>	        
-            <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recentepisodes,return)</onclick>
+            <onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
 	    </item>		
 		<item id="14">
 	        <label>31823</label>	        
             <onclick>ActivateWindow(Videos,plugin://service.library.data.provider?type=recommendedepisodes,return)</onclick>
-		</item>
+		</item>			
+		<item id="15">
+	        <label>31883</label>	        
+            <onclick>ActivateWindow(Videos,special://skin/playlists/episodes/lastplayed.xsp,return)</onclick>
+	    </item>	
 		<item id="3">
 	        <label>137</label>
 			<onclick condition="Skin.HasSetting(search.addon)">RunScript(script.globalsearch,tvshows=true&episodes=true&movies=true)</onclick>
@@ -139,13 +154,17 @@
             <onclick>ActivateWindow(Music,RecentlyPlayedAlbums,return)</onclick>
 	    </item>	    
 	    <item id="3">
-            <label>134</label>
-            <onclick>ActivateWindow(Music,Songs,return)</onclick>
+            <label>10504</label>
+            <onclick>ActivateWindow(Music,Top100Songs,return)</onclick>
         </item>	    
 	    <item id="4">
 	        <label>10505</label>
             <onclick>ActivateWindow(Music,Top100Albums,return)</onclick>
 	    </item>	    
+	    <item id="17">
+	        <label>31885</label>
+            <onclick>ActivateWindow(Music,special://skin/playlists/songs/random.xsp,return)</onclick>
+	    </item>	       
 	    <item id="7">
 	        <label>135</label>
             <onclick>ActivateWindow(Music,Genres,return)</onclick>

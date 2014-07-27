@@ -1,11 +1,7 @@
 <overrides>
-<!-- window titles -->
-<settingslabel type="main">[COLOR Color2]$LOCALIZE[31857][/COLOR] $LOCALIZE[31855]</settingslabel>
-<settingslabel type="submenu">Pick submenu items for ::MENUNAME::</settingslabel>
-<settingslabel type="reset">Reset all shortcuts back to default</settingslabel>
 <!-- optional shortcuts -->
-<shortcut label="::LOCAL::31013" type="::LOCAL::31013" grouping="common">SetFocus(91413,0)</shortcut>
-<shortcut label="::LOCAL::33060" type="::LOCAL::33060" grouping="common">ActivateWindow(10111)</shortcut>
+<shortcut label="31013" type="31013" grouping="common">SetFocus(91413,0)</shortcut>
+<shortcut label="33060" type="33060" grouping="common">ActivateWindow(10111)</shortcut>
 <!-- shortcut action overrides -->
 <!-- watchlist hub-->
 <override action="SetFocus(91413,0)">

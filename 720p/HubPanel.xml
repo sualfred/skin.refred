@@ -15,22 +15,11 @@
 		<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,720" time="1000" condition="!ControlGroup(5562).HasFocus()">Hidden</animation>
 		<!-- window title -->
 		<control type="label">
-			<left>840</left>
-			<top>70</top>
-			<width>950</width>
-			<aligny>center</aligny>
-			<label>$LOCALIZE[31828]</label>
-			<font>light_Window</font>
-			<textcolor>Color1</textcolor>
-			<include>transition_WindowTitle</include>
-			<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
-		</control>
-		<control type="label">
 			<left>100</left>
 			<top>70</top>
 			<width>950</width>
 			<aligny>center</aligny>
-			<label>$VAR[hubcategory]</label>
+			<label>$LOCALIZE[31828]</label>
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>
@@ -141,22 +130,11 @@
 		<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,720" time="1000" condition="!ControlGroup(5563).HasFocus()">Hidden</animation>
 		<!-- window title -->
 		<control type="label">
-			<left>840</left>
-			<top>70</top>
-			<width>950</width>
-			<aligny>center</aligny>
-			<label>$LOCALIZE[31829]</label>
-			<font>light_Window</font>
-			<textcolor>Color1</textcolor>
-			<include>transition_WindowTitle</include>
-			<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
-		</control>
-		<control type="label">
 			<left>100</left>
 			<top>70</top>
 			<width>950</width>
 			<aligny>center</aligny>
-			<label>$VAR[hubcategory]</label>
+			<label>$LOCALIZE[31829]</label>
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>
@@ -267,22 +245,11 @@
 		<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,720" time="1000" condition="!ControlGroup(5565).HasFocus()">Hidden</animation>
 		<!-- window title -->
 		<control type="label">
-			<left>840</left>
-			<top>70</top>
-			<width>950</width>
-			<aligny>center</aligny>
-			<label>$LOCALIZE[31843]</label>
-			<font>light_Window</font>
-			<textcolor>Color1</textcolor>
-			<include>transition_WindowTitle</include>
-			<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
-		</control>
-		<control type="label">
 			<left>100</left>
 			<top>70</top>
 			<width>950</width>
 			<aligny>center</aligny>
-			<label>$VAR[hubcategory]</label>
+			<label>$LOCALIZE[31843]</label>
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>
@@ -393,22 +360,11 @@
 		<animation tween="Back" easing="InOut" effect="slide" start="0,0" end="0,720" time="1000" condition="!ControlGroup(5564).HasFocus()">Hidden</animation>
 		<!-- window title -->
 		<control type="label">
-			<left>840</left>
-			<top>70</top>
-			<width>950</width>
-			<aligny>center</aligny>
-			<label>$LOCALIZE[31830]</label>
-			<font>light_Window</font>
-			<textcolor>Color1</textcolor>
-			<include>transition_WindowTitle</include>
-			<visible>!Window.IsActive(script-globalsearch-main.xml)</visible>
-		</control>
-		<control type="label">
 			<left>100</left>
 			<top>70</top>
 			<width>950</width>
 			<aligny>center</aligny>
-			<label>$VAR[hubcategory]</label>
+			<label>$LOCALIZE[31830]</label>
 			<font>light_Window</font>
 			<textcolor>Color1</textcolor>
 			<include>transition_WindowTitle</include>

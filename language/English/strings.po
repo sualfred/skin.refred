@@ -924,3 +924,19 @@ msgstr "Recommended albums"
 msgctxt "#31882"
 msgid "Override widget group label"
 msgstr "Override widget group label"
+
+msgctxt "#31883"
+msgid "Recently played episodes"
+msgstr "Recently played episodes"
+
+msgctxt "#31884"
+msgid "Recently played movies"
+msgstr "Recently played movies"
+
+msgctxt "#31885"
+msgid "Shuffle songs"
+msgstr "Shuffle songs"
+
+msgctxt "#31886"
+msgid "Recently played"
+msgstr "Recently played"
