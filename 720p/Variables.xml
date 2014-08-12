@@ -389,10 +389,10 @@
 		
 <!--widget season episode format-->
     <variable name="widget_episodenr">
-        <value condition="IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Season,[COLOR Color2]S,[/COLOR]]$INFO[ListItem.Episode,[COLOR Color2]E,[/COLOR] ]$INFO[ListItem.Label]</value>
-        <value condition="!IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Season,[COLOR Color2]S0,[/COLOR]]$INFO[ListItem.Episode,[COLOR Color2]E,[/COLOR] ]$INFO[ListItem.Label]</value>
-        <value condition="IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Season,[COLOR Color2]S,[/COLOR]]$INFO[ListItem.Episode,[COLOR Color2]E0,[/COLOR] ]$INFO[ListItem.Label]</value>
-        <value condition="!IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Season,[COLOR Color2]S0,[/COLOR]]$INFO[ListItem.Episode,[COLOR Color2]E0,[/COLOR] ]$INFO[ListItem.Label]</value>
+        <value condition="IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Season,[COLOR Color2]S,[/COLOR]]$INFO[ListItem.Episode,[COLOR Color2]E,[/COLOR] ]$INFO[ListItem.Title]</value>
+        <value condition="!IntegerGreaterThan(ListItem.Season,9) + IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Season,[COLOR Color2]S0,[/COLOR]]$INFO[ListItem.Episode,[COLOR Color2]E,[/COLOR] ]$INFO[ListItem.Title]</value>
+        <value condition="IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Season,[COLOR Color2]S,[/COLOR]]$INFO[ListItem.Episode,[COLOR Color2]E0,[/COLOR] ]$INFO[ListItem.Title]</value>
+        <value condition="!IntegerGreaterThan(ListItem.Season,9) + !IntegerGreaterThan(ListItem.Episode,9)">$INFO[ListItem.Season,[COLOR Color2]S0,[/COLOR]]$INFO[ListItem.Episode,[COLOR Color2]E0,[/COLOR] ]$INFO[ListItem.Title]</value>
     </variable>
 	
 <!--MENU-->
