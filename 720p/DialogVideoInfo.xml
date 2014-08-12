@@ -30,8 +30,7 @@
 						<height>720</height>
 						<texture background="true">overlays/cover_overlay.png</texture>
 						<aspectratio>scale</aspectratio>
-						<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
-						<include>global_Glass</include>
+						<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Skin.HasSetting(globalGlass.disable)</visible>
 					</control>
 				</control>
 				<control type="image">
@@ -389,6 +388,18 @@
 							<label>$LOCALIZE[20410]</label>
 							<onclick>SendClick(2003,11)</onclick>
 							<onleft>8004</onleft>
+							<onright>8006</onright>
+							<include>column_Button</include>
+						</control>
+					</control>
+					<!--search youtube trailer-->
+					<control type="group">
+						<width>125</width>
+						<control type="button" id="8006">
+							<label>$LOCALIZE[31887]</label>
+							<onclick>Dialog.Close(2003)</onclick>
+							<onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Title],return)</onclick>
+							<onleft>8005</onleft>
 							<onright>8007</onright>
 							<include>column_Button</include>
 						</control>
@@ -401,7 +412,7 @@
 							<label>$LOCALIZE[16106]</label>
 							<onclick>ActivateWindow(62)</onclick>
 							<include>column_Button</include>
-							<onleft>8005</onleft>
+							<onleft>8006</onleft>
 							<onright>8008</onright>
 						</control>
 					</control>

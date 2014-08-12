@@ -940,3 +940,11 @@ msgstr "Shuffle songs"
 msgctxt "#31886"
 msgid "Recently played"
 msgstr "Recently played"
+
+msgctxt "#31887"
+msgid "YouTube"
+msgstr "YouTube"
+
+msgctxt "#31888"
+msgid "Get video"
+msgstr "Get video"

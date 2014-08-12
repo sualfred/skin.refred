@@ -249,8 +249,20 @@
 							<label>$LOCALIZE[182]</label>
 							<onclick>SendClick(2001,5)</onclick>
 							<onleft>8001</onleft>
-							<onright>8007</onright>
+							<onright>8005</onright>
 							<ondown>50</ondown>
+							<include>column_Button</include>
+						</control>
+					</control>
+					<!--search youtube by artist-->
+					<control type="group">
+						<width>125</width>
+						<control type="button" id="8005">
+							<label>$LOCALIZE[31887]</label>
+							<onclick>Dialog.Close(2001)</onclick>
+							<onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Artist],return)</onclick>
+							<onleft>8002</onleft>
+							<onright>8007</onright>
 							<include>column_Button</include>
 						</control>
 					</control>
@@ -262,7 +274,7 @@
 							<label>$LOCALIZE[16106]</label>
 							<onclick>ActivateWindow(62)</onclick>
 							<include>column_Button</include>
-							<onleft>8002</onleft>
+							<onleft>8005</onleft>
 							<onright>8001</onright>
 						</control>
 					</control>
