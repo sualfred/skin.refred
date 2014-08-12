@@ -8,6 +8,13 @@
 		<top>70</top>
 	</coordinates>
 	<controls>
+		<control type="image">
+			<left>-225</left>
+			<top>-70</top>
+			<include>screen_Dimensions</include>
+			<texture colordiffuse="base_1">overlays/base_color.png</texture>
+			<include>transition_Dialog</include>
+		</control>
 		<control type="group">
 			<visible>!Window.IsActive(yesnodialog) + !Window.IsActive(addonsettings)</visible>
 			<control type="image">
