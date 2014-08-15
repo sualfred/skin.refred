@@ -198,6 +198,13 @@
 						<selected>Skin.HasSetting(hub.inpgrogress.enabled)</selected>
 						<include>settings_Radiobutton</include>
 					</control>
+					<!--pvr recording widget-->
+					<control type="radiobutton" id="112">
+						<label>$LOCALIZE[31880]</label>
+						<onclick>Skin.ToggleSetting(widgets.pvr.enabled)</onclick>
+						<selected>Skin.HasSetting(widgets.pvr.enabled)</selected>
+						<include>settings_Radiobutton</include>
+					</control>
 				</control>
 				<!--WIDGETS SCREEN-->
 				<control type="group" id="9002">
