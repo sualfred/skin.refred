@@ -446,8 +446,8 @@
 		<value condition="Window.IsActive(fullscreenvideo)">$LOCALIZE[31323] $INFO[Player.FinishTime]</value>
 	</variable>
 	<variable name="toast_PVRrec">		
-		<value condition="Skin.HasSetting(overlay.pvr) + PVR.HasNonRecordingTimer">$LOCALIZE[31826]: $INFO[Pvr.NextRecordingChannel,, • ]$INFO[Pvr.NextRecordingTitle]</value>
-		<value condition="Skin.HasSetting(overlay.pvr) + PVR.IsRecording">$LOCALIZE[31827]: $INFO[Pvr.NowRecordingChannel,, • ]$INFO[Pvr.NowRecordingTitle]</value>	
+		<value condition="PVR.HasNonRecordingTimer">$LOCALIZE[31826]: $INFO[Pvr.NextRecordingChannel,, • ]$INFO[Pvr.NextRecordingTitle]</value>
+		<value condition="PVR.IsRecording">$LOCALIZE[31827]: $INFO[Pvr.NowRecordingChannel,, • ]$INFO[Pvr.NowRecordingTitle]</value>	
 	</variable>
 	<variable name="toast_Video">
 		<value condition="VideoPlayer.Content(livetv)">$LOCALIZE[209]$INFO[VideoPlayer.NextTitle,: ]</value>

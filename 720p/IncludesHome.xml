@@ -27,7 +27,7 @@
 				<visible>!Skin.HasSetting(ownbg.enabled) | [IsEmpty(Skin.String(homesingle.bg)) + IsEmpty(Skin.String(homemulti.bg))]</visible>
 				<control type="image">
 					<texture background="true">$VAR[menu_backgrounds]</texture>
-					<visible>![StringCompare(Container(9110).ListItem.Property(labelID),weather) + Skin.HasSetting(fanart.weather) + !IsEmpty(Skin.String(fanart.weather.path)) + !SubString(Container(9110).ListItem.Property(background),\,Right) + !SubString(Container(9110).ListItem.Property(background),/,Right)</visible>
+					<visible>![StringCompare(Container(9110).ListItem.Property(defaultID),weather) + Skin.HasSetting(fanart.weather) + !IsEmpty(Skin.String(fanart.weather.path)) + !SubString(Container(9110).ListItem.Property(background),\,Right) + !SubString(Container(9110).ListItem.Property(background),/,Right)</visible>
 					<fadetime>1000</fadetime>
 					<include>transition_Content</include>					
 				</control>
@@ -51,7 +51,7 @@
 					<randomize>true</randomize>
 					<loop>yes</loop>
 					<include>transition_Content</include>
-					<visible>StringCompare(Container(9110).ListItem.Property(labelID),weather) + Skin.HasSetting(fanart.weather) + !IsEmpty(Skin.String(fanart.weather.path))</visible>
+					<visible>StringCompare(Container(9110).ListItem.Property(defaultID),weather) + Skin.HasSetting(fanart.weather) + !IsEmpty(Skin.String(fanart.weather.path))</visible>
 				</control>
 			</control>
 			<!-- background livetv -->
@@ -1097,7 +1097,7 @@
 	<include name="home_weather">
 		<control type="group">
 			<visible>[[[Player.HasMedia | Player.HasAudio] + !Skin.HasSetting(home.nowplaying)] | [!Player.HasMedia + !Player.HasAudio] | Skin.HasSetting(home.menu2)] + [!ControlGroup(5562).HasFocus() + !ControlGroup(5563).HasFocus() + !ControlGroup(5564).HasFocus() + !ControlGroup(5565).HasFocus()] + StringCompare(Container(9110).ListItem.Property(widget),weatherwidget)</visible>
-			<animation effect="slide" start="0,0" end="0,170" condition="[[[Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(pvr.recording.widget) + StringCompare(Container(9110).ListItem.Property(labelID),livetv)] + Skin.HasSetting(home.menu2)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,170" condition="[[[Player.HasMedia | Player.HasAudio] + Skin.HasSetting(home.nowplaying)] | [Skin.HasSetting(pvr.recording.widget) + StringCompare(Container(9110).ListItem.Property(defaultID),livetv)] + Skin.HasSetting(home.menu2)">Conditional</animation>
 			<include>playnowfade</include>
 			<control type="label">
 				<posx>100</posx>
