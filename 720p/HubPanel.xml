@@ -452,7 +452,7 @@
 			<onright>558</onright>
 			<onup>5581</onup>
 			<ondown>5581</ondown>
-			<content target="music">$VAR[hubcategoryContent]</content>
+			<content target="Music">$VAR[hubcategoryContent]</content>
 			<pagecontrol>70</pagecontrol>
 			<preloaditems>2</preloaditems>
 			<include>toggle_Menu</include>
