@@ -253,7 +253,7 @@
 					<onclick>Skin.ToggleSetting(view.list.fanart)</onclick>
 					<usealttexture>!Skin.HasSetting(view.list.fanart)</usealttexture>
 					<include>menu_Button</include>
-					<visible>Control.IsVisible(50) + [Container.Content(movies) | Container.Content(tvshows)] + !SubString(Container.FolderPath,plugin://)</visible>
+					<visible>Control.IsVisible(50) + [Container.Content(movies) | Container.Content(tvshows)] | SubString(Container.FolderPath,plugin://)</visible>
 				</control>
 				<!--biglist: poster or fanart-->
 				<control type="togglebutton" id="111">
