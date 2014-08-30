@@ -125,7 +125,7 @@
 				<left>750</left>
 				<top>80</top>
 				<control type="group">
-					<visible>[Container.Content(movies) | Container.Content(tvshows)] + [!Skin.HasSetting(view.list.fanart) | !SubString(Container.FolderPath,plugin://)] | Container.Content(actors) | Container.Content(seasons) | Container.Content(sets)</visible>
+					<visible>[Container.Content(movies) | Container.Content(tvshows) | !SubString(Container.FolderPath,plugin://)] + !Skin.HasSetting(view.list.fanart) | Container.Content(actors) | Container.Content(seasons) | Container.Content(sets)</visible>
 					<control type="group">
 						<left>7</left>
 						<top>7</top>
