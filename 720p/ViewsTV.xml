@@ -100,6 +100,16 @@
 				<aspectratio>scale</aspectratio>
 				<visible>!Skin.HasSetting(globalGlass.disable)</visible>
 			</control>
+			<control type="image">
+				<animation effect="fade" start="100" end="40" time="1200" pulse="true" condition="true">conditional</animation>
+				<left>706</left>
+				<top>0</top>
+				<width>20</width>
+				<align>right</align>
+				<height>20</height>
+				<texture>pvr/PVR-IsRecording.png</texture>
+				<visible>ListItem.IsRecording</visible>
+			</control>
 		</control>
 		<control type="group">
 			<left>130</left>
@@ -184,6 +194,16 @@
 				<texture>overlays/cover_overlay.png</texture>
 				<aspectratio>scale</aspectratio>
 				<visible>!Skin.HasSetting(globalGlass.disable)</visible>
+			</control>
+			<control type="image">
+				<animation effect="fade" start="100" end="40" time="1200" pulse="true" condition="true">conditional</animation>
+				<left>706</left>
+				<top>0</top>
+				<width>20</width>
+				<align>right</align>
+				<height>20</height>
+				<texture>pvr/PVR-IsRecording.png</texture>
+				<visible>ListItem.IsRecording</visible>
 			</control>
 		</control>
 		<control type="group">
