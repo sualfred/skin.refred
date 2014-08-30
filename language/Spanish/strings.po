@@ -5,13 +5,14 @@
 # Addon Provider: Sebastian Saenger
 # Translators:
 # Seque <masequeira@terra.com>, 2014
+# Seque <masequeira@terra.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: skin.refred\n"
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2014-07-01 14:13+0000\n"
-"Last-Translator: Seque <masequeira@terra.com>\n"
+"PO-Revision-Date: 2014-08-30 09:50+0000\n"
+"Last-Translator: sualfred <su4lfred@gmail.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/skinrefred/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -664,8 +665,8 @@ msgid "Use in progress episodes only"
 msgstr "Usar sólo episodios en proceso"
 
 msgctxt "#31817"
-msgid "Show (scheduled) recording in PVR and Home screen"
-msgstr "Mostrar grabación (programada) en PVR y Pantalla principal"
+msgid "Show current/next recording information"
+msgstr "Mostrar información grabación actual/siguiente"
 
 msgctxt "#31818"
 msgid "Deactivate glass effect overlays"
@@ -768,8 +769,8 @@ msgid "New albums"
 msgstr "Nuevos álbums"
 
 msgctxt "#31843"
-msgid "In Progress Hub"
-msgstr "Central 'En Proceso'"
+msgid "Watchlist Hub"
+msgstr "Almacén En proceso"
 
 msgctxt "#31844"
 msgid "Widgets"
@@ -784,21 +785,169 @@ msgid "Enable widgets for inprogress/movies/tvshows/music"
 msgstr "Habilitar widget para en proceso/películas/series/musica"
 
 msgctxt "#31847"
-msgid "Enable weather widget"
-msgstr "Habilitar widget del tiempo"
+msgid "Weather Widget"
+msgstr "Widget del tiempo"
 
 msgctxt "#31848"
 msgid "Settings Level"
 msgstr "Nivel de ajustes"
 
 msgctxt "#31849"
-msgid "Edit sub-menu items"
-msgstr "Editar elementos del submenú"
+msgid "Submenu"
+msgstr "Submenú"
 
 msgctxt "#31850"
-msgid "Edit custom widget row"
-msgstr "Editar fila personalizada de widget"
+msgid "Custom widgets"
+msgstr "Widgets personalizados"
 
 msgctxt "#31851"
 msgid "Enable widgets"
 msgstr "Habilitar widgets"
+
+msgctxt "#31852"
+msgid "Use poster style"
+msgstr "Usar estilo poster"
+
+msgctxt "#31853"
+msgid "Add from category:"
+msgstr "Añadir desde categoría"
+
+msgctxt "#31854"
+msgid "Current used items"
+msgstr "Elementos usados actualmente"
+
+msgctxt "#31855"
+msgid "Menu"
+msgstr "Menú"
+
+msgctxt "#31856"
+msgid "Change items"
+msgstr "Cambiar elementos"
+
+msgctxt "#31857"
+msgid "Edit"
+msgstr "Editar"
+
+msgctxt "#31858"
+msgid "Normal"
+msgstr "Normal"
+
+msgctxt "#31859"
+msgid "Plot"
+msgstr "Trazar"
+
+msgctxt "#31860"
+msgid "No recordings scheduled"
+msgstr "Sin grabaciones programadas"
+
+msgctxt "#31861"
+msgid "Watchlist with HUB"
+msgstr "En proceso con almacén"
+
+msgctxt "#31862"
+msgid "Custom Widgets 1"
+msgstr "Widgets personalizados 1"
+
+msgctxt "#31863"
+msgid "Custom Widgets 2"
+msgstr "Widgets personalizados 2"
+
+msgctxt "#31864"
+msgid "Custom Widgets 3"
+msgstr "Widgets personalizados 3"
+
+msgctxt "#31865"
+msgid "Custom Widgets 4"
+msgstr "Widgets personalizados 4"
+
+msgctxt "#31866"
+msgid "Custom Widgets 5"
+msgstr "Widgets personalizados 5"
+
+msgctxt "#31867"
+msgid "Custom Widgets 6"
+msgstr "Widgets personalizados 6"
+
+msgctxt "#31868"
+msgid "Custom Widgets 7"
+msgstr "Widgets personalizados 7"
+
+msgctxt "#31869"
+msgid "Custom Widgets 8"
+msgstr "Widgets personalizados 8"
+
+msgctxt "#31870"
+msgid "Custom Widgets 9"
+msgstr "Widgets personalizado 9"
+
+msgctxt "#31871"
+msgid "Custom Widgets 10"
+msgstr "Widgets personalizados 10"
+
+msgctxt "#31872"
+msgid "In progress movies"
+msgstr "Películas en progreso"
+
+msgctxt "#31873"
+msgid "In progress episodes"
+msgstr "Episodios en progreso"
+
+msgctxt "#31874"
+msgid "Recently added movies"
+msgstr "Películas añadidas recientemente"
+
+msgctxt "#31875"
+msgid "Recently added episodes"
+msgstr "Episodios añadidos recientemente"
+
+msgctxt "#31876"
+msgid "Recently added albums"
+msgstr "Álbums añadidos recientemente"
+
+msgctxt "#31877"
+msgid "Random albums"
+msgstr "Álbums aleatorios"
+
+msgctxt "#31878"
+msgid "Random movies"
+msgstr "Películas aleatorias"
+
+msgctxt "#31879"
+msgid "Random episodes"
+msgstr "Episodios aleatorios"
+
+msgctxt "#31880"
+msgid "PVR widget: Next scheduled recording"
+msgstr "Widget PVR: Próxima grabación programada"
+
+msgctxt "#31881"
+msgid "Recommended albums"
+msgstr "Álbums recomendados"
+
+msgctxt "#31882"
+msgid "Override widget group label"
+msgstr "Reemplazar etiqueta del grupo del widget"
+
+msgctxt "#31883"
+msgid "Recently played episodes"
+msgstr "Episodios recientemente reproducidos"
+
+msgctxt "#31884"
+msgid "Recently played movies"
+msgstr "Películas recientemente reproducidas"
+
+msgctxt "#31885"
+msgid "Shuffle songs"
+msgstr "Canciones aleatorias"
+
+msgctxt "#31886"
+msgid "Recently played"
+msgstr "Reproducidas recientemente"
+
+msgctxt "#31887"
+msgid "YouTube"
+msgstr ""
+
+msgctxt "#31888"
+msgid "Get video"
+msgstr ""
