@@ -948,3 +948,7 @@ msgstr "YouTube"
 msgctxt "#31888"
 msgid "Get video"
 msgstr "Get video"
+
+msgctxt "#31889"
+msgid "Animate background"
+msgstr "Animate background"

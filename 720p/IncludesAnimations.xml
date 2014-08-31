@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<!--fanart animation-->
+	<include name="fanartanimation">
+		<animation effect="zoom" start="110" end="120" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(fanart.animate)">Conditional</animation>
+        <animation effect="slide" start="-20,-20" end="20,20" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(fanart.animate)">Conditional</animation>
+	</include>
 	<!--global-->
 	<include name="fadeinout">
 		<animation type="WindowOpen">

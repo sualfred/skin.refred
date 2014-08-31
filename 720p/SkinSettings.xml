@@ -289,6 +289,13 @@
 						<selected>!Skin.HasSetting(fanart.global)</selected>
 						<include>settings_Radiobutton</include>
 					</control>
+					<!--animate fanart-->
+					<control type="radiobutton" id="603">
+						<label>$LOCALIZE[31889]</label>
+						<onclick>Skin.ToggleSetting(fanart.animate)</onclick>
+						<selected>Skin.HasSetting(fanart.animate)</selected>
+						<include>settings_Radiobutton</include>
+					</control>
 					<!--weather fanart-->
 					<control type="radiobutton" id="604">
 						<label>$LOCALIZE[31231]</label>

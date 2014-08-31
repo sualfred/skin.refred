@@ -9,6 +9,7 @@
 					<texture background="true" fallback="backgrounds/fallback/fallback.jpg">$INFO[Skin.String(homesingle.bg)]</texture>
 					<fadetime>1000</fadetime>
 					<include>transition_Content</include>
+					<include>fanartanimation</include>
 					<visible>!IsEmpty(Skin.String(homesingle.bg))</visible>
 				</control>
 				<control type="multiimage">
@@ -20,6 +21,7 @@
 					<randomize>true</randomize>
 					<loop>yes</loop>
 					<include>transition_Content</include>
+					<include>fanartanimation</include>
 					<visible>!IsEmpty(Skin.String(homemulti.bg))</visible>
 				</control>
 			</control>
@@ -29,6 +31,7 @@
 					<texture background="true">$VAR[menu_backgrounds]</texture>
 					<visible>![StringCompare(Container(9110).ListItem.Property(defaultID),weather) + Skin.HasSetting(fanart.weather) + !IsEmpty(Skin.String(fanart.weather.path)) + !SubString(Container(9110).ListItem.Property(background),\,Right) + !SubString(Container(9110).ListItem.Property(background),/,Right)</visible>
 					<fadetime>1000</fadetime>
+					<include>fanartanimation</include>
 					<include>transition_Content</include>					
 				</control>
 				<control type="multiimage">
@@ -40,6 +43,7 @@
 					<randomize>true</randomize>
 					<loop>yes</loop>
 					<include>transition_Content</include>
+					<include>fanartanimation</include>
 					<visible>SubString(Container(9110).ListItem.Property(background),\,Right) | !SubString(Container(9110).ListItem.Property(background),/,Right)</visible>
 				</control>
 				<control type="multiimage">
@@ -51,6 +55,7 @@
 					<randomize>true</randomize>
 					<loop>yes</loop>
 					<include>transition_Content</include>
+					<include>fanartanimation</include>
 					<visible>StringCompare(Container(9110).ListItem.Property(defaultID),weather) + Skin.HasSetting(fanart.weather) + !IsEmpty(Skin.String(fanart.weather.path))</visible>
 				</control>
 			</control>
